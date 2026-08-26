@@ -507,13 +507,53 @@ body {
 
 <script>
 (function() {
+  // ===== PAGE-TURN SOUND — Heavy Paper =====
+  function playPageTurn() {
+    try {
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const duration = 0.25; // seconds
+      const sampleRate = audioCtx.sampleRate;
+      const bufferSize = Math.floor(duration * sampleRate);
+      const buffer = audioCtx.createBuffer(1, bufferSize, sampleRate);
+      const data = buffer.getChannelData(0);
+
+      for (let i = 0; i < bufferSize; i++) {
+        const t = i / bufferSize;
+        // Heavy, textured paper rustle
+        const envelope = Math.sin(t * Math.PI) * 0.8 + 0.2;
+        const noise = (Math.random() * 2 - 1) * envelope * 0.5;
+        const lowFreq = Math.sin(t * 120 * Math.PI) * 0.15 * (1 - t);
+        const midFreq = Math.sin(t * 300 * Math.PI) * 0.08 * (1 - t);
+        data[i] = (noise + lowFreq + midFreq) * 0.35;
+      }
+
+      const source = audioCtx.createBufferSource();
+      source.buffer = buffer;
+      const gainNode = audioCtx.createGain();
+      gainNode.gain.value = 0.3;
+      source.connect(gainNode);
+      gainNode.connect(audioCtx.destination);
+      source.start();
+    } catch (e) {
+      // Silently fail if audio not supported
+    }
+  }
+
+  // ===== LOOKBOOK NAVIGATION =====
   const spreads = document.querySelectorAll('.ship-spread');
   const prevBtn = document.getElementById('prev-spread');
   const nextBtn = document.getElementById('next-spread');
   const counter = document.getElementById('spread-counter');
   let current = 0;
+  let isTransitioning = false;
 
   function showSpread(index) {
+    if (isTransitioning || index === current) return;
+    isTransitioning = true;
+
+    // Play sound on page turn
+    playPageTurn();
+
     spreads.forEach((s, i) => {
       s.classList.toggle('active', i === index);
     });
@@ -521,12 +561,17 @@ body {
     nextBtn.disabled = index === spreads.length - 1;
     counter.textContent = (index + 1) + ' / ' + spreads.length;
     current = index;
+
     // Scroll to top of container
     document.querySelector('.lookbook-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    setTimeout(() => {
+      isTransitioning = false;
+    }, 300);
   }
 
   function goToSpread(index) {
-    if (index >= 0 && index < spreads.length) {
+    if (index >= 0 && index < spreads.length && index !== current) {
       showSpread(index);
     }
   }
@@ -553,6 +598,7 @@ body {
     }
   });
 
+  // Initialize
   showSpread(0);
 })();
 </script>
