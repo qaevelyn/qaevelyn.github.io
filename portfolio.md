@@ -1382,6 +1382,70 @@ body.dark-mode .book-page {
     if (e.key === 'Enter') handleChat();
   });
 
-  showSpread(current);
+  // showSpread(current);
+  showSpread(0);
 })();
 </script>
+
+/* ===== FORCE GRID LAYOUT ===== */
+.ship-spread.active {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 2rem !important;
+  width: 100% !important;
+}
+
+.ship-spread.intro.active {
+  display: block !important;
+}
+
+.ship-spread.toc.active {
+  display: block !important;
+}
+
+.lookbook-container {
+  max-width: 1400px !important;
+  width: 100% !important;
+  padding: 0 1.5rem !important;
+}
+
+.ship-spread .page {
+  width: 100% !important;
+  min-height: 300px !important;
+}
+
+/* ===== DISABLE AUTO-FLIP ON LOAD ===== */
+.auto-flip-btn {
+  background: #007acc;
+  color: #fff;
+}
+
+.auto-flip-btn.active {
+  background: #e53e3e;
+}
+
+/* ===== REPLACE PAGE-TURN SOUND ===== */
+function playPageTurn() {
+  try {
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const duration = 0.2;
+    const sampleRate = audioCtx.sampleRate;
+    const bufferSize = Math.floor(duration * sampleRate);
+    const buffer = audioCtx.createBuffer(1, bufferSize, sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < bufferSize; i++) {
+      const t = i / bufferSize;
+      const envelope = Math.sin(t * Math.PI) * 0.8;
+      const noise = (Math.random() * 2 - 1) * envelope * 0.3;
+      const lowFreq = Math.sin(t * 80 * Math.PI) * 0.2 * (1 - t);
+      data[i] = (noise + lowFreq) * 0.5;
+    }
+    const source = audioCtx.createBufferSource();
+    source.buffer = buffer;
+    const gainNode = audioCtx.createGain();
+    gainNode.gain.value = 0.2;
+    source.connect(gainNode);
+    gainNode.connect(audioCtx.destination);
+    source.start();
+  } catch (e) {}
+}
