@@ -18,12 +18,149 @@
       text-align: center;
       padding: 2rem;
     }
+    body.dark-mode {
+      background: #1a1a1a;
+      color: #f0edea;
+    }
     h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
     .tagline { font-size: 1.2rem; font-weight: 500; color: #555; margin-bottom: 1.5rem; }
+    body.dark-mode .tagline { color: #aaa; }
     .bio { max-width: 600px; font-size: 1.1rem; line-height: 1.6; color: #333; margin-bottom: 1.5rem; }
+    body.dark-mode .bio { color: #ccc; }
     blockquote { font-size: 1.1rem; border-left: 4px solid #007acc; padding-left: 1rem; margin: 1rem auto; font-style: italic; color: #555; }
+    body.dark-mode blockquote { color: #aaa; }
     .cta { display: inline-block; padding: 0.8rem 2.5rem; background: #007acc; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: background 0.2s; }
     .cta:hover { background: #005f99; }
+
+    /* ===== MIRROR CHATBOT ===== */
+    .mirror-container {
+      position: fixed; bottom: 2rem; right: 2rem;
+      display: flex; flex-direction: column; align-items: center;
+      z-index: 1000;
+    }
+    .mirror-halo {
+      font-size: 0.75rem;
+      color: #555;
+      background: rgba(255,255,255,0.85);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      margin-bottom: 0.5rem;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      max-width: 200px;
+    }
+    body.dark-mode .mirror-halo {
+      background: rgba(26,26,26,0.85);
+      color: #ccc;
+    }
+    .mirror-toggle {
+      width: 72px; height: 72px;
+      border-radius: 16px;
+      background: linear-gradient(145deg, #e8e4e0, #d6d2cd);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.6);
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex; align-items: center; justify-content: center;
+      padding: 12px;
+    }
+    .mirror-toggle:hover {
+      transform: scale(1.05) rotate(-3deg);
+      box-shadow: 0 6px 32px rgba(0,0,0,0.2);
+    }
+    body.dark-mode .mirror-toggle {
+      background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .mirror-toggle svg {
+      width: 100%; height: 100%;
+      display: block;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    body.dark-mode .mirror-toggle svg {
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    }
+    .mirror-window {
+      position: fixed; bottom: 6.5rem; right: 2rem;
+      width: 380px; max-width: 90vw; max-height: 70vh;
+      background: #fff; border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+      z-index: 1000;
+      display: none; flex-direction: column; overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(4px);
+    }
+    body.dark-mode .mirror-window {
+      background: #2a2a2a; color: #f0edea;
+      border-color: rgba(255,255,255,0.05);
+    }
+    .mirror-window.open { display: flex; }
+    .mirror-header {
+      padding: 1rem 1.2rem;
+      background: linear-gradient(135deg, #007acc, #005f99);
+      color: #fff;
+      font-weight: 600;
+      display: flex; justify-content: space-between; align-items: center;
+      border-radius: 16px 16px 0 0;
+    }
+    .mirror-header button {
+      background: none; border: none; color: #fff; font-size: 1.2rem; cursor: pointer;
+    }
+    .mirror-body {
+      padding: 1rem;
+      flex: 1;
+      overflow-y: auto;
+      max-height: 50vh;
+    }
+    .mirror-body .intro-text {
+      font-size: 0.9rem; color: #555; margin-bottom: 0.75rem;
+    }
+    body.dark-mode .mirror-body .intro-text { color: #aaa; }
+    .mirror-body .prompt-grid {
+      display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;
+    }
+    .mirror-body .prompt-grid button {
+      padding: 0.3rem 0.8rem; border-radius: 16px; border: 1px solid #ddd;
+      background: #f8f6f4; color: #1a1a1a; font-size: 0.8rem;
+      cursor: pointer; transition: background 0.2s;
+    }
+    body.dark-mode .mirror-body .prompt-grid button {
+      background: #333; color: #f0edea; border-color: #555;
+    }
+    .mirror-body .prompt-grid button:hover {
+      background: #007acc; color: #fff; border-color: #007acc;
+    }
+    .mirror-message {
+      margin-bottom: 0.75rem;
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      max-width: 85%;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .mirror-message.user {
+      background: #007acc; color: #fff; align-self: flex-end; margin-left: auto;
+    }
+    body.dark-mode .mirror-message.user { background: #005f99; }
+    .mirror-message.bot {
+      background: #f0edea; color: #1a1a1a; align-self: flex-start;
+    }
+    body.dark-mode .mirror-message.bot { background: #333; color: #f0edea; }
+    .mirror-input-area {
+      display: flex; padding: 0.75rem; border-top: 1px solid #eee; gap: 0.5rem;
+    }
+    body.dark-mode .mirror-input-area { border-top-color: #444; }
+    .mirror-input-area input {
+      flex: 1; padding: 0.6rem; border: 1px solid #ddd; border-radius: 8px;
+      font-size: 0.9rem; background: #fff; color: #1a1a1a;
+    }
+    body.dark-mode .mirror-input-area input { background: #333; color: #f0edea; border-color: #555; }
+    .mirror-input-area button {
+      padding: 0.6rem 1.2rem; background: #007acc; color: #fff;
+      border: none; border-radius: 8px; cursor: pointer; font-weight: 600;
+    }
+    .mirror-input-area button:hover { background: #005f99; }
   </style>
 </head>
 <body>
@@ -34,5 +171,101 @@
   </div>
   <blockquote>Sovereign systems, local first. No cloud dependency.</blockquote>
   <a href="/lookbook.html" class="cta">Enter the Lookbook</a>
+
+  <div class="mirror-container">
+    <div class="mirror-halo">✨ Ask me anything about Evelyn's work — I'm trained on her portfolio.</div>
+    <button class="mirror-toggle" id="mirrorToggle" aria-label="Ask my portfolio" title="Ask my portfolio">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="56" height="56" rx="12" fill="url(#mirrorGrad)" stroke="#b0a8a0" stroke-width="1.5"/>
+        <rect x="10" y="10" width="44" height="44" rx="8" fill="url(#mirrorReflect)" opacity="0.6"/>
+        <path d="M22 22 L42 42 M42 22 L22 42" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="mirrorGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#e8e4e0"/>
+            <stop offset="100%" stop-color="#c8c4bf"/>
+          </linearGradient>
+          <linearGradient id="mirrorReflect" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+            <stop offset="50%" stop-color="#ffffff" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mirror-window" id="mirrorWindow">
+    <div class="mirror-header">
+      <span>🪞 Mirror — Ask My Portfolio</span>
+      <button id="mirrorClose">✕</button>
+    </div>
+    <div class="mirror-body" id="mirrorBody">
+      <div class="intro-text">Ask me anything about Evelyn's work — I'm trained on her portfolio.</div>
+      <div class="prompt-grid">
+        <button onclick="askMirror('What Ships did Evelyn build?')">What Ships did Evelyn build?</button>
+        <button onclick="askMirror('What certifications does she have?')">What certifications does she have?</button>
+        <button onclick="askMirror('What is sovereign AI?')">What is sovereign AI?</button>
+        <button onclick="askMirror('Tell me about Ship 1')">Tell me about Ship 1</button>
+      </div>
+      <div id="mirrorMessages" style="margin-top: 1rem;">
+        <div class="mirror-message bot">Hello! I'm a mirror of Evelyn's portfolio. Ask me anything about her work, Ships, or certifications.</div>
+      </div>
+    </div>
+    <div class="mirror-input-area">
+      <input type="text" id="mirrorInput" placeholder="Ask about Ships, certs, or skills...">
+      <button id="mirrorSend">Ask</button>
+    </div>
+  </div>
+
+  <script>
+    const knowledgeBase = {
+      'ship1': 'Ship 1 is a standard RAG pipeline on AWS SageMaker using vector databases and LLMs. Built locally on an M1 MacBook Air.',
+      'ship2': 'Ship 2 is an agentic RAG pipeline on AWS SageMaker that performs retrieval + action (API calls, decisions).',
+      'ship3': 'Ship 3 is a standard RAG pipeline on IBM Granite, showing cross-platform AI capabilities.',
+      'ship4': 'Ship 4 is an agentic RAG pipeline on IBM Granite with autonomous reasoning and decision-making.',
+      'cert': 'Evelyn holds certifications in AI, LangChain, and Agentic RAG from Google and IBM. She is currently in AWS re/Start.',
+      'sovereign': 'Sovereign systems are built locally, with no cloud dependency. Evelyn runs everything on her M1 MacBook Air.',
+      'default': 'I can answer questions about Evelyn\'s Ships, certifications, and sovereign AI philosophy. Ask me about Ship 1, Ship 2, AWS, IBM, RAG, or certifications!'
+    };
+    function getMirrorResponse(query) {
+      const q = query.toLowerCase();
+      if (q.includes('ship 1') || q.includes('ship1')) return knowledgeBase.ship1;
+      if (q.includes('ship 2') || q.includes('ship2')) return knowledgeBase.ship2;
+      if (q.includes('ship 3') || q.includes('ship3')) return knowledgeBase.ship3;
+      if (q.includes('ship 4') || q.includes('ship4')) return knowledgeBase.ship4;
+      if (q.includes('cert') || q.includes('credential') || q.includes('google') || q.includes('ibm') || q.includes('aws')) return knowledgeBase.cert;
+      if (q.includes('sovereign') || q.includes('local') || q.includes('macbook')) return knowledgeBase.sovereign;
+      return knowledgeBase.default;
+    }
+    function addMirrorMessage(text, sender) {
+      const container = document.getElementById('mirrorMessages');
+      const div = document.createElement('div');
+      div.className = 'mirror-message ' + sender;
+      div.textContent = text;
+      container.appendChild(div);
+      container.scrollTop = container.scrollHeight;
+    }
+    window.askMirror = function(text) {
+      addMirrorMessage(text, 'user');
+      const response = getMirrorResponse(text);
+      setTimeout(() => addMirrorMessage(response, 'bot'), 300);
+    };
+    const toggle = document.getElementById('mirrorToggle');
+    const windowEl = document.getElementById('mirrorWindow');
+    const closeBtn = document.getElementById('mirrorClose');
+    const input = document.getElementById('mirrorInput');
+    const sendBtn = document.getElementById('mirrorSend');
+    toggle.addEventListener('click', () => { windowEl.classList.toggle('open'); });
+    closeBtn.addEventListener('click', () => { windowEl.classList.remove('open'); });
+    sendBtn.addEventListener('click', () => {
+      const query = input.value.trim();
+      if (!query) return;
+      addMirrorMessage(query, 'user');
+      input.value = '';
+      const response = getMirrorResponse(query);
+      setTimeout(() => addMirrorMessage(response, 'bot'), 300);
+    });
+    input.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendBtn.click(); });
+  </script>
 </body>
 </html>
