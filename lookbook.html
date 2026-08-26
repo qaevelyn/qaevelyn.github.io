@@ -38,7 +38,7 @@
     }
     .nav-controls {
       text-align: center;
-      margin: 2rem 0;
+      margin: 2rem 0 1rem;
     }
     .nav-controls button {
       padding: 0.5rem 1.5rem;
@@ -77,6 +77,34 @@
     .page-indicator {
       text-align: center;
       margin: 1rem 0;
+    }
+    .auto-flip-btn {
+      padding: 0.5rem 1.5rem;
+      background: #007acc;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 0 0.5rem;
+    }
+    .auto-flip-btn:hover {
+      background: #005f99;
+    }
+    .return-home {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .return-home a {
+      display: inline-block;
+      padding: 0.6rem 1.8rem;
+      background: #007acc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+    .return-home a:hover {
+      background: #005f99;
     }
   </style>
 </head>
@@ -148,16 +176,24 @@
 
   <div class="nav-controls">
     <button id="prevBtn" disabled>← Previous</button>
+    <button id="autoFlipBtn" class="auto-flip-btn">▶ Auto-Flip</button>
     <button id="nextBtn">Next →</button>
   </div>
   <div class="page-indicator" id="indicator">1 / 7</div>
+
+  <div class="return-home">
+    <a href="/">← Return to Home</a>
+  </div>
 
   <script>
     const spreads = document.querySelectorAll('.ship-spread');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
+    const autoFlipBtn = document.getElementById('autoFlipBtn');
     const indicator = document.getElementById('indicator');
     let current = 0;
+    let autoFlipInterval = null;
+    let isAutoFlip = false;
 
     function goToSpread(index) {
       if (index < 0 || index >= spreads.length) return;
@@ -180,6 +216,28 @@
       if (current < spreads.length - 1) goToSpread(current + 1);
     });
 
+    autoFlipBtn.addEventListener('click', function() {
+      if (isAutoFlip) {
+        clearInterval(autoFlipInterval);
+        autoFlipInterval = null;
+        isAutoFlip = false;
+        this.textContent = '▶ Auto-Flip';
+      } else {
+        isAutoFlip = true;
+        this.textContent = '⏸ Pause';
+        autoFlipInterval = setInterval(() => {
+          if (current < spreads.length - 1) {
+            goToSpread(current + 1);
+          } else {
+            clearInterval(autoFlipInterval);
+            autoFlipInterval = null;
+            isAutoFlip = false;
+            autoFlipBtn.textContent = '▶ Auto-Flip';
+          }
+        }, 4000);
+      }
+    });
+
     document.getElementById('darkModeToggle').addEventListener('click', function() {
       document.body.classList.toggle('dark-mode');
       this.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
@@ -189,6 +247,3 @@
   </script>
 </body>
 </html>
-  <div style="text-align: center; margin-top: 2rem;">
-    <a href="/" style="display: inline-block; padding: 0.6rem 1.8rem; background: #007acc; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 500;">← Return to Home</a>
-  </div>
