@@ -137,7 +137,7 @@ body.dark-mode .cursor-trail {
 
 /* ===== LAYOUT ===== */
 .lookbook-container {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 2rem auto;
   padding: 0 1.5rem;
   position: relative;
@@ -154,38 +154,23 @@ body.dark-mode .cursor-trail {
 }
 
 .ship-spread.active {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.ship-spread.intro {
-  display: block;
-  padding: 3rem 2.5rem;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-  text-align: center;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 2rem !important;
+  width: 100% !important;
 }
 
 .ship-spread.intro.active {
-  display: block;
-}
-
-.ship-spread.toc {
-  display: block;
-  padding: 2.5rem 2rem;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-  text-align: center;
+  display: block !important;
 }
 
 .ship-spread.toc.active {
-  display: block;
+  display: block !important;
 }
 
-/* ===== PAGES ===== */
 .ship-spread .page {
+  width: 100% !important;
+  min-height: 300px !important;
   padding: 1.75rem;
   background: #ffffff;
   border-radius: 12px;
@@ -300,7 +285,6 @@ body.dark-mode .ship-spread .page h3 {
   text-decoration: underline;
 }
 
-/* ===== READ ALOUD BUTTON ===== */
 .read-aloud-btn {
   background: none;
   border: 1px solid #ccc;
@@ -331,14 +315,12 @@ body.dark-mode .read-aloud-btn:hover {
   border-color: #007acc;
 }
 
-/* ===== READING TIME ===== */
 .reading-time {
   font-size: 0.75rem;
   color: #999;
   margin-top: 0.25rem;
 }
 
-/* ===== INTRO PAGE ===== */
 .intro h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
@@ -399,7 +381,6 @@ body.dark-mode .intro .certs-summary {
   color: #f0edea;
 }
 
-/* ===== TOC ===== */
 .toc h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
@@ -449,7 +430,6 @@ body.dark-mode .toc ul li a .page-num {
   color: #999;
 }
 
-/* ===== FILTER BAR (Auto-Tagging) ===== */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -484,7 +464,6 @@ body.dark-mode .filter-bar .tag {
   color: #fff;
 }
 
-/* ===== NAVIGATION ===== */
 .nav-controls {
   margin-top: 2.5rem;
   display: flex;
@@ -525,7 +504,6 @@ body.dark-mode .nav-controls button {
   transform: none;
 }
 
-/* ===== AUTO-FLIP BUTTON ===== */
 .auto-flip-btn {
   padding: 0.6rem 1.8rem;
   font-size: 1rem;
@@ -550,7 +528,6 @@ body.dark-mode .nav-controls button {
   background: #c53030;
 }
 
-/* ===== PAGE INDICATOR ===== */
 .page-indicator {
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -562,7 +539,6 @@ body.dark-mode .page-indicator {
   color: #aaa;
 }
 
-/* ===== KEYBOARD HINT ===== */
 .keyboard-hint {
   text-align: center;
   font-size: 0.8rem;
@@ -574,7 +550,6 @@ body.dark-mode .keyboard-hint {
   color: #666;
 }
 
-/* ===== READING PROGRESS BAR ===== */
 .progress-bar {
   position: fixed;
   top: 0;
@@ -586,7 +561,6 @@ body.dark-mode .keyboard-hint {
   width: 0%;
 }
 
-/* ===== PRINT MODE ===== */
 @media print {
   .nav-controls,
   .keyboard-hint,
@@ -624,7 +598,6 @@ body.dark-mode .keyboard-hint {
     padding: 0.5in !important;
   }
 
-  /* Watermark */
   .ship-spread .page::after {
     content: "© @qaevelyn 08-26-2026 · Originator · First of its kind";
     position: absolute;
@@ -636,16 +609,14 @@ body.dark-mode .keyboard-hint {
   }
 }
 
-/* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(8px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 700px) {
   .ship-spread.active {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   .intro h2 {
     font-size: 1.6rem;
@@ -661,7 +632,6 @@ body.dark-mode .keyboard-hint {
   }
 }
 
-/* ===== CHATBOT ===== */
 .chatbot-toggle {
   position: fixed;
   bottom: 2rem;
@@ -806,34 +776,46 @@ body.dark-mode .chatbot-input-area input {
   background: #005f99;
 }
 
-/* ===== DARK MODE TOGGLE ===== */
+/* ===== FINAL DARK MODE TOGGLE ===== */
 .dark-mode-toggle {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: #1a1a1a;
+  background: rgba(26, 26, 26, 0.85);
   color: #fff;
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 1.2rem;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
   cursor: pointer;
   z-index: 1000;
-  transition: background 0.2s ease;
-}
-
-body.dark-mode .dark-mode-toggle {
-  background: #f0edea;
-  color: #1a1a1a;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dark-mode-toggle:hover {
   background: #007acc;
-  color: #fff;
+  transform: scale(1.08) rotate(8deg);
+  box-shadow: 0 4px 20px rgba(0, 122, 204, 0.4);
 }
 
-/* ===== 3D BOOK VIEW ===== */
+body.dark-mode .dark-mode-toggle {
+  background: rgba(240, 237, 234, 0.9);
+  color: #1a1a1a;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background: #f0edea;
+  color: #007acc;
+  box-shadow: 0 4px 20px rgba(0, 122, 204, 0.3);
+}
+
 .book-container {
   perspective: 1200px;
   margin: 2rem auto;
@@ -885,7 +867,6 @@ body.dark-mode .book-page {
   transform: rotateY(-180deg);
 }
 
-/* ===== ZOOM ON HOVER ===== */
 .zoom-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: zoom-in;
@@ -897,7 +878,6 @@ body.dark-mode .book-page {
   z-index: 10;
 }
 
-/* ===== DRAG TO FLIP ===== */
 .drag-area {
   cursor: grab;
   user-select: none;
@@ -908,19 +888,12 @@ body.dark-mode .book-page {
 }
 </style>
 
-<!-- ===== AMBIENT BACKGROUND ===== -->
 <div class="ambient-bg"></div>
-
-<!-- ===== CURSOR TRAIL ===== -->
 <div class="cursor-trail" id="cursorTrail"></div>
-
-<!-- ===== READING PROGRESS BAR ===== -->
 <div class="progress-bar" id="progressBar"></div>
 
-<!-- ===== DARK MODE TOGGLE ===== -->
-<button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+<button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">☀️</button>
 
-<!-- ===== CHATBOT ===== -->
 <button class="chatbot-toggle" id="chatbotToggle" aria-label="Ask my portfolio">💬</button>
 
 <div class="chatbot-window" id="chatbotWindow">
@@ -937,10 +910,7 @@ body.dark-mode .book-page {
   </div>
 </div>
 
-<!-- ===== LOOKBOOK CONTAINER ===== -->
 <div class="lookbook-container">
-
-  <!-- ===== FILTER BAR (Auto-Tagging) ===== -->
   <div class="filter-bar" id="filterBar">
     <button class="tag active" data-tag="all">All</button>
     <button class="tag" data-tag="aws">#AWS</button>
@@ -950,12 +920,9 @@ body.dark-mode .book-page {
     <button class="tag" data-tag="cert">#Certification</button>
   </div>
 
-  <!-- ============================================================
-  SPREAD 1 — TABLE OF CONTENTS (Page 1, stands alone)
-  ============================================================ -->
   <div id="toc" class="ship-spread toc active" data-tags="all">
-    <h2>Lookbook</h2>
-    <p style="margin-bottom: 1.5rem; color: #555;">Sovereign AI Portfolio — Evelyn Caro</p>
+    <h2>LOOKBOOK</h2>
+    <p style="margin-bottom: 1.5rem; color: #555;">SOVEREIGN AI PORTFOLIO — EVELYN CARO</p>
     <ul>
       <li><a href="#" onclick="goToSpread(1); return false;">Intro / Story <span class="page-num">Pages 2–3</span></a></li>
       <li><a href="#" onclick="goToSpread(2); return false;">Ship 1 — AWS SageMaker RAG <span class="page-num">Pages 4–5</span></a></li>
@@ -966,9 +933,6 @@ body.dark-mode .book-page {
     </ul>
   </div>
 
-  <!-- ============================================================
-  SPREAD 2 — INTRO / STORY (Pages 2–3)
-  ============================================================ -->
   <div id="intro" class="ship-spread intro" data-tags="all">
     <div style="grid-column: 1 / -1;">
       <h2>Intro / Story</h2>
@@ -985,9 +949,6 @@ body.dark-mode .book-page {
     </div>
   </div>
 
-  <!-- ============================================================
-  SPREAD 3 — SHIP 1 (Pages 4–5)
-  ============================================================ -->
   <div id="ship-1" class="ship-spread" data-tags="aws rag">
     <div class="page">
       <h3>Ship 1</h3>
@@ -1007,9 +968,6 @@ body.dark-mode .book-page {
     </div>
   </div>
 
-  <!-- ============================================================
-  SPREAD 4 — SHIP 2 (Pages 6–7)
-  ============================================================ -->
   <div id="ship-2" class="ship-spread" data-tags="aws rag agentic">
     <div class="page">
       <h3>Ship 2</h3>
@@ -1029,9 +987,6 @@ body.dark-mode .book-page {
     </div>
   </div>
 
-  <!-- ============================================================
-  SPREAD 5 — SHIP 3 (Pages 8–9)
-  ============================================================ -->
   <div id="ship-3" class="ship-spread" data-tags="ibm rag">
     <div class="page">
       <h3>Ship 3</h3>
@@ -1051,9 +1006,6 @@ body.dark-mode .book-page {
     </div>
   </div>
 
-  <!-- ============================================================
-  SPREAD 6 — SHIP 4 (Pages 10–11)
-  ============================================================ -->
   <div id="ship-4" class="ship-spread" data-tags="ibm rag agentic">
     <div class="page">
       <h3>Ship 4</h3>
@@ -1073,9 +1025,6 @@ body.dark-mode .book-page {
     </div>
   </div>
 
-  <!-- ============================================================
-  SPREAD 7 — CERTIFICATIONS (Pages 12–13)
-  ============================================================ -->
   <div id="certs-1" class="ship-spread" data-tags="cert">
     <div class="page">
       <h3>Google AI Professional Certificate</h3>
@@ -1093,9 +1042,6 @@ body.dark-mode .book-page {
     </div>
   </div>
 
-  <!-- ============================================================
-  SPREAD 8 — CERTIFICATIONS (Pages 14–15)
-  ============================================================ -->
   <div id="certs-2" class="ship-spread" data-tags="cert">
     <div class="page">
       <h3>IBM SkillsBuild — Agentic RAG</h3>
@@ -1113,9 +1059,6 @@ body.dark-mode .book-page {
     </div>
   </div>
 
-  <!-- ============================================================
-  NAVIGATION
-  ============================================================ -->
   <div class="nav-controls">
     <button id="prev-spread" disabled aria-label="Previous page">← Previous</button>
     <button id="autoFlipBtn" class="auto-flip-btn" aria-label="Auto-flip mode">▶ Auto-Flip</button>
@@ -1127,15 +1070,8 @@ body.dark-mode .book-page {
 
 <script>
 (function() {
-  // ============================================================
-  // SELF-TEST
-  // ============================================================
   console.log('✅ Lookbook loaded successfully — Sovereign AI Portfolio');
-  console.log('📖 Features: Chatbot · 3D Book · Accessibility · Auto-Tagging · Dark Mode · Progress Bar · Cursor Trail · Ambient BG · Print Watermark · Read Aloud · Auto-Flip · Bookmarking · Shareable URLs');
 
-  // ============================================================
-  // PAGE-TURN SOUND
-  // ============================================================
   function playPageTurn() {
     try {
       const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -1159,19 +1095,13 @@ body.dark-mode .book-page {
       source.connect(gainNode);
       gainNode.connect(audioCtx.destination);
       source.start();
-    } catch (e) { /* Silently fail */ }
+    } catch (e) {}
   }
 
-  // ============================================================
-  // HAPTIC FEEDBACK
-  // ============================================================
   function hapticFeedback() {
     if (navigator.vibrate) navigator.vibrate(10);
   }
 
-  // ============================================================
-  // BOOKMARKING
-  // ============================================================
   function saveBookmark(index) {
     try { localStorage.setItem('lookbook_page', index); } catch (e) {}
   }
@@ -1180,9 +1110,6 @@ body.dark-mode .book-page {
     try { return parseInt(localStorage.getItem('lookbook_page')) || 0; } catch (e) { return 0; }
   }
 
-  // ============================================================
-  // SHAREABLE URL HASH
-  // ============================================================
   function updateURLHash(index) {
     const names = ['toc', 'intro', 'ship-1', 'ship-2', 'ship-3', 'ship-4', 'certs-1', 'certs-2'];
     if (index >= 0 && index < names.length) {
@@ -1197,9 +1124,6 @@ body.dark-mode .book-page {
     return idx >= 0 ? idx : null;
   }
 
-  // ============================================================
-  // READ ALOUD
-  // ============================================================
   window.readAloud = function(elementId) {
     const el = document.getElementById(elementId);
     if (!el) return;
@@ -1213,9 +1137,6 @@ body.dark-mode .book-page {
     }
   };
 
-  // ============================================================
-  // NAVIGATION
-  // ============================================================
   const spreads = document.querySelectorAll('.ship-spread');
   const prevBtn = document.getElementById('prev-spread');
   const nextBtn = document.getElementById('next-spread');
@@ -1266,9 +1187,6 @@ body.dark-mode .book-page {
     }
   };
 
-  // ============================================================
-  // AUTO-FLIP
-  // ============================================================
   function toggleAutoFlip() {
     if (isAutoFlip) {
       clearInterval(autoFlipInterval);
@@ -1311,9 +1229,6 @@ body.dark-mode .book-page {
     }
   });
 
-  // ============================================================
-  // BUTTON EVENTS
-  // ============================================================
   prevBtn.addEventListener('click', () => {
     if (current > 0) showSpread(current - 1);
   });
@@ -1322,9 +1237,6 @@ body.dark-mode .book-page {
     if (current < spreads.length - 1) showSpread(current + 1);
   });
 
-  // ============================================================
-  // KEYBOARD NAVIGATION
-  // ============================================================
   document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft' && current > 0) {
       e.preventDefault();
@@ -1335,9 +1247,6 @@ body.dark-mode .book-page {
     }
   });
 
-  // ============================================================
-  // DRAG TO FLIP
-  // ============================================================
   let dragStartX = 0;
   let dragEndX = 0;
   const container = document.querySelector('.lookbook-container');
@@ -1368,35 +1277,26 @@ body.dark-mode .book-page {
     }
   });
 
-  // ============================================================
-  // DARK MODE TOGGLE
-  // ============================================================
   const darkToggle = document.getElementById('darkModeToggle');
   darkToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
-    darkToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    darkToggle.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
     try { localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'true' : 'false'); } catch (e) {}
   });
 
   try {
     if (localStorage.getItem('darkMode') === 'true') {
       document.body.classList.add('dark-mode');
-      darkToggle.textContent = '☀️';
+      darkToggle.textContent = '🌙';
     }
   } catch (e) {}
 
-  // ============================================================
-  // CURSOR TRAIL
-  // ============================================================
   const trail = document.getElementById('cursorTrail');
   document.addEventListener('mousemove', (e) => {
     trail.style.left = e.clientX + 'px';
     trail.style.top = e.clientY + 'px';
   });
 
-  // ============================================================
-  // FILTER BAR
-  // ============================================================
   const filterButtons = document.querySelectorAll('.filter-bar .tag');
   filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -1424,9 +1324,6 @@ body.dark-mode .book-page {
     });
   });
 
-  // ============================================================
-  // CHATBOT
-  // ============================================================
   const chatbotToggle = document.getElementById('chatbotToggle');
   const chatbotWindow = document.getElementById('chatbotWindow');
   const chatbotClose = document.getElementById('chatbotClose');
@@ -1485,9 +1382,6 @@ body.dark-mode .book-page {
     if (e.key === 'Enter') handleChat();
   });
 
-  // ============================================================
-  // INITIALIZE
-  // ============================================================
   showSpread(current);
 })();
 </script>
