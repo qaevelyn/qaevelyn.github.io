@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lookbook — Sovereign AI Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #faf9f7;
+      color: #1a1a1a;
+      transition: background 0.4s;
+    }
+    body.dark-mode {
+      background: #1a1a1a;
+      color: #f0edea;
+    }
+    .ship-spread {
+      display: none;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .ship-spread.active {
+      display: block;
+    }
+    .ship-spread .page {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      margin-bottom: 1rem;
+    }
+    body.dark-mode .ship-spread .page {
+      background: #2a2a2a;
+      color: #f0edea;
+    }
+    .nav-controls {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .nav-controls button {
+      padding: 0.5rem 1.5rem;
+      margin: 0 0.5rem;
+      background: #1a1a1a;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .nav-controls button:hover {
+      background: #007acc;
+    }
+    .nav-controls button:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+    .dark-mode-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: #1a1a1a;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    body.dark-mode .dark-mode-toggle {
+      background: #f0edea;
+      color: #1a1a1a;
+    }
+    .page-indicator {
+      text-align: center;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <button class="dark-mode-toggle" id="darkModeToggle">☀️</button>
+
+  <div id="toc" class="ship-spread active">
+    <div class="page">
+      <h2>LOOKBOOK</h2>
+      <p>SOVEREIGN AI PORTFOLIO — EVELYN CARO</p>
+      <ul>
+        <li><a href="#" onclick="goToSpread(1); return false;">Intro / Story</a></li>
+        <li><a href="#" onclick="goToSpread(2); return false;">Ship 1</a></li>
+        <li><a href="#" onclick="goToSpread(3); return false;">Ship 2</a></li>
+        <li><a href="#" onclick="goToSpread(4); return false;">Ship 3</a></li>
+        <li><a href="#" onclick="goToSpread(5); return false;">Ship 4</a></li>
+        <li><a href="#" onclick="goToSpread(6); return false;">Certifications</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="intro" class="ship-spread">
+    <div class="page">
+      <h2>Intro / Story</h2>
+      <p><strong>Sovereign AI Engineer · RAG Pipeline Architect · Lead Strategic Consultant</strong></p>
+      <p>I engineer sovereign AI systems that run locally, on my terms. Built 4 RAG pipelines. Tested them adversarially.</p>
+    </div>
+  </div>
+
+  <div id="ship1" class="ship-spread">
+    <div class="page">
+      <h2>Ship 1 — AWS SageMaker RAG</h2>
+      <p>Standard RAG pipeline on AWS SageMaker using vector databases and LLMs.</p>
+    </div>
+  </div>
+
+  <div id="ship2" class="ship-spread">
+    <div class="page">
+      <h2>Ship 2 — AWS SageMaker Agentic RAG</h2>
+      <p>Agentic RAG pipeline on AWS SageMaker — retrieval + action.</p>
+    </div>
+  </div>
+
+  <div id="ship3" class="ship-spread">
+    <div class="page">
+      <h2>Ship 3 — IBM Granite RAG</h2>
+      <p>Standard RAG pipeline on IBM Granite.</p>
+    </div>
+  </div>
+
+  <div id="ship4" class="ship-spread">
+    <div class="page">
+      <h2>Ship 4 — IBM Granite Agentic RAG</h2>
+      <p>Agentic RAG pipeline on IBM Granite.</p>
+    </div>
+  </div>
+
+  <div id="certs" class="ship-spread">
+    <div class="page">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Google AI Professional Certificate</li>
+        <li>IBM SkillsBuild — LangChain</li>
+        <li>IBM SkillsBuild — Agentic RAG</li>
+        <li>AWS re/Start — In Progress</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="nav-controls">
+    <button id="prevBtn" disabled>← Previous</button>
+    <button id="nextBtn">Next →</button>
+  </div>
+  <div class="page-indicator" id="indicator">1 / 7</div>
+
+  <script>
+    const spreads = document.querySelectorAll('.ship-spread');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicator = document.getElementById('indicator');
+    let current = 0;
+
+    function goToSpread(index) {
+      if (index < 0 || index >= spreads.length) return;
+      spreads.forEach((s, i) => {
+        s.classList.toggle('active', i === index);
+      });
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = index === spreads.length - 1;
+      indicator.textContent = (index + 1) + ' / ' + spreads.length;
+      current = index;
+    }
+
+    window.goToSpread = goToSpread;
+
+    prevBtn.addEventListener('click', () => {
+      if (current > 0) goToSpread(current - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (current < spreads.length - 1) goToSpread(current + 1);
+    });
+
+    document.getElementById('darkModeToggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      this.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
+    });
+
+    goToSpread(0);
+  </script>
+</body>
+</html>
