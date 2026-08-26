@@ -9,4 +9,4 @@ I engineer sovereign AI systems that run locally, on my terms. Built 4 RAG pipel
 
 > Sovereign systems, local first. No cloud dependency.
 
-[**Enter the Lookbook**](/portfolio/)
+[**Enter the Lookbook**](/lookbook.html)
