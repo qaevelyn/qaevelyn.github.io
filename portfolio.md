@@ -776,7 +776,7 @@ body.dark-mode .chatbot-input-area input {
   background: #005f99;
 }
 
-/* ===== FINAL DARK MODE TOGGLE ===== */
+/* ===== DARK MODE TOGGLE ===== */
 .dark-mode-toggle {
   position: fixed;
   top: 1rem;
@@ -888,12 +888,19 @@ body.dark-mode .book-page {
 }
 </style>
 
+<!-- ===== AMBIENT BACKGROUND ===== -->
 <div class="ambient-bg"></div>
+
+<!-- ===== CURSOR TRAIL ===== -->
 <div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- ===== READING PROGRESS BAR ===== -->
 <div class="progress-bar" id="progressBar"></div>
 
+<!-- ===== DARK MODE TOGGLE ===== -->
 <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">☀️</button>
 
+<!-- ===== CHATBOT ===== -->
 <button class="chatbot-toggle" id="chatbotToggle" aria-label="Ask my portfolio">💬</button>
 
 <div class="chatbot-window" id="chatbotWindow">
@@ -910,7 +917,10 @@ body.dark-mode .book-page {
   </div>
 </div>
 
+<!-- ===== LOOKBOOK CONTAINER ===== -->
 <div class="lookbook-container">
+
+  <!-- ===== FILTER BAR ===== -->
   <div class="filter-bar" id="filterBar">
     <button class="tag active" data-tag="all">All</button>
     <button class="tag" data-tag="aws">#AWS</button>
@@ -920,6 +930,7 @@ body.dark-mode .book-page {
     <button class="tag" data-tag="cert">#Certification</button>
   </div>
 
+  <!-- ===== TOC ===== -->
   <div id="toc" class="ship-spread toc active" data-tags="all">
     <h2>LOOKBOOK</h2>
     <p style="margin-bottom: 1.5rem; color: #555;">SOVEREIGN AI PORTFOLIO — EVELYN CARO</p>
@@ -933,6 +944,7 @@ body.dark-mode .book-page {
     </ul>
   </div>
 
+  <!-- ===== INTRO ===== -->
   <div id="intro" class="ship-spread intro" data-tags="all">
     <div style="grid-column: 1 / -1;">
       <h2>Intro / Story</h2>
@@ -949,6 +961,7 @@ body.dark-mode .book-page {
     </div>
   </div>
 
+  <!-- ===== SHIP 1 ===== -->
   <div id="ship-1" class="ship-spread" data-tags="aws rag">
     <div class="page">
       <h3>Ship 1</h3>
@@ -968,6 +981,7 @@ body.dark-mode .book-page {
     </div>
   </div>
 
+  <!-- ===== SHIP 2 ===== -->
   <div id="ship-2" class="ship-spread" data-tags="aws rag agentic">
     <div class="page">
       <h3>Ship 2</h3>
@@ -987,6 +1001,7 @@ body.dark-mode .book-page {
     </div>
   </div>
 
+  <!-- ===== SHIP 3 ===== -->
   <div id="ship-3" class="ship-spread" data-tags="ibm rag">
     <div class="page">
       <h3>Ship 3</h3>
@@ -1006,6 +1021,7 @@ body.dark-mode .book-page {
     </div>
   </div>
 
+  <!-- ===== SHIP 4 ===== -->
   <div id="ship-4" class="ship-spread" data-tags="ibm rag agentic">
     <div class="page">
       <h3>Ship 4</h3>
@@ -1025,6 +1041,7 @@ body.dark-mode .book-page {
     </div>
   </div>
 
+  <!-- ===== CERTS 1 ===== -->
   <div id="certs-1" class="ship-spread" data-tags="cert">
     <div class="page">
       <h3>Google AI Professional Certificate</h3>
@@ -1042,6 +1059,7 @@ body.dark-mode .book-page {
     </div>
   </div>
 
+  <!-- ===== CERTS 2 ===== -->
   <div id="certs-2" class="ship-spread" data-tags="cert">
     <div class="page">
       <h3>IBM SkillsBuild — Agentic RAG</h3>
@@ -1059,6 +1077,7 @@ body.dark-mode .book-page {
     </div>
   </div>
 
+  <!-- ===== NAVIGATION ===== -->
   <div class="nav-controls">
     <button id="prev-spread" disabled aria-label="Previous page">← Previous</button>
     <button id="autoFlipBtn" class="auto-flip-btn" aria-label="Auto-flip mode">▶ Auto-Flip</button>
@@ -1072,26 +1091,26 @@ body.dark-mode .book-page {
 (function() {
   console.log('✅ Lookbook loaded successfully — Sovereign AI Portfolio');
 
+  // ===== PAGE-TURN SOUND =====
   function playPageTurn() {
     try {
       const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-      const duration = 0.25;
+      const duration = 0.2;
       const sampleRate = audioCtx.sampleRate;
       const bufferSize = Math.floor(duration * sampleRate);
       const buffer = audioCtx.createBuffer(1, bufferSize, sampleRate);
       const data = buffer.getChannelData(0);
       for (let i = 0; i < bufferSize; i++) {
         const t = i / bufferSize;
-        const envelope = Math.sin(t * Math.PI) * 0.8 + 0.2;
-        const noise = (Math.random() * 2 - 1) * envelope * 0.5;
-        const lowFreq = Math.sin(t * 120 * Math.PI) * 0.15 * (1 - t);
-        const midFreq = Math.sin(t * 300 * Math.PI) * 0.08 * (1 - t);
-        data[i] = (noise + lowFreq + midFreq) * 0.35;
+        const envelope = Math.sin(t * Math.PI) * 0.8;
+        const noise = (Math.random() * 2 - 1) * envelope * 0.3;
+        const lowFreq = Math.sin(t * 80 * Math.PI) * 0.2 * (1 - t);
+        data[i] = (noise + lowFreq) * 0.5;
       }
       const source = audioCtx.createBufferSource();
       source.buffer = buffer;
       const gainNode = audioCtx.createGain();
-      gainNode.gain.value = 0.3;
+      gainNode.gain.value = 0.2;
       source.connect(gainNode);
       gainNode.connect(audioCtx.destination);
       source.start();
@@ -1382,70 +1401,7 @@ body.dark-mode .book-page {
     if (e.key === 'Enter') handleChat();
   });
 
-  // showSpread(current);
+  // ===== START AT TOC =====
   showSpread(0);
 })();
 </script>
-
-/* ===== FORCE GRID LAYOUT ===== */
-.ship-spread.active {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 2rem !important;
-  width: 100% !important;
-}
-
-.ship-spread.intro.active {
-  display: block !important;
-}
-
-.ship-spread.toc.active {
-  display: block !important;
-}
-
-.lookbook-container {
-  max-width: 1400px !important;
-  width: 100% !important;
-  padding: 0 1.5rem !important;
-}
-
-.ship-spread .page {
-  width: 100% !important;
-  min-height: 300px !important;
-}
-
-/* ===== DISABLE AUTO-FLIP ON LOAD ===== */
-.auto-flip-btn {
-  background: #007acc;
-  color: #fff;
-}
-
-.auto-flip-btn.active {
-  background: #e53e3e;
-}
-
-/* ===== REPLACE PAGE-TURN SOUND ===== */
-function playPageTurn() {
-  try {
-    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    const duration = 0.2;
-    const sampleRate = audioCtx.sampleRate;
-    const bufferSize = Math.floor(duration * sampleRate);
-    const buffer = audioCtx.createBuffer(1, bufferSize, sampleRate);
-    const data = buffer.getChannelData(0);
-    for (let i = 0; i < bufferSize; i++) {
-      const t = i / bufferSize;
-      const envelope = Math.sin(t * Math.PI) * 0.8;
-      const noise = (Math.random() * 2 - 1) * envelope * 0.3;
-      const lowFreq = Math.sin(t * 80 * Math.PI) * 0.2 * (1 - t);
-      data[i] = (noise + lowFreq) * 0.5;
-    }
-    const source = audioCtx.createBufferSource();
-    source.buffer = buffer;
-    const gainNode = audioCtx.createGain();
-    gainNode.gain.value = 0.2;
-    source.connect(gainNode);
-    gainNode.connect(audioCtx.destination);
-    source.start();
-  } catch (e) {}
-}
