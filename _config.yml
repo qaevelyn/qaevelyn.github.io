@@ -1,4 +1,51 @@
-# Welcome to Jekyll!
+# Site settings
+title: Evelyn Caro
+name: Evelyn Caro
+description: Sovereign AI Builder | RAG Pipeline Engineer
+email: evelyn.caro.cloud@gmail.com
+avatar: images/profile.jpg
+
+# Social links
+github_username: qaevelyn
+
+# Build settings
+markdown: kramdown
+remote_theme: academicpages/academicpages.github.io
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor# Site settings
+title: Evelyn Caro
+name: Evelyn Caro
+description: Sovereign AI Builder | RAG Pipeline Engineer
+email: evelyn.caro.cloud@gmail.com
+avatar: images/profile.jpg
+
+# Social links
+github_username: qaevelyn
+linkedin_username: ""
+
+# Build settings
+markdown: kramdown
+remote_theme: academicpages/academicpages.github.io
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -24,7 +71,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : Evelyn Caro
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
