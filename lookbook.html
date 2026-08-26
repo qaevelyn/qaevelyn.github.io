@@ -8,7 +8,6 @@
     /* ===== FONTS ===== */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
 
-    /* ===== RESET ===== */
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
@@ -166,7 +165,9 @@
     .toc ul li a .page-num { color: #888; font-weight: 400; }
 
     /* ===== NAVIGATION ===== */
-    .nav-controls { text-align: center; margin: 2rem 0 1rem; }
+    .nav-controls {
+      text-align: center; margin: 2rem 0 1rem;
+    }
     .nav-controls button {
       padding: 0.5rem 1.5rem; margin: 0 0.5rem;
       background: #1a1a1a; color: #fff; border: none; border-radius: 8px;
@@ -243,73 +244,15 @@
       border: none; border-radius: 8px; cursor: pointer; font-weight: 600;
     }
     .chatbot-input-area button:hover { background: #005f99; }
-
-    /* ===== RESUME SPREAD ===== */
-    .resume-word {
-      display: inline-block;
-      opacity: 0;
-      animation: flyIn 0.8s ease forwards;
-    }
-    .resume-word.from-left { animation-name: flyFromLeft; }
-    .resume-word.from-right { animation-name: flyFromRight; }
-    .resume-word.from-top { animation-name: flyFromTop; }
-    .resume-word.from-bottom { animation-name: flyFromBottom; }
-    .resume-word.from-spine { animation-name: flyFromSpine; }
-
-    @keyframes flyFromLeft {
-      0% { opacity: 0; transform: translateX(-200px) rotate(-5deg); }
-      100% { opacity: 1; transform: translateX(0) rotate(0deg); }
-    }
-    @keyframes flyFromRight {
-      0% { opacity: 0; transform: translateX(200px) rotate(5deg); }
-      100% { opacity: 1; transform: translateX(0) rotate(0deg); }
-    }
-    @keyframes flyFromTop {
-      0% { opacity: 0; transform: translateY(-200px) rotate(-3deg); }
-      100% { opacity: 1; transform: translateY(0) rotate(0deg); }
-    }
-    @keyframes flyFromBottom {
-      0% { opacity: 0; transform: translateY(200px) rotate(3deg); }
-      100% { opacity: 1; transform: translateY(0) rotate(0deg); }
-    }
-    @keyframes flyFromSpine {
-      0% { opacity: 0; transform: scale(0.5) translateX(-50px) rotateY(90deg); }
-      100% { opacity: 1; transform: scale(1) translateX(0) rotateY(0deg); }
-    }
-
-    .resume-section {
-      margin-bottom: 1.5rem;
-    }
-    .resume-section h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 0.3rem;
-      margin-bottom: 0.5rem;
-    }
-    .resume-section a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    .resume-section a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
-  <!-- ===== AMBIENT BACKGROUND ===== -->
   <div class="ambient-bg"></div>
-
-  <!-- ===== CURSOR TRAIL ===== -->
   <div class="cursor-trail" id="cursorTrail"></div>
-
-  <!-- ===== PROGRESS BAR ===== -->
   <div class="progress-bar" id="progressBar"></div>
 
-  <!-- ===== DARK MODE TOGGLE ===== -->
   <button class="dark-mode-toggle" id="darkModeToggle">☀️</button>
 
-  <!-- ===== CHATBOT ===== -->
   <button class="chatbot-toggle" id="chatbotToggle">💬</button>
   <div class="chatbot-window" id="chatbotWindow">
     <div class="chatbot-header">
@@ -325,10 +268,7 @@
     </div>
   </div>
 
-  <!-- ===== LOOKBOOK ===== -->
   <div class="lookbook-container">
-
-    <!-- TOC -->
     <div id="toc" class="ship-spread toc active">
       <div class="page">
         <h2>LOOKBOOK</h2>
@@ -345,7 +285,6 @@
       </div>
     </div>
 
-    <!-- INTRO -->
     <div id="intro" class="ship-spread intro">
       <div style="grid-column: 1 / -1;">
         <div class="page">
@@ -361,7 +300,6 @@
       </div>
     </div>
 
-    <!-- SHIP 1 -->
     <div id="ship1" class="ship-spread">
       <div class="page">
         <h3>Ship 1</h3>
@@ -377,16 +315,12 @@
           <a href="https://qaevelyn.github.io/ship1-aws-rag/">Live Demo</a>
         </div>
         <div class="audio-player">
-          <audio controls>
-            <source src="#" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
+          <audio controls><source src="#" type="audio/mpeg">Your browser does not support the audio element.</audio>
           <div class="transcript">🎧 Audio summary coming soon (Gemini NotebookLM)</div>
         </div>
       </div>
     </div>
 
-    <!-- SHIP 2 -->
     <div id="ship2" class="ship-spread">
       <div class="page">
         <h3>Ship 2</h3>
@@ -402,16 +336,12 @@
           <a href="https://qaevelyn.github.io/ship2-aws-agentic-rag/">Live Demo</a>
         </div>
         <div class="audio-player">
-          <audio controls>
-            <source src="#" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
+          <audio controls><source src="#" type="audio/mpeg">Your browser does not support the audio element.</audio>
           <div class="transcript">🎧 Audio summary coming soon (Gemini NotebookLM)</div>
         </div>
       </div>
     </div>
 
-    <!-- SHIP 3 -->
     <div id="ship3" class="ship-spread">
       <div class="page">
         <h3>Ship 3</h3>
@@ -427,16 +357,12 @@
           <a href="https://qaevelyn.github.io/ship3-ibm-granite-rag/">Live Demo</a>
         </div>
         <div class="audio-player">
-          <audio controls>
-            <source src="#" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
+          <audio controls><source src="#" type="audio/mpeg">Your browser does not support the audio element.</audio>
           <div class="transcript">🎧 Audio summary coming soon (Gemini NotebookLM)</div>
         </div>
       </div>
     </div>
 
-    <!-- SHIP 4 -->
     <div id="ship4" class="ship-spread">
       <div class="page">
         <h3>Ship 4</h3>
@@ -452,16 +378,12 @@
           <a href="https://qaevelyn.github.io/ship4-ibm-granite-agentic-rag/">Live Demo</a>
         </div>
         <div class="audio-player">
-          <audio controls>
-            <source src="#" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
+          <audio controls><source src="#" type="audio/mpeg">Your browser does not support the audio element.</audio>
           <div class="transcript">🎧 Audio summary coming soon (Gemini NotebookLM)</div>
         </div>
       </div>
     </div>
 
-    <!-- CERTS 1 -->
     <div id="certs1" class="ship-spread">
       <div class="page">
         <h3>Google AI Professional Certificate</h3>
@@ -479,7 +401,6 @@
       </div>
     </div>
 
-    <!-- CERTS 2 -->
     <div id="certs2" class="ship-spread">
       <div class="page">
         <h3>IBM SkillsBuild — Agentic RAG</h3>
@@ -497,54 +418,221 @@
       </div>
     </div>
 
-    <!-- RESUME SPREAD -->
     <div id="resume" class="ship-spread">
       <div class="page" style="grid-column: 1 / -1;">
         <h2 style="font-family: 'Playfair Display', serif; text-align: center; font-size: 2rem;">Resume</h2>
         <p style="text-align: center; color: #555; margin-bottom: 1.5rem;">Words fly in from the spine — each section links back to the lookbook.</p>
-
         <div id="resumeContent">
-          <!-- Summary -->
-          <div class="resume-section">
-            <h3>Summary</h3>
-            <p>
-              <span class="resume-word from-spine" style="animation-delay: 0.1s;">Sovereign</span>
-              <span class="resume-word from-spine" style="animation-delay: 0.2s;">AI</span>
-              <span class="resume-word from-spine" style="animation-delay: 0.3s;">Engineer</span>
-              <span class="resume-word from-spine" style="animation-delay: 0.4s;">·</span>
-              <span class="resume-word from-spine" style="animation-delay: 0.5s;">RAG</span>
-              <span class="resume-word from-spine" style="animation-delay: 0.6s;">Pipeline</span>
-              <span class="resume-word from-spine" style="animation-delay: 0.7s;">Architect</span>
-              <span class="resume-word from-spine" style="animation-delay: 0.8s;">·</span>
-              <span class="resume-word from-spine" style="animation-delay: 0.9s;">Lead</span>
-              <span class="resume-word from-spine" style="animation-delay: 1.0s;">Strategic</span>
-              <span class="resume-word from-spine" style="animation-delay: 1.1s;">Consultant</span>
-            </p>
-            <p>
-              <span class="resume-word from-spine" style="animation-delay: 1.3s;">I</span>
-              <span class="resume-word from-spine" style="animation-delay: 1.4s;">engineer</span>
-              <span class="resume-word from-spine" style="animation-delay: 1.5s;">sovereign</span>
-              <span class="resume-word from-spine" style="animation-delay: 1.6s;">AI</span>
-              <span class="resume-word from-spine" style="animation-delay: 1.7s;">systems</span>
-              <span class="resume-word from-spine" style="animation-delay: 1.8s;">that</span>
-              <span class="resume-word from-spine" style="animation-delay: 1.9s;">run</span>
-              <span class="resume-word from-spine" style="animation-delay: 2.0s;">locally,</span>
-              <span class="resume-word from-spine" style="animation-delay: 2.1s;">on</span>
-              <span class="resume-word from-spine" style="animation-delay: 2.2s;">my</span>
-              <span class="resume-word from-spine" style="animation-delay: 2.3s;">terms.</span>
-            </p>
+          <div class="resume-section" style="margin-bottom:1.5rem;">
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.3rem; border-bottom:2px solid #007acc; padding-bottom:0.3rem; margin-bottom:0.5rem;">Summary</h3>
+            <p><span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:0.1s;">Sovereign</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:0.2s;">AI</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:0.3s;">Engineer</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:0.4s;">·</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:0.5s;">RAG</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:0.6s;">Pipeline</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:0.7s;">Architect</span></p>
+            <p style="margin-top:0.5rem;"><span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:0.9s;">I</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:1.0s;">engineer</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:1.1s;">sovereign</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:1.2s;">AI</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:1.3s;">systems</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:1.4s;">that</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:1.5s;">run</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:1.6s;">locally,</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:1.7s;">on</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:1.8s;">my</span> <span class="resume-word from-spine" style="display:inline-block; opacity:0; animation:flyFromSpine 0.8s ease forwards; animation-delay:1.9s;">terms.</span></p>
           </div>
-
-          <!-- Education -->
+          <div class="resume-section" style="margin-bottom:1.5rem;">
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.3rem; border-bottom:2px solid #007acc; padding-bottom:0.3rem; margin-bottom:0.5rem;">Education</h3>
+            <p><span class="resume-word from-left" style="display:inline-block; opacity:0; animation:flyFromLeft 0.8s ease forwards; animation-delay:0.1s;">Per</span> <span class="resume-word from-left" style="display:inline-block; opacity:0; animation:flyFromLeft 0.8s ease forwards; animation-delay:0.2s;">Scholas</span> <span class="resume-word from-left" style="display:inline-block; opacity:0; animation:flyFromLeft 0.8s ease forwards; animation-delay:0.3s;">AWS</span> <span class="resume-word from-left" style="display:inline-block; opacity:0; animation:flyFromLeft 0.8s ease forwards; animation-delay:0.4s;">re/Start</span> <span class="resume-word from-left" style="display:inline-block; opacity:0; animation:flyFromLeft 0.8s ease forwards; animation-delay:0.5s;">—</span> <span class="resume-word from-left" style="display:inline-block; opacity:0; animation:flyFromLeft 0.8s ease forwards; animation-delay:0.6s;">In</span> <span class="resume-word from-left" style="display:inline-block; opacity:0; animation:flyFromLeft 0.8s ease forwards; animation-delay:0.7s;">Progress</span></p>
+          </div>
+          <div class="resume-section" style="margin-bottom:1.5rem;">
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.3rem; border-bottom:2px solid #007acc; padding-bottom:0.3rem; margin-bottom:0.5rem;">Certifications</h3>
+            <p><span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:0.1s;">Google</span> <span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:0.2s;">AI</span> <span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:0.3s;">Professional</span> <span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:0.4s;">Certificate</span></p>
+            <p><span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:0.6s;">IBM</span> <span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:0.7s;">SkillsBuild</span> <span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:0.8s;">—</span> <span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:0.9s;">LangChain</span></p>
+            <p><span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:1.1s;">IBM</span> <span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:1.2s;">SkillsBuild</span> <span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:1.3s;">—</span> <span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:1.4s;">Agentic</span> <span class="resume-word from-right" style="display:inline-block; opacity:0; animation:flyFromRight 0.8s ease forwards; animation-delay:1.5s;">RAG</span></p>
+          </div>
           <div class="resume-section">
-            <h3>Education</h3>
-            <p>
-              <span class="resume-word from-left" style="animation-delay: 0.1s;">Per</span>
-              <span class="resume-word from-left" style="animation-delay: 0.2s;">Scholas</span>
-              <span class="resume-word from-left" style="animation-delay: 0.3s;">AWS</span>
-              <span class="resume-word from-left" style="animation-delay: 0.4s;">re/Start</span>
-              <span class="resume-word from-left" style="animation-delay: 0.5s;">—</span>
-              <span class="resume-word from-left" style="animation-delay: 0.6s;">In</span>
-              <span class="resume-word from-left" style="animation-delay: 0.7s;">Progress</span>
-              <span class="resume-word from-left" style="animation-delay: 0.8s;">(</span>
-             
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.3rem; border-bottom:2px solid #007acc; padding-bottom:0.3rem; margin-bottom:0.5rem;">Ships</h3>
+            <p><span class="resume-word from-bottom" style="display:inline-block; opacity:0; animation:flyFromBottom 0.8s ease forwards; animation-delay:0.1s;"><a href="#" onclick="goToSpread(2); return false;">Ship 1</a></span> <span class="resume-word from-bottom" style="display:inline-block; opacity:0; animation:flyFromBottom 0.8s ease forwards; animation-delay:0.2s;">·</span> <span class="resume-word from-bottom" style="display:inline-block; opacity:0; animation:flyFromBottom 0.8s ease forwards; animation-delay:0.3s;"><a href="#" onclick="goToSpread(3); return false;">Ship 2</a></span> <span class="resume-word from-bottom" style="display:inline-block; opacity:0; animation:flyFromBottom 0.8s ease forwards; animation-delay:0.4s;">·</span> <span class="resume-word from-bottom" style="display:inline-block; opacity:0; animation:flyFromBottom 0.8s ease forwards; animation-delay:0.5s;"><a href="#" onclick="goToSpread(4); return false;">Ship 3</a></span> <span class="resume-word from-bottom" style="display:inline-block; opacity:0; animation:flyFromBottom 0.8s ease forwards; animation-delay:0.6s;">·</span> <span class="resume-word from-bottom" style="display:inline-block; opacity:0; animation:flyFromBottom 0.8s ease forwards; animation-delay:0.7s;"><a href="#" onclick="goToSpread(5); return false;">Ship 4</a></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-controls">
+      <button id="prevBtn" disabled>← Previous</button>
+      <button id="autoFlipBtn">▶ Auto-Flip</button>
+      <button id="nextBtn">Next →</button>
+    </div>
+    <div class="page-indicator" id="indicator">1 / 8</div>
+    <div class="keyboard-hint">← → arrow keys to navigate</div>
+
+    <div class="return-home">
+      <a href="/">← Return to Home</a>
+    </div>
+  </div>
+
+  <script>
+    // ============================================================
+    // NAVIGATION
+    // ============================================================
+    const spreads = document.querySelectorAll('.ship-spread');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const autoFlipBtn = document.getElementById('autoFlipBtn');
+    const indicator = document.getElementById('indicator');
+    let current = 0;
+    let autoFlipInterval = null;
+    let isAutoFlip = false;
+
+    function goToSpread(index) {
+      if (index < 0 || index >= spreads.length) return;
+      spreads.forEach((s, i) => {
+        s.classList.toggle('active', i === index);
+      });
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = index === spreads.length - 1;
+      indicator.textContent = (index + 1) + ' / ' + spreads.length;
+      current = index;
+      const progress = ((index + 1) / spreads.length) * 100;
+      document.getElementById('progressBar').style.width = progress + '%';
+    }
+
+    window.goToSpread = goToSpread;
+
+    prevBtn.addEventListener('click', () => {
+      if (current > 0) goToSpread(current - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (current < spreads.length - 1) goToSpread(current + 1);
+    });
+
+    autoFlipBtn.addEventListener('click', function() {
+      if (isAutoFlip) {
+        clearInterval(autoFlipInterval);
+        autoFlipInterval = null;
+        isAutoFlip = false;
+        this.textContent = '▶ Auto-Flip';
+      } else {
+        isAutoFlip = true;
+        this.textContent = '⏸ Pause';
+        autoFlipInterval = setInterval(() => {
+          if (current < spreads.length - 1) {
+            goToSpread(current + 1);
+          } else {
+            clearInterval(autoFlipInterval);
+            autoFlipInterval = null;
+            isAutoFlip = false;
+            autoFlipBtn.textContent = '▶ Auto-Flip';
+          }
+        }, 4000);
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' && current > 0) {
+        e.preventDefault();
+        goToSpread(current - 1);
+      } else if (e.key === 'ArrowRight' && current < spreads.length - 1) {
+        e.preventDefault();
+        goToSpread(current + 1);
+      }
+    });
+
+    // ============================================================
+    // DARK MODE
+    // ============================================================
+    document.getElementById('darkModeToggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      this.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
+    });
+
+    // ============================================================
+    // CURSOR TRAIL
+    // ============================================================
+    const trail = document.getElementById('cursorTrail');
+    document.addEventListener('mousemove', (e) => {
+      trail.style.left = e.clientX + 'px';
+      trail.style.top = e.clientY + 'px';
+    });
+
+    // ============================================================
+    // CHATBOT
+    // ============================================================
+    const chatbotToggle = document.getElementById('chatbotToggle');
+    const chatbotWindow = document.getElementById('chatbotWindow');
+    const chatbotClose = document.getElementById('chatbotClose');
+    const chatbotMessages = document.getElementById('chatbotMessages');
+    const chatbotInput = document.getElementById('chatbotInput');
+    const chatbotSend = document.getElementById('chatbotSend');
+
+    const knowledgeBase = {
+      'ship1': 'Ship 1 is a standard RAG pipeline on AWS SageMaker using vector databases and LLMs. Built locally on an M1 MacBook Air.',
+      'ship2': 'Ship 2 is an agentic RAG pipeline on AWS SageMaker that performs retrieval + action (API calls, decisions).',
+      'ship3': 'Ship 3 is a standard RAG pipeline on IBM Granite, showing cross-platform AI capabilities.',
+      'ship4': 'Ship 4 is an agentic RAG pipeline on IBM Granite with autonomous reasoning and decision-making.',
+      'cert': 'Evelyn holds certifications in AI, LangChain, and Agentic RAG from Google and IBM. She is currently in AWS re/Start.',
+      'sovereign': 'Sovereign systems are built locally, with no cloud dependency. Evelyn runs everything on her M1 MacBook Air.',
+      'default': 'I can answer questions about Evelyn\'s Ships, certifications, and sovereign AI philosophy. Ask me about Ship 1, Ship 2, AWS, IBM, RAG, or certifications!'
+    };
+
+    function getBotResponse(query) {
+      const q = query.toLowerCase();
+      if (q.includes('ship 1') || q.includes('ship1')) return knowledgeBase.ship1;
+      if (q.includes('ship 2') || q.includes('ship2')) return knowledgeBase.ship2;
+      if (q.includes('ship 3') || q.includes('ship3')) return knowledgeBase.ship3;
+      if (q.includes('ship 4') || q.includes('ship4')) return knowledgeBase.ship4;
+      if (q.includes('cert') || q.includes('credential') || q.includes('google') || q.includes('ibm') || q.includes('aws')) return knowledgeBase.cert;
+      if (q.includes('sovereign') || q.includes('local') || q.includes('macbook')) return knowledgeBase.sovereign;
+      return knowledgeBase.default;
+    }
+
+    function addMessage(text, sender) {
+      const div = document.createElement('div');
+      div.className = 'chatbot-message ' + sender;
+      div.textContent = text;
+      chatbotMessages.appendChild(div);
+      chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+
+    function handleChat() {
+      const query = chatbotInput.value.trim();
+      if (!query) return;
+      addMessage(query, 'user');
+      chatbotInput.value = '';
+      const response = getBotResponse(query);
+      setTimeout(() => addMessage(response, 'bot'), 300);
+    }
+
+    chatbotToggle.addEventListener('click', () => {
+      chatbotWindow.classList.toggle('open');
+    });
+
+    chatbotClose.addEventListener('click', () => {
+      chatbotWindow.classList.remove('open');
+    });
+
+    chatbotSend.addEventListener('click', handleChat);
+    chatbotInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleChat();
+    });
+
+    // ============================================================
+    // RESUME ANIMATION STYLES (injected for dynamic words)
+    // ============================================================
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes flyFromSpine {
+        0% { opacity: 0; transform: scale(0.5) translateX(-50px) rotateY(90deg); }
+        100% { opacity: 1; transform: scale(1) translateX(0) rotateY(0deg); }
+      }
+      @keyframes flyFromLeft {
+        0% { opacity: 0; transform: translateX(-200px) rotate(-5deg); }
+        100% { opacity: 1; transform: translateX(0) rotate(0deg); }
+      }
+      @keyframes flyFromRight {
+        0% { opacity: 0; transform: translateX(200px) rotate(5deg); }
+        100% { opacity: 1; transform: translateX(0) rotate(0deg); }
+      }
+      @keyframes flyFromBottom {
+        0% { opacity: 0; transform: translateY(200px) rotate(3deg); }
+        100% { opacity: 1; transform: translateY(0) rotate(0deg); }
+      }
+    `;
+    document.head.appendChild(style);
+
+    // ============================================================
+    // INITIALIZE
+    // ============================================================
+    goToSpread(0);
+  </script>
+</body>
+</html>

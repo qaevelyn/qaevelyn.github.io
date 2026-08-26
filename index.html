@@ -16,57 +16,61 @@
       justify-content: center;
       min-height: 100vh;
       text-align: center;
-      padding: 2rem;
+      padding: 1.5rem;
     }
     body.dark-mode {
       background: #1a1a1a;
       color: #f0edea;
     }
-    h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .tagline { font-size: 1.2rem; font-weight: 500; color: #555; margin-bottom: 1.5rem; }
+    .home-content {
+      max-width: 600px;
+      padding: 1rem 0;
+    }
+    h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .tagline { font-size: 1rem; font-weight: 500; color: #555; margin-bottom: 1rem; }
     body.dark-mode .tagline { color: #aaa; }
-    .bio { max-width: 600px; font-size: 1.1rem; line-height: 1.6; color: #333; margin-bottom: 1.5rem; }
+    .bio { font-size: 1rem; line-height: 1.5; color: #333; margin-bottom: 1rem; }
     body.dark-mode .bio { color: #ccc; }
-    blockquote { font-size: 1.1rem; border-left: 4px solid #007acc; padding-left: 1rem; margin: 1rem auto; font-style: italic; color: #555; }
+    blockquote { font-size: 1rem; border-left: 4px solid #007acc; padding-left: 0.75rem; margin: 0.75rem auto; font-style: italic; color: #555; }
     body.dark-mode blockquote { color: #aaa; }
-    .cta { display: inline-block; padding: 0.8rem 2.5rem; background: #007acc; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: background 0.2s; }
+    .cta { display: inline-block; padding: 0.6rem 2rem; background: #007acc; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1rem; transition: background 0.2s; margin-top: 0.5rem; }
     .cta:hover { background: #005f99; }
 
-    /* ===== MIRROR CHATBOT ===== */
+    /* ===== TALL NARROW MIRROR ===== */
     .mirror-container {
       position: fixed; bottom: 2rem; right: 2rem;
       display: flex; flex-direction: column; align-items: center;
       z-index: 1000;
     }
     .mirror-halo {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       color: #555;
       background: rgba(255,255,255,0.85);
-      padding: 0.3rem 0.8rem;
+      padding: 0.2rem 0.7rem;
       border-radius: 20px;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
       backdrop-filter: blur(4px);
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       text-align: center;
-      max-width: 200px;
+      max-width: 180px;
     }
     body.dark-mode .mirror-halo {
       background: rgba(26,26,26,0.85);
       color: #ccc;
     }
     .mirror-toggle {
-      width: 72px; height: 72px;
-      border-radius: 16px;
+      width: 56px; height: 84px;
+      border-radius: 12px;
       background: linear-gradient(145deg, #e8e4e0, #d6d2cd);
       box-shadow: 0 4px 24px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.6);
       border: none;
       cursor: pointer;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: flex; align-items: center; justify-content: center;
-      padding: 12px;
+      padding: 8px;
     }
     .mirror-toggle:hover {
-      transform: scale(1.05) rotate(-3deg);
+      transform: scale(1.04) rotate(-2deg);
       box-shadow: 0 6px 32px rgba(0,0,0,0.2);
     }
     body.dark-mode .mirror-toggle {
@@ -81,48 +85,47 @@
     body.dark-mode .mirror-toggle svg {
       filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
     }
+
     .mirror-window {
-      position: fixed; bottom: 6.5rem; right: 2rem;
-      width: 380px; max-width: 90vw; max-height: 70vh;
+      position: fixed; bottom: 8rem; right: 2rem;
+      width: 340px; max-width: 85vw; max-height: 65vh;
       background: #fff; border-radius: 16px;
       box-shadow: 0 8px 40px rgba(0,0,0,0.15);
       z-index: 1000;
       display: none; flex-direction: column; overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.2);
-      backdrop-filter: blur(4px);
     }
     body.dark-mode .mirror-window {
       background: #2a2a2a; color: #f0edea;
-      border-color: rgba(255,255,255,0.05);
     }
     .mirror-window.open { display: flex; }
+
     .mirror-header {
-      padding: 1rem 1.2rem;
+      padding: 0.75rem 1rem;
       background: linear-gradient(135deg, #007acc, #005f99);
       color: #fff;
       font-weight: 600;
+      font-size: 0.9rem;
       display: flex; justify-content: space-between; align-items: center;
-      border-radius: 16px 16px 0 0;
     }
     .mirror-header button {
       background: none; border: none; color: #fff; font-size: 1.2rem; cursor: pointer;
     }
     .mirror-body {
-      padding: 1rem;
+      padding: 0.75rem;
       flex: 1;
       overflow-y: auto;
-      max-height: 50vh;
+      max-height: 45vh;
     }
     .mirror-body .intro-text {
-      font-size: 0.9rem; color: #555; margin-bottom: 0.75rem;
+      font-size: 0.8rem; color: #555; margin-bottom: 0.5rem;
     }
     body.dark-mode .mirror-body .intro-text { color: #aaa; }
     .mirror-body .prompt-grid {
-      display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;
+      display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem;
     }
     .mirror-body .prompt-grid button {
-      padding: 0.3rem 0.8rem; border-radius: 16px; border: 1px solid #ddd;
-      background: #f8f6f4; color: #1a1a1a; font-size: 0.8rem;
+      padding: 0.2rem 0.6rem; border-radius: 16px; border: 1px solid #ddd;
+      background: #f8f6f4; color: #1a1a1a; font-size: 0.7rem;
       cursor: pointer; transition: background 0.2s;
     }
     body.dark-mode .mirror-body .prompt-grid button {
@@ -132,12 +135,12 @@
       background: #007acc; color: #fff; border-color: #007acc;
     }
     .mirror-message {
-      margin-bottom: 0.75rem;
-      padding: 0.6rem 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem 0.8rem;
       border-radius: 12px;
       max-width: 85%;
-      font-size: 0.9rem;
-      line-height: 1.5;
+      font-size: 0.8rem;
+      line-height: 1.4;
     }
     .mirror-message.user {
       background: #007acc; color: #fff; align-self: flex-end; margin-left: auto;
@@ -148,32 +151,36 @@
     }
     body.dark-mode .mirror-message.bot { background: #333; color: #f0edea; }
     .mirror-input-area {
-      display: flex; padding: 0.75rem; border-top: 1px solid #eee; gap: 0.5rem;
+      display: flex; padding: 0.5rem; border-top: 1px solid #eee; gap: 0.4rem;
     }
     body.dark-mode .mirror-input-area { border-top-color: #444; }
     .mirror-input-area input {
-      flex: 1; padding: 0.6rem; border: 1px solid #ddd; border-radius: 8px;
-      font-size: 0.9rem; background: #fff; color: #1a1a1a;
+      flex: 1; padding: 0.4rem 0.6rem; border: 1px solid #ddd; border-radius: 8px;
+      font-size: 0.8rem; background: #fff; color: #1a1a1a;
     }
     body.dark-mode .mirror-input-area input { background: #333; color: #f0edea; border-color: #555; }
     .mirror-input-area button {
-      padding: 0.6rem 1.2rem; background: #007acc; color: #fff;
+      padding: 0.4rem 1rem; background: #007acc; color: #fff;
       border: none; border-radius: 8px; cursor: pointer; font-weight: 600;
+      font-size: 0.8rem;
     }
     .mirror-input-area button:hover { background: #005f99; }
   </style>
 </head>
 <body>
-  <h1>Evelyn Caro</h1>
-  <div class="tagline">Sovereign AI Engineer · RAG Pipeline Architect · Lead Strategic Consultant</div>
-  <div class="bio">
-    I engineer sovereign AI systems that run locally, on my terms. Built 4 RAG pipelines. Tested them adversarially.
+  <div class="home-content">
+    <h1>Evelyn Caro</h1>
+    <div class="tagline">Sovereign AI Engineer · RAG Pipeline Architect · Lead Strategic Consultant</div>
+    <div class="bio">
+      I engineer sovereign AI systems that run locally, on my terms. Built 4 RAG pipelines. Tested them adversarially.
+    </div>
+    <blockquote>Sovereign systems, local first. No cloud dependency.</blockquote>
+    <a href="/lookbook.html" class="cta">Enter the Lookbook</a>
   </div>
-  <blockquote>Sovereign systems, local first. No cloud dependency.</blockquote>
-  <a href="/lookbook.html" class="cta">Enter the Lookbook</a>
 
+  <!-- ===== TALL NARROW MIRROR ===== -->
   <div class="mirror-container">
-    <div class="mirror-halo">✨ Ask me anything about Evelyn's work — I'm trained on her portfolio.</div>
+    <div class="mirror-halo">✨ Ask me about Evelyn's work — I'm trained on her portfolio.</div>
     <button class="mirror-toggle" id="mirrorToggle" aria-label="Ask my portfolio" title="Ask my portfolio">
       <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="4" y="4" width="56" height="56" rx="12" fill="url(#mirrorGrad)" stroke="#b0a8a0" stroke-width="1.5"/>
@@ -196,23 +203,23 @@
 
   <div class="mirror-window" id="mirrorWindow">
     <div class="mirror-header">
-      <span>🪞 Mirror — Ask My Portfolio</span>
+      <span>🪞 Mirror</span>
       <button id="mirrorClose">✕</button>
     </div>
     <div class="mirror-body" id="mirrorBody">
       <div class="intro-text">Ask me anything about Evelyn's work — I'm trained on her portfolio.</div>
       <div class="prompt-grid">
-        <button onclick="askMirror('What Ships did Evelyn build?')">What Ships did Evelyn build?</button>
-        <button onclick="askMirror('What certifications does she have?')">What certifications does she have?</button>
-        <button onclick="askMirror('What is sovereign AI?')">What is sovereign AI?</button>
-        <button onclick="askMirror('Tell me about Ship 1')">Tell me about Ship 1</button>
+        <button onclick="askMirror('What Ships did Evelyn build?')">What Ships?</button>
+        <button onclick="askMirror('What certifications does she have?')">Certifications?</button>
+        <button onclick="askMirror('What is sovereign AI?')">Sovereign AI?</button>
+        <button onclick="askMirror('Tell me about Ship 1')">Ship 1</button>
       </div>
-      <div id="mirrorMessages" style="margin-top: 1rem;">
-        <div class="mirror-message bot">Hello! I'm a mirror of Evelyn's portfolio. Ask me anything about her work, Ships, or certifications.</div>
+      <div id="mirrorMessages" style="margin-top: 0.75rem;">
+        <div class="mirror-message bot">Hello! I'm a mirror of Evelyn's portfolio. Ask me anything.</div>
       </div>
     </div>
     <div class="mirror-input-area">
-      <input type="text" id="mirrorInput" placeholder="Ask about Ships, certs, or skills...">
+      <input type="text" id="mirrorInput" placeholder="Ask me...">
       <button id="mirrorSend">Ask</button>
     </div>
   </div>
