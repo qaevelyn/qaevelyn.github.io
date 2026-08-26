@@ -1,10 +1,12 @@
 ---
 layout: splash
-title: "Sovereign AI Engineer · RAG Pipeline Architect · Lead Strategic Consultant"
+title: "Evelyn Caro · Sovereign AI Engineer"
 ---
 
 **SOVEREIGN AI ENGINEER · RAG PIPELINE ARCHITECT · LEAD STRATEGIC CONSULTANT**
 
-I engineer sovereign AI systems that run locally, on my terms. Built 4 RAG pipelines. Tested them adversarially. Now in conversation with a national historical organization partnered with a major university — proof of concept pending.
+I engineer sovereign AI systems that run locally, on my terms. Built 4 RAG pipelines. Tested them adversarially.
 
-> **Sovereign systems, local first. No cloud dependency.**
+> Sovereign systems, local first. No cloud dependency.
+
+[**Enter the Lookbook**](/portfolio/)
