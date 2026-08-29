@@ -5,85 +5,549 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lookbook — Sovereign AI Portfolio</title>
   <style>
-    /* ===== SIMPLE, CLEAN STYLES ===== */
+    /* ===== LEATHERBOUND BOOK STYLES ===== */
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #faf9f7;
-      color: #1a1a1a;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: #2c1810;
+      color: #f5e6d3;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 2rem;
+      transition: background 0.4s, color 0.4s;
     }
-    .container { max-width: 1200px; margin: 0 auto; }
-    h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .tagline { font-size: 1.2rem; font-weight: 500; color: #555; margin-bottom: 1.5rem; }
-    .bio { max-width: 600px; margin: 0 auto 1rem; line-height: 1.6; color: #333; }
-    blockquote { font-size: 1.1rem; border-left: 4px solid #007acc; padding-left: 1rem; max-width: 600px; margin: 1rem auto; font-style: italic; color: #555; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0; }
-    .card { background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
-    .badge { display: inline-block; background: #1a1a1a; color: #fff; padding: 0.2rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.75rem; }
-    .badge.aws { background: #ff9900; color: #1a1a1a; }
-    .badge.ibm { background: #0062ff; }
-    .badge.cert { background: #2d3748; }
-    .links a { display: inline-block; margin: 0.25rem 0.25rem 0 0; padding: 0.4rem 1.2rem; background: #1a1a1a; color: #fff; text-decoration: none; border-radius: 6px; font-size: 0.85rem; }
-    .links a:hover { background: #007acc; }
-    .cta { display: inline-block; padding: 0.8rem 2.5rem; background: #007acc; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; margin-top: 0.5rem; }
-    .cta:hover { background: #005f99; }
-    .nav-controls { text-align: center; margin: 2rem 0; }
-    .nav-controls button { padding: 0.5rem 1.5rem; margin: 0 0.5rem; background: #1a1a1a; color: #fff; border: none; border-radius: 8px; cursor: pointer; }
-    .nav-controls button:hover { background: #007acc; }
-    .nav-controls button:disabled { opacity: 0.3; cursor: not-allowed; }
-    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+
+    body.dark-mode {
+      background: #1a0e0a;
+      color: #d4c5b0;
+    }
+
+    /* ===== BOOK CONTAINER ===== */
+    .book-container {
+      max-width: 1200px;
+      width: 100%;
+      background: #3d2317;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8), inset 0 2px 4px rgba(255,215,175,0.1);
+      border: 2px solid #5a3a2a;
+      position: relative;
+    }
+
+    /* ===== BOOK SPINE ===== */
+    .book-spine {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30px;
+      height: 100%;
+      background: linear-gradient(to right, #2c1810, #4a2c1a, #2c1810);
+      border-radius: 20px 0 0 20px;
+      border-right: 2px solid #5a3a2a;
+    }
+
+    /* ===== BOOK PAGES ===== */
+    .book-pages {
+      padding: 2rem 2rem 1rem 3rem;
+      background: #f5e6d3;
+      color: #2c1810;
+      border-radius: 8px;
+      min-height: 500px;
+      box-shadow: inset 0 0 30px rgba(44,24,16,0.1);
+      transition: background 0.4s, color 0.4s;
+    }
+
+    body.dark-mode .book-pages {
+      background: #2a1a10;
+      color: #d4c5b0;
+    }
+
+    /* ===== SPREADS ===== */
+    .spread {
+      display: none;
+      gap: 2rem;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .spread.active {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .spread.intro.active {
+      display: block;
+    }
+
+    .spread.intro .page {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .spread .page {
+      background: rgba(255, 248, 235, 0.6);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: inset 0 0 20px rgba(44,24,16,0.05);
+      backdrop-filter: blur(2px);
+    }
+
+    body.dark-mode .spread .page {
+      background: rgba(60, 40, 30, 0.6);
+    }
+
+    .spread .page h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2c1810;
+      margin-bottom: 0.5rem;
+      font-family: 'Georgia', serif;
+    }
+
+    body.dark-mode .spread .page h2 {
+      color: #f5e6d3;
+    }
+
+    .spread .page h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #2c1810;
+      margin-bottom: 0.25rem;
+    }
+
+    body.dark-mode .spread .page h3 {
+      color: #f5e6d3;
+    }
+
+    .spread .page .badge {
+      display: inline-block;
+      padding: 0.2rem 1rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 0.5rem 0;
+    }
+
+    .spread .page .badge.aws { background: #ff9900; color: #1a1a1a; }
+    .spread .page .badge.ibm { background: #0062ff; color: #fff; }
+    .spread .page .badge.cert { background: #2d3748; color: #fff; }
+
+    .spread .page .links a {
+      display: inline-block;
+      margin: 0.25rem 0.25rem 0 0;
+      padding: 0.4rem 1.2rem;
+      background: #2c1810;
+      color: #f5e6d3;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      transition: background 0.2s;
+    }
+
+    body.dark-mode .spread .page .links a {
+      background: #f5e6d3;
+      color: #2c1810;
+    }
+
+    .spread .page .links a:hover {
+      background: #007acc;
+      color: #fff;
+    }
+
+    .spread .page p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #3d2317;
+    }
+
+    body.dark-mode .spread .page p {
+      color: #d4c5b0;
+    }
+
+    /* ===== TOC ===== */
+    .toc ul {
+      list-style: none;
+      padding: 0;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .toc ul li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(44,24,16,0.1);
+      font-size: 1.1rem;
+    }
+
+    body.dark-mode .toc ul li {
+      border-bottom-color: rgba(255,248,235,0.1);
+    }
+
+    .toc ul li a {
+      color: #2c1810;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    body.dark-mode .toc ul li a {
+      color: #f5e6d3;
+    }
+
+    .toc ul li a:hover {
+      color: #007acc;
+    }
+
+    /* ===== SUN/MOON TOGGLE ===== */
+    .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(44,24,16,0.8);
+      color: #f5e6d3;
+      border: 2px solid #5a3a2a;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      font-size: 1.4rem;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.08);
+      background: #5a3a2a;
+    }
+
+    body.dark-mode .theme-toggle {
+      background: rgba(26,14,10,0.9);
+      border-color: #3d2317;
+    }
+
+    /* ===== NAVIGATION ===== */
+    .nav-controls {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding: 1rem 0;
+    }
+
+    .nav-controls button {
+      padding: 0.6rem 1.8rem;
+      background: #2c1810;
+      color: #f5e6d3;
+      border: 2px solid #5a3a2a;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: 'Georgia', serif;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    body.dark-mode .nav-controls button {
+      background: #f5e6d3;
+      color: #2c1810;
+    }
+
+    .nav-controls button:hover {
+      background: #5a3a2a;
+      color: #f5e6d3;
+    }
+
+    body.dark-mode .nav-controls button:hover {
+      background: #3d2317;
+      color: #f5e6d3;
+    }
+
+    .nav-controls button:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    .page-indicator {
+      text-align: center;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      color: #5a3a2a;
+    }
+
+    body.dark-mode .page-indicator {
+      color: #8a7a6a;
+    }
+
+    /* ===== KEYBOARD HINT ===== */
+    .keyboard-hint {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #5a3a2a;
+      margin-top: 0.5rem;
+    }
+
+    body.dark-mode .keyboard-hint {
+      color: #6a5a4a;
+    }
+
+    .return-home {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .return-home a {
+      color: #5a3a2a;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    body.dark-mode .return-home a {
+      color: #8a7a6a;
+    }
+
+    .return-home a:hover {
+      border-bottom-color: #5a3a2a;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 700px) {
+      .spread.active {
+        grid-template-columns: 1fr;
+      }
+      .book-pages {
+        padding: 1rem;
+      }
+      .book-spine {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Evelyn Caro</h1>
-    <div class="tagline">Sovereign AI Engineer · RAG Pipeline Architect · Lead Strategic Consultant</div>
-    <div class="bio">
-      I engineer sovereign AI systems that run locally, on my terms. Built 4 RAG pipelines. Tested them adversarially.
-    </div>
-    <blockquote>Sovereign systems, local first. No cloud dependency.</blockquote>
-    <a href="/" class="cta">← Return to Home</a>
 
-    <h2 style="margin-top: 2rem;">Ships 1–4</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Ship 1 — AWS SageMaker RAG</h3>
-        <div class="badge aws">Standard RAG</div>
-        <p>Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models.</p>
-        <div class="links">
-          <a href="https://github.com/qaevelyn/ship1-aws-rag">GitHub</a>
-          <a href="https://evelyncaro.github.io/ship1-aws-rag/">Live Demo</a>
+  <!-- ===== SUN/MOON TOGGLE ===== -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+
+  <!-- ===== BOOK ===== -->
+  <div class="book-container">
+    <div class="book-spine"></div>
+
+    <div class="book-pages">
+
+      <!-- ===== TOC ===== -->
+      <div id="toc" class="spread toc active">
+        <div class="page">
+          <h2 style="text-align:center; font-size: 2.2rem;">LOOKBOOK</h2>
+          <p style="text-align:center; margin-bottom: 1.5rem;">Sovereign AI Portfolio — Evelyn Caro</p>
+          <ul>
+            <li><a href="#" onclick="goToSpread(1); return false;">Intro / Story <span>Pages 2–3</span></a></li>
+            <li><a href="#" onclick="goToSpread(2); return false;">Ship 1 — AWS SageMaker RAG <span>Pages 4–5</span></a></li>
+            <li><a href="#" onclick="goToSpread(3); return false;">Ship 2 — AWS SageMaker Agentic RAG <span>Pages 6–7</span></a></li>
+            <li><a href="#" onclick="goToSpread(4); return false;">Ship 3 — IBM Granite RAG <span>Pages 8–9</span></a></li>
+            <li><a href="#" onclick="goToSpread(5); return false;">Ship 4 — IBM Granite Agentic RAG <span>Pages 10–11</span></a></li>
+            <li><a href="#" onclick="goToSpread(6); return false;">Certifications <span>Pages 12–13</span></a></li>
+          </ul>
         </div>
       </div>
-      <div class="card">
-        <h3>Ship 2 — AWS SageMaker Agentic RAG</h3>
-        <div class="badge aws">Agentic RAG</div>
-        <p>Agentic RAG pipeline on AWS SageMaker — retrieval + action (API calls, decision-making).</p>
-        <div class="links">
-          <a href="https://github.com/qaevelyn/ship2-aws-agentic-rag">GitHub</a>
-          <a href="https://evelyncaro.github.io/ship2-aws-agentic-rag/">Live Demo</a>
+
+      <!-- ===== INTRO ===== -->
+      <div id="intro" class="spread intro">
+        <div class="page">
+          <h2>Intro / Story</h2>
+          <p style="font-size:1.2rem; font-weight:600; margin-bottom:0.5rem;">Sovereign AI Engineer · RAG Pipeline Architect · Lead Strategic Consultant</p>
+          <p style="line-height:1.7;">I engineer sovereign AI systems that run locally, on my terms. Built 4 RAG pipelines. Tested them adversarially. Now in conversation with a national historical organization partnered with a major university — proof of concept pending.</p>
+          <p style="margin-top:0.75rem;">This portfolio is a lookbook of my work — Ships first, then the credentials that built the foundation.</p>
+          <blockquote style="border-left:4px solid #007acc; padding-left:1rem; margin:1rem 0; font-style:italic;">Sovereign systems, local first. No cloud dependency.</blockquote>
+          <div style="background:rgba(44,24,16,0.05); padding:1rem; border-radius:8px; margin-top:1rem;">
+            <strong>Credentials, not calendar:</strong> I hold certifications in AI, LangChain, and Agentic RAG from Google and IBM. I am currently adding AWS enterprise cloud certification through the Per Scholas re/Start program.
+          </div>
         </div>
       </div>
-      <div class="card">
-        <h3>Ship 3 — IBM Granite RAG</h3>
-        <div class="badge ibm">Standard RAG</div>
-        <p>RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities.</p>
-        <div class="links">
-          <a href="https://github.com/qaevelyn/ship3-ibm-granite-rag">GitHub</a>
-          <a href="https://evelyncaro.github.io/ship3-ibm-granite-rag/">Live Demo</a>
+
+      <!-- ===== SHIP 1 ===== -->
+      <div id="ship1" class="spread">
+        <div class="page">
+          <h3>Ship 1</h3>
+          <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
+            📸 Screenshot / GUI coming soon
+          </div>
+          <p style="font-size:0.9rem; color:#5a3a2a;"><em>AWS SageMaker · Standard RAG</em></p>
+        </div>
+        <div class="page">
+          <h3>Ship 1 — AWS SageMaker RAG</h3>
+          <div class="badge aws">Standard RAG</div>
+          <p style="line-height:1.6;">Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an M1 MacBook Air.</p>
+          <div class="links">
+            <a href="https://github.com/qaevelyn/ship1-aws-rag">GitHub</a>
+            <a href="https://evelyncaro-github-io.vercel.app/ship1-aws-rag/">Live Demo</a>
+          </div>
+          <p style="font-size:0.85rem; margin-top:0.5rem;">🎧 Audio summary coming soon</p>
         </div>
       </div>
-      <div class="card">
-        <h3>Ship 4 — IBM Granite Agentic RAG</h3>
-        <div class="badge ibm">Agentic RAG</div>
-        <p>Agentic RAG pipeline on IBM Granite — retrieval + action. Cross-platform agentic architecture.</p>
-        <div class="links">
-          <a href="https://github.com/qaevelyn/ship4-ibm-granite-agentic-rag">GitHub</a>
-          <a href="https://evelyncaro.github.io/ship4-ibm-granite-agentic-rag/">Live Demo</a>
+
+      <!-- ===== SHIP 2 ===== -->
+      <div id="ship2" class="spread">
+        <div class="page">
+          <h3>Ship 2</h3>
+          <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
+            📸 Screenshot / GUI coming soon
+          </div>
+          <p style="font-size:0.9rem; color:#5a3a2a;"><em>AWS SageMaker · Agentic RAG</em></p>
+        </div>
+        <div class="page">
+          <h3>Ship 2 — AWS SageMaker Agentic RAG</h3>
+          <div class="badge aws">Agentic RAG</div>
+          <p style="line-height:1.6;">Agentic RAG pipeline on AWS SageMaker — retrieval + action (API calls, decision-making). Demonstrates autonomous reasoning and tool use.</p>
+          <div class="links">
+            <a href="https://github.com/qaevelyn/ship2-aws-agentic-rag">GitHub</a>
+            <a href="https://evelyncaro-github-io.vercel.app/ship2-aws-agentic-rag/">Live Demo</a>
+          </div>
+          <p style="font-size:0.85rem; margin-top:0.5rem;">🎧 Audio summary coming soon</p>
         </div>
       </div>
-    </div>
-  </div>
+
+      <!-- ===== SHIP 3 ===== -->
+      <div id="ship3" class="spread">
+        <div class="page">
+          <h3>Ship 3</h3>
+          <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
+            📸 Screenshot / GUI coming soon
+          </div>
+          <p style="font-size:0.9rem; color:#5a3a2a;"><em>IBM Granite · Standard RAG</em></p>
+        </div>
+        <div class="page">
+          <h3>Ship 3 — IBM Granite RAG</h3>
+          <div class="badge ibm">Standard RAG</div>
+          <p style="line-height:1.6;">RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility.</p>
+          <div class="links">
+            <a href="https://github.com/qaevelyn/ship3-ibm-granite-rag">GitHub</a>
+            <a href="https://evelyncaro-github-io.vercel.app/ship3-ibm-granite-rag/">Live Demo</a>
+          </div>
+          <p style="font-size:0.85rem; margin-top:0.5rem;">🎧 Audio summary coming soon</p>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 4 ===== -->
+      <div id="ship4" class="spread">
+        <div class="page">
+          <h3>Ship 4</h3>
+          <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
+            📸 Screenshot / GUI coming soon
+          </div>
+          <p style="font-size:0.9rem; color:#5a3a2a;"><em>IBM Granite · Agentic RAG</em></p>
+        </div>
+        <div class="page">
+          <h3>Ship 4 — IBM Granite Agentic RAG</h3>
+          <div class="badge ibm">Agentic RAG</div>
+          <p style="line-height:1.6;">Agentic RAG pipeline on IBM Granite — retrieval + action. Cross-platform agentic architecture with autonomous reasoning and decision-making.</p>
+          <div class="links">
+            <a href="https://github.com/qaevelyn/ship4-ibm-granite-agentic-rag">GitHub</a>
+            <a href="https://evelyncaro-github-io.vercel.app/ship4-ibm-granite-agentic-rag/">Live Demo</a>
+          </div>
+          <p style="font-size:0.85rem; margin-top:0.5rem;">🎧 Audio summary coming soon</p>
+        </div>
+      </div>
+
+      <!-- ===== CERTIFICATIONS ===== -->
+      <div id="certs" class="spread">
+        <div class="page">
+          <h3>Google AI Professional Certificate</h3>
+          <div class="badge cert">AI · ML</div>
+          <p style="font-size:0.9rem; margin-top:0.5rem;">Foundational AI and machine learning skills.</p>
+          <div style="margin-top:0.5rem;">
+            <a href="https://developers.google.com/machine-learning" target="_blank" style="color:#007acc; text-decoration:none;">developers.google.com</a>
+          </div>
+        </div>
+        <div class="page">
+          <h3>IBM SkillsBuild — LangChain</h3>
+          <div class="badge cert">LangChain</div>
+          <p style="font-size:0.9rem; margin-top:0.5rem;">LangChain for building LLM-powered applications.</p>
+          <div style="margin-top:0.5rem;">
+            <a href="https://www.ibm.com/skillsbuild" target="_blank" style="color:#007acc; text-decoration:none;">ibm.com/skillsbuild</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== NAVIGATION ===== -->
+      <div class="nav-controls">
+        <button id="prevBtn" disabled>← Previous</button>
+        <button id="nextBtn">Next →</button>
+      </div>
+      <div class="page-indicator" id="indicator">1 / 6</div>
+      <div class="keyboard-hint">← → arrow keys to navigate</div>
+
+      <div class="return-home">
+        <a href="/">← Return to Home</a>
+      </div>
+
+    </div><!-- end book-pages -->
+  </div><!-- end book-container -->
+
+  <script>
+    // ============================================================
+    // NAVIGATION
+    // ============================================================
+    const spreads = document.querySelectorAll('.spread');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicator = document.getElementById('indicator');
+    let current = 0;
+
+    function goToSpread(index) {
+      if (index < 0 || index >= spreads.length) return;
+      spreads.forEach((s, i) => {
+        s.classList.toggle('active', i === index);
+      });
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = index === spreads.length - 1;
+      indicator.textContent = (index + 1) + ' / ' + spreads.length;
+      current = index;
+    }
+
+    window.goToSpread = goToSpread;
+
+    prevBtn.addEventListener('click', () => {
+      if (current > 0) goToSpread(current - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (current < spreads.length - 1) goToSpread(current + 1);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' && current > 0) {
+        e.preventDefault();
+        goToSpread(current - 1);
+      } else if (e.key === 'ArrowRight' && current < spreads.length - 1) {
+        e.preventDefault();
+        goToSpread(current + 1);
+      }
+    });
+
+    // ============================================================
+    // THEME TOGGLE (Sun/Moon)
+    // ============================================================
+    document.getElementById('themeToggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      this.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
+    });
+
+    // ============================================================
+    // INITIALIZE
+    // ============================================================
+    goToSpread(0);
+  </script>
+
 </body>
 </html>
