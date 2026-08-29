@@ -21,3 +21,11 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+*.pdf
+files/
+*.txt
+AWS_Fundamentals_ML_AI_EvelynCaro_2026-06-08.pdf
+ComputerHardwareBasicsUpdate20260126-33-ioi01d.pdf
+OperatingSystemsBasicsUpdate20260126-31-vs58m5.pdf
+google analytics Measurement ID (G-WV5JKK585K).txt
+*.sh
