@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Mirror of My Becoming</title>
   <style>
-    /* ===== LEATHERBOUND BOOK + 3D + MIRROR ===== */
+    /* ===== LEATHERBOUND BOOK + STANDING MIRROR + SUN/MOON + HEAVY SOUND ===== */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
@@ -17,7 +17,7 @@
       justify-content: center;
       align-items: center;
       padding: 2rem;
-      transition: background 0.4s;
+      transition: background 0.4s, color 0.4s;
     }
 
     body.dark-mode {
@@ -25,7 +25,34 @@
       color: #d4c5b0;
     }
 
-    /* ===== 3D BOOK CONTAINER ===== */
+    /* ===== SUN/MOON TOGGLE ===== */
+    .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(44,24,16,0.8);
+      color: #f5e6d3;
+      border: 2px solid #5a3a2a;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      font-size: 1.4rem;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.08);
+      background: #5a3a2a;
+    }
+
+    body.dark-mode .theme-toggle {
+      background: rgba(26,14,10,0.9);
+      border-color: #3d2317;
+    }
+
+    /* ===== BOOK CONTAINER ===== */
     .book-container {
       max-width: 1200px;
       width: 100%;
@@ -59,7 +86,6 @@
       min-height: 500px;
       box-shadow: inset 0 0 30px rgba(44,24,16,0.1), 8px 0 20px rgba(0,0,0,0.2);
       transition: background 0.4s, color 0.4s, transform 0.3s;
-      transform: rotateY(0deg);
       transform-origin: left center;
       backface-visibility: hidden;
     }
@@ -78,8 +104,6 @@
       background: linear-gradient(to right, #2c1810, #4a2c1a, #2c1810);
       border-radius: 20px 0 0 20px;
       border-right: 2px solid #5a3a2a;
-      transform: rotateY(0deg);
-      transform-origin: left center;
     }
 
     /* ===== COVER ===== */
@@ -91,6 +115,16 @@
       border-radius: 12px;
       border: 3px solid #5a3a2a;
       box-shadow: inset 0 0 40px rgba(0,0,0,0.4);
+      position: relative;
+    }
+
+    .cover::before {
+      content: '';
+      position: absolute;
+      top: 10px; left: 10px; right: 10px; bottom: 10px;
+      border: 1px solid rgba(255,215,175,0.1);
+      border-radius: 8px;
+      pointer-events: none;
     }
 
     .cover.active {
@@ -100,9 +134,9 @@
     .cover h1 {
       font-size: 3.5rem;
       font-family: 'Georgia', serif;
-      color: #f5e6d3;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-      letter-spacing: 2px;
+      color: #d4af37;
+      text-shadow: 0 2px 12px rgba(212,175,55,0.2), 0 4px 20px rgba(0,0,0,0.5);
+      letter-spacing: 3px;
       margin-bottom: 0.5rem;
     }
 
@@ -110,15 +144,17 @@
       font-size: 1.4rem;
       color: #c4a88a;
       font-style: italic;
+      letter-spacing: 1px;
       margin-bottom: 2rem;
     }
 
     .cover .byline {
       font-size: 1.2rem;
-      color: #a08060;
-      border-top: 1px solid #5a3a2a;
+      color: #d4af37;
+      border-top: 1px solid #d4af37;
       padding-top: 1rem;
       display: inline-block;
+      letter-spacing: 2px;
     }
 
     .cover .open-btn {
@@ -126,13 +162,14 @@
       margin-top: 2rem;
       padding: 0.8rem 2.5rem;
       background: #5a3a2a;
-      color: #f5e6d3;
-      border: 2px solid #7a5a4a;
+      color: #d4af37;
+      border: 2px solid #d4af37;
       border-radius: 8px;
       font-size: 1.1rem;
       font-family: 'Georgia', serif;
       cursor: pointer;
       transition: background 0.3s, transform 0.2s;
+      letter-spacing: 1px;
     }
 
     .cover .open-btn:hover {
@@ -285,14 +322,8 @@
     }
 
     @keyframes flyFromLeftStack {
-      0% {
-        opacity: 0;
-        transform: translateX(-120px) rotate(-3deg) scale(0.8);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0) rotate(0deg) scale(1);
-      }
+      0% { opacity: 0; transform: translateX(-120px) rotate(-3deg) scale(0.8); }
+      100% { opacity: 1; transform: translateX(0) rotate(0deg) scale(1); }
     }
 
     .resume-word .origin {
@@ -412,116 +443,139 @@
       color: #6a5a4a;
     }
 
-    .return-home {
-      text-align: center;
-      margin: 1rem 0;
-    }
-
-    .return-home a {
-      color: #3d2317;
-      text-decoration: none;
-      font-size: 0.9rem;
-      padding: 0.4rem 1.2rem;
-      background: #f5e6d3;
-      border: 2px solid #5a3a2a;
+    /* ===== PLAY/PAUSE BUTTON ===== */
+    #playBtn {
+      padding: 0.6rem 1.8rem;
+      background: #3d2317;
+      color: #d4af37;
+      border: 2px solid #d4af37;
       border-radius: 8px;
+      font-size: 1rem;
+      font-family: 'Georgia', serif;
+      cursor: pointer;
       transition: background 0.2s;
     }
 
-    body.dark-mode .return-home a {
-      color: #f5e6d3;
-      background: #3d2317;
+    #playBtn:hover {
+      background: #5a3a2a;
     }
 
-    .return-home a:hover {
+    #playBtn.playing {
       background: #5a3a2a;
       color: #f5e6d3;
+      border-color: #5a3a2a;
     }
 
-    /* ===== MIRROR (Free-floating inside book) ===== */
-    .mirror-float {
+    /* ===== STANDING FANCY FRAMED MIRROR ===== */
+    .mirror-standing {
       position: fixed;
       bottom: 2rem;
       right: 2rem;
-      width: 120px;
-      height: 160px;
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      width: 90px;
+      height: 260px;
+      border-radius: 30px 30px 10px 10px;
       background: linear-gradient(145deg, #d4c5b0, #a08060);
-      box-shadow: 0 8px 30px rgba(0,0,0,0.4), inset 0 2px 10px rgba(255,255,255,0.2);
-      border: 4px solid #5a3a2a;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5), inset 0 2px 10px rgba(255,255,255,0.2);
+      border: 6px solid #5a3a2a;
+      border-bottom: 12px solid #3d2317;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 0.8rem;
-      cursor: grab;
       z-index: 1000;
-      transition: box-shadow 0.3s;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
       user-select: none;
+      position: relative;
     }
 
-    .mirror-float:hover {
-      box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    .mirror-standing::before {
+      content: '';
+      position: absolute;
+      top: -6px; left: -6px; right: -6px; bottom: -6px;
+      border-radius: 34px 34px 14px 14px;
+      border: 2px solid #d4af37;
+      pointer-events: none;
+      opacity: 0.3;
     }
 
-    .mirror-float .halo {
+    .mirror-standing:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 50px rgba(0,0,0,0.6);
+    }
+
+    .mirror-standing .halo {
       font-size: 0.6rem;
       color: #2c1810;
       text-align: center;
       font-weight: 600;
       letter-spacing: 0.5px;
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.3rem;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      opacity: 0.7;
     }
 
-    .mirror-float .prompt-box {
-      font-size: 0.6rem;
-      padding: 0.2rem 0.6rem;
+    .mirror-standing .prompt-box {
+      font-size: 0.55rem;
+      padding: 0.2rem 0.5rem;
       background: rgba(44,24,16,0.1);
       border-radius: 16px;
       cursor: pointer;
       border: 1px solid rgba(44,24,16,0.15);
       transition: background 0.2s;
+      text-align: center;
+      line-height: 1.2;
     }
 
-    .mirror-float .prompt-box:hover {
+    .mirror-standing .prompt-box:hover {
       background: rgba(44,24,16,0.2);
     }
 
-    .mirror-float .mirror-chat {
+    .mirror-standing .mirror-chat {
       display: none;
       width: 100%;
       flex-direction: column;
       gap: 0.3rem;
+      background: rgba(255,248,235,0.9);
+      border-radius: 12px;
+      padding: 0.5rem;
+      backdrop-filter: blur(4px);
+      border: 1px solid #5a3a2a;
     }
 
-    .mirror-float .mirror-chat.open {
+    .mirror-standing .mirror-chat.open {
       display: flex;
     }
 
-    .mirror-float .mirror-chat .message {
-      font-size: 0.7rem;
+    .mirror-standing .mirror-chat .message {
+      font-size: 0.65rem;
       padding: 0.3rem 0.6rem;
       border-radius: 12px;
-      background: rgba(44,24,16,0.05);
       color: #2c1810;
     }
 
-    .mirror-float .mirror-chat .message.user {
+    .mirror-standing .mirror-chat .message.bot {
+      background: rgba(44,24,16,0.05);
+    }
+
+    .mirror-standing .mirror-chat .message.user {
       background: rgba(44,24,16,0.15);
       align-self: flex-end;
     }
 
-    .mirror-float .mirror-chat input {
+    .mirror-standing .mirror-chat input {
       padding: 0.3rem 0.6rem;
       border: 1px solid #5a3a2a;
       border-radius: 20px;
-      background: rgba(255,248,235,0.8);
+      background: rgba(255,248,235,0.9);
       font-family: 'Georgia', serif;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       width: 100%;
     }
 
-    .mirror-float .mirror-chat input:focus {
+    .mirror-standing .mirror-chat input:focus {
       outline: none;
       border-color: #007acc;
     }
@@ -533,33 +587,22 @@
     }
 
     @media (max-width: 700px) {
-      .spread.active {
-        grid-template-columns: 1fr;
-      }
-      .book-pages {
-        padding: 1rem;
-      }
-      .book-spine {
-        display: none;
-      }
-      .cover h1 {
-        font-size: 2.2rem;
-      }
-      .mirror-float {
-        width: 90px;
-        height: 130px;
-        bottom: 1rem;
-        right: 1rem;
-      }
-      .mirror-float .halo {
-        font-size: 0.5rem;
-      }
+      .spread.active { grid-template-columns: 1fr; }
+      .book-pages { padding: 1rem; }
+      .book-spine { display: none; }
+      .cover h1 { font-size: 2.2rem; }
+      .mirror-standing { width: 60px; height: 180px; bottom: 1rem; right: 1rem; }
+      .mirror-standing .halo { font-size: 0.5rem; }
+      .mirror-standing .prompt-box { font-size: 0.5rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ===== 3D BOOK ===== -->
+  <!-- ===== SUN/MOON TOGGLE ===== -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+
+  <!-- ===== BOOK ===== -->
   <div class="book-container">
     <div class="book-spine"></div>
 
@@ -609,9 +652,7 @@
         <div id="ship1" class="spread">
           <div class="page">
             <h3>Ship 1</h3>
-            <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
-              📸 Screenshot / GUI coming soon
-            </div>
+            <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">📸 Screenshot / GUI coming soon</div>
             <p style="font-size:0.9rem; color:#5a3a2a;"><em>AWS SageMaker · Standard RAG</em></p>
           </div>
           <div class="page">
@@ -630,9 +671,7 @@
         <div id="ship2" class="spread">
           <div class="page">
             <h3>Ship 2</h3>
-            <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
-              📸 Screenshot / GUI coming soon
-            </div>
+            <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">📸 Screenshot / GUI coming soon</div>
             <p style="font-size:0.9rem; color:#5a3a2a;"><em>AWS SageMaker · Agentic RAG</em></p>
           </div>
           <div class="page">
@@ -651,9 +690,7 @@
         <div id="ship3" class="spread">
           <div class="page">
             <h3>Ship 3</h3>
-            <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
-              📸 Screenshot / GUI coming soon
-            </div>
+            <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">📸 Screenshot / GUI coming soon</div>
             <p style="font-size:0.9rem; color:#5a3a2a;"><em>IBM Granite · Standard RAG</em></p>
           </div>
           <div class="page">
@@ -672,9 +709,7 @@
         <div id="ship4" class="spread">
           <div class="page">
             <h3>Ship 4</h3>
-            <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
-              📸 Screenshot / GUI coming soon
-            </div>
+            <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">📸 Screenshot / GUI coming soon</div>
             <p style="font-size:0.9rem; color:#5a3a2a;"><em>IBM Granite · Agentic RAG</em></p>
           </div>
           <div class="page">
@@ -695,17 +730,13 @@
             <h3>Google AI Professional Certificate</h3>
             <div class="badge cert">AI · ML</div>
             <p style="font-size:0.9rem; margin-top:0.5rem;">Foundational AI and machine learning skills.</p>
-            <div style="margin-top:0.5rem;">
-              <a href="https://developers.google.com/machine-learning" target="_blank" style="color:#007acc; text-decoration:none;">developers.google.com</a>
-            </div>
+            <div style="margin-top:0.5rem;"><a href="https://developers.google.com/machine-learning" target="_blank" style="color:#007acc; text-decoration:none;">developers.google.com</a></div>
           </div>
           <div class="page">
             <h3>IBM SkillsBuild — LangChain</h3>
             <div class="badge cert">LangChain</div>
             <p style="font-size:0.9rem; margin-top:0.5rem;">LangChain for building LLM-powered applications.</p>
-            <div style="margin-top:0.5rem;">
-              <a href="https://www.ibm.com/skillsbuild" target="_blank" style="color:#007acc; text-decoration:none;">ibm.com/skillsbuild</a>
-            </div>
+            <div style="margin-top:0.5rem;"><a href="https://www.ibm.com/skillsbuild" target="_blank" style="color:#007acc; text-decoration:none;">ibm.com/skillsbuild</a></div>
           </div>
         </div>
 
@@ -805,22 +836,17 @@
         <div class="page-indicator" id="indicator">Cover</div>
         <div class="keyboard-hint">← → arrow keys to navigate · Play to auto-flip</div>
 
-        <div class="return-home">
-          <a href="/" class="brown-btn">← Return to Home</a>
-        </div>
-
       </div><!-- end book-pages -->
     </div><!-- end book -->
   </div><!-- end book-container -->
 
-  <!-- ===== FREE-FLOATING MIRROR ===== -->
-  <div class="mirror-float" id="floatMirror">
+  <!-- ===== STANDING FANCY FRAMED MIRROR ===== -->
+  <div class="mirror-standing" id="mirrorStanding">
     <div class="halo">✨ A Mirror of My Becoming</div>
     <div class="prompt-box" id="mirrorPrompt">Ask me anything...</div>
-    <div class="mirror-chat" id="floatChat">
+    <div class="mirror-chat" id="mirrorChat">
       <div class="message bot">Hello! I'm a mirror of Evelyn's portfolio.</div>
-      <div class="message user" id="floatUserMsg">What Ships did she build?</div>
-      <input type="text" id="floatInput" placeholder="Ask me...">
+      <input type="text" id="mirrorInput" placeholder="Ask me...">
     </div>
   </div>
 
@@ -835,7 +861,7 @@
     const playBtn = document.getElementById('playBtn');
     const indicator = document.getElementById('indicator');
     const book3d = document.getElementById('book3d');
-    let current = -1; // -1 = cover
+    let current = -1;
     let autoFlipInterval = null;
     let isPlaying = false;
 
@@ -855,7 +881,6 @@
       nextBtn.disabled = index === spreads.length - 1;
       indicator.textContent = (index + 1) + ' / ' + spreads.length;
       current = index;
-      // Page-turn sound
       playPageTurn();
     }
 
@@ -870,7 +895,7 @@
     });
 
     // ============================================================
-    // PLAY / PAUSE (Auto-Flip)
+    // PLAY / PAUSE
     // ============================================================
     playBtn.addEventListener('click', function() {
       if (isPlaying) {
@@ -878,9 +903,11 @@
         autoFlipInterval = null;
         isPlaying = false;
         this.textContent = '▶ Play';
+        this.classList.remove('playing');
       } else {
         isPlaying = true;
         this.textContent = '⏸ Pause';
+        this.classList.add('playing');
         autoFlipInterval = setInterval(() => {
           if (current < spreads.length - 1) {
             goToSpread(current + 1);
@@ -889,6 +916,7 @@
             autoFlipInterval = null;
             isPlaying = false;
             playBtn.textContent = '▶ Play';
+            playBtn.classList.remove('playing');
           }
         }, 4000);
       }
@@ -908,28 +936,29 @@
     });
 
     // ============================================================
-    // PAGE-TURN SOUND (Heavy Paper)
+    // PAGE-TURN SOUND — Heavy Paper Rustle
     // ============================================================
     function playPageTurn() {
       try {
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        const duration = 0.25;
+        const duration = 0.3;
         const sampleRate = audioCtx.sampleRate;
         const bufferSize = Math.floor(duration * sampleRate);
         const buffer = audioCtx.createBuffer(1, bufferSize, sampleRate);
         const data = buffer.getChannelData(0);
         for (let i = 0; i < bufferSize; i++) {
           const t = i / bufferSize;
-          const envelope = Math.sin(t * Math.PI) * 0.8 + 0.2;
-          const noise = (Math.random() * 2 - 1) * envelope * 0.5;
-          const lowFreq = Math.sin(t * 120 * Math.PI) * 0.15 * (1 - t);
-          const midFreq = Math.sin(t * 300 * Math.PI) * 0.08 * (1 - t);
-          data[i] = (noise + lowFreq + midFreq) * 0.35;
+          const envelope = Math.sin(t * Math.PI) * 0.9;
+          const noise = (Math.random() * 2 - 1) * envelope * 0.4;
+          const lowFreq = Math.sin(t * 150 * Math.PI) * 0.2 * (1 - t);
+          const midFreq = Math.sin(t * 400 * Math.PI) * 0.1 * (1 - t);
+          const heavy = Math.sin(t * 60 * Math.PI) * 0.15 * (1 - t);
+          data[i] = (noise + lowFreq + midFreq + heavy) * 0.4;
         }
         const source = audioCtx.createBufferSource();
         source.buffer = buffer;
         const gainNode = audioCtx.createGain();
-        gainNode.gain.value = 0.3;
+        gainNode.gain.value = 0.25;
         source.connect(gainNode);
         gainNode.connect(audioCtx.destination);
         source.start();
@@ -937,38 +966,24 @@
     }
 
     // ============================================================
-    // FREE-FLOATING MIRROR (Drag + Chat)
+    // THEME TOGGLE (Sun/Moon)
     // ============================================================
-    const mirror = document.getElementById('floatMirror');
-    const prompt = document.getElementById('mirrorPrompt');
-    const chat = document.getElementById('floatChat');
-    const input = document.getElementById('floatInput');
-    let isDragging = false;
-    let offsetX = 0, offsetY = 0;
-
-    mirror.addEventListener('mousedown', (e) => {
-      isDragging = true;
-      offsetX = e.clientX - mirror.getBoundingClientRect().left;
-      offsetY = e.clientY - mirror.getBoundingClientRect().top;
-      mirror.style.cursor = 'grabbing';
+    document.getElementById('themeToggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      this.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
     });
 
-    document.addEventListener('mousemove', (e) => {
-      if (!isDragging) return;
-      mirror.style.left = (e.clientX - offsetX) + 'px';
-      mirror.style.top = (e.clientY - offsetY) + 'px';
-      mirror.style.right = 'auto';
-      mirror.style.bottom = 'auto';
-    });
+    // ============================================================
+    // STANDING MIRROR — Chat + Prompt
+    // ============================================================
+    const mirrorStanding = document.getElementById('mirrorStanding');
+    const promptBox = document.getElementById('mirrorPrompt');
+    const chatBox = document.getElementById('mirrorChat');
+    const input = document.getElementById('mirrorInput');
 
-    document.addEventListener('mouseup', () => {
-      isDragging = false;
-      mirror.style.cursor = 'grab';
-    });
-
-    prompt.addEventListener('click', () => {
-      chat.classList.toggle('open');
-      if (chat.classList.contains('open')) {
+    promptBox.addEventListener('click', () => {
+      chatBox.classList.toggle('open');
+      if (chatBox.classList.contains('open')) {
         input.focus();
       }
     });
@@ -980,13 +995,13 @@
         const userMsg = document.createElement('div');
         userMsg.className = 'message user';
         userMsg.textContent = msg;
-        chat.insertBefore(userMsg, input.parentElement);
+        chatBox.insertBefore(userMsg, input);
         input.value = '';
         setTimeout(() => {
           const botMsg = document.createElement('div');
           botMsg.className = 'message bot';
-          botMsg.textContent = "That's a great question. I'd need to check Evelyn's portfolio for that.";
-          chat.insertBefore(botMsg, input.parentElement);
+          botMsg.textContent = "That's a great question. Let me reflect on Evelyn's portfolio for that.";
+          chatBox.insertBefore(botMsg, input);
         }, 300);
       }
     });
