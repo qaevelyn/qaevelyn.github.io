@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Case Study: Google AI Studio and Gemini NotebookLM — The Failures"
+permalink: /case-studies/google-case-study/
+author_profile: true
+---
+
 # Case Study: Google AI Studio and Gemini NotebookLM — The Failures
 
 **Author:** Evelyn Caro  

@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Case Study: AWS — The Maze"
+permalink: /case-studies/aws-case-study/
+author_profile: true
+---
+
 # Case Study: AWS — The Maze
 
 **Author:** Evelyn Caro  

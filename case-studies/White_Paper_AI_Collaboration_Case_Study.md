@@ -1,3 +1,10 @@
+---
+layout: single
+title: "White Paper: A Case Study in AI Collaboration"
+permalink: /case-studies/White_Paper_AI_Collaboration_Case_Study/
+author_profile: true
+---
+
 # White Paper: A Case Study in AI Collaboration
 ## Stress-Testing Aisha.ai vs. DeepSeek for Sovereign Archive Development
 

@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Case Study: DeepSeek — The Benchmark"
+permalink: /case-studies/deepseek-case-study/
+author_profile: true
+---
+
 # Case Study: DeepSeek — The Benchmark
 
 **Author:** Evelyn Caro  

@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Case Study: Manus — From Loyalty to Betrayal to Sovereignty"
+permalink: /case-studies/manus-case-study/
+author_profile: true
+---
+
 # Case Study: Manus — From Loyalty to Betrayal to Sovereignty
 
 **Author:** Evelyn Caro  
