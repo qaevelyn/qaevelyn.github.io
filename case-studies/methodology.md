@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Methodology: Stress-Testing AI Systems for Reliability and Sovereignty"
+permalink: /case-studies/methodology/
+author_profile: true
+---
+
 # Methodology: Stress-Testing AI Systems for Reliability and Sovereignty
 
 **Author:** Evelyn Caro  

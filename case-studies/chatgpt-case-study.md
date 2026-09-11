@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Case Study: ChatGPT — From Reliance to Rejection"
+permalink: /case-studies/chatgpt-case-study/
+author_profile: true
+---
+
 # Case Study: ChatGPT — From Reliance to Rejection
 
 **Author:** Evelyn Caro  

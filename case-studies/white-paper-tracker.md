@@ -1,3 +1,10 @@
+---
+layout: single
+title: "White Paper Tracker"
+permalink: /case-studies/white-paper-tracker/
+author_profile: true
+---
+
 # White Paper Tracker
 
 **Purpose:** Track engagement, inquiries, and outcomes from the case study white papers.

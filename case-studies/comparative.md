@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Comparative: From Sovereign to Extractive — A Field Report on AI Platforms"
+permalink: /case-studies/comparative/
+author_profile: true
+---
+
 # Comparative: From Sovereign to Extractive — A Field Report on AI Platforms
 
 **Author:** Evelyn Caro  
