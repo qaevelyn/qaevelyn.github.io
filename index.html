@@ -22,7 +22,6 @@
       overflow-x: hidden;
     }
 
-    /* ===== WOODEN TABLE ===== */
     body::before {
       content: '';
       position: fixed;
@@ -59,7 +58,6 @@
       z-index: -1;
     }
 
-    /* ===== 3D ENCYCLOPEDIA BOOK ===== */
     .book-scene {
       perspective: 2400px;
       perspective-origin: 50% 45%;
@@ -87,9 +85,6 @@
       animation: none;
     }
 
-    /* Total thickness: 90px (45px forward + 45px backward) */
-
-    /* Front cover */
     .book-front {
       position: absolute;
       top: 0; left: 0;
@@ -97,12 +92,9 @@
       height: 540px;
       background:
         linear-gradient(135deg,
-          rgba(255,255,255,0.12) 0%,
-          rgba(200,220,240,0.06) 20%,
-          rgba(120,140,160,0.03) 40%,
-          rgba(255,255,255,0.1) 55%,
-          rgba(180,200,220,0.05) 75%,
-          rgba(255,255,255,0.08) 100%),
+          rgba(255,255,255,0.12) 0%, rgba(200,220,240,0.06) 20%,
+          rgba(120,140,160,0.03) 40%, rgba(255,255,255,0.1) 55%,
+          rgba(180,200,220,0.05) 75%, rgba(255,255,255,0.08) 100%),
         linear-gradient(180deg,
           #1c1c24 0%, #2a2a3a 25%, #1a1a24 50%, #25253a 75%, #1c1c24 100%);
       border-radius: 4px 8px 8px 4px;
@@ -112,7 +104,7 @@
         inset 6px 0 16px rgba(0,0,0,0.55),
         inset -3px 0 10px rgba(255,255,255,0.04);
       overflow: hidden;
-      z-index: 3;
+      z-index: 5;
     }
 
     .book-front::before {
@@ -121,10 +113,8 @@
       top: 0; left: 0; right: 0; bottom: 0;
       background: linear-gradient(
         135deg,
-        transparent 30%,
-        rgba(255,255,255,0.12) 45%,
-        rgba(255,255,255,0.18) 50%,
-        rgba(255,255,255,0.12) 55%,
+        transparent 30%, rgba(255,255,255,0.12) 45%,
+        rgba(255,255,255,0.18) 50%, rgba(255,255,255,0.12) 55%,
         transparent 70%
       );
       animation: shimmer 8s ease-in-out infinite;
@@ -148,7 +138,6 @@
       pointer-events: none;
     }
 
-    /* Back cover */
     .book-back {
       position: absolute;
       top: 0; left: 0;
@@ -161,44 +150,35 @@
       z-index: 1;
     }
 
-    /* Spine (left) — positioned at left edge, rotated to face left */
     .book-spine {
       position: absolute;
       top: 0;
       left: 0;
       width: 90px;
       height: 540px;
-      background:
-        linear-gradient(90deg,
-          #1a0f08 0%, #3a2214 20%, #4a2e1a 40%,
-          #3a2415 60%, #4a2e1a 80%, #2a1810 100%);
+      background: linear-gradient(90deg,
+        #1a0f08 0%, #3a2214 20%, #4a2e1a 40%,
+        #3a2415 60%, #4a2e1a 80%, #2a1810 100%);
       transform-origin: left center;
-      transform: translateX(-45px) rotateY(-90deg);
-      box-shadow:
-        inset 0 0 30px rgba(0,0,0,0.7),
-        inset -4px 0 8px rgba(0,0,0,0.5);
-      z-index: 2;
+      transform: translateZ(45px) rotateY(-90deg);
+      box-shadow: inset 0 0 30px rgba(0,0,0,0.7);
+      z-index: 3;
     }
 
     .book-spine::before,
     .book-spine::after {
       content: '';
       position: absolute;
-      left: 8px;
-      right: 8px;
+      left: 8px; right: 8px;
       height: 6px;
       background: linear-gradient(180deg, #6a4620 0%, #2a1810 100%);
       border-radius: 3px;
-      box-shadow:
-        0 2px 3px rgba(0,0,0,0.9),
-        inset 0 1px 0 rgba(255,255,255,0.15),
-        0 -1px 2px rgba(255,255,255,0.1);
+      box-shadow: 0 2px 3px rgba(0,0,0,0.9);
     }
 
     .book-spine::before { top: 90px; }
     .book-spine::after { bottom: 90px; }
 
-    /* Fore-edge (right) — page stack, rotated to face right */
     .book-fore-edge {
       position: absolute;
       top: 0;
@@ -207,19 +187,15 @@
       height: 540px;
       background:
         repeating-linear-gradient(90deg,
-          #e8d5b8 0px, #e8d5b8 1px,
-          #c9b08a 2px, #d4b896 3px,
+          #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
           #e8d5b8 4px, #dcc8a0 5px),
         linear-gradient(180deg, #f0e0c8 0%, #e8d5b8 50%, #d4b896 100%);
       transform-origin: right center;
-      transform: translateX(45px) rotateY(90deg);
-      box-shadow:
-        inset 0 0 20px rgba(0,0,0,0.3),
-        inset -3px 0 6px rgba(0,0,0,0.3);
-      z-index: 2;
+      transform: translateZ(45px) rotateY(90deg);
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+      z-index: 3;
     }
 
-    /* Top edge — page stack facing up */
     .book-top-edge {
       position: absolute;
       top: 0;
@@ -228,17 +204,15 @@
       height: 90px;
       background:
         repeating-linear-gradient(0deg,
-          #e8d5b8 0px, #e8d5b8 1px,
-          #c9b08a 2px, #d4b896 3px,
+          #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
           #e8d5b8 4px, #dcc8a0 5px),
         linear-gradient(90deg, #d4b896 0%, #e8d5b8 50%, #d4b896 100%);
       transform-origin: top center;
-      transform: translateY(-45px) rotateX(90deg);
+      transform: translateZ(45px) rotateX(90deg);
       box-shadow: inset 0 0 20px rgba(0,0,0,0.25);
-      z-index: 2;
+      z-index: 3;
     }
 
-    /* Bottom edge — page stack facing down */
     .book-bottom-edge {
       position: absolute;
       bottom: 0;
@@ -247,14 +221,13 @@
       height: 90px;
       background:
         repeating-linear-gradient(0deg,
-          #e8d5b8 0px, #e8d5b8 1px,
-          #c9b08a 2px, #d4b896 3px,
+          #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
           #e8d5b8 4px, #dcc8a0 5px),
         linear-gradient(90deg, #d4b896 0%, #e8d5b8 50%, #d4b896 100%);
       transform-origin: bottom center;
-      transform: translateY(45px) rotateX(-90deg);
+      transform: translateZ(45px) rotateX(-90deg);
       box-shadow: inset 0 0 20px rgba(0,0,0,0.25);
-      z-index: 2;
+      z-index: 3;
     }
 
     .book-title {
@@ -263,7 +236,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      z-index: 5;
+      z-index: 6;
       width: 90%;
     }
 
@@ -287,7 +260,7 @@
       bottom: 50px;
       left: 50%;
       transform: translateX(-50%);
-      z-index: 5;
+      z-index: 6;
       font-size: 0.75rem;
       letter-spacing: 0.3em;
       color: #c9b88a;
@@ -304,7 +277,6 @@
     .footer {
       text-align: center;
       max-width: 600px;
-      z-index: 1;
       margin-top: 3rem;
     }
 
@@ -323,9 +295,7 @@
       line-height: 1.6;
     }
 
-    .footer .tagline strong {
-      font-weight: 600;
-    }
+    .footer .tagline strong { font-weight: 600; }
 
     .footer .footnote {
       font-size: 0.75rem;
@@ -336,23 +306,7 @@
       margin: 0 auto;
     }
 
-    .footer .footnote sup {
-      color: #c9b88a;
-      font-size: 0.7rem;
-    }
-
-    @media (max-width: 600px) {
-      .book { width: 280px; height: 400px; }
-      .book-front { width: 280px; height: 400px; transform: translateZ(35px); }
-      .book-back { width: 280px; height: 400px; transform: translateZ(-35px) rotateY(180deg); }
-      .book-spine { width: 70px; height: 400px; transform: translateX(-35px) rotateY(-90deg); }
-      .book-fore-edge { width: 70px; height: 400px; transform: translateX(35px) rotateY(90deg); }
-      .book-top-edge { width: 280px; height: 70px; transform: translateY(-35px) rotateX(90deg); }
-      .book-bottom-edge { width: 280px; height: 70px; transform: translateY(35px) rotateX(-90deg); }
-      .book-title h1 { font-size: 1.1rem; letter-spacing: 0.15em; }
-      .footer .name { font-size: 1.1rem; }
-      .footer .tagline { font-size: 0.9rem; }
-    }
+    .footer .footnote sup { color: #c9b88a; font-size: 0.7rem; }
   </style>
 </head>
 <body>
