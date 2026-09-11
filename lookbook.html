@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lookbook — Sovereign AI Portfolio</title>
   <style>
-    /* ===== LEATHERBOUND BOOK STYLES ===== */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
@@ -55,14 +54,6 @@
 
     .spread.active {
       display: grid;
-    }
-
-    .spread.intro.active {
-      grid-template-columns: 1fr;
-    }
-
-    .spread.intro .page {
-      padding: 3rem;
     }
 
     .spread .page {
@@ -256,7 +247,6 @@
 
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
 
-  <!-- ===== BOOK ===== -->
   <div class="book-container">
     <div class="book-spine"></div>
 
@@ -417,9 +407,10 @@
           <h3>Case Studies & White Papers</h3>
           <p style="font-size:0.9rem;">Analytical work, audits, and research papers.</p>
           <ul style="list-style:none; padding-left:0; margin-top:1rem;">
-            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/azari-audit/" target="_blank" style="color:#007acc; text-decoration:none;">🔍 RAG Knowledge Base Audit — Azari AI</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/methodology/" target="_blank" style="color:#007acc; text-decoration:none;">📐 Methodology</a></li>
             <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/White_Paper_AI_Collaboration_Case_Study/" target="_blank" style="color:#007acc; text-decoration:none;">📄 White Paper: AI Collaboration Case Study</a></li>
             <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/White_Paper_AI_Platform_Comparison/" target="_blank" style="color:#007acc; text-decoration:none;">📄 White Paper: AI Platform Comparison</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/azari-audit/" target="_blank" style="color:#007acc; text-decoration:none;">🔍 RAG Knowledge Base Audit — Azari AI</a></li>
           </ul>
         </div>
         <div class="page">
@@ -431,7 +422,6 @@
             <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/deepseek-case-study/" target="_blank" style="color:#007acc; text-decoration:none;">📘 DeepSeek Case Study</a></li>
             <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/google-case-study/" target="_blank" style="color:#007acc; text-decoration:none;">📘 Google Case Study</a></li>
             <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/manus-case-study/" target="_blank" style="color:#007acc; text-decoration:none;">📘 Manus Case Study</a></li>
-            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/methodology/" target="_blank" style="color:#007acc; text-decoration:none;">📘 Methodology</a></li>
           </ul>
         </div>
       </div>
@@ -448,13 +438,10 @@
         <a href="/">← Return to Home</a>
       </div>
 
-    </div><!-- end book-pages -->
-  </div><!-- end book-container -->
+    </div>
+  </div>
 
   <script>
-    // ============================================================
-    // NAVIGATION
-    // ============================================================
     const spreads = document.querySelectorAll('.spread');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
@@ -482,9 +469,6 @@
       if (current < spreads.length - 1) goToSpread(current + 1);
     });
 
-    // ============================================================
-    // KEYBOARD
-    // ============================================================
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowLeft') {
         goToSpread(current - 1);
@@ -493,17 +477,11 @@
       }
     });
 
-    // ============================================================
-    // THEME
-    // ============================================================
     document.getElementById('themeToggle').addEventListener('click', function() {
       document.body.classList.toggle('dark-mode');
       this.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
     });
 
-    // ============================================================
-    // INIT
-    // ============================================================
     goToSpread(0);
   </script>
 </body>
