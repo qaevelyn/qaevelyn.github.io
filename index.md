@@ -7,7 +7,7 @@ author_profile: true
 
 Sovereign AI Builder · RAG Pipeline Architect · AWS re/Start Graduate
 
-I build proof, not just plans.
+**Sovereign systems, local first. No cloud dependency.**
 
 ---
 
