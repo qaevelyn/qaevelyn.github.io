@@ -948,7 +948,7 @@ body.dark-mode .book-page {
   <div id="intro" class="ship-spread intro" data-tags="all">
     <div style="grid-column: 1 / -1;">
       <h2>Intro / Story</h2>
-      <div class="tagline">Sovereign AI Engineer · RAG Pipeline Architect · Lead Strategic Consultant</div>
+      <div class="tagline">Sovereign AI Builder · RAG Pipelines, Agentic AI & EvidenceFlow · AWS re/Start Graduate</div>
       <div class="reading-time">📖 3 min read · <button class="read-aloud-btn" onclick="readAloud('intro-text')">🔊 Listen</button></div>
       <div id="intro-text" class="bio">
         <p>I engineer sovereign AI systems that run locally, on my terms. Built 4 RAG pipelines. Tested them adversarially. Now in conversation with a national historical organization partnered with a major university — proof of concept pending.</p>
