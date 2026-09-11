@@ -85,6 +85,89 @@
       animation: none;
     }
 
+    /* SPINE — placed at left edge of book, extends backward */
+    .book-spine {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90px;
+      height: 540px;
+      background: linear-gradient(90deg,
+        #3a2214 0%, #4a2e1a 25%, #5a3820 50%, #4a2e1a 75%, #3a2214 100%);
+      transform-origin: left center;
+      transform: translateX(-90px) rotateY(-90deg);
+      box-shadow: inset 0 0 40px rgba(0,0,0,0.6);
+      backface-visibility: hidden;
+    }
+
+    .book-spine::before,
+    .book-spine::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      height: 6px;
+      background: linear-gradient(180deg, #6a4620 0%, #2a1810 100%);
+      box-shadow: 0 2px 3px rgba(0,0,0,0.9);
+    }
+
+    .book-spine::before { top: 90px; }
+    .book-spine::after { bottom: 90px; }
+
+    /* FORE-EDGE — placed at right edge of book, extends backward */
+    .book-fore-edge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 90px;
+      height: 540px;
+      background:
+        repeating-linear-gradient(90deg,
+          #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
+          #e8d5b8 4px, #dcc8a0 5px),
+        linear-gradient(180deg, #f0e0c8 0%, #e8d5b8 50%, #d4b896 100%);
+      transform-origin: right center;
+      transform: translateX(90px) rotateY(90deg);
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+      backface-visibility: hidden;
+    }
+
+    /* TOP EDGE */
+    .book-top-edge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 380px;
+      height: 90px;
+      background:
+        repeating-linear-gradient(0deg,
+          #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
+          #e8d5b8 4px, #dcc8a0 5px),
+        linear-gradient(90deg, #d4b896 0%, #e8d5b8 50%, #d4b896 100%);
+      transform-origin: top center;
+      transform: translateY(-90px) rotateX(-90deg);
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.25);
+      backface-visibility: hidden;
+    }
+
+    /* BOTTOM EDGE */
+    .book-bottom-edge {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 380px;
+      height: 90px;
+      background:
+        repeating-linear-gradient(0deg,
+          #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
+          #e8d5b8 4px, #dcc8a0 5px),
+        linear-gradient(90deg, #d4b896 0%, #e8d5b8 50%, #d4b896 100%);
+      transform-origin: bottom center;
+      transform: translateY(90px) rotateX(90deg);
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.25);
+      backface-visibility: hidden;
+    }
+
+    /* FRONT COVER */
     .book-front {
       position: absolute;
       top: 0; left: 0;
@@ -101,22 +184,19 @@
       transform: translateZ(45px);
       box-shadow:
         inset 0 0 100px rgba(0,0,0,0.6),
-        inset 6px 0 16px rgba(0,0,0,0.55),
-        inset -3px 0 10px rgba(255,255,255,0.04);
+        inset 6px 0 16px rgba(0,0,0,0.55);
       overflow: hidden;
-      z-index: 5;
+      backface-visibility: hidden;
     }
 
     .book-front::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(
-        135deg,
+      background: linear-gradient(135deg,
         transparent 30%, rgba(255,255,255,0.12) 45%,
         rgba(255,255,255,0.18) 50%, rgba(255,255,255,0.12) 55%,
-        transparent 70%
-      );
+        transparent 70%);
       animation: shimmer 8s ease-in-out infinite;
     }
 
@@ -133,110 +213,15 @@
       border-radius: 3px;
       box-shadow:
         inset 0 0 12px rgba(139,111,61,0.5),
-        0 0 10px rgba(139,111,61,0.35),
-        0 0 0 1px rgba(0,0,0,0.4);
+        0 0 10px rgba(139,111,61,0.35);
       pointer-events: none;
-    }
-
-    .book-back {
-      position: absolute;
-      top: 0; left: 0;
-      width: 380px;
-      height: 540px;
-      background: linear-gradient(180deg, #2a1810 0%, #1a0f08 100%);
-      border-radius: 8px 4px 4px 8px;
-      transform: translateZ(-45px) rotateY(180deg);
-      box-shadow: inset 0 0 60px rgba(0,0,0,0.8);
-      z-index: 1;
-    }
-
-    .book-spine {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 90px;
-      height: 540px;
-      background: linear-gradient(90deg,
-        #1a0f08 0%, #3a2214 20%, #4a2e1a 40%,
-        #3a2415 60%, #4a2e1a 80%, #2a1810 100%);
-      transform-origin: left center;
-      transform: translateZ(45px) rotateY(-90deg);
-      box-shadow: inset 0 0 30px rgba(0,0,0,0.7);
-      z-index: 3;
-    }
-
-    .book-spine::before,
-    .book-spine::after {
-      content: '';
-      position: absolute;
-      left: 8px; right: 8px;
-      height: 6px;
-      background: linear-gradient(180deg, #6a4620 0%, #2a1810 100%);
-      border-radius: 3px;
-      box-shadow: 0 2px 3px rgba(0,0,0,0.9);
-    }
-
-    .book-spine::before { top: 90px; }
-    .book-spine::after { bottom: 90px; }
-
-    .book-fore-edge {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 90px;
-      height: 540px;
-      background:
-        repeating-linear-gradient(90deg,
-          #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
-          #e8d5b8 4px, #dcc8a0 5px),
-        linear-gradient(180deg, #f0e0c8 0%, #e8d5b8 50%, #d4b896 100%);
-      transform-origin: right center;
-      transform: translateZ(45px) rotateY(90deg);
-      box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
-      z-index: 3;
-    }
-
-    .book-top-edge {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 380px;
-      height: 90px;
-      background:
-        repeating-linear-gradient(0deg,
-          #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
-          #e8d5b8 4px, #dcc8a0 5px),
-        linear-gradient(90deg, #d4b896 0%, #e8d5b8 50%, #d4b896 100%);
-      transform-origin: top center;
-      transform: translateZ(45px) rotateX(90deg);
-      box-shadow: inset 0 0 20px rgba(0,0,0,0.25);
-      z-index: 3;
-    }
-
-    .book-bottom-edge {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 380px;
-      height: 90px;
-      background:
-        repeating-linear-gradient(0deg,
-          #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
-          #e8d5b8 4px, #dcc8a0 5px),
-        linear-gradient(90deg, #d4b896 0%, #e8d5b8 50%, #d4b896 100%);
-      transform-origin: bottom center;
-      transform: translateZ(45px) rotateX(-90deg);
-      box-shadow: inset 0 0 20px rgba(0,0,0,0.25);
-      z-index: 3;
     }
 
     .book-title {
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 50%; left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      z-index: 6;
       width: 90%;
     }
 
@@ -251,7 +236,6 @@
         0 2px 4px rgba(0,0,0,0.9),
         0 0 40px rgba(201,184,138,0.3);
       line-height: 1.6;
-      margin-bottom: 1.5rem;
       font-variant: small-caps;
     }
 
@@ -260,7 +244,6 @@
       bottom: 50px;
       left: 50%;
       transform: translateX(-50%);
-      z-index: 6;
       font-size: 0.75rem;
       letter-spacing: 0.3em;
       color: #c9b88a;
@@ -313,7 +296,6 @@
 
   <div class="book-scene" onclick="window.location.href='/lookbook.html'">
     <div class="book">
-      <div class="book-back"></div>
       <div class="book-spine"></div>
       <div class="book-fore-edge"></div>
       <div class="book-top-edge"></div>
