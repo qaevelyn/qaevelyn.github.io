@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Book — A Mirror of My Becoming</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: #1a0f08;
+      color: #2c1810;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+
+    /* Wood table background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(140,80,40,0.5) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 80%, rgba(50,25,10,0.6) 0%, transparent 60%),
+        repeating-linear-gradient(88deg,
+          #3a2214 0px, #442a18 4px, #3a2214 8px,
+          #4a2e1c 12px, #3a2214 16px, #422818 20px,
+          #3a2214 24px, #452a18 28px, #3a2214 32px),
+        linear-gradient(180deg, #4a2e1c 0%, #2a1810 50%, #1a0f08 100%);
+      z-index: -1;
+    }
+
+    h1.page-header {
+      text-align: center;
+      color: #d4b670;
+      font-family: 'Georgia', serif;
+      font-size: 1.3rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      font-variant: small-caps;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 12px rgba(212,182,112,0.4);
+    }
+
+    /* Book container */
+    .book-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(0 40px 40px rgba(0,0,0,0.7));
+    }
+
+    #book {
+      margin: 0 auto;
+    }
+
+    /* Page styling */
+    .page {
+      background: #f5e6d3;
+      color: #2c1810;
+      padding: 2rem 2rem;
+      font-family: 'Georgia', serif;
+      overflow: hidden;
+      border-radius: 2px;
+    }
+
+    .page h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: #2c1810;
+      font-variant: small-caps;
+      letter-spacing: 0.1em;
+      border-bottom: 2px solid #8b6f3d;
+      padding-bottom: 0.5rem;
+    }
+
+    .page h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #2c1810;
+      font-variant: small-caps;
+      letter-spacing: 0.08em;
+    }
+
+    .page p {
+      font-size: 0.85rem;
+      line-height: 1.65;
+      margin-bottom: 0.6rem;
+    }
+
+    .page ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.75rem;
+    }
+
+    .page ul li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid rgba(44,24,16,0.15);
+      font-size: 0.9rem;
+    }
+
+    .page ul li a {
+      color: #2c1810;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .page ul li a:hover {
+      color: #8b6f3d;
+    }
+
+    .page .badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .badge.aws { background: #ff9900; color: #1a1a1a; }
+    .badge.ibm { background: #0062ff; color: #fff; }
+    .badge.cert { background: #2d3748; color: #fff; }
+
+    .page .links a {
+      display: block;
+      margin: 0.35rem 0;
+      color: #007acc;
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+
+    .page .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* COVER page — hard */
+    .page-cover {
+      background:
+        radial-gradient(circle at 50% 50%, rgba(60,60,90,0.2) 0%, transparent 60%),
+        linear-gradient(180deg,
+          #1c1c24 0%, #2a2a3a 25%, #1a1a24 50%, #25253a 75%, #1c1c24 100%);
+      color: #c9b88a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      border: 3px solid #8b6f3d;
+      position: relative;
+    }
+
+    .page-cover::before {
+      content: '';
+      position: absolute;
+      top: 12px; left: 12px; right: 12px; bottom: 12px;
+      border: 2px solid #8b6f3d;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .page-cover h1 {
+      font-size: 1.4rem;
+      letter-spacing: 0.25em;
+      font-variant: small-caps;
+      line-height: 1.6;
+      text-shadow:
+        0 0 20px rgba(201,184,138,0.5),
+        0 2px 4px rgba(0,0,0,0.9);
+      margin-bottom: 1rem;
+    }
+
+    .page-cover .byline {
+      font-size: 0.8rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      opacity: 0.8;
+    }
+
+    .page-cover .vol {
+      position: absolute;
+      bottom: 50px;
+      font-size: 0.7rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+
+    /* BACK COVER */
+    .page-back-cover {
+      background:
+        radial-gradient(circle at 50% 50%, rgba(60,60,90,0.15) 0%, transparent 60%),
+        linear-gradient(180deg,
+          #1c1c24 0%, #2a2a3a 50%, #1c1c24 100%);
+      color: #c9b88a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      border: 3px solid #8b6f3d;
+      position: relative;
+    }
+
+    .page-back-cover h2 {
+      font-size: 1.1rem;
+      letter-spacing: 0.3em;
+      font-variant: small-caps;
+      border: none;
+    }
+
+    .page-back-cover .footer-note {
+      font-size: 0.75rem;
+      opacity: 0.7;
+      margin-top: 1rem;
+      line-height: 1.6;
+      letter-spacing: 0.05em;
+      font-style: italic;
+      max-width: 80%;
+    }
+
+    /* Navigation buttons */
+    .book-controls {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .book-controls button {
+      padding: 0.6rem 1.5rem;
+      background: #3a2415;
+      color: #d4b670;
+      border: 1px solid #8b6f3d;
+      border-radius: 3px;
+      font-family: 'Georgia', serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .book-controls button:hover {
+      background: #4a2e1a;
+    }
+
+    .return-home {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .return-home a {
+      color: #d4b670;
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+    }
+
+    .return-home a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      #book { transform: scale(0.75); transform-origin: top center; }
+    }
+
+    @media (max-width: 600px) {
+      #book { transform: scale(0.5); transform-origin: top center; }
+      h1.page-header { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="page-header">A Mirror of My Becoming</h1>
+
+  <div class="book-wrapper">
+    <div id="book">
+
+      <!-- ===== FRONT COVER (HARD) ===== -->
+      <div class="page page-cover" data-density="hard">
+        <h1>A Mirror of My<br>Becoming</h1>
+        <div class="byline">by Evelyn Caro</div>
+        <div class="vol">Vol. I</div>
+      </div>
+
+      <!-- ===== TOC ===== -->
+      <div class="page">
+        <h2>Table of Contents</h2>
+        <ul>
+          <li><a href="#" onclick="pageFlip.flip(2); return false;">Ship 1 — AWS SageMaker RAG</a></li>
+          <li><a href="#" onclick="pageFlip.flip(4); return false;">Ship 2 — AWS SageMaker Agentic RAG</a></li>
+          <li><a href="#" onclick="pageFlip.flip(6); return false;">Ship 3 — IBM Granite RAG</a></li>
+          <li><a href="#" onclick="pageFlip.flip(8); return false;">Ship 4 — IBM Granite Agentic RAG</a></li>
+          <li><a href="#" onclick="pageFlip.flip(10); return false;">Ship 5 — IBM Granite Agentic RAG + EvidenceFlow</a></li>
+          <li><a href="#" onclick="pageFlip.flip(12); return false;">Certifications</a></li>
+          <li><a href="#" onclick="pageFlip.flip(14); return false;">Case Studies</a></li>
+        </ul>
+      </div>
+
+      <!-- ===== INTRO ===== -->
+      <div class="page">
+        <h2>Intro / Story</h2>
+        <p><strong>Sovereign AI Builder · RAG Pipelines, Agentic AI &amp; EvidenceFlow · AWS re/Start Graduate</strong></p>
+        <p>I engineer sovereign AI systems that run locally, on my terms. Built 5 RAG pipelines. Tested them adversarially. Now in conversation with a national historical organization partnered with a major university — proof of concept pending.</p>
+        <p>This portfolio is a lookbook of my work — Ships first, then the credentials that built the foundation.</p>
+        <blockquote style="border-left:3px solid #8b6f3d; padding-left:0.75rem; margin:0.75rem 0; font-style:italic;">Sovereign systems, local first. No cloud dependency.</blockquote>
+        <p style="font-size:0.8rem;"><strong>Proof, not tenure:</strong> I hold certifications in AI, LangChain, and Agentic RAG from Google and IBM.</p>
+      </div>
+
+      <!-- ===== SHIP 1 ===== -->
+      <div class="page">
+        <h2>Ship 1</h2>
+        <p style="font-size:0.75rem; color:#5a3a2a; font-style:italic;">AWS SageMaker · Standard RAG</p>
+      </div>
+      <div class="page">
+        <h3>Ship 1 — AWS SageMaker RAG</h3>
+        <div class="badge aws">Standard RAG</div>
+        <p>Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an M1 MacBook Air.</p>
+        <div class="links">
+          <a href="#">🎥 Demo Video (coming soon)</a>
+          <a href="#">🐳 Containerization Video (coming soon)</a>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 2 ===== -->
+      <div class="page">
+        <h2>Ship 2</h2>
+        <p style="font-size:0.75rem; color:#5a3a2a; font-style:italic;">AWS SageMaker · Agentic RAG</p>
+      </div>
+      <div class="page">
+        <h3>Ship 2 — AWS SageMaker Agentic RAG</h3>
+        <div class="badge aws">Agentic RAG</div>
+        <p>Agentic RAG pipeline on AWS SageMaker — retrieval + action (API calls, decision-making). Demonstrates autonomous reasoning and tool use.</p>
+        <div class="links">
+          <a href="#">🎥 Demo Video (coming soon)</a>
+          <a href="#">🐳 Containerization Video (coming soon)</a>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 3 ===== -->
+      <div class="page">
+        <h2>Ship 3</h2>
+        <p style="font-size:0.75rem; color:#5a3a2a; font-style:italic;">IBM Granite · Standard RAG</p>
+      </div>
+      <div class="page">
+        <h3>Ship 3 — IBM Granite RAG</h3>
+        <div class="badge ibm">Standard RAG</div>
+        <p>RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility.</p>
+        <div class="links">
+          <a href="#">🎥 Demo Video (coming soon)</a>
+          <a href="#">🐳 Containerization Video (coming soon)</a>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 4 ===== -->
+      <div class="page">
+        <h2>Ship 4</h2>
+        <p style="font-size:0.75rem; color:#5a3a2a; font-style:italic;">IBM Granite · Agentic RAG</p>
+      </div>
+      <div class="page">
+        <h3>Ship 4 — IBM Granite Agentic RAG</h3>
+        <div class="badge ibm">Agentic RAG</div>
+        <p>Agentic RAG pipeline on IBM Granite — retrieval + action. Cross-platform agentic architecture with autonomous reasoning and decision-making.</p>
+        <div class="links">
+          <a href="#">🎥 Demo Video (coming soon)</a>
+          <a href="#">🐳 Containerization Video (coming soon)</a>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 5 ===== -->
+      <div class="page">
+        <h2>Ship 5</h2>
+        <p style="font-size:0.75rem; color:#5a3a2a; font-style:italic;">IBM Granite · Agentic RAG + EvidenceFlow</p>
+      </div>
+      <div class="page">
+        <h3>Ship 5 — IBM Granite Agentic RAG with EvidenceFlow</h3>
+        <div class="badge ibm">Agentic RAG + EvidenceFlow</div>
+        <p>A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an M1 MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.</p>
+        <p style="font-size:0.75rem;"><em>Foundation: IBM SkillsBuild (Anna Gutowska). Inspiration: Asaif Ali's EvidenceFlow. Execution: Evelyn Caro.</em></p>
+        <div class="links">
+          <a href="#">🎥 Demo Video (coming soon)</a>
+          <a href="#">🐳 Containerization Video (coming soon)</a>
+        </div>
+      </div>
+
+      <!-- ===== CERTIFICATIONS ===== -->
+      <div class="page">
+        <h2>Certifications</h2>
+        <h3>Google AI Professional Certificate</h3>
+        <div class="badge cert">AI · ML</div>
+        <p style="font-size:0.8rem;">Foundational AI and machine learning skills.</p>
+      </div>
+      <div class="page">
+        <h2>Certifications (cont.)</h2>
+        <h3>IBM SkillsBuild — LangChain</h3>
+        <div class="badge cert">LangChain</div>
+        <p style="font-size:0.8rem;">LangChain for building LLM-powered applications.</p>
+        <h3 style="margin-top:1rem;">AWS re/Start Graduate</h3>
+        <div class="badge cert">AWS</div>
+        <p style="font-size:0.8rem;">September 9, 2026 — 3.1 weeks, first in cohort.</p>
+      </div>
+
+      <!-- ===== CASE STUDIES ===== -->
+      <div class="page">
+        <h2>Case Studies &amp; White Papers</h2>
+        <ul>
+          <li><a href="https://qaevelyn.github.io/case-studies/methodology/" target="_blank">📐 Methodology</a></li>
+          <li><a href="https://qaevelyn.github.io/case-studies/White_Paper_AI_Collaboration_Case_Study/" target="_blank">📄 White Paper: AI Collaboration</a></li>
+          <li><a href="https://qaevelyn.github.io/case-studies/White_Paper_AI_Platform_Comparison/" target="_blank">📄 White Paper: AI Platform Comparison</a></li>
+          <li><a href="https://qaevelyn.github.io/case-studies/azari-audit/" target="_blank">🔍 RAG Knowledge Base Audit — Azari AI</a></li>
+        </ul>
+      </div>
+      <div class="page">
+        <h2>More Case Studies</h2>
+        <ul>
+          <li><a href="https://qaevelyn.github.io/case-studies/aisha-case-study/" target="_blank">📘 Aisha Case Study</a></li>
+          <li><a href="https://qaevelyn.github.io/case-studies/aws-case-study/" target="_blank">📘 AWS Case Study</a></li>
+          <li><a href="https://qaevelyn.github.io/case-studies/chatgpt-case-study/" target="_blank">📘 ChatGPT Case Study</a></li>
+          <li><a href="https://qaevelyn.github.io/case-studies/deepseek-case-study/" target="_blank">📘 DeepSeek Case Study</a></li>
+          <li><a href="https://qaevelyn.github.io/case-studies/google-case-study/" target="_blank">📘 Google Case Study</a></li>
+          <li><a href="https://qaevelyn.github.io/case-studies/manus-case-study/" target="_blank">📘 Manus Case Study</a></li>
+        </ul>
+      </div>
+
+      <!-- ===== BACK COVER (HARD) ===== -->
+      <div class="page page-back-cover" data-density="hard">
+        <h2>End of Vol. I</h2>
+        <div class="footer-note">
+          Five RAG pipelines built locally.<br>
+          Three cloud attempts.<br>
+          One lost project, rebuilt.<br>
+          The white papers document all.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="book-controls">
+    <button id="prevBtn">← Prev</button>
+    <button id="nextBtn">Next →</button>
+  </div>
+
+  <div class="return-home">
+    <a href="/">← Return to Home</a>
+  </div>
+
+  <script src="/assets/js/page-flip.browser.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const pageFlip = new St.PageFlip(document.getElementById('book'), {
+        width: 500,
+        height: 700,
+        size: 'stretch',
+        minWidth: 300,
+        maxWidth: 600,
+        minHeight: 420,
+        maxHeight: 840,
+        showCover: true,
+        mobileScrollSupport: false,
+        flippingTime: 800,
+        usePortrait: true,
+        drawShadow: true,
+        maxShadowOpacity: 0.5,
+        showPageCorners: true,
+        swipeDistance: 30,
+        clickEventForward: true,
+        useMouseEvents: true
+      });
+
+      pageFlip.loadFromHTML(document.querySelectorAll('.page'));
+
+      // Expose to global for TOC links
+      window.pageFlip = pageFlip;
+
+      // Navigation buttons
+      document.getElementById('prevBtn').addEventListener('click', function() {
+        pageFlip.flipPrev();
+      });
+      document.getElementById('nextBtn').addEventListener('click', function() {
+        pageFlip.flipNext();
+      });
+    });
+  </script>
+</body>
+</html>
