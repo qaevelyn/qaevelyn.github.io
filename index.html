@@ -21,33 +21,40 @@
       overflow-x: hidden;
     }
 
-    /* ===== WOODEN TABLE ===== */
+    /* ===== WOODEN TABLE — richer grain ===== */
     body::before {
       content: '';
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
       background:
-        linear-gradient(90deg, rgba(0,0,0,0.4) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.4) 100%),
-        repeating-linear-gradient(90deg,
-          #3d2817 0px, #4a3020 2px, #3d2817 4px,
-          #452c1a 6px, #3d2817 8px, #4a3020 10px,
-          #3a2415 12px, #452c1a 14px, #3d2817 16px),
-        radial-gradient(ellipse at center, #4a3020 0%, #1a0f08 100%);
+        radial-gradient(ellipse at 30% 20%, rgba(140,80,40,0.5) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 80%, rgba(50,25,10,0.6) 0%, transparent 60%),
+        repeating-linear-gradient(88deg,
+          #3a2214 0px, #442a18 4px, #3a2214 8px,
+          #4a2e1c 12px, #3a2214 16px, #422818 20px,
+          #3a2214 24px, #452a18 28px, #3a2214 32px),
+        repeating-linear-gradient(92deg,
+          transparent 0px, transparent 60px,
+          rgba(0,0,0,0.1) 61px, rgba(0,0,0,0.1) 62px),
+        linear-gradient(180deg, #4a2e1c 0%, #2a1810 50%, #1a0f08 100%);
       z-index: -1;
     }
 
-    /* Wood grain overlay */
+    /* Wood grain overlay — knots and variation */
     body::after {
       content: '';
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
       background-image:
-        repeating-linear-gradient(88deg,
-          transparent 0px, transparent 40px,
-          rgba(0,0,0,0.08) 41px, rgba(0,0,0,0.08) 42px),
-        repeating-linear-gradient(92deg,
-          transparent 0px, transparent 70px,
-          rgba(255,255,255,0.02) 71px, rgba(255,255,255,0.02) 72px);
+        radial-gradient(circle at 15% 30%, rgba(80,45,20,0.4) 0%, transparent 8%),
+        radial-gradient(circle at 85% 65%, rgba(80,45,20,0.3) 0%, transparent 6%),
+        radial-gradient(circle at 45% 85%, rgba(80,45,20,0.35) 0%, transparent 5%),
+        repeating-linear-gradient(87deg,
+          transparent 0px, transparent 30px,
+          rgba(0,0,0,0.06) 31px, rgba(0,0,0,0.06) 32px),
+        repeating-linear-gradient(89deg,
+          transparent 0px, transparent 80px,
+          rgba(255,255,255,0.015) 81px, rgba(255,255,255,0.015) 82px);
       pointer-events: none;
       z-index: -1;
     }
@@ -85,7 +92,6 @@
       animation: none;
     }
 
-    /* Book spine */
     .book-spine {
       position: absolute;
       left: -18px;
@@ -99,7 +105,6 @@
       box-shadow: inset -2px 0 4px rgba(0,0,0,0.6);
     }
 
-    /* Book pages (visible edge) */
     .book-pages-edge {
       position: absolute;
       right: -12px;
@@ -115,7 +120,6 @@
       transform-origin: left center;
     }
 
-    /* The cover — fully reflective mirror */
     .book-cover {
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -152,7 +156,6 @@
         0 0 40px rgba(180,200,240,0.15);
     }
 
-    /* Mirror reflection shimmer */
     .book-cover::before {
       content: '';
       position: absolute;
@@ -173,7 +176,6 @@
       50% { transform: translateX(100%); }
     }
 
-    /* Brass frame around mirror */
     .book-cover::after {
       content: '';
       position: absolute;
@@ -186,7 +188,6 @@
       pointer-events: none;
     }
 
-    /* Title etched on cover */
     .book-title {
       position: absolute;
       top: 50%;
@@ -212,15 +213,6 @@
       font-variant: small-caps;
     }
 
-    .book-title .byline {
-      font-size: 0.85rem;
-      letter-spacing: 0.15em;
-      color: #8b6f3d;
-      font-style: italic;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.8);
-    }
-
-    /* Open prompt */
     .open-prompt {
       position: absolute;
       bottom: 40px;
@@ -240,7 +232,6 @@
       50% { opacity: 1; }
     }
 
-    /* ===== FOOTER ===== */
     .footer {
       text-align: center;
       max-width: 600px;
@@ -280,7 +271,6 @@
       font-size: 0.7rem;
     }
 
-    /* ===== RESPONSIVE ===== */
     @media (max-width: 600px) {
       .book {
         width: 260px;
@@ -289,9 +279,6 @@
       .book-title h1 {
         font-size: 1.1rem;
         letter-spacing: 0.15em;
-      }
-      .book-title .byline {
-        font-size: 0.7rem;
       }
       .footer .name {
         font-size: 1.1rem;
@@ -311,7 +298,6 @@
       <div class="book-cover">
         <div class="book-title">
           <h1>A Mirror of My<br>Becoming</h1>
-          <div class="byline">by Evelyn Caro</div>
         </div>
         <div class="open-prompt">Click to open</div>
       </div>
