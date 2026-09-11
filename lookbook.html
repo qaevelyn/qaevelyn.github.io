@@ -175,14 +175,14 @@
     .page-indicator {
       text-align: center;
       margin-top: 1rem;
-      color: #f5e6d3;
+      color: #2c1810;
       font-size: 0.9rem;
     }
 
     .keyboard-hint {
       text-align: center;
       margin-top: 0.5rem;
-      color: rgba(245,230,211,0.6);
+      color: rgba(44,24,16,0.6);
       font-size: 0.8rem;
     }
 
@@ -192,13 +192,25 @@
     }
 
     .return-home a {
-      color: #f5e6d3;
+      color: #2c1810;
       text-decoration: none;
       font-size: 0.9rem;
     }
 
     .return-home a:hover {
       text-decoration: underline;
+    }
+
+    body.dark-mode .page-indicator {
+      color: #f5e6d3;
+    }
+
+    body.dark-mode .keyboard-hint {
+      color: rgba(245,230,211,0.6);
+    }
+
+    body.dark-mode .return-home a {
+      color: #f5e6d3;
     }
 
     .theme-toggle {
