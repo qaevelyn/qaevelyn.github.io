@@ -64,21 +64,21 @@
       width: 380px;
       height: 540px;
       transform-style: preserve-3d;
-      transform: rotateY(-12deg) rotateX(4deg);
+      transform: rotateY(-28deg) rotateX(4deg);
       animation: floatBook 6s ease-in-out infinite;
     }
 
     @keyframes floatBook {
-      0%, 100% { transform: rotateY(-12deg) rotateX(4deg) translateY(0); }
-      50% { transform: rotateY(-12deg) rotateX(4deg) translateY(-8px); }
+      0%, 100% { transform: rotateY(-28deg) rotateX(4deg) translateY(0); }
+      50% { transform: rotateY(-28deg) rotateX(4deg) translateY(-8px); }
     }
 
     .book-scene:hover .book {
-      transform: rotateY(-4deg) rotateX(2deg) translateY(-10px);
+      transform: rotateY(-18deg) rotateX(2deg) translateY(-10px);
       animation: none;
     }
 
-    /* ===== SPINE — visible, warm leather tone ===== */
+    /* ===== SPINE ===== */
     .book-spine {
       position: absolute;
       top: 0;
@@ -95,7 +95,6 @@
         inset 4px 0 8px rgba(255,255,255,0.05);
     }
 
-    /* 5 gold bands — positioned by top% */
     .book-spine .band {
       position: absolute;
       left: 6px;
@@ -115,7 +114,6 @@
     .book-spine .band.b4 { top: 375px; }
     .book-spine .band.b5 { bottom: 60px; }
 
-    /* Gold title running vertically on spine */
     .book-spine .spine-title {
       position: absolute;
       top: 50%;
@@ -133,7 +131,7 @@
         0 1px 2px rgba(0,0,0,0.9);
     }
 
-    /* ===== FORE-EDGE ===== */
+    /* ===== FORE-EDGE WITH GILDING ===== */
     .book-fore-edge {
       position: absolute;
       top: 0;
@@ -141,6 +139,14 @@
       width: 90px;
       height: 540px;
       background:
+        linear-gradient(180deg,
+          #d4b670 0%, #d4b670 3px,
+          #f0d878 3px, #a88a45 6px,
+          transparent 6px, transparent 12px,
+          transparent 12px, transparent calc(100% - 12px),
+          transparent calc(100% - 12px), transparent calc(100% - 6px),
+          #a88a45 calc(100% - 6px), #f0d878 calc(100% - 3px),
+          #d4b670 calc(100% - 3px), #d4b670 100%),
         repeating-linear-gradient(90deg,
           #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
           #e8d5b8 4px, #dcc8a0 5px),
@@ -150,7 +156,7 @@
       box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
     }
 
-    /* ===== TOP EDGE ===== */
+    /* ===== TOP EDGE WITH GILDING ===== */
     .book-top-edge {
       position: absolute;
       top: -90px;
@@ -158,6 +164,14 @@
       width: 380px;
       height: 90px;
       background:
+        linear-gradient(90deg,
+          #d4b670 0%, #d4b670 3px,
+          #f0d878 3px, #a88a45 6px,
+          transparent 6px, transparent 12px,
+          transparent 12px, transparent calc(100% - 12px),
+          transparent calc(100% - 12px), transparent calc(100% - 6px),
+          #a88a45 calc(100% - 6px), #f0d878 calc(100% - 3px),
+          #d4b670 calc(100% - 3px), #d4b670 100%),
         repeating-linear-gradient(0deg,
           #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
           #e8d5b8 4px, #dcc8a0 5px),
@@ -167,7 +181,7 @@
       box-shadow: inset 0 0 20px rgba(0,0,0,0.25);
     }
 
-    /* ===== BOTTOM EDGE ===== */
+    /* ===== BOTTOM EDGE WITH GILDING ===== */
     .book-bottom-edge {
       position: absolute;
       bottom: -90px;
@@ -175,6 +189,14 @@
       width: 380px;
       height: 90px;
       background:
+        linear-gradient(90deg,
+          #d4b670 0%, #d4b670 3px,
+          #f0d878 3px, #a88a45 6px,
+          transparent 6px, transparent 12px,
+          transparent 12px, transparent calc(100% - 12px),
+          transparent calc(100% - 12px), transparent calc(100% - 6px),
+          #a88a45 calc(100% - 6px), #f0d878 calc(100% - 3px),
+          #d4b670 calc(100% - 3px), #d4b670 100%),
         repeating-linear-gradient(0deg,
           #e8d5b8 0px, #e8d5b8 1px, #c9b08a 2px, #d4b896 3px,
           #e8d5b8 4px, #dcc8a0 5px),
@@ -184,13 +206,21 @@
       box-shadow: inset 0 0 20px rgba(0,0,0,0.25);
     }
 
-    /* ===== FRONT COVER ===== */
+    /* ===== FRONT COVER WITH LEATHER GRAIN ===== */
     .book-front {
       position: absolute;
       top: 0; left: 0;
       width: 380px;
       height: 540px;
       background:
+        radial-gradient(circle at 20% 30%, rgba(80,80,100,0.1) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(60,60,80,0.08) 0%, transparent 40%),
+        repeating-linear-gradient(115deg,
+          transparent 0px, transparent 2px,
+          rgba(255,255,255,0.008) 3px, rgba(255,255,255,0.008) 4px),
+        repeating-linear-gradient(25deg,
+          transparent 0px, transparent 3px,
+          rgba(0,0,0,0.03) 4px, rgba(0,0,0,0.03) 5px),
         linear-gradient(135deg,
           rgba(255,255,255,0.12) 0%, rgba(200,220,240,0.06) 20%,
           rgba(120,140,160,0.03) 40%, rgba(255,255,255,0.1) 55%,
@@ -220,6 +250,7 @@
       50% { transform: translateX(100%); }
     }
 
+    /* Double gold rule border */
     .book-front::after {
       content: '';
       position: absolute;
@@ -228,7 +259,9 @@
       border-radius: 3px;
       box-shadow:
         inset 0 0 12px rgba(139,111,61,0.5),
-        0 0 10px rgba(139,111,61,0.35);
+        0 0 10px rgba(139,111,61,0.35),
+        inset 0 0 0 6px rgba(139,111,61,0.15),
+        inset 0 0 0 7px rgba(212,182,112,0.3);
       pointer-events: none;
     }
 
@@ -251,10 +284,28 @@
     .metal-corner.bl { bottom: 0; left: 0; clip-path: polygon(0 0, 0 100%, 100% 100%); }
     .metal-corner.br { bottom: 0; right: 0; clip-path: polygon(0 100%, 100% 0, 100% 100%); }
 
+    /* ===== VOL 1 LABEL ===== */
+    .vol-label {
+      position: absolute;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #d4b670;
+      font-family: 'Georgia', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      font-variant: small-caps;
+      text-shadow:
+        0 0 6px rgba(212,182,112,0.6),
+        0 1px 2px rgba(0,0,0,0.9);
+      z-index: 3;
+    }
+
     /* ===== TITLE ===== */
     .book-title {
       position: absolute;
-      top: 50%; left: 50%;
+      top: 45%; left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       width: 90%;
@@ -292,6 +343,21 @@
     @keyframes pulse {
       0%, 100% { opacity: 0.4; }
       50% { opacity: 1; }
+    }
+
+    /* ===== CAST SHADOW ===== */
+    .book-shadow {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%) rotateX(75deg);
+      width: 460px;
+      height: 90px;
+      background: radial-gradient(ellipse at center,
+        rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, transparent 75%);
+      filter: blur(12px);
+      z-index: -1;
+      pointer-events: none;
     }
 
     .footer {
@@ -333,6 +399,7 @@
 
   <div class="book-scene" onclick="window.location.href='/lookbook.html'">
     <div class="book">
+      <div class="book-shadow"></div>
       <div class="book-spine">
         <div class="band b1"></div>
         <div class="band b2"></div>
@@ -352,6 +419,7 @@
         <div class="book-title">
           <h1>A Mirror of My<br>Becoming</h1>
         </div>
+        <div class="vol-label">Vol. I</div>
         <div class="open-prompt">Click to open</div>
       </div>
     </div>
