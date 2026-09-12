@@ -1,9 +1,13 @@
+# ============================================================
+# .dockerignore — exclude everything that isn't the site
+# ============================================================
+
 # Git
 .git
 .github
 .gitignore
 
-# Backups
+# Backups and versions
 *_BACKUP_*
 *_v1_*
 *_v2_*
@@ -11,14 +15,41 @@
 *.backup
 *.pre-reorder-backup
 
-# Environments
+# Virtual environments (huge)
 venv312
 .venv
 node_modules
 
-# System
+# System files
 .DS_Store
 *.log
 
+# Docker artifacts
+Dockerfile
+docker-compose.yml
+.dockerignore
+
 # Documentation
 README.md
+LICENSE
+
+# Ship notebooks and repos (not part of the site)
+ships/
+!ships/manifest.json
+
+# Raw PDFs and certificates not served
+*.ipynb
+*.eml
+*.metadata.json
+
+# ProtonMail exports (huge)
+protonmail-export/
+
+# Extracted files
+extracted_1/
+extracted_manus/
+
+# Any other large folders
+markdown_generator/
+talkmap/
+_drafts/
