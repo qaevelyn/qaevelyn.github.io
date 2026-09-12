@@ -1,4 +1,20 @@
 {
+  "manifest_info": {
+    "purpose": "Single source of truth for all 5 ships",
+    "standard": "Every file gets 5 addresses: local, repo, github_blob, github_raw, live_url",
+    "location": {
+      "local": "~/Documents/Mirror-Project/qaevelyn.github.io/ships/manifest.json",
+      "repo": "ships/manifest.json",
+      "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/ships/manifest.json",
+      "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/ships/manifest.json",
+      "live_url": "https://qaevelyn.github.io/ships/manifest.json"
+    },
+    "update_workflow": "Edit this file, commit, push. YouTube links updated manually as they become available.",
+    "related_manifests": {
+      "certificates": "assets/certificates/manifest.json",
+      "case_studies": "case-studies/manifest.json"
+    }
+  },
   "ships": [
     {
       "id": "ship1-aws-rag",
@@ -8,8 +24,18 @@
       "platform": "AWS SageMaker",
       "model": "",
       "date_built": "",
-      "notebook": "Ship1_AWS_SageMaker_RAG.ipynb",
-      "github_repo": "https://github.com/qaevelyn/ship1-aws-rag",
+      "notebook": {
+        "filename": "Ship1_AWS_SageMaker_RAG.ipynb",
+        "local": "~/Documents/Mirror-Project/ship1-aws-rag/Ship1_AWS_SageMaker_RAG.ipynb",
+        "github_repo": "https://github.com/qaevelyn/ship1-aws-rag",
+        "github_blob": "https://github.com/qaevelyn/ship1-aws-rag/blob/main/Ship1_AWS_SageMaker_RAG.ipynb",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship1-aws-rag/main/Ship1_AWS_SageMaker_RAG.ipynb",
+        "private": true
+      },
+      "portfolio": {
+        "spread_anchor": "lookbook.html#ship1",
+        "live_url": "https://qaevelyn.github.io/lookbook.html#ship1"
+      },
       "video_demo": "",
       "video_container": "",
       "tags": ["AWS", "SageMaker", "RAG", "standard"]
@@ -22,8 +48,18 @@
       "platform": "AWS SageMaker",
       "model": "",
       "date_built": "",
-      "notebook": "Ship2_AWS_SageMaker_Agentic_RAG.ipynb",
-      "github_repo": "https://github.com/qaevelyn/ship2-aws-agentic-rag",
+      "notebook": {
+        "filename": "Ship2_AWS_SageMaker_Agentic_RAG.ipynb",
+        "local": "~/Documents/Mirror-Project/ship2-aws-agentic-rag/Ship2_AWS_SageMaker_Agentic_RAG.ipynb",
+        "github_repo": "https://github.com/qaevelyn/ship2-aws-agentic-rag",
+        "github_blob": "https://github.com/qaevelyn/ship2-aws-agentic-rag/blob/main/Ship2_AWS_SageMaker_Agentic_RAG.ipynb",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship2-aws-agentic-rag/main/Ship2_AWS_SageMaker_Agentic_RAG.ipynb",
+        "private": true
+      },
+      "portfolio": {
+        "spread_anchor": "lookbook.html#ship2",
+        "live_url": "https://qaevelyn.github.io/lookbook.html#ship2"
+      },
       "video_demo": "",
       "video_container": "",
       "tags": ["AWS", "SageMaker", "agentic RAG", "tool-calling"]
@@ -36,8 +72,18 @@
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
       "date_built": "",
-      "notebook": "Ship3_IBM_Granite_RAG.ipynb",
-      "github_repo": "https://github.com/qaevelyn/ship3-ibm-granite-rag",
+      "notebook": {
+        "filename": "Ship3_IBM_Granite_RAG.ipynb",
+        "local": "~/Documents/Mirror-Project/ship3-ibm-granite-rag/Ship3_IBM_Granite_RAG.ipynb",
+        "github_repo": "https://github.com/qaevelyn/ship3-ibm-granite-rag",
+        "github_blob": "https://github.com/qaevelyn/ship3-ibm-granite-rag/blob/main/Ship3_IBM_Granite_RAG.ipynb",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship3-ibm-granite-rag/main/Ship3_IBM_Granite_RAG.ipynb",
+        "private": true
+      },
+      "portfolio": {
+        "spread_anchor": "lookbook.html#ship3",
+        "live_url": "https://qaevelyn.github.io/lookbook.html#ship3"
+      },
       "video_demo": "",
       "video_container": "",
       "tags": ["IBM", "Granite", "RAG", "standard", "Ollama"]
@@ -50,8 +96,18 @@
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
       "date_built": "",
-      "notebook": "Ship4_IBM_Granite_Agentic_RAG.ipynb",
-      "github_repo": "https://github.com/qaevelyn/ship4-ibm-granite-agentic-rag",
+      "notebook": {
+        "filename": "Ship4_IBM_Granite_Agentic_RAG.ipynb",
+        "local": "~/Documents/Mirror-Project/ship4-ibm-granite-agentic-rag/Ship4_IBM_Granite_Agentic_RAG.ipynb",
+        "github_repo": "https://github.com/qaevelyn/ship4-ibm-granite-agentic-rag",
+        "github_blob": "https://github.com/qaevelyn/ship4-ibm-granite-agentic-rag/blob/main/Ship4_IBM_Granite_Agentic_RAG.ipynb",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship4-ibm-granite-agentic-rag/main/Ship4_IBM_Granite_Agentic_RAG.ipynb",
+        "private": true
+      },
+      "portfolio": {
+        "spread_anchor": "lookbook.html#ship4",
+        "live_url": "https://qaevelyn.github.io/lookbook.html#ship4"
+      },
       "video_demo": "",
       "video_container": "",
       "tags": ["IBM", "Granite", "agentic RAG", "tool-calling", "Ollama"]
@@ -64,11 +120,28 @@
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
       "date_built": "2026-08-30",
-      "notebook": "Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb",
-      "github_repo": "https://github.com/qaevelyn/ship5-ibm-granite-agentic-rag-evidenceflow",
+      "notebook": {
+        "filename": "Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb",
+        "local": "~/Documents/Mirror-Project/granite-workshop/Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb",
+        "github_repo": "https://github.com/qaevelyn/ship5-ibm-granite-agentic-rag-evidenceflow",
+        "github_blob": "https://github.com/qaevelyn/ship5-ibm-granite-agentic-rag-evidenceflow/blob/main/Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship5-ibm-granite-agentic-rag-evidenceflow/main/Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb",
+        "private": true
+      },
+      "portfolio": {
+        "spread_anchor": "lookbook.html#ship5",
+        "live_url": "https://qaevelyn.github.io/lookbook.html#ship5"
+      },
+      "case_study": {
+        "title": "EvidenceFlow Verification: How Ship 5 Proves Its Answers",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/evidenceflow-verification-ship5.md",
+        "repo": "case-studies/evidenceflow-verification-ship5.md",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/evidenceflow-verification-ship5.md",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/evidenceflow-verification-ship5.md",
+        "live_url": "https://qaevelyn.github.io/case-studies/evidenceflow-verification-ship5/"
+      },
       "video_demo": "",
       "video_container": "",
-      "case_study": "case-studies/evidenceflow-verification-ship5.md",
       "attribution": {
         "foundation": "IBM SkillsBuild — Anna Gutowska",
         "inspiration": "Asaif Ali — EvidenceFlow (https://github.com/AsaifAli/EvidenceFlow)",
