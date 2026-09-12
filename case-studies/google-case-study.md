@@ -5,8 +5,6 @@ permalink: /case-studies/google-case-study/
 author_profile: true
 ---
 
-# Case Study: Google AI Studio and Gemini NotebookLM — The Failures
-
 **Author:** Evelyn Caro  
 **Date:** August 15, 2026  
 **Lens:** Ida B. Wells — Date Everything. Name Everything. Record the Reasoning.

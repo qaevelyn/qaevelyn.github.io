@@ -5,8 +5,6 @@ permalink: /case-studies/comparative/
 author_profile: true
 ---
 
-# Comparative: From Sovereign to Extractive — A Field Report on AI Platforms
-
 **Author:** Evelyn Caro  
 **Date:** August 15, 2026  
 **Lens:** Ida B. Wells — Date Everything. Name Everything. Record the Reasoning.

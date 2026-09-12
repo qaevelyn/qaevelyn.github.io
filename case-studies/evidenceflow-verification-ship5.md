@@ -5,8 +5,6 @@ permalink: /case-studies/evidenceflow-verification-ship5/
 author_profile: true
 ---
 
-# EvidenceFlow Verification: How Ship 5 Proves Its Answers
-
 **Subtitle:** The first ship in the fleet that can trace every claim to a source
 
 **Author:** Evelyn Caro  

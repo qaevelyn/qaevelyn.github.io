@@ -5,8 +5,6 @@ permalink: /case-studies/chatgpt-case-study/
 author_profile: true
 ---
 
-# Case Study: ChatGPT — From Reliance to Rejection
-
 **Author:** Evelyn Caro  
 **Date:** August 15, 2026  
 **Lens:** Ida B. Wells — Date Everything. Name Everything. Record the Reasoning.
