@@ -1,0 +1,160 @@
+{
+  "words_info": {
+    "purpose": "All text content on the portfolio — machine-readable source of truth",
+    "standard": "Every entry has: id, page, position, text, edit_md",
+    "update_workflow": "Edit site/words.md (human), then sync to this file (machine). Or edit here directly.",
+    "companion_file": "site/words.md",
+    "location": {
+      "local": "~/Documents/Mirror-Project/qaevelyn.github.io/site/words.json",
+      "repo": "site/words.json",
+      "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/site/words.json",
+      "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/site/words.json",
+      "live_url": "https://qaevelyn.github.io/site/words.json"
+    }
+  },
+  "homepage": {
+    "file": "index.html",
+    "elements": [
+      {
+        "id": "homepage-cover-title",
+        "position": "3D book cover",
+        "text": "A Mirror of My Becoming"
+      },
+      {
+        "id": "homepage-cover-prompt",
+        "position": "3D book cover — bottom",
+        "text": "Click to open"
+      },
+      {
+        "id": "homepage-below-book",
+        "position": "Below the 3D book",
+        "text": "Open the book to see the work"
+      },
+      {
+        "id": "homepage-name",
+        "position": "Below the book",
+        "text": "Evelyn Caro"
+      },
+      {
+        "id": "homepage-tagline",
+        "position": "Below the name",
+        "text": "Sovereign systems, local first. No cloud dependency."
+      },
+      {
+        "id": "homepage-footnote",
+        "position": "Below the tagline",
+        "text": "¹ Five RAG pipelines built locally. Three cloud attempts — AWS, IBM WatsonX, Google AI Studio. One lost project, rebuilt. The white papers document all."
+      }
+    ]
+  },
+  "lookbook": {
+    "file": "lookbook.html",
+    "elements": [
+      {
+        "id": "lookbook-title",
+        "position": "TOC left page",
+        "text": "LOOKBOOK"
+      },
+      {
+        "id": "lookbook-subtitle",
+        "position": "TOC left page",
+        "text": "Sovereign AI Portfolio — Evelyn Caro"
+      },
+      {
+        "id": "lookbook-intro-header",
+        "position": "TOC right page",
+        "text": "Intro / Story"
+      },
+      {
+        "id": "lookbook-intro-subtitle",
+        "position": "TOC right page",
+        "text": "Sovereign AI Builder · RAG Pipelines, Agentic AI & EvidenceFlow · AWS re/Start Graduate"
+      },
+      {
+        "id": "lookbook-intro-body",
+        "position": "TOC right page",
+        "text": "I engineer sovereign AI systems that run locally, on my terms. Built 5 RAG pipelines. Tested them adversarially. Now in conversation with a national historical organization partnered with a major university — proof of concept pending."
+      },
+      {
+        "id": "lookbook-intro-context",
+        "position": "TOC right page",
+        "text": "This portfolio is a lookbook of my work — Ships first, then the credentials that built the foundation."
+      },
+      {
+        "id": "lookbook-intro-blockquote",
+        "position": "TOC right page",
+        "text": "Sovereign systems, local first. No cloud dependency."
+      },
+      {
+        "id": "lookbook-intro-proof",
+        "position": "TOC right page",
+        "text": "Proof, not tenure: I hold certifications in AI, LangChain, and Agentic RAG from Google and IBM. I am an AWS re/Start graduate as of September 9, 2026."
+      },
+      {
+        "id": "lookbook-intro-closer",
+        "position": "TOC right page — bottom right",
+        "text": "Count my proofs."
+      }
+    ]
+  },
+  "ships": {
+    "file": "lookbook.html",
+    "elements": [
+      {
+        "id": "ship1-title",
+        "position": "Ship 1 right page",
+        "text": "Ship 1 — AWS SageMaker RAG"
+      },
+      {
+        "id": "ship1-description",
+        "position": "Ship 1 right page",
+        "text": "Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an M1 MacBook Air."
+      },
+      {
+        "id": "ship2-title",
+        "position": "Ship 2 right page",
+        "text": "Ship 2 — AWS SageMaker Agentic RAG"
+      },
+      {
+        "id": "ship2-description",
+        "position": "Ship 2 right page",
+        "text": "Agentic RAG pipeline on AWS SageMaker — retrieval + action (API calls, decision-making). Demonstrates autonomous reasoning and tool use."
+      },
+      {
+        "id": "ship3-title",
+        "position": "Ship 3 right page",
+        "text": "Ship 3 — IBM Granite RAG"
+      },
+      {
+        "id": "ship3-description",
+        "position": "Ship 3 right page",
+        "text": "RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility."
+      },
+      {
+        "id": "ship4-title",
+        "position": "Ship 4 right page",
+        "text": "Ship 4 — IBM Granite Agentic RAG"
+      },
+      {
+        "id": "ship4-description",
+        "position": "Ship 4 right page",
+        "text": "Agentic RAG pipeline on IBM Granite — retrieval + action. Cross-platform agentic architecture with autonomous reasoning and decision-making."
+      },
+      {
+        "id": "ship5-title",
+        "position": "Ship 5 right page",
+        "text": "Ship 5 — IBM Granite Agentic RAG with EvidenceFlow"
+      },
+      {
+        "id": "ship5-description",
+        "position": "Ship 5 right page",
+        "text": "A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an M1 MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains."
+      },
+      {
+        "id": "ship5-attribution",
+        "position": "Ship 5 right page",
+        "text": "Foundation: IBM SkillsBuild (Anna Gutowska). Inspiration: Asaif Ali's EvidenceFlow. Execution: Evelyn Caro."
+      }
+    ]
+  }
+}

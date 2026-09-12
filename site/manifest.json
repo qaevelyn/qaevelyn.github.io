@@ -1,0 +1,127 @@
+{
+  "site_info": {
+    "purpose": "Component inventory — every file that makes up the portfolio",
+    "standard": "5 addresses per file: local, repo, github_blob, github_raw, live_url",
+    "location": {
+      "local": "~/Documents/Mirror-Project/qaevelyn.github.io/site/manifest.json",
+      "repo": "site/manifest.json",
+      "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/site/manifest.json",
+      "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/site/manifest.json",
+      "live_url": "https://qaevelyn.github.io/site/manifest.json"
+    },
+    "related_manifests": {
+      "certificates": "assets/certificates/manifest.json",
+      "case_studies": "case-studies/manifest.json",
+      "ships": "ships/manifest.json"
+    }
+  },
+  "components": {
+    "html_pages": [
+      {
+        "id": "homepage",
+        "filename": "index.html",
+        "title": "Evelyn Caro — A Mirror of My Becoming",
+        "purpose": "3D encyclopedia book cover — homepage",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/index.html",
+        "repo": "index.html",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/index.html",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/index.html",
+        "live_url": "https://qaevelyn.github.io/"
+      },
+      {
+        "id": "lookbook",
+        "filename": "lookbook.html",
+        "title": "Lookbook — Sovereign AI Portfolio",
+        "purpose": "The book interior — TOC, ships, certifications, case studies",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/lookbook.html",
+        "repo": "lookbook.html",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/lookbook.html",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/lookbook.html",
+        "live_url": "https://qaevelyn.github.io/lookbook.html"
+      }
+    ],
+    "javascript_libraries": [
+      {
+        "id": "page-flip",
+        "filename": "page-flip.browser.js",
+        "purpose": "StPageFlip — 3D page turning (retired, kept as reference)",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/js/page-flip.browser.js",
+        "repo": "assets/js/page-flip.browser.js",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/js/page-flip.browser.js",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/js/page-flip.browser.js",
+        "live_url": "https://qaevelyn.github.io/assets/js/page-flip.browser.js"
+      }
+    ],
+    "manifests": [
+      {
+        "id": "site-manifest",
+        "filename": "site/manifest.json",
+        "purpose": "Component inventory — this file"
+      },
+      {
+        "id": "certificates-manifest",
+        "filename": "assets/certificates/manifest.json",
+        "purpose": "14 credentials with 5-address standard"
+      },
+      {
+        "id": "case-studies-manifest",
+        "filename": "case-studies/manifest.json",
+        "purpose": "14 documents with 5-address standard"
+      },
+      {
+        "id": "ships-manifest",
+        "filename": "ships/manifest.json",
+        "purpose": "5 ships with 5-address standard and YouTube placeholders"
+      },
+      {
+        "id": "words-manifest",
+        "filename": "site/words.json",
+        "purpose": "All text content — machine-readable"
+      }
+    ],
+    "content_folders": [
+      {
+        "id": "certificates",
+        "path": "assets/certificates/",
+        "purpose": "Badge images, certificate PDFs, previews",
+        "count": 19
+      },
+      {
+        "id": "case-studies",
+        "path": "case-studies/",
+        "purpose": "Markdown documents — case studies and white papers",
+        "count": 14
+      },
+      {
+        "id": "ships",
+        "path": "ships/",
+        "purpose": "Ship manifest and future assets",
+        "count": 1
+      },
+      {
+        "id": "site",
+        "path": "site/",
+        "purpose": "Site-level inventory and words",
+        "count": 3
+      },
+      {
+        "id": "pdfs",
+        "path": "assets/pdfs/",
+        "purpose": "Portfolio-level PDFs"
+      },
+      {
+        "id": "images",
+        "path": "assets/images/",
+        "purpose": "Profile photos, favicons, page assets"
+      }
+    ]
+  },
+  "build_artifacts": {
+    "docker": {
+      "dockerfile": "Dockerfile",
+      "docker_compose": "docker-compose.yml",
+      "purpose": "Containerize the site — one command rebuild",
+      "status": "Pending"
+    }
+  }
+}
