@@ -1,0 +1,15 @@
+# ============================================================
+# Docker Compose — Run the portfolio locally
+# Usage: docker compose up
+# Then visit: http://localhost:8080
+# ============================================================
+
+version: '3.8'
+
+services:
+  portfolio:
+    build: .
+    container_name: mirror-portfolio
+    ports:
+      - "8080:80"
+    restart: unless-stopped
