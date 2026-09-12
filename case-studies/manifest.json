@@ -1,0 +1,131 @@
+{
+  "case_studies": [
+    {
+      "id": "methodology",
+      "title": "Methodology: Stress-Testing AI Systems for Reliability and Sovereignty",
+      "type": "methodology",
+      "date": "2026-08-15",
+      "file": "case-studies/methodology.md",
+      "url": "/case-studies/methodology/",
+      "tags": ["methodology", "stress-testing", "AI reliability", "sovereignty"]
+    },
+    {
+      "id": "evidenceflow-verification-ship5",
+      "title": "EvidenceFlow Verification: How Ship 5 Proves Its Answers",
+      "type": "white-paper",
+      "date": "2026-08-30",
+      "file": "case-studies/evidenceflow-verification-ship5.md",
+      "url": "/case-studies/evidenceflow-verification-ship5/",
+      "tags": ["Ship 5", "EvidenceFlow", "RAG", "verification", "Ida B. Wells"]
+    },
+    {
+      "id": "white-paper-ai-collaboration",
+      "title": "White Paper: A Case Study in AI Collaboration",
+      "type": "white-paper",
+      "date": "2026-08-15",
+      "file": "case-studies/White_Paper_AI_Collaboration_Case_Study.md",
+      "url": "/case-studies/White_Paper_AI_Collaboration_Case_Study/",
+      "tags": ["AI collaboration", "Aisha.ai", "DeepSeek", "sovereign archive"]
+    },
+    {
+      "id": "white-paper-ai-platform-comparison",
+      "title": "White Paper: AI Platform Comparison",
+      "type": "white-paper",
+      "date": "2026-08-15",
+      "file": "case-studies/White_Paper_AI_Platform_Comparison.md",
+      "url": "/case-studies/White_Paper_AI_Platform_Comparison/",
+      "tags": ["AI platform comparison", "Google AI", "IBM Granite", "DeepSeek"]
+    },
+    {
+      "id": "azari-audit",
+      "title": "RAG Knowledge Base Audit — Per Scholas AI Assistant (Azari)",
+      "type": "audit",
+      "date": "2026-09-10",
+      "file": "case-studies/azari-audit.md",
+      "url": "/case-studies/azari-audit/",
+      "pdf": "assets/pdfs/KB_Coverage_Feedback_Report_Evelyn_Caro.pdf",
+      "tags": ["RAG audit", "knowledge base", "Azari", "Per Scholas"]
+    },
+    {
+      "id": "aisha-case-study",
+      "title": "Aisha Case Study",
+      "type": "case-study",
+      "date": "2026-08-15",
+      "file": "case-studies/aisha-case-study.md",
+      "url": "/case-studies/aisha-case-study/",
+      "tags": ["Aisha", "AI collaboration"]
+    },
+    {
+      "id": "aws-case-study",
+      "title": "AWS Case Study",
+      "type": "case-study",
+      "date": "2026-08-15",
+      "file": "case-studies/aws-case-study.md",
+      "url": "/case-studies/aws-case-study/",
+      "tags": ["AWS", "cloud", "SageMaker", "lost project"]
+    },
+    {
+      "id": "chatgpt-case-study",
+      "title": "ChatGPT Case Study",
+      "type": "case-study",
+      "date": "2026-08-15",
+      "file": "case-studies/chatgpt-case-study.md",
+      "url": "/case-studies/chatgpt-case-study/",
+      "tags": ["ChatGPT", "OpenAI", "AI collaboration"]
+    },
+    {
+      "id": "deepseek-case-study",
+      "title": "DeepSeek Case Study",
+      "type": "case-study",
+      "date": "2026-08-15",
+      "file": "case-studies/deepseek-case-study.md",
+      "url": "/case-studies/deepseek-case-study/",
+      "tags": ["DeepSeek", "AI collaboration", "memory analytics"]
+    },
+    {
+      "id": "google-case-study",
+      "title": "Google Case Study",
+      "type": "case-study",
+      "date": "2026-08-15",
+      "file": "case-studies/google-case-study.md",
+      "url": "/case-studies/google-case-study/",
+      "tags": ["Google", "Gemini", "AI Studio", "AI collaboration"]
+    },
+    {
+      "id": "manus-case-study",
+      "title": "Manus Case Study",
+      "type": "case-study",
+      "date": "2026-08-15",
+      "file": "case-studies/manus-case-study.md",
+      "url": "/case-studies/manus-case-study/",
+      "tags": ["Manus", "agentic AI"]
+    },
+    {
+      "id": "comparative",
+      "title": "Comparative Analysis",
+      "type": "case-study",
+      "date": "2026-08-15",
+      "file": "case-studies/comparative.md",
+      "url": "/case-studies/comparative/",
+      "tags": ["comparative analysis", "AI platforms"]
+    },
+    {
+      "id": "white-paper-tracker",
+      "title": "White Paper Tracker",
+      "type": "index",
+      "date": "2026-08-15",
+      "file": "case-studies/white-paper-tracker.md",
+      "url": "/case-studies/white-paper-tracker/",
+      "tags": ["tracker", "index", "white papers"]
+    },
+    {
+      "id": "manus-manifest",
+      "title": "Manus Manifest 2026-08-15",
+      "type": "reference",
+      "date": "2026-08-15",
+      "file": "case-studies/manus_manifest_2026-08-15.txt",
+      "url": null,
+      "tags": ["Manus", "reference", "archive"]
+    }
+  ]
+}
