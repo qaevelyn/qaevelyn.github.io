@@ -1,13 +1,50 @@
 {
+  "manifest_info": {
+    "purpose": "Single source of truth for all 14 credentials",
+    "standard": "Every file gets 5 addresses: local, repo, github_blob, github_raw, live_url",
+    "location": {
+      "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/manifest.json",
+      "repo": "assets/certificates/manifest.json",
+      "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/manifest.json",
+      "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/manifest.json",
+      "live_url": "https://qaevelyn.github.io/assets/certificates/manifest.json"
+    },
+    "update_workflow": "Edit this file, commit, push. Add new credentials as they're earned.",
+    "related_manifests": {
+      "case_studies": "case-studies/manifest.json",
+      "ships": "ships/manifest.json"
+    }
+  },
   "certificates": [
     {
       "id": "google-ai-professional",
       "name": "Google AI Professional Certificate",
       "issuer": "Google / Coursera",
       "date": "2026-08-07",
-      "badge": "assets/certificates/google-ai-professional-badge.png",
-      "certificate": "assets/certificates/google-ai-professional-certificate.pdf",
-      "preview": "assets/certificates/google-ai-certificate-preview.png",
+      "badge": {
+        "filename": "google-ai-professional-badge.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-professional-badge.png",
+        "repo": "assets/certificates/google-ai-professional-badge.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-professional-badge.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-professional-badge.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/google-ai-professional-badge.png"
+      },
+      "certificate": {
+        "filename": "google-ai-professional-certificate.pdf",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-professional-certificate.pdf",
+        "repo": "assets/certificates/google-ai-professional-certificate.pdf",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-professional-certificate.pdf",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-professional-certificate.pdf",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/google-ai-professional-certificate.pdf"
+      },
+      "preview": {
+        "filename": "google-ai-certificate-preview.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-certificate-preview.png",
+        "repo": "assets/certificates/google-ai-certificate-preview.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-certificate-preview.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-certificate-preview.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/google-ai-certificate-preview.png"
+      },
       "credly_url": "https://www.credly.com/badges/1b0f3b19-6f35-486a-85cf-65c1a897676c"
     },
     {
@@ -15,7 +52,14 @@
       "name": "Google AI Fundamentals",
       "issuer": "Google / Coursera",
       "date": "",
-      "badge": "assets/certificates/google-ai-fundamentals.png",
+      "badge": {
+        "filename": "google-ai-fundamentals.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-fundamentals.png",
+        "repo": "assets/certificates/google-ai-fundamentals.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-fundamentals.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-fundamentals.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/google-ai-fundamentals.png"
+      },
       "credly_url": "https://www.credly.com/badges/a93bef28-d559-4572-9b98-f5b0c9a637ad"
     },
     {
@@ -23,7 +67,14 @@
       "name": "Google AI Essentials V1",
       "issuer": "Google / Coursera",
       "date": "",
-      "badge": "assets/certificates/google-ai-essentials-v1.png",
+      "badge": {
+        "filename": "google-ai-essentials-v1.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-essentials-v1.png",
+        "repo": "assets/certificates/google-ai-essentials-v1.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-essentials-v1.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-essentials-v1.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/google-ai-essentials-v1.png"
+      },
       "credly_url": "https://www.credly.com/badges/2fc30f89-95bd-42e0-8219-e826a1b68eee"
     },
     {
@@ -31,7 +82,14 @@
       "name": "Google AI for App Building",
       "issuer": "Google / Coursera",
       "date": "",
-      "badge": "assets/certificates/google-ai-for-app-building.png",
+      "badge": {
+        "filename": "google-ai-for-app-building.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-for-app-building.png",
+        "repo": "assets/certificates/google-ai-for-app-building.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-for-app-building.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-for-app-building.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/google-ai-for-app-building.png"
+      },
       "credly_url": "https://www.credly.com/badges/8d92862f-45d2-43ad-9d3e-de9bbfea967e"
     },
     {
@@ -39,7 +97,14 @@
       "name": "Google AI for Content Creation",
       "issuer": "Google / Coursera",
       "date": "",
-      "badge": "assets/certificates/google-ai-for-content-creation.png",
+      "badge": {
+        "filename": "google-ai-for-content-creation.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-for-content-creation.png",
+        "repo": "assets/certificates/google-ai-for-content-creation.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-for-content-creation.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-for-content-creation.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/google-ai-for-content-creation.png"
+      },
       "credly_url": "https://www.credly.com/badges/f1fef12b-3618-49a1-be6e-ea3447f32fdd"
     },
     {
@@ -47,7 +112,14 @@
       "name": "Google AI for Data Analysis",
       "issuer": "Google / Coursera",
       "date": "",
-      "badge": "assets/certificates/google-ai-for-data-analysis.png",
+      "badge": {
+        "filename": "google-ai-for-data-analysis.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-for-data-analysis.png",
+        "repo": "assets/certificates/google-ai-for-data-analysis.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-for-data-analysis.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-for-data-analysis.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/google-ai-for-data-analysis.png"
+      },
       "credly_url": "https://www.credly.com/badges/7b038438-9ec9-429a-be0d-47a3e1982c5b"
     },
     {
@@ -55,7 +127,14 @@
       "name": "Google AI for Writing and Communicating",
       "issuer": "Google / Coursera",
       "date": "",
-      "badge": "assets/certificates/google-ai-for-writing-and-communicating.png",
+      "badge": {
+        "filename": "google-ai-for-writing-and-communicating.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-for-writing-and-communicating.png",
+        "repo": "assets/certificates/google-ai-for-writing-and-communicating.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-for-writing-and-communicating.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-for-writing-and-communicating.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/google-ai-for-writing-and-communicating.png"
+      },
       "credly_url": "https://www.credly.com/badges/b48d5eca-9c1f-4a75-9b68-d9326371e6ab"
     },
     {
@@ -63,7 +142,14 @@
       "name": "Google Prompting Essentials",
       "issuer": "Google / Coursera",
       "date": "",
-      "badge": "assets/certificates/google-prompting-essentials.png",
+      "badge": {
+        "filename": "google-prompting-essentials.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-prompting-essentials.png",
+        "repo": "assets/certificates/google-prompting-essentials.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-prompting-essentials.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-prompting-essentials.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/google-prompting-essentials.png"
+      },
       "credly_url": "https://www.credly.com/badges/10455919-25fb-446d-b055-2e25d55a704d"
     },
     {
@@ -71,7 +157,14 @@
       "name": "AWS Educate Introduction to Generative AI",
       "issuer": "AWS Educate",
       "date": "",
-      "badge": "assets/certificates/aws-educate-genai-badge.png",
+      "badge": {
+        "filename": "aws-educate-genai-badge.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/aws-educate-genai-badge.png",
+        "repo": "assets/certificates/aws-educate-genai-badge.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/aws-educate-genai-badge.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/aws-educate-genai-badge.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/aws-educate-genai-badge.png"
+      },
       "credly_url": "https://www.credly.com/badges/3836cb8e-2f7f-475c-8b66-98aaab047ff1"
     },
     {
@@ -79,7 +172,14 @@
       "name": "CompTIA A+",
       "issuer": "CompTIA",
       "date": "2005",
-      "badge": "assets/certificates/comptia-a-certification.png",
+      "badge": {
+        "filename": "comptia-a-certification.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/comptia-a-certification.png",
+        "repo": "assets/certificates/comptia-a-certification.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/comptia-a-certification.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/comptia-a-certification.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/comptia-a-certification.png"
+      },
       "credly_url": "https://www.credly.com/badges/470f60d6-bf36-46f4-8256-81a35364b2ee"
     },
     {
@@ -87,7 +187,14 @@
       "name": "IBM Computer Hardware Basics",
       "issuer": "IBM SkillsBuild / Cisco",
       "date": "",
-      "badge": "assets/certificates/ibm-computer-hardware-badge.png",
+      "badge": {
+        "filename": "ibm-computer-hardware-badge.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-computer-hardware-badge.png",
+        "repo": "assets/certificates/ibm-computer-hardware-badge.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-computer-hardware-badge.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-computer-hardware-badge.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/ibm-computer-hardware-badge.png"
+      },
       "credly_url": "https://www.credly.com/badges/424ad3cf-4019-43a2-8924-6aa3398132b1"
     },
     {
@@ -95,7 +202,14 @@
       "name": "IBM Operating Systems Basics",
       "issuer": "IBM SkillsBuild / Cisco",
       "date": "",
-      "badge": "assets/certificates/ibm-operating-systems-badge.png",
+      "badge": {
+        "filename": "ibm-operating-systems-badge.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-operating-systems-badge.png",
+        "repo": "assets/certificates/ibm-operating-systems-badge.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-operating-systems-badge.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-operating-systems-badge.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/ibm-operating-systems-badge.png"
+      },
       "credly_url": "https://www.credly.com/badges/10fda710-2935-430a-971c-6c5b513c7198"
     },
     {
@@ -103,16 +217,44 @@
       "name": "IBM SkillsBuild — LangChain",
       "issuer": "IBM SkillsBuild",
       "date": "",
-      "certificate": "assets/certificates/ibm-langchain-certificate.pdf",
-      "preview": "assets/certificates/ibm-langchain-certificate-preview.png"
+      "certificate": {
+        "filename": "ibm-langchain-certificate.pdf",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-langchain-certificate.pdf",
+        "repo": "assets/certificates/ibm-langchain-certificate.pdf",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-langchain-certificate.pdf",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-langchain-certificate.pdf",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/ibm-langchain-certificate.pdf"
+      },
+      "preview": {
+        "filename": "ibm-langchain-certificate-preview.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-langchain-certificate-preview.png",
+        "repo": "assets/certificates/ibm-langchain-certificate-preview.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-langchain-certificate-preview.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-langchain-certificate-preview.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/ibm-langchain-certificate-preview.png"
+      }
     },
     {
       "id": "ibm-granite-agentic-rag",
       "name": "IBM SkillsBuild — Granite Agentic RAG",
       "issuer": "IBM SkillsBuild",
       "date": "",
-      "certificate": "assets/certificates/ibm-granite-agentic-rag-certificate.pdf",
-      "preview": "assets/certificates/ibm-granite-agentic-rag-certificate-preview.png"
+      "certificate": {
+        "filename": "ibm-granite-agentic-rag-certificate.pdf",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-granite-agentic-rag-certificate.pdf",
+        "repo": "assets/certificates/ibm-granite-agentic-rag-certificate.pdf",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-granite-agentic-rag-certificate.pdf",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-granite-agentic-rag-certificate.pdf",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/ibm-granite-agentic-rag-certificate.pdf"
+      },
+      "preview": {
+        "filename": "ibm-granite-agentic-rag-certificate-preview.png",
+        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png",
+        "repo": "assets/certificates/ibm-granite-agentic-rag-certificate-preview.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png"
+      }
     }
   ]
 }
