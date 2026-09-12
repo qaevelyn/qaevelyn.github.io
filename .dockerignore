@@ -1,0 +1,24 @@
+# Git
+.git
+.github
+.gitignore
+
+# Backups
+*_BACKUP_*
+*_v1_*
+*_v2_*
+*_v3_*
+*.backup
+*.pre-reorder-backup
+
+# Environments
+venv312
+.venv
+node_modules
+
+# System
+.DS_Store
+*.log
+
+# Documentation
+README.md

@@ -1,35 +1,23 @@
-# Base image: Ruby with necessary dependencies for Jekyll
-FROM ruby:3.2
+# ============================================================
+# A Mirror of My Becoming — Portfolio Container
+# Author: Evelyn Caro
+# Purpose: Serve the static portfolio with one command
+# ============================================================
 
-# Install dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    nodejs \
-    && rm -rf /var/lib/apt/lists/*
+FROM nginx:alpine
 
+# Copy the entire site into the nginx web root
+COPY . /usr/share/nginx/html/
 
-# Create a non-root user with UID 1000
-RUN groupadd -g 1000 vscode && \
-    useradd -m -u 1000 -g vscode vscode
+# Remove files that shouldn't be served
+RUN rm -rf /usr/share/nginx/html/.git \
+           /usr/share/nginx/html/.github \
+           /usr/share/nginx/html/node_modules \
+           /usr/share/nginx/html/venv312 \
+           /usr/share/nginx/html/.venv
 
-# Set the working directory
-WORKDIR /usr/src/app
+# Expose port 80
+EXPOSE 80
 
-# Set permissions for the working directory
-RUN chown -R vscode:vscode /usr/src/app
-
-# Switch to the non-root user
-USER vscode
-
-# Copy Gemfile into the container (necessary for `bundle install`)
-COPY Gemfile ./
-
-
-
-# Install bundler and dependencies
-RUN gem install connection_pool:2.5.0
-RUN gem install bundler:2.3.26
-RUN bundle install
-
-# Command to serve the Jekyll site
-CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w", "--config", "_config.yml,_config_docker.yml"]
+# Nginx runs in the foreground by default
+CMD ["nginx", "-g", "daemon off;"]
