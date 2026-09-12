@@ -1,0 +1,80 @@
+{
+  "ships": [
+    {
+      "id": "ship1-aws-rag",
+      "number": 1,
+      "title": "Ship 1 — AWS SageMaker RAG",
+      "type": "standard-rag",
+      "platform": "AWS SageMaker",
+      "model": "",
+      "date_built": "",
+      "notebook": "Ship1_AWS_SageMaker_RAG.ipynb",
+      "github_repo": "https://github.com/qaevelyn/ship1-aws-rag",
+      "video_demo": "",
+      "video_container": "",
+      "tags": ["AWS", "SageMaker", "RAG", "standard"]
+    },
+    {
+      "id": "ship2-aws-agentic-rag",
+      "number": 2,
+      "title": "Ship 2 — AWS SageMaker Agentic RAG",
+      "type": "agentic-rag",
+      "platform": "AWS SageMaker",
+      "model": "",
+      "date_built": "",
+      "notebook": "Ship2_AWS_SageMaker_Agentic_RAG.ipynb",
+      "github_repo": "https://github.com/qaevelyn/ship2-aws-agentic-rag",
+      "video_demo": "",
+      "video_container": "",
+      "tags": ["AWS", "SageMaker", "agentic RAG", "tool-calling"]
+    },
+    {
+      "id": "ship3-ibm-granite-rag",
+      "number": 3,
+      "title": "Ship 3 — IBM Granite RAG",
+      "type": "standard-rag",
+      "platform": "IBM Granite",
+      "model": "granite4.1:3b",
+      "date_built": "",
+      "notebook": "Ship3_IBM_Granite_RAG.ipynb",
+      "github_repo": "https://github.com/qaevelyn/ship3-ibm-granite-rag",
+      "video_demo": "",
+      "video_container": "",
+      "tags": ["IBM", "Granite", "RAG", "standard", "Ollama"]
+    },
+    {
+      "id": "ship4-ibm-granite-agentic-rag",
+      "number": 4,
+      "title": "Ship 4 — IBM Granite Agentic RAG",
+      "type": "agentic-rag",
+      "platform": "IBM Granite",
+      "model": "granite4.1:3b",
+      "date_built": "",
+      "notebook": "Ship4_IBM_Granite_Agentic_RAG.ipynb",
+      "github_repo": "https://github.com/qaevelyn/ship4-ibm-granite-agentic-rag",
+      "video_demo": "",
+      "video_container": "",
+      "tags": ["IBM", "Granite", "agentic RAG", "tool-calling", "Ollama"]
+    },
+    {
+      "id": "ship5-ibm-granite-agentic-rag-evidenceflow",
+      "number": 5,
+      "title": "Ship 5 — IBM Granite Agentic RAG with EvidenceFlow",
+      "type": "agentic-rag-evidence-verified",
+      "platform": "IBM Granite",
+      "model": "granite4.1:3b",
+      "date_built": "2026-08-30",
+      "notebook": "Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb",
+      "github_repo": "https://github.com/qaevelyn/ship5-ibm-granite-agentic-rag-evidenceflow",
+      "video_demo": "",
+      "video_container": "",
+      "case_study": "case-studies/evidenceflow-verification-ship5.md",
+      "attribution": {
+        "foundation": "IBM SkillsBuild — Anna Gutowska",
+        "inspiration": "Asaif Ali — EvidenceFlow (https://github.com/AsaifAli/EvidenceFlow)",
+        "execution": "Evelyn Caro"
+      },
+      "tags": ["IBM", "Granite", "agentic RAG", "EvidenceFlow", "verification", "fail-closed", "Ollama"]
+    }
+  ]
+}
