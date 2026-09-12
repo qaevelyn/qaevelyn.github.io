@@ -5,8 +5,6 @@ permalink: /case-studies/manus-case-study/
 author_profile: true
 ---
 
-# Case Study: Manus — From Loyalty to Betrayal to Sovereignty
-
 **Author:** Evelyn Caro  
 **Date:** August 15, 2026  
 **Lens:** Ida B. Wells — Date Everything. Name Everything. Record the Reasoning.

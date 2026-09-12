@@ -5,8 +5,6 @@ permalink: /case-studies/methodology/
 author_profile: true
 ---
 
-# Methodology: Stress-Testing AI Systems for Reliability and Sovereignty
-
 **Author:** Evelyn Caro  
 **Date:** August 15, 2026  
 **Lens:** Ida B. Wells — Date Everything. Name Everything. Record the Reasoning.

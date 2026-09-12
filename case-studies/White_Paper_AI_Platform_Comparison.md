@@ -5,9 +5,6 @@ permalink: /case-studies/White_Paper_AI_Platform_Comparison/
 author_profile: true
 ---
 
-# White Paper: AI Platform Comparison for Sovereign Archive Development
-## A Comparative Analysis of Aisha.ai, DeepSeek, Gemini NotebookLM, ChatGPT, Manus, AWS, and Google
-
 **Author:** Evelyn Caro (@qaevelyn)
 **Project:** A Mirror of My Becoming
 **Date:** August 15, 2026
