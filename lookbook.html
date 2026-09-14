@@ -289,24 +289,28 @@
       left: 50%;
       top: -40px;
       bottom: -40px;
-      width: 120px;
+      width: 140px;
       transform: translateX(-50%);
       background:
         linear-gradient(180deg,
           rgba(60,30,10,0) 0%,
-          rgba(60,30,10,0.12) 20%,
-          rgba(60,30,10,0.12) 80%,
+          rgba(60,30,10,0.1) 15%,
+          rgba(60,30,10,0.1) 85%,
           rgba(60,30,10,0) 100%),
         linear-gradient(90deg,
-          rgba(60,30,10,0) 0%,
-          rgba(60,30,10,0.08) 15%,
-          rgba(60,30,10,0.2) 30%,
-          rgba(60,30,10,0.42) 42%,
-          rgba(30,15,5,0.72) 50%,
-          rgba(60,30,10,0.42) 58%,
-          rgba(60,30,10,0.2) 70%,
-          rgba(60,30,10,0.08) 85%,
-          rgba(60,30,10,0) 100%);
+          rgba(120,80,40,0) 0%,
+          rgba(120,80,40,0.05) 12%,
+          rgba(100,60,25,0.1) 22%,
+          rgba(85,45,18,0.2) 32%,
+          rgba(60,30,10,0.4) 42%,
+          rgba(40,20,8,0.65) 47%,
+          rgba(15,8,3,0.88) 50%,
+          rgba(40,20,8,0.65) 53%,
+          rgba(60,30,10,0.4) 58%,
+          rgba(85,45,18,0.2) 68%,
+          rgba(100,60,25,0.1) 78%,
+          rgba(120,80,40,0.05) 88%,
+          rgba(120,80,40,0) 100%);
       pointer-events: none;
       z-index: 3;
     }
@@ -660,7 +664,7 @@
         const child = spread.getAttribute('data-toc-child');
         const single = spread.getAttribute('data-toc-title');
 
-        const startPage = (idx * 2) + 1;
+        const startPage = (idx * 2) - 1;
         const endPage = startPage + 1;
 
         if (parent && child) {
