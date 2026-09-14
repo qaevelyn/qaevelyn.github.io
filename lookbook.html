@@ -53,6 +53,7 @@
       gap: 0;
       transform-style: preserve-3d;
       min-height: auto;
+      position: relative;
     }
 
     .spread.active {
@@ -268,6 +269,17 @@
     .spread .page:last-child::before { left: 0; background: linear-gradient(to right, rgba(60,30,10,0.35) 0%, rgba(60,30,10,0.15) 30%, rgba(60,30,10,0) 70%); }
     .spread .page:first-child::after { background: radial-gradient(ellipse at right center, rgba(255,240,220,0.25) 0%, rgba(255,240,220,0) 55%); }
     .spread .page:last-child::after { background: radial-gradient(ellipse at left center, rgba(255,240,220,0.25) 0%, rgba(255,240,220,0) 55%); }
+    .valley {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 80px;
+      transform: translateX(-50%);
+      background: radial-gradient(ellipse at center, rgba(60,30,10,0.55) 0%, rgba(60,30,10,0.28) 20%, rgba(60,30,10,0.08) 50%, rgba(60,30,10,0) 80%);
+      pointer-events: none;
+      z-index: 3;
+    }
   </style>
 </head>
 <body>
@@ -294,6 +306,7 @@
             <li><a href="#" onclick="goToSpread(9); return false;">Case Studies <span>Pages 14–15</span></a></li>
           </ul>
         </div>
+        <div class="valley"></div>
         <div class="page">
           <h2>Intro / Story</h2>
           <p style="font-size:1.1rem; font-weight:600; margin-bottom:0.5rem;">Sovereign AI Builder · RAG Pipelines, Agentic AI & EvidenceFlow · AWS re/Start Graduate</p>
@@ -316,6 +329,7 @@
           </div>
           <p style="font-size:0.9rem; color:#5a3a2a;"><em>AWS SageMaker · Standard RAG</em></p>
         </div>
+        <div class="valley"></div>
         <div class="page">
           <h3>Ship 1 — AWS SageMaker RAG</h3>
           <div class="badge aws">Standard RAG</div>
@@ -336,6 +350,7 @@
           </div>
           <p style="font-size:0.9rem; color:#5a3a2a;"><em>AWS SageMaker · Agentic RAG</em></p>
         </div>
+        <div class="valley"></div>
         <div class="page">
           <h3>Ship 2 — AWS SageMaker Agentic RAG</h3>
           <div class="badge aws">Agentic RAG</div>
@@ -356,6 +371,7 @@
           </div>
           <p style="font-size:0.9rem; color:#5a3a2a;"><em>IBM Granite · Standard RAG</em></p>
         </div>
+        <div class="valley"></div>
         <div class="page">
           <h3>Ship 3 — IBM Granite RAG</h3>
           <div class="badge ibm">Standard RAG</div>
@@ -376,6 +392,7 @@
           </div>
           <p style="font-size:0.9rem; color:#5a3a2a;"><em>IBM Granite · Agentic RAG</em></p>
         </div>
+        <div class="valley"></div>
         <div class="page">
           <h3>Ship 4 — IBM Granite Agentic RAG</h3>
           <div class="badge ibm">Agentic RAG</div>
@@ -396,6 +413,7 @@
           </div>
           <p style="font-size:0.9rem; color:#5a3a2a;"><em>IBM Granite · Agentic RAG + EvidenceFlow Verification</em></p>
         </div>
+        <div class="valley"></div>
         <div class="page">
           <h3>Ship 5 — IBM Granite Agentic RAG with EvidenceFlow</h3>
           <div class="badge ibm">Agentic RAG + EvidenceFlow</div>
@@ -424,6 +442,7 @@
             <img src="/assets/certificates/google-ai-fundamentals.png" alt="Google AI Fundamentals" style="width:100px; height:auto;">
           </a>
         </div>
+        <div class="valley"></div>
         <div class="page">
           <h3 style="text-align:center;">Google AI Course Badges</h3>
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem;">
@@ -464,6 +483,7 @@
           </a>
           <p style="font-size:0.75rem; text-align:center; color:#5a3a2a; margin-top:0.5rem; font-style:italic;">Introduction to Generative AI</p>
         </div>
+        <div class="valley"></div>
         <div class="page">
           <h3 style="text-align:center;">CompTIA A+</h3>
           <p style="font-size:0.8rem; text-align:center; color:#5a3a2a; margin-top:0.5rem;">CompTIA A+ Certified</p>
@@ -487,6 +507,7 @@
             </a>
           </div>
         </div>
+        <div class="valley"></div>
         <div class="page">
           <h3 style="text-align:center;">IBM SkillsBuild Certificates</h3>
           <div style="border:6px double #8b6f3d; padding:8px; border-radius:4px; background:linear-gradient(135deg, rgba(212,182,112,0.15) 0%, rgba(139,111,61,0.1) 100%); box-shadow: inset 0 0 12px rgba(139,111,61,0.3), 0 4px 12px rgba(0,0,0,0.3); margin-top:0.75rem;">
@@ -517,6 +538,7 @@
             <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/azari-audit/" target="_blank" style="color:#007acc; text-decoration:none;">🔍 RAG Knowledge Base Audit — Azari AI</a></li>
           </ul>
         </div>
+        <div class="valley"></div>
         <div class="page">
           <h3>More Case Studies</h3>
           <ul style="list-style:none; padding-left:0; margin-top:1rem;">
