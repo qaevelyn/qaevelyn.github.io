@@ -264,8 +264,8 @@
     .spread .page { position: relative; }
     .spread .page::before { content: ""; position: absolute; top: 0; bottom: 0; width: 35%; pointer-events: none; z-index: 2; }
     .spread .page::after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; pointer-events: none; z-index: 1; }
-    .spread .page:first-child::before { right: 0; background: linear-gradient(to left, rgba(60,30,10,0.35) 0%, rgba(60,30,10,0.15) 30%, rgba(60,30,10,0) 70%); }
-    .spread .page:last-child::before { left: 0; background: linear-gradient(to right, rgba(60,30,10,0.35) 0%, rgba(60,30,10,0.15) 30%, rgba(60,30,10,0) 70%); }
+    .spread .page:first-child::before { right: 0; background: radial-gradient(ellipse at right center, rgba(60,30,10,0.55) 0%, rgba(60,30,10,0.25) 25%, rgba(60,30,10,0.08) 55%, rgba(60,30,10,0) 80%); }
+    .spread .page:last-child::before { left: 0; background: radial-gradient(ellipse at left center, rgba(60,30,10,0.55) 0%, rgba(60,30,10,0.25) 25%, rgba(60,30,10,0.08) 55%, rgba(60,30,10,0) 80%); }
     .spread .page:first-child::after { background: radial-gradient(ellipse at right center, rgba(255,240,220,0.25) 0%, rgba(255,240,220,0) 55%); }
     .spread .page:last-child::after { background: radial-gradient(ellipse at left center, rgba(255,240,220,0.25) 0%, rgba(255,240,220,0) 55%); }
   </style>
