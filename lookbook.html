@@ -152,28 +152,25 @@
     }
 
     .nav-controls button {
-      padding: 1.1rem 2.8rem;
+      padding: 1.2rem 3rem;
       background:
-        radial-gradient(circle at 10px 10px, #e8c98a 0%, #8a6b2e 55%, #3a2a14 100%) 0 0 / 6px 6px no-repeat,
-        radial-gradient(circle at 10px 10px, #e8c98a 0%, #8a6b2e 55%, #3a2a14 100%) 100% 0 / 6px 6px no-repeat,
-        radial-gradient(circle at 10px 10px, #e8c98a 0%, #8a6b2e 55%, #3a2a14 100%) 0 100% / 6px 6px no-repeat,
-        radial-gradient(circle at 10px 10px, #e8c98a 0%, #8a6b2e 55%, #3a2a14 100%) 100% 100% / 6px 6px no-repeat,
-        radial-gradient(ellipse at 50% 30%, #b8924a 0%, #8a6b2e 40%, #5a4320 75%, #3a2a14 100%) center / 100% 100% no-repeat;
-      background-origin: border-box;
-      background-clip: padding-box, padding-box, padding-box, padding-box, border-box;
+        radial-gradient(circle at 30% 30%, #f5e0a8 0%, #c9a355 25%, #8a6b2e 55%, #4a3315 85%, #2a1a08 100%) 12px 12px / 12px 12px no-repeat,
+        radial-gradient(circle at 30% 30%, #f5e0a8 0%, #c9a355 25%, #8a6b2e 55%, #4a3315 85%, #2a1a08 100%) calc(100% - 12px) 12px / 12px 12px no-repeat,
+        radial-gradient(circle at 30% 30%, #f5e0a8 0%, #c9a355 25%, #8a6b2e 55%, #4a3315 85%, #2a1a08 100%) 12px calc(100% - 12px) / 12px 12px no-repeat,
+        radial-gradient(circle at 30% 30%, #f5e0a8 0%, #c9a355 25%, #8a6b2e 55%, #4a3315 85%, #2a1a08 100%) calc(100% - 12px) calc(100% - 12px) / 12px 12px no-repeat,
+        linear-gradient(180deg, #b8924a 0%, #8a6b2e 45%, #5a4320 100%) center / 100% 100% no-repeat;
       color: #f5e6d3;
-      border: 1px solid #6b4f1f;
+      border: 1px solid #4a3315;
       border-radius: 3px;
       box-shadow:
-        inset 0 1px 0 rgba(245,230,211,0.4),
-        inset 0 -2px 4px rgba(0,0,0,0.5),
-        0 4px 12px rgba(0,0,0,0.55),
-        0 1px 0 rgba(245,230,211,0.15);
+        inset 0 1px 0 rgba(245,230,211,0.45),
+        inset 0 -2px 4px rgba(0,0,0,0.6),
+        0 4px 12px rgba(0,0,0,0.55);
       font-family: Georgia, serif;
       font-weight: 700;
       letter-spacing: 0.08em;
       font-size: 1.05rem;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+      text-shadow: 0 -1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(245,230,211,0.15);
       cursor: pointer;
       transition: box-shadow 0.2s, filter 0.2s;
       position: relative;
@@ -290,19 +287,25 @@
     .valley {
       position: absolute;
       left: 50%;
-      top: -20px;
-      bottom: -20px;
-      width: 90px;
+      top: -40px;
+      bottom: -40px;
+      width: 120px;
       transform: translateX(-50%);
       background:
-        linear-gradient(180deg, rgba(60,30,10,0) 0%, rgba(60,30,10,0.15) 15%, rgba(60,30,10,0.15) 85%, rgba(60,30,10,0) 100%),
+        linear-gradient(180deg,
+          rgba(60,30,10,0) 0%,
+          rgba(60,30,10,0.12) 20%,
+          rgba(60,30,10,0.12) 80%,
+          rgba(60,30,10,0) 100%),
         linear-gradient(90deg,
           rgba(60,30,10,0) 0%,
-          rgba(60,30,10,0.2) 25%,
-          rgba(60,30,10,0.55) 42%,
-          rgba(15,8,3,0.85) 50%,
-          rgba(60,30,10,0.55) 58%,
-          rgba(60,30,10,0.2) 75%,
+          rgba(60,30,10,0.08) 15%,
+          rgba(60,30,10,0.2) 30%,
+          rgba(60,30,10,0.42) 42%,
+          rgba(30,15,5,0.72) 50%,
+          rgba(60,30,10,0.42) 58%,
+          rgba(60,30,10,0.2) 70%,
+          rgba(60,30,10,0.08) 85%,
           rgba(60,30,10,0) 100%);
       pointer-events: none;
       z-index: 3;
@@ -352,7 +355,7 @@
       </div>
 
       <!-- ===== SHIP 1 ===== -->
-      <div id="ship1" class="spread">
+      <div id="ship1" class="spread" data-toc-parent="Ship 1" data-toc-child="AWS SageMaker RAG">
         <div class="page">
           <h3>Ship 1</h3>
           <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
@@ -373,7 +376,7 @@
       </div>
 
       <!-- ===== SHIP 2 ===== -->
-      <div id="ship2" class="spread">
+      <div id="ship2" class="spread" data-toc-parent="Ship 2" data-toc-child="AWS SageMaker Agentic RAG">
         <div class="page">
           <h3>Ship 2</h3>
           <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
@@ -394,7 +397,7 @@
       </div>
 
       <!-- ===== SHIP 3 ===== -->
-      <div id="ship3" class="spread">
+      <div id="ship3" class="spread" data-toc-parent="Ship 3" data-toc-child="IBM Granite RAG">
         <div class="page">
           <h3>Ship 3</h3>
           <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
@@ -415,7 +418,7 @@
       </div>
 
       <!-- ===== SHIP 4 ===== -->
-      <div id="ship4" class="spread">
+      <div id="ship4" class="spread" data-toc-parent="Ship 4" data-toc-child="IBM Granite Agentic RAG">
         <div class="page">
           <h3>Ship 4</h3>
           <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
@@ -436,7 +439,7 @@
       </div>
 
       <!-- ===== SHIP 5 ===== -->
-      <div id="ship5" class="spread">
+      <div id="ship5" class="spread" data-toc-parent="Ship 5" data-toc-child="IBM Granite Agentic RAG with EvidenceFlow">
         <div class="page">
           <h3>Ship 5</h3>
           <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
@@ -458,7 +461,7 @@
       </div>
 
       <!-- ===== CERTIFICATIONS ===== -->
-      <div id="certs" class="spread">
+      <div id="certs" class="spread" data-toc-parent="Certifications" data-toc-child="Google AI Professional">
         <div class="page">
           <h3 style="text-align:center;">Google AI Professional</h3>
           <p style="font-size:0.85rem; text-align:center; color:#5a3a2a; margin:0.5rem 0;">8 courses · 20+ artifacts · Aug 7, 2026</p>
@@ -505,7 +508,7 @@
         </div>
       </div>
 
-      <div id="certs-aws-comptia" class="spread">
+      <div id="certs-aws-comptia" class="spread" data-toc-parent="Certifications" data-toc-child="AWS Educate & CompTIA A+">
         <div class="page">
           <h3 style="text-align:center;">AWS Educate</h3>
           <p style="font-size:0.8rem; text-align:center; color:#5a3a2a; margin-top:0.5rem;">More AWS badges coming</p>
@@ -524,7 +527,7 @@
         </div>
       </div>
 
-      <div id="certs-ibm" class="spread">
+      <div id="certs-ibm" class="spread" data-toc-parent="Certifications" data-toc-child="IBM SkillsBuild">
         <div class="page">
           <h3 style="text-align:center;">IBM SkillsBuild Badges</h3>
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem;">
@@ -557,7 +560,7 @@
       </div>
 
       <!-- ===== CASE STUDIES ===== -->
-      <div id="casestudies" class="spread">
+      <div id="casestudies" class="spread" data-toc-title="Case Studies & White Papers">
         <div class="page">
           <h3>Case Studies & White Papers</h3>
           <p style="font-size:0.9rem;">Analytical work, audits, and research papers.</p>
@@ -640,6 +643,79 @@
       document.body.classList.toggle('dark-mode');
       this.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
     });
+
+
+    // ===== AUTO-GENERATED TOC =====
+    function buildTOC() {
+      const tocList = document.querySelector('#toc ul');
+      if (!tocList) return;
+
+      const spreads = document.querySelectorAll('.spread');
+      const entries = [];
+
+      spreads.forEach((spread, idx) => {
+        if (spread.id === 'toc') return;
+
+        const parent = spread.getAttribute('data-toc-parent');
+        const child = spread.getAttribute('data-toc-child');
+        const single = spread.getAttribute('data-toc-title');
+
+        const startPage = (idx * 2) + 1;
+        const endPage = startPage + 1;
+
+        if (parent && child) {
+          entries.push({ type: 'parent', parent, idx, startPage, endPage });
+          entries.push({ type: 'child', parent, child, idx });
+        } else if (single) {
+          entries.push({ type: 'single', title: single, idx, startPage, endPage });
+        }
+      });
+
+      // Group parents and merge page ranges
+      const grouped = [];
+      entries.forEach(e => {
+        if (e.type === 'parent') {
+          const existing = grouped.find(g => g.parent === e.parent && g.type === 'group');
+          if (existing) {
+            existing.endPage = Math.max(existing.endPage, e.endPage);
+          } else {
+            grouped.push({ type: 'group', parent: e.parent, firstIdx: e.idx, startPage: e.startPage, endPage: e.endPage, children: [] });
+          }
+        } else if (e.type === 'child') {
+          const parent = grouped.find(g => g.parent === e.parent && g.type === 'group');
+          if (parent) parent.children.push({ child: e.child, idx: e.idx });
+        } else if (e.type === 'single') {
+          grouped.push({ type: 'single', title: e.title, idx: e.idx, startPage: e.startPage, endPage: e.endPage });
+        }
+      });
+
+      // Render
+      tocList.innerHTML = '';
+      grouped.forEach(g => {
+        if (g.type === 'single') {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="#" onclick="goToSpread(${g.idx}); return false;">${g.title} <span>Pages ${g.startPage}–${g.endPage}</span></a>`;
+          tocList.appendChild(li);
+        } else if (g.type === 'group') {
+          const parentLi = document.createElement('li');
+          parentLi.innerHTML = `<a href="#" onclick="goToSpread(${g.firstIdx}); return false;">${g.parent} <span>Pages ${g.startPage}–${g.endPage}</span></a>`;
+          tocList.appendChild(parentLi);
+
+          if (g.children.length) {
+            const subUl = document.createElement('ul');
+            subUl.className = 'toc-sublist';
+            g.children.forEach(c => {
+              const subLi = document.createElement('li');
+              subLi.innerHTML = `<a href="#" onclick="goToSpread(${c.idx}); return false;">${c.child}</a>`;
+              subUl.appendChild(subLi);
+            });
+            tocList.appendChild(subUl);
+          }
+        }
+      });
+    }
+
+    buildTOC();
 
     goToSpread(0);
   </script>
