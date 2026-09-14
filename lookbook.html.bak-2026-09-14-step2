@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lookbook — Sovereign AI Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: #2c1810;
+      color: #f5e6d3;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .book-container {
+      position: relative;
+      max-width: 1200px;
+      width: 100%;
+      perspective: 1500px;
+    }
+
+    .book-spine {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(90deg, transparent, rgba(0,0,0,0.3), transparent);
+      z-index: 10;
+    }
+
+    .book-pages {
+      position: relative;
+      background: #f5e6d3;
+      color: #2c1810;
+      border-radius: 4px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      overflow: hidden;
+      min-height: 600px;
+    }
+
+    .spread {
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      min-height: 600px;
+    }
+
+    .spread.active {
+      display: grid;
+    }
+
+    .spread .page {
+      padding: 3rem 2.5rem;
+      border-right: 1px solid rgba(44,24,16,0.1);
+    }
+
+    .spread .page:last-child {
+      border-right: none;
+    }
+
+    .spread .page h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #2c1810;
+    }
+
+    .spread .page h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+      color: #2c1810;
+    }
+
+    .spread .page .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .spread .page .badge.aws { background: #ff9900; color: #1a1a1a; }
+    .spread .page .badge.ibm { background: #0062ff; color: #fff; }
+    .spread .page .badge.cert { background: #2d3748; color: #fff; }
+
+    .spread .page .links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+      color: #007acc;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .spread .page .links a:hover {
+      text-decoration: underline;
+    }
+
+    .spread .page p {
+      line-height: 1.7;
+      margin-bottom: 0.5rem;
+    }
+
+    .toc ul {
+      list-style: none;
+    }
+
+    .toc ul li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(44,24,16,0.1);
+    }
+
+    .toc ul li a {
+      color: #2c1810;
+      text-decoration: none;
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .toc ul li a:hover {
+      color: #007acc;
+    }
+
+    .toc ul li a span {
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+
+    .nav-controls {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .nav-controls button {
+      padding: 0.75rem 2rem;
+      background: #2c1810;
+      color: #f5e6d3;
+      border: none;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .nav-controls button:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    .nav-controls button:hover:not(:disabled) {
+      opacity: 0.85;
+    }
+
+    .page-indicator {
+      text-align: center;
+      margin-top: 1rem;
+      color: #2c1810;
+      font-size: 0.9rem;
+    }
+
+    .keyboard-hint {
+      text-align: center;
+      margin-top: 0.5rem;
+      color: rgba(44,24,16,0.6);
+      font-size: 0.8rem;
+    }
+
+    .return-home {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .return-home a {
+      color: #2c1810;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .return-home a:hover {
+      text-decoration: underline;
+    }
+
+    body.dark-mode .page-indicator {
+      color: #f5e6d3;
+    }
+
+    body.dark-mode .keyboard-hint {
+      color: rgba(245,230,211,0.6);
+    }
+
+    body.dark-mode .return-home a {
+      color: #f5e6d3;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #f5e6d3;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 100;
+    }
+
+    body.dark-mode {
+      background: #0d0805;
+    }
+
+    body.dark-mode .book-pages {
+      background: #1a1a2e;
+      color: #e8e8e8;
+    }
+
+    body.dark-mode .spread .page h2,
+    body.dark-mode .spread .page h3 {
+      color: #e8e8e8;
+    }
+
+    body.dark-mode .toc ul li a {
+      color: #e8e8e8;
+    }
+
+    @media (max-width: 768px) {
+      .spread.active {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+
+  <div class="book-container">
+    <div class="book-spine"></div>
+
+    <div class="book-pages">
+
+      <!-- ===== TOC + INTRO ===== -->
+      <div id="toc" class="spread toc active">
+        <div class="page">
+          <h2 style="text-align:center; font-size: 2.2rem;">LOOKBOOK</h2>
+          <p style="text-align:center; margin-bottom: 1.5rem;">Sovereign AI Portfolio — Evelyn Caro</p>
+          <ul>
+            <li><a href="#" onclick="goToSpread(1); return false;">Ship 1 — AWS SageMaker RAG <span>Pages 2–3</span></a></li>
+            <li><a href="#" onclick="goToSpread(2); return false;">Ship 2 — AWS SageMaker Agentic RAG <span>Pages 4–5</span></a></li>
+            <li><a href="#" onclick="goToSpread(3); return false;">Ship 3 — IBM Granite RAG <span>Pages 6–7</span></a></li>
+            <li><a href="#" onclick="goToSpread(4); return false;">Ship 4 — IBM Granite Agentic RAG <span>Pages 8–9</span></a></li>
+            <li><a href="#" onclick="goToSpread(5); return false;">Ship 5 — IBM Granite Agentic RAG with EvidenceFlow <span>Pages 10–11</span></a></li>
+            <li><a href="#" onclick="goToSpread(6); return false;">Certifications <span>Pages 12–13</span></a></li>
+            <li><a href="#" onclick="goToSpread(9); return false;">Case Studies <span>Pages 14–15</span></a></li>
+          </ul>
+        </div>
+        <div class="page">
+          <h2>Intro / Story</h2>
+          <p style="font-size:1.1rem; font-weight:600; margin-bottom:0.5rem;">Sovereign AI Builder · RAG Pipelines, Agentic AI & EvidenceFlow · AWS re/Start Graduate</p>
+          <p style="line-height:1.7;">I engineer sovereign AI systems that run locally, on my terms. Built 5 RAG pipelines. Tested them adversarially. Now in conversation with a national historical organization partnered with a major university — proof of concept pending.</p>
+          <p style="margin-top:0.75rem;">This portfolio is a lookbook of my work — Ships first, then the credentials that built the foundation.</p>
+          <blockquote style="border-left:4px solid #007acc; padding-left:1rem; margin:1rem 0; font-style:italic;">Sovereign systems, local first. No cloud dependency.</blockquote>
+          <div style="background:rgba(44,24,16,0.05); padding:1rem; border-radius:8px; margin-top:1rem; font-size:0.9rem;">
+            <strong>Proof, not tenure:</strong> I hold certifications in AI, LangChain, and Agentic RAG from Google and IBM. I am an AWS re/Start graduate as of September 9, 2026.
+          </div>
+          <p style="margin-top:1rem; font-weight:600; text-align:right;">Count my proofs.</p>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 1 ===== -->
+      <div id="ship1" class="spread">
+        <div class="page">
+          <h3>Ship 1</h3>
+          <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
+            📸 Screenshot / GUI coming soon
+          </div>
+          <p style="font-size:0.9rem; color:#5a3a2a;"><em>AWS SageMaker · Standard RAG</em></p>
+        </div>
+        <div class="page">
+          <h3>Ship 1 — AWS SageMaker RAG</h3>
+          <div class="badge aws">Standard RAG</div>
+          <p style="line-height:1.6;">Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an M1 MacBook Air.</p>
+          <div class="links">
+            <a href="#">🎥 Ship 1 — Demo Video (coming soon)</a>
+            <a href="#">🐳 Ship 1 — Containerizing the RAG Pipeline (coming soon)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 2 ===== -->
+      <div id="ship2" class="spread">
+        <div class="page">
+          <h3>Ship 2</h3>
+          <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
+            📸 Screenshot / GUI coming soon
+          </div>
+          <p style="font-size:0.9rem; color:#5a3a2a;"><em>AWS SageMaker · Agentic RAG</em></p>
+        </div>
+        <div class="page">
+          <h3>Ship 2 — AWS SageMaker Agentic RAG</h3>
+          <div class="badge aws">Agentic RAG</div>
+          <p style="line-height:1.6;">Agentic RAG pipeline on AWS SageMaker — retrieval + action (API calls, decision-making). Demonstrates autonomous reasoning and tool use.</p>
+          <div class="links">
+            <a href="#">🎥 Ship 2 — Demo Video (coming soon)</a>
+            <a href="#">🐳 Ship 2 — Containerizing the RAG Pipeline (coming soon)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 3 ===== -->
+      <div id="ship3" class="spread">
+        <div class="page">
+          <h3>Ship 3</h3>
+          <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
+            📸 Screenshot / GUI coming soon
+          </div>
+          <p style="font-size:0.9rem; color:#5a3a2a;"><em>IBM Granite · Standard RAG</em></p>
+        </div>
+        <div class="page">
+          <h3>Ship 3 — IBM Granite RAG</h3>
+          <div class="badge ibm">Standard RAG</div>
+          <p style="line-height:1.6;">RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility.</p>
+          <div class="links">
+            <a href="#">🎥 Ship 3 — Demo Video (coming soon)</a>
+            <a href="#">🐳 Ship 3 — Containerizing the RAG Pipeline (coming soon)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 4 ===== -->
+      <div id="ship4" class="spread">
+        <div class="page">
+          <h3>Ship 4</h3>
+          <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
+            📸 Screenshot / GUI coming soon
+          </div>
+          <p style="font-size:0.9rem; color:#5a3a2a;"><em>IBM Granite · Agentic RAG</em></p>
+        </div>
+        <div class="page">
+          <h3>Ship 4 — IBM Granite Agentic RAG</h3>
+          <div class="badge ibm">Agentic RAG</div>
+          <p style="line-height:1.6;">Agentic RAG pipeline on IBM Granite — retrieval + action. Cross-platform agentic architecture with autonomous reasoning and decision-making.</p>
+          <div class="links">
+            <a href="#">🎥 Ship 4 — Demo Video (coming soon)</a>
+            <a href="#">🐳 Ship 4 — Containerizing the RAG Pipeline (coming soon)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 5 ===== -->
+      <div id="ship5" class="spread">
+        <div class="page">
+          <h3>Ship 5</h3>
+          <div style="background:rgba(44,24,16,0.05); padding:2rem; border-radius:8px; text-align:center; margin:0.5rem 0;">
+            📸 Screenshot / GUI coming soon
+          </div>
+          <p style="font-size:0.9rem; color:#5a3a2a;"><em>IBM Granite · Agentic RAG + EvidenceFlow Verification</em></p>
+        </div>
+        <div class="page">
+          <h3>Ship 5 — IBM Granite Agentic RAG with EvidenceFlow</h3>
+          <div class="badge ibm">Agentic RAG + EvidenceFlow</div>
+          <p style="line-height:1.6;">A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an M1 MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.</p>
+          <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Foundation: IBM SkillsBuild (Anna Gutowska). Inspiration: Asaif Ali's EvidenceFlow. Execution: Evelyn Caro.</em></p>
+          <div class="links">
+            <a href="#">🎥 Ship 5 — Demo Video (coming soon)</a>
+            <a href="#">🐳 Ship 5 — Containerizing the RAG Pipeline (coming soon)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CERTIFICATIONS ===== -->
+      <div id="certs" class="spread">
+        <div class="page">
+          <h3 style="text-align:center;">Google AI Professional</h3>
+          <p style="font-size:0.85rem; text-align:center; color:#5a3a2a; margin:0.5rem 0;">8 courses · 20+ artifacts · Aug 7, 2026</p>
+          <a href="https://www.credly.com/badges/1b0f3b19-6f35-486a-85cf-65c1a897676c" target="_blank" style="text-decoration:none; display:block; text-align:center;">
+            <img src="/assets/certificates/google-ai-professional-badge.png" alt="Google AI Professional Badge" style="width:100px; height:auto;">
+          </a>
+          <a href="https://www.credly.com/badges/1b0f3b19-6f35-486a-85cf-65c1a897676c" target="_blank" style="text-decoration:none; display:block; text-align:center; margin-top:0.5rem;">
+            <img src="/assets/certificates/google-ai-certificate-preview.png" alt="Google AI Professional Certificate" style="width:100%; max-width:180px; border:4px double #8b6f3d; border-radius:4px; box-shadow: 0 3px 8px rgba(0,0,0,0.3);">
+          </a>
+          <h3 style="text-align:center; margin-top:1.25rem;">Google AI Fundamentals</h3>
+          <a href="https://www.credly.com/badges/a93bef28-d559-4572-9b98-f5b0c9a637ad" target="_blank" style="text-decoration:none; display:block; text-align:center; margin-top:0.5rem;">
+            <img src="/assets/certificates/google-ai-fundamentals.png" alt="Google AI Fundamentals" style="width:100px; height:auto;">
+          </a>
+        </div>
+        <div class="page">
+          <h3 style="text-align:center;">Google AI Course Badges</h3>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem;">
+            <a href="https://www.credly.com/badges/2fc30f89-95bd-42e0-8219-e826a1b68eee" target="_blank" style="text-decoration:none; text-align:center;">
+              <img src="/assets/certificates/google-ai-essentials-v1.png" alt="AI Essentials" style="width:100px; height:auto;">
+              <div style="font-size:0.7rem; color:#5a3a2a; margin-top:0.25rem;">AI Essentials</div>
+            </a>
+            <a href="https://www.credly.com/badges/8d92862f-45d2-43ad-9d3e-de9bbfea967e" target="_blank" style="text-decoration:none; text-align:center;">
+              <img src="/assets/certificates/google-ai-for-app-building.png" alt="App Building" style="width:100px; height:auto;">
+              <div style="font-size:0.7rem; color:#5a3a2a; margin-top:0.25rem;">App Building</div>
+            </a>
+            <a href="https://www.credly.com/badges/f1fef12b-3618-49a1-be6e-ea3447f32fdd" target="_blank" style="text-decoration:none; text-align:center;">
+              <img src="/assets/certificates/google-ai-for-content-creation.png" alt="Content Creation" style="width:100px; height:auto;">
+              <div style="font-size:0.7rem; color:#5a3a2a; margin-top:0.25rem;">Content Creation</div>
+            </a>
+            <a href="https://www.credly.com/badges/7b038438-9ec9-429a-be0d-47a3e1982c5b" target="_blank" style="text-decoration:none; text-align:center;">
+              <img src="/assets/certificates/google-ai-for-data-analysis.png" alt="Data Analysis" style="width:100px; height:auto;">
+              <div style="font-size:0.7rem; color:#5a3a2a; margin-top:0.25rem;">Data Analysis</div>
+            </a>
+            <a href="https://www.credly.com/badges/b48d5eca-9c1f-4a75-9b68-d9326371e6ab" target="_blank" style="text-decoration:none; text-align:center;">
+              <img src="/assets/certificates/google-ai-for-writing-and-communicating.png" alt="Writing &amp; Communicating" style="width:100px; height:auto;">
+              <div style="font-size:0.7rem; color:#5a3a2a; margin-top:0.25rem;">Writing &amp; Communicating</div>
+            </a>
+            <a href="https://www.credly.com/badges/10455919-25fb-446d-b055-2e25d55a704d" target="_blank" style="text-decoration:none; text-align:center;">
+              <img src="/assets/certificates/google-prompting-essentials.png" alt="Prompting Essentials" style="width:100px; height:auto;">
+              <div style="font-size:0.7rem; color:#5a3a2a; margin-top:0.25rem;">Prompting Essentials</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="certs-aws-comptia" class="spread">
+        <div class="page">
+          <h3 style="text-align:center;">AWS Educate</h3>
+          <p style="font-size:0.8rem; text-align:center; color:#5a3a2a; margin-top:0.5rem;">More AWS badges coming</p>
+          <a href="https://www.credly.com/badges/3836cb8e-2f7f-475c-8b66-98aaab047ff1" target="_blank" style="text-decoration:none; display:block; text-align:center; margin-top:1rem;">
+            <img src="/assets/certificates/aws-educate-genai-badge.png" alt="AWS Educate Intro to Generative AI" style="width:180px; height:auto;">
+          </a>
+          <p style="font-size:0.75rem; text-align:center; color:#5a3a2a; margin-top:0.5rem; font-style:italic;">Introduction to Generative AI</p>
+        </div>
+        <div class="page">
+          <h3 style="text-align:center;">CompTIA A+</h3>
+          <p style="font-size:0.8rem; text-align:center; color:#5a3a2a; margin-top:0.5rem;">CompTIA A+ Certified</p>
+          <a href="https://www.credly.com/badges/470f60d6-bf36-46f4-8256-81a35364b2ee" target="_blank" style="text-decoration:none; display:block; text-align:center; margin-top:1rem;">
+            <img src="/assets/certificates/comptia-a-certification.png" alt="CompTIA A+" style="width:200px; height:auto;">
+          </a>
+        </div>
+      </div>
+
+      <div id="certs-ibm" class="spread">
+        <div class="page">
+          <h3 style="text-align:center;">IBM SkillsBuild Badges</h3>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem;">
+            <a href="https://www.credly.com/badges/424ad3cf-4019-43a2-8924-6aa3398132b1" target="_blank" style="text-decoration:none; text-align:center;">
+              <img src="/assets/certificates/ibm-computer-hardware-badge.png" alt="IBM Computer Hardware Basics" style="width:100%; height:auto;">
+              <div style="font-size:0.75rem; color:#5a3a2a; margin-top:0.3rem;">Computer Hardware Basics</div>
+            </a>
+            <a href="https://www.credly.com/badges/10fda710-2935-430a-971c-6c5b513c7198" target="_blank" style="text-decoration:none; text-align:center;">
+              <img src="/assets/certificates/ibm-operating-systems-badge.png" alt="IBM Operating Systems Basics" style="width:100%; height:auto;">
+              <div style="font-size:0.75rem; color:#5a3a2a; margin-top:0.3rem;">Operating Systems Basics</div>
+            </a>
+          </div>
+        </div>
+        <div class="page">
+          <h3 style="text-align:center;">IBM SkillsBuild Certificates</h3>
+          <div style="border:6px double #8b6f3d; padding:8px; border-radius:4px; background:linear-gradient(135deg, rgba(212,182,112,0.15) 0%, rgba(139,111,61,0.1) 100%); box-shadow: inset 0 0 12px rgba(139,111,61,0.3), 0 4px 12px rgba(0,0,0,0.3); margin-top:0.75rem;">
+            <a href="/assets/certificates/ibm-langchain-certificate.pdf" target="_blank" style="text-decoration:none; display:block; text-align:center;">
+              <img src="/assets/certificates/ibm-langchain-certificate-preview.png" alt="IBM LangChain Certificate" style="width:100%; height:auto;">
+            </a>
+          </div>
+          <p style="font-size:0.7rem; text-align:center; margin-top:0.4rem; color:#5a3a2a;">IBM SkillsBuild — LangChain</p>
+          <div style="border:6px double #8b6f3d; padding:8px; border-radius:4px; background:linear-gradient(135deg, rgba(212,182,112,0.15) 0%, rgba(139,111,61,0.1) 100%); box-shadow: inset 0 0 12px rgba(139,111,61,0.3), 0 4px 12px rgba(0,0,0,0.3); margin-top:1rem;">
+            <a href="/assets/certificates/ibm-granite-agentic-rag-certificate.pdf" target="_blank" style="text-decoration:none; display:block; text-align:center;">
+              <img src="/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png" alt="IBM Granite Agentic RAG Certificate" style="width:100%; height:auto;">
+            </a>
+          </div>
+          <p style="font-size:0.7rem; text-align:center; margin-top:0.4rem; color:#5a3a2a;">IBM SkillsBuild — Granite Agentic RAG</p>
+        </div>
+      </div>
+
+      <!-- ===== CASE STUDIES ===== -->
+      <div id="casestudies" class="spread">
+        <div class="page">
+          <h3>Case Studies & White Papers</h3>
+          <p style="font-size:0.9rem;">Analytical work, audits, and research papers.</p>
+          <ul style="list-style:none; padding-left:0; margin-top:1rem;">
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/methodology/" target="_blank" style="color:#007acc; text-decoration:none;">📐 Methodology</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/evidenceflow-verification-ship5/" target="_blank" style="color:#007acc; text-decoration:none;">🔬 EvidenceFlow Verification — Ship 5</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/White_Paper_AI_Collaboration_Case_Study/" target="_blank" style="color:#007acc; text-decoration:none;">📄 White Paper: AI Collaboration Case Study</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/White_Paper_AI_Platform_Comparison/" target="_blank" style="color:#007acc; text-decoration:none;">📄 White Paper: AI Platform Comparison</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/azari-audit/" target="_blank" style="color:#007acc; text-decoration:none;">🔍 RAG Knowledge Base Audit — Azari AI</a></li>
+          </ul>
+        </div>
+        <div class="page">
+          <h3>More Case Studies</h3>
+          <ul style="list-style:none; padding-left:0; margin-top:1rem;">
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/aisha-case-study/" target="_blank" style="color:#007acc; text-decoration:none;">📘 Aisha Case Study</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/aws-case-study/" target="_blank" style="color:#007acc; text-decoration:none;">📘 AWS Case Study</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/chatgpt-case-study/" target="_blank" style="color:#007acc; text-decoration:none;">📘 ChatGPT Case Study</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/deepseek-case-study/" target="_blank" style="color:#007acc; text-decoration:none;">📘 DeepSeek Case Study</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/google-case-study/" target="_blank" style="color:#007acc; text-decoration:none;">📘 Google Case Study</a></li>
+            <li style="margin-bottom:0.75rem;"><a href="https://qaevelyn.github.io/case-studies/manus-case-study/" target="_blank" style="color:#007acc; text-decoration:none;">📘 Manus Case Study</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ===== NAVIGATION ===== -->
+      <div class="nav-controls">
+        <button id="prevBtn" disabled>← Previous</button>
+        <button id="nextBtn">Next →</button>
+      </div>
+      <div class="page-indicator" id="indicator">1 / 8</div>
+      <div class="keyboard-hint">← → arrow keys to navigate</div>
+
+      <div class="return-home">
+        <a href="/">← Return to Home</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const spreads = document.querySelectorAll('.spread');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicator = document.getElementById('indicator');
+    let current = 0;
+
+    function goToSpread(index) {
+      if (index < 0 || index >= spreads.length) return;
+      spreads.forEach((s, i) => {
+        s.classList.toggle('active', i === index);
+      });
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = index === spreads.length - 1;
+      indicator.textContent = (index + 1) + ' / ' + spreads.length;
+      current = index;
+    }
+
+    window.goToSpread = goToSpread;
+
+    prevBtn.addEventListener('click', () => {
+      if (current > 0) goToSpread(current - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (current < spreads.length - 1) goToSpread(current + 1);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        goToSpread(current - 1);
+      } else if (e.key === 'ArrowRight') {
+        goToSpread(current + 1);
+      }
+    });
+
+    document.getElementById('themeToggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      this.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
+    });
+
+    goToSpread(0);
+  </script>
+</body>
+</html>
