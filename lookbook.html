@@ -272,11 +272,13 @@
     .valley {
       position: absolute;
       left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 70px;
+      top: -20px;
+      bottom: -20px;
+      width: 90px;
       transform: translateX(-50%);
-      background: radial-gradient(ellipse at center, rgba(30,15,5,0.85) 0%, rgba(30,15,5,0.55) 20%, rgba(30,15,5,0.18) 50%, rgba(30,15,5,0) 80%);
+      background:
+        linear-gradient(180deg, rgba(30,15,5,0) 0%, rgba(30,15,5,0.15) 15%, rgba(30,15,5,0.15) 85%, rgba(30,15,5,0) 100%),
+        linear-gradient(90deg, rgba(30,15,5,0) 0%, rgba(30,15,5,0.55) 30%, rgba(30,15,5,0.75) 50%, rgba(30,15,5,0.55) 70%, rgba(30,15,5,0) 100%);
       pointer-events: none;
       z-index: 3;
     }
