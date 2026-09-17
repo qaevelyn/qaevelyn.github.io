@@ -19,14 +19,14 @@
     {
       "id": "ship1-aws-rag",
       "number": 1,
-      "title": "Ship 1 \u2014 AWS SageMaker RAG",
+      "title": "Ship 1 \u2014 DeepSeek RAG (originally AWS SageMaker, rebuilt locally)",
       "type": "standard-rag",
-      "platform": "AWS SageMaker",
-      "model": "",
+      "platform": "Local (originally AWS SageMaker)",
+      "model": "deepseek-r1:1.5b",
       "date_built": "",
       "notebook": {
-        "filename": "Ship1_AWS_SageMaker_RAG.ipynb",
-        "local": "~/Documents/Mirror-Project/ship1-aws-rag/Ship1_AWS_SageMaker_RAG.ipynb",
+        "filename": "Ship1_DeepSeek_RAG_v2_Agentic_executed.ipynb",
+        "local": "~/Repos/ship1-aws-rag/Ship1_DeepSeek_RAG_v2_Agentic_executed.ipynb",
         "github_repo": "https://github.com/qaevelyn/ship1-aws-rag",
         "github_blob": "https://github.com/qaevelyn/ship1-aws-rag/blob/main/Ship1_AWS_SageMaker_RAG.ipynb",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship1-aws-rag/main/Ship1_AWS_SageMaker_RAG.ipynb",
@@ -39,26 +39,29 @@
       "video_demo": "https://youtu.be/Y8JxdAB-5Us",
       "video_container": "",
       "tags": [
-        "AWS",
-        "SageMaker",
+        "DeepSeek",
         "RAG",
-        "standard"
+        "agentic RAG",
+        "tool-calling",
+        "Ollama",
+        "local",
+        "rebuilt"
       ]
     },
     {
-      "id": "ship2-aws-agentic-rag",
+      "id": "ship2-granite-agentic-rag",
       "number": 2,
-      "title": "Ship 2 \u2014 AWS SageMaker Agentic RAG",
+      "title": "Ship 2 \u2014 IBM Granite Agentic RAG",
       "type": "agentic-rag",
-      "platform": "AWS SageMaker",
-      "model": "",
+      "platform": "IBM Granite",
+      "model": "granite4.1:3b",
       "date_built": "",
       "notebook": {
-        "filename": "Ship2_AWS_SageMaker_Agentic_RAG.ipynb",
-        "local": "~/Documents/Mirror-Project/ship2-aws-agentic-rag/Ship2_AWS_SageMaker_Agentic_RAG.ipynb",
-        "github_repo": "https://github.com/qaevelyn/ship2-aws-agentic-rag",
-        "github_blob": "https://github.com/qaevelyn/ship2-aws-agentic-rag/blob/main/Ship2_AWS_SageMaker_Agentic_RAG.ipynb",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship2-aws-agentic-rag/main/Ship2_AWS_SageMaker_Agentic_RAG.ipynb",
+        "filename": "Ship2_IBM_Granite_RAG_v2_Agentic.ipynb",
+        "local": "~/Repos/ship2-granite-agentic-rag/Ship2_IBM_Granite_RAG_v2_Agentic.ipynb",
+        "github_repo": "https://github.com/qaevelyn/ship2-granite-agentic-rag",
+        "github_blob": "https://github.com/qaevelyn/ship2-granite-agentic-rag/blob/main/Ship2_IBM_Granite_RAG_v2_Agentic.ipynb",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship2-granite-agentic-rag/main/Ship2_IBM_Granite_RAG_v2_Agentic.ipynb",
         "private": true
       },
       "portfolio": {
@@ -68,10 +71,12 @@
       "video_demo": "",
       "video_container": "",
       "tags": [
-        "AWS",
-        "SageMaker",
+        "IBM",
+        "Granite",
         "agentic RAG",
-        "tool-calling"
+        "tool-calling",
+        "Ollama",
+        "local"
       ]
     },
     {
