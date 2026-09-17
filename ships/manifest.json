@@ -57,8 +57,8 @@
       "model": "granite4.1:3b",
       "date_built": "",
       "notebook": {
-        "filename": "Ship2_IBM_Granite_RAG_v2_Agentic.ipynb",
-        "local": "~/Repos/ship2-granite-agentic-rag/Ship2_IBM_Granite_RAG_v2_Agentic.ipynb",
+        "filename": "Ship2_IBM_Granite_RAG_demo.py",
+        "local": "~/Repos/ship2-granite-agentic-rag/Ship2_IBM_Granite_RAG_demo.py",
         "github_repo": "https://github.com/qaevelyn/ship2-granite-agentic-rag",
         "github_blob": "https://github.com/qaevelyn/ship2-granite-agentic-rag/blob/main/Ship2_IBM_Granite_RAG_v2_Agentic.ipynb",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship2-granite-agentic-rag/main/Ship2_IBM_Granite_RAG_v2_Agentic.ipynb",
@@ -148,8 +148,8 @@
       "model": "granite4.1:3b",
       "date_built": "2026-08-30",
       "notebook": {
-        "filename": "Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb",
-        "local": "~/Documents/Mirror-Project/granite-workshop/Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb",
+        "filename": "Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow_demo.py",
+        "local": "~/Repos/ship5-ibm-granite-agentic-evidenceflow/Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow_demo.py",
         "github_repo": "https://github.com/qaevelyn/ship5-ibm-granite-agentic-rag-evidenceflow",
         "github_blob": "https://github.com/qaevelyn/ship5-ibm-granite-agentic-rag-evidenceflow/blob/main/Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship5-ibm-granite-agentic-rag-evidenceflow/main/Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb",
