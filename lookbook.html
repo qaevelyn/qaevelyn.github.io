@@ -112,6 +112,25 @@
     .spread .page .links a:hover {
       text-decoration: underline;
     }
+    .spread .page .links a .icon {
+      display: inline-block;
+      vertical-align: -4px;
+      margin-right: 0.5em;
+      color: #8b6f3d;
+      transition: color 0.2s ease;
+    }
+
+    .spread .page .links a:hover .icon {
+      color: #5c4425;
+    }
+
+    .spread .page .links a {
+      display: inline-block;
+      padding: 0.25em 0;
+      position: relative;
+      z-index: 2;
+    }
+
 
     .spread .page p {
       line-height: 1.7;
@@ -376,8 +395,8 @@
           <div class="badge aws">Standard RAG</div>
           <p style="line-height:1.6;">Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an M1 MacBook Air.</p>
           <div class="links">
-            <a href="#" id="ship1-demo">🎥 Ship 1 — Demo Video (coming soon)</a>
-            <a href="#" id="ship1-container">🐳 Ship 1 — Containerizing the RAG Pipeline (coming soon)</a>
+            <a href="#" id="ship1-demo"><svg class="icon icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16"/></svg> Ship 1 — Demo Video (coming soon)</a>
+            <a href="#" id="ship1-container"><svg class="icon icon-cube" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2 L21 7 L21 17 L12 22 L3 17 L3 7 Z"/><path d="M12 2 L12 12 M12 12 L21 7 M12 12 L3 7"/></svg> Ship 1 — Containerizing the RAG Pipeline (coming soon)</a>
           </div>
         </div>
       </div>
@@ -395,8 +414,8 @@
           <div class="badge aws">Agentic RAG</div>
           <p style="line-height:1.6;">Agentic RAG pipeline on AWS SageMaker — retrieval + action (API calls, decision-making). Demonstrates autonomous reasoning and tool use.</p>
           <div class="links">
-            <a href="#" id="ship2-demo">🎥 Ship 2 — Demo Video (coming soon)</a>
-            <a href="#" id="ship2-container">🐳 Ship 2 — Containerizing the RAG Pipeline (coming soon)</a>
+            <a href="#" id="ship2-demo"><svg class="icon icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16"/></svg> Ship 2 — Demo Video (coming soon)</a>
+            <a href="#" id="ship2-container"><svg class="icon icon-cube" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2 L21 7 L21 17 L12 22 L3 17 L3 7 Z"/><path d="M12 2 L12 12 M12 12 L21 7 M12 12 L3 7"/></svg> Ship 2 — Containerizing the RAG Pipeline (coming soon)</a>
           </div>
         </div>
       </div>
@@ -414,8 +433,8 @@
           <div class="badge ibm">Standard RAG</div>
           <p style="line-height:1.6;">RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility.</p>
           <div class="links">
-            <a href="#" id="ship3-demo">🎥 Ship 3 — Demo Video (coming soon)</a>
-            <a href="#" id="ship3-container">🐳 Ship 3 — Containerizing the RAG Pipeline (coming soon)</a>
+            <a href="#" id="ship3-demo"><svg class="icon icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16"/></svg> Ship 3 — Demo Video (coming soon)</a>
+            <a href="#" id="ship3-container"><svg class="icon icon-cube" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2 L21 7 L21 17 L12 22 L3 17 L3 7 Z"/><path d="M12 2 L12 12 M12 12 L21 7 M12 12 L3 7"/></svg> Ship 3 — Containerizing the RAG Pipeline (coming soon)</a>
           </div>
         </div>
       </div>
@@ -433,8 +452,8 @@
           <div class="badge ibm">Agentic RAG</div>
           <p style="line-height:1.6;">Agentic RAG pipeline on IBM Granite — retrieval + action. Cross-platform agentic architecture with autonomous reasoning and decision-making.</p>
           <div class="links">
-            <a href="#" id="ship4-demo">🎥 Ship 4 — Demo Video (coming soon)</a>
-            <a href="#" id="ship4-container">🐳 Ship 4 — Containerizing the RAG Pipeline (coming soon)</a>
+            <a href="#" id="ship4-demo"><svg class="icon icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16"/></svg> Ship 4 — Demo Video (coming soon)</a>
+            <a href="#" id="ship4-container"><svg class="icon icon-cube" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2 L21 7 L21 17 L12 22 L3 17 L3 7 Z"/><path d="M12 2 L12 12 M12 12 L21 7 M12 12 L3 7"/></svg> Ship 4 — Containerizing the RAG Pipeline (coming soon)</a>
           </div>
         </div>
       </div>
@@ -453,8 +472,8 @@
           <p style="line-height:1.6;">A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an M1 MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.</p>
           <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Foundation: IBM SkillsBuild (Anna Gutowska). Inspiration: Asaif Ali's EvidenceFlow. Execution: Evelyn Caro.</em></p>
           <div class="links">
-            <a href="#" id="ship5-demo">🎥 Ship 5 — Demo Video (coming soon)</a>
-            <a href="#" id="ship5-container">🐳 Ship 5 — Containerizing the RAG Pipeline (coming soon)</a>
+            <a href="#" id="ship5-demo"><svg class="icon icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16"/></svg> Ship 5 — Demo Video (coming soon)</a>
+            <a href="#" id="ship5-container"><svg class="icon icon-cube" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2 L21 7 L21 17 L12 22 L3 17 L3 7 Z"/><path d="M12 2 L12 12 M12 12 L21 7 M12 12 L3 7"/></svg> Ship 5 — Containerizing the RAG Pipeline (coming soon)</a>
           </div>
         </div>
       </div>
