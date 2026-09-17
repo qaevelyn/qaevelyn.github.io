@@ -88,8 +88,8 @@
       "model": "granite4.1:3b",
       "date_built": "",
       "notebook": {
-        "filename": "Ship3_IBM_Granite_RAG.ipynb",
-        "local": "~/Documents/Mirror-Project/ship3-ibm-granite-rag/Ship3_IBM_Granite_RAG.ipynb",
+        "filename": "Ship3_IBM_Granite_RAG_demo.py",
+        "local": "~/Repos/ship3-ibm-granite-rag/Ship3_IBM_Granite_RAG_demo.py",
         "github_repo": "https://github.com/qaevelyn/ship3-ibm-granite-rag",
         "github_blob": "https://github.com/qaevelyn/ship3-ibm-granite-rag/blob/main/Ship3_IBM_Granite_RAG.ipynb",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship3-ibm-granite-rag/main/Ship3_IBM_Granite_RAG.ipynb",
@@ -99,7 +99,7 @@
         "spread_anchor": "lookbook.html#ship3",
         "live_url": "https://qaevelyn.github.io/lookbook.html#ship3"
       },
-      "video_demo": "",
+      "video_demo": "https://youtu.be/m42fiq2ArbE",
       "video_container": "",
       "tags": [
         "IBM",
