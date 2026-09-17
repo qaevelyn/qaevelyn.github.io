@@ -376,8 +376,8 @@
           <div class="badge aws">Standard RAG</div>
           <p style="line-height:1.6;">Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an M1 MacBook Air.</p>
           <div class="links">
-            <a href="#">🎥 Ship 1 — Demo Video (coming soon)</a>
-            <a href="#">🐳 Ship 1 — Containerizing the RAG Pipeline (coming soon)</a>
+            <a href="#" id="ship1-demo">🎥 Ship 1 — Demo Video (coming soon)</a>
+            <a href="#" id="ship1-container">🐳 Ship 1 — Containerizing the RAG Pipeline (coming soon)</a>
           </div>
         </div>
       </div>
@@ -395,8 +395,8 @@
           <div class="badge aws">Agentic RAG</div>
           <p style="line-height:1.6;">Agentic RAG pipeline on AWS SageMaker — retrieval + action (API calls, decision-making). Demonstrates autonomous reasoning and tool use.</p>
           <div class="links">
-            <a href="#">🎥 Ship 2 — Demo Video (coming soon)</a>
-            <a href="#">🐳 Ship 2 — Containerizing the RAG Pipeline (coming soon)</a>
+            <a href="#" id="ship2-demo">🎥 Ship 2 — Demo Video (coming soon)</a>
+            <a href="#" id="ship2-container">🐳 Ship 2 — Containerizing the RAG Pipeline (coming soon)</a>
           </div>
         </div>
       </div>
@@ -414,8 +414,8 @@
           <div class="badge ibm">Standard RAG</div>
           <p style="line-height:1.6;">RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility.</p>
           <div class="links">
-            <a href="#">🎥 Ship 3 — Demo Video (coming soon)</a>
-            <a href="#">🐳 Ship 3 — Containerizing the RAG Pipeline (coming soon)</a>
+            <a href="#" id="ship3-demo">🎥 Ship 3 — Demo Video (coming soon)</a>
+            <a href="#" id="ship3-container">🐳 Ship 3 — Containerizing the RAG Pipeline (coming soon)</a>
           </div>
         </div>
       </div>
@@ -433,8 +433,8 @@
           <div class="badge ibm">Agentic RAG</div>
           <p style="line-height:1.6;">Agentic RAG pipeline on IBM Granite — retrieval + action. Cross-platform agentic architecture with autonomous reasoning and decision-making.</p>
           <div class="links">
-            <a href="#">🎥 Ship 4 — Demo Video (coming soon)</a>
-            <a href="#">🐳 Ship 4 — Containerizing the RAG Pipeline (coming soon)</a>
+            <a href="#" id="ship4-demo">🎥 Ship 4 — Demo Video (coming soon)</a>
+            <a href="#" id="ship4-container">🐳 Ship 4 — Containerizing the RAG Pipeline (coming soon)</a>
           </div>
         </div>
       </div>
@@ -453,8 +453,8 @@
           <p style="line-height:1.6;">A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an M1 MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.</p>
           <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Foundation: IBM SkillsBuild (Anna Gutowska). Inspiration: Asaif Ali's EvidenceFlow. Execution: Evelyn Caro.</em></p>
           <div class="links">
-            <a href="#">🎥 Ship 5 — Demo Video (coming soon)</a>
-            <a href="#">🐳 Ship 5 — Containerizing the RAG Pipeline (coming soon)</a>
+            <a href="#" id="ship5-demo">🎥 Ship 5 — Demo Video (coming soon)</a>
+            <a href="#" id="ship5-container">🐳 Ship 5 — Containerizing the RAG Pipeline (coming soon)</a>
           </div>
         </div>
       </div>
@@ -718,5 +718,35 @@
 
     goToSpread(0);
   </script>
+
+<script>
+(function() {
+  fetch('/ships/manifest.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      data.ships.forEach(function(ship) {
+        var n = ship.number;
+        var demoAnchor = document.getElementById('ship' + n + '-demo');
+        var containerAnchor = document.getElementById('ship' + n + '-container');
+
+        if (demoAnchor && ship.video_demo) {
+          demoAnchor.href = ship.video_demo;
+          demoAnchor.target = '_blank';
+          demoAnchor.rel = 'noopener';
+          demoAnchor.textContent = '🎥 Ship ' + n + ' — Demo Video';
+        }
+        if (containerAnchor && ship.video_container) {
+          containerAnchor.href = ship.video_container;
+          containerAnchor.target = '_blank';
+          containerAnchor.rel = 'noopener';
+          containerAnchor.textContent = '🐳 Ship ' + n + ' — Containerizing the RAG Pipeline';
+        }
+      });
+    })
+    .catch(function(err) {
+      console.warn('Manifest load failed:', err);
+    });
+})();
+</script>
 </body>
 </html>
