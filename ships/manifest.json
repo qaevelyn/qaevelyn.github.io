@@ -25,8 +25,8 @@
       "model": "deepseek-r1:1.5b",
       "date_built": "",
       "notebook": {
-        "filename": "Ship1_DeepSeek_RAG_v2_Agentic_executed.ipynb",
-        "local": "~/Repos/ship1-aws-rag/Ship1_DeepSeek_RAG_v2_Agentic_executed.ipynb",
+        "filename": "Ship1_DeepSeek_RAG_demo.py",
+        "local": "~/Repos/ship1-aws-rag/Ship1_DeepSeek_RAG_demo.py",
         "github_repo": "https://github.com/qaevelyn/ship1-aws-rag",
         "github_blob": "https://github.com/qaevelyn/ship1-aws-rag/blob/main/Ship1_AWS_SageMaker_RAG.ipynb",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship1-aws-rag/main/Ship1_AWS_SageMaker_RAG.ipynb",
