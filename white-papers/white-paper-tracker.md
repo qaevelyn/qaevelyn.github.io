@@ -39,3 +39,10 @@ author_profile: true
 - Statuses: Pending, Responded, Converted, Archived.
 
 **Last Updated:** 2026-08-15
+
+
+---
+
+© 2026 Evelyn Caro. All rights reserved.  
+A Mirror of My Becoming — https://evelynacaro.github.io  
+For licensing inquiries: evelyn.caro.cloud@gmail.com

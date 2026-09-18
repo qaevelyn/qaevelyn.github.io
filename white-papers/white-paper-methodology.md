@@ -127,3 +127,10 @@ The work is ongoing. The filter is always on.
 This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.
 
 This project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.
+
+
+---
+
+© 2026 Evelyn Caro. All rights reserved.  
+A Mirror of My Becoming — https://evelynacaro.github.io  
+For licensing inquiries: evelyn.caro.cloud@gmail.com

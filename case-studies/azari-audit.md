@@ -50,3 +50,10 @@ Reported to the Per Scholas platform team via Jovani Padron (jpadron@perscholas.
 ## Attachments
 
 - [Full Gap Report (PDF)](/assets/pdfs/KB_Coverage_Feedback_Report_Evelyn_Caro.pdf)
+
+
+---
+
+© 2026 Evelyn Caro. All rights reserved.  
+A Mirror of My Becoming — https://evelynacaro.github.io  
+For licensing inquiries: evelyn.caro.cloud@gmail.com
