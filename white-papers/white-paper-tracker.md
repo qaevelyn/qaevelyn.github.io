@@ -5,7 +5,7 @@ permalink: /white-papers/white-paper-tracker/
 author_profile: true
 ---
 
-**Purpose:** Track engagement, inquiries, and outcomes from the case study white papers.
+**Purpose:** Track engagement, inquiries, and outcomes from the white papers.
 
 **Method:** Each white paper includes a dedicated email address (`qaevelyn@pm.me`). Inquiries are logged here manually.
 
@@ -15,12 +15,12 @@ author_profile: true
 
 | Paper | URL | Date Published |
 |-------|-----|----------------|
-| Methodology | `qaevelyn.github.io/case-studies/methodology` | 2026-08-15 |
-| DeepSeek — The Benchmark | `qaevelyn.github.io/case-studies/deepseek-case-study` | 2026-08-15 |
-| ChatGPT — From Reliance to Rejection | `qaevelyn.github.io/case-studies/chatgpt-case-study` | 2026-08-15 |
-| Manus — From Loyalty to Betrayal to Sovereignty | `qaevelyn.github.io/case-studies/manus-case-study` | 2026-08-15 |
-| AWS — The Maze | `qaevelyn.github.io/case-studies/aws-case-study` | 2026-08-15 |
-| Google — AI Studio & Gemini NotebookLM | `qaevelyn.github.io/case-studies/google-case-study` | 2026-08-15 |
+| Methodology | `qaevelyn.github.io/white-papers/methodology` | 2026-08-15 |
+| DeepSeek — The Benchmark | `qaevelyn.github.io/white-papers/deepseek-case-study` | 2026-08-15 |
+| ChatGPT — From Reliance to Rejection | `qaevelyn.github.io/white-papers/chatgpt-case-study` | 2026-08-15 |
+| Manus — From Loyalty to Betrayal to Sovereignty | `qaevelyn.github.io/white-papers/manus-case-study` | 2026-08-15 |
+| AWS — The Maze | `qaevelyn.github.io/white-papers/aws-case-study` | 2026-08-15 |
+| Google — AI Studio & Gemini NotebookLM | `qaevelyn.github.io/white-papers/google-case-study` | 2026-08-15 |
 
 ---
 
