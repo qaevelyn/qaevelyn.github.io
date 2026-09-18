@@ -349,13 +349,31 @@
       padding: 0 0.5rem;
       text-align: left;
     }
+  
+    .book-and-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .book-and-nav .book-container {
+      margin-bottom: 2rem;
+    }
+
+    .book-and-nav .nav-wrapper {
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
 
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
 
-  <div class="book-container">
+  <div class="book-and-nav">
+<div class="book-container">
     <div class="book-spine"></div>
 
     <div class="book-pages">
@@ -628,6 +646,7 @@
     <div class="return-home">
       <a href="index.html">← Return to Home</a>
     </div>
+  </div>
   </div>
 
   <script>
