@@ -100,3 +100,12 @@ If this work resonates with you, or if you want to stress-test your AI system, c
 **Contact:** qaevelyn@pm.me
 
 **Drafted in collaboration with DeepSeek. Authored by Evelyn Caro.**
+
+
+---
+
+## AI Collaboration Disclosure
+
+This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.
+
+This project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.

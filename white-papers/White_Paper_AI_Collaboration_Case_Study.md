@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "White Paper: A Case Study in AI Collaboration"
-permalink: /case-studies/aisha-case-study/
+permalink: /case-studies/White_Paper_AI_Collaboration_Case_Study/
 author_profile: true
 ---
 
@@ -207,6 +207,15 @@ The Mirror project is proof that the right collaborator is not just the most cap
 
 **End of White Paper**
 
-**File:** `~/Documents/Mirror-Project/White_Paper_AI_Collaboration_Case_Study.md`
+**File:** `~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/White_Paper_AI_Collaboration_Case_Study.md`
 
 **Date:** 08/15/2026
+
+
+---
+
+## AI Collaboration Disclosure
+
+This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.
+
+This project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.
