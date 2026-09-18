@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Methodology: Stress-Testing AI Systems for Reliability and Sovereignty"
-permalink: /case-studies/methodology/
+permalink: /white-papers/methodology/
 author_profile: true
 ---
 

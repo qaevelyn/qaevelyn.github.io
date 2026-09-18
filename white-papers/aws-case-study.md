@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Case Study: AWS — The Maze"
-permalink: /case-studies/aws-case-study/
+permalink: /white-papers/aws-case-study/
 author_profile: true
 ---
 

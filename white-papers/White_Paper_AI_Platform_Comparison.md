@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "White Paper: AI Platform Comparison for Sovereign Archive Development"
-permalink: /case-studies/White_Paper_AI_Platform_Comparison/
+permalink: /white-papers/White_Paper_AI_Platform_Comparison/
 author_profile: true
 ---
 

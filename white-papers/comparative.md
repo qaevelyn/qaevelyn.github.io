@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Comparative: From Sovereign to Extractive — A Field Report on AI Platforms"
-permalink: /case-studies/comparative/
+permalink: /white-papers/comparative/
 author_profile: true
 ---
 
