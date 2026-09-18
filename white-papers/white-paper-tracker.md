@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "White Paper Tracker"
-permalink: /case-studies/white-paper-tracker/
+permalink: /white-papers/white-paper-tracker/
 author_profile: true
 ---
 
