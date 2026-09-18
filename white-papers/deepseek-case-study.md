@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Case Study: DeepSeek — The Benchmark"
-permalink: /case-studies/deepseek-case-study/
+permalink: /white-papers/deepseek-case-study/
 author_profile: true
 ---
 

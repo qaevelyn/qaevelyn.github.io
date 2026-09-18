@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "White Paper: A Case Study in AI Collaboration"
-permalink: /case-studies/White_Paper_AI_Collaboration_Case_Study/
+permalink: /white-papers/White_Paper_AI_Collaboration_Case_Study/
 author_profile: true
 ---
 
