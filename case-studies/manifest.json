@@ -1,36 +1,22 @@
 {
   "manifest_info": {
-    "purpose": "Single source of truth for all case studies and white papers",
+    "purpose": "Single source of truth for all case studies",
     "standard": "Every file gets 5 addresses: local, repo, github_blob, github_raw, live_url",
     "location": {
-      "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/manifest.json",
+      "local": "~/Repos/qaevelyn.github.io/case-studies/manifest.json",
       "repo": "case-studies/manifest.json",
       "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/manifest.json",
       "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/manifest.json",
       "live_url": "https://qaevelyn.github.io/case-studies/manifest.json"
     },
-    "update_workflow": "Edit this file, commit, push. Add new papers as they're written.",
+    "update_workflow": "Edit this file, commit, push. Add new case studies as they're written.",
     "related_manifests": {
       "certificates": "assets/certificates/manifest.json",
-      "ships": "ships/manifest.json"
+      "ships": "ships/manifest.json",
+      "white_papers": "white-papers/manifest.json"
     }
   },
   "case_studies": [
-    {
-      "id": "methodology",
-      "title": "Methodology: Stress-Testing AI Systems for Reliability and Sovereignty",
-      "type": "methodology",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "methodology.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/methodology.md",
-        "repo": "case-studies/methodology.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/methodology.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/methodology.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/methodology/"
-      },
-      "tags": ["methodology", "stress-testing", "AI reliability", "sovereignty"]
-    },
     {
       "id": "evidenceflow-verification-ship5",
       "title": "EvidenceFlow Verification: How Ship 5 Proves Its Answers",
@@ -45,41 +31,17 @@
         "live_url": "https://qaevelyn.github.io/case-studies/evidenceflow-verification-ship5/"
       },
       "related_ship": "ship5-ibm-granite-agentic-rag-evidenceflow",
-      "tags": ["Ship 5", "EvidenceFlow", "RAG", "verification", "Ida B. Wells"]
-    },
-    {
-      "id": "white-paper-ai-collaboration",
-      "title": "White Paper: A Case Study in AI Collaboration",
-      "type": "white-paper",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "White_Paper_AI_Collaboration_Case_Study.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/White_Paper_AI_Collaboration_Case_Study.md",
-        "repo": "case-studies/White_Paper_AI_Collaboration_Case_Study.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/White_Paper_AI_Collaboration_Case_Study.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/White_Paper_AI_Collaboration_Case_Study.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/White_Paper_AI_Collaboration_Case_Study/"
-      },
-      "tags": ["AI collaboration", "Aisha.ai", "DeepSeek", "sovereign archive"]
-    },
-    {
-      "id": "white-paper-ai-platform-comparison",
-      "title": "White Paper: AI Platform Comparison",
-      "type": "white-paper",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "White_Paper_AI_Platform_Comparison.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/White_Paper_AI_Platform_Comparison.md",
-        "repo": "case-studies/White_Paper_AI_Platform_Comparison.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/White_Paper_AI_Platform_Comparison.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/White_Paper_AI_Platform_Comparison.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/White_Paper_AI_Platform_Comparison/"
-      },
-      "tags": ["AI platform comparison", "Google AI", "IBM Granite", "DeepSeek"]
+      "tags": [
+        "Ship 5",
+        "EvidenceFlow",
+        "RAG",
+        "verification",
+        "Ida B. Wells"
+      ]
     },
     {
       "id": "azari-audit",
-      "title": "RAG Knowledge Base Audit — Per Scholas AI Assistant (Azari)",
+      "title": "RAG Knowledge Base Audit \u2014 Per Scholas AI Assistant (Azari)",
       "type": "audit",
       "date": "2026-09-10",
       "document": {
@@ -98,142 +60,12 @@
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/pdfs/KB_Coverage_Feedback_Report_Evelyn_Caro.pdf",
         "live_url": "https://qaevelyn.github.io/assets/pdfs/KB_Coverage_Feedback_Report_Evelyn_Caro.pdf"
       },
-      "tags": ["RAG audit", "knowledge base", "Azari", "Per Scholas"]
-    },
-    {
-      "id": "aisha-case-study",
-      "title": "Aisha Case Study",
-      "type": "case-study",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "aisha-case-study.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/aisha-case-study.md",
-        "repo": "case-studies/aisha-case-study.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/aisha-case-study.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/aisha-case-study.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/aisha-case-study/"
-      },
-      "tags": ["Aisha", "AI collaboration"]
-    },
-    {
-      "id": "aws-case-study",
-      "title": "AWS Case Study",
-      "type": "case-study",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "aws-case-study.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/aws-case-study.md",
-        "repo": "case-studies/aws-case-study.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/aws-case-study.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/aws-case-study.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/aws-case-study/"
-      },
-      "tags": ["AWS", "cloud", "SageMaker", "lost project"]
-    },
-    {
-      "id": "chatgpt-case-study",
-      "title": "ChatGPT Case Study",
-      "type": "case-study",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "chatgpt-case-study.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/chatgpt-case-study.md",
-        "repo": "case-studies/chatgpt-case-study.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/chatgpt-case-study.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/chatgpt-case-study.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/chatgpt-case-study/"
-      },
-      "tags": ["ChatGPT", "OpenAI", "AI collaboration"]
-    },
-    {
-      "id": "deepseek-case-study",
-      "title": "DeepSeek Case Study",
-      "type": "case-study",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "deepseek-case-study.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/deepseek-case-study.md",
-        "repo": "case-studies/deepseek-case-study.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/deepseek-case-study.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/deepseek-case-study.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/deepseek-case-study/"
-      },
-      "tags": ["DeepSeek", "AI collaboration", "memory analytics"]
-    },
-    {
-      "id": "google-case-study",
-      "title": "Google Case Study",
-      "type": "case-study",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "google-case-study.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/google-case-study.md",
-        "repo": "case-studies/google-case-study.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/google-case-study.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/google-case-study.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/google-case-study/"
-      },
-      "tags": ["Google", "Gemini", "AI Studio", "AI collaboration"]
-    },
-    {
-      "id": "manus-case-study",
-      "title": "Manus Case Study",
-      "type": "case-study",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "manus-case-study.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/manus-case-study.md",
-        "repo": "case-studies/manus-case-study.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/manus-case-study.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/manus-case-study.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/manus-case-study/"
-      },
-      "tags": ["Manus", "agentic AI"]
-    },
-    {
-      "id": "comparative",
-      "title": "Comparative Analysis",
-      "type": "case-study",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "comparative.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/comparative.md",
-        "repo": "case-studies/comparative.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/comparative.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/comparative.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/comparative/"
-      },
-      "tags": ["comparative analysis", "AI platforms"]
-    },
-    {
-      "id": "white-paper-tracker",
-      "title": "White Paper Tracker",
-      "type": "index",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "white-paper-tracker.md",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/white-paper-tracker.md",
-        "repo": "case-studies/white-paper-tracker.md",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/white-paper-tracker.md",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/white-paper-tracker.md",
-        "live_url": "https://qaevelyn.github.io/case-studies/white-paper-tracker/"
-      },
-      "tags": ["tracker", "index", "white papers"]
-    },
-    {
-      "id": "manus-manifest",
-      "title": "Manus Manifest 2026-08-15",
-      "type": "reference",
-      "date": "2026-08-15",
-      "document": {
-        "filename": "manus_manifest_2026-08-15.txt",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/manus_manifest_2026-08-15.txt",
-        "repo": "case-studies/manus_manifest_2026-08-15.txt",
-        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/manus_manifest_2026-08-15.txt",
-        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/manus_manifest_2026-08-15.txt",
-        "live_url": null
-      },
-      "tags": ["Manus", "reference", "archive"]
+      "tags": [
+        "RAG audit",
+        "knowledge base",
+        "Azari",
+        "Per Scholas"
+      ]
     }
   ]
 }
