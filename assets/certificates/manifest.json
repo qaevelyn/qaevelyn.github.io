@@ -3,7 +3,7 @@
     "purpose": "Single source of truth for all 14 credentials",
     "standard": "Every file gets 5 addresses: local, repo, github_blob, github_raw, live_url",
     "location": {
-      "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/manifest.json",
+      "local": "~/Repos/qaevelyn.github.io/assets/certificates/manifest.json",
       "repo": "assets/certificates/manifest.json",
       "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/manifest.json",
       "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/manifest.json",
@@ -23,7 +23,7 @@
       "date": "2026-08-07",
       "badge": {
         "filename": "google-ai-professional-badge.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-professional-badge.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-ai-professional-badge.png",
         "repo": "assets/certificates/google-ai-professional-badge.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-professional-badge.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-professional-badge.png",
@@ -31,7 +31,7 @@
       },
       "certificate": {
         "filename": "google-ai-professional-certificate.pdf",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-professional-certificate.pdf",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-ai-professional-certificate.pdf",
         "repo": "assets/certificates/google-ai-professional-certificate.pdf",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-professional-certificate.pdf",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-professional-certificate.pdf",
@@ -39,7 +39,7 @@
       },
       "preview": {
         "filename": "google-ai-certificate-preview.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-certificate-preview.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-ai-certificate-preview.png",
         "repo": "assets/certificates/google-ai-certificate-preview.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-certificate-preview.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-certificate-preview.png",
@@ -54,7 +54,7 @@
       "date": "",
       "badge": {
         "filename": "google-ai-fundamentals.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-fundamentals.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-ai-fundamentals.png",
         "repo": "assets/certificates/google-ai-fundamentals.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-fundamentals.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-fundamentals.png",
@@ -69,7 +69,7 @@
       "date": "",
       "badge": {
         "filename": "google-ai-essentials-v1.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-essentials-v1.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-ai-essentials-v1.png",
         "repo": "assets/certificates/google-ai-essentials-v1.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-essentials-v1.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-essentials-v1.png",
@@ -84,7 +84,7 @@
       "date": "",
       "badge": {
         "filename": "google-ai-for-app-building.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-for-app-building.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-ai-for-app-building.png",
         "repo": "assets/certificates/google-ai-for-app-building.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-for-app-building.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-for-app-building.png",
@@ -99,7 +99,7 @@
       "date": "",
       "badge": {
         "filename": "google-ai-for-content-creation.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-for-content-creation.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-ai-for-content-creation.png",
         "repo": "assets/certificates/google-ai-for-content-creation.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-for-content-creation.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-for-content-creation.png",
@@ -114,7 +114,7 @@
       "date": "",
       "badge": {
         "filename": "google-ai-for-data-analysis.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-for-data-analysis.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-ai-for-data-analysis.png",
         "repo": "assets/certificates/google-ai-for-data-analysis.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-for-data-analysis.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-for-data-analysis.png",
@@ -129,7 +129,7 @@
       "date": "",
       "badge": {
         "filename": "google-ai-for-writing-and-communicating.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-ai-for-writing-and-communicating.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-ai-for-writing-and-communicating.png",
         "repo": "assets/certificates/google-ai-for-writing-and-communicating.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-ai-for-writing-and-communicating.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-ai-for-writing-and-communicating.png",
@@ -144,7 +144,7 @@
       "date": "",
       "badge": {
         "filename": "google-prompting-essentials.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/google-prompting-essentials.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-prompting-essentials.png",
         "repo": "assets/certificates/google-prompting-essentials.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/google-prompting-essentials.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/google-prompting-essentials.png",
@@ -159,7 +159,7 @@
       "date": "",
       "badge": {
         "filename": "aws-educate-genai-badge.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/aws-educate-genai-badge.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/aws-educate-genai-badge.png",
         "repo": "assets/certificates/aws-educate-genai-badge.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/aws-educate-genai-badge.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/aws-educate-genai-badge.png",
@@ -174,7 +174,7 @@
       "date": "2005",
       "badge": {
         "filename": "comptia-a-certification.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/comptia-a-certification.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/comptia-a-certification.png",
         "repo": "assets/certificates/comptia-a-certification.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/comptia-a-certification.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/comptia-a-certification.png",
@@ -189,7 +189,7 @@
       "date": "",
       "badge": {
         "filename": "ibm-computer-hardware-badge.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-computer-hardware-badge.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/ibm-computer-hardware-badge.png",
         "repo": "assets/certificates/ibm-computer-hardware-badge.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-computer-hardware-badge.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-computer-hardware-badge.png",
@@ -204,7 +204,7 @@
       "date": "",
       "badge": {
         "filename": "ibm-operating-systems-badge.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-operating-systems-badge.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/ibm-operating-systems-badge.png",
         "repo": "assets/certificates/ibm-operating-systems-badge.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-operating-systems-badge.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-operating-systems-badge.png",
@@ -214,12 +214,12 @@
     },
     {
       "id": "ibm-langchain",
-      "name": "IBM SkillsBuild — LangChain",
+      "name": "IBM SkillsBuild \u2014 LangChain",
       "issuer": "IBM SkillsBuild",
       "date": "",
       "certificate": {
         "filename": "ibm-langchain-certificate.pdf",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-langchain-certificate.pdf",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/ibm-langchain-certificate.pdf",
         "repo": "assets/certificates/ibm-langchain-certificate.pdf",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-langchain-certificate.pdf",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-langchain-certificate.pdf",
@@ -227,7 +227,7 @@
       },
       "preview": {
         "filename": "ibm-langchain-certificate-preview.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-langchain-certificate-preview.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/ibm-langchain-certificate-preview.png",
         "repo": "assets/certificates/ibm-langchain-certificate-preview.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-langchain-certificate-preview.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-langchain-certificate-preview.png",
@@ -236,12 +236,12 @@
     },
     {
       "id": "ibm-granite-agentic-rag",
-      "name": "IBM SkillsBuild — Granite Agentic RAG",
+      "name": "IBM SkillsBuild \u2014 Granite Agentic RAG",
       "issuer": "IBM SkillsBuild",
       "date": "",
       "certificate": {
         "filename": "ibm-granite-agentic-rag-certificate.pdf",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-granite-agentic-rag-certificate.pdf",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/ibm-granite-agentic-rag-certificate.pdf",
         "repo": "assets/certificates/ibm-granite-agentic-rag-certificate.pdf",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-granite-agentic-rag-certificate.pdf",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-granite-agentic-rag-certificate.pdf",
@@ -249,7 +249,7 @@
       },
       "preview": {
         "filename": "ibm-granite-agentic-rag-certificate-preview.png",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png",
         "repo": "assets/certificates/ibm-granite-agentic-rag-certificate-preview.png",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png",
