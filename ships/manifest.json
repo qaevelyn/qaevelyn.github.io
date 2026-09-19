@@ -3,7 +3,7 @@
     "purpose": "Single source of truth for all 5 ships",
     "standard": "Every file gets 5 addresses: local, repo, github_blob, github_raw, live_url",
     "location": {
-      "local": "~/Documents/Mirror-Project/qaevelyn.github.io/ships/manifest.json",
+      "local": "~/Repos/qaevelyn.github.io/ships/manifest.json",
       "repo": "ships/manifest.json",
       "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/ships/manifest.json",
       "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/ships/manifest.json",
@@ -119,7 +119,7 @@
       "date_built": "",
       "notebook": {
         "filename": "Ship4_IBM_Granite_Agentic_RAG.ipynb",
-        "local": "~/Documents/Mirror-Project/ship4-ibm-granite-agentic-rag/Ship4_IBM_Granite_Agentic_RAG.ipynb",
+        "local": "~/Repos/ship4-ibm-granite-agentic-rag/Ship4_IBM_Granite_Agentic_RAG.ipynb",
         "github_repo": "https://github.com/qaevelyn/ship4-ibm-granite-agentic-rag",
         "github_blob": "https://github.com/qaevelyn/ship4-ibm-granite-agentic-rag/blob/main/Ship4_IBM_Granite_Agentic_RAG.ipynb",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/ship4-ibm-granite-agentic-rag/main/Ship4_IBM_Granite_Agentic_RAG.ipynb",
@@ -161,7 +161,7 @@
       },
       "case_study": {
         "title": "EvidenceFlow Verification: How Ship 5 Proves Its Answers",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/evidenceflow-verification-ship5.md",
+        "local": "~/Repos/qaevelyn.github.io/case-studies/evidenceflow-verification-ship5.md",
         "repo": "case-studies/evidenceflow-verification-ship5.md",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/case-studies/evidenceflow-verification-ship5.md",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/case-studies/evidenceflow-verification-ship5.md",

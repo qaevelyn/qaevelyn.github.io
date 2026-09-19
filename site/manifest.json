@@ -1,9 +1,9 @@
 {
   "site_info": {
-    "purpose": "Component inventory — every file that makes up the portfolio",
+    "purpose": "Component inventory \u2014 every file that makes up the portfolio",
     "standard": "5 addresses per file: local, repo, github_blob, github_raw, live_url",
     "location": {
-      "local": "~/Documents/Mirror-Project/qaevelyn.github.io/site/manifest.json",
+      "local": "~/Repos/qaevelyn.github.io/site/manifest.json",
       "repo": "site/manifest.json",
       "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/site/manifest.json",
       "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/site/manifest.json",
@@ -20,9 +20,9 @@
       {
         "id": "homepage",
         "filename": "index.html",
-        "title": "Evelyn Caro — A Mirror of My Becoming",
-        "purpose": "3D encyclopedia book cover — homepage",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/index.html",
+        "title": "Evelyn Caro \u2014 A Mirror of My Becoming",
+        "purpose": "3D encyclopedia book cover \u2014 homepage",
+        "local": "~/Repos/qaevelyn.github.io/index.html",
         "repo": "index.html",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/index.html",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/index.html",
@@ -31,9 +31,9 @@
       {
         "id": "lookbook",
         "filename": "lookbook.html",
-        "title": "Lookbook — Sovereign AI Portfolio",
-        "purpose": "The book interior — TOC, ships, certifications, case studies",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/lookbook.html",
+        "title": "Lookbook \u2014 Sovereign AI Portfolio",
+        "purpose": "The book interior \u2014 TOC, ships, certifications, case studies",
+        "local": "~/Repos/qaevelyn.github.io/lookbook.html",
         "repo": "lookbook.html",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/lookbook.html",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/lookbook.html",
@@ -44,8 +44,8 @@
       {
         "id": "page-flip",
         "filename": "page-flip.browser.js",
-        "purpose": "StPageFlip — 3D page turning (retired, kept as reference)",
-        "local": "~/Documents/Mirror-Project/qaevelyn.github.io/assets/js/page-flip.browser.js",
+        "purpose": "StPageFlip \u2014 3D page turning (retired, kept as reference)",
+        "local": "~/Repos/qaevelyn.github.io/assets/js/page-flip.browser.js",
         "repo": "assets/js/page-flip.browser.js",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/js/page-flip.browser.js",
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/js/page-flip.browser.js",
@@ -56,7 +56,7 @@
       {
         "id": "site-manifest",
         "filename": "site/manifest.json",
-        "purpose": "Component inventory — this file"
+        "purpose": "Component inventory \u2014 this file"
       },
       {
         "id": "certificates-manifest",
@@ -76,7 +76,7 @@
       {
         "id": "words-manifest",
         "filename": "site/words.json",
-        "purpose": "All text content — machine-readable"
+        "purpose": "All text content \u2014 machine-readable"
       }
     ],
     "content_folders": [
@@ -89,7 +89,7 @@
       {
         "id": "case-studies",
         "path": "case-studies/",
-        "purpose": "Markdown documents — case studies and white papers",
+        "purpose": "Markdown documents \u2014 case studies and white papers",
         "count": 14
       },
       {
@@ -120,7 +120,7 @@
     "docker": {
       "dockerfile": "Dockerfile",
       "docker_compose": "docker-compose.yml",
-      "purpose": "Containerize the site — one command rebuild",
+      "purpose": "Containerize the site \u2014 one command rebuild",
       "status": "Pending"
     }
   }

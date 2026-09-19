@@ -5,7 +5,7 @@
     "update_workflow": "Edit site/words.md (human), then sync to this file (machine). Or edit here directly.",
     "companion_file": "site/words.md",
     "location": {
-      "local": "~/Documents/Mirror-Project/qaevelyn.github.io/site/words.json",
+      "local": "~/Repos/qaevelyn.github.io/site/words.json",
       "repo": "site/words.json",
       "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/site/words.json",
       "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/site/words.json",

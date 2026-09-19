@@ -359,7 +359,7 @@ The Mirror project is proof that the right collaborator is not the most capable 
 
 **End of White Paper**
 
-**File:** `~/Documents/Mirror-Project/qaevelyn.github.io/case-studies/White_Paper_AI_Platform_Comparison.md`
+**File:** `~/Repos/qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison.md`
 
 **Date:** 08/15/2026
 
