@@ -18,6 +18,29 @@
   },
   "white_papers": [
     {
+      "id": "the-ai-cartel-and-the-sovereign-response",
+      "title": "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?",
+      "type": "position-paper",
+      "date": "2026-09-19",
+      "document": {
+        "filename": "the-ai-cartel-and-the-sovereign-response.md",
+        "local": "~/Repos/qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response.md",
+        "repo": "white-papers/the-ai-cartel-and-the-sovereign-response.md",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/white-papers/the-ai-cartel-and-the-sovereign-response.md",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/white-papers/the-ai-cartel-and-the-sovereign-response.md",
+        "live_url": "https://qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/"
+      },
+      "tags": [
+        "AI cartel",
+        "sovereign AI",
+        "antitrust",
+        "data centers",
+        "Stacey Abrams",
+        "Dario Amodei",
+        "position paper"
+      ]
+    },
+    {
       "id": "sovereign-ai-vs-silicon-valley",
       "title": "Sovereign AI vs. Silicon Valley: A Different Origin Story",
       "type": "position-paper",
