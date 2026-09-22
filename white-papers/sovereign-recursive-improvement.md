@@ -126,7 +126,7 @@ The reasoning is structural:
 - **Internal auditors depend on the lab.** They report to the lab. They are hired by the lab. They can be fired by the lab. Lemon's architecture implies this gap — a federated network of independent nodes still needs someone to notice if a node diverges beyond the bounded threshold.
 - **The operator owns the loop.** They run it. They see the internal state. They control the config. They are the only party positioned to detect anomaly, contain deviation, and terminate the loop if necessary.
 
-DV14, the containment architecture referenced in the author's earlier work, is one expression of this principle: the builder who builds the loop also builds the containment. The regulatory framework cannot substitute for the builder's own architecture.
+DV14: The Box — a containment architecture the author has built independently. Private repository. Details available under NDA. It is one expression of this principle: the builder who builds the loop also builds the containment. The regulatory framework cannot substitute for the builder's own architecture.
 
 ---
 
@@ -200,7 +200,7 @@ Chesterman asks the question. Lemon builds the frame. This paper answers with th
 - Institute for Security and Technology. (2026). "Recursive Self Improvement Initiative." securityandtechnology.org, August 17, 2026.
 - Caro, E. (2026a). "Sovereign AI vs. Silicon Valley: A Different Origin Story." qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/.
 - Caro, E. (2026b). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
-- Caro, E. (2026c). "DV14: The Box." Private repository. Details available under NDA.
+- Caro, E. (2026). "DV14: The Box." Private repository. Details available under NDA.
 
 ---
 
