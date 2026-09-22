@@ -18,6 +18,33 @@
   },
   "white_papers": [
     {
+      "id": "sovereign-recursive-improvement",
+      "title": "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI",
+      "type": "position-paper",
+      "date": "2026-09-22",
+      "document": {
+        "filename": "sovereign-recursive-improvement.md",
+        "local": "~/Repos/qaevelyn.github.io/white-papers/sovereign-recursive-improvement.md",
+        "repo": "white-papers/sovereign-recursive-improvement.md",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/white-papers/sovereign-recursive-improvement.md",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/white-papers/sovereign-recursive-improvement.md",
+        "live_url": "https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/"
+      },
+      "tags": [
+        "sovereign AI",
+        "recursive self-improvement",
+        "RSI",
+        "CDIL-RSI",
+        "Federated RSI",
+        "M K Lemon",
+        "Simon Chesterman",
+        "AI sovereignty",
+        "auditor",
+        "containment",
+        "position paper"
+      ]
+    },
+    {
       "id": "the-ai-cartel-and-the-sovereign-response",
       "title": "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?",
       "type": "position-paper",
