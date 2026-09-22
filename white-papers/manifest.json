@@ -18,6 +18,17 @@
   },
   "white_papers": [
     {
+      "id": "who-tests-the-testers",
+      "title": "Who Tests the Testers?",
+      "subtitle": "Containment Failures in Frontier AI Security \u2014 The Auditor's Blind Spot",
+      "author": "Evelyn Caro",
+      "date": "2026-09-22",
+      "type": "position-paper",
+      "permalink": "/white-papers/who-tests-the-testers/",
+      "file": "white-papers/who-tests-the-testers.md",
+      "status": "published"
+    },
+    {
       "id": "sovereign-recursive-improvement",
       "title": "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI",
       "type": "position-paper",
