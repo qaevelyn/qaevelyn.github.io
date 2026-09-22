@@ -17,6 +17,8 @@ permalink: /white-papers/sovereign-recursive-improvement/
 **Evelyn Caro**
 September 22, 2026
 
+Contact: evelyn.caro.cloud@gmail.com
+
 ---
 
 ## AI Collaboration Disclosure
