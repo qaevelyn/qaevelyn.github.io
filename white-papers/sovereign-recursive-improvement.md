@@ -17,7 +17,6 @@ permalink: /white-papers/sovereign-recursive-improvement/
 **Evelyn Caro**
 September 22, 2026
 
-Contact: evelyn.caro.cloud@gmail.com
 
 ---
 
@@ -205,4 +204,6 @@ Chesterman asks the question. Lemon builds the frame. This paper answers with th
 
 ---
 
-*© 2026 Evelyn Caro. All rights reserved.*
+© 2026 Evelyn Caro. All rights reserved.  
+A Mirror of My Becoming — https://evelynacaro.github.io  
+For licensing inquiries: evelyn.caro.cloud@gmail.com
