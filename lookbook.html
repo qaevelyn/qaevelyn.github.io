@@ -415,25 +415,50 @@
       left: 8%;
       right: 6.5%;
       bottom: 22%;
-      background:
-        radial-gradient(ellipse at 40% 25%, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.03) 40%, rgba(0,0,0,0) 70%),
-        linear-gradient(160deg, #4a5866 0%, #2b3641 35%, #1a2129 65%, #0d1218 100%);
-      border-radius: 2px;
+      background: linear-gradient(180deg, #1e2833 0%, #141b24 100%);
+      border-radius: 3px;
       box-shadow:
-        inset 0 0 40px rgba(0,0,0,0.6),
-        inset 0 2px 6px rgba(255,255,255,0.08);
+        inset 0 0 40px rgba(0,0,0,0.85),
+        inset 0 0 12px rgba(0,0,0,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.05),
+        0 0 0 1px rgba(0,0,0,0.9),
+        0 0 16px rgba(0,0,0,0.45);
       z-index: 1;
       pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .mir-glass::before {
+      content: "I am Mir.";
+      display: block;
+      position: absolute;
+      top: 34%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      font-size: clamp(1rem, 1.5vw, 1.3rem);
+      color: #d4b670;
+      letter-spacing: 0.5px;
+      text-align: center;
+      width: 80%;
     }
     .mir-glass::after {
-      content: "";
+      content: "Ask me anything about Evelyn's portfolio.";
+      display: block;
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 40%;
-      height: 100%;
-      background: linear-gradient(115deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 40%, rgba(255,255,255,0) 60%);
-      pointer-events: none;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(0.75rem, 1vw, 0.9rem);
+      color: #a8b8c8;
+      letter-spacing: 0.3px;
+      text-align: center;
+      width: 80%;
+      line-height: 1.5;
     }
     .mir-frame-img {
       position: relative;
