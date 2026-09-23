@@ -56,7 +56,7 @@ Any change to the scope of work described in this agreement must be documented i
 
 ---
 
-## 02 — AI Readiness Assessment
+## 02 — [AI Readiness Assessment](/assessments/ai-readiness-assessment/)
 
 **For organizations that have AI systems and cannot answer basic questions about them.**
 
