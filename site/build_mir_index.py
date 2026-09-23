@@ -38,8 +38,7 @@ CORPUS = [
     # Services and assessment
     "services.md",
     "assessments/ai-readiness-assessment.md",
-    # Portfolio and words
-    "portfolio.md",
+    # Words
     "site/words.md",
 ]
 
@@ -70,8 +69,15 @@ def clean_text(text):
     text = re.sub(r'^\|.*\|$', lambda m: m.group(0).replace('|', ' '), text, flags=re.MULTILINE)
     # Remove horizontal rules
     text = re.sub(r'^[-=]{3,}$', '', text, flags=re.MULTILINE)
-    # Collapse multiple whitespace to one
-    text = re.sub(r'\s+', ' ', text)
+    # Preserve paragraph breaks; collapse other whitespace
+    # First, normalize all newlines
+    text = text.replace('\r\n', '\n').replace('\r', '\n')
+    # Collapse 3+ newlines to exactly 2 (paragraph break)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    # Collapse runs of spaces/tabs within lines
+    text = re.sub(r'[ \t]+', ' ', text)
+    # Trim each line
+    text = '\n'.join(line.strip() for line in text.split('\n'))
     # Trim
     return text.strip()
 
