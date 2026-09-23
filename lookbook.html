@@ -561,6 +561,95 @@
       transform: scaleY(1.08);
       transform-origin: center center;
     }
+
+    /* ===== QR PAGE (inside cover left) ===== */
+    .qr-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    .qr-heading {
+      font-size: 1.6rem;
+      margin-bottom: 0.4rem;
+      text-align: center;
+    }
+    .qr-subtitle {
+      font-size: 0.85rem;
+      color: #5a3a2a;
+      margin-bottom: 0.75rem;
+      font-style: italic;
+      max-width: 340px;
+    }
+    .qr-frame-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 1280 / 757;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.25rem 0 0.5rem 0;
+    }
+    .qr-frame-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      pointer-events: none;
+      z-index: 2;
+      filter:
+        drop-shadow(0 6px 14px rgba(0,0,0,0.5))
+        drop-shadow(0 2px 4px rgba(0,0,0,0.35));
+    }
+    .qr-link {
+      position: absolute;
+      top: 19%;
+      left: 18%;
+      right: 18%;
+      bottom: 22%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      text-decoration: none;
+      background: #ffffff;
+      border-radius: 2px;
+    }
+    .qr-code {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .qr-url {
+      font-size: 0.85rem;
+      margin-top: 0.25rem;
+    }
+    .qr-url a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+      word-break: break-all;
+    }
+    .qr-note {
+      font-size: 0.7rem;
+      color: #5a3a2a;
+      line-height: 1.4;
+      max-width: 320px;
+      margin-top: 0.75rem;
+      font-style: italic;
+    }
+    body.dark-mode .qr-subtitle,
+    body.dark-mode .qr-note {
+      color: #a89070;
+    }
   </style>
 </head>
 <body>
@@ -575,19 +664,25 @@
 
       <!-- ===== INSIDE COVER ===== -->
       <div id="inside-cover" class="spread" role="region" aria-label="Inside cover">
-        <div class="page" id="qr-placeholder" style="display:flex; flex-direction:column; justify-content:center; align-items:center; padding:3rem 2.5rem;">
-          <h2 style="text-align:center; font-size:1.8rem; margin-bottom:0.5rem;">Scan or visit</h2>
-          <p style="text-align:center; font-size:0.95rem; color:#5a3a2a; margin-bottom:1.5rem; font-style:italic;">Point your phone camera at the code below, or visit the link directly.</p>
-          <a href="https://qaevelyn.github.io/lookbook.html" style="display:block; text-align:center; text-decoration:none;">
-            <img src="/assets/qr-portfolio.png"
-                 alt="QR code linking to the Sovereign AI Portfolio book at qaevelyn.github.io/lookbook.html"
-                 width="220" height="220"
-                 style="border:1px solid #8b6f3d; padding:8px; background:#fff; border-radius:4px;">
-          </a>
-          <p style="text-align:center; margin-top:1.5rem; font-size:0.95rem;">
-            <a href="https://qaevelyn.github.io/lookbook.html" style="color:#007acc; text-decoration:none; font-weight:bold; word-break:break-all;">qaevelyn.github.io/lookbook.html</a>
+        <div class="page qr-page" id="qr-placeholder">
+          <h2 class="qr-heading">Scan or visit</h2>
+          <p class="qr-subtitle">Point your phone camera at the code below, or visit the link directly.</p>
+          <div class="qr-frame-wrap">
+            <img src="/assets/mir-frame.svg"
+                 alt=""
+                 aria-hidden="true"
+                 class="qr-frame-img">
+            <a href="https://qaevelyn.github.io/lookbook.html" class="qr-link">
+              <img src="/assets/qr-portfolio.png"
+                   alt="QR code linking to the Sovereign AI Portfolio book at qaevelyn.github.io/lookbook.html"
+                   width="200" height="200"
+                   class="qr-code">
+            </a>
+          </div>
+          <p class="qr-url">
+            <a href="https://qaevelyn.github.io/lookbook.html">qaevelyn.github.io/lookbook.html</a>
           </p>
-          <p style="text-align:center; margin-top:2rem; font-size:0.8rem; color:#5a3a2a; line-height:1.5; max-width:340px;">This page is fully accessible. The QR code above links to the live book. The URL is written out for screen readers and for anyone who cannot scan the code.</p>
+          <p class="qr-note">This page is fully accessible. The QR code above links to the live book. The URL is written out for screen readers and for anyone who cannot scan the code.</p>
         </div>
         <div class="valley"></div>
         <div class="page mirror-page" id="inside-cover-right" role="region" aria-label="Mir — the mirror of my becoming">
