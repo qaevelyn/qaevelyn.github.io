@@ -143,6 +143,70 @@ def extract_lookbook_content():
     return chunks_out
 
 
+def extract_manifest_content():
+    """Read each manifest JSON and format it as readable list chunks."""
+    import json
+    chunks_out = []
+
+    manifests = [
+        ("white-papers/manifest.json", "white_papers", "White Papers",
+         "Evelyn has written these white papers:"),
+        ("case-studies/manifest.json", "case_studies", "Case Studies",
+         "Evelyn has written these case studies:"),
+        ("ships/manifest.json", "ships", "Ships",
+         "Evelyn built these five ships:"),
+        ("assets/certificates/manifest.json", "certificates", "Certificates",
+         "Evelyn holds these certifications:"),
+    ]
+
+    for rel, key, title, intro in manifests:
+        p = REPO / rel
+        if not p.exists():
+            print("Manifest missing: " + rel)
+            continue
+        try:
+            with open(p) as f:
+                data = json.load(f)
+        except Exception as e:
+            print("Manifest parse error " + rel + ": " + str(e))
+            continue
+
+        entries = data.get(key, [])
+        if not isinstance(entries, list) or not entries:
+            continue
+
+        # Format as readable list
+        lines = [intro]
+        for e in entries:
+            if key == "white_papers":
+                t = e.get("title", "")
+                st = e.get("subtitle", "")
+                if st and st != t:
+                    lines.append("- " + t + " — " + st)
+                else:
+                    lines.append("- " + t)
+            elif key == "case_studies":
+                lines.append("- " + e.get("title", ""))
+            elif key == "ships":
+                n = e.get("number", "")
+                t = e.get("title", "")
+                p = e.get("platform", "")
+                lines.append("- Ship " + str(n) + ": " + t + " (" + p + ")")
+            elif key == "certificates":
+                nm = e.get("name", "")
+                iss = e.get("issuer", "")
+                d = e.get("date", "")
+                if iss:
+                    lines.append("- " + nm + " — " + iss)
+                else:
+                    lines.append("- " + nm)
+        text = "\n".join(lines)
+        chunks_out.append((rel, title, clean_text(text)))
+        print("Manifest added: " + rel + " (" + str(len(entries)) + " entries)")
+
+    return chunks_out
+
+
 def main():
     index = {
         "meta": {
@@ -188,6 +252,20 @@ def main():
                 "live_url": "https://qaevelyn.github.io/lookbook.html",
             })
     print("Lookbook chunks added: " + str(len(lookbook_chunks)))
+
+    # Add manifest lists
+    manifest_chunks = extract_manifest_content()
+    for src_marker, title, text in manifest_chunks:
+        # Manifests go in as one chunk each — they are lists, not prose
+        index["entries"].append({
+            "id": "manifest__" + src_marker.replace("/", "__").replace(".json", ""),
+            "source": src_marker,
+            "title": title,
+            "chunk_index": 0,
+            "text": text,
+            "live_url": "https://qaevelyn.github.io/" + src_marker.replace("manifest.json", ""),
+        })
+    print("Manifest chunks added: " + str(len(manifest_chunks)))
 
     index["meta"]["chunks"] = len(index["entries"])
 
