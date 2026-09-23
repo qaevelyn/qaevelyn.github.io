@@ -3,7 +3,7 @@
     "purpose": "Mir search index \u2014 every public content file, chunked for retrieval",
     "source_files": 21,
     "generated_by": "site/build_mir_index.py",
-    "chunks": 267
+    "chunks": 271
   },
   "entries": [
     {
@@ -2141,6 +2141,38 @@
       "chunk_index": 1,
       "text": "Proof, not tenure: I hold certifications in AI, LangChain, and Agentic RAG from Google and IBM. I completed the AWS re/Start bootcamp in 3 weeks and 1 day of class time \u2014 graduated September 9, 2026.\n\nCount my proofs.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "manifest__white-papers__manifest",
+      "source": "white-papers/manifest.json",
+      "title": "White Papers",
+      "chunk_index": 0,
+      "text": "Evelyn has written these white papers:\n- Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now \u2014 A Sovereign AI Practitioner's Re-Read of the Machine, the War, and the Alternative the Show Never Named\n- Who Tests the Testers? \u2014 Containment Failures in Frontier AI Security \u2014 The Auditor's Blind Spot\n- Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI\n- The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?\n- Sovereign AI vs. Silicon Valley: A Different Origin Story\n- White Paper Methodology\n- Methodology: Stress-Testing AI Systems for Reliability and Sovereignty\n- White Paper: A Case Study in AI Collaboration\n- White Paper: AI Platform Comparison\n- Aisha Case Study\n- AWS Case Study\n- ChatGPT Case Study\n- DeepSeek Case Study\n- Google Case Study\n- Manus Case Study\n- Comparative Analysis",
+      "live_url": "https://qaevelyn.github.io/white-papers/"
+    },
+    {
+      "id": "manifest__case-studies__manifest",
+      "source": "case-studies/manifest.json",
+      "title": "Case Studies",
+      "chunk_index": 0,
+      "text": "Evelyn has written these case studies:\n- EvidenceFlow Verification: How Ship 5 Proves Its Answers\n- RAG Knowledge Base Audit \u2014 Per Scholas AI Assistant (Azari)",
+      "live_url": "https://qaevelyn.github.io/case-studies/"
+    },
+    {
+      "id": "manifest__ships__manifest",
+      "source": "ships/manifest.json",
+      "title": "Ships",
+      "chunk_index": 0,
+      "text": "Evelyn built these five ships:\n- Ship 1: Ship 1 \u2014 DeepSeek RAG (originally AWS SageMaker, rebuilt locally) (Local (originally AWS SageMaker))\n- Ship 2: Ship 2 \u2014 IBM Granite Agentic RAG (IBM Granite)\n- Ship 3: Ship 3 \u2014 IBM Granite RAG (IBM Granite)\n- Ship 4: Ship 4 \u2014 IBM Granite Agentic RAG (IBM Granite)\n- Ship 5: Ship 5 \u2014 IBM Granite Agentic RAG with EvidenceFlow (IBM Granite)",
+      "live_url": "https://qaevelyn.github.io/ships/"
+    },
+    {
+      "id": "manifest__assets__certificates__manifest",
+      "source": "assets/certificates/manifest.json",
+      "title": "Certificates",
+      "chunk_index": 0,
+      "text": "Evelyn holds these certifications:\n- Google AI Professional Certificate \u2014 Google / Coursera\n- Google AI Fundamentals \u2014 Google / Coursera\n- Google AI Essentials V1 \u2014 Google / Coursera\n- Google AI for App Building \u2014 Google / Coursera\n- Google AI for Content Creation \u2014 Google / Coursera\n- Google AI for Data Analysis \u2014 Google / Coursera\n- Google AI for Writing and Communicating \u2014 Google / Coursera\n- Google Prompting Essentials \u2014 Google / Coursera\n- AWS Educate Introduction to Generative AI \u2014 AWS Educate\n- CompTIA A+ \u2014 CompTIA\n- IBM Computer Hardware Basics \u2014 IBM SkillsBuild / Cisco\n- IBM Operating Systems Basics \u2014 IBM SkillsBuild / Cisco\n- IBM SkillsBuild \u2014 LangChain \u2014 IBM SkillsBuild\n- IBM SkillsBuild \u2014 Granite Agentic RAG \u2014 IBM SkillsBuild",
+      "live_url": "https://qaevelyn.github.io/assets/certificates/"
     }
   ]
 }
