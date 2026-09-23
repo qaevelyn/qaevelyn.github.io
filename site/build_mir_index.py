@@ -51,6 +51,31 @@ def strip_frontmatter(text):
             return text[end + 4:].lstrip()
     return text
 
+def clean_text(text):
+    """Strip HTML tags, markdown syntax, and collapse whitespace."""
+    import re
+    # Remove HTML tags
+    text = re.sub(r'<[^>]+>', ' ', text)
+    # Remove markdown code fences
+    text = re.sub(r'```[^`]*```', ' ', text, flags=re.DOTALL)
+    # Remove markdown headers (## )
+    text = re.sub(r'^#{1,6}\s+', '', text, flags=re.MULTILINE)
+    # Remove markdown link syntax [text](url) -> text
+    text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    # Remove markdown bold/italic markers
+    text = re.sub(r'\*\*([^*]+)\*\*', r'\1', text)
+    text = re.sub(r'\*([^*]+)\*', r'\1', text)
+    text = re.sub(r'_([^_]+)_', r'\1', text)
+    # Remove markdown tables pipes
+    text = re.sub(r'^\|.*\|$', lambda m: m.group(0).replace('|', ' '), text, flags=re.MULTILINE)
+    # Remove horizontal rules
+    text = re.sub(r'^[-=]{3,}$', '', text, flags=re.MULTILINE)
+    # Collapse multiple whitespace to one
+    text = re.sub(r'\s+', ' ', text)
+    # Trim
+    return text.strip()
+
+
 def chunk(text, max_chars=800):
     """Split text into chunks of roughly max_chars, preserving paragraphs."""
     paragraphs = re.split(r"\n\s*\n", text)
@@ -94,6 +119,7 @@ def main():
         raw = path.read_text(encoding="utf-8", errors="replace")
         text = strip_frontmatter(raw)
         title = extract_title(text, path.name)
+        text = clean_text(text)
 
         for i, chunk_text in enumerate(chunk(text, max_chars=800)):
             index["entries"].append({
