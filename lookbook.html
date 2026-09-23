@@ -586,24 +586,23 @@
     .qr-frame-wrap {
       position: relative;
       width: 100%;
-      max-width: 400px;
-      aspect-ratio: 1 / 1;
+      aspect-ratio: 1280 / 757;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0.25rem 0 0.5rem 0;
-      overflow: visible;
+      margin: 0.75rem auto 1rem auto;
+      padding: 0;
     }
     .qr-frame-img {
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       object-fit: fill;
       pointer-events: none;
       z-index: 2;
-      transform: translate(-50%, -50%) rotate(180deg);
+      transform: rotate(180deg);
       transform-origin: center center;
       filter:
         drop-shadow(0 6px 14px rgba(0,0,0,0.5))
@@ -611,25 +610,20 @@
     }
     .qr-link {
       position: absolute;
-      top: 22%;
-      left: 6%;
-      right: 6%;
-      bottom: 22%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 1;
+      z-index: 3;
       text-decoration: none;
-      background: #ffffff;
-      border-radius: 2px;
+      background: transparent;
     }
     .qr-code {
       display: block;
-      width: 100%;
-      height: 100%;
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
+      width: 200px;
+      height: 200px;
     }
     .qr-url {
       font-size: 0.85rem;
