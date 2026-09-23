@@ -378,6 +378,17 @@
 
     <div class="book-pages">
 
+      <!-- ===== INSIDE COVER ===== -->
+      <div id="inside-cover" class="spread" role="region" aria-label="Inside cover">
+        <div class="page" id="qr-placeholder">
+          <!-- QR code and accessibility text will be added later -->
+        </div>
+        <div class="valley"></div>
+        <div class="page" id="inside-cover-right">
+          <!-- Reserved blank page -->
+        </div>
+      </div>
+
       <!-- ===== TOC + INTRO ===== -->
       <div id="toc" class="spread toc active">
         <div class="page painted-page left">
@@ -638,10 +649,10 @@
   <!-- ===== NAVIGATION ===== -->
   <div class="nav-wrapper">
     <div class="nav-controls">
-      <button id="prevBtn" disabled>← Previous</button>
-      <button id="nextBtn">Next →</button>
+      <button id="prevBtn" disabled aria-label="Previous page">← Previous</button>
+      <button id="nextBtn" aria-label="Next page">Next →</button>
     </div>
-    <div class="page-indicator" id="indicator">1 / 11</div>
+    <div class="page-indicator" id="indicator" aria-live="polite">1 / 12</div>
 
     <div class="return-home">
       <a href="index.html">← Return to Home</a>
@@ -706,7 +717,7 @@
         const child = spread.getAttribute('data-toc-child');
         const single = spread.getAttribute('data-toc-title');
 
-        const startPage = (idx * 2) - 1;
+        const startPage = (idx * 2);
         const endPage = startPage + 1;
 
         if (parent && child) {
