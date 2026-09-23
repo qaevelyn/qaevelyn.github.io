@@ -413,7 +413,7 @@
     }
     .mir-glass {
       position: absolute;
-      top: 24%;
+      top: 23%;
       left: 8%;
       right: 8%;
       bottom: 22%;
@@ -504,6 +504,20 @@
       color: #a89878;
       font-style: italic;
       opacity: 1;
+    }
+    .mir-clear-btn {
+      background: none;
+      border: none;
+      color: #a89878;
+      font-family: Georgia, serif;
+      font-size: 1.1rem;
+      cursor: pointer;
+      padding: 0 4px;
+      line-height: 1;
+      margin-left: 4px;
+    }
+    .mir-clear-btn:hover {
+      color: #d4b670;
     }
     .mir-topics {
       display: grid;
@@ -686,6 +700,7 @@
                          placeholder="type your question..."
                          autocomplete="off"
                          aria-label="Ask Mir a question">
+                  <button type="button" class="mir-clear-btn" id="mir-clear" aria-label="Clear conversation">×</button>
                 </div>
               </div>
               <img src="/assets/mir-frame.svg"
@@ -1453,19 +1468,38 @@
       .filter(function(w) { return w.length > 2 && !STOPWORDS.has(w); });
   }
 
-  // ===== Score — count overlapping tokens, weight by rarity =====
-  function score(queryTokens, chunk) {
-    if (!queryTokens.length) return 0;
-    const chunkLower = chunk.text.toLowerCase();
-    let matches = 0;
-    let weighted = 0;
-    for (const t of queryTokens) {
-      if (chunkLower.indexOf(t) !== -1) {
-        matches++;
-        weighted += t.length; // longer words count more
+  // ===== Score — IDF weighted, so rare tokens matter more =====
+  let IDF = null;
+  function buildIDF() {
+    if (IDF) return;
+    const docFreq = {};
+    const total = INDEX.length;
+    for (const chunk of INDEX) {
+      const seen = new Set(tokenize(chunk.text));
+      for (const t of seen) {
+        docFreq[t] = (docFreq[t] || 0) + 1;
       }
     }
-    return weighted / queryTokens.length;
+    IDF = {};
+    for (const t in docFreq) {
+      IDF[t] = Math.log(total / docFreq[t]);
+    }
+  }
+
+  function score(queryTokens, chunk) {
+    if (!queryTokens.length) return 0;
+    buildIDF();
+    const chunkLower = chunk.text.toLowerCase();
+    let weighted = 0;
+    let totalWeight = 0;
+    for (const t of queryTokens) {
+      const idf = IDF[t] || 0;
+      totalWeight += idf;
+      if (chunkLower.indexOf(t) !== -1) {
+        weighted += idf;
+      }
+    }
+    return totalWeight ? weighted / totalWeight : 0;
   }
 
   // ===== Search =====
@@ -1556,6 +1590,16 @@
       ask(q);
     });
   });
+
+  // ===== Clear button =====
+  const clearBtn = document.getElementById('mir-clear');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function() {
+      answerEl.innerHTML = '<p class="mir-intro">Ask me anything about Evelyn\'s work.</p>';
+      inputEl.value = '';
+      inputEl.focus();
+    });
+  }
 })();
 </script>
 </body>
