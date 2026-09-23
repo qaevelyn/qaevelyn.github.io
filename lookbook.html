@@ -506,26 +506,48 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      gap: 4px 14px;
+      gap: 8px 12px;
       justify-content: center;
-      margin-top: 10px;
-      font-family: Georgia, "Times New Roman", serif;
+      margin-top: 14px;
+      padding: 0 8px;
     }
     .mir-topics button {
-      background: none;
-      border: none;
-      color: #8a6b2e;
+      padding: 6px 14px;
+      background:
+        radial-gradient(circle at 30% 30%, #f5e0a8 0%, #c9a355 25%, #8a6b2e 55%, #4a3315 85%, #2a1a08 100%) 8px 8px / 8px 8px no-repeat,
+        radial-gradient(circle at 30% 30%, #f5e0a8 0%, #c9a355 25%, #8a6b2e 55%, #4a3315 85%, #2a1a08 100%) calc(100% - 8px) 8px / 8px 8px no-repeat,
+        radial-gradient(circle at 30% 30%, #f5e0a8 0%, #c9a355 25%, #8a6b2e 55%, #4a3315 85%, #2a1a08 100%) 8px calc(100% - 8px) / 8px 8px no-repeat,
+        radial-gradient(circle at 30% 30%, #f5e0a8 0%, #c9a355 25%, #8a6b2e 55%, #4a3315 85%, #2a1a08 100%) calc(100% - 8px) calc(100% - 8px) / 8px 8px no-repeat,
+        linear-gradient(180deg, #b8924a 0%, #8a6b2e 45%, #5a4320 100%) center / 100% 100% no-repeat;
+      color: #f5e6d3;
+      border: 1px solid #4a3315;
+      border-radius: 3px;
+      box-shadow:
+        inset 0 1px 0 rgba(245,230,211,0.45),
+        inset 0 -2px 4px rgba(0,0,0,0.6),
+        0 3px 8px rgba(0,0,0,0.5);
       font-family: Georgia, "Times New Roman", serif;
       font-style: italic;
       font-size: 0.78rem;
-      letter-spacing: 0.5px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-shadow: 0 -1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(245,230,211,0.15);
       cursor: pointer;
-      padding: 2px 4px;
-      transition: color 0.15s;
+      transition: box-shadow 0.2s, filter 0.2s;
     }
-    .mir-topics button:hover { color: #d4b670; }
-    body.dark-mode .mir-topics button { color: #d4b670; }
-    body.dark-mode .mir-topics button:hover { color: #f5e6d3; }
+    .mir-topics button:hover {
+      box-shadow:
+        inset 0 1px 0 rgba(245,230,211,0.5),
+        inset 0 -2px 4px rgba(0,0,0,0.5),
+        0 5px 12px rgba(0,0,0,0.65),
+        0 0 14px rgba(212,182,112,0.35);
+    }
+    .mir-topics button:active {
+      box-shadow:
+        inset 0 2px 4px rgba(0,0,0,0.6),
+        inset 0 -1px 0 rgba(245,230,211,0.2),
+        0 1px 2px rgba(0,0,0,0.6);
+    }
 
     
     .mir-frame-img {
