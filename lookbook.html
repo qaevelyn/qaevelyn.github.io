@@ -1513,20 +1513,57 @@
 
   // ===== Source preference map — topic → preferred source files =====
   const SOURCE_PRIORITY = {
+    // Intro / Story
+    'intro': ['lookbook.html#intro'],
+    'story': ['lookbook.html#intro'],
+    'about': ['lookbook.html#intro'],
+    'background': ['lookbook.html#intro'],
+    // Services
     'servic': ['services.md'],
+    'offer': ['services.md'],
+    'engagement': ['services.md'],
+    'readiness': ['services.md'],
+    'compliance': ['services.md'],
+    'governance': ['services.md'],
+    'audit': ['services.md'],
+    'emergency': ['services.md'],
+    'rescue': ['services.md'],
+    'zero': ['services.md'],
+    // Pricing
     'pric': ['services.md'],
     'cost': ['services.md'],
     'charge': ['services.md'],
     'fee': ['services.md'],
+    'flat': ['services.md'],
+    'tier': ['services.md'],
+    'budget': ['services.md'],
+    'dollar': ['services.md'],
+    'rate': ['services.md'],
+    // Ships
     'ship': ['lookbook.html#ships'],
-    'about': ['lookbook.html#intro', 'site/words.md'],
-    'background': ['lookbook.html#intro', 'site/words.md'],
+    'fleet': ['lookbook.html#ships'],
+    'rag': ['lookbook.html#ships', 'white-papers/'],
+    'pipeline': ['lookbook.html#ships'],
+    'deepseek': ['lookbook.html#ships', 'white-papers/'],
+    'granite': ['lookbook.html#ships', 'white-papers/'],
+    'evidenceflow': ['lookbook.html#ships', 'white-papers/'],
+    'agentic': ['lookbook.html#ships', 'white-papers/'],
+    // White papers
+    'paper': ['white-papers/'],
+    'write': ['white-papers/'],
+    'written': ['white-papers/'],
+    'publish': ['white-papers/'],
+    'methodolog': ['white-papers/white-paper-methodology'],
+    'essay': ['white-papers/'],
+    'argu': ['white-papers/'],
+    'position': ['white-papers/'],
+    // Contact
     'contact': ['services.md'],
     'email': ['services.md'],
     'reach': ['services.md'],
-    'paper': ['white-papers/'],
-    'write': ['white-papers/'],
-    'methodolog': ['white-papers/white-paper-methodology'],
+    'hire': ['services.md'],
+    'touch': ['services.md'],
+    'inquir': ['services.md'],
   };
 
   function sourceBoost(stemmedQuery, chunkSource) {
@@ -1594,10 +1631,10 @@
         best = chunk;
       }
     }
-    // Threshold: needs at least 0.4 weighted match
-    if (!best || bestScore < 2) {
+    // Threshold: needs meaningful match to return an answer
+    if (!best || bestScore < 4) {
       return {
-        answer: "I don't know that yet. Try one of the topics below, or ask about Evelyn's work, services, white papers, or ships.",
+        answer: "I couldn't find that in the documents. Try one of the topics below.",
         source: null
       };
     }
