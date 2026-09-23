@@ -1,9 +1,9 @@
 {
   "meta": {
     "purpose": "Mir search index \u2014 every public content file, chunked for retrieval",
-    "source_files": 21,
+    "source_files": 22,
     "generated_by": "site/build_mir_index.py",
-    "chunks": 271
+    "chunks": 272
   },
   "entries": [
     {
@@ -1999,7 +1999,15 @@
       "live_url": "https://qaevelyn.github.io/site/words/"
     },
     {
-      "id": "lookbook__249",
+      "id": "site__contact__0",
+      "source": "site/contact.md",
+      "title": "Contact",
+      "chunk_index": 0,
+      "text": "Contact\n\nEvelyn \u2014 Sovereign AI Builder\n\nEmail: evelyn.caro.cloud@gmail.com\n\nPortfolio: qaevelyn.github.io\n\nFor AI readiness assessments, compliance audits, governance reviews, or emergency audits \u2014 email with a brief description of your organization and what you are looking for. Response within one business day for urgent requests.",
+      "live_url": "https://qaevelyn.github.io/site/contact/"
+    },
+    {
+      "id": "lookbook__250",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -2007,7 +2015,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__250",
+      "id": "lookbook__251",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -2015,7 +2023,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__251",
+      "id": "lookbook__252",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -2023,7 +2031,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__252",
+      "id": "lookbook__253",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -2031,7 +2039,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__253",
+      "id": "lookbook__254",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -2039,7 +2047,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__254",
+      "id": "lookbook__255",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Standard RAG",
       "chunk_index": 0,
@@ -2047,7 +2055,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__255",
+      "id": "lookbook__256",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG",
       "chunk_index": 0,
@@ -2055,7 +2063,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__256",
+      "id": "lookbook__257",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Standard RAG",
       "chunk_index": 0,
@@ -2063,7 +2071,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__257",
+      "id": "lookbook__258",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG",
       "chunk_index": 0,
@@ -2071,7 +2079,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__258",
+      "id": "lookbook__259",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG + EvidenceFlow",
       "chunk_index": 0,
@@ -2079,7 +2087,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__259",
+      "id": "lookbook__260",
       "source": "lookbook.html#services",
       "title": "01 \u2014 Zero-AI Readiness",
       "chunk_index": 0,
@@ -2087,7 +2095,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__260",
+      "id": "lookbook__261",
       "source": "lookbook.html#services",
       "title": "02 \u2014 AI Readiness Assessment",
       "chunk_index": 0,
@@ -2095,7 +2103,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__261",
+      "id": "lookbook__262",
       "source": "lookbook.html#services",
       "title": "03 \u2014 AI Compliance Audit",
       "chunk_index": 0,
@@ -2103,7 +2111,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__262",
+      "id": "lookbook__263",
       "source": "lookbook.html#services",
       "title": "04 \u2014 AI Governance Assessment",
       "chunk_index": 0,
@@ -2111,7 +2119,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__263",
+      "id": "lookbook__264",
       "source": "lookbook.html#services",
       "title": "05 \u2014 Emergency Audit-Only",
       "chunk_index": 0,
@@ -2119,7 +2127,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__264",
+      "id": "lookbook__265",
       "source": "lookbook.html#services",
       "title": "06 \u2014 Emergency Full-Rescue",
       "chunk_index": 0,
@@ -2127,7 +2135,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__265",
+      "id": "lookbook__266",
       "source": "lookbook.html#intro",
       "title": "Intro / Story",
       "chunk_index": 0,
@@ -2135,7 +2143,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__266",
+      "id": "lookbook__267",
       "source": "lookbook.html#intro",
       "title": "Intro / Story",
       "chunk_index": 1,

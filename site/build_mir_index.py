@@ -38,8 +38,9 @@ CORPUS = [
     # Services and assessment
     "services.md",
     "assessments/ai-readiness-assessment.md",
-    # Words
+    # Words and contact
     "site/words.md",
+    "site/contact.md",
 ]
 
 def strip_frontmatter(text):
