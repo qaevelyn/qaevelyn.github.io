@@ -3,7 +3,7 @@
     "purpose": "Mir search index \u2014 every public content file, chunked for retrieval",
     "source_files": 21,
     "generated_by": "site/build_mir_index.py",
-    "chunks": 249
+    "chunks": 267
   },
   "entries": [
     {
@@ -1997,6 +1997,150 @@
       "chunk_index": 4,
       "text": "1. Edit the words here (human-readable)\n2. Copy the change into `site/words.json` (machine-readable)\n3. `git add site/words.md site/words.json && git commit && git push`\n\nCompanion file: `site/words.json`\nLast updated: September 12, 2026",
       "live_url": "https://qaevelyn.github.io/site/words/"
+    },
+    {
+      "id": "lookbook__249",
+      "source": "lookbook.html#ships",
+      "title": "Ships \u2014 Narrative",
+      "chunk_index": 0,
+      "text": "Ship 1 was the first attempt \u2014 AWS, DeepSeek, a RAG pipeline built to organize my own life. It got lost. The notebook wasn't on the SageMaker instance. It wasn't in the backups. I rebuilt it from the Mirror files. The rebuild was cleaner than the original. That's the ship that taught me how to recover from losing one.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__250",
+      "source": "lookbook.html#ships",
+      "title": "Ships \u2014 Narrative",
+      "chunk_index": 0,
+      "text": "By the time Ship 2 came, I was more confident. I had rebuilt Ship 1 from scratch. I understood what I was capable of and what the tools could do. Ship 2 was IBM Granite \u2014 a different model, a cleaner notebook, and a new layer: agentic reasoning. I learned to write clean code and I learned what agency meant. This is the ship where I stopped being a student and started being a builder.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__251",
+      "source": "lookbook.html#ships",
+      "title": "Ships \u2014 Narrative",
+      "chunk_index": 0,
+      "text": "Ship 3 ran on IBM Cloud with IBM Granite as the model. Same pattern, different vendor. If the design only worked on one platform, it wasn't real. This is the ship that proved the pattern was portable \u2014 not locked to AWS, not locked to DeepSeek, not locked to anything.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__252",
+      "source": "lookbook.html#ships",
+      "title": "Ships \u2014 Narrative",
+      "chunk_index": 0,
+      "text": "Ship 4 combined IBM Granite with agentic reasoning. Retrieval plus action, on the second platform. This is the ship where I learned that agency wasn't a feature \u2014 it was a way of thinking about how a system works. Cross-platform and agentic, together.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__253",
+      "source": "lookbook.html#ships",
+      "title": "Ships \u2014 Narrative",
+      "chunk_index": 0,
+      "text": "Ship 5 is the leap. IBM Granite via Ollama, running fully local. ChromaDB for retrieval. EvidenceFlow verification \u2014 every claim traceable to an evidence ID, fail-closed if evidence is missing. Built for genealogy, where a plausible guess is not good enough. This is the ship I built for the work that matters.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__254",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 Standard RAG",
+      "chunk_index": 0,
+      "text": "Originally built on AWS SageMaker with DeepSeek. Rebuilt locally after instance loss. Current version runs on an M1 MacBook Air with a RAG pipeline over the Mirror archive.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__255",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 Agentic RAG",
+      "chunk_index": 0,
+      "text": "Agentic RAG pipeline on IBM Granite \u2014 retrieval + action (tool-calling, decision-making). Demonstrates autonomous reasoning with a local LLM.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__256",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 Standard RAG",
+      "chunk_index": 0,
+      "text": "RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__257",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 Agentic RAG",
+      "chunk_index": 0,
+      "text": "Agentic RAG pipeline on IBM Granite \u2014 retrieval + action. Cross-platform agentic architecture with autonomous reasoning and decision-making.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__258",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 Agentic RAG + EvidenceFlow",
+      "chunk_index": 0,
+      "text": "A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an M1 MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__259",
+      "source": "lookbook.html#services",
+      "title": "01 \u2014 Zero-AI Readiness",
+      "chunk_index": 0,
+      "text": "For organizations that have not yet adopted AI \u2014 and want to know where it would actually help.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__260",
+      "source": "lookbook.html#services",
+      "title": "02 \u2014 AI Readiness Assessment",
+      "chunk_index": 0,
+      "text": "For organizations that have AI systems and cannot answer basic questions about them.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__261",
+      "source": "lookbook.html#services",
+      "title": "03 \u2014 AI Compliance Audit",
+      "chunk_index": 0,
+      "text": "For organizations that need to know which rules apply to their AI \u2014 and whether they are following them.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__262",
+      "source": "lookbook.html#services",
+      "title": "04 \u2014 AI Governance Assessment",
+      "chunk_index": 0,
+      "text": "For organizations that have a compliance baseline and need to know it still holds.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__263",
+      "source": "lookbook.html#services",
+      "title": "05 \u2014 Emergency Audit-Only",
+      "chunk_index": 0,
+      "text": "For organizations where the key AI person has left and the stack is undocumented.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__264",
+      "source": "lookbook.html#services",
+      "title": "06 \u2014 Emergency Full-Rescue",
+      "chunk_index": 0,
+      "text": "For organizations where the key AI person has left and the stack is broken.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__265",
+      "source": "lookbook.html#intro",
+      "title": "Intro / Story",
+      "chunk_index": 0,
+      "text": "I started as an AI tourist. I was curious, I asked questions, I explored. Then I learned, and I built. Every time I learned something new, I built it. A pipeline. Then a cleaner one. Then a different platform. Then agency. Then verification. Each ship in this fleet is a thing I learned, made real.\nI built as I learned. I went from AI tourist to AI professional. This is the fleet.\nHow I work: I approach every system as an auditor \u2014 verify, document, don't trust. I apply the Ida B. Wells standard to everything I record: date everything, name everything, record the reasoning. I red team my own work. I test my AIs adversarially. I want to know where they break.\nMy direction: Use AI to audit the cloud. Niche down to security auditor.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__266",
+      "source": "lookbook.html#intro",
+      "title": "Intro / Story",
+      "chunk_index": 1,
+      "text": "Proof, not tenure: I hold certifications in AI, LangChain, and Agentic RAG from Google and IBM. I completed the AWS re/Start bootcamp in 3 weeks and 1 day of class time \u2014 graduated September 9, 2026.\n\nCount my proofs.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
     }
   ]
 }
