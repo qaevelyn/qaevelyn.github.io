@@ -376,6 +376,9 @@
       overflow: hidden;
       background: #f5e6d3;
     }
+    body.dark-mode .mirror-page {
+      background: #1a1a2e;
+    }
     .mir-frame-wrap {
       width: 100%;
       height: 100%;
@@ -504,17 +507,21 @@
     .mir-topics {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 6px 8px;
+      gap: 8px;
       justify-content: center;
       justify-items: center;
-      margin-top: 12px;
-      padding: 0 4px;
+      margin: 14px auto 0 auto;
+      padding: 0 12px;
       max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
     }
     .mir-topics button {
-      padding: 5px 10px;
-      font-size: 0.72rem;
+      padding: 5px 8px;
+      font-size: 0.68rem;
       white-space: nowrap;
+      min-width: 0;
+      max-width: 100%;
       background:
         radial-gradient(circle at 30% 30%, #f5e0a8 0%, #c9a355 25%, #8a6b2e 55%, #4a3315 85%, #2a1a08 100%) 8px 8px / 8px 8px no-repeat,
         radial-gradient(circle at 30% 30%, #f5e0a8 0%, #c9a355 25%, #8a6b2e 55%, #4a3315 85%, #2a1a08 100%) calc(100% - 8px) 8px / 8px 8px no-repeat,
