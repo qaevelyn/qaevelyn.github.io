@@ -1,3 +1,5 @@
 main:
   - title: "Portfolio"
     url: /lookbook.html
+  - title: "Services"
+    url: /services/
