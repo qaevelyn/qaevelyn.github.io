@@ -586,32 +586,35 @@
     .qr-frame-wrap {
       position: relative;
       width: 100%;
-      max-width: 420px;
-      aspect-ratio: 1280 / 757;
+      max-width: 400px;
+      aspect-ratio: 1 / 1;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0.25rem 0 0.5rem 0;
+      overflow: hidden;
     }
     .qr-frame-img {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 50%;
+      left: 50%;
+      width: 169%;
+      height: 169%;
       object-fit: fill;
       pointer-events: none;
       z-index: 2;
+      transform: translate(-50%, -50%) rotate(90deg);
+      transform-origin: center center;
       filter:
         drop-shadow(0 6px 14px rgba(0,0,0,0.5))
         drop-shadow(0 2px 4px rgba(0,0,0,0.35));
     }
     .qr-link {
       position: absolute;
-      top: 19%;
-      left: 18%;
-      right: 18%;
-      bottom: 22%;
+      top: 30%;
+      left: 30%;
+      right: 30%;
+      bottom: 30%;
       display: flex;
       align-items: center;
       justify-content: center;
