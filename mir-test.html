@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Mir Test</title>
+<style>
+  body { background: #2c1810; display:flex; justify-content:center; align-items:center; min-height:100vh; margin:0; padding:2rem; }
+  .mir-container { width: 380px; max-width: 100%; }
+</style>
+</head><body>
+<div class="mir-container">
+<svg viewBox="0 0 380 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mirTitle mirDesc" style="display:block; width:100%; height:auto;">
+  <title id="mirTitle">Mir — the Mirror of My Becoming</title>
+  <desc id="mirDesc">A vertical baroque mirror with an ornate gold frame. Above the mirror, the words "A Mirror of My Becoming" are written. Inside the mirror, a prompt reads: "I am Mir. Ask me anything about Evelyn's portfolio."</desc>
+
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5e0a8"/>
+      <stop offset="25%" stop-color="#d4b670"/>
+      <stop offset="55%" stop-color="#a67c3a"/>
+      <stop offset="85%" stop-color="#6b4a1e"/>
+      <stop offset="100%" stop-color="#3a2408"/>
+    </linearGradient>
+
+    <linearGradient id="goldShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8a6b2e"/>
+      <stop offset="50%" stop-color="#f5e0a8"/>
+      <stop offset="100%" stop-color="#8a6b2e"/>
+    </linearGradient>
+
+    <linearGradient id="glassGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2430"/>
+      <stop offset="40%" stop-color="#2c3a4a"/>
+      <stop offset="100%" stop-color="#0f1820"/>
+    </linearGradient>
+
+    <radialGradient id="glassGlow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.3"/>
+    </radialGradient>
+
+    <filter id="innerShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.6"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Title above the mirror -->
+  <text x="190" y="32" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-style="italic" fill="#d4b670" letter-spacing="1">A Mirror</text>
+  <text x="190" y="58" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-style="italic" fill="#d4b670" letter-spacing="1">of My Becoming</text>
+
+  <!-- Vertical mirror frame -->
+  <rect x="30" y="90" width="320" height="500" rx="12" ry="12" fill="url(#goldGrad)" stroke="#3a2408" stroke-width="2"/>
+  <rect x="42" y="102" width="296" height="476" rx="8" ry="8" fill="url(#goldShine)" stroke="#5a3a18" stroke-width="1.5"/>
+
+  <!-- Top-left corner scroll -->
+  <g fill="url(#goldGrad)" stroke="#3a2408" stroke-width="1">
+    <path d="M 50 110 Q 80 120 100 110 Q 110 130 100 150 Q 80 140 70 160 Q 60 140 50 130 Z"/>
+    <circle cx="65" cy="125" r="4" fill="#f5e0a8"/>
+  </g>
+  <!-- Top-right -->
+  <g fill="url(#goldGrad)" stroke="#3a2408" stroke-width="1">
+    <path d="M 330 110 Q 300 120 280 110 Q 270 130 280 150 Q 300 140 310 160 Q 320 140 330 130 Z"/>
+    <circle cx="315" cy="125" r="4" fill="#f5e0a8"/>
+  </g>
+  <!-- Bottom-left -->
+  <g fill="url(#goldGrad)" stroke="#3a2408" stroke-width="1">
+    <path d="M 50 570 Q 80 560 100 570 Q 110 550 100 530 Q 80 540 70 520 Q 60 540 50 550 Z"/>
+    <circle cx="65" cy="555" r="4" fill="#f5e0a8"/>
+  </g>
+  <!-- Bottom-right -->
+  <g fill="url(#goldGrad)" stroke="#3a2408" stroke-width="1">
+    <path d="M 330 570 Q 300 560 280 570 Q 270 550 280 530 Q 300 540 310 520 Q 320 540 330 550 Z"/>
+    <circle cx="315" cy="555" r="4" fill="#f5e0a8"/>
+  </g>
+
+  <!-- Top center crest -->
+  <g fill="url(#goldGrad)" stroke="#3a2408" stroke-width="1.5">
+    <path d="M 190 80 Q 170 70 150 80 Q 170 90 190 95 Q 210 90 230 80 Q 210 70 190 80 Z"/>
+    <circle cx="190" cy="82" r="5" fill="#f5e0a8"/>
+  </g>
+
+  <!-- Mirror glass -->
+  <rect x="80" y="140" width="220" height="400" rx="4" ry="4" fill="url(#glassGrad)" stroke="#1a1005" stroke-width="3" filter="url(#innerShadow)"/>
+  <rect x="80" y="140" width="220" height="400" rx="4" ry="4" fill="url(#glassGlow)"/>
+  <polygon points="100,140 160,140 110,540 80,540" fill="#ffffff" opacity="0.04"/>
+
+  <!-- Prompt box inside the mirror -->
+  <rect x="105" y="290" width="170" height="90" rx="6" ry="6" fill="rgba(20,30,40,0.85)" stroke="#a67c3a" stroke-width="1.5"/>
+  <text x="190" y="325" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#d4b670" font-style="italic">I am Mir.</text>
+  <text x="190" y="348" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8d8b8">Ask me anything</text>
+  <text x="190" y="368" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8d8b8">about Evelyn's portfolio.</text>
+
+  <!-- Frame highlight -->
+  <rect x="30" y="90" width="320" height="500" rx="12" ry="12" fill="none" stroke="#f5e0a8" stroke-width="0.5" opacity="0.4"/>
+</svg>
+</div>
+</body></html>
