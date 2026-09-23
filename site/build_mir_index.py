@@ -105,6 +105,44 @@ def extract_title(text, filename):
         return m.group(1).strip()
     return filename.replace(".md", "").replace("-", " ").replace("_", " ")
 
+def extract_lookbook_content():
+    """Pull ship narratives and other book content from lookbook.html."""
+    import re
+    path = REPO / "lookbook.html"
+    if not path.exists():
+        return []
+    html = path.read_text(encoding="utf-8", errors="replace")
+    chunks_out = []
+
+    # Ship narratives
+    for m in re.finditer(r'<div class="ship-narrative">(.*?)</div>', html, re.DOTALL):
+        text = clean_text(m.group(1))
+        if text:
+            chunks_out.append(("lookbook.html#ships", "Ships — Narrative", text))
+
+    # Ship descriptions — badge + description on the right page
+    for m in re.finditer(r'<div class="badge[^"]*">([^<]+)</div>\s*<p[^>]*>(.*?)</p>', html, re.DOTALL):
+        badge = m.group(1).strip()
+        body = clean_text(m.group(2))
+        if body and len(body) > 20:
+            chunks_out.append(("lookbook.html#ships", "Ship — " + badge, body))
+
+    # Service spreads — grab headings and body
+    for m in re.finditer(r'<h3>(\d{2} — [^<]+)</h3>\s*<p[^>]*>(.*?)</p>', html, re.DOTALL):
+        title = m.group(1).strip()
+        body = clean_text(m.group(2))
+        if body and len(body) > 20:
+            chunks_out.append(("lookbook.html#services", title, body))
+
+    # Intro story
+    for m in re.finditer(r'<h2>Intro / Story</h2>(.*?)</div>\s*</div>', html, re.DOTALL):
+        text = clean_text(m.group(1))
+        if text:
+            chunks_out.append(("lookbook.html#intro", "Intro / Story", text))
+
+    return chunks_out
+
+
 def main():
     index = {
         "meta": {
@@ -136,6 +174,20 @@ def main():
                 "text": chunk_text,
                 "live_url": "https://qaevelyn.github.io/" + rel.replace(".md", "/"),
             })
+
+    # Add lookbook content
+    lookbook_chunks = extract_lookbook_content()
+    for src_marker, title, text in lookbook_chunks:
+        for i, chunk_text in enumerate(chunk(text, max_chars=800)):
+            index["entries"].append({
+                "id": "lookbook__" + str(len(index["entries"])),
+                "source": src_marker,
+                "title": title,
+                "chunk_index": i,
+                "text": chunk_text,
+                "live_url": "https://qaevelyn.github.io/lookbook.html",
+            })
+    print("Lookbook chunks added: " + str(len(lookbook_chunks)))
 
     index["meta"]["chunks"] = len(index["entries"])
 
