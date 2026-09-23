@@ -430,36 +430,104 @@
       justify-content: center;
       text-align: center;
     }
-    .mir-glass::before {
-      content: "Mir";
-      display: block;
+
+
+    .mir-label {
       position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 10px;
+      left: 14px;
       font-family: Georgia, "Times New Roman", serif;
       font-style: italic;
-      font-size: clamp(1.2rem, 2vw, 1.6rem);
+      font-size: 0.85rem;
       color: #d4b670;
       letter-spacing: 1px;
-      text-align: center;
-      width: 80%;
+      opacity: 0.85;
+      pointer-events: none;
     }
-    .mir-glass::after {
-      content: "Mir answers questions about my work. Coming soon.";
-      display: block;
+    .mir-answer {
       position: absolute;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 32px;
+      left: 14px;
+      right: 14px;
+      bottom: 42px;
+      overflow-y: auto;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(0.85rem, 1.1vw, 1rem);
-      color: #a8b8c8;
-      letter-spacing: 0.3px;
-      text-align: center;
-      width: 80%;
-      line-height: 1.6;
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: #e8e0d0;
+      letter-spacing: 0.2px;
+      padding-right: 4px;
+      scrollbar-width: thin;
+      scrollbar-color: #4a4030 #1a2129;
+      pointer-events: auto;
     }
+    .mir-answer::-webkit-scrollbar { width: 4px; }
+    .mir-answer::-webkit-scrollbar-thumb { background: #4a4030; border-radius: 2px; }
+    .mir-answer .mir-intro { font-style: italic; color: #a8b8c8; font-size: 0.8rem; }
+    .mir-answer .mir-q { color: #d4b670; font-style: italic; margin-top: 8px; font-size: 0.78rem; opacity: 0.85; }
+    .mir-answer .mir-a { margin-top: 4px; color: #e8e0d0; }
+    .mir-answer .mir-a a { color: #d4b670; text-decoration: none; }
+    .mir-answer .mir-a a:hover { text-decoration: underline; }
+    .mir-input-wrap {
+      position: absolute;
+      bottom: 10px;
+      left: 14px;
+      right: 14px;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid rgba(212,182,112,0.25);
+      padding-top: 6px;
+      pointer-events: auto;
+    }
+    .mir-input-caret {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #d4b670;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      user-select: none;
+    }
+    .mir-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.82rem;
+      color: #f5e6d3;
+      caret-color: #d4b670;
+      letter-spacing: 0.2px;
+      padding: 0;
+    }
+    .mir-input::placeholder {
+      color: #6a5f4a;
+      font-style: italic;
+    }
+    .mir-topics {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 14px;
+      justify-content: center;
+      margin-top: 10px;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .mir-topics button {
+      background: none;
+      border: none;
+      color: #8a6b2e;
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      font-size: 0.78rem;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      padding: 2px 4px;
+      transition: color 0.15s;
+    }
+    .mir-topics button:hover { color: #d4b670; }
+    body.dark-mode .mir-topics button { color: #d4b670; }
+    body.dark-mode .mir-topics button:hover { color: #f5e6d3; }
+
+    
     .mir-frame-img {
       position: relative;
       display: block;
@@ -504,10 +572,30 @@
           <div class="mir-frame-wrap">
             <h2 class="mir-frame-title">A Mirror of My Becoming</h2>
             <div class="mir-frame-stack">
-              <div class="mir-glass" aria-hidden="true"></div>
+              <div class="mir-glass" id="mir-glass">
+                <span class="mir-label">Mir</span>
+                <div class="mir-answer" id="mir-answer" aria-live="polite">
+                  <p class="mir-intro">Ask me anything about Evelyn's work.</p>
+                </div>
+                <div class="mir-input-wrap">
+                  <span class="mir-input-caret">&gt;</span>
+                  <input type="text" class="mir-input" id="mir-input"
+                         placeholder="type your question..."
+                         autocomplete="off"
+                         aria-label="Ask Mir a question">
+                </div>
+              </div>
               <img src="/assets/mir-frame.svg"
                    alt="Ornate gold baroque mirror frame"
                    class="mir-frame-img">
+            </div>
+            <div class="mir-topics" role="group" aria-label="Suggested questions">
+              <button data-q="Who is Evelyn Caro?">About Evelyn</button>
+              <button data-q="What services does Evelyn offer?">Services</button>
+              <button data-q="What does Evelyn charge for her services?">Pricing</button>
+              <button data-q="What white papers has Evelyn written?">White Papers</button>
+              <button data-q="What are the ships in Evelyn's portfolio?">Ships</button>
+              <button data-q="How do I contact Evelyn?">Contact</button>
             </div>
           </div>
         </div>
