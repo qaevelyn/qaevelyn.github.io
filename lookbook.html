@@ -1511,14 +1511,47 @@
     }
   }
 
+  // ===== Source preference map — topic → preferred source files =====
+  const SOURCE_PRIORITY = {
+    'servic': ['services.md'],
+    'pric': ['services.md'],
+    'cost': ['services.md'],
+    'charge': ['services.md'],
+    'fee': ['services.md'],
+    'ship': ['lookbook.html#ships'],
+    'about': ['lookbook.html#intro', 'site/words.md'],
+    'background': ['lookbook.html#intro', 'site/words.md'],
+    'contact': ['services.md'],
+    'email': ['services.md'],
+    'reach': ['services.md'],
+    'paper': ['white-papers/'],
+    'write': ['white-papers/'],
+    'methodolog': ['white-papers/white-paper-methodology'],
+  };
+
+  function sourceBoost(stemmedQuery, chunkSource) {
+    let boost = 1;
+    for (const t of stemmedQuery) {
+      for (const key in SOURCE_PRIORITY) {
+        if (t.indexOf(key) === 0 || key.indexOf(t) === 0) {
+          const preferred = SOURCE_PRIORITY[key];
+          for (const p of preferred) {
+            if (chunkSource.indexOf(p) !== -1) {
+              boost = Math.max(boost, 4);
+            }
+          }
+        }
+      }
+    }
+    return boost;
+  }
+
   function score(queryTokens, chunk) {
     if (!queryTokens.length) return 0;
     buildIDF();
     const stemmedQuery = queryTokens.map(stem);
-    const chunkStemmed = tokenizeStemmed(chunk.text);
-    const chunkSet = new Set(chunkStemmed);
-    const titleStemmed = tokenizeStemmed(chunk.title || '').map(stem);
-    const titleSet = new Set(titleStemmed);
+    const chunkSet = new Set(tokenizeStemmed(chunk.text));
+    const titleSet = new Set(tokenizeStemmed(chunk.title || '').map(stem));
 
     let sum = 0;
     let matched = 0;
@@ -1529,16 +1562,17 @@
         matched++;
       }
     }
-    // Bonus for matching title tokens
+    // Title boost — aggressive
     for (const t of stemmedQuery) {
       if (titleSet.has(t)) {
-        sum += (IDF[t] || 1) * 1.5;
+        sum += (IDF[t] || 1) * 3;
       }
     }
-    // Bonus for matching multiple query tokens
-    if (matched >= 2) sum *= 1.3;
-    if (matched >= 3) sum *= 1.2;
-
+    // Multi-token bonus
+    if (matched >= 2) sum *= 1.5;
+    if (matched >= 3) sum *= 1.3;
+    // Source preference boost
+    sum *= sourceBoost(stemmedQuery, chunk.source || '');
     return sum;
   }
 
