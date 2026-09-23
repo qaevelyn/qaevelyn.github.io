@@ -397,8 +397,9 @@
       white-space: nowrap;
     }
 
+    body.dark-mode .spread .page h2.mir-frame-title,
     body.dark-mode .mir-frame-title {
-      color: #d4b670;
+      color: #d4b670 !important;
     }
     .mir-frame-stack {
       position: relative;
@@ -434,11 +435,13 @@
     .mir-frame-img {
       position: relative;
       display: block;
-      width: 118%;
-      margin-left: -9%;
+      width: 128%;
+      margin-left: -14%;
       height: auto;
       z-index: 2;
       pointer-events: none;
+      transform: scaleY(1.35);
+      transform-origin: center center;
     }
   </style>
 </head>
