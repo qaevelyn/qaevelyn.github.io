@@ -1643,9 +1643,8 @@
 
   // ===== Render =====
   function render(question, result) {
-    // Clear the intro if this is the first question
-    const intro = answerEl.querySelector('.mir-intro');
-    if (intro) intro.remove();
+    // Clear the panel — replace, do not append
+    answerEl.innerHTML = '';
 
     // Append the question
     const q = document.createElement('div');
@@ -1674,8 +1673,8 @@
       a.appendChild(link);
     }
 
-    // Scroll to the bottom
-    answerEl.scrollTop = answerEl.scrollHeight;
+    // Start the scroll at the top of the new answer
+    answerEl.scrollTop = 0;
   }
 
   // ===== Handle input =====
