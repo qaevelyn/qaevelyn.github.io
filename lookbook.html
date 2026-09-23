@@ -1416,4 +1416,146 @@
 })();
 </script>
 
+
+<script>
+(function() {
+  // ===== Mir search engine =====
+  // No backend. No API. Reads site/mir-index.json on load.
+  // Scores chunks by keyword overlap. Displays best match in the panel.
+
+  let INDEX = null;
+  let LOADING = true;
+
+  const answerEl = document.getElementById('mir-answer');
+  const inputEl = document.getElementById('mir-input');
+  const topicBtns = document.querySelectorAll('.mir-topics button');
+
+  // ===== Load the index =====
+  fetch('/site/mir-index.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      INDEX = data.entries || [];
+      LOADING = false;
+      console.log('Mir index loaded: ' + INDEX.length + ' chunks');
+    })
+    .catch(function(err) {
+      LOADING = false;
+      console.warn('Mir index failed to load:', err);
+    });
+
+  // ===== Tokenize — lowercase, strip punctuation, drop stopwords =====
+  const STOPWORDS = new Set(['a','an','the','is','are','was','were','of','to','in','on','at','for','by','with','and','or','but','it','this','that','what','who','how','when','where','why','do','does','did','have','has','had','be','been','being','i','you','he','she','we','they','me','him','her','us','them','my','your','his','its','our','their','can','could','should','would','will','just','about']);
+
+  function tokenize(text) {
+    return text.toLowerCase()
+      .replace(/[^a-z0-9\s]/g, ' ')
+      .split(/\s+/)
+      .filter(function(w) { return w.length > 2 && !STOPWORDS.has(w); });
+  }
+
+  // ===== Score — count overlapping tokens, weight by rarity =====
+  function score(queryTokens, chunk) {
+    if (!queryTokens.length) return 0;
+    const chunkLower = chunk.text.toLowerCase();
+    let matches = 0;
+    let weighted = 0;
+    for (const t of queryTokens) {
+      if (chunkLower.indexOf(t) !== -1) {
+        matches++;
+        weighted += t.length; // longer words count more
+      }
+    }
+    return weighted / queryTokens.length;
+  }
+
+  // ===== Search =====
+  function search(question) {
+    if (!INDEX || !INDEX.length) {
+      return { answer: "Mir is still loading. Please wait a moment and try again.", source: null };
+    }
+    const queryTokens = tokenize(question);
+    if (!queryTokens.length) {
+      return { answer: "Could you ask that in a few more words?", source: null };
+    }
+    let best = null;
+    let bestScore = 0;
+    for (const chunk of INDEX) {
+      const s = score(queryTokens, chunk);
+      if (s > bestScore) {
+        bestScore = s;
+        best = chunk;
+      }
+    }
+    // Threshold: needs at least 0.4 weighted match
+    if (!best || bestScore < 0.4) {
+      return {
+        answer: "I don't know that yet. Try one of the topics below, or ask about Evelyn's work, services, white papers, or ships.",
+        source: null
+      };
+    }
+    return { answer: best.text, source: best.live_url, title: best.title };
+  }
+
+  // ===== Render =====
+  function render(question, result) {
+    // Clear the intro if this is the first question
+    const intro = answerEl.querySelector('.mir-intro');
+    if (intro) intro.remove();
+
+    // Append the question
+    const q = document.createElement('div');
+    q.className = 'mir-q';
+    q.textContent = '> ' + question;
+    answerEl.appendChild(q);
+
+    // Append the answer
+    const a = document.createElement('div');
+    a.className = 'mir-a';
+    a.textContent = result.answer;
+    answerEl.appendChild(a);
+
+    // If there is a source link, add it
+    if (result.source) {
+      const link = document.createElement('a');
+      link.href = result.source;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.textContent = '→ ' + (result.title || 'read more');
+      link.style.display = 'block';
+      link.style.marginTop = '6px';
+      link.style.fontSize = '0.75rem';
+      link.style.color = '#d4b670';
+      link.style.textDecoration = 'underline';
+      a.appendChild(link);
+    }
+
+    // Scroll to the bottom
+    answerEl.scrollTop = answerEl.scrollHeight;
+  }
+
+  // ===== Handle input =====
+  function ask(question) {
+    question = (question || '').trim();
+    if (!question) return;
+    const result = search(question);
+    render(question, result);
+  }
+
+  inputEl.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      ask(inputEl.value);
+      inputEl.value = '';
+    }
+  });
+
+  // ===== Handle topic buttons =====
+  topicBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const q = btn.getAttribute('data-q') || btn.textContent;
+      ask(q);
+    });
+  });
+})();
+</script>
 </body>
