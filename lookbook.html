@@ -410,10 +410,10 @@
     }
     .mir-glass {
       position: absolute;
-      top: 20%;
-      left: 7%;
-      right: 6%;
-      bottom: 21%;
+      top: 22%;
+      left: 8%;
+      right: 8%;
+      bottom: 22%;
       background: linear-gradient(180deg, #1e2833 0%, #141b24 100%);
       border-radius: 3px;
       box-shadow:
@@ -502,14 +502,14 @@
       font-style: italic;
     }
     .mir-topics {
-      width: 100%;
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 6px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px 8px;
       justify-content: center;
+      justify-items: center;
       margin-top: 12px;
       padding: 0 4px;
-      overflow-x: auto;
+      max-width: 100%;
     }
     .mir-topics button {
       padding: 5px 10px;
