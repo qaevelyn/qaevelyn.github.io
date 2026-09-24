@@ -925,13 +925,15 @@
           <p style="font-size:0.9rem; line-height:1.6;">White papers argue a position. They present a problem, examine it, and propose a solution — backed by evidence and citations.</p>
           <p style="font-size:0.9rem; line-height:1.6; margin-top:1rem;">The collection covers platform evaluations (stress tests of AI systems), comparative analyses (cross-platform criteria), and position papers on the sovereign AI practice.</p>
           <p style="font-size:0.9rem; line-height:1.6; margin-top:1rem;">Every paper is held to the same standard: real evidence, the author's voice, and AI collaboration disclosed.</p>
-          <p style="font-size:0.9rem; line-height:1.6; margin-top:1rem;"><a href="/white-papers/white-paper-methodology/" target="_blank" style="color:#007acc; text-decoration:none; font-weight:bold;">→ Read the White Paper Methodology</a></p>
+          <ul id="white-papers-list-left" style="list-style:none; padding-left:0; margin-top:1rem;">
+            <li style="color:#8b6f3d; font-style:italic;">Loading…</li>
+          </ul>
         </div>
         <div class="valley"></div>
         <div class="page">
           <h3>White Papers</h3>
           <p style="font-size:0.9rem;">Research, argument, and evidence from the field of sovereign AI.</p>
-          <ul id="white-papers-list" style="list-style:none; padding-left:0; margin-top:1rem;">
+          <ul id="white-papers-list-right" style="list-style:none; padding-left:0; margin-top:1rem;">
             <li style="color:#8b6f3d; font-style:italic;">Loading…</li>
           </ul>
         </div>
@@ -1396,8 +1398,34 @@
     .then(r => r.json())
     .then(data => {
       const papers = data.white_papers || [];
-      const list = document.getElementById('white-papers-list');
-      renderList(list, papers, true);
+      const leftList = document.getElementById('white-papers-list-left');
+      const rightList = document.getElementById('white-papers-list-right');
+
+      // Render first 6 on the left page
+      const leftPapers = papers.slice(0, 6);
+      renderList(leftList, leftPapers, true);
+
+      // Render next 6 on the right page
+      const rightPapers = papers.slice(6, 12);
+      renderList(rightList, rightPapers, true);
+
+      // If there are more than 12 papers, add the "see all" link to the right page
+      if (papers.length > 12 && rightList) {
+        const seeAll = document.createElement('li');
+        seeAll.style.marginTop = '1rem';
+        seeAll.style.borderTop = '1px solid rgba(44,24,16,0.15)';
+        seeAll.style.paddingTop = '0.75rem';
+        const seeAllLink = document.createElement('a');
+        seeAllLink.href = '/white-papers/';
+        seeAllLink.target = '_blank';
+        seeAllLink.rel = 'noopener';
+        seeAllLink.style.color = '#007acc';
+        seeAllLink.style.textDecoration = 'none';
+        seeAllLink.style.fontWeight = 'bold';
+        seeAllLink.textContent = 'See all white papers →';
+        seeAll.appendChild(seeAllLink);
+        rightList.appendChild(seeAll);
+      }
     })
     .catch(err => console.warn('White papers manifest load failed:', err));
 
