@@ -1402,11 +1402,11 @@
       const rightList = document.getElementById('white-papers-list-right');
 
       // Render first 6 on the left page
-      const leftPapers = papers.slice(0, 6);
+      const leftPapers = papers.slice(0, 4);
       renderList(leftList, leftPapers, true);
 
       // Render next 6 on the right page
-      const rightPapers = papers.slice(6, 12);
+      const rightPapers = papers.slice(4, 12);
       renderList(rightList, rightPapers, true);
 
       // If there are more than 12 papers, add the "see all" link to the right page
