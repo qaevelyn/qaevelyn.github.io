@@ -114,6 +114,33 @@
         "path": "assets/images/",
         "purpose": "Profile photos, favicons, page assets"
       }
+    ],
+    "site_files": [
+      {
+        "id": "contact",
+        "filename": "site/contact.md",
+        "purpose": "Contact page \u2014 dedicated source for Mir Contact button"
+      },
+      {
+        "id": "mir-build-script",
+        "filename": "site/build_mir_index.py",
+        "purpose": "Mir search index builder \u2014 reads 21 files + 4 manifests, writes mir-index.json"
+      },
+      {
+        "id": "mir-index",
+        "filename": "site/mir-index.json",
+        "purpose": "Mir search index \u2014 ~271 chunks for portfolio chatbot"
+      },
+      {
+        "id": "mir-frame",
+        "filename": "assets/mir-frame.svg",
+        "purpose": "Gold baroque mirror frame for inside cover right page"
+      },
+      {
+        "id": "qr-portfolio",
+        "filename": "assets/qr-portfolio.png",
+        "purpose": "QR code linking to the live lookbook \u2014 inside cover left page"
+      }
     ]
   },
   "build_artifacts": {
