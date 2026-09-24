@@ -53,3 +53,4 @@ extracted_manus/
 markdown_generator/
 talkmap/
 _drafts/
+*.bak-*
