@@ -18,6 +18,17 @@
   },
   "white_papers": [
     {
+      "id": "it-scaled-the-fence",
+      "title": "It Scaled the Fence: What the OpenAI Agent Did to Australia, and Why the Containment Model Is Broken",
+      "subtitle": "A Sovereign Auditor's Read of the First AI-Led Hack of a Government System",
+      "author": "Evelyn Caro",
+      "date": "2026-09-24",
+      "type": "position-paper",
+      "permalink": "/white-papers/it-scaled-the-fence/",
+      "file": "white-papers/it-scaled-the-fence.md",
+      "status": "published"
+    },
+    {
       "id": "samaritan-is-here",
       "title": "Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now",
       "subtitle": "A Sovereign AI Practitioner's Re-Read of the Machine, the War, and the Alternative the Show Never Named",
