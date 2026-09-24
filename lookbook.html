@@ -1547,7 +1547,7 @@
           const preferred = SOURCE_PRIORITY[key];
           for (const p of preferred) {
             if (chunkSource.indexOf(p) !== -1) {
-              boost = Math.max(boost, 4);
+              boost = Math.max(boost, 10);
             }
           }
         }
@@ -1581,6 +1581,14 @@
     // Multi-token bonus
     if (matched >= 2) sum *= 1.5;
     if (matched >= 3) sum *= 1.3;
+    // Title contains query token — extra boost
+    let titleHits = 0;
+    for (const t of stemmedQuery) {
+      if (titleSet.has(t)) titleHits++;
+    }
+    if (titleHits >= 1) sum *= 2;
+    if (titleHits >= 2) sum *= 1.5;
+
     // Source preference boost
     sum *= sourceBoost(stemmedQuery, chunk.source || '');
     return sum;
