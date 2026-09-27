@@ -35,7 +35,7 @@ This file is the human-readable companion to `site/words.json`. Edit the words h
 
 ### Ship 1
 - **Title:** Ship 1 — AWS SageMaker RAG
-- **Description:** Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an M1 MacBook Air.
+- **Description:** Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an 8GB Intel MacBook Air.
 
 ### Ship 2
 - **Title:** Ship 2 — AWS SageMaker Agentic RAG
@@ -51,7 +51,7 @@ This file is the human-readable companion to `site/words.json`. Edit the words h
 
 ### Ship 5
 - **Title:** Ship 5 — IBM Granite Agentic RAG with EvidenceFlow
-- **Description:** A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an M1 MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.
+- **Description:** A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an 8GB Intel MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.
 - **Attribution:** Foundation: IBM SkillsBuild (Anna Gutowska). Inspiration: Asaif Ali's EvidenceFlow. Execution: Evelyn Caro.
 
 ---
