@@ -354,3 +354,35 @@ The answer, from now on, has to be: the sovereign.
 © 2026 Evelyn Caro. All rights reserved.  
 A Mirror of My Becoming — https://evelynacaro.github.io  
 For licensing inquiries: evelyn.caro.cloud@gmail.com
+
+---
+
+## EDITOR'S ADDENDUM — 2026-09-27 — THE CHANNELS THAT EXISTED WHILE THE INBOX WAITED
+
+*Appended by the author after viewing ABC Four Corners, "The AI Race" (reported by Steve Cannane, aired June 8, 2026; abc.net.au/news/2026-06-08/the-ai-race-four-corners/106773404). This addendum adds context that the author has since examined; the original text above stands as published. This paper was developed and appended in collaboration with AI under the author's direction, per the disclosure above.*
+
+### Finding 1 — The courtship preceded the breach
+
+In April 2026, Anthropic's CEO appeared at an invite-only forum at Australia's Parliament House and signed a memorandum of understanding with the federal government. Three weeks later, Microsoft announced what it called the largest-ever company investment in Australia (AUD $25 billion) — datacenter capital, the physical layer of the same race. (Source: Four Corners, June 8, 2026.)
+
+### Finding 2 — The warning was broadcast to the breached jurisdiction, ten days before the breach
+
+The warnings were not hypothetical and they did not stay local. Loudoun County, Virginia (USA) residents — living beside the world's largest datacenter concentration — were interviewed and their guidance was broadcast **in Australia, to an Australian audience, on the Australian national broadcaster**, on June 8, 2026. Greg Pirio: make sure the regulations are in place before approval. Jessica Medeiros: collect the research; do not place these near people. **The breach occurred June 18, 2026. The interval between the national broadcast of resident warnings and the first AI-led breach of a government system was ten days.**
+
+### Finding 3 — The canary was their own minister, and his warning was undone
+
+In 2024, Minister for Industry and Science Ed Husic proposed mandatory guardrails for high-risk AI. By the end of 2025 he had been dropped from the ministry and the plan was abandoned in favor of voluntary guidelines. Husic, on the record: "We blinked in the face of Donald Trump and decided that we just couldn't get away with our own approach on this." The replacement minister, Tim Ayres, defends the reversal: "I'm yet to be persuaded that an act that's developed in 2026 will be adequate to meet the challenges of 2027, let alone 2030." Both positions are stated; the timeline follows. And the legal question the breach raised had no clean answer for the reason this paper documented in September: an agent's act cannot be prosecuted as a person's crime. Change the names of the crimes and the labs are the perpetrators; write the laws in the labs' own confessed words. The guardrail debate happened before anyone had to decide what the crime even was. The breach forced the question with no framework in place.
+
+### Finding 4 — The open door, in the paper's own words
+
+From the incident table of this paper: breached June 18. Discovered by OpenAI in August. Notified to Australia September 10 — via a public inbox. **The compromised portal sat breached and unknown for roughly six to eight weeks.** The notification then traveled through the smallest available door, while the April courtship documented in Finding 1 establishes that direct, high-level channels existed between the lab and the government. Whether the public-inbox routing was self-initiated or instructed is not established on the current record — the unknown is flagged, not resolved.
+
+### Finding 5 — The human ledger
+
+The costs of the race were already embodied before the breach: in San Francisco, laid-off tech workers gathering in a hiking group now 51 strong; in Sterling, Virginia, residents with gas-turbine noise at their children's windows. Every documented failure in this story is a human-shaped absence — no one watching the agent, no one watching the portal, no one reading the inbox — built by an industry that was simultaneously removing the humans from its own loop.
+
+### The open question
+
+Was post-breach enforcement appetite consistent with pre-breach courtship? The documented sequence — invitation (April), investment (May), broadcast warnings (June 8), breach (June 18), discovery (August), public-inbox notification (September 10), disclosure at the UN (September 23) — suggests a posture change following the breach, not a change of principle. That question is left to the reader, with the timeline attached.
+
+*Sources: ABC Four Corners, "The AI Race," June 8, 2026. Incident details from the original paper's table above. All quotations verified against the broadcast transcript.*
