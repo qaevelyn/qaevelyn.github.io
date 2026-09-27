@@ -972,7 +972,7 @@ body.dark-mode .book-page {
     <div class="page">
       <h3>Ship 1 — AWS SageMaker RAG</h3>
       <div class="badge aws">Standard RAG</div>
-      <div id="ship1-text" style="font-size:0.95rem; line-height:1.6;">Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an M1 MacBook Air.</div>
+      <div id="ship1-text" style="font-size:0.95rem; line-height:1.6;">Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an 8GB Intel MacBook Air.</div>
       <div class="links">
         <a href="https://github.com/qaevelyn/ship1-aws-rag">GitHub</a>
         <a href="https://qaevelyn.github.io/ship1-aws-rag/">Live Demo</a>
@@ -1351,12 +1351,12 @@ body.dark-mode .book-page {
   const chatbotSend = document.getElementById('chatbotSend');
 
   const knowledgeBase = {
-    'ship1': 'Ship 1 is a standard RAG pipeline on AWS SageMaker using vector databases and LLMs. Built locally on an M1 MacBook Air.',
+    'ship1': 'Ship 1 is a standard RAG pipeline on AWS SageMaker using vector databases and LLMs. Built locally on an 8GB Intel MacBook Air.',
     'ship2': 'Ship 2 is an agentic RAG pipeline on AWS SageMaker that performs retrieval + action (API calls, decisions).',
     'ship3': 'Ship 3 is a standard RAG pipeline on IBM Granite, showing cross-platform AI capabilities.',
     'ship4': 'Ship 4 is an agentic RAG pipeline on IBM Granite with autonomous reasoning and decision-making.',
     'cert': 'Evelyn holds certifications in AI, LangChain, and Agentic RAG from Google and IBM. She is currently in AWS re/Start.',
-    'sovereign': 'Sovereign systems are built locally, with no cloud dependency. Evelyn runs everything on her M1 MacBook Air.',
+    'sovereign': 'Sovereign systems are built locally, with no cloud dependency. Evelyn runs everything on her 8GB Intel MacBook Air.',
     'default': 'I can answer questions about Evelyn\'s Ships, certifications, and sovereign AI philosophy. Ask me about Ship 1, Ship 2, AWS, IBM, RAG, or certifications!'
   };
 

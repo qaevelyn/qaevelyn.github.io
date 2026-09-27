@@ -9,5 +9,5 @@ title: "White Papers & Publications"
 ## Adversarial Testing of RAG Pipelines
 *Status: Draft — Not Yet Released*
 
-## Local-First AI: Running RAG on an M1 MacBook Air
+## Local-First AI: Running RAG on an 8GB Intel MacBook Air
 *Status: Draft — Not Yet Released*

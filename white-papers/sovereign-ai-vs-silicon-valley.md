@@ -29,7 +29,7 @@ My position is not observational. It is lived. I am the antithesis of the Silico
 | Silicon Valley | Me |
 |---|---|
 | Venture capital | No capital |
-| External GPUs | 8GB M1 MacBook Air |
+| External GPUs | 8GB Intel MacBook Air |
 | Enterprise hardware | Consumer hardware |
 | Cloud dependency | Local-first |
 | Stanford dropout | Multiple degrees + Per Scholas completion |
@@ -103,7 +103,7 @@ I am a descendant of populations that eugenicists theorized about — not the po
 
 Instead:
 
-- I built five functional RAG pipelines on an 8GB M1 MacBook Air
+- I built five functional RAG pipelines on an 8GB Intel MacBook Air
 - I have no external GPUs, no enterprise hardware, no cloud dependency
 - I have no venture capital, no Stanford connections, no safety net
 - I completed Per Scholas AWS re/Start in 3.1 weeks — 16 class days
@@ -124,7 +124,7 @@ I am a Sovereign AI Builder. I am cloud independent, hardware independent, and I
 
 | What I Had | What I Built |
 |------------|--------------|
-| M1 MacBook Air, 8GB RAM | Five functional RAG pipelines |
+| 8GB Intel MacBook Air, 8GB RAM | Five functional RAG pipelines |
 | No external GPUs | Agentic AI with EvidenceFlow verification |
 | No enterprise hardware | Citation verification and fail-closed behavior |
 | No cloud dependency | Systems that verify their own work |

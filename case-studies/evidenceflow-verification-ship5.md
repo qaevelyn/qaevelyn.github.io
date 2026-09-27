@@ -49,7 +49,7 @@ Ship 5 was built to solve this.
 
 **Ship 5: IBM Granite Agentic RAG with EvidenceFlow Verification**
 
-It is a local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on my M1 MacBook Air. It is the first ship in my fleet that verifies its own answers against retrieved evidence before returning them.
+It is a local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on my 8GB Intel MacBook Air. It is the first ship in my fleet that verifies its own answers against retrieved evidence before returning them.
 
 **Notebook:** `Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb`  
 **Location:** `~/Repos/ship5-ibm-granite-agentic-evidenceflow/`
