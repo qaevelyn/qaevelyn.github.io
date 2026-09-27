@@ -1,0 +1,49 @@
+{
+  "evidence_ledger": {
+    "author": "Evelyn Caro - Sovereign AI Builder",
+    "purpose": "Public index of evidence supporting claims in the author's published works. Verifiable items are listed with locations; private holdings are declared as private.",
+    "standard": "Every claim sourced. Every gap flagged. No invented precision.",
+    "last_updated": "2026-09-27",
+    "published_verifiable": [
+      {
+        "claim": "Five RAG pipelines built, containerized, documented",
+        "verify": "qaevelyn.github.io/lookbook.html#ship1 through #ship5; video demos linked per ship"
+      },
+      {
+        "claim": "Seventeen published works (papers, case studies, methodology)",
+        "verify": "qaevelyn.github.io/white-papers/ and /case-studies/; manifest: /white-papers/manifest.json"
+      },
+      {
+        "claim": "DV14 - AI agent containment architecture",
+        "verify": "Referenced in the author's published works as cited there; repository private"
+      },
+      {
+        "claim": "Editorial addendum with sourced timeline (It Scaled the Fence)",
+        "verify": "qaevelyn.github.io/white-papers/it-scaled-the-fence/ - appended 2026-09-27; sources include ABC Four Corners, The AI Race (June 8, 2026)"
+      }
+    ],
+    "case_study_in_drafting": {
+      "title": "The Cache Is Not the Corpus",
+      "public_receipts": [
+        "Session commit trail: day's documentation, corrections, and appends committed and pushed in real time; commit hashes recorded in the author's provenance repository",
+        "Corrected hardware claim: earlier M1 attribution across the author's files corrected to verified hardware (system_profiler receipt: MacBookAir9,1, quad-core Intel i5, 1.1 GHz, 8 GB RAM) by tracked commits 2026-09-27; the correction is part of the record",
+        "Named errors in the record: including the author's AI collaborator misattributing its own identity, corrected by dated append the same day - a record that hides its own errors is publicity, not documentation"
+      ],
+      "private_by_design": [
+        "Full session logs (three append-only working files)",
+        "Ingestion scripts and vector-store teardown/quarantine record",
+        "Per-ship repository internals"
+      ]
+    },
+    "counted_artifacts": [
+      {"artifact": "RAG pipelines (Ships 1-5)", "count": 5, "source": "ships/manifest.json"},
+      {"artifact": "White papers and case studies", "count": 17, "source": "white-papers/manifest.json"},
+      {"artifact": "Documented case studies", "count": 2, "source": "case-studies/manifest.json"}
+    ],
+    "corrections_log": [
+      {"date": "2026-09-27", "entry": "Hardware claims across the author's files corrected from M1 MacBook Air to verified Intel hardware, following a system_profiler audit. Tracked commits."},
+      {"date": "2026-09-27", "entry": "It Scaled the Fence editorial addendum appended (not retro-edited), adding a documented pre-breach timeline from sourced broadcast records."}
+    ],
+    "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps."
+  }
+}

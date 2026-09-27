@@ -1,6 +1,6 @@
 {
   "site_info": {
-    "purpose": "Component inventory \u2014 every file that makes up the portfolio",
+    "purpose": "Component inventory — every file that makes up the portfolio",
     "standard": "5 addresses per file: local, repo, github_blob, github_raw, live_url",
     "location": {
       "local": "~/Repos/qaevelyn.github.io/site/manifest.json",
@@ -20,8 +20,8 @@
       {
         "id": "homepage",
         "filename": "index.html",
-        "title": "Evelyn Caro \u2014 A Mirror of My Becoming",
-        "purpose": "3D encyclopedia book cover \u2014 homepage",
+        "title": "Evelyn Caro — A Mirror of My Becoming",
+        "purpose": "3D encyclopedia book cover — homepage",
         "local": "~/Repos/qaevelyn.github.io/index.html",
         "repo": "index.html",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/index.html",
@@ -31,8 +31,8 @@
       {
         "id": "lookbook",
         "filename": "lookbook.html",
-        "title": "Lookbook \u2014 Sovereign AI Portfolio",
-        "purpose": "The book interior \u2014 TOC, ships, certifications, case studies",
+        "title": "Lookbook — Sovereign AI Portfolio",
+        "purpose": "The book interior — TOC, ships, certifications, case studies",
         "local": "~/Repos/qaevelyn.github.io/lookbook.html",
         "repo": "lookbook.html",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/lookbook.html",
@@ -44,7 +44,7 @@
       {
         "id": "page-flip",
         "filename": "page-flip.browser.js",
-        "purpose": "StPageFlip \u2014 3D page turning (retired, kept as reference)",
+        "purpose": "StPageFlip — 3D page turning (retired, kept as reference)",
         "local": "~/Repos/qaevelyn.github.io/assets/js/page-flip.browser.js",
         "repo": "assets/js/page-flip.browser.js",
         "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/js/page-flip.browser.js",
@@ -56,7 +56,7 @@
       {
         "id": "site-manifest",
         "filename": "site/manifest.json",
-        "purpose": "Component inventory \u2014 this file"
+        "purpose": "Component inventory — this file"
       },
       {
         "id": "certificates-manifest",
@@ -76,7 +76,7 @@
       {
         "id": "words-manifest",
         "filename": "site/words.json",
-        "purpose": "All text content \u2014 machine-readable"
+        "purpose": "All text content — machine-readable"
       }
     ],
     "content_folders": [
@@ -89,7 +89,7 @@
       {
         "id": "case-studies",
         "path": "case-studies/",
-        "purpose": "Markdown documents \u2014 case studies and white papers",
+        "purpose": "Markdown documents — case studies and white papers",
         "count": 14
       },
       {
@@ -119,17 +119,17 @@
       {
         "id": "contact",
         "filename": "site/contact.md",
-        "purpose": "Contact page \u2014 dedicated source for Mir Contact button"
+        "purpose": "Contact page — dedicated source for Mir Contact button"
       },
       {
         "id": "mir-build-script",
         "filename": "site/build_mir_index.py",
-        "purpose": "Mir search index builder \u2014 reads 21 files + 4 manifests, writes mir-index.json"
+        "purpose": "Mir search index builder — reads 21 files + 4 manifests, writes mir-index.json"
       },
       {
         "id": "mir-index",
         "filename": "site/mir-index.json",
-        "purpose": "Mir search index \u2014 ~271 chunks for portfolio chatbot"
+        "purpose": "Mir search index — ~271 chunks for portfolio chatbot"
       },
       {
         "id": "mir-frame",
@@ -139,7 +139,17 @@
       {
         "id": "qr-portfolio",
         "filename": "assets/qr-portfolio.png",
-        "purpose": "QR code linking to the live lookbook \u2014 inside cover left page"
+        "purpose": "QR code linking to the live lookbook — inside cover left page"
+      },
+      {
+        "id": "evidence-ledger",
+        "filename": "site/evidence.json",
+        "purpose": "Public evidence ledger - claims, receipts, declared-private holdings",
+        "local": "/Users/evelyn/Repos/qaevelyn.github.io/site/evidence.json",
+        "repo": "site/evidence.json",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/site/evidence.json",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/site/evidence.json",
+        "live_url": "https://qaevelyn.github.io/site/evidence.json"
       }
     ]
   },
@@ -147,7 +157,7 @@
     "docker": {
       "dockerfile": "Dockerfile",
       "docker_compose": "docker-compose.yml",
-      "purpose": "Containerize the site \u2014 one command rebuild",
+      "purpose": "Containerize the site — one command rebuild",
       "status": "Pending"
     }
   }
