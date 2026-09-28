@@ -4,7 +4,7 @@ title: "The AI Cartel and the Sovereign Response"
 subtitle: "Who Decides How Fast AI Moves?"
 date: 2026-09-19
 author: Evelyn Caro
-type: position
+type: position-paper
 permalink: /white-papers/the-ai-cartel-and-the-sovereign-response/
 ---
 
