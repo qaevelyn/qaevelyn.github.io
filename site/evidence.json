@@ -3,7 +3,7 @@
     "author": "Evelyn Caro - Sovereign AI Builder",
     "purpose": "Public index of evidence supporting claims in the author's published works. Verifiable items are listed with locations; private holdings are declared as private.",
     "standard": "Every claim sourced. Every gap flagged. No invented precision.",
-    "last_updated": "2026-09-27",
+    "last_updated": "2026-09-28",
     "published_verifiable": [
       {
         "claim": "Five RAG pipelines built, containerized, documented",
@@ -20,6 +20,10 @@
       {
         "claim": "Editorial addendum with sourced timeline (It Scaled the Fence)",
         "verify": "qaevelyn.github.io/white-papers/it-scaled-the-fence/ - appended 2026-09-27; sources include ABC Four Corners, The AI Race (June 8, 2026)"
+      },
+      {
+        "claim": "The Cache Is Not the Corpus - 19-cycle ingest livelock documented, zero corpus losses",
+        "verify": "qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/ - evidence table Section 2; sources: night-watchdog.log, deepseek-ingest.log (author's retained logs)"
       }
     ],
     "case_study_in_drafting": {
@@ -36,13 +40,35 @@
       ]
     },
     "counted_artifacts": [
-      {"artifact": "RAG pipelines (Ships 1-5)", "count": 5, "source": "ships/manifest.json"},
-      {"artifact": "White papers and case studies", "count": 17, "source": "white-papers/manifest.json"},
-      {"artifact": "Documented case studies", "count": 2, "source": "case-studies/manifest.json"}
+      {
+        "artifact": "RAG pipelines (Ships 1-5)",
+        "count": 5,
+        "source": "ships/manifest.json"
+      },
+      {
+        "artifact": "White papers and case studies",
+        "count": 17,
+        "source": "white-papers/manifest.json"
+      },
+      {
+        "artifact": "Documented case studies",
+        "count": 2,
+        "source": "case-studies/manifest.json"
+      }
     ],
     "corrections_log": [
-      {"date": "2026-09-27", "entry": "Hardware claims across the author's files corrected from M1 MacBook Air to verified Intel hardware, following a system_profiler audit. Tracked commits."},
-      {"date": "2026-09-27", "entry": "It Scaled the Fence editorial addendum appended (not retro-edited), adding a documented pre-breach timeline from sourced broadcast records."}
+      {
+        "date": "2026-09-27",
+        "entry": "Hardware claims across the author's files corrected from M1 MacBook Air to verified Intel hardware, following a system_profiler audit. Tracked commits."
+      },
+      {
+        "date": "2026-09-27",
+        "entry": "It Scaled the Fence editorial addendum appended (not retro-edited), adding a documented pre-breach timeline from sourced broadcast records."
+      },
+      {
+        "date": "2026-09-28",
+        "entry": "Overnight ingest characterization corrected: 2026-09-27 records described 4+ watchdog wedge-kills as 'resilience proven.' Full-log review 2026-09-28 shows 19 start-wedge-kill cycles 21:33-08:07, sidecar pinned at 72, zero conversations ingested overnight. Reframed as livelock; corpus integrity (127 conversations) intact at every preflight. Correction published in the paper's Section 2 per appended-not-retro-edited rule."
+      }
     ],
     "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps."
   }
