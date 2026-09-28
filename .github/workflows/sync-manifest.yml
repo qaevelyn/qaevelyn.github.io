@@ -1,0 +1,24 @@
+name: Sync Manifest
+on:
+  push:
+    paths:
+      - 'white-papers/*.md'
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Rebuild manifest from front matter
+        run: python3 white-papers/update_manifest.py
+      - name: Commit if changed
+        run: |
+          git config user.name "manifest-bot"
+          git config user.email "actions@github.com"
+          git add white-papers/manifest.json
+          git diff --cached --quiet || git commit -m "manifest: auto-synced by workflow"
+          git push
