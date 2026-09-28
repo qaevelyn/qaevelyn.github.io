@@ -84,17 +84,6 @@
       "status": "published"
     },
     {
-      "id": "white-paper-tracker",
-      "title": "White Paper Tracker",
-      "subtitle": "",
-      "author": "Evelyn Caro",
-      "date": "",
-      "type": "white-paper",
-      "permalink": "/white-papers/white-paper-tracker/",
-      "file": "white-papers/white-paper-tracker.md",
-      "status": "published"
-    },
-    {
       "id": "White_Paper_AI_Collaboration_Case_Study",
       "title": "White Paper: A Case Study in AI Collaboration",
       "subtitle": "",

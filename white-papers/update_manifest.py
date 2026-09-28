@@ -17,9 +17,12 @@ def parse_fm(path):
             fm[k.strip()] = v.strip().strip('"')
     return fm
 
+EXCLUDE = {"white-paper-tracker"}  # tools, not papers
+
 entries = []
 for path in glob.glob(os.path.join(ROOT, "*.md")):
     fm = parse_fm(path)
+    if os.path.basename(path).replace(".md", "") in EXCLUDE: continue
     if not fm or "permalink" not in fm or "title" not in fm: continue
     entries.append({
         "id": os.path.basename(path).replace(".md", ""),
