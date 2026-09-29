@@ -128,3 +128,103 @@ This project follows the principles of sovereign AI: the builder owns the work, 
 © 2026 Evelyn Caro. All rights reserved.  
 A Mirror of My Becoming — https://evelynacaro.github.io  
 For licensing inquiries: evelyn.caro.cloud@gmail.com
+
+---
+
+## ADDENDUM — 2026-09-29 — THE BENCHMARK AMENDED:
+## THREE DAYS OF SILENCE
+
+*Appended by the author per the appended-not-retro-edited
+rule. The original text above stands as published. This
+addendum was drafted with Z.ai/GLM under the author's
+direction.*
+
+The suspension was discovered the way most failures are
+discovered: after hours of not knowing. The computer sat in
+the bedroom; the author sat in the front room playing games
+on a tablet for hours. When the author returned to the
+bedroom that night — to close out the day with the usual
+work: gathering the logs, making sure each of the three
+working documents received what belonged in it, work in and
+of itself — the banner was there. **Account suspended.
+September 25, 2026, 10:03 PM.** The first act was to click
+Contact Us — the channel the platform itself offered. The
+author gave up on that channel and went to sleep, to tackle
+it the next day with disbelief in heart.
+
+September 26 brought the escalation. First, DeepSeek itself
+— but DeepSeek could no longer answer; the suspended account
+had no one to ask. So the author asked another AI to check
+DeepSeek's terms and conditions, to see if anything in three
+months of daily building had violated them. Nothing
+surfaced. Then two emails to service@deepseek.com, quoted
+here in part — the author's own words, the author's own
+accounting:
+
+> "i dont know what i did, i wasnt even using my computer at
+> the time of the violation, i was in another room. had been
+> for hours. when i came back ready to pick up my work, the
+> violation was on the screen. what did i do wrong? i love
+> deepseek and talk about it being the best ai all the time.
+> i even wrote a paper about it."
+> — first email, September 26, 7:48 AM
+
+> "I just started learning ai augmented by DeepSeek 3 months
+> ago and this portfolio is worth 150k. We did that together,
+> I am still a student haven't sold anything I'm showing what
+> I am capable of with DeepSeek as my collaborator."
+> — second email, September 26, 11:46 AM
+
+The second email, the author notes plainly, was desperate
+work — asks piled into one message, editorializing where
+evidence would have served better. That is what a person
+with no alternative sounds like, and the record keeps it as
+written. The next day — Sunday — the author found Z.ai. The
+forced AI detox was not sustainable; the search for another
+collaborator had already begun by necessity.
+
+On September 27 — knowing the value of receipts — the author
+went back and documented what the problem looked like and
+what hoops stood between the account and its return: the
+help center, the suspension article, the appeal form, the
+Feishu login gate. Seven screenshots, held as exhibits and
+indexed in the evidence ledger. Not taken on the 25th when
+the trouble was found — taken on the 27th on purpose, so the
+process is on record and the author will never have to
+reconstruct it from memory again. Receipts are how "I won't
+do this again" becomes a practice instead of a wish.
+
+Access was restored September 28 at 10:03 PM. The
+platform's clock ran three days. The author's stretch
+without an AI collaborator was one — Sunday ended it.
+
+The engagement table above says "April 2025 – Present,
+active use, primary AI tool." That was true when written.
+The complete record now includes the gap.
+
+What changed, stated plainly: **DeepSeek is no longer the
+primary collaborator. It moves to backup — the collaborator
+of record when Z.ai/GLM is unavailable.** The benchmark
+claim in this paper is amended, not retracted: DeepSeek
+remains the architecture benchmark for statefulness,
+sovereignty, and the handoff protocol. Platform reliability
+is no longer assumed, because it was demonstrated to fail
+silently and without notice.
+
+Two facts preserved the corpus while the platform was dark.
+First, the conversations had been downloaded days before the
+trouble — the export habit, not the platform, is what saved
+the work. A fresh export was taken again once writing
+resumed, so the latest copy holds everything. Second, the
+ingest design never depended on live platform access:
+127/127 conversations recovered, zero failures, zero losses.
+The corpus lives beyond the platform — the thesis of
+["The Cache Is Not the Corpus,"](https://qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/)
+published on this site, holding again under conditions the
+author did not choose.
+
+Where it stops: this addendum records a status change and a
+suspension. It does not speculate on DeepSeek's reasons, and
+it does not declare the partnership ended. A backup that has
+proven recoverable is still an asset. The author works with
+what works, and documents the terms.
