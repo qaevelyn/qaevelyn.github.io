@@ -730,7 +730,17 @@
           <div class="ship-narrative">Before the ships, there was the problem: 127 conversations, 4.6 million characters of provenance, and a pipeline that kept killing itself. The suite is the tool that solved it — and it is free. Open source, AGPL-3.0, for anyone. A commercial lane exists for companies who cannot open their code. The free tier is the point.</div>
           <p style="font-size:0.9rem; color:#5a3a2a;"><em>Scribe · Warden · Hand — DeepSeek v1-2 · Z.ai-GLM v3-5 · Evelyn architecture</em></p>
           <p style="margin-top:1rem;"><a href="https://github.com/qaevelyn/mirror-ingest-suite" style="color:#8b6f3d;">github.com/qaevelyn/mirror-ingest-suite</a></p>
-          <p style="margin-top:0.5rem;"><a href="/tools/" style="color:#8b6f3d;">Full license tiers &amp; documentation → /tools/</a></p>
+          <p style="margin-top:0.5rem;"><a href="/tools/" style="color:#8b6f3d;">Full documentation → /tools/</a></p>
+          <h3 style="margin-top:1rem;">One code base. Two tiers.</h3>
+          <table style="width:100%; border-collapse:collapse; font-size:0.78rem; margin-top:0.5rem;">
+            <tr style="border-bottom:1px solid rgba(139,111,61,0.4);"><td style="padding:0.35rem;"><strong>Right</strong></td><td style="padding:0.35rem;"><strong>AGPLv3 Free</strong></td><td style="padding:0.35rem;"><strong>Paid Commercial</strong></td></tr>
+            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">Cost</td><td style="padding:0.35rem;">$0</td><td style="padding:0.35rem;">Subscription / perpetual</td></tr>
+            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">Modify</td><td style="padding:0.35rem;">Allowed</td><td style="padding:0.35rem;">Allowed</td></tr>
+            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">SaaS network use</td><td style="padding:0.35rem;">Must open-source your changes</td><td style="padding:0.35rem;">Keep source private</td></tr>
+            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">Warranty</td><td style="padding:0.35rem;">As-is</td><td style="padding:0.35rem;">SLAs, indemnification</td></tr>
+            <tr><td style="padding:0.35rem;">Support</td><td style="padding:0.35rem;">Community</td><td style="padding:0.35rem;">Dedicated, 24/7</td></tr>
+          </table>
+          <p style="font-size:0.8rem; font-style:italic; margin-top:0.5rem;">AGPL in one sentence: run a modified version as a network service, and you must offer your users the modified source.</p>
         </div>
         <div class="valley"></div>
         <div class="page">
@@ -744,7 +754,7 @@ logger.info("chunk %d/%d"
           <p style="font-size:0.85rem; font-style:italic; margin-top:0.5rem;">A system that reports truthfully cannot be killed for working.</p>
           <img src="/site/exhibits/exhibit-8-ingest-complete.png"
        alt="Ingest log final minutes: heartbeats climbing, last conversation written, DONE banner — Written: 55, Sidecar total: 127"
-       style="width:100%; border:1px solid rgba(139,111,61,0.4); margin-top:0.75rem;" />
+       style="max-width:100%; max-height:340px; object-fit:contain; border:1px solid rgba(139,111,61,0.4); margin-top:0.5rem;" />
       <p style="font-size:0.85rem; margin-top:0.75rem;"><strong>The receipt:</strong> fixed Sept 28. Completed Sept 29, 04:41 AM. Written: 55. Sidecar total: 127. Zero failures. Zero losses.</p>
           <p style="font-size:0.85rem; margin-top:0.5rem;"><strong>Incremental runs:</strong> one changed conversation re-ingests in minutes, not days — idempotent by conversation ID.</p>
         </div>
