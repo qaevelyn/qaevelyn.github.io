@@ -104,3 +104,27 @@ The correction published in Section 2 is the third part of the practice. A build
 © 2026 Evelyn Caro. All rights reserved.
 A Mirror of My Becoming — https://evelynacaro.github.io
 For licensing inquiries: evelyn.caro.cloud@gmail.com
+
+---
+
+## ADDENDUM — 2026-09-29 — THE WEDGE DIAGNOSED: A LOGGING FAILURE, NOT A SYSTEMS FAILURE
+
+*Appended per this paper's Section III commitment and the author's appended-not-retro-edited rule. The original text above stands as published.*
+
+The thirty-minute wedge documented in Section II has been diagnosed and resolved. The result, stated first: **the same pipeline completed all 55 remaining conversations in a single unattended run, including a conversation of 5,163 chunks and 4,646,264 characters. The sidecar reads 127 of 127. Zero conversations were lost.**
+
+The diagnosis is not what the nineteen deaths suggested. The pipeline was not failing. The pipeline was **working silently**. Each conversation's embedding phase — one model call per chunk, roughly one second each — produced no log output while it ran. The watchdog, built to kill any run whose log goes stale, read the silence as a wedge and killed a healthy process every thirty minutes. Conversation 73 alone held 3,615 chunks and 3,250,607 characters: roughly an hour of silent, legitimate work. The first remaining conversation was also the largest in the corpus. The livelock was a machine telling the truth too quietly for its own guardian to hear.
+
+The fix was two lines of honesty: the log now announces each conversation ("chunking N chars"), its size ("embedding N chunks"), and its heartbeat ("chunk 11/3615") as it works. The watchdog has not killed a healthy process since. The wedge that consumed three days and nineteen cycles was solved not by rearchitecting but by making the record match the reality — which is this paper's argument, holding at a level the author did not expect when writing it. **A system that reports truthfully cannot be killed for working.**
+
+Three corrections to Section II's evidence table, per the same standard that built it:
+
+| Observation | Section II said | The complete record shows |
+|---|---|---|
+| Largest conversation | 3,615 chunks (assumed largest) | 5,163 chunks, 4,646,264 characters |
+| Cycles before resolution | 19, unresolved at publication | 20th run completed all 55 |
+| The thirty-minute mark | "a fingerprint" of the failure | The watchdog's staleness timeout — nothing failed at thirty minutes; silence reached its limit |
+
+The paper's thesis is unchanged and reinforced: the cache process failed twenty times; the corpus of 127 conversations was intact at every preflight. The finding aid died and was rebuilt at will. The collection never noticed. The author's pipeline, published as a free and open artifact, carries this war story in its README — battle-tested, not beta-tested.
+
+Where it stops: the addendum documents the fix; it does not claim permanence. The watchdog's timeout was calibrated to a chatty script and may require retuning for silent stretches longer than any yet observed. The next failure will be logged with the same honesty as this one.
