@@ -3,15 +3,15 @@
     "author": "Evelyn Caro - Sovereign AI Builder",
     "purpose": "Public index of evidence supporting claims in the author's published works. Verifiable items are listed with locations; private holdings are declared as private.",
     "standard": "Every claim sourced. Every gap flagged. No invented precision.",
-    "last_updated": "2026-09-28",
+    "last_updated": "2026-09-29",
     "published_verifiable": [
       {
         "claim": "Five RAG pipelines built, containerized, documented",
         "verify": "qaevelyn.github.io/lookbook.html#ship1 through #ship5; video demos linked per ship"
       },
       {
-        "claim": "Seventeen published works (papers, case studies, methodology)",
-        "verify": "qaevelyn.github.io/white-papers/ and /case-studies/; manifest: /white-papers/manifest.json"
+        "claim": "Twenty published works (18 papers, 2 case studies)",
+        "verify": "qaevelyn.github.io/white-papers/ and /case-studies/; manifests: /white-papers/manifest.json, /case-studies/manifest.json"
       },
       {
         "claim": "DV14 - AI agent containment architecture",
@@ -47,13 +47,18 @@
       },
       {
         "artifact": "White papers and case studies",
-        "count": 17,
-        "source": "white-papers/manifest.json"
+        "count": 20,
+        "source": "white-papers/manifest.json (18) + case-studies/manifest.json (2); verified 2026-09-29"
       },
       {
         "artifact": "Documented case studies",
         "count": 2,
         "source": "case-studies/manifest.json"
+      },
+      {
+        "artifact": "Mirror Ingest Suite (open-source tooling)",
+        "count": 1,
+        "source": "github.com/qaevelyn/mirror-ingest-suite - AGPL-3.0 + commercial lane; Scribe/Warden/Hand architecture; published 2026-09-29"
       }
     ],
     "corrections_log": [
@@ -68,8 +73,13 @@
       {
         "date": "2026-09-28",
         "entry": "Overnight ingest characterization corrected: 2026-09-27 records described 4+ watchdog wedge-kills as 'resilience proven.' Full-log review 2026-09-28 shows 19 start-wedge-kill cycles 21:33-08:07, sidecar pinned at 72, zero conversations ingested overnight. Reframed as livelock; corpus integrity (127 conversations) intact at every preflight. Correction published in the paper's Section 2 per appended-not-retro-edited rule."
+      },
+      {
+        "date": "2026-09-29",
+        "entry": "counted_artifacts reconciled to manifests: 18 white papers + 2 case studies = 20 works (ledger previously said 17). Mirror Ingest Suite added as 21st artifact, counted separately as tooling. Verified against both manifests 2026-09-29."
       }
     ],
-    "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps."
+    "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps.",
+    "counted_artifacts_note": "Suite counted as 21st artifact, separate from the 20-work corpus (tooling, not writing)."
   }
 }
