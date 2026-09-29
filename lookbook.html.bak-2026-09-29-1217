@@ -958,7 +958,7 @@
       </div>
 
       <!-- ===== SERVICE 01 ===== -->
-      <div id="SLUG-ME" class="spread" data-toc-parent="Services" data-toc-child="Zero-AI Readiness" role="region" aria-label="Zero-AI Readiness">
+      <div id="service01" class="spread" data-toc-parent="Services" data-toc-child="Zero-AI Readiness" role="region" aria-label="Service 01 — Zero-AI Readiness">
         <div class="page">
           <h3>01 — Zero-AI Readiness</h3>
           <p style="font-size:0.9rem; font-style:italic; color:#5a3a2a; margin-bottom:1rem;">For organizations that have not yet adopted AI — and want to know where it would actually help.</p>
@@ -986,7 +986,7 @@
       </div>
 
       <!-- ===== SERVICE 02 ===== -->
-      <div id="SLUG-ME" class="spread" data-toc-parent="Services" data-toc-child="AI Readiness Assessment" role="region" aria-label="AI Readiness Assessment">
+      <div id="service02" class="spread" data-toc-parent="Services" data-toc-child="AI Readiness Assessment" role="region" aria-label="Service 02 — AI Readiness Assessment">
         <div class="page">
           <h3>02 — AI Readiness Assessment</h3>
           <p style="font-size:0.9rem; font-style:italic; color:#5a3a2a; margin-bottom:1rem;">For organizations that have AI systems and cannot answer basic questions about them.</p>
@@ -1021,7 +1021,7 @@
       </div>
 
       <!-- ===== SERVICE 03 ===== -->
-      <div id="SLUG-ME" class="spread" data-toc-parent="Services" data-toc-child="AI Compliance Audit" role="region" aria-label="AI Compliance Audit">
+      <div id="service03" class="spread" data-toc-parent="Services" data-toc-child="AI Compliance Audit" role="region" aria-label="Service 03 — AI Compliance Audit">
         <div class="page">
           <h3>03 — AI Compliance Audit</h3>
           <p style="font-size:0.9rem; font-style:italic; color:#5a3a2a; margin-bottom:1rem;">For organizations that need to know which rules apply to their AI — and whether they are following them.</p>
@@ -1054,7 +1054,7 @@
       </div>
 
       <!-- ===== SERVICE 04 ===== -->
-      <div id="SLUG-ME" class="spread" data-toc-parent="Services" data-toc-child="AI Governance Assessment" role="region" aria-label="AI Governance Assessment">
+      <div id="service04" class="spread" data-toc-parent="Services" data-toc-child="AI Governance Assessment" role="region" aria-label="Service 04 — AI Governance Assessment">
         <div class="page">
           <h3>04 — AI Governance Assessment</h3>
           <p style="font-size:0.9rem; font-style:italic; color:#5a3a2a; margin-bottom:1rem;">For organizations that have a compliance baseline and need to know it still holds.</p>
@@ -1088,7 +1088,7 @@
       </div>
 
       <!-- ===== SERVICE 05 ===== -->
-      <div id="SLUG-ME" class="spread" data-toc-parent="Services" data-toc-child="Emergency Audit-Only" role="region" aria-label="Emergency Audit-Only">
+      <div id="service05" class="spread" data-toc-parent="Services" data-toc-child="Emergency Audit-Only" role="region" aria-label="Service 05 — Emergency Audit-Only">
         <div class="page">
           <h3>05 — Emergency Audit-Only</h3>
           <p style="font-size:0.9rem; font-style:italic; color:#5a3a2a; margin-bottom:1rem;">For organizations where the key AI person has left and the stack is undocumented.</p>
@@ -1121,7 +1121,7 @@
       </div>
 
       <!-- ===== SERVICE 06 ===== -->
-      <div id="SLUG-ME" class="spread" data-toc-parent="Services" data-toc-child="Emergency Full-Rescue" role="region" aria-label="Emergency Full-Rescue">
+      <div id="service06" class="spread" data-toc-parent="Services" data-toc-child="Emergency Full-Rescue" role="region" aria-label="Service 06 — Emergency Full-Rescue">
         <div class="page">
           <h3>06 — Emergency Full-Rescue</h3>
           <p style="font-size:0.9rem; font-style:italic; color:#5a3a2a; margin-bottom:1rem;">For organizations where the key AI person has left and the stack is broken.</p>

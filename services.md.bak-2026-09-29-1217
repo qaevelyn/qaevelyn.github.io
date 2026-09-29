@@ -14,18 +14,18 @@ Six engagements. One path. From organizations that have not yet adopted AI to or
 
 ## Contents
 
-| Service | For |
+| # | Service | For |
 |---|---|---|
-| [Zero-AI Readiness](#zero-ai-readiness) | Organizations with no AI yet |
-| [AI Readiness Assessment](#ai-readiness-assessment) | Organizations with AI that needs an audit |
-| [AI Compliance Audit](#ai-compliance-audit) | Organizations that need the compliance baseline |
-| [AI Governance Assessment](#ai-governance-assessment) | Organizations maintaining a compliance baseline |
-| [Emergency Audit-Only](#emergency-audit-only) | Key AI person left — audit only |
-| [Emergency Full-Rescue](#emergency-full-rescue) | Key AI person left — full rescue |
+| 01 | [Zero-AI Readiness](#01--zero-ai-readiness) | Organizations with no AI yet |
+| 02 | [AI Readiness Assessment](#02--ai-readiness-assessment) | Organizations with AI that needs an audit |
+| 03 | [AI Compliance Audit](#03--ai-compliance-audit) | Organizations that need the compliance baseline |
+| 04 | [AI Governance Assessment](#04--ai-governance-assessment) | Organizations maintaining a compliance baseline |
+| 05 | [Emergency Audit-Only](#05--emergency-audit-only) | Key AI person left — audit only |
+| 06 | [Emergency Full-Rescue](#06--emergency-full-rescue) | Key AI person left — full rescue |
 
 ---
 
-## Zero-AI Readiness
+## 01 — Zero-AI Readiness
 
 **For organizations that have not yet adopted AI — and want to know where it would actually help.**
 
@@ -56,7 +56,7 @@ Any change to the scope of work described in this agreement must be documented i
 
 ---
 
-## [AI Readiness Assessment](/assessments/ai-readiness-assessment/)
+## 02 — [AI Readiness Assessment](/assessments/ai-readiness-assessment/)
 
 **For organizations that have AI systems and cannot answer basic questions about them.**
 
@@ -121,7 +121,7 @@ Priced at the higher of the two axes. A single-system organization requiring a f
 
 ---
 
-## AI Compliance Audit
+## 03 — AI Compliance Audit
 
 **For organizations that need to know which rules apply to their AI — and whether they are following them.**
 
@@ -158,7 +158,7 @@ Any change to the scope of work described in this agreement must be documented i
 
 ---
 
-## AI Governance Assessment
+## 04 — AI Governance Assessment
 
 **For organizations that have a compliance baseline and need to know it still holds.**
 
@@ -198,7 +198,7 @@ Any change to the scope of work described in this agreement must be documented i
 
 ---
 
-## Emergency Audit-Only
+## 05 — Emergency Audit-Only
 
 **For organizations where the key AI person has left and the stack is undocumented.**
 
@@ -236,7 +236,7 @@ Emergency engagements are priority-sequenced rescues, not fixed-scope deliverabl
 
 ---
 
-## Emergency Full-Rescue
+## 06 — Emergency Full-Rescue
 
 **For organizations where the key AI person has left and the stack is broken.**
 
