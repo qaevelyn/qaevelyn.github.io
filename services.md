@@ -8,7 +8,7 @@ permalink: /services/
 
 *Local systems. Sovereign by design.*
 
-Six engagements. One path. From organizations that have not yet adopted AI to organizations in crisis. Each engagement is scoped in writing before work begins. Each is priced as a flat fee. No hourly billing. No surprises.
+Seven engagements. One path. From organizations that have not yet adopted AI to organizations in crisis. Each engagement is scoped in writing before work begins. Each is priced as a flat fee. No hourly billing. No surprises.
 
 ---
 
@@ -22,6 +22,7 @@ Six engagements. One path. From organizations that have not yet adopted AI to or
 | [AI Governance Assessment](#ai-governance-assessment) | Organizations maintaining a compliance baseline |
 | [Emergency Audit-Only](#emergency-audit-only) | Key AI person left — audit only |
 | [Emergency Full-Rescue](#emergency-full-rescue) | Key AI person left — full rescue |
+| [Proof of Work](#proof-of-work) | Organizations that need receipts, not promises |
 
 ---
 
@@ -310,3 +311,14 @@ Every engagement is priced the same for every client. Rate does not change based
 ---
 
 © 2026 Evelyn Caro. All rights reserved.
+
+
+---
+
+## Proof of Work
+
+**For organizations that need receipts, not promises — proof that the AI work was done, done right, and is still working.**
+
+The Proof of Work entry is the engagement where the artifacts do the talking: twenty published works, five documented RAG pipelines, an open-source ingest suite battle-tested against a 127-conversation corpus, and a public provenance record that logs its own errors beside its successes. The method is the same one this site runs on: every claim sourced, every gap flagged, every correction dated and kept. An engagement here means your systems documented the way this portfolio is documented — verifiable by a stranger, auditable by you, owned by you end to end.
+
+Where it stops: this engagement produces the evidence and the record; it does not certify compliance or provide legal opinions.
