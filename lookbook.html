@@ -375,6 +375,11 @@
       justify-content: center;
       overflow: hidden;
       background: #f5e6d3;
+      animation: mir-enter 0.35s ease-out both;
+    }
+    @keyframes mir-enter {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     body.dark-mode .mirror-page {
       background: #1a1a2e;
