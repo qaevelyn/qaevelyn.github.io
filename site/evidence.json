@@ -24,6 +24,10 @@
       {
         "claim": "The Cache Is Not the Corpus - 19-cycle ingest livelock documented, zero corpus losses",
         "verify": "qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/ - evidence table Section 2; sources: night-watchdog.log, deepseek-ingest.log (author's retained logs)"
+      },
+      {
+        "claim": "Ingest completion receipt: final run log shows DONE with 55 written, sidecar total 127, dated 2026-09-29 04:41:59",
+        "verify": "Excerpt retained in evidence ledger; run history in author's deepseek-ingest.log (private by design): PREFLIGHT cycles 2026-09-28 06:06 through 15:51, completion line '=== DONE === Written: 55 | Retried-ok: 0 | Sidecar total: 127'"
       }
     ],
     "case_study_in_drafting": {
@@ -80,6 +84,15 @@
       }
     ],
     "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps.",
-    "counted_artifacts_note": "Suite counted as 21st artifact, separate from the 20-work corpus (tooling, not writing)."
+    "counted_artifacts_note": "Suite counted as 21st artifact, separate from the 20-work corpus (tooling, not writing).",
+    "visual_receipts": {
+      "exhibits": [
+        {
+          "exhibit": 8,
+          "what": "Screenshot of ingest completion: 127/127 conversations, zero failures — captured by author on completion day",
+          "pii_check": "cropped clean, pending owner placement"
+        }
+      ]
+    }
   }
 }
