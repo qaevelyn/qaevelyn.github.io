@@ -89,8 +89,9 @@
       "exhibits": [
         {
           "exhibit": 8,
-          "what": "Screenshot of ingest completion: 127/127 conversations, zero failures — captured by author on completion day",
-          "pii_check": "cropped clean, pending owner placement"
+          "what": "Ingest log final minutes: chunk heartbeats, last conversation 'Per Scholas Handover' written 04:41:59, DONE banner — Written: 55, Sidecar total: 127",
+          "pii_check": "signature retained by owner: terminal username visible as proof of authenticity — deliberate, documented",
+          "verify": "qaevelyn.github.io/site/exhibits/exhibit-8-ingest-complete.png"
         }
       ]
     }
