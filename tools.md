@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Tools — Mirror Ingest Suite"
+title: "Tools — A Mirror of My Becoming — Suite: Ingestion Tools (formerly Mirror Ingest Suite)"
 permalink: /tools/
 author_profile: true
 ---

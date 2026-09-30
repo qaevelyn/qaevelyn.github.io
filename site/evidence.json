@@ -60,9 +60,9 @@
         "source": "case-studies/manifest.json"
       },
       {
-        "artifact": "Mirror Ingest Suite (open-source tooling)",
+        "artifact": "A Mirror of My Becoming — Suite: Ingestion Tools (formerly Mirror Ingest Suite) (open-source tooling)",
         "count": 1,
-        "source": "github.com/qaevelyn/mirror-ingest-suite - AGPL-3.0 + commercial lane; Scribe/Warden/Hand architecture; published 2026-09-29"
+        "source": "github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools - AGPL-3.0 + commercial lane; Scribe/Warden/Hand architecture; published 2026-09-29"
       }
     ],
     "corrections_log": [
@@ -80,7 +80,7 @@
       },
       {
         "date": "2026-09-29",
-        "entry": "counted_artifacts reconciled to manifests: 18 white papers + 2 case studies = 20 works (ledger previously said 17). Mirror Ingest Suite added as 21st artifact, counted separately as tooling. Verified against both manifests 2026-09-29."
+        "entry": "counted_artifacts reconciled to manifests: 18 white papers + 2 case studies = 20 works (ledger previously said 17). Suite: Ingestion Tools (formerly Mirror Ingest Suite) added as 21st artifact, counted separately as tooling. Verified against both manifests 2026-09-29."
       }
     ],
     "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps.",
