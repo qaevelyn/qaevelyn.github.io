@@ -1346,9 +1346,7 @@ logger.info("chunk %d/%d"
           tocList.appendChild(li);
         } else if (g.type === 'group') {
           const parentLi = document.createElement('li');
-          const childLinks = g.children.map(c => `<a href="#" onclick="goToSpread(${c.idx}); return false;" style="color:#007acc; text-decoration:none;">${c.child}</a>`).join('');
-          const suffix = g.children.length ? ` <span style="font-size:0.8rem;">— ${childLinks}</span>` : '';
-          parentLi.innerHTML = `<a href="#" onclick="goToSpread(${g.firstIdx}); return false;">${g.parent}${suffix} <span>Pages ${g.startPage}–${g.endPage}</span></a>`;
+          parentLi.innerHTML = `<a href="#" onclick="goToSpread(${g.firstIdx}); return false;">${g.parent} <span>Pages ${g.startPage}–${g.endPage}</span></a>`;
           tocList.appendChild(parentLi);
         }
       });
