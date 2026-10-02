@@ -1425,7 +1425,7 @@ logger.info("chunk %d/%d"
     if (!container) return;
     container.innerHTML = '';
     items.forEach(item => {
-      const doc = item.document || {};
+      const doc = item.document || item;
       const url = doc.live_url;
       const title = item.title || item.id;
       const type = item.type || (isPaper ? 'position-paper' : 'case-study');
@@ -1444,7 +1444,7 @@ logger.info("chunk %d/%d"
   }
 
   // Fetch white papers
-  fetch('/white-papers/manifest.json')
+  fetch('/white-papers/manifest.json?v=' + Date.now())
     .then(r => r.json())
     .then(data => {
       const papers = data.white_papers || [];
