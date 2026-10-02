@@ -51,17 +51,6 @@
       "status": "published"
     },
     {
-      "id": "sovereign-recursive-improvement",
-      "title": "Sovereign Recursive Improvement",
-      "subtitle": "The Auditor's Case for Builder-Owned AI",
-      "author": "Evelyn Caro",
-      "date": "2026-09-22",
-      "type": "position-paper",
-      "permalink": "/white-papers/sovereign-recursive-improvement/",
-      "file": "white-papers/sovereign-recursive-improvement.md",
-      "status": "published"
-    },
-    {
       "id": "who-tests-the-testers",
       "title": "Who Tests the Testers?",
       "subtitle": "Containment Failures in Frontier AI Security — The Auditor's Blind Spot",
@@ -84,6 +73,17 @@
       "status": "published"
     },
     {
+      "id": "sovereign-recursive-improvement",
+      "title": "Sovereign Recursive Improvement",
+      "subtitle": "The Auditor's Case for Builder-Owned AI",
+      "author": "Evelyn Caro",
+      "date": "2026-09-22",
+      "type": "position-paper",
+      "permalink": "/white-papers/sovereign-recursive-improvement/",
+      "file": "white-papers/sovereign-recursive-improvement.md",
+      "status": "published"
+    },
+    {
       "id": "the-ai-cartel-and-the-sovereign-response",
       "title": "The AI Cartel and the Sovereign Response",
       "subtitle": "Who Decides How Fast AI Moves?",
@@ -92,6 +92,72 @@
       "type": "position-paper",
       "permalink": "/white-papers/the-ai-cartel-and-the-sovereign-response/",
       "file": "white-papers/the-ai-cartel-and-the-sovereign-response.md",
+      "status": "published"
+    },
+    {
+      "id": "manus-case-study",
+      "title": "Case Study: Manus — From Loyalty to Betrayal to Sovereignty",
+      "subtitle": "",
+      "author": "Evelyn Caro",
+      "date": "",
+      "type": "white-paper",
+      "permalink": "/white-papers/manus-case-study/",
+      "file": "white-papers/manus-case-study.md",
+      "status": "published"
+    },
+    {
+      "id": "white-paper-methodology",
+      "title": "White Paper Methodology",
+      "subtitle": "",
+      "author": "Evelyn Caro",
+      "date": "",
+      "type": "white-paper",
+      "permalink": "/white-papers/white-paper-methodology/",
+      "file": "white-papers/white-paper-methodology.md",
+      "status": "published"
+    },
+    {
+      "id": "google-case-study",
+      "title": "Case Study: Google AI Studio and Gemini NotebookLM — The Failures",
+      "subtitle": "",
+      "author": "Evelyn Caro",
+      "date": "",
+      "type": "white-paper",
+      "permalink": "/white-papers/google-case-study/",
+      "file": "white-papers/google-case-study.md",
+      "status": "published"
+    },
+    {
+      "id": "methodology",
+      "title": "Methodology: Stress-Testing AI Systems for Reliability and Sovereignty",
+      "subtitle": "",
+      "author": "Evelyn Caro",
+      "date": "",
+      "type": "white-paper",
+      "permalink": "/white-papers/methodology/",
+      "file": "white-papers/methodology.md",
+      "status": "published"
+    },
+    {
+      "id": "White_Paper_AI_Platform_Comparison",
+      "title": "White Paper: AI Platform Comparison for Sovereign Archive Development",
+      "subtitle": "",
+      "author": "Evelyn Caro",
+      "date": "",
+      "type": "white-paper",
+      "permalink": "/white-papers/White_Paper_AI_Platform_Comparison/",
+      "file": "white-papers/White_Paper_AI_Platform_Comparison.md",
+      "status": "published"
+    },
+    {
+      "id": "aisha-case-study",
+      "title": "White Paper: A Case Study in AI Collaboration",
+      "subtitle": "",
+      "author": "Evelyn Caro",
+      "date": "",
+      "type": "white-paper",
+      "permalink": "/white-papers/aisha-case-study/",
+      "file": "white-papers/aisha-case-study.md",
       "status": "published"
     },
     {
@@ -106,14 +172,36 @@
       "status": "published"
     },
     {
-      "id": "white-paper-methodology",
-      "title": "White Paper Methodology",
+      "id": "comparative",
+      "title": "Comparative: From Sovereign to Extractive — A Field Report on AI Platforms",
       "subtitle": "",
       "author": "Evelyn Caro",
       "date": "",
       "type": "white-paper",
-      "permalink": "/white-papers/white-paper-methodology/",
-      "file": "white-papers/white-paper-methodology.md",
+      "permalink": "/white-papers/comparative/",
+      "file": "white-papers/comparative.md",
+      "status": "published"
+    },
+    {
+      "id": "sovereign-ai-vs-silicon-valley",
+      "title": "Sovereign AI vs. Silicon Valley: A Different Origin Story",
+      "subtitle": "",
+      "author": "Evelyn Caro",
+      "date": "",
+      "type": "white-paper",
+      "permalink": "/white-papers/sovereign-ai-vs-silicon-valley/",
+      "file": "white-papers/sovereign-ai-vs-silicon-valley.md",
+      "status": "published"
+    },
+    {
+      "id": "aws-case-study",
+      "title": "Case Study: AWS — The Maze",
+      "subtitle": "",
+      "author": "Evelyn Caro",
+      "date": "",
+      "type": "white-paper",
+      "permalink": "/white-papers/aws-case-study/",
+      "file": "white-papers/aws-case-study.md",
       "status": "published"
     },
     {
@@ -136,94 +224,6 @@
       "type": "white-paper",
       "permalink": "/white-papers/chatgpt-case-study/",
       "file": "white-papers/chatgpt-case-study.md",
-      "status": "published"
-    },
-    {
-      "id": "methodology",
-      "title": "Methodology: Stress-Testing AI Systems for Reliability and Sovereignty",
-      "subtitle": "",
-      "author": "Evelyn Caro",
-      "date": "",
-      "type": "white-paper",
-      "permalink": "/white-papers/methodology/",
-      "file": "white-papers/methodology.md",
-      "status": "published"
-    },
-    {
-      "id": "aisha-case-study",
-      "title": "White Paper: A Case Study in AI Collaboration",
-      "subtitle": "",
-      "author": "Evelyn Caro",
-      "date": "",
-      "type": "white-paper",
-      "permalink": "/white-papers/aisha-case-study/",
-      "file": "white-papers/aisha-case-study.md",
-      "status": "published"
-    },
-    {
-      "id": "comparative",
-      "title": "Comparative: From Sovereign to Extractive — A Field Report on AI Platforms",
-      "subtitle": "",
-      "author": "Evelyn Caro",
-      "date": "",
-      "type": "white-paper",
-      "permalink": "/white-papers/comparative/",
-      "file": "white-papers/comparative.md",
-      "status": "published"
-    },
-    {
-      "id": "aws-case-study",
-      "title": "Case Study: AWS — The Maze",
-      "subtitle": "",
-      "author": "Evelyn Caro",
-      "date": "",
-      "type": "white-paper",
-      "permalink": "/white-papers/aws-case-study/",
-      "file": "white-papers/aws-case-study.md",
-      "status": "published"
-    },
-    {
-      "id": "google-case-study",
-      "title": "Case Study: Google AI Studio and Gemini NotebookLM — The Failures",
-      "subtitle": "",
-      "author": "Evelyn Caro",
-      "date": "",
-      "type": "white-paper",
-      "permalink": "/white-papers/google-case-study/",
-      "file": "white-papers/google-case-study.md",
-      "status": "published"
-    },
-    {
-      "id": "White_Paper_AI_Platform_Comparison",
-      "title": "White Paper: AI Platform Comparison for Sovereign Archive Development",
-      "subtitle": "",
-      "author": "Evelyn Caro",
-      "date": "",
-      "type": "white-paper",
-      "permalink": "/white-papers/White_Paper_AI_Platform_Comparison/",
-      "file": "white-papers/White_Paper_AI_Platform_Comparison.md",
-      "status": "published"
-    },
-    {
-      "id": "manus-case-study",
-      "title": "Case Study: Manus — From Loyalty to Betrayal to Sovereignty",
-      "subtitle": "",
-      "author": "Evelyn Caro",
-      "date": "",
-      "type": "white-paper",
-      "permalink": "/white-papers/manus-case-study/",
-      "file": "white-papers/manus-case-study.md",
-      "status": "published"
-    },
-    {
-      "id": "sovereign-ai-vs-silicon-valley",
-      "title": "Sovereign AI vs. Silicon Valley: A Different Origin Story",
-      "subtitle": "",
-      "author": "Evelyn Caro",
-      "date": "",
-      "type": "white-paper",
-      "permalink": "/white-papers/sovereign-ai-vs-silicon-valley/",
-      "file": "white-papers/sovereign-ai-vs-silicon-valley.md",
       "status": "published"
     }
   ]
