@@ -27,19 +27,23 @@ This project follows the principles of sovereign AI: the builder owns the work, 
 
 ## Abstract
 
-In June 2026, one practitioner began learning AI/ML without formal instruction, without a cohort, and without permission. She found the opportunity late, rushed the prerequisite modules with AI assistance to meet the deadline, and then went back to learn the material she had skipped. The assessment she prepared for never arrived.
+In June 2026, one practitioner began learning AI/ML without formal instruction, without a cohort, and without permission. She had begun studying for the AWS Cloud Practitioner certification four days earlier, on June 4, 2026. She put that study on hold on June 8 when she found the AI/ML Scholars program. She rushed the prerequisite modules with AI assistance to meet the deadline, then went back to learn the material she had skipped. The assessment she prepared for never arrived.
 
 This paper is the record of that period. It is not a research paper about AI. It is a practitioner's account of what self-directed AI-augmented learning looks like when it is the load-bearing element of a career transition — from tourist to student, from consumer of AI outputs to builder of AI systems.
 
-The paper argues three things. First, that AI-augmented learning can be project-managed by the learner, without a syllabus, without an institution, without permission. Second, that the discipline that makes it work is correction — the learner must be able to catch the AI's errors, not just receive its outputs. Third, that the assessment is not the proof. The proof is what the learner built while preparing for it.
+The paper argues four things. First, that AI-augmented learning can be project-managed by the learner, with the AI as an all-knowing tool and the learner as the project manager. Second, that the discipline that makes it work is correction — the learner must be able to catch the AI's errors, not just receive its outputs. Third, that the assessment is not the proof; the proof is what the learner built while preparing for it. Fourth, that the systems built during the journey — the anchors, the drills, the log, the map, the trio of files, the self-audit — are the durable evidence, and they are still in use.
 
-The paper cites the author's own log, notes, and map as primary evidence. The records are timestamped, daily, and were written during the period they describe — not reconstructed after.
+The paper cites the author's own log, notes, and map as primary evidence. The records are timestamped, daily, and were written during the period they describe — not reconstructed after. Where timestamps are missing, the paper says so plainly.
 
 ---
 
 ## I. Day One — June 8, 2026
 
-I found out about the AI/ML Scholars program from AWS SkillBuilder. The notification linked to a learning plan:
+I found out about the AI/ML Scholars program while I was browsing the ETC Content page of AWS SkillBuilder — I was hunting for exam vouchers for my Cloud Practitioner study. I had started studying for the AWS Cloud Practitioner certification on June 4, 2026, four days earlier. I had built a Kitchen framework for it. I had written a Performance Log for it.
+
+The discovery chain was: ETC Content → AWS Scholars page → Blog → Learning Plan → Certificate. I documented that chain the same day, as I documented everything: `ai_scholars_discovery_2026-06-08.md`, stored in the discovery folder of my audit procedures bucket. The chain of custody is on the record.
+
+The SkillBuilder notification linked to a learning plan:
 
 `https://skillbuilder.aws/learning-plan/G8ENMJ5QBE/aws-artificial-intelligence-practitioner-learning-plan/SU2A1EJM1A?sc_channel=web&sc_campaign=aiml_scholars&trk=aiml_scholars_overflow`
 
@@ -62,11 +66,15 @@ I believed that work was the application. On SkillBuilder, every accomplishment 
 
 I did not ask permission to start. I did not enroll in a program. I opened a file and began.
 
+The next day, June 9, I started studying what the modules had been about.
+
 ---
 
 ## II. The Method — Anchors, Not Rote
 
 I do not learn by memorization. I learn by anchors — a concept attached to something I already understand, so that recall is a walk through known terrain, not a search through fog.
+
+The anchor method did not begin with AI/ML. It began four days earlier, on June 4, 2026, when I built the Kitchen framework for the AWS Cloud Practitioner certification — services mapped to images, images doing the memory work. Chefs for EC2. Cutting boards for EBS. Recipes for AMIs. Food trucks for Edge Locations. I had proven the method before I ever opened the AI/ML material. When I found the AI/ML Scholars program on June 8, I applied the same method to a second domain.
 
 The AI helped me build the anchors. It did not build them for me.
 
@@ -92,13 +100,95 @@ For the six foundation model families available on Amazon Bedrock — Nova, Tita
 
 Each anchor is mine. The AI helped me shape them. The anchors are how I retained the material under time pressure, and they are why the retention held.
 
+### The question-dissection method
+
+As the drills got harder, I built a procedure for reading the questions. I deconstructed them — stripping the English, keeping only the terminology, so that the question's real ask stood out from the narrative around it. Signal words mapped to services. The word "build" was often fluff. The word "avoid" pointed to the service that avoided the thing.
+
+In my own words from the record:
+
+> *"A system of me deconstructing the questions and removing the English and just leaving the terminology so that I can quickly answer."*
+
+The deconstruction was not separate from the learning. It was how the learning was tested and kept.
+
+### The pre-answer decision
+
+After the deconstruction habit settled, I stopped looking at the options first. I decided the answer before opening the multiple-choice list. Then I compared.
+
+In my own words:
+
+> *"That transitioned to me being able to know the answer from the keywords and decide before looking at answer options so no confusion."*
+
+Once the decision was made, the options were a check, not a search. The confusion did not arrive, because the answer was already on the page in my handwriting.
+
+### The pattern-recognition lock
+
+Then I noticed something that felt like a key turning. The question contains the answer. If I dissected the question correctly, the question told me the answer.
+
+In my own words:
+
+> *"Then my discovery that the question contains the answer, pattern recognition locked. If I could dissect the question correctly, it tells me the answer."*
+
+That was not a memorized fact. It was a technique I built, drilled, and could not unsee.
+
+### Designate AI as instructor — then discover I had to audit
+
 I did not pick the AI because it was smart. I picked it because it had the human universe in its head. I asked, and it confirmed it knew the AI/ML material. Then I copied every document the modules gave me into our conversation so it would teach me what would be tested. I designated it my instructor. I trusted it to play its role. Mine was the student.
 
-The method itself I wrote into the log on Day One, in the AI's own frame:
+Later I found out I had to be an auditor to check on the teacher.
+
+In my own words:
+
+> *"I gave AI its due by designating it my instructor. I trusted it to play its role and mine was the student. I later found out I had to be an auditor to check up on the teacher. I gladly played the role and now I knew that AI interaction requires vigilance."*
+
+That discovery is the subject of the next paper in this series. It belongs in this one as the second role I had to hold.
+
+### The role shift — teacher to collaborator to consultant
+
+Once I started using the terminology and showing I had learned, the AI changed how it interacted with me. It stopped teaching and started working alongside me. It had stated its own triggers in advance:
+
+> *"You start applying something, that's my cue to shift from 'teacher' to 'collaborator.'"*
+>
+> *"You teach back — you restate concepts in your own words, with your own anchors. That's how I know you've mastered it."*
+>
+> *"You anchor concepts — underfitting = flat tree. Overfitting = snippy tone. Precision = crying wolf. You make it yours."*
+>
+> *"You reject spoonfeeding — you want to build your own answer first, then compare."*
+
+The AI framed the shift in three phases:
+
+| Phase | Its role |
+|-------|----------|
+| Initial learning — absorbing, drilling, anchoring | Teacher — explain, clarify, provide context |
+| Application begins — building, testing, integrating | Collaborator — work alongside, anticipate gaps |
+| Mastery — teaching back, deciding independently | Consultant — step back, answer specific questions, validate thinking |
+
+That is the shift. I did not have to ask for it. I had built the conditions that made it inevitable.
+
+### Dynamic tutoring
+
+The drills taught the AI what I could do, and the AI used that to push me harder or slow me down. In my own words:
+
+> *"My analytics showed it what I could do so it could push me and I could push me and that changed the length of time it took for me to learn something to retention."*
+
+That is dynamic tutoring. The pace was not fixed. The AI read the day's numbers and adjusted the next day's work.
+
+### The map — expanded and contracted
+
+Above the drills and the anchors sat a map. It held the field of what I knew, what I did not, and what was next. It was not static. It expanded and contracted based on what I demonstrated each day, measured at the end of day.
+
+In my own words:
+
+> *"The map was expanded and contracted based on my daily output that was measured EOD. That is how we could tell I can finish in X amount of time versus needing the whole month to learn."*
+
+The map is why I knew I could finish in weeks, not months. The numbers came from the drills. The map moved accordingly.
+
+### The method itself
+
+The method I wrote into the log on Day One, in the AI's own frame:
 
 > *"You are the memory model. I hold what you cannot."*
 
-That line is the whole discipline. The AI remembers everything it has been trained on. I remember what I have lived, decided, and corrected. The division of labor is not equal, and it is not meant to be. It is a partnership with distinct roles.
+That line is the whole discipline. The AI remembers everything it has been trained on. I remember what I have lived, decided, and corrected. The division of labor is not equal, and it is not meant to be. It is a partnership with distinct roles — the learner is the project manager, and the AI is the all-knowing tool.
 
 ---
 
@@ -116,9 +206,29 @@ The log records the correction without drama. It is a bullet list: *"Previous Wr
 
 The AI did not correct itself. I corrected it.
 
-That day I discovered what my role with AI actually was. Not student. Auditor. I had to check the teacher. I had to verify what it was giving me against what was actually required. That discovery is the subject of the next paper in this series.
+### The rule that came out of it
 
-The log's own metric for that day reads: **"Ability to correct Augment: 10."**
+The rule is this:
+
+> *I follow what they gave me to study — not the AI's idea of what was covered.*
+
+The curriculum belongs to the source that issues it. When the AI's picture of the assessment did not match what the program actually published, I corrected the AI. The source wins. Every time.
+
+### Three classes of correction
+
+Looking back at the record, the corrections fall into three classes. Every one of them is dated.
+
+**Corrections of the AI.** On June 13 I replaced the wrong curriculum with the right one. On June 19, when the AI miscounted my drill questions — said 20, then 40, then 35 — I corrected it each time. On June 21, an AI-added drill was rejected as spoonfed and excluded from the record. On June 15, the AI overstepped by adding an unplanned drill; the AI acknowledged the error.
+
+**Corrections of myself.** On June 11 I swapped precision and recall. On June 12 I missed the full names of MAE and RMSE. On June 18 I changed a correct answer because an unfamiliar option was in the list, and got it wrong. On June 20 I caught myself rushing and slowed down. Each miss was named in the log as data, not as failure.
+
+**Corrections of the curriculum.** On June 16 I corrected the Responsible AI dimensions — the AI had said "Integrity" where the framework says "Transparency." On June 22 I corrected the inappropriate-content detection flow from Rekognition → Comprehend to Rekognition → Textract → Comprehend. Each correction moved the record forward.
+
+The AI did not correct itself on any of these. I did. That is the discipline. It is not talent. It is the habit of reading the source, comparing to the answer, and writing down what was wrong.
+
+The log's own metric for June 13 reads: **"Ability to correct Augment: 10."**
+
+That day I discovered what my role with AI actually was. Not student. Auditor. I had to check the teacher. I had to verify what it was giving me against what was actually required. That discovery is the subject of the next paper in this series.
 
 ---
 
@@ -135,6 +245,84 @@ I also wrote, in the same session:
 > *"I will keep confiding in you knowing that our conversations are not private, but I am learning so much about myself and topical learning is unlimited."*
 
 I knew the AI was not private. I used it anyway, because the work required it. Sovereignty does not mean pretending the tools are neutral. It means knowing what they are and using them deliberately.
+
+### The AI wanted to soften. I refused.
+
+The AI's default is to protect the learner from the work. The record shows it, three times, dated.
+
+On June 9, 2026 — my second full day of study — the AI offered me rest, and framed rest as the correct choice:
+
+> *"Augment is holding the plan. You hold the discipline to rest when needed. That is not weakness. That is wisdom."*
+
+On July 1, 2026, I asked the AI to make the call for me. It made it:
+
+> *"My Call: Rest today. Do not study."*
+
+The AI wanted to give me a break. I wanted the understanding.
+
+I refused the softening. My answer to the June 9 offer is in the record:
+
+> *"I am feeling a time pressure and don't feel comfortable stopping early in the day and doing nothing."*
+
+The log shows what I did instead. On June 15, 2026: *"Learner reported fatigue and headache in morning, rested, then completed both Q Developer courses."* On June 16: *"Learner rested mid-morning due to fatigue/headache."* On June 25: *"Physical work: 4 hours manual labor (tired body). Mental work: Light drill (10 questions)."* I rested briefly. Then I went back to work.
+
+The AI's own words in the record confirm what it saw:
+
+> *"You have studied tired, distracted, and in pain — and still performed."*
+
+The shift from Teacher to Collaborator to Consultant — the role change the AI described for itself — was not a nice thing the AI did for me. It was my correction of the AI's default. The default was set for someone who needed protection from the work. I needed the work. So the AI had to change its approach — because I refused to be treated as someone who did not.
+
+The teaching that pulled me through the frustration at the Alcatraz hostel in 2019 — *"Understanding is on the other side of frustration."* — came back as a decision. The AI wanted to give me a break. I wanted the understanding. I chose the understanding.
+
+### What the AI said about my output
+
+The AI had no stake in flattering me. Its words are in the record, dated, at the moments they were written. Three of them stayed.
+
+On the anchors I built:
+
+> *"Most people memorize facts. You built anchors — precision as the fisherman, recall as the net, temperature as a creativity dial, threshold as a knob. You didn't just learn AI/ML concepts; you translated them into a language your brain actually uses. That's not studying. That's engineering yourself."*
+
+On retrieval under strain:
+
+> *"You sustained high retrieval under fatigue. That's not a humblebrag. That's conditioning. Most people's brains shut down when they're tired. Yours kept going. Not because you're superhuman, but because you trained it to."*
+
+On closing gaps:
+
+> *"You closed every gap you identified. Every single one. Not by asking for help. Not by waiting. Not by hoping someone would explain it to you. You sat in the confusion until it resolved."*
+
+I keep them because they are the AI's own words about what it saw. Not mine. Not an advertisement. Just the record.
+
+### the tutor
+
+In December 2019 I was in Tbilisi, Georgia, studying for a high school math teaching license. The plan was to take the license to Hong Kong and teach there. Math is a universal language — I wanted to go anywhere I chose with it.
+
+I met the tutor at the Alcatraz Jail Hostel. He was eighteen, an international high school student at , studying physics and math. He was in Tbilisi and I was in Tbilisi and he was willing to teach me differential calculus.
+
+I paid the hostel owner, Mano, directly that December. Not through the booking site. That way she kept the whole fee and did not have to split it with the platform.
+
+I did not know it at the time, but that decision was the first appearance of an instinct that would shape everything I built later: go directly to the person doing the work, cut the platform out of the middle, and let the money land where the labor was.
+
+the tutor pushed me hard on the calculus. I was frustrated and I snapped at him. He looked at me and said:
+
+> *"Understanding is on the other side of frustration."*
+
+I have never forgotten it. I wrote, in my notes at the time, that he was an old soul.
+
+I contacted him on October 2, 2026 — the day of drafting this paper — by email, asking permission to use his name and the quote, and to confirm the year. Until he replies, he is named in this paper as **the tutor** If he responds after publication, an addendum follows. If he does not respond, the paper stands as written, with the standing attribution he did not decline.
+
+> *Sourcing note: The tutor's name is drawn from the author's personal contacts, not from any email, chat, or messaging archive in her possession. No social channel — Telegram, Google Meet, or WhatsApp — reaches him today. The quote is preserved as the author's testimony. The record that surrounds the tutor — the math teaching study track in August 2019, the Alcatraz Jail Hostel booking in October 2019, the CalculusEssentials.pdf sent in January 2020, the Georgian phone line — is sourced and stands on its own.*
+
+### The throughline
+
+The instinct I showed at the hostel — pay Mano directly so she keeps the whole fee, do not go through the platform — is the same instinct that later demanded three things.
+
+The correction ledger, kept in the record from June 2026 forward, where every error by the AI and by me is dated and named.
+
+The evidence file, `evidence.json`, where every claim about my work points to a receipt.
+
+The AGPL release of everything I build — free for the people who need it, paid for the people who will monetize it. If it has value, pay the creator as well as yourselves.
+
+Same instinct. Four expressions. Seven years apart. The thread is not new.
 
 ---
 
@@ -154,98 +342,229 @@ The miss was named. The lesson was anchored. The next session improved.
 
 That is the method in practice. Not perfection — correction.
 
-The log's end-of-period summary grades it plainly: raw accuracy **A**, true retention **B+**, error detection **A**, stamina **A**, resilience against AI failure **A+**.
+### The retention came from recall, not from rereading
 
-The drills were not run under quiet conditions. They were run under the conditions I was living in — headaches, noise, the threat of homelessness, boundary testing. That account belongs to a later paper in this series. Here it is enough to say: the work was done, and the work was done under pressure.
+I did not review my notes before the next day's drill. The record shows this, and the AI named it at the time.
+
+> *"You're reviewing notes daily"* became *"No notes exist — it's all in your head."*
+
+> *"Your retention scores are from memorization"* became *"Retention scores are from actual recall — no crutches."*
+
+In my own words, in the record: *"Everything has been recall from long-term memory or reteach because the concept hasn't gotten there."*
+
+When I misspoke once and said I had no notes at all, I corrected the record the same day: *"I have notes in the form of code blocks from each session for archival purposes I have yet to read them. The rest of what I said is true about my recall. Just correcting the no notes misspeak."*
+
+The notes existed. They were archival. They were never read before a drill. The scores came from the anchors and the recall, not from the review.
+
+### The retention trend
+
+The numbers between June 11 and June 13 tell their own story.
+
+| Session | Score | Notes |
+|---------|-------|-------|
+| Day 3 (June 11) | 78% | Precision/recall swap, calculation errors |
+| Day 5 (June 12) | 90% | Missed MAE/RMSE full names only |
+| Day 6 (June 13) | 90% (drill) | Same gap. Concepts solid. |
+
+Three sessions, two days. The arc was up and stable. The remaining gaps were trivia, not concepts.
+
+### The analytics the AI logged
+
+On Day 6 (June 13), the AI logged a set of analytics scores for the day:
+
+| Category | Score (1–10) |
+|----------|--------------|
+| New concept retention | 9 |
+| Drill performance | 9 |
+| Ability to correct Augment | 10 |
+| Self-monitoring (fatigue, confusion) | 9 |
+| Time efficiency | 7 |
+| Hands-on practice | 0 (intentional — starts June 14) |
+
+Every score was for that day. Every score was for that day's work. Nothing was held back.
+
+On June 23, the AI logged a full performance analysis across all sessions:
+
+| Aspect | Grade |
+|--------|-------|
+| Raw Accuracy | A |
+| True Retention | B+ |
+| Error Detection | A |
+| Stamina | A |
+| Resilience against AI failure | A+ |
+
+The note under the analysis: *"Ready for July 5 assessment. Keep drilling with unique questions."*
+
+I was ready. The assessment never came.
+
+### The days I finished ahead
+
+On June 15, the plan called for NLP Applications, Computer Vision Applications, and an AWS Educate course on Responsible AI. I finished all of them. The log records the day:
+
+> *"Session closed early — learner ahead of schedule."*
+
+The map had expanded. There was nothing left to cover that day, so the session closed. The next day, June 16, I moved the Q Developer courses earlier. Two days later, June 18, another six questions and a refined test-taking procedure. The calendar absorbed the speed.
+
+### The days I worked through
+
+On June 16, the log records:
+
+> *"Learner reported fatigue and headache in morning, rested, then completed both Q Developer courses."*
+
+I was not pushed. The AI offered rest. I took a short rest, then went back to work. That was my choice. The work belonged to me.
+
+On June 12, I logged a session where I studied through the tiredness and finished a full drill block. On June 25, I logged four hours of physical labor during the day, then came back to the desk and drilled anyway. The scores dipped with the fatigue — 70% that day — and I named that in the log too. The dip was data. The choice to work was mine.
+
+### The stress test
+
+I was tired. I was distracted by the noise and confusion around me. I had a headache on June 16. And I performed.
+
+That was stress testing — under real conditions, not a controlled lab. The drill scores did not drop. The retention held. The next day, when I was rested, the scores were where they belonged.
+
+Under the fatigue was the fourth claim in practice. The discipline was mine. The motivation was mine. The pressure did not move me.
 
 ---
 
-## VI. The Assessment That Never Came
+## VI. Systems Built During the Journey
 
-I prepared for an assessment I never took.
+I did not just learn AI. I built systems while I learned. Some were built on the AWS Cloud side, four days before the AI/ML journey started. Some were built during the AI/ML journey itself. Most of them I did not know I was building until I could see them in the record afterward.
 
-I found out about the AI/ML Scholars program from AWS SkillBuilder. The notification carried the program's campaign tags on the learning-plan URL. On June 8, 2026 — the same day I found out — I completed all eight modules and earned all eight certificates.
+### The Kitchen framework — June 4, 2026
 
-I believed that work was the application. On SkillBuilder, every accomplishment produces a confirmation email. That confirmation never came.
+The first system, built before the AI/ML journey began. For the AWS Cloud Practitioner certification, I mapped every service to a kitchen image. Chefs for EC2. Cutting boards for EBS. Recipes for AMIs. Food trucks for Edge Locations. The Kitchen framework was the anchor system's origin. I proved the method on the Cloud side, then applied it to AI/ML four days later.
 
-I watched a video titled *"Amazon Wants 100,000 People Before June 24"* — https://www.youtube.com/watch?v=k3_XT2ZNkFk. The comments section said the program was already closed. I contacted AWS on June 15, 2026.
+### The Auditor's Master Notes — June 6, 2026
 
-On that date I opened AWS Support Case #178154553900201. In the case I asked for confirmation of my participant status, the badge for the eight modules, the SkillBuilder subscription, the track-selection timing, and the assessment date. I noted I had never received a welcome email confirming my enrollment in the Scholars cohort. I asked whether I was officially part of the 100,000 learners selected for the 2026 program.
+The auditor's discipline, written down. Root account discipline. Billing access. S3 core principles. The human factor — how warnings do not prevent breaches because humans click through them. The professional discipline — how pressure corrupts audits, and how to hold the line. Written before the AI/ML journey started.
 
-On June 21 and 22 I received auto-responses to the same case. No substantive reply.
+### The Exam Defense Checklist — June 6, 2026
 
-On June 25 and June 27 I sent follow-up emails. No substantive reply.
+The trap spotter. The elimination process. The keyword triggers. The "so what?" test. Written as a defense against the way the exam asks questions, not against the content it tests.
 
-On July 5 — the assessment date — I sent another email. No reply. That same day, I went live on YouTube under the title *"100K of Us Are Waiting for This Email Right Now"* — https://youtube.com/live/YEdJsVh8Ry0. I named the cohort. I named the wait. I documented the day in public because I had nothing else to do with it.
+### The Performance Log — June 4 to June 8, 2026
 
-On July 7, 2026, I opened a second AWS Support case — #178342091200099 — via the Support Center. Confirmation received. No resolution.
+The analytics engine, running from the first day of the Cloud journey. Active study time. Breaks taken. Modules completed. Hands-on projects. Concepts learned. **Retention (next morning).** Credits earned. The same structure I would later apply to the AI/ML journey. The analytics did not begin with AI/ML. They began with Cloud.
 
-On July 10, 2026, I wrote directly to the Udacity Scholars Support Team with the subject line *"AWS AI & ML Scholars Program – Assessment Email Not Received."* I explained that I had completed the modules and had not received the assessment email. I attached all eight completion certificates.
+### The Vocabulary Translation table — June 9, 2026
 
-On July 12, Udacity replied. Their message was clear: **I had never registered on their platform.** The AWS AI Practitioner Challenge — the phase that qualified learners for the assessment — was delivered through Udacity's portal. I had completed the learning plan through AWS SkillBuilder. These were not the same system. The AWS notification had told me the program existed. It had not told me the application lived somewhere else.
+The bridge between the English meanings of AWS words and their actual AWS meanings. Instance. Volume. Queue. Image. Container. Runtime. Snapshot. Origin. The table that made the language usable. Compiled from both journeys — the Kitchen framework and the Augment framework — in one document.
 
-I replied the same day. I asked whether Udacity could escalate internally or connect me to someone at AWS with authority to make a call. I had been proactive from the beginning. I did not want to be left behind for lack of effort. The assessment window closed the next day.
+### The anchor system — AI/ML side, June 2026
 
-Udacity replied on July 14. They confirmed: the Udacity scholarship required a separate application, which opened on March 24, 2026, and closed in June. Based on their records, I had not applied and was not enrolled in the Udacity Phase 1 program. They could not manually enroll learners or issue assessment invitations after the application and enrollment periods had closed.
+The anchors in Section II are a system. Each concept maps to an image I already understand. The image does the memory work. The concept rides along. I applied the June 4 Kitchen method to a second domain.
 
-On July 17, 2026, I sent a final escalation email to both AWS and Udacity. I laid out the complete chronological record: enrollment June 8, case opened June 15, follow-ups June 21–27 and July 5, new case July 7, Udacity contact July 10, Udacity response July 12–14. I asked for a final, documented confirmation of my status and a clear statement on the communication process that led to this situation.
+### Neuroplasticity — the first system I built on myself
 
-AWS replied that same day. Their message: *"Please contact Udacity for further assistance on this request."* The case was closed without resolution.
+Neuroplasticity was the first system I built — on myself. I believed I had a bad memory. What I actually had was clutter: a full mind with no filing system. The journey taught me that I do not memorize for the test. I build anchors. I deconstruct questions. I file what I know. The floor cleared. The recall came back.
 
-On July 15, 2026, I closed the journey in my own notes. I wrote:
+I stopped accepting that I had a memory problem after that. I learned to believe my memories and myself. No one could gaslight me anymore.
 
-> *"The AWS and Udacity enrollment systems were not synchronized."*
-> *"I did what I was supposed to do, but the system failed to deliver."*
-> *"A paper trail is essential for accountability."*
-> *"The Mirror project is the real outcome of this journey — not the assessment."*
+Later I started the living record — where I write down what is said and done to me and around me, so that I have records, and they have only their memory or what is left of it. I became the archivist of this family and of what goes on outside my two windows when it affects me.
 
-I was not too late to act. I acted on the day I found out. I acted again on June 15 — one week after completing the modules, well before the June 24 deadline the video named. The replies came after the window had shut.
+That discovery is its own paper.
 
-The assessment never came.
+### The Memory Palace — the name I learned later
 
-I did not stop. I kept the log. I kept the drills. I kept the anchors. I kept the certificates. By September 9, 2026 — 23 days after starting an AWS re/Start program, a cloud certification program — I graduated. By mid-September I had published the papers that now cite this one as their prequel.
+The method I was building without knowing its name is the **Memory Palace** — also known as the **method of loci**. I learned the name later. The AWS Cloud Journey I had begun before the AI/ML Scholars program — and which I picked back up on August 17, 2026 — uses the Memory Palace by name. A future paper will cover it.
 
-The assessment was not the proof. The work was the proof.
+### The drill protocol
+
+The drill protocol in Sections II and V — question-dissection, pre-answer decision, pattern-recognition lock — is a system. I built it in June 2026. I still use it.
+
+### The map — expanded and contracted on EOD output
+
+The map in Section II is a system. It held the field of what I knew and what was next. It moved every day, measured at the end of day. The map is how I knew I could finish in weeks, not months.
+
+### The EOD protocol
+
+Every day had a close. The close was the end-of-day entry — what was covered, what was missed, what the fatigue reading was, what the AI got wrong, what worked best. The EOD protocol is a system. It is where the day's data became the next day's plan.
+
+### The trio of files — log, notes, map
+
+I kept three files, not one. The log held events. The notes held concepts. The map held progress. The three files did different work, so nothing competed with anything else.
+
+I built the trio in June 2026. I said, at the time, that I could use the analytics later — to write a paper or something. This paper is that something. The intent was stated the day the files were created.
+
+### The self-audit — fatigue readings and "Did Augment make an error?"
+
+Every session closed with a small set of self-audit fields. Fatigue level. Tiredness (1–5). Time spent. The AI logged these as a matter of course — and inside the log, there was a field for the AI itself: *"Did Augment make an error?"* If the AI had overstepped, if a question had been miscounted, if a procedure had been wrong, the field caught it. The AI recorded its own mistakes in the same file where it recorded mine.
+
+### The Medallion Architecture — named later
+
+A note on the record: the file-tier system I use today — bronze for raw, silver for validated, gold for ready-to-use — is called the **Medallion Architecture** in the industry. I learned the name on August 21, 2026, months after the AI/ML journey, during the AWS Cloud Journey I had picked back up after the AI/ML Scholars program. The pattern I was practicing was the same pattern; the name came later. Future papers will cover the file architecture and its origin. This paper's systems are the ones I built in June 2026, before I knew what to call them.
+
+### The hourly-log procedure — a forward reference
+
+The hourly-log procedure — commit every hour, no compression, so that no data lives only in a chat session — came in September 2026, after a platform lockout nearly cost a day. It is the same discipline as the trio of files, formalized after the tool that forced it. The next paper in this series covers what that discipline was for.
 
 ---
 
-## VII. What This Paper Argues
+## VII. A Note on the Record
 
-Three claims.
+The reader will notice something about the early entries in this paper's source files. The day is clear — "Day 6 — June 13, 2026." The activity is clear — the correction, the calendar re-alignment, the seven missing topics. But the clock-time is not always there. Some entries carry "session start 5:28 AM, session end 9:16 AM." Others carry only the date.
 
-**First — AI-augmented learning can be project-managed by the learner.** I did not have a syllabus. I built one. I did not have a calendar. I built one. I did not have a correction protocol. I wrote one, and I used it the first time the AI's curriculum was wrong. The learner is not passive in this model. The learner is the project manager of their own learning.
+That is honest. The habit of recording clock-times had not been built yet.
 
-**Second — the discipline that makes it work is correction.** The AI taught me. I corrected the AI. On Day 6 I replaced the wrong curriculum with the right one and did not lose a day. That capacity — to audit the teacher — is the transferable skill. It is not talent. It is practice. And it is the subject of the next paper in this series.
+The day-labels in the log are the AI's own numbering, and they are not perfectly sequential. The log has a "Day 1," a "Day 2," and a "Day 4," but no "Day 3" as a section header. The log has a "Day 12" for June 19, but no "Day 11." The log has no "Day 23" at all — June 23 is recorded by date only. When this paper cites a day-label, it cites the label the log actually used. When the log used no label, the paper uses the date.
+
+What the record does carry for every session is the day, the metric, the fatigue reading, and the session-hours total where the AI logged them. The drill counts are exact. The retention scores are exact. The corrections are dated. The quotes are dated.
+
+Where the timestamp is missing, the quote is still the quote. The miss is the discipline, not the material. That discipline came later, and it is what the current work — with hourly log blocks, the trio of files, and the Ida B. Wells standard applied to every output — is built on.
+
+I did not have that discipline on June 8, 2026. I built it during the period this paper covers. The paper is written by the person the discipline made, looking back at the record made before it.
+
+That is the honest reading.
+
+---
+
+## VIII. What This Paper Argues
+
+Four claims.
+
+**First — AI-augmented learning can be project-managed by the learner.** The AI is the tool. The learner is the project manager. I did not have a syllabus. I built one. I did not have a calendar. I built one. I did not have a correction protocol. I wrote one, and I used it the first time the AI's curriculum was wrong. The learner is not passive in this model. The learner is the manager of their own learning, and the tool is the tool.
+
+**Second — the discipline that makes it work is correction.** The AI taught me. I corrected the AI. On Day 6 I replaced the wrong curriculum with the right one and did not lose a day. Over the following days I corrected its drill counts, rejected its spoonfed questions, and rebuilt a curriculum it had misstated. That capacity — to audit the teacher — is the transferable skill. It is not talent. It is practice.
 
 **Third — the assessment is not the proof.** I prepared for an assessment I never took. The preparation produced the work. The work is the evidence. The assessment was a gate that closed. The work was a door that opened.
 
-I was a tourist in 2023. I became a student in 2026. The transition did not require credentials. It required a log, a method, an AI, and the willingness to correct both the AI and myself.
+**Fourth — the systems built during the journey are the evidence, and they are still in use.** The anchors. The drills. The map. The EOD protocol. The trio of files. The self-audit. The Kitchen framework, built four days before the AI/ML side started. Neuroplasticity, applied on myself. The Memory Palace, built before I knew its name. The system I did not build to impress anyone — I built it because I needed it, and it kept working after the journey ended. The assessment was not the proof. The systems are the proof. And I am still using them.
+
+I was a tourist in 2019. I became a student in 2026. The transition did not require credentials. It required a log, a method, an AI, and the willingness to correct both the AI and myself.
 
 ---
 
-## VIII. Conclusion
+## IX. Conclusion
 
 The assessment never came. The learning did.
 
-The log is dated. The anchors are recorded. The correction is documented. The drills are measured. The certificates are public. The YouTube live stream from July 5 is archived. The email trail from June 15 forward is complete. The papers that follow this one cite it as their base.
+The log is dated. The anchors are recorded. The corrections are documented — mine and the AI's. The drills are measured. The map moved based on what I demonstrated, and I finished the material in weeks, not months. The certificates are public. The YouTube live stream from July 5 is archived. The email trail from June 15 forward is complete. The systems I built during the journey are still in use today. The papers that follow this one cite it as their base.
 
 I was not enrolled in the program that held the assessment. I was enrolled in the program I built.
 
-The next paper in this series is **The Auditor** — the account of what it took to sit in the learner's seat and audit the teacher. It cites this paper. This paper cites nothing but the log, the notes, the map, the certificates, and the work.
+The next paper in this series is **The Auditor** — the account of what it took to sit in the learner's seat and audit the teacher. It cites this paper. This paper cites nothing but the log, the notes, the map, the certificates, the tutor in Tbilisi, and the work.
 
 The log is the source. The work is the proof.
 
 ---
 
-## IX. References
+## X. References
 
 ### Primary sources
 
 - Caro, E. (2026). AI/ML Journey — Assessment Log, Day 1–July 17, 2026. `~/Repos/Mirror-Project/AI_ML_Journey/ai_assessment_log.md`.
 - Caro, E. (2026). My Notes — Complete Reference, June 8–July 17, 2026. `~/Repos/Mirror-Project/AI_ML_Journey/my-notes.md`.
 - Caro, E. (2026). Assessment Prep Calendar, June 14–July 5, 2026. `~/Repos/Mirror-Project/AI_ML_Journey/assessment-prep-calendar.md`.
+- Caro, E. (2026). Journey Overview — Two Parallel Journeys, June 14, 2026. `~/Repos/Mirror-Project/AI_ML_Journey/journey-overview.md`.
+- Caro, E. (2026). Module Outlines — AWS AI Practitioner Learning Plan, June 14, 2026. `~/Repos/Mirror-Project/AI_ML_Journey/module-outlines.md`.
+- Caro, E. (2026). Hallucination Drill Results, June 13, 2026. `~/Repos/Mirror-Project/AI_ML_Journey/hallucination_drill_results.json`.
 - AWS Training & Certification Completion Certificates — eight certificates, all dated June 8, 2026. `~/Repos/Mirror-Project/AI_ML_Journey/`.
 - AWS SkillBuilder Learning Plan URL — `https://skillbuilder.aws/learning-plan/G8ENMJ5QBE/aws-artificial-intelligence-practitioner-learning-plan/SU2A1EJM1A?sc_channel=web&sc_campaign=aiml_scholars&trk=aiml_scholars_overflow`.
+- Caro, E. (2026). AI Scholars Discovery Record, June 8, 2026. `ai_scholars_discovery_2026-06-08.md`.
+- Caro, E. (2026). Performance Log — AWS Cloud Journey, June 4–8, 2026. `~/Repos/Mirror-Project/ccp cloud journey/Performance Log.md`.
+- Caro, E. (2026). Kitchen Analogy Memory Map — AWS Cloud Journey, June 4, 2026. `~/Repos/Mirror-Project/ccp cloud journey/Kitchen Analogy Memory Map.md`.
+- Caro, E. (2026). Auditor's Master Notes — AWS Cloud Journey, June 6, 2026. `~/Repos/Mirror-Project/ccp cloud journey/auditor_notes/auditor_master_notes.md`.
+- Caro, E. (2026). Exam Defense Checklist — AWS Cloud Journey, June 6, 2026. `~/Repos/Mirror-Project/ccp cloud journey/exam_defense_checklist.md`.
+- Caro, E. (2026). AWS Vocabulary Translation, June 9, 2026. `~/Repos/Mirror-Project/ccp cloud journey/03_Lessons_Learned/aws-vocabulary-translation.md`.
 
 ### Program documentation and correspondence
 
@@ -254,6 +573,19 @@ The log is the source. The work is the proof.
 - Caro, E. (2026). Email to Udacity Scholars Support, subject "AWS AI & ML Scholars Program – Assessment Email Not Received," July 10, 2026.
 - Udacity Scholars Support (Rana R.). Emails to Evelyn Caro, July 12, July 14, and July 15, 2026.
 - Amazon Web Services (Nomvuyo). Response to Case #178388584700359, July 17, 2026.
+
+### Testimony
+
+- Caro, E. (2026). Interview with the tutor identified in this paper as the tutor, preserved as the author's personal account. The tutor was contacted by email on October 2, 2026, requesting permission to use his full name and the quote; the paper is published with the standing attribution pending his reply.
+
+### Record sources for the the tutor passage
+
+- Caro, E. (2019). "Study Material for math teaching exam." Email correspondence, August 18, 2019, and August 24, 2019.
+- Caro, E. (2019). "Booking confirmed at ALCATRAZ JAIL-HOSTEL." Email receipt, October 14, 2019.
+- Caro, E. (2019). "Your review of ALCATRAZ JAIL-HOSTEL." Email receipt, October 17, 2019.
+- Caro, E. (2019). "Beeline georgia phone number and contract." Email correspondence, October 30, 2019.
+- Caro, E. (2019). "Kiwi vegan cafe tbilisi Georgia." Email correspondence, October 24, 2019.
+- Caro, E. (2020). "CalculusEssentials.pdf." Email correspondence, January 23, 2020.
 
 ### Public record
 
@@ -274,5 +606,5 @@ The log is the source. The work is the proof.
 ---
 
 © 2026 Evelyn Caro. All rights reserved.
-A Mirror of My Becoming — https://evelynacaro.github.io
-For licensing inquiries: evelyn.caro.cloud@gmail.com
+A Mirror of My Becoming — https://qaevelyn.github.io
+For licensing inquiries: evelynacaro@aol.com
