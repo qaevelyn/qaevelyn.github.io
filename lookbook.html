@@ -418,6 +418,19 @@
       width: 100%;
       padding: 0;
       aspect-ratio: 1280 / 757;
+    }
+    /* Glass is hidden until the frame SVG has painted — both appear together */
+    .mir-frame-stack .mir-glass,
+    .mir-frame-stack .mir-topics,
+    .mir-frame-stack .mir-frame-img {
+      opacity: 0;
+      transition: opacity 0.15s ease-in;
+    }
+    .mir-frame-stack.mir-ready .mir-glass,
+    .mir-frame-stack.mir-ready .mir-topics,
+    .mir-frame-stack.mir-ready .mir-frame-img {
+      opacity: 1;
+    }
       overflow: visible;
     }
     .mir-glass {
@@ -1482,6 +1495,20 @@ logger.info("chunk %d/%d"
 <script>
 (function() {
   // ===== Mir search engine =====
+  // Mirror frame + glass appear as one unit — wait for the SVG to paint
+  (function(){
+    const stack = document.querySelector('.mir-frame-stack');
+    if (!stack) return;
+    const img = stack.querySelector('.mir-frame-img');
+    if (!img) { stack.classList.add('mir-ready'); return; }
+    if (img.complete && img.naturalWidth) {
+      stack.classList.add('mir-ready');
+    } else {
+      img.addEventListener('load', () => stack.classList.add('mir-ready'), { once: true });
+      img.addEventListener('error', () => stack.classList.add('mir-ready'), { once: true });
+    }
+  })();
+
   // No backend. No API. Reads site/mir-index.json on load.
   // Scores chunks by keyword overlap. Displays best match in the panel.
 
