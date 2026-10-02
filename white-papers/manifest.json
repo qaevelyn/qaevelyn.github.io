@@ -18,6 +18,17 @@
   },
   "white_papers": [
     {
+      "id": "tourist-to-student",
+      "title": "From AI Tourist to Student Of and With AI",
+      "subtitle": "A Practitioner's Account of Self-Directed AI Learning",
+      "author": "Evelyn Caro",
+      "date": "2026-10-02",
+      "type": "position-paper",
+      "permalink": "/white-papers/tourist-to-student/",
+      "file": "white-papers/tourist-to-student.md",
+      "status": "published"
+    },
+    {
       "id": "the-cache-is-not-the-corpus",
       "title": "The Cache Is Not the Corpus: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is",
       "subtitle": "A Sovereign Builder's Case That the Vector Store Is a Finding Aid, Not a Collection",
@@ -26,17 +37,6 @@
       "type": "position-paper",
       "permalink": "/white-papers/the-cache-is-not-the-corpus/",
       "file": "white-papers/the-cache-is-not-the-corpus.md",
-      "status": "published"
-    },
-    {
-      "id": "tourist-to-student",
-      "title": "From AI Tourist to Student Of and With AI",
-      "subtitle": "A Practitioner's Account of Self-Directed AI Learning",
-      "author": "Evelyn Caro",
-      "date": "2026-09-25",
-      "type": "position-paper",
-      "permalink": "/white-papers/tourist-to-student/",
-      "file": "white-papers/tourist-to-student.md",
       "status": "published"
     },
     {
