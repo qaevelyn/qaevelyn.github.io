@@ -24,6 +24,8 @@ for path in glob.glob(os.path.join(ROOT, "*.md")):
     fm = parse_fm(path)
     if os.path.basename(path).replace(".md", "") in EXCLUDE: continue
     if not fm or "permalink" not in fm or "title" not in fm: continue
+    permalink = fm.get("permalink", "")
+    live_url = "https://qaevelyn.github.io" + permalink if permalink else ""
     entries.append({
         "id": os.path.basename(path).replace(".md", ""),
         "title": fm.get("title", ""),
@@ -31,7 +33,8 @@ for path in glob.glob(os.path.join(ROOT, "*.md")):
         "author": fm.get("author", "Evelyn Caro"),
         "date": fm.get("date", ""),
         "type": fm.get("type", "white-paper"),
-        "permalink": fm.get("permalink", ""),
+        "permalink": permalink,
+        "live_url": live_url,
         "file": "white-papers/" + os.path.basename(path),
         "status": "published"
     })
