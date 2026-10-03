@@ -76,7 +76,7 @@ I generated a corrected transcript from the raw output. The changes included:
 | "RAG" (in place of "FBA") | "FBA" |
 | "Alama" | "Ollama" |
 | "Aval's" | "Evelyn's" |
-| "Perskalis" | "Per Scholas" |
+| "Perskalis" | "AWS re/Start" |
 
 A closed RAG system should not make these errors. It should retrieve and cite. It did not.
 

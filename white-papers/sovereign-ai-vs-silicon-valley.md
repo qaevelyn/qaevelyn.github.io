@@ -32,7 +32,7 @@ My position is not observational. It is lived. I am the antithesis of the Silico
 | External GPUs | 8GB Intel MacBook Air |
 | Enterprise hardware | Consumer hardware |
 | Cloud dependency | Local-first |
-| Stanford dropout | Multiple degrees + Per Scholas completion |
+| Stanford dropout | Multiple degrees + AWS re/Start completion |
 | Built for shareholders | Built for the forgotten |
 | Eugenics roots | Descendant of the populations Silicon Valley's founders theorized about |
 
@@ -87,7 +87,7 @@ But the dropout myth obscures something important: **they could afford to drop o
 
 There is another path: **completion.**
 
-I graduated from the Per Scholas AWS re/Start program in 3.1 weeks — 16 class days. I hold a Master's degree in International Affairs, a Bachelor's degree in English, and Associate's degrees in Information Technology. Per Scholas was a technical school — the credential I needed to round out the foundation. I wanted completion on my record.
+I graduated from an AWS re/Start program in 3.1 weeks — 16 class days. I hold a Master's degree in International Affairs, a Bachelor's degree in English, and Associate's degrees in Information Technology. The program was a technical school — the credential I needed to round out the foundation. I wanted completion on my record.
 
 **Completion is not the opposite of innovation. It is a different kind of bet — one that says: I will finish what I start, and I will build on that foundation.**
 
@@ -106,7 +106,7 @@ Instead:
 - I built five functional RAG pipelines on an 8GB Intel MacBook Air
 - I have no external GPUs, no enterprise hardware, no cloud dependency
 - I have no venture capital, no Stanford connections, no safety net
-- I completed Per Scholas AWS re/Start in 3.1 weeks — 16 class days
+- I completed the AWS re/Start program in 3.1 weeks — 16 class days
 - I have a Master's degree, a Bachelor's degree, and two Associate's degrees
 - I document my work in white papers that cite their sources
 
@@ -209,7 +209,7 @@ This is not theory. This is practice.
 |------------|---------------|
 | **Sovereign AI builds** | Sovereign AI can be designed, tested, and deployed by one person on consumer hardware |
 | **Verification systems** | Sovereign AI can verify its own citations and fail closed |
-| **Per Scholas completion** | Completion is a valid path — not a lesser one |
+| **AWS re/Start completion** | Completion is a valid path — not a lesser one |
 | **The practice** | A consulting practice can be built without venture capital |
 
 ---
@@ -245,7 +245,7 @@ Another origin story is possible — and it is being written right now by builde
 | Mitchell, R. J. (2026). *When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape.* arXiv:2604.23425 | Containment architecture |
 | METR reports | Frontier model evaluations |
 | EU AI Act, Article 15 | Regulatory context |
-| Per Scholas Partners & Supporters | Partner network context |
+| AWS re/Start Partners & Supporters | Partner network context |
 | Publicly available Silicon Valley origin stories | The myth under examination |
 
 ---
