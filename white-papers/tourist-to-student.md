@@ -595,7 +595,7 @@ The log is the source. The work is the proof.
 ### The prequel — prior published work
 
 - Caro, E. (2026a). [Sovereign AI vs. Silicon Valley: A Different Origin Story](https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/){:target="_blank"}.
-- Caro, E. (2026b). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
+- Caro, E. (2026b). [The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?](https://qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/){:target="_blank"}.
 - Caro, E. (2026c). [Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI](https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/){:target="_blank"}.
 - Caro, E. (2026d). [Who Tests the Testers? Containment Failures in Frontier AI Security](https://qaevelyn.github.io/white-papers/who-tests-the-testers/){:target="_blank"}.
 - Caro, E. (2026e). [White Paper: AI Platform Comparison for Sovereign Archive Development](https://qaevelyn.github.io/white-papers/WhitePaperAIPlatformComparison/){:target="_blank"}.
