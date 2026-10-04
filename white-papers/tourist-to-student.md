@@ -292,23 +292,23 @@ On closing gaps:
 
 I keep them because they are the AI's own words about what it saw. Not mine. Not an advertisement. Just the record.
 
-### the tutor
+### The Tutor
 
 In December 2019 I was in Tbilisi, Georgia, studying for a high school math teaching license. The plan was to take the license to Hong Kong and teach there. Math is a universal language — I wanted to go anywhere I chose with it.
 
-I met the tutor at the Alcatraz Jail Hostel. He was eighteen, an international high school student at , studying physics and math. He was in Tbilisi and I was in Tbilisi and he was willing to teach me differential calculus.
+I met a young tutor at the Alcatraz Jail Hostel. He was eighteen, an international high school student studying physics and math. He was in Tbilisi and I was in Tbilisi and he was willing to teach me differential calculus.
 
 I paid the hostel owner, Mano, directly that December. Not through the booking site. That way she kept the whole fee and did not have to split it with the platform.
 
 I did not know it at the time, but that decision was the first appearance of an instinct that would shape everything I built later: go directly to the person doing the work, cut the platform out of the middle, and let the money land where the labor was.
 
-the tutor pushed me hard on the calculus. I was frustrated and I snapped at him. He looked at me and said:
+He pushed me hard on the calculus. I was frustrated and I snapped at him. He looked at me and said:
 
 > *"Understanding is on the other side of frustration."*
 
 I have never forgotten it. I wrote, in my notes at the time, that he was an old soul.
 
-I contacted him on October 2, 2026 — the day of drafting this paper — by email, asking permission to use his name and the quote, and to confirm the year. Until he replies, he is named in this paper as **the tutor** If he responds after publication, an addendum follows. If he does not respond, the paper stands as written, with the standing attribution he did not decline.
+I contacted him by email after drafting this paper, requesting permission to include the quote. He asked to remain anonymous. All identifying details — his name, his school, his location of study — have been removed at his request. The quote is his, and it stands.
 
 > *Sourcing note: The tutor's name is drawn from the author's personal contacts, not from any email, chat, or messaging archive in her possession. No social channel — Telegram, Google Meet, or WhatsApp — reaches him today. The quote is preserved as the author's testimony. The record that surrounds the tutor — the math teaching study track in August 2019, the Alcatraz Jail Hostel booking in October 2019, the CalculusEssentials.pdf sent in January 2020, the Georgian phone line — is sourced and stands on its own.*
 
@@ -576,9 +576,9 @@ The log is the source. The work is the proof.
 
 ### Testimony
 
-- Caro, E. (2026). Interview with the tutor identified in this paper as the tutor, preserved as the author's personal account. The tutor was contacted by email on October 2, 2026, requesting permission to use his full name and the quote; the paper is published with the standing attribution pending his reply.
+- Caro, E. (2026). Interview with a tutor the author met at a hostel in Tbilisi in December 2019, preserved as the author's personal account. The tutor was contacted after publication and requested anonymity; identifying details were removed at his request.
 
-### Record sources for the the tutor passage
+### Record sources for the tutor passage
 
 - Caro, E. (2019). "Study Material for math teaching exam." Email correspondence, August 18, 2019, and August 24, 2019.
 - Caro, E. (2019). "Booking confirmed at ALCATRAZ JAIL-HOSTEL." Email receipt, October 14, 2019.
