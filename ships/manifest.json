@@ -19,7 +19,7 @@
     {
       "id": "ship1-aws-rag",
       "number": 1,
-      "title": "Ship 1 \u2014 DeepSeek RAG (originally AWS SageMaker, rebuilt locally)",
+      "title": "Ship 1 — DeepSeek RAG (originally AWS SageMaker, rebuilt locally)",
       "type": "standard-rag",
       "platform": "Local (originally AWS SageMaker)",
       "model": "deepseek-r1:1.5b",
@@ -51,7 +51,7 @@
     {
       "id": "ship2-granite-agentic-rag",
       "number": 2,
-      "title": "Ship 2 \u2014 IBM Granite Agentic RAG",
+      "title": "Ship 2 — IBM Granite Agentic RAG",
       "type": "agentic-rag",
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
@@ -82,7 +82,7 @@
     {
       "id": "ship3-ibm-granite-rag",
       "number": 3,
-      "title": "Ship 3 \u2014 IBM Granite RAG",
+      "title": "Ship 3 — IBM Granite RAG",
       "type": "standard-rag",
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
@@ -112,7 +112,7 @@
     {
       "id": "ship4-ibm-granite-agentic-rag",
       "number": 4,
-      "title": "Ship 4 \u2014 IBM Granite Agentic RAG",
+      "title": "Ship 4 — IBM Granite Agentic RAG",
       "type": "agentic-rag",
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
@@ -142,7 +142,7 @@
     {
       "id": "ship5-ibm-granite-agentic-rag-evidenceflow",
       "number": 5,
-      "title": "Ship 5 \u2014 IBM Granite Agentic RAG with EvidenceFlow",
+      "title": "Ship 5 — IBM Granite Agentic RAG with EvidenceFlow",
       "type": "agentic-rag-evidence-verified",
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
@@ -170,8 +170,8 @@
       "video_demo": "https://youtu.be/2T3KJIp7Gh0",
       "video_container": "https://youtu.be/6s5F3ySMS8o",
       "attribution": {
-        "foundation": "IBM SkillsBuild \u2014 Anna Gutowska",
-        "inspiration": "Asaif Ali \u2014 EvidenceFlow (https://github.com/AsaifAli/EvidenceFlow)",
+        "foundation": "IBM SkillsBuild — Anna Gutowska",
+        "inspiration": "Asaif Ali — EvidenceFlow (https://github.com/AsaifAli/EvidenceFlow)",
         "execution": "Evelyn Caro"
       },
       "tags": [
@@ -184,5 +184,26 @@
         "Ollama"
       ]
     }
-  ]
+  ],
+  "suite": {
+    "ship6": {
+      "title": "Suite: Ingestion Tools — overnight receipt",
+      "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools",
+      "video_receipt": "https://youtu.be/4DBuhhPpbjU",
+      "run": "Sept 29, 2026 04:41 AM — Written: 55, Sidecar total: 127, zero failures, zero losses"
+    },
+    "ship7": {
+      "title": "msgvault adapter",
+      "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter",
+      "video_dry_run": "https://youtu.be/BO3FFlEsyxQ",
+      "video_run2_resume": "https://youtu.be/mYyLKLq2l7w",
+      "receipt": "Smoke run 1: 200 msgs, 23,500 chunks; run 2 resumed at row 201 — never re-ingest"
+    },
+    "ship8": {
+      "title": "DV14: The Box — AI containment blueprint",
+      "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-dv14-ai-containment-blueprint",
+      "license": "Copyright (c) 2026 Evelyn Caro. All rights reserved.",
+      "status": "concept; public flip pending"
+    }
+  }
 }
