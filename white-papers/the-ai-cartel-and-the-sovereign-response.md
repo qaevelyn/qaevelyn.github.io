@@ -124,5 +124,5 @@ The Silicon Valley origin story is not the only one. It is not the natural one. 
 ---
 
 © 2026 Evelyn Caro. All rights reserved.  
-A Mirror of My Becoming — https://evelynacaro.github.io  
+A Mirror of My Becoming™ — https://evelynacaro.github.io  
 For licensing inquiries: evelyn.caro.cloud@gmail.com

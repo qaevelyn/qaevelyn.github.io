@@ -606,4 +606,4 @@ The log is the source. The work is the proof.
 ---
 
 © 2026 Evelyn Caro. All rights reserved.
-A Mirror of My Becoming — https://qaevelyn.github.io
+A Mirror of My Becoming™ — https://qaevelyn.github.io

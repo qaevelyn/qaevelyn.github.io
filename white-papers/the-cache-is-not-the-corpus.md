@@ -102,7 +102,7 @@ The correction published in Section 2 is the third part of the practice. A build
 ---
 
 © 2026 Evelyn Caro. All rights reserved.
-A Mirror of My Becoming — https://evelynacaro.github.io
+A Mirror of My Becoming™ — https://evelynacaro.github.io
 For licensing inquiries: evelyn.caro.cloud@gmail.com
 
 ---
