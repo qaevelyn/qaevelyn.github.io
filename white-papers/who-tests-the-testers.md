@@ -189,7 +189,7 @@ Fix 1 is structural. It requires governments or the industry to act. It does not
 
 The current model produces external certifications that do not hold when the tester fails. The builder who needs real containment now has two choices: accept the external certification anyway, or build their own.
 
-The author's own work — DV14: The Box — is the second choice. DV14: The Box is a containment architecture the author has built independently. Private repository. Details available under NDA. It is built on consumer hardware, off-grid, without cloud dependency, and without an external test vendor. It exists because the current model has not produced a containment the builder trusts. The builder had to build it herself.
+The author's own work — DV14: The Box — is the second choice. DV14: The Box is a containment architecture the author has built independently. [Private repository](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-dv14-ai-containment-blueprint). Details available under NDA. It is built on consumer hardware, off-grid, without cloud dependency, and without an external test vendor. It exists because the current model has not produced a containment the builder trusts. The builder had to build it herself.
 
 DV14 is not scalable, and it is not meant to be. It is evidence that the current model has failed the individual builder — and that the builder who wants real containment has to build it herself.
 
