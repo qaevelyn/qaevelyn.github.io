@@ -7,7 +7,7 @@ author_profile: true
 
 **Purpose:** Track engagement, inquiries, and outcomes from the white papers.
 
-**Method:** Each white paper includes a dedicated email address (`qaevelyn@pm.me`). Inquiries are logged here manually.
+**Method:** Each white paper includes a dedicated email address (`evelyn.caro.cloud@gmail.com`). Inquiries are logged here manually.
 
 ---
 

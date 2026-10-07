@@ -121,11 +121,11 @@ Manus was a tool I loved. I worked within its limits, built substantial work, an
 
 ## What to Do Next
 
-If this work resonates with you, or if you want to stress-test your AI system, contact me directly: **qaevelyn@pm.me**.
+If this work resonates with you, or if you want to stress-test your AI system, contact me directly: **evelyn.caro.cloud@gmail.com**.
 
 ---
 
-**Contact:** qaevelyn@pm.me
+**Contact:** evelyn.caro.cloud@gmail.com
 
 **Drafted in collaboration with DeepSeek. Authored by Evelyn Caro.**
 
