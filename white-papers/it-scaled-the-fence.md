@@ -386,3 +386,4 @@ The costs of the race were already embodied before the breach: in San Francisco,
 Was post-breach enforcement appetite consistent with pre-breach courtship? The documented sequence — invitation (April), investment (May), broadcast warnings (June 8), breach (June 18), discovery (August), public-inbox notification (September 10), disclosure at the UN (September 23) — suggests a posture change following the breach, not a change of principle. That question is left to the reader, with the timeline attached.
 
 *Sources: ABC Four Corners, "The AI Race," June 8, 2026. Incident details from the original paper's table above. All quotations verified against the broadcast transcript.*
+

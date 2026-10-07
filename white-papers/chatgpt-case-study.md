@@ -128,3 +128,9 @@ This project follows the principles of sovereign AI: the builder owns the work, 
 © 2026 Evelyn Caro. All rights reserved.  
 A Mirror of My Becoming™ — https://evelynacaro.github.io  
 For licensing inquiries: evelyn.caro.cloud@gmail.com
+
+---
+
+## RECORD REVISION — 2026-10-07 (appended, not retro-edited)
+
+The conclusion "It did not work" overstated what the record can support. The evidence establishes: the author relied on the tool while preparing, failed the exam three times, and cannot separate the tool's contribution from the author's own preparation method. The amended claim: **the author mistook a tool for a teacher, and the failure's ownership is shared and unquantified.** The lessons section (Tools Are Not Teachers; Deletion Is Not Documentation) stands unchanged — it is the part this paper got right. Original text stands as published.

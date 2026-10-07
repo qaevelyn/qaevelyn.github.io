@@ -262,3 +262,9 @@ This project follows the principles of sovereign AI: the builder owns the work, 
 © 2026 Evelyn Caro. All rights reserved.  
 A Mirror of My Becoming™ — https://evelynacaro.github.io  
 For licensing inquiries: evelyn.caro.cloud@gmail.com
+
+---
+
+## RECORD AMENDMENT — 2026-10-07 (appended, not retro-edited)
+
+Published 2026-09-18. The sovereign-AI practice this paper describes was stress-tested by events six days after the DeepSeek suspension of 2026-09-25 (see [The Cache Is Not the Corpus](/white-papers/the-cache-is-not-the-corpus/)). The paper's central claim — that sovereignty is a practice, built by owning the corpus rather than trusting the platform — survived that test. The example platform's role is amended per the DeepSeek case study addendum: primary collaborator moved to backup; reliability no longer assumed. Original text stands as published.

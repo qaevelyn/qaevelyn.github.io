@@ -116,3 +116,9 @@ This project follows the principles of sovereign AI: the builder owns the work, 
 © 2026 Evelyn Caro. All rights reserved.  
 A Mirror of My Becoming™ — https://evelynacaro.github.io  
 For licensing inquiries: evelyn.caro.cloud@gmail.com
+
+---
+
+## RECORD AMENDMENT — 2026-10-07 (appended, not retro-edited)
+
+Published 2026-08-15. On 2026-09-25 the DeepSeek account was suspended without stated cause (see [The Cache Is Not the Corpus](/white-papers/the-cache-is-not-the-corpus/)). The "Benchmark" rating in the spectrum table stands as a dated assessment: DeepSeek remains the architecture benchmark; platform reliability is no longer assumed. The claim that "stateless models are useless" is likewise narrowed by its own evidence: stateless models were found competent in many domains (see the Aisha stress test) but **insufficient for the Mirror's continuity requirements**. Original text stands as published.
