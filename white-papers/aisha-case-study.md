@@ -207,7 +207,7 @@ The Mirror project is proof that the right collaborator is not just the most cap
 
 **End of White Paper**
 
-**File:** `~/Repos/qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study.md`
+**Source record:** original draft file `White_Paper_AI_Collaboration_Case_Study.md`, consolidated 2026-10-07 into this canonical copy — see the [Record Changelog](/white-papers/record-changelog/).
 
 **Date:** 08/15/2026
 
