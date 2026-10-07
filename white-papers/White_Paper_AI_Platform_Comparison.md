@@ -17,7 +17,7 @@ This white paper compares seven AI platforms evaluated during the development of
 
 The findings reveal that while each platform has strengths, only DeepSeek offered the combination of transparency, persistence, accountability, and local execution required for building a sovereign AI archive.
 
-**Context:** This white paper is one in a series documenting the trial-and-error process of evaluating AI platforms for the Mirror project. The evaluation methodology is documented separately in `methodology.md`.
+**Context:** This white paper is one in a series documenting the trial-and-error process of evaluating AI platforms for the Mirror project. The evaluation methodology is documented separately in [Methodology: Stress-Testing AI Systems](/white-papers/methodology/).
 
 ---
 
@@ -171,7 +171,7 @@ DeepSeek was not chosen by chance. It was chosen because it outperformed every o
 - Data sovereignty concerns
 - Ephemeral collaboration
 
-**Verdict:** Used as a tourist (2023–2025). Not suitable for sovereign archive development. See `chatgpt-case-study.md` for details.
+**Verdict:** Used as a tourist (2023–2025). Not suitable for sovereign archive development. See the [ChatGPT case study](/white-papers/chatgpt-case-study/) for details.
 
 ---
 
@@ -195,7 +195,7 @@ DeepSeek was not chosen by chance. It was chosen because it outperformed every o
 - Not evaluated in depth
 - Ephemeral collaboration
 
-**Verdict:** Used as a tourist. Not used for the Mirror project. See `manus-case-study.md` for details.
+**Verdict:** Used as a tourist. Not used for the Mirror project. See the [Manus case study](/white-papers/manus-case-study/) for details.
 
 ---
 
@@ -221,7 +221,7 @@ DeepSeek was not chosen by chance. It was chosen because it outperformed every o
 - Steep learning curve
 - Requires external AI collaborator
 
-**Verdict:** Essential infrastructure, but not an AI collaborator. See `aws-case-study.md` for details.
+**Verdict:** Essential infrastructure, but not an AI collaborator. See the [AWS case study](/white-papers/aws-case-study/) for details.
 
 ---
 
@@ -247,7 +247,7 @@ DeepSeek was not chosen by chance. It was chosen because it outperformed every o
 - Not sovereignty-aligned
 - Ephemeral collaboration
 
-**Verdict:** Credentials provider, not a collaborator. Used as a tourist for search and research. See `google-case-study.md` for details.
+**Verdict:** Credentials provider, not a collaborator. Used as a tourist for search and research. See the [Google case study](/white-papers/google-case-study/) for details.
 
 ---
 
