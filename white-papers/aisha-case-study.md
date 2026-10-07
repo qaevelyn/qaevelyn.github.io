@@ -198,7 +198,7 @@ The Mirror project is proof that the right collaborator is not just the most cap
 
 ## References
 
-- YouTube Introduction to Aisha.ai — [URL]
+- YouTube Introduction to Aisha.ai — *video reference retained in canonical copy at aisha.ai stress test; link to be restored when the source URL is relocated*
 - Aisha.ai Platform — https://aisha.ai
 - Digital Green Book — https://digitalgreenbook.com
 - Onyx Impact — https://onyximpact.com
