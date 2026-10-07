@@ -5,6 +5,8 @@ permalink: /white-papers/comparative/
 author_profile: true
 ---
 
+> **SUPERSEDED — 2026-10-07.** This field report duplicated evidence published in the platform case studies and the [AI Platform Comparison](/white-papers/White_Paper_AI_Platform_Comparison/), compressing it with loss of precision. Its distinctive artifact — the sovereign-to-extractive spectrum table — is retained in the comparison paper. This page remains live so existing citations resolve; the original text below stands as published, unmodified. See the [Record Changelog](/white-papers/record-changelog/).
+
 **Author:** Evelyn Caro  
 **Date:** August 15, 2026  
 **Lens:** Ida B. Wells — Date Everything. Name Everything. Record the Reasoning.
