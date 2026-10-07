@@ -378,3 +378,11 @@ This project follows the principles of sovereign AI: the builder owns the work, 
 © 2026 Evelyn Caro. All rights reserved.  
 A Mirror of My Becoming™ — https://evelynacaro.github.io  
 For licensing inquiries: evelyn.caro.cloud@gmail.com
+
+---
+
+## RECORD AMENDMENT — 2026-10-07 (appended, not retro-edited)
+
+This paper was published 2026-08-15 and reflects the author's assessment as of that date. On 2026-09-25 the author's DeepSeek account was suspended without stated cause; access was restored 2026-09-28. See [The Cache Is Not the Corpus](/white-papers/the-cache-is-not-the-corpus/) and the addendum to the [DeepSeek case study](/white-papers/deepseek-case-study/).
+
+Amended findings: DeepSeek remains the **architecture benchmark** for statefulness, sovereignty, and the handoff protocol. **Platform reliability is no longer assumed** — it was demonstrated to fail silently and without notice. The comparative ratings above stand as a dated assessment, not a current guarantee. The original text stands as published.
