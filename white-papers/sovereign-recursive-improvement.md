@@ -170,11 +170,11 @@ The sovereign RSI architecture is:
 - **Owned** (Lemon, CDIL-RSI) — the builder controls the recursive loop, the internal state, and the loss function.
 - **Auditable** (this paper's contribution) — the builder is the only party positioned to notice, contain, and terminate.
 
-The Math: Lemon built the frame.
 
-The Architecture: Lemon specified sovereign closure.
 
-The Argument: Chesterman names the sovereignty. Grozdanovski & De Cooman name the regulatory paradox. Lemon names the recursive architecture. **This paper names the missing layer.**
+**Division of labor, stated plainly:** Lemon built the frame and specified sovereign closure of the recursive loop. Chesterman names the sovereignty problem; Grozdanovski & De Cooman name the regulatory paradox. This paper names the missing layer — the auditor whose independence is structural, because it is owned.
+
+
 
 ---
 
