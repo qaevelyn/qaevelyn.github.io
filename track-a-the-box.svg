@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" font-family="Georgia, serif">
+  <rect width="800" height="1000" fill="#1a120b"/>
+  <text x="400" y="50" fill="#e8d5b5" font-size="28" text-anchor="middle">DV14: THE BOX — Track A</text>
+  <text x="400" y="78" fill="#8b6f3d" font-size="14" text-anchor="middle">Complementary opposites — every material paired with the one that covers its weakness</text>
+  <g font-size="13" fill="#e8d5b5">
+    <rect x="150" y="100" width="500" height="60" fill="#4a3020" stroke="#8b6f3d"/><text x="160" y="135">LAYER 8 — TRAP GRID (non-responsive sinkhole)</text>
+    <rect x="150" y="170" width="500" height="60" fill="#5a4030" stroke="#8b6f3d"/><text x="160" y="205">LAYER 7 — SENTRYSAFE A8781 + bamboo/wood lining</text>
+    <rect x="150" y="240" width="500" height="60" fill="#3a3a4a" stroke="#8b6f3d"/><text x="160" y="275">LAYER 6 — LEAD + BORATED POLYETHYLENE</text>
+    <rect x="150" y="310" width="500" height="60" fill="#2a3a4a" stroke="#8b6f3d"/><text x="160" y="345">LAYER 5 — AEROGEL + VACUUM GAP + active liquid cooling</text>
+    <rect x="150" y="380" width="500" height="60" fill="#3a4a3a" stroke="#8b6f3d"/><text x="160" y="415">LAYER 4 — MU-METAL + FERRITE + active ferrite</text>
+    <rect x="150" y="450" width="500" height="60" fill="#4a4a2a" stroke="#8b6f3d"/><text x="160" y="485">LAYER 3 — COPPER MESH + ALUMINUM FOIL</text>
+    <rect x="150" y="520" width="500" height="60" fill="#4a3a3a" stroke="#8b6f3d"/><text x="160" y="555">LAYER 2 — FOAM + BAMBOO FIBER</text>
+    <rect x="150" y="590" width="500" height="60" fill="#333" stroke="#8b6f3d"/><text x="160" y="625">LAYER 1 — RUBBER + SPRINGS</text>
+    <rect x="220" y="660" width="360" height="70" fill="#111" stroke="#e8974a" stroke-width="2"/><text x="400" y="700" fill="#e8974a" text-anchor="middle" font-size="15">LAYER 0 — BARE METAL COMPUTER + E-FUSES</text>
+  </g>
+  <text x="400" y="780" fill="#8b6f3d" font-size="14" text-anchor="middle">POWER — TENERGY T320 + 60W SOLAR · off-grid, R12 affordable · R1–R15</text>
+  <text x="400" y="820" fill="#e8974a" font-size="16" text-anchor="middle" font-style="italic">"You can't hack gravity. The void does not echo."</text>
+  <text x="400" y="960" fill="#5a4a3a" font-size="11" text-anchor="middle">© 2026 Evelyn Caro. All rights reserved. Bitcoin-timestamped Sept 19, 2026.</text>
+</svg>
