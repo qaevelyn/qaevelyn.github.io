@@ -134,3 +134,11 @@ This project follows the principles of sovereign AI: the builder owns the work, 
 © 2026 Evelyn Caro. All rights reserved.  
 A Mirror of My Becoming™ — https://evelynacaro.github.io  
 For licensing inquiries: evelyn.caro.cloud@gmail.com
+
+---
+
+## RECORD REVISION — 2026-10-07 (appended, not retro-edited)
+
+The Standard table in Section IV required Voice to be "not templated, not AI-generated." As written, that contradicted this corpus's own AI Collaboration Disclosure, which appears on every paper and states that AI assisted with drafting and organization. The contradiction was a drafting error: the standard was stated more absolutely than the practice it governs.
+
+The amended standard: **the author's voice — human-directed, AI-assisted, never templated.** The author directs the research, structure, and argument; AI assists with drafting, organization, and reference verification; every paper discloses the collaboration. The disclosure *is* the compliance. A record that hides its tools fails its own standard; a record that states them satisfies it. Original text stands as published above.
