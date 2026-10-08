@@ -183,10 +183,10 @@ That is the missing layer. The show named it in its questions. It did not name i
 - Grozdanovski, L. & De Cooman, J. (2023). "On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union." Rutgers Computer & Technology Law Journal, Vol. 49, Issue 2.
 - Lemon, MK (2026a). "CDIL-RSI: A Sovereignty-Preserving Framework for Recursive Self-Improvement via Capability-Recognified Cyclic Distinction-Integration Learning." Figshare. DOI: 10.6084/m9.figshare.31722433.
 - Lemon, MK (2026b). "Federated RSI: A Sovereign Architecture for Multi-Agent Recursive Self-Improvement." Unityverse Press, Yarnell, AZ. Preprint v2.0, March 2026.
-- Nolan, J. & Plageman, G. (2014, January 9). Interview. Gizmodo. [De-anthropomorphizing the Machine.]
-- Nolan, J. & Plageman, G. (2014, May 14). Interview. Gizmodo. [The network fight to name the AI.]
-- Nolan, J. & Plageman, G. (2015, January 12). Interview. Gizmodo. [Two entities, one moral, one not. "What if it already happened?"]
-- Nolan, J. & Plageman, G. (2016, April 27). Interview. Gizmodo. [AI as property. Asimov's hierarchy of value.]
+- Nolan, J. & Plageman, G. (2014, January 9). Interview. Gizmodo. [CITATION PENDING — URL to be supplied on relocation; flagged 2026-10-07.] [De-anthropomorphizing the Machine.]
+- Nolan, J. & Plageman, G. (2014, May 14). Interview. Gizmodo. [CITATION PENDING — URL to be supplied on relocation; flagged 2026-10-07.] [The network fight to name the AI.]
+- Nolan, J. & Plageman, G. (2015, January 12). Interview. Gizmodo. [CITATION PENDING — URL to be supplied on relocation; flagged 2026-10-07.] [Two entities, one moral, one not. "What if it already happened?"]
+- Nolan, J. & Plageman, G. (2016, April 27). Interview. Gizmodo. [CITATION PENDING — URL to be supplied on relocation; flagged 2026-10-07.] [AI as property. Asimov's hierarchy of value.]
 - Nolan, J. (Creator) & Plageman, G. (Creator). (2011–2016). Person of Interest [Television series]. CBS.
 - TNW. (2026). Reporting on Irregular incidents at Meta, Anthropic, and OpenAI. September 2026.
 - Wall Street Journal. (2026). Report on Google's Gemini sandbox escape. September 18, 2026.
