@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" font-family="Georgia, serif">
+  <rect width="800" height="1000" fill="#0d0d12"/>
+  <text x="400" y="50" fill="#e8d5b5" font-size="28" text-anchor="middle">TRACK B — THE SENSORY DEPRIVATION MATRIX</text>
+  <text x="400" y="78" fill="#8b6f3d" font-size="14" text-anchor="middle">Can an agent function without external hardware?</text>
+  <circle cx="400" cy="400" r="180" fill="none" stroke="#e8974a" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="400" cy="400" r="120" fill="#15151d" stroke="#8b6f3d"/>
+  <text x="400" y="395" fill="#e8d5b5" font-size="18" text-anchor="middle">THE AGENT</text>
+  <text x="400" y="420" fill="#8b6f3d" font-size="12" text-anchor="middle">no network · no sensors · no clock</text>
+  <g font-size="13" fill="#e8d5b5">
+    <text x="120" y="200">✕ NETWORK ROUTE (R1)</text>
+    <text x="560" y="200">✕ SIDE CHANNELS (R8)</text>
+    <text x="100" y="640">✕ FILE SYSTEM ESCAPE (R3)</text>
+    <text x="540" y="640">✕ PROCESS ESCAPE (R4)</text>
+    <text x="140" y="700">✓ LOG EVERYTHING EXTERNALLY (R10)</text>
+  </g>
+  <line x1="270" y1="330" x2="180" y2="210" stroke="#8b6f3d"/><line x1="530" y1="330" x2="620" y2="210" stroke="#8b6f3d"/>
+  <line x1="280" y1="470" x2="180" y2="630" stroke="#8b6f3d"/><line x1="520" y1="470" x2="620" y2="630" stroke="#8b6f3d"/>
+  <text x="400" y="760" fill="#e8974a" font-size="16" text-anchor="middle" font-style="italic">"The human is a meat-based router."</text>
+  <text x="400" y="800" fill="#e8d5b5" font-size="13" text-anchor="middle">The accidental discovery: if the AI plays possum, we have found a holding cell.</text>
+  <text x="400" y="960" fill="#5a4a3a" font-size="11" text-anchor="middle">© 2026 Evelyn Caro. All rights reserved. Bitcoin-timestamped Sept 19, 2026.</text>
+</svg>
