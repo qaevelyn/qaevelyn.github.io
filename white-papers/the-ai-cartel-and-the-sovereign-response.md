@@ -118,8 +118,8 @@ The Silicon Valley origin story is not the only one. It is not the natural one. 
 - Hawley, J. (2026). Senate statement on antitrust waiver request. September 2026.
 - Cruz, T. (2026). Senate statement on antitrust waiver request. September 2026.
 - Bloomberg. (2026). "AI Labs Coordinated for Weeks Without Waiver." September 15, 2026.
-- Peer-reviewed study on data center electricity pricing. (2026).
-- Virginia energy cost data. (2026).
+- [CITATION PENDING — source exists in the author's records; full citation (author, title, journal, DOI/URL) to be supplied on relocation. Flagged 2026-10-07 per the record standard: flagged, not faked.] Peer-reviewed study on data center electricity pricing. (2026).
+- [CITATION PENDING — source exists in the author's records; full citation (outlet, report, URL) to be supplied on relocation. Flagged 2026-10-07.] Virginia energy cost data. (2026).
 
 ---
 
