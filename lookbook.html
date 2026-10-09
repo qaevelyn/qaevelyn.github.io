@@ -731,45 +731,6 @@
       </div>
 
       <!-- ===== TOOLS: SUITE: INGESTION TOOLS ===== -->
-      <div id="a-mirror-of-my-becoming-suite-ingestion-tools" class="spread" data-toc-parent="Tools" data-toc-child="Suite: Ingestion Tools (formerly Mirror Ingest Suite)">
-        <div class="page">
-          <h3>A Mirror of My Becoming™ — Suite: Ingestion Tools</h3>
-          <div class="ship-narrative">A Mirror of My Becoming™ Suite: Ingestion Tools — three tools that work separately but work better together. Built after the problem: 127 conversations to ingest and a pipeline that kept killing itself overnight. I solved my problem, and discovered no one else had this unique solution published — so I am first: resilience-engineered, Bitcoin-timestamped, AGPL. The free tier is the point; the AGPL is the guidance if the next user is a corporation.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>Scribe · Warden · Hand — DeepSeek v1-2 · Z.ai-GLM v3-5 · Evelyn architecture</em></p>
-          <p style="margin-top:1rem;"><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools" style="color:#007acc;">github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools</a></p>
-          <p style="margin-top:0.5rem;"><a href="/tools/" style="color:#007acc;">Full documentation → /tools/</a></p>
-          <p style="margin-top:1rem;"><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter" style="color:#007acc;">Ship 7 — msgvault adapter (lives in the suite repo)</a></p>
-          <p style="font-size:0.9rem; margin-top:0.5rem;">Ship 7 bridges mail into the Mirror. It reads msgvault.db in its own native tongue — the embed_gen watermark is its checkpoint, so progress lives in the data itself: crash, restart, curfew, resume, never re-ingest. It normalizes RFC822 message-ids, preserves full metadata, and feeds the canonical store with nomic-embed-text vectors — the fleet's model. Replace-mode: stale deleted as fresh lands. Curfew-aware. Never self-restarts. The prior-art search found nothing published like it — and its paper, <em>The Missing Link</em>, is coming. Dual-licensed: AGPL for the commons, commercial lane for the ones who can't open their code.</p>
-                    <h3 style="margin-top:2.5rem;">One code base. Two tiers.</h3>
-          <table style="width:100%; border-collapse:collapse; font-size:0.78rem; margin-top:0.5rem;">
-            <tr style="border-bottom:1px solid rgba(139,111,61,0.4);"><td style="padding:0.35rem;"><strong>Right</strong></td><td style="padding:0.35rem;"><strong>AGPLv3 Free</strong></td><td style="padding:0.35rem;"><strong>Paid Commercial</strong></td></tr>
-            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">Cost</td><td style="padding:0.35rem;">$0</td><td style="padding:0.35rem;">Subscription / perpetual</td></tr>
-            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">Modify</td><td style="padding:0.35rem;">Allowed</td><td style="padding:0.35rem;">Allowed</td></tr>
-            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">SaaS network use</td><td style="padding:0.35rem;">Must open-source your changes</td><td style="padding:0.35rem;">Keep source private</td></tr>
-            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">Warranty</td><td style="padding:0.35rem;">As-is</td><td style="padding:0.35rem;">SLAs, indemnification</td></tr>
-            <tr><td style="padding:0.35rem;">Support</td><td style="padding:0.35rem;">Community</td><td style="padding:0.35rem;">Dedicated, 24/7</td></tr>
-          </table>
-          <p style="font-size:0.8rem; font-style:italic; margin-top:0.5rem;">AGPL in one sentence: run a modified version as a network service, and you must offer your users the modified source.</p>
-        </div>
-        <div class="valley"></div>
-        <div class="page">
-          <h3>The fix, as shipped</h3>
-          <pre style="font-size:0.72rem; line-height:1.5; background:rgba(44,24,16,0.06); padding:0.75rem; overflow-x:auto; border-left:3px solid #007acc;"><code>logger.info("chunking %d chars — %s"
-             % (len(text), title))
-logger.info("embedding %d chunks"
-             % len(pieces))
-logger.info("chunk %d/%d"
-             % (i+1, len(pieces)))</code></pre>
-          
-          <img src="/site/exhibits/exhibit-8-ingest-complete.png"
-       alt="Ingest log final minutes: heartbeats climbing, last conversation written, DONE banner — Written: 55, Sidecar total: 127"
-       style="max-width:100%; max-height:340px; object-fit:contain; border:1px solid rgba(139,111,61,0.4); margin-top:0.5rem;" />
-      <p style="font-size:0.85rem; margin-top:0.75rem;"><strong>The receipt:</strong> fixed Sept 28. Completed Sept 29, 04:41 AM. Written: 55. Sidecar total: 127. Zero failures. Zero losses.</p>
-          <p style="font-size:0.85rem; margin-top:0.5rem;"><strong>Incremental runs:</strong> one changed conversation re-ingests in minutes, not days — idempotent by conversation ID.</p>
-        </div>
-      </div>
-
-      <!-- ===== SHIP 8 — DV14: THE BOX ===== -->
       <div id="ship8" class="spread" data-toc-parent="Tools">
         <div class="page">
           <h3>Ship 8 — DV14: The Box</h3>
@@ -813,6 +774,44 @@ logger.info("chunk %d/%d"
       </div>
 
       <!-- ===== SHIP 1 ===== -->
+      <div id="a-mirror-of-my-becoming-suite-ingestion-tools" class="spread" data-toc-parent="Tools" data-toc-child="Suite: Ingestion Tools (formerly Mirror Ingest Suite)">
+        <div class="page">
+          <h3>A Mirror of My Becoming™ — Suite: Ingestion Tools</h3>
+          <div class="ship-narrative">A Mirror of My Becoming™ Suite: Ingestion Tools — three tools that work separately but work better together. Built after the problem: 127 conversations to ingest and a pipeline that kept killing itself overnight. I solved my problem, and discovered no one else had this unique solution published — so I am first: resilience-engineered, Bitcoin-timestamped, AGPL. The free tier is the point; the AGPL is the guidance if the next user is a corporation.</div>
+          <p style="font-size:0.9rem; color:#e8974a;"><em>Scribe · Warden · Hand — DeepSeek v1-2 · Z.ai-GLM v3-5 · Evelyn architecture</em></p>
+          <p style="margin-top:1rem;"><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools" style="color:#007acc;">github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools</a></p>
+          <p style="margin-top:0.5rem;"><a href="/tools/" style="color:#007acc;">Full documentation → /tools/</a></p>
+          <p style="font-size:0.9rem; margin-top:0.5rem;">Ship 7 bridges mail into the Mirror. It reads msgvault.db in its own native tongue — the embed_gen watermark is its checkpoint, so progress lives in the data itself: crash, restart, curfew, resume, never re-ingest. It normalizes RFC822 message-ids, preserves full metadata, and feeds the canonical store with nomic-embed-text vectors — the fleet's model. Replace-mode: stale deleted as fresh lands. Curfew-aware. Never self-restarts. The prior-art search found nothing published like it — and its paper, <em>The Missing Link</em>, is coming. Dual-licensed: AGPL for the commons, commercial lane for the ones who can't open their code.</p>
+                    <h3 style="margin-top:2.5rem;">One code base. Two tiers.</h3>
+          <table style="width:100%; border-collapse:collapse; font-size:0.78rem; margin-top:0.5rem;">
+            <tr style="border-bottom:1px solid rgba(139,111,61,0.4);"><td style="padding:0.35rem;"><strong>Right</strong></td><td style="padding:0.35rem;"><strong>AGPLv3 Free</strong></td><td style="padding:0.35rem;"><strong>Paid Commercial</strong></td></tr>
+            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">Cost</td><td style="padding:0.35rem;">$0</td><td style="padding:0.35rem;">Subscription / perpetual</td></tr>
+            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">Modify</td><td style="padding:0.35rem;">Allowed</td><td style="padding:0.35rem;">Allowed</td></tr>
+            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">SaaS network use</td><td style="padding:0.35rem;">Must open-source your changes</td><td style="padding:0.35rem;">Keep source private</td></tr>
+            <tr style="border-bottom:1px solid rgba(139,111,61,0.15);"><td style="padding:0.35rem;">Warranty</td><td style="padding:0.35rem;">As-is</td><td style="padding:0.35rem;">SLAs, indemnification</td></tr>
+            <tr><td style="padding:0.35rem;">Support</td><td style="padding:0.35rem;">Community</td><td style="padding:0.35rem;">Dedicated, 24/7</td></tr>
+          </table>
+          <p style="font-size:0.8rem; font-style:italic; margin-top:0.5rem;">AGPL in one sentence: run a modified version as a network service, and you must offer your users the modified source.</p>
+        </div>
+        <div class="valley"></div>
+        <div class="page">
+          <h3>The fix, as shipped</h3>
+          <pre style="font-size:0.72rem; line-height:1.5; background:rgba(44,24,16,0.06); padding:0.75rem; overflow-x:auto; border-left:3px solid #007acc;"><code>logger.info("chunking %d chars — %s"
+             % (len(text), title))
+logger.info("embedding %d chunks"
+             % len(pieces))
+logger.info("chunk %d/%d"
+             % (i+1, len(pieces)))</code></pre>
+          
+          <img src="/site/exhibits/exhibit-8-ingest-complete.png"
+       alt="Ingest log final minutes: heartbeats climbing, last conversation written, DONE banner — Written: 55, Sidecar total: 127"
+       style="max-width:100%; max-height:340px; object-fit:contain; border:1px solid rgba(139,111,61,0.4); margin-top:0.5rem;" />
+      <p style="font-size:0.85rem; margin-top:0.75rem;"><strong>The receipt:</strong> fixed Sept 28. Completed Sept 29, 04:41 AM. Written: 55. Sidecar total: 127. Zero failures. Zero losses.</p>
+          <p style="font-size:0.85rem; margin-top:0.5rem;"><strong>Incremental runs:</strong> one changed conversation re-ingests in minutes, not days — idempotent by conversation ID.</p>
+        </div>
+      </div>
+
+      <!-- ===== SHIP 8 — DV14: THE BOX ===== -->
       <div id="ship1" class="spread" data-toc-parent="Ship 1" data-toc-child="DeepSeek RAG (Local Rebuild)">
         <div class="page">
           <h3>Ship 1</h3>

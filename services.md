@@ -16,6 +16,7 @@ Seven engagements. One path. From organizations that have not yet adopted AI to 
 
 | Service | For |
 |---|---|---|
+| [Sovereignty Screen](#sovereignty-screen) | The 90-minute entry engagement — where would AI actually help, and where is it waste? |
 | [Zero-AI Readiness](#zero-ai-readiness) | Organizations with no AI yet |
 | [AI Readiness Assessment](#ai-readiness-assessment) | Organizations with AI that needs an audit |
 | [AI Compliance Audit](#ai-compliance-audit) | Organizations that need the compliance baseline |
@@ -25,6 +26,25 @@ Seven engagements. One path. From organizations that have not yet adopted AI to 
 | [Proof of Work](#proof-of-work) | Organizations that need receipts, not promises |
 
 ---
+
+## Sovereignty Screen
+
+For organizations that want the question answered before they commit to an engagement.
+
+**The engagement:** ninety minutes with the decision-maker. The ten questions that matter most — where your data lives, who can reach it, what your AI posture actually is, where AI would genuinely help your workflows and where it would be waste. You leave with written findings and one prioritized remediation list.
+
+| What you receive | Detail |
+|---|---|
+| Session | 90 minutes, structured, recorded summary |
+| Written findings | The ten answers, scored |
+| Remediation list | One page, ranked by impact |
+| Credit | Full $500 credited toward any subsequent engagement |
+
+| **Fee** | **$500 flat** — credited toward a full engagement if you continue |
+|---|---|
+| **Timeline** | Delivered within 48 hours of the session |
+
+**To engage:** Email with one paragraph on your organization. I confirm scope in writing before work begins.
 
 ## Zero-AI Readiness
 
