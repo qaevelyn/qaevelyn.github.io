@@ -316,9 +316,6 @@ Emergency engagements are priority-sequenced rescues, not fixed-scope deliverabl
 
 ---
 
-## No Discounts
-
-Every engagement is priced the same for every client. Rate does not change based on relationship. If the budget does not match the scope, the scope changes — not the rate.
 
 ---
 
