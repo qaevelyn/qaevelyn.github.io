@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" font-family="Georgia, serif">
+<rect width="800" height="1000" fill="#2c1810"/>
+<text x="400" y="60" text-anchor="middle" fill="#d4b670" font-size="28">TRACK A — THE BOX</text>
+<text x="400" y="90" text-anchor="middle" fill="#a89070" font-size="14">Layered containment — cross-section (concept view)</text>
+<rect x="100" y="130" width="600" height="70" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+<text x="120" y="160" fill="#f5e6d3" font-size="16">LAYER 8 — TRAP GRID</text>
+<text x="120" y="185" fill="#a89070" font-size="13">materials: ①⇄② — pairing sealed</text>
+<rect x="100" y="210" width="600" height="70" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+<text x="120" y="240" fill="#f5e6d3" font-size="16">LAYER 7 — PHYSICAL SHELL + lining</text>
+<text x="120" y="265" fill="#a89070" font-size="13">materials: ①⇄② — pairing sealed</text>
+<rect x="100" y="290" width="600" height="70" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+<text x="120" y="320" fill="#f5e6d3" font-size="16">LAYER 6 — RADIATION SHIELD</text>
+<text x="120" y="345" fill="#a89070" font-size="13">materials: ①⇄② — pairing sealed</text>
+<rect x="100" y="370" width="600" height="70" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+<text x="120" y="400" fill="#f5e6d3" font-size="16">LAYER 5 — THERMAL BARRIER</text>
+<text x="120" y="425" fill="#a89070" font-size="13">materials: ①⇄② — pairing sealed</text>
+<rect x="100" y="450" width="600" height="70" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+<text x="120" y="480" fill="#f5e6d3" font-size="16">LAYER 4 — MAGNETIC JAMMING</text>
+<text x="120" y="505" fill="#a89070" font-size="13">materials: ①⇄② — pairing sealed</text>
+<rect x="100" y="530" width="600" height="70" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+<text x="120" y="560" fill="#f5e6d3" font-size="16">LAYER 3 — FARADAY CAGE</text>
+<text x="120" y="585" fill="#a89070" font-size="13">materials: ①⇄② — pairing sealed</text>
+<rect x="100" y="610" width="600" height="70" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+<text x="120" y="640" fill="#f5e6d3" font-size="16">LAYER 2 — ACOUSTIC BARRIER</text>
+<text x="120" y="665" fill="#a89070" font-size="13">materials: ①⇄② — pairing sealed</text>
+<rect x="100" y="690" width="600" height="70" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+<text x="120" y="720" fill="#f5e6d3" font-size="16">LAYER 1 — VIBRATION ISOLATION</text>
+<text x="120" y="745" fill="#a89070" font-size="13">materials: ①⇄② — pairing sealed</text>
+<rect x="100" y="770" width="600" height="70" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+<text x="120" y="800" fill="#f5e6d3" font-size="16">LAYER 0 — HOST + E-FUSES</text>
+<text x="120" y="825" fill="#a89070" font-size="13">materials: ①⇄② — pairing sealed</text>
+<text x="400" y="870" text-anchor="middle" fill="#a89070" font-size="12">POWER: sealed · 9 layers total · 8 complementary-opposite pairings</text>
+<text x="400" y="975" text-anchor="middle" fill="#e8974a" font-size="15">FULL SPECIFICATION UNDER NDA — evelyn.caro.cloud@gmail.com</text>
+</svg>
