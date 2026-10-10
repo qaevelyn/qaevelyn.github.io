@@ -32,3 +32,6 @@ Date: Oct 10, 2026 | Time: 1:03 pm | Task: Missing Link paper drafted + scope ru
   - The Missing Link drafted (white-paper 17) — bridge-scoped; the two-way query capability (ask/getdoc/overseer) scoped to the Orchestrator paper instead; title stands
   - Prior-art framing ruled: author's non-exhaustive disclosure cited as evidence-honest framing; enterprise-variant existence scoped in intro (sovereign personal-archive variant carries different constraints)
   - Scope ruling by owner after auditor initially omitted: the two-way capability discovered during recon changes the architecture documentation — routed to Orchestrator paper
+
+## 2026-10-10 — The Missing Link: same-day correction (minutes after publication)
+Two corrections applied same-day, per appended-not-retro-edited: (1) pass-4 Leo quotation verified against the verbatim transcript (provenance repo evidence/leo-prior-art-pass-4-2026-10-04.md) and found non-verbatim; restated in the paper using the transcript's actual wording. (2) Nearest neighbors switched to the five pass-4 repositories the transcript documents — RAGmail, Email-RAG, LlamaIndex IngestionPipeline, WPipe, async-doc-ingestion — with per-repo gaps; Memento and ChatVault (pass 5) retained as secondary neighbors, reference [7]. Evidence ledger appended same day.
