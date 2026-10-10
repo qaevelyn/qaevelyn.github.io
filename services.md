@@ -17,6 +17,7 @@ Seven engagements. One path. From organizations that have not yet adopted AI to 
 | Service | For |
 |---|---|---|
 | [Sovereignty Screen](#sovereignty-screen) | The 90-minute entry engagement — where would AI actually help, and where is it waste? |
+| [Friction Audit](#friction-audit) | Your product's angry reviews, mined and verified — a prioritized fix-list built from what users are already shouting |
 | [Zero-AI Readiness](#zero-ai-readiness) | Organizations with no AI yet |
 | [AI Readiness Assessment](#ai-readiness-assessment) | Organizations with AI that needs an audit |
 | [AI Compliance Audit](#ai-compliance-audit) | Organizations that need the compliance baseline |
@@ -45,6 +46,25 @@ For organizations that want the question answered before they commit to an engag
 | **Timeline** | Delivered within 48 hours of the session |
 
 **To engage:** Email with one paragraph on your organization. I confirm scope in writing before work begins.
+
+## Friction Audit
+
+For companies whose product has users talking — in app-store reviews, forums, and support tickets — and whose roadmap is guessing at what they mean.
+
+**The engagement:** I mine your product's 1–3 star reviews and public complaint threads (app stores, Reddit, forums). Every complaint is clustered and verified — real patterns separated from one-off noise, in the same fail-closed discipline I apply to archival evidence. You receive a prioritized fix-list: which failures are recurring, which are severe, which are cheap to fix first, and which users are *about to leave*.
+
+| What you receive | Detail |
+|---|---|
+| Complaint corpus | Mined, deduplicated, classified |
+| Pattern verification | Every claimed pattern backed by quoted instances |
+| Prioritized fix-list | Ranked by frequency × severity × effort |
+| Retention flags | Users signaling departure — and what would keep them |
+
+| **Fee** | **$750 flat** — per app/product. |
+|---|---|
+| **Timeline** | 5–7 days from corpus collection |
+
+**To engage:** Email the product name and where its reviews live (app store links, subreddits). I confirm scope in writing before mining begins.
 
 ## Zero-AI Readiness
 
