@@ -27,3 +27,8 @@ If a stranger had cited a page on 2026-10-06, would today's fix change what thei
 | 2026-10-07 | Platform Comparison: five filename references converted to hyperlinks | Presentation | Reproducibility for strangers |
 | 2026-10-07 | Aisha canonical: internal build path replaced with provenance line | Presentation | Local machine paths are plumbing, not evidence |
 | 2026-10-07 | Correction to this changelog's first session: the row claiming "broken links repaired" was premature — recon showed cited slugs matched real files; the 404s were the reviewer's own guessed URLs, not site errors | Correction | The record must not claim fixes that did not occur |
+
+Date: Oct 10, 2026 | Time: 1:03 pm | Task: Missing Link paper drafted + scope ruling | Status: RECORDED
+  - The Missing Link drafted (white-paper 17) — bridge-scoped; the two-way query capability (ask/getdoc/overseer) scoped to the Orchestrator paper instead; title stands
+  - Prior-art framing ruled: author's non-exhaustive disclosure cited as evidence-honest framing; enterprise-variant existence scoped in intro (sovereign personal-archive variant carries different constraints)
+  - Scope ruling by owner after auditor initially omitted: the two-way capability discovered during recon changes the architecture documentation — routed to Orchestrator paper
