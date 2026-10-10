@@ -18,6 +18,18 @@
   },
   "white_papers": [
     {
+      "id": "the-missing-link",
+      "title": "The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store",
+      "subtitle": "A Sovereign Builder's Case That the Hardest Part of RAG Is Not Retrieval — It Is Getting the Corpus In Without Losing It",
+      "author": "Evelyn Caro",
+      "date": "2026-10-10",
+      "type": "methodology-paper",
+      "permalink": "/white-papers/the-missing-link/",
+      "live_url": "https://qaevelyn.github.io/white-papers/the-missing-link/",
+      "file": "white-papers/the-missing-link.md",
+      "status": "published"
+    },
+    {
       "id": "tourist-to-student",
       "title": "From AI Tourist to Student Of and With AI",
       "subtitle": "A Practitioner's Account of Self-Directed AI Learning",

@@ -3,7 +3,7 @@
     "author": "Evelyn Caro - Sovereign AI Builder",
     "purpose": "Public index of evidence supporting claims in the author's published works. Verifiable items are listed with locations; private holdings are declared as private.",
     "standard": "Every claim sourced. Every gap flagged. No invented precision.",
-    "last_updated": "2026-09-29",
+    "last_updated": "2026-10-10",
     "published_verifiable": [
       {
         "claim": "Five RAG pipelines built, containerized, documented",
@@ -28,6 +28,10 @@
       {
         "claim": "Ingest completion receipt: final run log shows DONE with 55 written, sidecar total 127, dated 2026-09-29 04:41:59",
         "verify": "Excerpt retained in evidence ledger; run history in author's deepseek-ingest.log (private by design): PREFLIGHT cycles 2026-09-28 06:06 through 15:51, completion line '=== DONE === Written: 55 | Retried-ok: 0 | Sidecar total: 127'"
+      },
+      {
+        "claim": "Ship 7 msgvault adapter: SQLite mail archive bridged to local vector store — smoke run 200 messages to 23,500 chunks in ~25 minutes on 8GB Intel MacBook Air; run 2 started at row 201, rows 1-200 never re-ingested (watermark-native checkpointing verified)",
+        "verify": "qaevelyn.github.io/lookbook.html#ship7 — video receipts: youtu.be/BO3FFlEsyxQ (dry run, nothing stamped), youtu.be/mYyLKLq2l7w (run 2, never re-ingest); code: github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter; documented in white-papers/the-missing-link"
       }
     ],
     "case_study_in_drafting": {
@@ -81,6 +85,10 @@
       {
         "date": "2026-09-29",
         "entry": "counted_artifacts reconciled to manifests: 18 white papers + 2 case studies = 20 works (ledger previously said 17). Suite: Ingestion Tools (formerly Mirror Ingest Suite) added as 21st artifact, counted separately as tooling. Verified against both manifests 2026-09-29."
+      },
+      {
+        "date": "2026-10-10",
+        "entry": "Ship 7 msgvault adapter smoke-run evidence added to published_verifiable: 200 messages to 23,500 chunks, ~25 min, rows 1-200 never re-ingested. Verified against lookbook.html#ship7 receipts and paper draft (the-missing-link branch, commits 554a18d/eb8f2f9). Paper link activates on branch merge."
       }
     ],
     "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps.",

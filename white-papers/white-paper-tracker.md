@@ -73,7 +73,7 @@ These papers are declared by the corpus itself (forward references in published 
 
 | Paper | Promised in | Status |
 | --- | --- | --- |
-| The Missing Link (msgvault adapter) | Ship 7 documentation | Forthcoming |
+| The Missing Link (msgvault adapter) | Ship 7 documentation | **DRAFTED 2026-10-10** — owner red-team in progress; Pass-2 academic search queued |
 | The Auditor | Tourist to Student, §IX | Forthcoming |
 | The Memory Palace | Tourist to Student, §VI | Forthcoming |
 | The Medallion Architecture papers | Tourist to Student, §VI | Forthcoming |
