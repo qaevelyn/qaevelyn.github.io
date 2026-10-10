@@ -36,6 +36,10 @@
       {
         "claim": "Five-pass prior-art search for The Missing Link, including an adversarial pass by an independent AI collaborator (Leo, Per Scholas AI stack, Oct 4) and an API-driven HN/PyPI sweep (Oct 10) — cited as references [3] and [4] in the published paper",
         "verify": "qaevelyn.github.io/white-papers/the-missing-link/ — references [3] [4]; transcript location per author's evidence records"
+      },
+      {
+        "claim": "Adversarial prior-art pass #4 (Leo AI, Oct 4 2026, blind, repo names withheld): five named near-neighbor repositories surveyed — RAGmail, Email-RAG, LlamaIndex IngestionPipeline, WPipe, async-doc-ingestion — with documented per-repo gaps; verdict that no published tool combines SQLite mail source + ChromaDB + crash-safety + curfew + dedup; root-cause of author's repos' search invisibility (distribution surface area, not merit)",
+        "verify": "mirror-of-my-becoming-provenance/evidence/leo-prior-art-pass-4-2026-10-04.md (verbatim transcript + collator note); cited as references [1]-[6] in The Missing Link"
       }
     ],
     "case_study_in_drafting": {
@@ -97,6 +101,10 @@
       {
         "date": "2026-10-10",
         "entry": "Prior-art search passes 4-5 registered in published_verifiable: adversarial Leo pass Oct 4, API sweep Oct 10 surfacing Memento and ChatVault as nearest neighbors. Cited in The Missing Link references [3] [4]. Published same day, master 46892aa."
+      },
+      {
+        "date": "2026-10-10",
+        "entry": "Same-day correction to The Missing Link, within minutes of publication: (1) pass-4 quote verified against transcript, found non-verbatim, restated using transcript's actual wording — flagged-not-faked; (2) nearest neighbors switched from pass-5 finds (Memento, ChatVault) to the five pass-4 repositories the evidence file documents; references rebuilt. Memento/ChatVault entries above stand as the record of pass-5, now cited as secondary neighbors [7]."
       }
     ],
     "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps.",
