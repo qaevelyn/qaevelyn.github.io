@@ -20,9 +20,9 @@ The retrieval-augmented generation literature concerns itself with what happens 
 
 For a personal archive, ingestion is not a solved problem. It is the problem. The archive is live: emails arrive daily, the source database grows, the embedding model runs on the same 8GB machine that also runs the operator's other work. The pipeline will be interrupted — by crash, by curfew, by the operator needing the machine for something else. Every interruption is an opportunity for duplication, corruption, or silent loss.
 
-The nearest published neighbors confirm the gap. Memento (2026) provides self-hosted agentic search over email; ChatVault (2026) provides local RAG over LLM conversation histories. Both acknowledge the same operator need — search over personal archives — and neither publishes the ingestion mechanics this bridge contributes: RFC822 message-id normalization, watermark-native checkpointing, companion journals, and curfew-aware resilience. The components exist scattered across repositories and tutorials; the published combination does not.
+The nearest published neighbors confirm the gap. **Memento** (2026) provides self-hosted agentic search and an LLM wiki over email [1]. **ChatVault** (2026) provides local RAG search over Claude conversation histories [2]. Both acknowledge the same operator need — search over personal archives — and neither publishes the ingestion mechanics this bridge contributes: RFC822 message-id normalization, watermark-native checkpointing, companion journals, and curfew-aware resilience. The components exist scattered across repositories and tutorials; the published combination does not.
 
-Prior-art search was conducted across five passes: GitHub, Reddit/Hacker News/PyPI, an unweighted problem-space search, an adversarial pass using an independent AI collaborator, and an API-driven sweep of Hacker News and PyPI (October 2026). No published combination of these components was found at the time of writing.
+Prior-art search was conducted across five passes between October 4 and October 10, 2026: GitHub, Reddit/Hacker News/PyPI, an unweighted problem-space search, an adversarial pass using an independent AI collaborator (Leo, Per Scholas AI stack), and an API-driven sweep of Hacker News and PyPI. The adversarial pass's verbatim finding, preserved in the author's evidence records [3]: *"pieces exist separately, but nobody publishes the resilience-engineered mirror between SQLite and Chroma. Your add_child.py subprocess-per-write pattern and sidecar checkpointing are genuinely absent from everything I found across GitHub, Reddit, and blogs. That's publishable novelty."* The same pass noted the author's own repositories did not surface in blind keyword searches — the discovery failure this paper's publication addresses. No published combination of these components was found at the time of writing.
 
 ## II. The Architecture
 
@@ -60,6 +60,10 @@ The next paper documents that layer: the overseer pattern, the worker fleet, and
 
 ## References
 
+- [1] Memento (2026). Self-hosted agentic search and LLM wiki over your email. Hacker News, June 16, 2026. *(nearest neighbor — agentic search over email; no published ingestion bridge)*
+- [2] ChatVault (2026). Search your Claude conversations locally with RAG. github.com/rajz3006/ChatVault, February 5, 2026. *(nearest neighbor — local RAG over LLM conversation history; no SQLite mail-archive source)*
+- [3] Caro, E. (2026). Leo AI adversarial prior-art pass #4, verbatim transcript. evidence/leo-prior-art-pass-4-2026-10-04.md — archived in the author's evidence records, October 4, 2026. Honest caveat preserved: limited sweep, not exhaustive.
+- [4] Leo AI prior-art pass #5 and API sweep (HN Algolia, PyPI). October 10, 2026 — surfaced Memento and ChatVault as nearest neighbors; recorded in the author's session ledger.
 - [Suite: Ingestion Tools](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools) — the parent architecture
 - [msgvault adapter](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter) — the bridge itself
 - Caro, E. (2026). The Cache Is Not the Corpus. — the thesis this paper extends
