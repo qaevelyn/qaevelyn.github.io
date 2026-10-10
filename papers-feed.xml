@@ -5,7 +5,14 @@
     <link>https://qaevelyn.github.io</link>
     <description>The corpus of Evelyn: sovereign AI builder, independent journalist. Every claim sourced, every gap flagged, no invented precision.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store</title>
+      <link>https://qaevelyn.github.io/white-papers/the-missing-link/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/the-missing-link/</guid>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A Sovereign Builder&#x27;s Case That the Hardest Part of RAG Is Not Retrieval — It Is Getting the Corpus In Without Losing It</description>
+    </item>
     <item>
       <title>From AI Tourist to Student Of and With AI</title>
       <link>https://qaevelyn.github.io/white-papers/tourist-to-student/</link>
@@ -56,7 +63,7 @@
       <description>Who Decides How Fast AI Moves?</description>
     </item>
     <item>
-      <title>White Paper: A Case Study in AI Collaboration</title>
+      <title>Redirect: A Case Study in AI Collaboration</title>
       <link>https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/</link>
       <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/</guid>
       <pubDate></pubDate>
@@ -73,6 +80,13 @@
       <title>Case Study: DeepSeek — The Benchmark</title>
       <link>https://qaevelyn.github.io/white-papers/deepseek-case-study/</link>
       <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/deepseek-case-study/</guid>
+      <pubDate></pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Record Changelog</title>
+      <link>https://qaevelyn.github.io/white-papers/record-changelog/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/record-changelog/</guid>
       <pubDate></pubDate>
       <description></description>
     </item>
@@ -129,13 +143,6 @@
       <title>Case Study: Manus — From Loyalty to Betrayal to Sovereignty</title>
       <link>https://qaevelyn.github.io/white-papers/manus-case-study/</link>
       <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/manus-case-study/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Sovereign AI vs. Silicon Valley: A Different Origin Story</title>
-      <link>https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/</guid>
       <pubDate></pubDate>
       <description></description>
     </item>
