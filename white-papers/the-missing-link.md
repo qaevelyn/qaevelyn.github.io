@@ -54,7 +54,7 @@ Smoke run: 200 messages → 23,500 chunks, ~25 minutes, on an 8GB Intel MacBook 
 
 The hardest part of sovereign RAG is not retrieval. It is getting the corpus in, whole, without loss, on hardware that serves two masters. The bridge is published: AGPL-3.0, with a commercial lane.
 
-And the bridge now runs in both directions. Since this paper's architecture was built, the same practice has produced an orchestrator that dispatches each question to four workers — three vector collections and the source SQLite archive itself — and a reconstruction tool that returns a document from the store *the way it went in*: whole, in order, seam-deduplicated. A 4.6-million-character conversation, ingested in 5,163 chunks, has been reassembled and delivered complete. Ingestion and delivery are the same door, opened from either side.
+And the bridge now runs in both directions. Since this paper's architecture was built, the same practice has produced an orchestrator that dispatches each question to four workers — three vector collections and the source SQLite archive itself — and a reconstruction tool that returns a document from the store *the way it went in*: whole, in order. The overseer that dispatches across the fleet deduplicates what it gathers before generating; the reconstruction itself is an ordered reassembly — chunk_index sort, verbatim join, no seam trimming. A 4.6-million-character conversation, ingested in 5,163 chunks, has been reassembled and delivered complete. Ingestion and delivery are the same door, opened from either side.
 
 The next paper documents that layer: the overseer pattern, the worker fleet, and the archive that answers with its owner's own words — whole.
 
