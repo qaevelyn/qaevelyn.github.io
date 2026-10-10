@@ -20,6 +20,10 @@ The retrieval-augmented generation literature concerns itself with what happens 
 
 For a personal archive, ingestion is not a solved problem. It is the problem. The archive is live: emails arrive daily, the source database grows, the embedding model runs on the same 8GB machine that also runs the operator's other work. The pipeline will be interrupted — by crash, by curfew, by the operator needing the machine for something else. Every interruption is an opportunity for duplication, corruption, or silent loss.
 
+The nearest published neighbors confirm the gap. Memento (2026) provides self-hosted agentic search over email; ChatVault (2026) provides local RAG over LLM conversation histories. Both acknowledge the same operator need — search over personal archives — and neither publishes the ingestion mechanics this bridge contributes: RFC822 message-id normalization, watermark-native checkpointing, companion journals, and curfew-aware resilience. The components exist scattered across repositories and tutorials; the published combination does not.
+
+Prior-art search was conducted across five passes: GitHub, Reddit/Hacker News/PyPI, an unweighted problem-space search, an adversarial pass using an independent AI collaborator, and an API-driven sweep of Hacker News and PyPI (October 2026). No published combination of these components was found at the time of writing.
+
 ## II. The Architecture
 
 ### Watermark-native checkpointing
@@ -42,17 +46,17 @@ Every chunk's ID derives from the normalized RFC822 message-id (hashed). Same me
 
 The ingester stops cleanly at a configured time — stamp, exit, resume on relaunch — because unattended jobs must respect the machine's daytime obligations. The schedule is the operator's week, expressed as flags.
 
-## III. Prior-Art Search
-
-Three passes: GitHub, Reddit/Hacker News/PyPI, and an unweighted problem-space search. The pieces exist separately: message-id normalization in one PR, deterministic Chroma IDs in another, sidecar checkpointing in a third. No published combination of normalization + watermark checkpointing + resilience engineering for the SQLite-to-Chroma bridge was found. The honest caveat, preserved: a limited sweep, not exhaustive.
-
-## IV. Results
+## III. Results
 
 Smoke run: 200 messages → 23,500 chunks, ~25 minutes, on an 8GB Intel MacBook Air. Run 2 started at row 201 — rows 1–200 never re-ingested. Progress lives in the data itself.
 
-## V. Conclusion
+## IV. Conclusion
 
-The hardest part of sovereign RAG is not retrieval. It is getting the corpus in, whole, without loss, on hardware that serves two masters. The bridge is published: AGPL-3.0, with a commercial lane. The gap in the literature is now a gap in the rearview mirror.
+The hardest part of sovereign RAG is not retrieval. It is getting the corpus in, whole, without loss, on hardware that serves two masters. The bridge is published: AGPL-3.0, with a commercial lane.
+
+And the bridge now runs in both directions. Since this paper's architecture was built, the same practice has produced an orchestrator that dispatches each question to four workers — three vector collections and the source SQLite archive itself — and a reconstruction tool that returns a document from the store *the way it went in*: whole, in order, seam-deduplicated. A 4.6-million-character conversation, ingested in 5,163 chunks, has been reassembled and delivered complete. Ingestion and delivery are the same door, opened from either side.
+
+The next paper documents that layer: the overseer pattern, the worker fleet, and the archive that answers with its owner's own words — whole.
 
 ## References
 
