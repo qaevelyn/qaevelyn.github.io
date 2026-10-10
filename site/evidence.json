@@ -32,6 +32,10 @@
       {
         "claim": "Ship 7 msgvault adapter: SQLite mail archive bridged to local vector store — smoke run 200 messages to 23,500 chunks in ~25 minutes on 8GB Intel MacBook Air; run 2 started at row 201, rows 1-200 never re-ingested (watermark-native checkpointing verified)",
         "verify": "qaevelyn.github.io/lookbook.html#ship7 — video receipts: youtu.be/BO3FFlEsyxQ (dry run, nothing stamped), youtu.be/mYyLKLq2l7w (run 2, never re-ingest); code: github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter; documented in white-papers/the-missing-link"
+      },
+      {
+        "claim": "Five-pass prior-art search for The Missing Link, including an adversarial pass by an independent AI collaborator (Leo, Per Scholas AI stack, Oct 4) and an API-driven HN/PyPI sweep (Oct 10) — cited as references [3] and [4] in the published paper",
+        "verify": "qaevelyn.github.io/white-papers/the-missing-link/ — references [3] [4]; transcript location per author's evidence records"
       }
     ],
     "case_study_in_drafting": {
@@ -89,6 +93,10 @@
       {
         "date": "2026-10-10",
         "entry": "Ship 7 msgvault adapter smoke-run evidence added to published_verifiable: 200 messages to 23,500 chunks, ~25 min, rows 1-200 never re-ingested. Verified against lookbook.html#ship7 receipts and paper draft (the-missing-link branch, commits 554a18d/eb8f2f9). Paper link activates on branch merge."
+      },
+      {
+        "date": "2026-10-10",
+        "entry": "Prior-art search passes 4-5 registered in published_verifiable: adversarial Leo pass Oct 4, API sweep Oct 10 surfacing Memento and ChatVault as nearest neighbors. Cited in The Missing Link references [3] [4]. Published same day, master 46892aa."
       }
     ],
     "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps.",
