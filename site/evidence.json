@@ -109,6 +109,14 @@
       {
         "date": "2026-10-10",
         "entry": "Full canonical name enforced (owner rule: never shorten) — artifact name carries A Mirror of My Becoming™ — Suite: Ingestion Tools in full. services.md work-count reconciled: twenty -> twenty-one (Missing Link published 2026-10-10, manifest canon)."
+      },
+      {
+        "date": "2026-10-10",
+        "entry": "Exhibits 1-7 restored: Sept 29 session recorded delivery with JSON-valid gate, but the commit never followed — record-vs-repo discrepancy discovered Oct 10 during Paper 22 recon. Screenshots recovered from local clone, registered now. Gap disclosed; no data lost (owner-held throughout)."
+      },
+      {
+        "date": "2026-10-10",
+        "entry": "Exhibits 1-7 restored to the public ledger: filed Sept 29 per session log, but the commit never followed (record-vs-repo discrepancy found Oct 10 during Paper 22 recon). Recovered from local clone, renamed URL-safe, registered with owner-screened descriptions. Missing numbers, if any, are gaps — not silently skipped."
       }
     ],
     "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps.",
@@ -120,6 +128,48 @@
           "what": "Ingest log final minutes: chunk heartbeats, last conversation 'Per Scholas Handover' written 04:41:59, DONE banner — Written: 55, Sidecar total: 127",
           "pii_check": "signature retained by owner: terminal username visible as proof of authenticity — deliberate, documented",
           "verify": "qaevelyn.github.io/site/exhibits/exhibit-8-ingest-complete.png"
+        },
+        {
+          "exhibit": 1,
+          "what": "DeepSeek suspension banner — 'suspended until September 28, 2026 22:03' (screenshot receipt, Sept 25 11:09 PM)",
+          "pii_check": "owner-screened; no third-party names per anonymization ruling",
+          "verify": "qaevelyn.github.io/site/exhibits/exhibit-1-suspension.png"
+        },
+        {
+          "exhibit": 2,
+          "what": "banner contact link routing to Feishu-hosted form (the gate)",
+          "pii_check": "owner-screened; no third-party names per anonymization ruling",
+          "verify": "qaevelyn.github.io/site/exhibits/exhibit-2-suspension.png"
+        },
+        {
+          "exhibit": 3,
+          "what": "Feishu login requirement blocking the contact path",
+          "pii_check": "owner-screened; no third-party names per anonymization ruling",
+          "verify": "qaevelyn.github.io/site/exhibits/exhibit-3-suspension.png"
+        },
+        {
+          "exhibit": 4,
+          "what": "contact form dead end — no human channel",
+          "pii_check": "owner-screened; no third-party names per anonymization ruling",
+          "verify": "qaevelyn.github.io/site/exhibits/exhibit-4-suspension.png"
+        },
+        {
+          "exhibit": 5,
+          "what": "appeal email #1 as sent — Sept 26, 7:48 AM (owner Gmail, verbatim)",
+          "pii_check": "owner-screened; no third-party names per anonymization ruling",
+          "verify": "qaevelyn.github.io/site/exhibits/exhibit-5-suspension.png"
+        },
+        {
+          "exhibit": 6,
+          "what": "appeal email #2 as sent — Sept 26, 11:46 AM (owner Gmail, verbatim)",
+          "pii_check": "owner-screened; no third-party names per anonymization ruling",
+          "verify": "qaevelyn.github.io/site/exhibits/exhibit-6-suspension.png"
+        },
+        {
+          "exhibit": 7,
+          "what": "Gemini terms analysis — no rule identified matching the work",
+          "pii_check": "owner-screened; no third-party names per anonymization ruling",
+          "verify": "qaevelyn.github.io/site/exhibits/exhibit-7-suspension.png"
         }
       ]
     }
