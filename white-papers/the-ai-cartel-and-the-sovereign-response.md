@@ -80,7 +80,7 @@ This is not abstract. It is already happening:
 
 - **DV14™: The Box** — a containment architecture the author has built independently. Private repository. Details available under NDA.
 - **The Fleet** — five RAG pipelines built from open-source models, containerized, deployed independently of any cloud provider.
-- **The Mirror of My Becoming** — a sovereign AI system for genealogy and heritage, built for communities that enterprise AI ignores.
+- **The Mirror of My Becoming™** — a sovereign AI system for genealogy and heritage, built for communities that enterprise AI ignores.
 
 None of these required permission. None of them required a waiver. None of them required four CEOs to agree on anything.
 
