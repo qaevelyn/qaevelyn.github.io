@@ -56,6 +56,10 @@
       {
         "claim": "Zenodo DOIs fleet-wide: whole-number versioning enforced after collaborator released sub-numbered versions — owner doctrine restated",
         "verify": "trio-ledger day record Oct 11; releases v2/v2/v5 replaced deleted sub-numbered tags"
+      },
+      {
+        "claim": "A Mirror of My Becoming™ — ask/getdoc™ — DOI minted (v5, suite standard release)",
+        "verify": "DOI 10.5281/zenodo.23304513 — doi.org/10.5281/zenodo.23304513; repo: github.com/qaevelyn/ask-mirror"
       }
     ],
     "case_study_in_drafting": {
