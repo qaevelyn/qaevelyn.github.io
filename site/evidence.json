@@ -40,6 +40,10 @@
       {
         "claim": "Adversarial prior-art pass #4 (Leo AI, Oct 4 2026, blind, repo names withheld): five named near-neighbor repositories surveyed — RAGmail, Email-RAG, LlamaIndex IngestionPipeline, WPipe, async-doc-ingestion — with documented per-repo gaps; verdict that no published tool combines SQLite mail source + ChromaDB + crash-safety + curfew + dedup; root-cause of author's repos' search invisibility (distribution surface area, not merit)",
         "verify": "mirror-of-my-becoming-provenance/evidence/leo-prior-art-pass-4-2026-10-04.md (verbatim transcript + collator note); cited as references [1]-[6] in The Missing Link"
+      },
+      {
+        "claim": "Overseer v4 — orchestrator with tier authority (canon-direct answers from registry, no model) + corpus tier with visible RRF quorum; grounding failure (model fabrication) demonstrated and structurally corrected same session",
+        "verify": "github.com/qaevelyn/a-mirror-of-my-becoming-suite-overseer (AGPL-3.0 + commercial); receipts: Mirror-Project/receipts/overseer-v4-build-2026-10-11.md"
       }
     ],
     "case_study_in_drafting": {
