@@ -63,7 +63,7 @@
       },
       {
         "artifact": "White papers and case studies",
-        "count": 20,
+        "count": 22,
         "source": "white-papers/manifest.json (18) + case-studies/manifest.json (2); verified 2026-09-29"
       },
       {
@@ -117,6 +117,10 @@
       {
         "date": "2026-10-10",
         "entry": "Exhibits 1-7 restored to the public ledger: filed Sept 29 per session log, but the commit never followed (record-vs-repo discrepancy found Oct 10 during Paper 22 recon). Recovered from local clone, renamed URL-safe, registered with owner-screened descriptions. Missing numbers, if any, are gaps — not silently skipped."
+      },
+      {
+        "date": "2026-10-11",
+        "entry": "Works count reconciled 20 -> 22: The Missing Link (Oct 10) and Three Days of Silence (Oct 11) published; manifest canon. Prose counts retired per links-not-counts ruling — this entry is the ledger's own last numeric restatement."
       }
     ],
     "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps.",
