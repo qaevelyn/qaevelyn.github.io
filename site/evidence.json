@@ -44,6 +44,18 @@
       {
         "claim": "Overseer v4 — orchestrator with tier authority (canon-direct answers from registry, no model) + corpus tier with visible RRF quorum; grounding failure (model fabrication) demonstrated and structurally corrected same session",
         "verify": "github.com/qaevelyn/a-mirror-of-my-becoming-suite-overseer (AGPL-3.0 + commercial); receipts: Mirror-Project/receipts/overseer-v4-build-2026-10-11.md"
+      },
+      {
+        "claim": "A Mirror of My Becoming™ — Suite: msgvault Adapter™ — DOI minted",
+        "verify": "DOI 10.5281/zenodo.23303989 — doi.org/10.5281/zenodo.23303989"
+      },
+      {
+        "claim": "A Mirror of My Becoming™ — Suite: Ingestion Tools™ — DOI minted",
+        "verify": "DOI 10.5281/zenodo.23303988 — doi.org/10.5281/zenodo.23303988"
+      },
+      {
+        "claim": "Zenodo DOIs fleet-wide: whole-number versioning enforced after collaborator released sub-numbered versions — owner doctrine restated",
+        "verify": "trio-ledger day record Oct 11; releases v2/v2/v5 replaced deleted sub-numbered tags"
       }
     ],
     "case_study_in_drafting": {
