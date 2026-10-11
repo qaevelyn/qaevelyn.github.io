@@ -347,7 +347,7 @@ The answer, from now on, has to be: the sovereign.
 - Caro, E. (2026c). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
 - Caro, E. (2026d). "Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now." qaevelyn.github.io/white-papers/samaritan-is-here/.
 - Caro, E. (2026e). "Sovereign AI vs. Silicon Valley: A Different Origin Story." qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/.
-- Caro, E. (2026f). "DV14: The Box." Private repository. Details available under NDA.
+- Caro, E. (2026f). "DV14™: The Box." Private repository. Details available under NDA.
 
 ---
 

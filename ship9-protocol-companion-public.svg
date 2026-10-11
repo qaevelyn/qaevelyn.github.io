@@ -2,41 +2,41 @@
   <rect width="640" height="360" fill="#faf6ee"/>
   <rect x="8" y="8" width="624" height="344" fill="none" stroke="#8b6f3d" stroke-width="2"/>
   <text x="320" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#3d2e1e">PROTOCOL COMPANION™ — CONCEPT VIEW</text>
-  <text x="320" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8b6f3d">concept-level only · architecture sealed · commercial review under NDA</text>
-  <!-- left: the sovereign archive -->
-  <rect x="40" y="100" width="150" height="180" rx="6" fill="none" stroke="#3d2e1e" stroke-width="2"/>
-  <text x="115" y="126" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#3d2e1e">SOVEREIGN</text>
-  <text x="115" y="144" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#3d2e1e">ARCHIVE</text>
-  <rect x="60" y="160" width="110" height="14" fill="#e8dfc9" stroke="#8b6f3d"/>
-  <rect x="60" y="182" width="110" height="14" fill="#e8dfc9" stroke="#8b6f3d"/>
-  <rect x="60" y="204" width="110" height="14" fill="#e8dfc9" stroke="#8b6f3d"/>
-  <rect x="60" y="226" width="110" height="14" fill="#e8dfc9" stroke="#8b6f3d"/>
-  <text x="115" y="264" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8b6f3d">corpus · receipts · refusals</text>
-  <!-- right: the institution -->
-  <rect x="450" y="100" width="150" height="180" rx="6" fill="none" stroke="#3d2e1e" stroke-width="2"/>
-  <text x="525" y="126" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#3d2e1e">THE</text>
-  <text x="525" y="144" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#3d2e1e">INSTITUTION</text>
-  <rect x="470" y="160" width="110" height="60" fill="#e8dfc9" stroke="#8b6f3d"/>
-  <text x="525" y="196" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8b6f3d">terms of contact</text>
-  <text x="525" y="264" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8b6f3d">governance · demands · NDA</text>
-  <!-- the companion between -->
-  <rect x="230" y="130" width="180" height="120" rx="8" fill="#f3ecd9" stroke="#8b6f3d" stroke-width="2.5"/>
-  <text x="320" y="158" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#3d2e1e">PROTOCOL</text>
-  <text x="320" y="176" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#3d2e1e">COMPANION™</text>
-  <text x="320" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8b6f3d">the engagement layer</text>
-  <text x="320" y="216" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8b6f3d">carries the archive's terms outward</text>
-  <text x="320" y="232" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8b6f3d">carries nothing of its interior</text>
-  <!-- arrows: out bounded, in refused -->
-  <line x1="196" y1="170" x2="224" y2="170" stroke="#8b6f3d" stroke-width="2"/>
-  <polygon points="224,166 232,170 224,174" fill="#8b6f3d"/>
-  <text x="210" y="160" text-anchor="middle" font-size="8" fill="#8b6f3d">terms out</text>
-  <line x1="416" y1="170" x2="444" y2="170" stroke="#8b6f3d" stroke-width="2"/>
-  <polygon points="444,166 452,170 444,174" fill="#8b6f3d"/>
-  <text x="430" y="160" text-anchor="middle" font-size="8" fill="#8b6f3d">contact in</text>
-  <line x1="416" y1="220" x2="444" y2="220" stroke="#a33" stroke-width="2"/>
-  <line x1="436" y1="214" x2="444" y2="220" stroke="#a33" stroke-width="2"/>
-  <line x1="436" y1="226" x2="444" y2="220" stroke="#a33" stroke-width="2"/>
-  <text x="430" y="240" text-anchor="middle" font-size="8" fill="#a33">interior: never</text>
+  <text x="320" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8b6f3d">ultrasound patient preparedness · concept-level only · architecture sealed · review under NDA</text>
+  <!-- center: the patient's device -->
+  <rect x="210" y="95" width="220" height="180" rx="10" fill="#f3ecd9" stroke="#8b6f3d" stroke-width="2.5"/>
+  <text x="320" y="124" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#3d2e1e">THE PATIENT'S DEVICE</text>
+  <rect x="235" y="140" width="170" height="16" fill="#e8dfc9" stroke="#8b6f3d"/>
+  <text x="320" y="152" text-anchor="middle" font-size="9" fill="#3d2e1e">protocol steps, in order</text>
+  <rect x="235" y="164" width="170" height="16" fill="#e8dfc9" stroke="#8b6f3d"/>
+  <text x="320" y="176" text-anchor="middle" font-size="9" fill="#3d2e1e">prep verified, step by step</text>
+  <rect x="235" y="188" width="170" height="16" fill="#e8dfc9" stroke="#8b6f3d"/>
+  <text x="320" y="200" text-anchor="middle" font-size="9" fill="#3d2e1e">questions answered from the protocol</text>
+  <rect x="235" y="212" width="170" height="16" fill="#f0e2d0" stroke="#a33"/>
+  <text x="320" y="224" text-anchor="middle" font-size="9" fill="#a33">no cloud · no stored health data</text>
+  <rect x="235" y="236" width="170" height="16" fill="#f0e2d0" stroke="#a33"/>
+  <text x="320" y="248" text-anchor="middle" font-size="9" fill="#a33">nothing about the patient leaves</text>
+  <!-- left: the clinical protocol (what flows IN, paper-thin) -->
+  <rect x="45" y="120" width="120" height="130" rx="6" fill="none" stroke="#3d2e1e" stroke-width="2"/>
+  <text x="105" y="146" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#3d2e1e">THE PROTOCOL</text>
+  <text x="105" y="164" text-anchor="middle" font-size="9" fill="#8b6f3d">imaging prep steps</text>
+  <text x="105" y="180" text-anchor="middle" font-size="9" fill="#8b6f3d">as the clinic orders them</text>
+  <text x="105" y="220" text-anchor="middle" font-size="8" fill="#a33">paper + words only —</text>
+  <text x="105" y="232" text-anchor="middle" font-size="8" fill="#a33">no patient data flows</text>
+  <line x1="170" y1="185" x2="202" y2="185" stroke="#8b6f3d" stroke-width="2"/>
+  <polygon points="202,181 210,185 202,189" fill="#8b6f3d"/>
+  <text x="186" y="175" text-anchor="middle" font-size="8" fill="#8b6f3d">in</text>
+  <!-- right: the institution (contact boundary) -->
+  <rect x="475" y="120" width="120" height="130" rx="6" fill="none" stroke="#3d2e1e" stroke-width="2"/>
+  <text x="535" y="146" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#3d2e1e">THE INSTITUTION</text>
+  <text x="535" y="164" text-anchor="middle" font-size="9" fill="#8b6f3d">its reschedule baseline</text>
+  <text x="535" y="180" text-anchor="middle" font-size="9" fill="#8b6f3d">measures the pilot</text>
+  <text x="535" y="220" text-anchor="middle" font-size="8" fill="#a33">receives nothing —</text>
+  <text x="535" y="232" text-anchor="middle" font-size="8" fill="#a33">sees nothing — by design</text>
+  <line x1="436" y1="185" x2="468" y2="185" stroke="#a33" stroke-width="2"/>
+  <line x1="460" y1="179" x2="468" y2="185" stroke="#a33" stroke-width="2"/>
+  <line x1="460" y1="191" x2="468" y2="185" stroke="#a33" stroke-width="2"/>
+  <text x="452" y="175" text-anchor="middle" font-size="8" fill="#a33">no out</text>
   <!-- footer -->
   <text x="320" y="336" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8b6f3d">A Mirror of My Becoming™ · Ship 9 · © 2026 Evelyn Caro — commercial license only, review under NDA</text>
 </svg>
