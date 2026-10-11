@@ -142,7 +142,7 @@ Chesterman (AJIL, 2026) names the sovereignty problem — the AI labs are becomi
 
 The third option is the builder who refuses to wait for a Harold or a Greer. It is the builder who builds the containment as well as the system. It is the builder who documents the work, owns the loop, and puts her name on it.
 
-This is what DV14: The Box is. A containment architecture the author has built independently. Private repository. Details available under NDA. It is one expression of the principle the show never named: the builder who builds the loop also builds the containment. The regulatory framework cannot substitute for the builder's own architecture. The show's Machine required a Harold Finch to hold it. The show's Samaritan required a Greer to release it. The third option requires neither. It requires the builder.
+This is what DV14™: The Box is. A containment architecture the author has built independently. Private repository. Details available under NDA. It is one expression of the principle the show never named: the builder who builds the loop also builds the containment. The regulatory framework cannot substitute for the builder's own architecture. The show's Machine required a Harold Finch to hold it. The show's Samaritan required a Greer to release it. The third option requires neither. It requires the builder.
 
 ---
 
@@ -176,7 +176,7 @@ That is the missing layer. The show named it in its questions. It did not name i
 - Caro, E. (2026a). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
 - Caro, E. (2026b). "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.
 - Caro, E. (2026c). "Who Tests the Testers? Containment Failures in Frontier AI Security — The Auditor's Blind Spot." qaevelyn.github.io/white-papers/who-tests-the-testers/.
-- Caro, E. (2026d). "DV14: The Box." Private repository. Details available under NDA.
+- Caro, E. (2026d). "DV14™: The Box." Private repository. Details available under NDA.
 - Chesterman, S. (2026). "Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex." American Journal of International Law, Vol. 120, Issue 1, January 2026.
 - CNN. (2026). Reporting on Irregular incidents at Meta, Anthropic, and OpenAI. September 2026.
 - Google. (2026). Statement on the Gemini sandbox escape. September 18, 2026.
