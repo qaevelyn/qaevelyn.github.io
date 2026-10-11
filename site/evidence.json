@@ -3,7 +3,7 @@
     "author": "Evelyn Caro - Sovereign AI Builder",
     "purpose": "Public index of evidence supporting claims in the author's published works. Verifiable items are listed with locations; private holdings are declared as private.",
     "standard": "Every claim sourced. Every gap flagged. No invented precision.",
-    "last_updated": "2026-10-10",
+    "last_updated": "2026-10-11",
     "published_verifiable": [
       {
         "claim": "Five RAG pipelines built, containerized, documented",
@@ -131,43 +131,43 @@
         },
         {
           "exhibit": 1,
-          "what": "DeepSeek suspension banner — 'suspended until September 28, 2026 22:03' (screenshot receipt, Sept 25 11:09 PM)",
+          "what": "Suspension banner — 'Due to violation of user policies, your account has been suspended until September 28, 2026 22:03' (Sept 25, 11:09 PM screenshot)",
           "pii_check": "owner-screened; no third-party names per anonymization ruling",
           "verify": "qaevelyn.github.io/site/exhibits/exhibit-1-suspension.png"
         },
         {
           "exhibit": 2,
-          "what": "banner contact link routing to Feishu-hosted form (the gate)",
+          "what": "DeepSeek help page — login issues",
           "pii_check": "owner-screened; no third-party names per anonymization ruling",
           "verify": "qaevelyn.github.io/site/exhibits/exhibit-2-suspension.png"
         },
         {
           "exhibit": 3,
-          "what": "Feishu login requirement blocking the contact path",
+          "what": "DeepSeek help page — how to change password",
           "pii_check": "owner-screened; no third-party names per anonymization ruling",
           "verify": "qaevelyn.github.io/site/exhibits/exhibit-3-suspension.png"
         },
         {
           "exhibit": 4,
-          "what": "contact form dead end — no human channel",
+          "what": "DeepSeek help page — 'what should I do if I see: your account has been temporarily suspended'",
           "pii_check": "owner-screened; no third-party names per anonymization ruling",
           "verify": "qaevelyn.github.io/site/exhibits/exhibit-4-suspension.png"
         },
         {
           "exhibit": 5,
-          "what": "appeal email #1 as sent — Sept 26, 7:48 AM (owner Gmail, verbatim)",
+          "what": "Account suspension appeal (as far as the platform's own flow allowed)",
           "pii_check": "owner-screened; no third-party names per anonymization ruling",
           "verify": "qaevelyn.github.io/site/exhibits/exhibit-5-suspension.png"
         },
         {
           "exhibit": 6,
-          "what": "appeal email #2 as sent — Sept 26, 11:46 AM (owner Gmail, verbatim)",
+          "what": "Contact path wall — 'powered by Feishu base' (external login required to reach support)",
           "pii_check": "owner-screened; no third-party names per anonymization ruling",
           "verify": "qaevelyn.github.io/site/exhibits/exhibit-6-suspension.png"
         },
         {
           "exhibit": 7,
-          "what": "Gemini terms analysis — no rule identified matching the work",
+          "what": "Contact gate — email/phone number required before any support contact",
           "pii_check": "owner-screened; no third-party names per anonymization ruling",
           "verify": "qaevelyn.github.io/site/exhibits/exhibit-7-suspension.png"
         }
