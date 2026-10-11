@@ -5,7 +5,14 @@
     <link>https://qaevelyn.github.io</link>
     <description>The corpus of Evelyn: sovereign AI builder, independent journalist. Every claim sourced, every gap flagged, no invented precision.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Three Days of Silence</title>
+      <link>https://qaevelyn.github.io/white-papers/three-days-of-silence/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/three-days-of-silence/</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+      <description>What the Silence Owed: An English Teacher&#x27;s Record of the Suspension, the Support Maze, and the Rule That Was Never Named</description>
+    </item>
     <item>
       <title>The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store</title>
       <link>https://qaevelyn.github.io/white-papers/the-missing-link/</link>
@@ -136,13 +143,6 @@
       <title>White Paper: AI Platform Comparison for Sovereign Archive Development</title>
       <link>https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/</link>
       <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Case Study: Manus — From Loyalty to Betrayal to Sovereignty</title>
-      <link>https://qaevelyn.github.io/white-papers/manus-case-study/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/manus-case-study/</guid>
       <pubDate></pubDate>
       <description></description>
     </item>
