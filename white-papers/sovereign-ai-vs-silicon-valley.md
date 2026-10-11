@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 **Author:** Evelyn Caro (@qaevelyn)
-**Project:** A Mirror of My Becoming
+**Project:** A Mirror of My Becoming™
 **Date:** September 18, 2026
 **Status:** Published
 
