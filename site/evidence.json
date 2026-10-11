@@ -72,7 +72,7 @@
         "source": "case-studies/manifest.json"
       },
       {
-        "artifact": "A Mirror of My Becoming — Suite: Ingestion Tools (formerly Mirror Ingest Suite) (open-source tooling)",
+        "artifact": "A Mirror of My Becoming™ — Suite: Ingestion Tools (formerly Mirror Ingest Suite) (open-source tooling)",
         "count": 1,
         "source": "github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools - AGPL-3.0 + commercial lane; Scribe/Warden/Hand architecture; published 2026-09-29"
       }
@@ -105,6 +105,10 @@
       {
         "date": "2026-10-10",
         "entry": "Same-day correction to The Missing Link, within minutes of publication: (1) pass-4 quote verified against transcript, found non-verbatim, restated using transcript's actual wording — flagged-not-faked; (2) nearest neighbors switched from pass-5 finds (Memento, ChatVault) to the five pass-4 repositories the evidence file documents; references rebuilt. Memento/ChatVault entries above stand as the record of pass-5, now cited as secondary neighbors [7]."
+      },
+      {
+        "date": "2026-10-10",
+        "entry": "Full canonical name enforced (owner rule: never shorten) — artifact name carries A Mirror of My Becoming™ — Suite: Ingestion Tools in full. services.md work-count reconciled: twenty -> twenty-one (Missing Link published 2026-10-10, manifest canon)."
       }
     ],
     "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps.",
