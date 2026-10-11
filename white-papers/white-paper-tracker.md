@@ -51,6 +51,8 @@ The disciplines the corpus runs on.
 | 14 | [White Paper Methodology](/white-papers/white-paper-methodology/) | How the papers are written | 2026-09-18 |
 | 15 | [Methodology: Stress-Testing AI Systems](/white-papers/methodology/) | How the systems are tested | 2026-08-15 |
 | 16 | [Sovereign AI vs. Silicon Valley](/white-papers/sovereign-ai-vs-silicon-valley/) | The position paper: a different origin story | 2026-09-18 |
+| 17 | [Three Days Of Silence](/white-papers/three-days-of-silence/) | Published 2026-10-11 | 2026-10-11 |
+| 18 | [The Missing Link](/white-papers/the-missing-link/) | Published 2026-10-10 | 2026-10-10 |
 
 ### Retired (1)
 
