@@ -18,6 +18,18 @@
   },
   "white_papers": [
     {
+      "id": "three-days-of-silence",
+      "title": "Three Days of Silence",
+      "subtitle": "What the Silence Owed: An English Teacher's Record of the Suspension, the Support Maze, and the Rule That Was Never Named",
+      "author": "Evelyn Caro",
+      "date": "2026-10-11",
+      "type": "record-paper",
+      "permalink": "/white-papers/three-days-of-silence/",
+      "live_url": "https://qaevelyn.github.io/white-papers/three-days-of-silence/",
+      "file": "white-papers/three-days-of-silence.md",
+      "status": "published"
+    },
+    {
       "id": "the-missing-link",
       "title": "The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store",
       "subtitle": "A Sovereign Builder's Case That the Hardest Part of RAG Is Not Retrieval — It Is Getting the Corpus In Without Losing It",
