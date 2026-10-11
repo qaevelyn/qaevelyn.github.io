@@ -60,6 +60,10 @@
       {
         "claim": "A Mirror of My Becoming™ — ask/getdoc™ — DOI minted (v5, suite standard release)",
         "verify": "DOI 10.5281/zenodo.23304513 — doi.org/10.5281/zenodo.23304513; repo: github.com/qaevelyn/ask-mirror"
+      },
+      {
+        "claim": "Who Decides When the Model Lies — the quorum architecture paper: the model's lie documented verbatim, tier authority built and demonstrated (canon tier answers without the model), collaborator errors disclosed and owned",
+        "verify": "qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/ — receipts: Mirror-Project/receipts/overseer-v4-build-2026-10-11.md; Overseer DOI 10.5281/zenodo.23303987"
       }
     ],
     "case_study_in_drafting": {
