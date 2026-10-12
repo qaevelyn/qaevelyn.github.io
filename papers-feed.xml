@@ -7,6 +7,13 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Oct 2026 00:00:00 GMT</lastBuildDate>
     <item>
+      <title>Who Decides When the Model Lies</title>
+      <link>https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The Quorum Architecture: Giving the Pipeline Its Verdict Back — A Sovereign Builder&#x27;s Answer to AI Hallucination</description>
+    </item>
+    <item>
       <title>Three Days of Silence</title>
       <link>https://qaevelyn.github.io/white-papers/three-days-of-silence/</link>
       <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/three-days-of-silence/</guid>
@@ -136,13 +143,6 @@
       <title>Case Study: Google AI Studio and Gemini NotebookLM — The Failures</title>
       <link>https://qaevelyn.github.io/white-papers/google-case-study/</link>
       <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/google-case-study/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>White Paper: AI Platform Comparison for Sovereign Archive Development</title>
-      <link>https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/</guid>
       <pubDate></pubDate>
       <description></description>
     </item>
