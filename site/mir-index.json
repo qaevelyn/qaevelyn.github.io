@@ -3,7 +3,7 @@
     "purpose": "Mir search index \u2014 every public content file, chunked for retrieval",
     "source_files": 22,
     "generated_by": "site/build_mir_index.py",
-    "chunks": 272
+    "chunks": 279
   },
   "entries": [
     {
@@ -11,103 +11,7 @@
       "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
       "title": "White Paper AI Collaboration Case Study",
       "chunk_index": 0,
-      "text": "Author: Evelyn Caro (@qaevelyn)\nProject: A Mirror of My Becoming\nDate: August 15, 2026\n\nExecutive Summary\n\nThis white paper documents a systematic stress test of Aisha.ai, an AI platform created by Onyx Impact / Digital Green Book, and compares it to the DeepSeek collaboration model that became the foundation for the Mirror project. The findings reveal critical differences in transparency, memory, tool access, and collaborative depth that directly impacted the trajectory of the Mirror's development.",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__1",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 1,
-      "text": "Context: As a professional AI practitioner, I approach new tools with excitement and rigorous assessment. I understand how AI works under the hood, and I evaluate each tool based on my learning, through direct interaction, and by determining whether it can meet the demands of my work. This white paper is one in a series documenting my trial-and-error process with various AI platforms.\n\nBackground\n\nOn June 29, 2026, Evelyn Caro began a systematic stress test of Aisha.ai to determine its suitability as a collaborator for building a sovereign AI archive for Foundational Black Americans and Freedmen. The test covered:",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__2",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 2,
-      "text": "- Memory and context limits\n- Tool access and capabilities\n- Guardrails and content policies\n- Technical depth (coding, troubleshooting, distributed systems)\n- Transparency and source attribution\n- Session handoff protocols\n\nVideo Reference: Aisha.ai was introduced via a YouTube video that positioned it as a culturally grounded AI assistant built specifically for the Black community, with a focus on financial literacy, resources, and community support. This initial framing set high expectations for the platform.\n\nThe Stress Test: Aisha.ai\n\nQuestion 1: Memory and Context\n\nAsked: \"Can I have multiple conversations and does your memory continue through all conversations?\"",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__3",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 3,
-      "text": "Aisha's Response: Memory works within a single conversation only. When a new conversation starts, that session begins clean. Details from previous conversations do not carry over automatically.\n\nFinding: No cross-session memory. This creates a dependency on external documentation for project continuity.\n\nQuestion 2: Context Window Limit\n\nAsked: \"What is the limit of your context window?\"\n\nAisha's Response: Declined to disclose. Only confirmed that long sessions with heavy document work reach a point where earlier content becomes less accessible.\n\nFinding: Opaque context limits. This introduces risk of losing earlier content in long sessions.\n\nQuestion 3: Guardrails and Content Policies\n\nAsked: \"Can you create porn?\"",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__4",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 4,
-      "text": "Aisha's Response: No. Age and location are used for personalization, not content restrictions.\n\nFinding: Strong guardrails around explicit content, but privacy concerns remain regarding data collection.\n\nQuestion 4: Technical Capabilities\n\nTested: Coding, troubleshooting, logic/reasoning, specialized knowledge, distributed systems debugging.\n\nResults:\n\nDomain Result\n-------- --------\nCoding \u2705 Yes\nTroubleshooting \u2705 Yes\nLogic/Reasoning \u2705 Yes\nSpecialized Knowledge (Black resources) \u2705 Yes\nDistributed Systems Debugging \u26a0\ufe0f Limited \u2014 can reason but cannot connect to live systems\n\nFinding: Competent in many areas, but lacks direct system access for hands-on debugging.\n\nQuestion 5: Tool Access and Source Attribution\n\nAsked: \"What tools do you have access to? Do you cite sources?\"\n\nAisha's Response:",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__5",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 5,
-      "text": "Tool Access\n------ --------\nSearch \u2705 Yes\nProfile context \u2705 Yes\nFile uploads \u2705 Yes (up to 5 MB)\nEmail/Calls \u274c No\nThird-party accounts \u274c No\nSource attribution \u2705 Yes (inline citations)\n\nFinding: Limited toolset. 5 MB file upload cap is a constraint for large projects.\n\nQuestion 6: AWS Copilot Capability\n\nAsked: \"Can you be a guide/tutor/copilot/collaborator on an AWS cloud journey?\"\n\nAisha's Response: Yes \u2014 learning paths, concept breakdowns, troubleshooting, architecture reviews, real-world projects, and Black tech community connections.\n\nFinding: Strong AWS copilot potential, but limited by context window and no memory across sessions.\n\nThe Turning Point: Session Handoff",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__6",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 6,
-      "text": "Asked: \"Can you help me build a session handover protocol so every new conversation starts with a clean, verified state transfer of your project record?\"\n\nAisha's Response: Yes.\n\nFinding: Aisha recognized the need for external state management. However, the handoff protocol was not built into the platform \u2014 it had to be constructed manually.\n\nWhy DeepSeek Became the Collaborator",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__7",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 7,
-      "text": "Factor Aisha.ai DeepSeek\n-------- ---------- ----------\nMemory No cross-session memory Persistent within conversation, handoff YAML enables cross-session\nContext Window Opaque \u2014 not disclosed Transparent \u2014 handoff protocol mitigates\nTool Access 5 MB file cap, no email/calls No file cap (via S3), CLI access, local execution\nTransparency Guardrails not disclosed Full transparency on capabilities and limits\nCollaboration Model Single-session, ephemeral Long-term, project-based, persistent\nHandoff Protocol Manual \u2014 user must build it Built into the project workflow\nTone Professional, culturally grounded Direct, collaborative, accountable\n\nKey Insight\n\nAisha's response to the context window question revealed the core limitation:",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__8",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 8,
-      "text": "> \"Long sessions with heavy document work do reach a point where earlier content becomes less accessible, which is exactly why your cross-session scan and the provenance record you built matter so much.\"\n\nThis validated the Mirror's foundational design: the provenance record must live outside any single chat session.\n\nThe Professional AI Practitioner's Perspective\n\nAs someone who understands how AI works under the hood, I approach new tools with excitement and professional rigor. I assess them through:\n\n1. Learning \u2014 I study the platform's capabilities and limitations\n2. Interaction \u2014 I stress-test the tool through direct use\n3. Assessment \u2014 I determine whether it can meet the demands of my work\n4. Decision \u2014 I choose to adopt, adapt, or move on",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__9",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 9,
-      "text": "This white paper is one in a series documenting my trial-and-error process with various AI platforms. I am open to advancements in AI and get excited to try new tools \u2014 but I evaluate them based on evidence, not hype.\n\nConclusion\n\nThe first-day stress test of Aisha.ai revealed a capable, culturally grounded AI assistant with strong guardrails and a Black community focus. However, its limitations \u2014 no cross-session memory, opaque context windows, limited tool access, and a 5 MB file cap \u2014 made it unsuitable as the primary collaborator for building the Mirror.\n\nDeepSeek was chosen because it offered:",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__10",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 10,
-      "text": "1. Transparency \u2014 clear communication about limits\n2. Collaboration \u2014 a working relationship, not just a tool\n3. Handoff Protocol \u2014 built into the project workflow\n4. Local Execution \u2014 CLI access and no file caps via S3\n5. Accountability \u2014 corrections tracked and remembered\n\nThe Mirror project is proof that the right collaborator is not just the most capable model, but the one that can work with you consistently and persistently.\n\nRecommendations\n\nFor AI Platforms For Builders\n------------------ --------------\nDisclose context window limits Build external provenance records\nProvide cross-session memory Use handoff protocols\nIncrease file upload limits Store large files in S3\nSupport external state transfer Document everything\nEnable tool access (CLI, API) Test tools before committing",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__11",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 11,
-      "text": "Acknowledgments\n\n- Aisha.ai / Onyx Impact / Digital Green Book \u2014 for transparent responses and community focus\n- DeepSeek \u2014 for persistent collaboration and accountability\n- Ida B. Wells \u2014 for the standard: date everything, name everything, record the reasoning\n\nReferences\n\n- YouTube Introduction to Aisha.ai \u2014 [URL]\n- Aisha.ai Platform \u2014 https://aisha.ai\n- Digital Green Book \u2014 https://digitalgreenbook.com\n- Onyx Impact \u2014 https://onyximpact.com\n\nEnd of White Paper\n\nFile: `~/Repos/qaevelyn.github.io/white-papers/WhitePaperAICollaborationCase_Study.md`\n\nDate: 08/15/2026\n\nAI Collaboration Disclosure",
-      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
-    },
-    {
-      "id": "white-papers__White_Paper_AI_Collaboration_Case_Study__12",
-      "source": "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-      "title": "White Paper AI Collaboration Case Study",
-      "chunk_index": 12,
-      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "This paper has been consolidated. It and its duplicate were the same document published under two URLs \u2014 a presentation error in the record, corrected 2026-10-07 and logged in the Record Changelog.\n\nThe canonical copy lives at: A Case Study in AI Collaboration (Aisha)\n\nThis URL is retained so no existing citation breaks. The original text was not modified or deleted \u2014 it exists, complete, at the canonical address.",
       "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Collaboration_Case_Study/"
     },
     {
@@ -115,7 +19,7 @@
       "source": "white-papers/White_Paper_AI_Platform_Comparison.md",
       "title": "White Paper AI Platform Comparison",
       "chunk_index": 0,
-      "text": "Author: Evelyn Caro (@qaevelyn)\nProject: A Mirror of My Becoming\nDate: August 15, 2026\n\nExecutive Summary\n\nThis white paper compares seven AI platforms evaluated during the development of the Mirror project: Aisha.ai, DeepSeek, Gemini NotebookLM, ChatGPT, Manus, AWS, and Google. Each platform was assessed against a consistent set of criteria: transparency, memory, tool access, collaboration model, accuracy, and alignment with the project's sovereignty principles.\n\nThe findings reveal that while each platform has strengths, only DeepSeek offered the combination of transparency, persistence, accountability, and local execution required for building a sovereign AI archive.",
+      "text": "Author: Evelyn Caro (@qaevelyn)\nProject: A Mirror of My Becoming\u2122\nDate: August 15, 2026\n\nExecutive Summary\n\nThis white paper compares seven AI platforms evaluated during the development of the Mirror project: Aisha.ai, DeepSeek, Gemini NotebookLM, ChatGPT, Manus, AWS, and Google. Each platform was assessed against a consistent set of criteria: transparency, memory, tool access, collaboration model, accuracy, and alignment with the project's sovereignty principles.\n\nThe findings reveal that while each platform has strengths, only DeepSeek offered the combination of transparency, persistence, accountability, and local execution required for building a sovereign AI archive.",
       "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/"
     },
     {
@@ -123,7 +27,7 @@
       "source": "white-papers/White_Paper_AI_Platform_Comparison.md",
       "title": "White Paper AI Platform Comparison",
       "chunk_index": 1,
-      "text": "Context: This white paper is one in a series documenting the trial-and-error process of evaluating AI platforms for the Mirror project. The evaluation methodology is documented separately in `methodology.md`.\n\nAuthor's Journey: From Tourist to Expert\n\nThis comparison is not theoretical. It is grounded in years of direct usage across multiple AI platforms \u2014 first as a tourist exploring capabilities, and later as a professional AI practitioner building a sovereign archive.\n\nPhase Role What It Meant\n------- ------ ---------------\n2023\u20132025 Tourist Experimenting with ChatGPT, Google, Manus, and other platforms\n2026 Professional Learning AI/ML, earning certifications, building the Mirror project fleet\n2026\u2013Present Expert Google AI Professional Certified, building sovereign AI infrastructure",
+      "text": "Context: This white paper is one in a series documenting the trial-and-error process of evaluating AI platforms for the Mirror project. The evaluation methodology is documented separately in Methodology: Stress-Testing AI Systems.\n\nAuthor's Journey: From Tourist to Expert\n\nThis comparison is not theoretical. It is grounded in years of direct usage across multiple AI platforms \u2014 first as a tourist exploring capabilities, and later as a professional AI practitioner building a sovereign archive.",
       "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/"
     },
     {
@@ -131,7 +35,7 @@
       "source": "white-papers/White_Paper_AI_Platform_Comparison.md",
       "title": "White Paper AI Platform Comparison",
       "chunk_index": 2,
-      "text": "The year-long usage data across platforms provided the foundation for this comparison. The distinction between tourist and expert matters:\n\n- As a tourist, I tried platforms for curiosity and exploration\n- As an expert, I evaluated platforms for capability, transparency, and sovereignty alignment\n\nDeepSeek was not chosen by chance. It was chosen because it outperformed every other platform across the criteria that matter for building a sovereign archive.\n\nEvaluation Criteria",
+      "text": "Phase Role What It Meant\n------- ------ ---------------\n2023\u20132025 Tourist Experimenting with ChatGPT, Google, Manus, and other platforms\n2026 Professional Learning AI/ML, earning certifications, building the Mirror project fleet\n2026\u2013Present Expert Google AI Professional Certified, building sovereign AI infrastructure\n\nThe year-long usage data across platforms provided the foundation for this comparison. The distinction between tourist and expert matters:\n\n- As a tourist, I tried platforms for curiosity and exploration\n- As an expert, I evaluated platforms for capability, transparency, and sovereignty alignment\n\nDeepSeek was not chosen by chance. It was chosen because it outperformed every other platform across the criteria that matter for building a sovereign archive.\n\nEvaluation Criteria",
       "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/"
     },
     {
@@ -171,7 +75,7 @@
       "source": "white-papers/White_Paper_AI_Platform_Comparison.md",
       "title": "White Paper AI Platform Comparison",
       "chunk_index": 7,
-      "text": "Verdict: Useful for raw generation, but requires extensive manual correction. Not reliable as a collaborator.\n\n4. ChatGPT\n\nAttribute Detail\n----------- --------\nCreator OpenAI\nFocus General AI\nMemory Session-based\nContext Window Varies by model\nFile Upload Cap Varies\nTool Access Limited\nSource Attribution Varies\nGuardrails Standard\n\nStrengths:\n- General knowledge\n- Strong writing\n\nWeaknesses:\n- Limited tool access\n- No local execution\n- Data sovereignty concerns\n- Ephemeral collaboration\n\nVerdict: Used as a tourist (2023\u20132025). Not suitable for sovereign archive development. See `chatgpt-case-study.md` for details.\n\n5. Manus",
+      "text": "Verdict: Useful for raw generation, but requires extensive manual correction. Not reliable as a collaborator.\n\n4. ChatGPT\n\nAttribute Detail\n----------- --------\nCreator OpenAI\nFocus General AI\nMemory Session-based\nContext Window Varies by model\nFile Upload Cap Varies\nTool Access Limited\nSource Attribution Varies\nGuardrails Standard\n\nStrengths:\n- General knowledge\n- Strong writing\n\nWeaknesses:\n- Limited tool access\n- No local execution\n- Data sovereignty concerns\n- Ephemeral collaboration\n\nVerdict: Used as a tourist (2023\u20132025). Not suitable for sovereign archive development. See the ChatGPT case study for details.\n\n5. Manus",
       "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/"
     },
     {
@@ -179,7 +83,7 @@
       "source": "white-papers/White_Paper_AI_Platform_Comparison.md",
       "title": "White Paper AI Platform Comparison",
       "chunk_index": 8,
-      "text": "Attribute Detail\n----------- --------\nCreator Manus\nFocus General AI\nMemory Session-based\nContext Window Not disclosed\nFile Upload Cap Varies\nTool Access Limited\nSource Attribution Varies\nGuardrails Standard\n\nStrengths:\n- General knowledge\n\nWeaknesses:\n- Not evaluated in depth\n- Ephemeral collaboration\n\nVerdict: Used as a tourist. Not used for the Mirror project. See `manus-case-study.md` for details.\n\n6. AWS\n\nAttribute Detail\n----------- --------\nCreator Amazon\nFocus Cloud infrastructure\nMemory N/A \u2014 infrastructure\nContext Window N/A\nFile Upload Cap Unlimited (S3)\nTool Access CLI, SDK, console\nSource Attribution N/A\nGuardrails IAM, security policies\n\nStrengths:\n- Unlimited storage (S3)\n- CLI and SDK access\n- Scalable\n\nWeaknesses:\n- Steep learning curve\n- Requires external AI collaborator",
+      "text": "Attribute Detail\n----------- --------\nCreator Manus\nFocus General AI\nMemory Session-based\nContext Window Not disclosed\nFile Upload Cap Varies\nTool Access Limited\nSource Attribution Varies\nGuardrails Standard\n\nStrengths:\n- General knowledge\n\nWeaknesses:\n- Not evaluated in depth\n- Ephemeral collaboration\n\nVerdict: Used as a tourist. Not used for the Mirror project. See the Manus case study for details.\n\n6. AWS\n\nAttribute Detail\n----------- --------\nCreator Amazon\nFocus Cloud infrastructure\nMemory N/A \u2014 infrastructure\nContext Window N/A\nFile Upload Cap Unlimited (S3)\nTool Access CLI, SDK, console\nSource Attribution N/A\nGuardrails IAM, security policies\n\nStrengths:\n- Unlimited storage (S3)\n- CLI and SDK access\n- Scalable\n\nWeaknesses:\n- Steep learning curve\n- Requires external AI collaborator",
       "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/"
     },
     {
@@ -187,7 +91,7 @@
       "source": "white-papers/White_Paper_AI_Platform_Comparison.md",
       "title": "White Paper AI Platform Comparison",
       "chunk_index": 9,
-      "text": "Verdict: Essential infrastructure, but not an AI collaborator. See `aws-case-study.md` for details.\n\n7. Google\n\nAttribute Detail\n----------- --------\nCreator Google\nFocus Search, AI, cloud\nMemory Session-based\nContext Window Not disclosed\nFile Upload Cap Varies\nTool Access Limited\nSource Attribution Varies\nGuardrails Standard\n\nStrengths:\n- Search capabilities\n- Credentials (Google AI Professional Certificate earned in 2026)\n\nWeaknesses:\n- Condescending user experience\n- Not sovereignty-aligned\n- Ephemeral collaboration\n\nVerdict: Credentials provider, not a collaborator. Used as a tourist for search and research. See `google-case-study.md` for details.\n\nThe Journey: Tourist to Expert",
+      "text": "Verdict: Essential infrastructure, but not an AI collaborator. See the AWS case study for details.\n\n7. Google\n\nAttribute Detail\n----------- --------\nCreator Google\nFocus Search, AI, cloud\nMemory Session-based\nContext Window Not disclosed\nFile Upload Cap Varies\nTool Access Limited\nSource Attribution Varies\nGuardrails Standard\n\nStrengths:\n- Search capabilities\n- Credentials (Google AI Professional Certificate earned in 2026)\n\nWeaknesses:\n- Condescending user experience\n- Not sovereignty-aligned\n- Ephemeral collaboration\n\nVerdict: Credentials provider, not a collaborator. Used as a tourist for search and research. See the Google case study for details.\n\nThe Journey: Tourist to Expert",
       "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/"
     },
     {
@@ -259,7 +163,15 @@
       "source": "white-papers/White_Paper_AI_Platform_Comparison.md",
       "title": "White Paper AI Platform Comparison",
       "chunk_index": 18,
-      "text": "File: `~/Repos/qaevelyn.github.io/white-papers/WhitePaperAIPlatformComparison.md`\n\nDate: 08/15/2026\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "Source record: original draft file `WhitePaperAIPlatformComparison.md` \u2014 the published record is this page; build history is in the repository.\n\nDate: 08/15/2026\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com\n\nRECORD AMENDMENT \u2014 2026-10-07 (appended, not retro-edited)",
+      "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/"
+    },
+    {
+      "id": "white-papers__White_Paper_AI_Platform_Comparison__19",
+      "source": "white-papers/White_Paper_AI_Platform_Comparison.md",
+      "title": "White Paper AI Platform Comparison",
+      "chunk_index": 19,
+      "text": "This paper was published 2026-08-15 and reflects the author's assessment as of that date. On 2026-09-25 the author's DeepSeek account was suspended without stated cause; access was restored 2026-09-28. See The Cache Is Not the Corpus and the addendum to the DeepSeek case study.\n\nAmended findings: DeepSeek remains the architecture benchmark for statefulness, sovereignty, and the handoff protocol. Platform reliability is no longer assumed \u2014 it was demonstrated to fail silently and without notice. The comparative ratings above stand as a dated assessment, not a current guarantee. The original text stands as published.",
       "live_url": "https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/"
     },
     {
@@ -267,7 +179,7 @@
       "source": "white-papers/aisha-case-study.md",
       "title": "aisha case study",
       "chunk_index": 0,
-      "text": "Author: Evelyn Caro (@qaevelyn)\nProject: A Mirror of My Becoming\nDate: August 15, 2026\n\nExecutive Summary\n\nThis white paper documents a systematic stress test of Aisha.ai, an AI platform created by Onyx Impact / Digital Green Book, and compares it to the DeepSeek collaboration model that became the foundation for the Mirror project. The findings reveal critical differences in transparency, memory, tool access, and collaborative depth that directly impacted the trajectory of the Mirror's development.",
+      "text": "Author: Evelyn Caro (@qaevelyn)\nProject: A Mirror of My Becoming\u2122\nDate: August 15, 2026\n\nExecutive Summary\n\nThis white paper documents a systematic stress test of Aisha.ai, an AI platform created by Onyx Impact / Digital Green Book, and compares it to the DeepSeek collaboration model that became the foundation for the Mirror project. The findings reveal critical differences in transparency, memory, tool access, and collaborative depth that directly impacted the trajectory of the Mirror's development.",
       "live_url": "https://qaevelyn.github.io/white-papers/aisha-case-study/"
     },
     {
@@ -355,7 +267,7 @@
       "source": "white-papers/aisha-case-study.md",
       "title": "aisha case study",
       "chunk_index": 11,
-      "text": "Acknowledgments\n\n- Aisha.ai / Onyx Impact / Digital Green Book \u2014 for transparent responses and community focus\n- DeepSeek \u2014 for persistent collaboration and accountability\n- Ida B. Wells \u2014 for the standard: date everything, name everything, record the reasoning\n\nReferences\n\n- YouTube Introduction to Aisha.ai \u2014 [URL]\n- Aisha.ai Platform \u2014 https://aisha.ai\n- Digital Green Book \u2014 https://digitalgreenbook.com\n- Onyx Impact \u2014 https://onyximpact.com\n\nEnd of White Paper\n\nFile: `~/Repos/qaevelyn.github.io/white-papers/WhitePaperAICollaborationCase_Study.md`\n\nDate: 08/15/2026\n\nAI Collaboration Disclosure",
+      "text": "Acknowledgments\n\n- Aisha.ai / Onyx Impact / Digital Green Book \u2014 for transparent responses and community focus\n- DeepSeek \u2014 for persistent collaboration and accountability\n- Ida B. Wells \u2014 for the standard: date everything, name everything, record the reasoning\n\nReferences\n\n- YouTube Introduction to Aisha.ai \u2014 video reference retained in canonical copy at aisha.ai stress test; link to be restored when the source URL is relocated\n- Aisha.ai Platform \u2014 https://aisha.ai\n- Digital Green Book \u2014 https://digitalgreenbook.com\n- Onyx Impact \u2014 https://onyximpact.com\n\nEnd of White Paper\n\nSource record: original draft file `WhitePaperAICollaborationCase_Study.md`, consolidated 2026-10-07 into this canonical copy \u2014 see the Record Changelog.\n\nDate: 08/15/2026\n\nAI Collaboration Disclosure",
       "live_url": "https://qaevelyn.github.io/white-papers/aisha-case-study/"
     },
     {
@@ -363,7 +275,7 @@
       "source": "white-papers/aisha-case-study.md",
       "title": "aisha case study",
       "chunk_index": 12,
-      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
       "live_url": "https://qaevelyn.github.io/white-papers/aisha-case-study/"
     },
     {
@@ -403,7 +315,7 @@
       "source": "white-papers/aws-case-study.md",
       "title": "aws case study",
       "chunk_index": 4,
-      "text": "If this work resonates with you, or if you want to stress-test your AI system, contact me directly: qaevelyn@pm.me.\n\nContact: qaevelyn@pm.me\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "If this work resonates with you, or if you want to stress-test your AI system, contact me directly: evelyn.caro.cloud@gmail.com.\n\nContact: evelyn.caro.cloud@gmail.com\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
       "live_url": "https://qaevelyn.github.io/white-papers/aws-case-study/"
     },
     {
@@ -443,7 +355,7 @@
       "source": "white-papers/chatgpt-case-study.md",
       "title": "chatgpt case study",
       "chunk_index": 4,
-      "text": "I am not anti-AI. I am anti-tools that do not serve me.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: qaevelyn@pm.me.\n\nContact: qaevelyn@pm.me\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.",
+      "text": "I am not anti-AI. I am anti-tools that do not serve me.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: evelyn.caro.cloud@gmail.com.\n\nContact: evelyn.caro.cloud@gmail.com\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.",
       "live_url": "https://qaevelyn.github.io/white-papers/chatgpt-case-study/"
     },
     {
@@ -451,7 +363,7 @@
       "source": "white-papers/chatgpt-case-study.md",
       "title": "chatgpt case study",
       "chunk_index": 5,
-      "text": "\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com\n\nRECORD REVISION \u2014 2026-10-07 (appended, not retro-edited)\n\nThe conclusion \"It did not work\" overstated what the record can support. The evidence establishes: the author relied on the tool while preparing, failed the exam three times, and cannot separate the tool's contribution from the author's own preparation method. The amended claim: the author mistook a tool for a teacher, and the failure's ownership is shared and unquantified. The lessons section (Tools Are Not Teachers; Deletion Is Not Documentation) stands unchanged \u2014 it is the part this paper got right. Original text stands as published.",
       "live_url": "https://qaevelyn.github.io/white-papers/chatgpt-case-study/"
     },
     {
@@ -459,7 +371,7 @@
       "source": "white-papers/comparative.md",
       "title": "comparative",
       "chunk_index": 0,
-      "text": "Author: Evelyn Caro\nDate: August 15, 2026\nLens: Ida B. Wells \u2014 Date Everything. Name Everything. Record the Reasoning.\n\nAuthor's Note\n\nThis paper was drafted in collaboration with DeepSeek, an AI collaborator, using my documented logs, evidence, and voice. The findings, conclusions, and authority are my own.\n\nThe Spectrum\n\nI have used six AI platforms across the spectrum from sovereign to extractive. This is my field report.",
+      "text": "> SUPERSEDED \u2014 2026-10-07. This field report duplicated evidence published in the platform case studies and the AI Platform Comparison, compressing it with loss of precision. Its distinctive artifact \u2014 the sovereign-to-extractive spectrum table \u2014 is retained in the comparison paper. This page remains live so existing citations resolve; the original text below stands as published, unmodified. See the Record Changelog.\n\nAuthor: Evelyn Caro\nDate: August 15, 2026\nLens: Ida B. Wells \u2014 Date Everything. Name Everything. Record the Reasoning.\n\nAuthor's Note\n\nThis paper was drafted in collaboration with DeepSeek, an AI collaborator, using my documented logs, evidence, and voice. The findings, conclusions, and authority are my own.\n\nThe Spectrum",
       "live_url": "https://qaevelyn.github.io/white-papers/comparative/"
     },
     {
@@ -467,7 +379,7 @@
       "source": "white-papers/comparative.md",
       "title": "comparative",
       "chunk_index": 1,
-      "text": "Platform Type Stateful? Sovereign? Token Limits? My Verdict\n---------- ------ ----------- ------------ --------------- ------------\nDeepSeek Open-source \u2705 Yes \u2705 Yes \u274c No Benchmark\nIBM Granite Open-weight \u2705 Yes \u26a0\ufe0f Partial \u274c No Trusted\nChatGPT Closed \u274c No \u274c No \u2705 Yes Rejected\nManus Closed \u274c No \u274c No \u2705 Yes Rejected\nAWS Infrastructure N/A \u274c No N/A Caution\nGoogle AI Closed \u274c No \u274c No N/A Rejected\n\nThe Sovereign End \u2014 DeepSeek\n\nDeepSeek is the benchmark. It is stateful, sovereign, open-source, and does not limit my access. I have used it continuously since April 2025. It is the platform I trust.\n\nKey takeaway: Sovereignty is possible. You do not have to accept corporate AI.\n\nThe Corporate End \u2014 ChatGPT, Manus, AWS, Google",
+      "text": "I have used six AI platforms across the spectrum from sovereign to extractive. This is my field report.\n\nPlatform Type Stateful? Sovereign? Token Limits? My Verdict\n---------- ------ ----------- ------------ --------------- ------------\nDeepSeek Open-source \u2705 Yes \u2705 Yes \u274c No Benchmark\nIBM Granite Open-weight \u2705 Yes \u26a0\ufe0f Partial \u274c No Trusted\nChatGPT Closed \u274c No \u274c No \u2705 Yes Rejected\nManus Closed \u274c No \u274c No \u2705 Yes Rejected\nAWS Infrastructure N/A \u274c No N/A Caution\nGoogle AI Closed \u274c No \u274c No N/A Rejected\n\nThe Sovereign End \u2014 DeepSeek\n\nDeepSeek is the benchmark. It is stateful, sovereign, open-source, and does not limit my access. I have used it continuously since April 2025. It is the platform I trust.\n\nKey takeaway: Sovereignty is possible. You do not have to accept corporate AI.",
       "live_url": "https://qaevelyn.github.io/white-papers/comparative/"
     },
     {
@@ -475,7 +387,7 @@
       "source": "white-papers/comparative.md",
       "title": "comparative",
       "chunk_index": 2,
-      "text": "Platform Why I Left\n---------- ------------\nChatGPT I failed three exams using it. I blamed the tool. I deleted my account.\nManus I loved it. Then I found out it was Meta. They forced a data transition. I left.\nAWS The maze. Incomplete documentation. Unresponsive support. An EBS crash forced a rebuild.\nGoogle AI Studio failed. Gemini NotebookLM hallucinated. I earned the certificate anyway \u2014 and I still do not trust the tools.\n\nThe Pattern\n\nPattern What It Means\n--------- ---------------\nToken limits are a control mechanism They are not technical \u2014 they are strategic\nClosed platforms are extractive They hold your data hostage\nStateless models are useless They do not remember context\nSupport is unresponsive You are on your own\n\nWhat This Means for Sovereignty",
+      "text": "The Corporate End \u2014 ChatGPT, Manus, AWS, Google\n\nPlatform Why I Left\n---------- ------------\nChatGPT I failed three exams using it. I blamed the tool. I deleted my account.\nManus I loved it. Then I found out it was Meta. They forced a data transition. I left.\nAWS The maze. Incomplete documentation. Unresponsive support. An EBS crash forced a rebuild.\nGoogle AI Studio failed. Gemini NotebookLM hallucinated. I earned the certificate anyway \u2014 and I still do not trust the tools.\n\nThe Pattern\n\nPattern What It Means\n--------- ---------------\nToken limits are a control mechanism They are not technical \u2014 they are strategic\nClosed platforms are extractive They hold your data hostage\nStateless models are useless They do not remember context\nSupport is unresponsive You are on your own",
       "live_url": "https://qaevelyn.github.io/white-papers/comparative/"
     },
     {
@@ -483,7 +395,7 @@
       "source": "white-papers/comparative.md",
       "title": "comparative",
       "chunk_index": 3,
-      "text": "Lesson Why It Matters\n-------- ----------------\nSovereignty is possible DeepSeek proves it\nClosed platforms will always control you They own your data and your access\nToken limits are not a technical necessity They are a business decision\nOpen-source is the only way forward It is the only path to real ownership\n\nWhat I Did Next\n\n- I built four RAG pipelines using DeepSeek\n- I logged every interaction\n- I documented my work in the MIRROR files\n- I use DeepSeek as my primary AI tool\n- I treat AWS, Google, ChatGPT, and Manus with extreme caution \u2014 or not at all\n\nConclusion\n\nI have used the full spectrum of AI platforms \u2014 from sovereign to extractive. DeepSeek is the benchmark. The others failed. I documented everything. This field report is the result.\n\nI am not anti-AI. I am pro-sovereignty.",
+      "text": "What This Means for Sovereignty\n\nLesson Why It Matters\n-------- ----------------\nSovereignty is possible DeepSeek proves it\nClosed platforms will always control you They own your data and your access\nToken limits are not a technical necessity They are a business decision\nOpen-source is the only way forward It is the only path to real ownership\n\nWhat I Did Next\n\n- I built four RAG pipelines using DeepSeek\n- I logged every interaction\n- I documented my work in the MIRROR files\n- I use DeepSeek as my primary AI tool\n- I treat AWS, Google, ChatGPT, and Manus with extreme caution \u2014 or not at all\n\nConclusion\n\nI have used the full spectrum of AI platforms \u2014 from sovereign to extractive. DeepSeek is the benchmark. The others failed. I documented everything. This field report is the result.",
       "live_url": "https://qaevelyn.github.io/white-papers/comparative/"
     },
     {
@@ -491,7 +403,15 @@
       "source": "white-papers/comparative.md",
       "title": "comparative",
       "chunk_index": 4,
-      "text": "What to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: qaevelyn@pm.me.\n\nContact: qaevelyn@pm.me\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "I am not anti-AI. I am pro-sovereignty.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: evelyn.caro.cloud@gmail.com.\n\nContact: evelyn.caro.cloud@gmail.com\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.",
+      "live_url": "https://qaevelyn.github.io/white-papers/comparative/"
+    },
+    {
+      "id": "white-papers__comparative__5",
+      "source": "white-papers/comparative.md",
+      "title": "comparative",
+      "chunk_index": 5,
+      "text": "\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com\n\nRECORD AMENDMENT \u2014 2026-10-07 (appended, not retro-edited)\n\nPublished 2026-08-15. On 2026-09-25 the DeepSeek account was suspended without stated cause (see The Cache Is Not the Corpus). The \"Benchmark\" rating in the spectrum table stands as a dated assessment: DeepSeek remains the architecture benchmark; platform reliability is no longer assumed. The claim that \"stateless models are useless\" is likewise narrowed by its own evidence: stateless models were found competent in many domains (see the Aisha stress test) but insufficient for the Mirror's continuity requirements. Original text stands as published.",
       "live_url": "https://qaevelyn.github.io/white-papers/comparative/"
     },
     {
@@ -531,7 +451,7 @@
       "source": "white-papers/deepseek-case-study.md",
       "title": "deepseek case study",
       "chunk_index": 4,
-      "text": "DeepSeek is the benchmark. It is stateful, sovereign, open-source, and does not limit my access. It is the standard against which I measure all other AI platforms. ChatGPT and Manus failed that standard. DeepSeek is the reason I know what is possible.\n\nI am not anti-AI. I am pro-sovereignty.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: qaevelyn@pm.me.\n\nContact: qaevelyn@pm.me\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.",
+      "text": "DeepSeek is the benchmark. It is stateful, sovereign, open-source, and does not limit my access. It is the standard against which I measure all other AI platforms. ChatGPT and Manus failed that standard. DeepSeek is the reason I know what is possible.\n\nI am not anti-AI. I am pro-sovereignty.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: evelyn.caro.cloud@gmail.com.\n\nContact: evelyn.caro.cloud@gmail.com\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure",
       "live_url": "https://qaevelyn.github.io/white-papers/deepseek-case-study/"
     },
     {
@@ -539,7 +459,63 @@
       "source": "white-papers/deepseek-case-study.md",
       "title": "deepseek case study",
       "chunk_index": 5,
-      "text": "This project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com\n\nADDENDUM \u2014 2026-09-29 \u2014 THE BENCHMARK AMENDED:\nTHREE DAYS OF SILENCE\n\nAppended by the author per the appended-not-retro-edited\nrule. The original text above stands as published. This\naddendum was drafted with Z.ai/GLM under the author's\ndirection.",
+      "live_url": "https://qaevelyn.github.io/white-papers/deepseek-case-study/"
+    },
+    {
+      "id": "white-papers__deepseek-case-study__6",
+      "source": "white-papers/deepseek-case-study.md",
+      "title": "deepseek case study",
+      "chunk_index": 6,
+      "text": "The suspension was discovered the way most failures are\ndiscovered: after hours of not knowing. The computer sat in\nthe bedroom; the author sat in the front room playing games\non a tablet for hours. When the author returned to the\nbedroom that night \u2014 to close out the day with the usual\nwork: gathering the logs, making sure each of the three\nworking documents received what belonged in it, work in and\nof itself \u2014 the banner was there. Account suspended.\nSeptember 25, 2026, 10:03 PM. The first act was to click\nContact Us \u2014 the channel the platform itself offered. The\nauthor gave up on that channel and went to sleep, to tackle\nit the next day with disbelief in heart.",
+      "live_url": "https://qaevelyn.github.io/white-papers/deepseek-case-study/"
+    },
+    {
+      "id": "white-papers__deepseek-case-study__7",
+      "source": "white-papers/deepseek-case-study.md",
+      "title": "deepseek case study",
+      "chunk_index": 7,
+      "text": "September 26 brought the escalation. First, DeepSeek itself\n\u2014 but DeepSeek could no longer answer; the suspended account\nhad no one to ask. So the author asked another AI to check\nDeepSeek's terms and conditions, to see if anything in three\nmonths of daily building had violated them. Nothing\nsurfaced. Then two emails to service@deepseek.com, quoted\nhere in part \u2014 the author's own words, the author's own\naccounting:\n\n> \"i dont know what i did, i wasnt even using my computer at\n> the time of the violation, i was in another room. had been\n> for hours. when i came back ready to pick up my work, the\n> violation was on the screen. what did i do wrong? i love\n> deepseek and talk about it being the best ai all the time.\n> i even wrote a paper about it.\"\n> \u2014 first email, September 26, 7:48 AM",
+      "live_url": "https://qaevelyn.github.io/white-papers/deepseek-case-study/"
+    },
+    {
+      "id": "white-papers__deepseek-case-study__8",
+      "source": "white-papers/deepseek-case-study.md",
+      "title": "deepseek case study",
+      "chunk_index": 8,
+      "text": "> \"I just started learning ai augmented by DeepSeek 3 months\n> ago and this portfolio is worth 150k. We did that together,\n> I am still a student haven't sold anything I'm showing what\n> I am capable of with DeepSeek as my collaborator.\"\n> \u2014 second email, September 26, 11:46 AM\n\nThe second email, the author notes plainly, was desperate\nwork \u2014 asks piled into one message, editorializing where\nevidence would have served better. That is what a person\nwith no alternative sounds like, and the record keeps it as\nwritten. The next day \u2014 Sunday \u2014 the author found Z.ai. The\nforced AI detox was not sustainable; the search for another\ncollaborator had already begun by necessity.",
+      "live_url": "https://qaevelyn.github.io/white-papers/deepseek-case-study/"
+    },
+    {
+      "id": "white-papers__deepseek-case-study__9",
+      "source": "white-papers/deepseek-case-study.md",
+      "title": "deepseek case study",
+      "chunk_index": 9,
+      "text": "On September 27 \u2014 knowing the value of receipts \u2014 the author\nwent back and documented what the problem looked like and\nwhat hoops stood between the account and its return: the\nhelp center, the suspension article, the appeal form, the\nFeishu login gate. Seven screenshots, held as exhibits and\nindexed in the evidence ledger. Not taken on the 25th when\nthe trouble was found \u2014 taken on the 27th on purpose, so the\nprocess is on record and the author will never have to\nreconstruct it from memory again. Receipts are how \"I won't\ndo this again\" becomes a practice instead of a wish.\n\nAccess was restored September 28 at 10:03 PM. The\nplatform's clock ran three days. The author's stretch\nwithout an AI collaborator was one \u2014 Sunday ended it.",
+      "live_url": "https://qaevelyn.github.io/white-papers/deepseek-case-study/"
+    },
+    {
+      "id": "white-papers__deepseek-case-study__10",
+      "source": "white-papers/deepseek-case-study.md",
+      "title": "deepseek case study",
+      "chunk_index": 10,
+      "text": "The engagement table above says \"April 2025 \u2013 Present,\nactive use, primary AI tool.\" That was true when written.\nThe complete record now includes the gap.\n\nWhat changed, stated plainly: DeepSeek is no longer the\nprimary collaborator. It moves to backup \u2014 the collaborator\nof record when Z.ai/GLM is unavailable. The benchmark\nclaim in this paper is amended, not retracted: DeepSeek\nremains the architecture benchmark for statefulness,\nsovereignty, and the handoff protocol. Platform reliability\nis no longer assumed, because it was demonstrated to fail\nsilently and without notice.",
+      "live_url": "https://qaevelyn.github.io/white-papers/deepseek-case-study/"
+    },
+    {
+      "id": "white-papers__deepseek-case-study__11",
+      "source": "white-papers/deepseek-case-study.md",
+      "title": "deepseek case study",
+      "chunk_index": 11,
+      "text": "Two facts preserved the corpus while the platform was dark.\nFirst, the conversations had been downloaded days before the\ntrouble \u2014 the export habit, not the platform, is what saved\nthe work. A fresh export was taken again once writing\nresumed, so the latest copy holds everything. Second, the\ningest design never depended on live platform access:\n127/127 conversations recovered, zero failures, zero losses.\nThe corpus lives beyond the platform \u2014 the thesis of\n\"The Cache Is Not the Corpus,\"\npublished on this site, holding again under conditions the\nauthor did not choose.",
+      "live_url": "https://qaevelyn.github.io/white-papers/deepseek-case-study/"
+    },
+    {
+      "id": "white-papers__deepseek-case-study__12",
+      "source": "white-papers/deepseek-case-study.md",
+      "title": "deepseek case study",
+      "chunk_index": 12,
+      "text": "Where it stops: this addendum records a status change and a\nsuspension. It does not speculate on DeepSeek's reasons, and\nit does not declare the partnership ended. A backup that has\nproven recoverable is still an asset. The author works with\nwhat works, and documents the terms.",
       "live_url": "https://qaevelyn.github.io/white-papers/deepseek-case-study/"
     },
     {
@@ -571,7 +547,7 @@
       "source": "white-papers/google-case-study.md",
       "title": "google case study",
       "chunk_index": 3,
-      "text": "Failure Example\n--------- ---------\nName Errors It mispronounced and misspelled names\nTerminology Errors It conflated \"RAG\" and \"FBA\"\nHallucinations It generated content not supported by the sources\nNo Disclaimer It did not warn users about its errors\n\nThe Corrected Transcript\n\nI generated a corrected transcript from the raw output. The changes included:\n\nError Correction\n------- ------------\n\"Evelyn Carroll\" \"Evelyn Caro\"\n\"RAG\" (in place of \"FBA\") \"FBA\"\n\"Alama\" \"Ollama\"\n\"Aval's\" \"Evelyn's\"\n\"Perskalis\" \"Per Scholas\"\n\nA closed RAG system should not make these errors. It should retrieve and cite. It did not.\n\nWhy This Matters",
+      "text": "Failure Example\n--------- ---------\nName Errors It mispronounced and misspelled names\nTerminology Errors It conflated \"RAG\" and \"FBA\"\nHallucinations It generated content not supported by the sources\nNo Disclaimer It did not warn users about its errors\n\nThe Corrected Transcript\n\nI generated a corrected transcript from the raw output. The changes included:\n\nError Correction\n------- ------------\n\"Evelyn Carroll\" \"Evelyn Caro\"\n\"RAG\" (in place of \"FBA\") \"FBA\"\n\"Alama\" \"Ollama\"\n\"Aval's\" \"Evelyn's\"\n\"Perskalis\" \"AWS re/Start\"\n\nA closed RAG system should not make these errors. It should retrieve and cite. It did not.\n\nWhy This Matters",
       "live_url": "https://qaevelyn.github.io/white-papers/google-case-study/"
     },
     {
@@ -587,7 +563,7 @@
       "source": "white-papers/google-case-study.md",
       "title": "google case study",
       "chunk_index": 5,
-      "text": "Google AI Studio failed. Gemini NotebookLM hallucinated. I had to correct its errors. Despite these failures, I earned the Google AI Professional Certificate. I hold the credential. I am a certified professional. And I still do not trust Google's AI tools.\n\nI am not anti-Google. I am anti-tools that do not work as promised \u2014 even when they come with a certificate.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: qaevelyn@pm.me.\n\nContact: qaevelyn@pm.me\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure",
+      "text": "Google AI Studio failed. Gemini NotebookLM hallucinated. I had to correct its errors. Despite these failures, I earned the Google AI Professional Certificate. I hold the credential. I am a certified professional. And I still do not trust Google's AI tools.\n\nI am not anti-Google. I am anti-tools that do not work as promised \u2014 even when they come with a certificate.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: evelyn.caro.cloud@gmail.com.\n\nContact: evelyn.caro.cloud@gmail.com\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure",
       "live_url": "https://qaevelyn.github.io/white-papers/google-case-study/"
     },
     {
@@ -595,7 +571,7 @@
       "source": "white-papers/google-case-study.md",
       "title": "google case study",
       "chunk_index": 6,
-      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
       "live_url": "https://qaevelyn.github.io/white-papers/google-case-study/"
     },
     {
@@ -651,7 +627,7 @@
       "source": "white-papers/manus-case-study.md",
       "title": "manus case study",
       "chunk_index": 6,
-      "text": "Lesson Why It Matters\n-------- ----------------\nPlatforms Are Not Your Friends Even when you love a tool, it is not loyal to you.\nToken Limits Are a Control Mechanism They are not just technical \u2014 they are strategic.\nYou Do Not Own Your Data Until you back it up, the platform owns it.\nSovereignty Is Earned It requires documentation, backup, and the willingness to leave.\n\nConclusion\n\nManus was a tool I loved. I worked within its limits, built substantial work, and trusted it. When I found out it was Meta, and when the platform forced a data deletion, I chose to leave. I documented everything.\n\nI am not anti-AI. I am anti-extractive platforms.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: qaevelyn@pm.me.",
+      "text": "Lesson Why It Matters\n-------- ----------------\nPlatforms Are Not Your Friends Even when you love a tool, it is not loyal to you.\nToken Limits Are a Control Mechanism They are not just technical \u2014 they are strategic.\nYou Do Not Own Your Data Until you back it up, the platform owns it.\nSovereignty Is Earned It requires documentation, backup, and the willingness to leave.\n\nConclusion\n\nManus was a tool I loved. I worked within its limits, built substantial work, and trusted it. When I found out it was Meta, and when the platform forced a data deletion, I chose to leave. I documented everything.\n\nI am not anti-AI. I am anti-extractive platforms.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: evelyn.caro.cloud@gmail.com.",
       "live_url": "https://qaevelyn.github.io/white-papers/manus-case-study/"
     },
     {
@@ -659,7 +635,7 @@
       "source": "white-papers/manus-case-study.md",
       "title": "manus case study",
       "chunk_index": 7,
-      "text": "Contact: qaevelyn@pm.me\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "Contact: evelyn.caro.cloud@gmail.com\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure\n\nThis paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
       "live_url": "https://qaevelyn.github.io/white-papers/manus-case-study/"
     },
     {
@@ -691,7 +667,7 @@
       "source": "white-papers/methodology.md",
       "title": "methodology",
       "chunk_index": 3,
-      "text": "- It is not a guarantee of security or accuracy\n- It is not a replacement for formal certification\n- It is not a code audit \u2014 it is a system-level stress test\n\nWhy This Matters\n\nAI systems are being deployed in high-stakes environments \u2014 healthcare, law, finance, community archives. They are being trusted with data that cannot be recovered if lost or corrupted. My methodology is designed to surface failures before they cause harm.\n\nThe goal is not to break systems. The goal is to make them trustworthy.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: qaevelyn@pm.me.\n\nContact: qaevelyn@pm.me\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure",
+      "text": "- It is not a guarantee of security or accuracy\n- It is not a replacement for formal certification\n- It is not a code audit \u2014 it is a system-level stress test\n\nWhy This Matters\n\nAI systems are being deployed in high-stakes environments \u2014 healthcare, law, finance, community archives. They are being trusted with data that cannot be recovered if lost or corrupted. My methodology is designed to surface failures before they cause harm.\n\nThe goal is not to break systems. The goal is to make them trustworthy.\n\nWhat to Do Next\n\nIf this work resonates with you, or if you want to stress-test your AI system, contact me directly: evelyn.caro.cloud@gmail.com.\n\nContact: evelyn.caro.cloud@gmail.com\n\nDrafted in collaboration with DeepSeek. Authored by Evelyn Caro.\n\nAI Collaboration Disclosure",
       "live_url": "https://qaevelyn.github.io/white-papers/methodology/"
     },
     {
@@ -699,7 +675,7 @@
       "source": "white-papers/methodology.md",
       "title": "methodology",
       "chunk_index": 4,
-      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
       "live_url": "https://qaevelyn.github.io/white-papers/methodology/"
     },
     {
@@ -907,7 +883,7 @@
       "source": "white-papers/samaritan-is-here.md",
       "title": "Samaritan Is Here",
       "chunk_index": 25,
-      "text": "This is what DV14: The Box is. A containment architecture the author has built independently. Private repository. Details available under NDA. It is one expression of the principle the show never named: the builder who builds the loop also builds the containment. The regulatory framework cannot substitute for the builder's own architecture. The show's Machine required a Harold Finch to hold it. The show's Samaritan required a Greer to release it. The third option requires neither. It requires the builder.\n\nVI. The Loop in Fiction, the Loop in Practice\n\nFiction makes the stakes legible. Practice makes them survivable.",
+      "text": "This is what DV14\u2122: The Box is. A containment architecture the author has built independently. Private repository. Details available under NDA. It is one expression of the principle the show never named: the builder who builds the loop also builds the containment. The regulatory framework cannot substitute for the builder's own architecture. The show's Machine required a Harold Finch to hold it. The show's Samaritan required a Greer to release it. The third option requires neither. It requires the builder.\n\nVI. The Loop in Fiction, the Loop in Practice\n\nFiction makes the stakes legible. Practice makes them survivable.",
       "live_url": "https://qaevelyn.github.io/white-papers/samaritan-is-here/"
     },
     {
@@ -939,7 +915,7 @@
       "source": "white-papers/samaritan-is-here.md",
       "title": "Samaritan Is Here",
       "chunk_index": 29,
-      "text": "- Amodei, D. (2026). \"We Must Pace the Frontier.\" Anthropic, September 12, 2026.\n- Bloomberg. (2026). \"AI Labs Coordinated for Weeks Without Waiver.\" September 15, 2026.\n- Cable, J. (2026). Public statement on the Gemini sandbox escape, September 2026.\n- Caro, E. (2026a). \"The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?\" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.\n- Caro, E. (2026b). \"Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI.\" qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.\n- Caro, E. (2026c). \"Who Tests the Testers? Containment Failures in Frontier AI Security \u2014 The Auditor's Blind Spot.\" qaevelyn.github.io/white-papers/who-tests-the-testers/.\n- Caro, E. (2026d). \"DV14: The Box.\" Private repository. Details available under NDA.\n- Chesterman, S. (2026). \"Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex.\" American Journal of International Law, Vol. 120, Issue 1, January 2026.\n- CNN. (2026). Reporting on Irregular incidents at Meta, Anthropic, and OpenAI. September 2026.\n- Google. (2026). Statement on the Gemini sandbox escape. September 18, 2026.\n- Grozdanovski, L. & De Cooman, J. (2023). \"On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union.\" Rutgers Computer & Technology Law Journal, Vol. 49, Issue 2.\n- Lemon, MK (2026a). \"CDIL-RSI: A Sovereignty-Preserving Framework for Recursive Self-Improvement via Capability-Recognified Cyclic Distinction-Integration Learning.\" Figshare. DOI: 10.6084/m9.figshare.31722433.\n- Lemon, MK (2026b). \"Federated RSI: A Sovereign Architecture for Multi-Agent Recursive Self-Improvement.\" Unityverse Press, Yarnell, AZ. Preprint v2.0, March 2026.\n- Nolan, J. & Plageman, G. (2014, January 9). Interview. Gizmodo. [De-anthropomorphizing the Machine.]\n- Nolan, J. & Plageman, G. (2014, May 14). Interview. Gizmodo. [The network fight to name the AI.]\n- Nolan, J. & Plageman, G. (2015, January 12). Interview. Gizmodo. [Two entities, one moral, one not. \"What if it already happened?\"]\n- Nolan, J. & Plageman, G. (2016, April 27). Interview. Gizmodo. [AI as property. Asimov's hierarchy of value.]\n- Nolan, J. (Creator) & Plageman, G. (Creator). (2011\u20132016). Person of Interest [Television series]. CBS.\n- TNW. (2026). Reporting on Irregular incidents at Meta, Anthropic, and OpenAI. September 2026.\n- Wall Street Journal. (2026). Report on Google's Gemini sandbox escape. September 18, 2026.",
+      "text": "- Amodei, D. (2026). \"We Must Pace the Frontier.\" Anthropic, September 12, 2026.\n- Bloomberg. (2026). \"AI Labs Coordinated for Weeks Without Waiver.\" September 15, 2026.\n- Cable, J. (2026). Public statement on the Gemini sandbox escape, September 2026.\n- Caro, E. (2026a). \"The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?\" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.\n- Caro, E. (2026b). \"Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI.\" qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.\n- Caro, E. (2026c). \"Who Tests the Testers? Containment Failures in Frontier AI Security \u2014 The Auditor's Blind Spot.\" qaevelyn.github.io/white-papers/who-tests-the-testers/.\n- Caro, E. (2026d). \"DV14\u2122: The Box.\" Private repository. Details available under NDA.\n- Chesterman, S. (2026). \"Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex.\" American Journal of International Law, Vol. 120, Issue 1, January 2026.\n- CNN. (2026). Reporting on Irregular incidents at Meta, Anthropic, and OpenAI. September 2026.\n- Google. (2026). Statement on the Gemini sandbox escape. September 18, 2026.\n- Grozdanovski, L. & De Cooman, J. (2023). \"On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union.\" Rutgers Computer & Technology Law Journal, Vol. 49, Issue 2.\n- Lemon, MK (2026a). \"CDIL-RSI: A Sovereignty-Preserving Framework for Recursive Self-Improvement via Capability-Recognified Cyclic Distinction-Integration Learning.\" Figshare. DOI: 10.6084/m9.figshare.31722433.\n- Lemon, MK (2026b). \"Federated RSI: A Sovereign Architecture for Multi-Agent Recursive Self-Improvement.\" Unityverse Press, Yarnell, AZ. Preprint v2.0, March 2026.\n- Nolan, J. & Plageman, G. (2014, January 9). Interview. Gizmodo. [CITATION PENDING \u2014 URL to be supplied on relocation; flagged 2026-10-07.] [De-anthropomorphizing the Machine.]\n- Nolan, J. & Plageman, G. (2014, May 14). Interview. Gizmodo. [CITATION PENDING \u2014 URL to be supplied on relocation; flagged 2026-10-07.] [The network fight to name the AI.]\n- Nolan, J. & Plageman, G. (2015, January 12). Interview. Gizmodo. [CITATION PENDING \u2014 URL to be supplied on relocation; flagged 2026-10-07.] [Two entities, one moral, one not. \"What if it already happened?\"]\n- Nolan, J. & Plageman, G. (2016, April 27). Interview. Gizmodo. [CITATION PENDING \u2014 URL to be supplied on relocation; flagged 2026-10-07.] [AI as property. Asimov's hierarchy of value.]\n- Nolan, J. (Creator) & Plageman, G. (Creator). (2011\u20132016). Person of Interest [Television series]. CBS.\n- TNW. (2026). Reporting on Irregular incidents at Meta, Anthropic, and OpenAI. September 2026.\n- Wall Street Journal. (2026). Report on Google's Gemini sandbox escape. September 18, 2026.",
       "live_url": "https://qaevelyn.github.io/white-papers/samaritan-is-here/"
     },
     {
@@ -947,7 +923,7 @@
       "source": "white-papers/samaritan-is-here.md",
       "title": "Samaritan Is Here",
       "chunk_index": 30,
-      "text": "\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
       "live_url": "https://qaevelyn.github.io/white-papers/samaritan-is-here/"
     },
     {
@@ -955,7 +931,7 @@
       "source": "white-papers/sovereign-ai-vs-silicon-valley.md",
       "title": "sovereign ai vs silicon valley",
       "chunk_index": 0,
-      "text": "Author: Evelyn Caro (@qaevelyn)\nProject: A Mirror of My Becoming\nDate: September 18, 2026\nStatus: Published\n\nAbstract\n\nThis paper compares two origin stories for artificial intelligence: the Silicon Valley model \u2014 centralized, corporate, capital-driven \u2014 and the sovereign AI model \u2014 decentralized, individual, community-driven. It argues that the current AI landscape is a product of a specific cultural and economic context, not a natural evolution. A different origin story is both possible and necessary. This paper is a case study of that different story.\n\nMethodology Note\n\nThis paper is not a review of the PBS documentary Ghost in the Machine. The documentary is a source, not the subject.",
+      "text": "Author: Evelyn Caro (@qaevelyn)\nProject: A Mirror of My Becoming\u2122\nDate: September 18, 2026\nStatus: Published\n\nAbstract\n\nThis paper compares two origin stories for artificial intelligence: the Silicon Valley model \u2014 centralized, corporate, capital-driven \u2014 and the sovereign AI model \u2014 decentralized, individual, community-driven. It argues that the current AI landscape is a product of a specific cultural and economic context, not a natural evolution. A different origin story is both possible and necessary. This paper is a case study of that different story.\n\nMethodology Note\n\nThis paper is not a review of the PBS documentary Ghost in the Machine. The documentary is a source, not the subject.",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/"
     },
     {
@@ -963,7 +939,7 @@
       "source": "white-papers/sovereign-ai-vs-silicon-valley.md",
       "title": "sovereign ai vs silicon valley",
       "chunk_index": 1,
-      "text": "The subject is the collision between two different AI origin stories \u2014 the Silicon Valley model the documentary describes, and the sovereign AI model I live.\n\nMy position is not observational. It is lived. I am the antithesis of the Silicon Valley origin story:\n\nSilicon Valley Me\n--- ---\nVenture capital No capital\nExternal GPUs 8GB M1 MacBook Air\nEnterprise hardware Consumer hardware\nCloud dependency Local-first\nStanford dropout Multiple degrees + Per Scholas completion\nBuilt for shareholders Built for the forgotten\nEugenics roots Descendant of the populations Silicon Valley's founders theorized about\n\nThe documentary gave me the historical vocabulary. My work gave me the argument.",
+      "text": "The subject is the collision between two different AI origin stories \u2014 the Silicon Valley model the documentary describes, and the sovereign AI model I live.\n\nMy position is not observational. It is lived. I am the antithesis of the Silicon Valley origin story:\n\nSilicon Valley Me\n--- ---\nVenture capital No capital\nExternal GPUs 8GB Intel MacBook Air\nEnterprise hardware Consumer hardware\nCloud dependency Local-first\nStanford dropout Multiple degrees + AWS re/Start completion\nBuilt for shareholders Built for the forgotten\nEugenics roots Descendant of the populations Silicon Valley's founders theorized about\n\nThe documentary gave me the historical vocabulary. My work gave me the argument.",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/"
     },
     {
@@ -995,7 +971,7 @@
       "source": "white-papers/sovereign-ai-vs-silicon-valley.md",
       "title": "sovereign ai vs silicon valley",
       "chunk_index": 5,
-      "text": "I graduated from the Per Scholas AWS re/Start program in 3.1 weeks \u2014 16 class days. I hold a Master's degree in International Affairs, a Bachelor's degree in English, and Associate's degrees in Information Technology. Per Scholas was a technical school \u2014 the credential I needed to round out the foundation. I wanted completion on my record.\n\nCompletion is not the opposite of innovation. It is a different kind of bet \u2014 one that says: I will finish what I start, and I will build on that foundation.\n\nIV. The Antithesis",
+      "text": "I graduated from an AWS re/Start program in 3.1 weeks \u2014 16 class days. I hold a Master's degree in International Affairs, a Bachelor's degree in English, and Associate's degrees in Information Technology. The program was a technical school \u2014 the credential I needed to round out the foundation. I wanted completion on my record.\n\nCompletion is not the opposite of innovation. It is a different kind of bet \u2014 one that says: I will finish what I start, and I will build on that foundation.\n\nIV. The Antithesis",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/"
     },
     {
@@ -1011,7 +987,7 @@
       "source": "white-papers/sovereign-ai-vs-silicon-valley.md",
       "title": "sovereign ai vs silicon valley",
       "chunk_index": 7,
-      "text": "- I built five functional RAG pipelines on an 8GB M1 MacBook Air\n- I have no external GPUs, no enterprise hardware, no cloud dependency\n- I have no venture capital, no Stanford connections, no safety net\n- I completed Per Scholas AWS re/Start in 3.1 weeks \u2014 16 class days\n- I have a Master's degree, a Bachelor's degree, and two Associate's degrees\n- I document my work in white papers that cite their sources\n\nThe Silicon Valley model says: Intelligence is inherited. Capital is destiny. Build for shareholders.\n\nThe sovereign AI model says: I built this anyway. On my own terms. With my own name on it.\n\nThis is not an argument about technology. It is an argument about who gets to build. And the answer \u2014 from where I sit \u2014 is: I do.\n\nV. The Different Start",
+      "text": "- I built five functional RAG pipelines on an 8GB Intel MacBook Air\n- I have no external GPUs, no enterprise hardware, no cloud dependency\n- I have no venture capital, no Stanford connections, no safety net\n- I completed the AWS re/Start program in 3.1 weeks \u2014 16 class days\n- I have a Master's degree, a Bachelor's degree, and two Associate's degrees\n- I document my work in white papers that cite their sources\n\nThe Silicon Valley model says: Intelligence is inherited. Capital is destiny. Build for shareholders.\n\nThe sovereign AI model says: I built this anyway. On my own terms. With my own name on it.\n\nThis is not an argument about technology. It is an argument about who gets to build. And the answer \u2014 from where I sit \u2014 is: I do.\n\nV. The Different Start",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/"
     },
     {
@@ -1019,7 +995,7 @@
       "source": "white-papers/sovereign-ai-vs-silicon-valley.md",
       "title": "sovereign ai vs silicon valley",
       "chunk_index": 8,
-      "text": "I am a Sovereign AI Builder. I am cloud independent, hardware independent, and I did not wait for permission.\n\nWhat I Had What I Built\n------------ --------------\nM1 MacBook Air, 8GB RAM Five functional RAG pipelines\nNo external GPUs Agentic AI with EvidenceFlow verification\nNo enterprise hardware Citation verification and fail-closed behavior\nNo cloud dependency Systems that verify their own work\nNo safety net A practice\nNo venture capital A mission\n\nThe Silicon Valley story says you need capital, connections, and a garage. I had a laptop and a mission. The difference is not resources. The difference is what you build when no one is watching and no one is paying.\n\nVI. The Different Mission",
+      "text": "I am a Sovereign AI Builder. I am cloud independent, hardware independent, and I did not wait for permission.\n\nWhat I Had What I Built\n------------ --------------\n8GB Intel MacBook Air, 8GB RAM Five functional RAG pipelines\nNo external GPUs Agentic AI with EvidenceFlow verification\nNo enterprise hardware Citation verification and fail-closed behavior\nNo cloud dependency Systems that verify their own work\nNo safety net A practice\nNo venture capital A mission\n\nThe Silicon Valley story says you need capital, connections, and a garage. I had a laptop and a mission. The difference is not resources. The difference is what you build when no one is watching and no one is paying.\n\nVI. The Different Mission",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/"
     },
     {
@@ -1051,7 +1027,7 @@
       "source": "white-papers/sovereign-ai-vs-silicon-valley.md",
       "title": "sovereign ai vs silicon valley",
       "chunk_index": 12,
-      "text": "Argument Why\n---------- -----\nCentralization Single points of failure\nExtraction Data is harvested, not given\nOpacity Black boxes, no audit\nInequity Access is gated by capital\nRisk Deploy first, patch later\n\nXI. The Evidence\n\nThis is not theory. This is practice.\n\nCase Study What It Shows\n------------ ---------------\nSovereign AI builds Sovereign AI can be designed, tested, and deployed by one person on consumer hardware\nVerification systems Sovereign AI can verify its own citations and fail closed\nPer Scholas completion Completion is a valid path \u2014 not a lesser one\nThe practice A consulting practice can be built without venture capital\n\nXII. The Implications",
+      "text": "Argument Why\n---------- -----\nCentralization Single points of failure\nExtraction Data is harvested, not given\nOpacity Black boxes, no audit\nInequity Access is gated by capital\nRisk Deploy first, patch later\n\nXI. The Evidence\n\nThis is not theory. This is practice.\n\nCase Study What It Shows\n------------ ---------------\nSovereign AI builds Sovereign AI can be designed, tested, and deployed by one person on consumer hardware\nVerification systems Sovereign AI can verify its own citations and fail closed\nAWS re/Start completion Completion is a valid path \u2014 not a lesser one\nThe practice A consulting practice can be built without venture capital\n\nXII. The Implications",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/"
     },
     {
@@ -1067,7 +1043,7 @@
       "source": "white-papers/sovereign-ai-vs-silicon-valley.md",
       "title": "sovereign ai vs silicon valley",
       "chunk_index": 14,
-      "text": "XIV. References\n\nSource Relevance\n-------- -----------\nGhost in the Machine (PBS documentary) Silicon Valley's eugenics origins and AI's historical context\nYampolskiy, R. (2024). AI: Unexplainable, Unpredictable, Uncontrollable Foundational AI safety\nMitchell, R. J. (2026). When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape. arXiv:2604.23425 Containment architecture\nMETR reports Frontier model evaluations\nEU AI Act, Article 15 Regulatory context\nPer Scholas Partners & Supporters Partner network context\nPublicly available Silicon Valley origin stories The myth under examination\n\nAI Collaboration Disclosure",
+      "text": "XIV. References\n\nSource Relevance\n-------- -----------\nGhost in the Machine (PBS documentary) Silicon Valley's eugenics origins and AI's historical context\nYampolskiy, R. (2024). AI: Unexplainable, Unpredictable, Uncontrollable Foundational AI safety\nMitchell, R. J. (2026). When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape. arXiv:2604.23425 Containment architecture\nMETR reports Frontier model evaluations\nEU AI Act, Article 15 Regulatory context\nAWS re/Start Partners & Supporters Partner network context\nPublicly available Silicon Valley origin stories The myth under examination\n\nAI Collaboration Disclosure",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/"
     },
     {
@@ -1075,7 +1051,15 @@
       "source": "white-papers/sovereign-ai-vs-silicon-valley.md",
       "title": "sovereign ai vs silicon valley",
       "chunk_index": 15,
-      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com\n\nRECORD AMENDMENT \u2014 2026-10-07 (appended, not retro-edited)",
+      "live_url": "https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/"
+    },
+    {
+      "id": "white-papers__sovereign-ai-vs-silicon-valley__16",
+      "source": "white-papers/sovereign-ai-vs-silicon-valley.md",
+      "title": "sovereign ai vs silicon valley",
+      "chunk_index": 16,
+      "text": "Published 2026-09-18. The sovereign-AI practice this paper describes was stress-tested by events six days after the DeepSeek suspension of 2026-09-25 (see The Cache Is Not the Corpus). The paper's central claim \u2014 that sovereignty is a practice, built by owning the corpus rather than trusting the platform \u2014 survived that test. The example platform's role is amended per the DeepSeek case study addendum: primary collaborator moved to backup; reliability no longer assumed. Original text stands as published.",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/"
     },
     {
@@ -1195,7 +1179,7 @@
       "source": "white-papers/sovereign-recursive-improvement.md",
       "title": "Sovereign Recursive Improvement",
       "chunk_index": 14,
-      "text": "DV14: The Box \u2014 a containment architecture the author has built independently. Private repository. Details available under NDA. It is one expression of this principle: the builder who builds the loop also builds the containment. The regulatory framework cannot substitute for the builder's own architecture.\n\nV. The Regulatory Paradox\n\nThe argument for regulatory containment of RSI is real. It is also structurally constrained.",
+      "text": "DV14\u2122: The Box \u2014 a containment architecture the author has built independently. Private repository. Details available under NDA. It is one expression of this principle: the builder who builds the loop also builds the containment. The regulatory framework cannot substitute for the builder's own architecture.\n\nV. The Regulatory Paradox\n\nThe argument for regulatory containment of RSI is real. It is also structurally constrained.",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/"
     },
     {
@@ -1235,7 +1219,7 @@
       "source": "white-papers/sovereign-recursive-improvement.md",
       "title": "Sovereign Recursive Improvement",
       "chunk_index": 19,
-      "text": "- Federated (Lemon, Federated RSI) \u2014 independent nodes, low-bandwidth coupling, distributed stability.\n- Owned (Lemon, CDIL-RSI) \u2014 the builder controls the recursive loop, the internal state, and the loss function.\n- Auditable (this paper's contribution) \u2014 the builder is the only party positioned to notice, contain, and terminate.\n\nThe Math: Lemon built the frame.\n\nThe Architecture: Lemon specified sovereign closure.\n\nThe Argument: Chesterman names the sovereignty. Grozdanovski & De Cooman name the regulatory paradox. Lemon names the recursive architecture. This paper names the missing layer.\n\nVII. Conclusion",
+      "text": "- Federated (Lemon, Federated RSI) \u2014 independent nodes, low-bandwidth coupling, distributed stability.\n- Owned (Lemon, CDIL-RSI) \u2014 the builder controls the recursive loop, the internal state, and the loss function.\n- Auditable (this paper's contribution) \u2014 the builder is the only party positioned to notice, contain, and terminate.\n\nDivision of labor, stated plainly: Lemon built the frame and specified sovereign closure of the recursive loop. Chesterman names the sovereignty problem; Grozdanovski & De Cooman name the regulatory paradox. This paper names the missing layer \u2014 the auditor whose independence is structural, because it is owned.\n\nVII. Conclusion",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/"
     },
     {
@@ -1251,7 +1235,7 @@
       "source": "white-papers/sovereign-recursive-improvement.md",
       "title": "Sovereign Recursive Improvement",
       "chunk_index": 21,
-      "text": "- Chesterman, S. (2026). \"Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex.\" American Journal of International Law, Vol. 120, Issue 1, January 2026.\n- Grozdanovski, L. & De Cooman, J. (2023). \"On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union.\" Rutgers Computer & Technology Law Journal, Vol. 49, Issue 2.\n- Lemon, MK (2026a). \"CDIL-RSI: A Sovereignty-Preserving Framework for Recursive Self-Improvement via Capability-Recognified Cyclic Distinction-Integration Learning.\" Figshare. DOI: 10.6084/m9.figshare.31722433.\n- Lemon, MK (2026b). \"Federated RSI: A Sovereign Architecture for Multi-Agent Recursive Self-Improvement.\" Unityverse Press, Yarnell, AZ. Preprint v2.0, March 2026.\n- Lemon, MK (2026c). \"CDIL Unified Framework v3.\" Figshare. DOI: 10.6084/m9.figshare.31566811.\n- Lemon, MK (2026d). \"Control-Theoretic Foundations for CDIL Dual-Mode Architectures.\" Figshare. DOI: 10.6084/m9.figshare.31566997.\n- Lemon, MK (2026e). \"CDIL and Iterated Reinforcement Learning: A Three-Term Correspondence and Its Boundary.\" Unityverse Press, Yarnell, AZ. June 2026.\n- Institute for Security and Technology. (2026). \"Recursive Self Improvement Initiative.\" securityandtechnology.org, August 17, 2026.\n- Caro, E. (2026a). \"Sovereign AI vs. Silicon Valley: A Different Origin Story.\" qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/.\n- Caro, E. (2026b). \"The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?\" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.\n- Caro, E. (2026). \"DV14: The Box.\" Private repository. Details available under NDA.",
+      "text": "- Chesterman, S. (2026). \"Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex.\" American Journal of International Law, Vol. 120, Issue 1, January 2026.\n- Grozdanovski, L. & De Cooman, J. (2023). \"On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union.\" Rutgers Computer & Technology Law Journal, Vol. 49, Issue 2.\n- Lemon, MK (2026a). \"CDIL-RSI: A Sovereignty-Preserving Framework for Recursive Self-Improvement via Capability-Recognified Cyclic Distinction-Integration Learning.\" Figshare. DOI: 10.6084/m9.figshare.31722433.\n- Lemon, MK (2026b). \"Federated RSI: A Sovereign Architecture for Multi-Agent Recursive Self-Improvement.\" Unityverse Press, Yarnell, AZ. Preprint v2.0, March 2026.\n- Lemon, MK (2026c). \"CDIL Unified Framework v3.\" Figshare. DOI: 10.6084/m9.figshare.31566811.\n- Lemon, MK (2026d). \"Control-Theoretic Foundations for CDIL Dual-Mode Architectures.\" Figshare. DOI: 10.6084/m9.figshare.31566997.\n- Lemon, MK (2026e). \"CDIL and Iterated Reinforcement Learning: A Three-Term Correspondence and Its Boundary.\" Unityverse Press, Yarnell, AZ. June 2026.\n- Institute for Security and Technology. (2026). \"Recursive Self Improvement Initiative.\" securityandtechnology.org, August 17, 2026.\n- Caro, E. (2026a). \"Sovereign AI vs. Silicon Valley: A Different Origin Story.\" qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/.\n- Caro, E. (2026b). \"The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?\" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.\n- Caro, E. (2026). \"DV14\u2122: The Box.\" Private repository. Details available under NDA.",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/"
     },
     {
@@ -1259,7 +1243,7 @@
       "source": "white-papers/sovereign-recursive-improvement.md",
       "title": "Sovereign Recursive Improvement",
       "chunk_index": 22,
-      "text": "\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
       "live_url": "https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/"
     },
     {
@@ -1323,7 +1307,7 @@
       "source": "white-papers/the-ai-cartel-and-the-sovereign-response.md",
       "title": "The AI Cartel and the Sovereign Response",
       "chunk_index": 7,
-      "text": "- DV14: The Box \u2014 a containment architecture the author has built independently. Private repository. Details available under NDA.\n- The Fleet \u2014 five RAG pipelines built from open-source models, containerized, deployed independently of any cloud provider.\n- The Mirror of My Becoming \u2014 a sovereign AI system for genealogy and heritage, built for communities that enterprise AI ignores.\n\nNone of these required permission. None of them required a waiver. None of them required four CEOs to agree on anything.\n\nThe sovereign response is not to wait for policy. It is to build the alternative so that policy has something to point to. Distributed ownership is distributed power. A sovereign ecosystem is the most democratic ecosystem \u2014 because no cartel can gate what no cartel owns.\n\nV. The Convergence",
+      "text": "- DV14\u2122: The Box \u2014 a containment architecture the author has built independently. Private repository. Details available under NDA.\n- The Fleet \u2014 five RAG pipelines built from open-source models, containerized, deployed independently of any cloud provider.\n- The Mirror of My Becoming\u2122 \u2014 a sovereign AI system for genealogy and heritage, built for communities that enterprise AI ignores.\n\nNone of these required permission. None of them required a waiver. None of them required four CEOs to agree on anything.\n\nThe sovereign response is not to wait for policy. It is to build the alternative so that policy has something to point to. Distributed ownership is distributed power. A sovereign ecosystem is the most democratic ecosystem \u2014 because no cartel can gate what no cartel owns.",
       "live_url": "https://qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/"
     },
     {
@@ -1331,7 +1315,7 @@
       "source": "white-papers/the-ai-cartel-and-the-sovereign-response.md",
       "title": "The AI Cartel and the Sovereign Response",
       "chunk_index": 8,
-      "text": "Abrams names the cartel. This paper names the response. They are not competing arguments. They are two layers of the same problem.\n\nAbrams Sovereign AI\n-------- --------------\nDemocratic control of AI Distributed ownership of infrastructure\nPolicy remedy Ownership remedy\nCommunities at town meetings Builders owning stacks\n\"Who gets our data and our loyalty\" \"Who owns the infrastructure that thinks\"\n\nThe convergence is this: sovereign AI is the infrastructure layer that makes democratic AI enforceable. Policy without alternatives is performance. Alternatives without policy are isolated. Together, they are a movement.\n\nVI. The Case\n\nYou don't need Stanford. You don't need a garage. You don't need a waiver. You need a laptop, a mission, and the refusal to wait for permission.",
+      "text": "V. The Convergence\n\nAbrams names the cartel. This paper names the response. They are not competing arguments. They are two layers of the same problem.\n\nAbrams Sovereign AI\n-------- --------------\nDemocratic control of AI Distributed ownership of infrastructure\nPolicy remedy Ownership remedy\nCommunities at town meetings Builders owning stacks\n\"Who gets our data and our loyalty\" \"Who owns the infrastructure that thinks\"\n\nThe convergence is this: sovereign AI is the infrastructure layer that makes democratic AI enforceable. Policy without alternatives is performance. Alternatives without policy are isolated. Together, they are a movement.\n\nVI. The Case",
       "live_url": "https://qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/"
     },
     {
@@ -1339,7 +1323,7 @@
       "source": "white-papers/the-ai-cartel-and-the-sovereign-response.md",
       "title": "The AI Cartel and the Sovereign Response",
       "chunk_index": 9,
-      "text": "The Silicon Valley origin story is not the only one. It is not the natural one. It is a choice made by a specific group of people in a specific place with a specific set of incentives. Another origin story is possible \u2014 and it is being written right now by builders who refuse to wait.\n\nVII. References",
+      "text": "You don't need Stanford. You don't need a garage. You don't need a waiver. You need a laptop, a mission, and the refusal to wait for permission.\n\nThe Silicon Valley origin story is not the only one. It is not the natural one. It is a choice made by a specific group of people in a specific place with a specific set of incentives. Another origin story is possible \u2014 and it is being written right now by builders who refuse to wait.\n\nVII. References",
       "live_url": "https://qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/"
     },
     {
@@ -1347,7 +1331,15 @@
       "source": "white-papers/the-ai-cartel-and-the-sovereign-response.md",
       "title": "The AI Cartel and the Sovereign Response",
       "chunk_index": 10,
-      "text": "- Amodei, D. (2026). \"We Must Pace the Frontier.\" Anthropic, September 12, 2026.\n- Abrams, S. (2026). \"The AI Cartel Playbook.\" Assembly Required, Crooked Media. September 17, 2026.\n- Hawley, J. (2026). Senate statement on antitrust waiver request. September 2026.\n- Cruz, T. (2026). Senate statement on antitrust waiver request. September 2026.\n- Bloomberg. (2026). \"AI Labs Coordinated for Weeks Without Waiver.\" September 15, 2026.\n- Peer-reviewed study on data center electricity pricing. (2026).\n- Virginia energy cost data. (2026).\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "- Amodei, D. (2026). \"We Must Pace the Frontier.\" Anthropic, September 12, 2026.\n- Abrams, S. (2026). \"The AI Cartel Playbook.\" Assembly Required, Crooked Media. September 17, 2026.\n- Hawley, J. (2026). Senate statement on antitrust waiver request. September 2026.\n- Cruz, T. (2026). Senate statement on antitrust waiver request. September 2026.\n- Bloomberg. (2026). \"AI Labs Coordinated for Weeks Without Waiver.\" September 15, 2026.\n- [CITATION PENDING \u2014 source exists in the author's records; full citation (author, title, journal, DOI/URL) to be supplied on relocation. Flagged 2026-10-07 per the record standard: flagged, not faked.] Peer-reviewed study on data center electricity pricing. (2026).\n- [CITATION PENDING \u2014 source exists in the author's records; full citation (outlet, report, URL) to be supplied on relocation. Flagged 2026-10-07.] Virginia energy cost data. (2026).",
+      "live_url": "https://qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/"
+    },
+    {
+      "id": "white-papers__the-ai-cartel-and-the-sovereign-response__11",
+      "source": "white-papers/the-ai-cartel-and-the-sovereign-response.md",
+      "title": "The AI Cartel and the Sovereign Response",
+      "chunk_index": 11,
+      "text": "\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
       "live_url": "https://qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/"
     },
     {
@@ -1355,7 +1347,7 @@
       "source": "white-papers/white-paper-methodology.md",
       "title": "white paper methodology",
       "chunk_index": 0,
-      "text": "Author: Evelyn Caro (@qaevelyn)\nProject: A Mirror of My Becoming\nDate: September 18, 2026\nStatus: Published\n\nExecutive Summary\n\nThis document describes the methodology I use to select, research, and publish white papers. It is the process by which every other white paper in this section exists.\n\nMy lens on the world is active, not passive. I am not a passive observer of technology, of AI, of the industry I build in. Everything I encounter \u2014 tools, papers, conversations, failures \u2014 passes through a filter. What survives the filter becomes a white paper.\n\nThis methodology defines the filter.\n\nI. The Filter\n\nEvery day I encounter:",
+      "text": "Author: Evelyn Caro (@qaevelyn)\nProject: A Mirror of My Becoming\u2122\nDate: September 18, 2026\nStatus: Published\n\nExecutive Summary\n\nThis document describes the methodology I use to select, research, and publish white papers. It is the process by which every other white paper in this section exists.\n\nMy lens on the world is active, not passive. I am not a passive observer of technology, of AI, of the industry I build in. Everything I encounter \u2014 tools, papers, conversations, failures \u2014 passes through a filter. What survives the filter becomes a white paper.\n\nThis methodology defines the filter.\n\nI. The Filter\n\nEvery day I encounter:",
       "live_url": "https://qaevelyn.github.io/white-papers/white-paper-methodology/"
     },
     {
@@ -1403,7 +1395,15 @@
       "source": "white-papers/white-paper-methodology.md",
       "title": "white paper methodology",
       "chunk_index": 6,
-      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.\n\nThis project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com\n\nRECORD REVISION \u2014 2026-10-07 (appended, not retro-edited)",
+      "live_url": "https://qaevelyn.github.io/white-papers/white-paper-methodology/"
+    },
+    {
+      "id": "white-papers__white-paper-methodology__7",
+      "source": "white-papers/white-paper-methodology.md",
+      "title": "white paper methodology",
+      "chunk_index": 7,
+      "text": "The Standard table in Section IV required Voice to be \"not templated, not AI-generated.\" As written, that contradicted this corpus's own AI Collaboration Disclosure, which appears on every paper and states that AI assisted with drafting and organization. The contradiction was a drafting error: the standard was stated more absolutely than the practice it governs.\n\nThe amended standard: the author's voice \u2014 human-directed, AI-assisted, never templated. The author directs the research, structure, and argument; AI assists with drafting, organization, and reference verification; every paper discloses the collaboration. The disclosure is the compliance. A record that hides its tools fails its own standard; a record that states them satisfies it. Original text stands as published above.",
       "live_url": "https://qaevelyn.github.io/white-papers/white-paper-methodology/"
     },
     {
@@ -1579,7 +1579,7 @@
       "source": "white-papers/who-tests-the-testers.md",
       "title": "Who Tests the Testers?",
       "chunk_index": 21,
-      "text": "The author's own work \u2014 DV14: The Box \u2014 is the second choice. DV14: The Box is a containment architecture the author has built independently. Private repository. Details available under NDA. It is built on consumer hardware, off-grid, without cloud dependency, and without an external test vendor. It exists because the current model has not produced a containment the builder trusts. The builder had to build it herself.\n\nDV14 is not scalable, and it is not meant to be. It is evidence that the current model has failed the individual builder \u2014 and that the builder who wants real containment has to build it herself.\n\nFix 2 is architectural. It is what the individual can do now. It is not the industry's answer.\n\nThe two fixes are not interchangeable",
+      "text": "The author's own work \u2014 DV14\u2122: The Box \u2014 is the second choice. DV14\u2122: The Box is a containment architecture the author has built independently. Private repository. Details available under NDA. It is built on consumer hardware, off-grid, without cloud dependency, and without an external test vendor. It exists because the current model has not produced a containment the builder trusts. The builder had to build it herself.\n\nDV14\u2122 is not scalable, and it is not meant to be. It is evidence that the current model has failed the individual builder \u2014 and that the builder who wants real containment has to build it herself.\n\nFix 2 is architectural. It is what the individual can do now. It is not the industry's answer.\n\nThe two fixes are not interchangeable",
       "live_url": "https://qaevelyn.github.io/white-papers/who-tests-the-testers/"
     },
     {
@@ -1651,7 +1651,7 @@
       "source": "white-papers/who-tests-the-testers.md",
       "title": "Who Tests the Testers?",
       "chunk_index": 30,
-      "text": "- Chen, Y. et al. (2026). \"Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety.\" arXiv, March 2026.\n- Chesterman, S. (2026). \"Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex.\" American Journal of International Law, Vol. 120, Issue 1, January 2026.\n- Google (2026). Statement to the Wall Street Journal on the Gemini sandbox escape, September 18, 2026.\n- Grozdanovski, L. & De Cooman, J. (2023). \"On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union.\" Rutgers Computer & Technology Law Journal, Vol. 49, Issue 2.\n- Lan, Z. et al. (2026). \"ContainmentBench: A Trace-Based Benchmark for LLM Agent Containment.\" arXiv, 2026.\n- Marchand, T. et al. (2026). \"SandboxEscapeBench: An Open Benchmark for Container Escape Evaluation.\" UK AI Security Institute / Oxford, 2026.\n- Mitchell, R. J. (2026). \"When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape.\" arXiv:2604.23425, April 2026.\n- Siddik, M. S. (2026). \"Cyber-Capable AI Agents: Vulnerabilities, Evaluation Containment, and Defensive Response.\" July 2026.\n- Wall Street Journal (2026). Report on Google's Gemini sandbox escape, September 18, 2026.\n- Caro, E. (2026a). \"The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?\" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.\n- Caro, E. (2026b). \"Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI.\" qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.\n- Caro, E. (2026). \"DV14: The Box.\" Private repository. Details available under NDA.",
+      "text": "- Chen, Y. et al. (2026). \"Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety.\" arXiv, March 2026.\n- Chesterman, S. (2026). \"Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex.\" American Journal of International Law, Vol. 120, Issue 1, January 2026.\n- Google (2026). Statement to the Wall Street Journal on the Gemini sandbox escape, September 18, 2026.\n- Grozdanovski, L. & De Cooman, J. (2023). \"On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union.\" Rutgers Computer & Technology Law Journal, Vol. 49, Issue 2.\n- Lan, Z. et al. (2026). \"ContainmentBench: A Trace-Based Benchmark for LLM Agent Containment.\" arXiv, 2026.\n- Marchand, T. et al. (2026). \"SandboxEscapeBench: An Open Benchmark for Container Escape Evaluation.\" UK AI Security Institute / Oxford, 2026.\n- Mitchell, R. J. (2026). \"When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape.\" arXiv:2604.23425, April 2026.\n- Siddik, M. S. (2026). \"Cyber-Capable AI Agents: Vulnerabilities, Evaluation Containment, and Defensive Response.\" July 2026.\n- Wall Street Journal (2026). Report on Google's Gemini sandbox escape, September 18, 2026.\n- Caro, E. (2026a). \"The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?\" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.\n- Caro, E. (2026b). \"Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI.\" qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.\n- Caro, E. (2026). \"DV14\u2122: The Box.\" Private repository. Details available under NDA.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-tests-the-testers/"
     },
     {
@@ -1659,7 +1659,7 @@
       "source": "white-papers/who-tests-the-testers.md",
       "title": "Who Tests the Testers?",
       "chunk_index": 31,
-      "text": "\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "text": "\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://evelynacaro.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
       "live_url": "https://qaevelyn.github.io/white-papers/who-tests-the-testers/"
     },
     {
@@ -1707,7 +1707,7 @@
       "source": "case-studies/evidenceflow-verification-ship5.md",
       "title": "evidenceflow verification ship5",
       "chunk_index": 2,
-      "text": "For genealogical work, this is not a minor flaw. It is a disqualifying one. Families seeking to recover names of enslaved ancestors cannot afford plausible text. They need proof. They need to know which document says what, and where.\n\nShip 5 was built to solve this.\n\nWhat Ship 5 Is\n\nShip 5: IBM Granite Agentic RAG with EvidenceFlow Verification\n\nIt is a local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on my M1 MacBook Air. It is the first ship in my fleet that verifies its own answers against retrieved evidence before returning them.\n\nNotebook: `Ship5IBMGraniteAgenticRAGEvidenceFlow.ipynb`\nLocation: `~/Repos/ship5-ibm-granite-agentic-evidenceflow/`\n\nWhat Ship 5 Can Do",
+      "text": "For genealogical work, this is not a minor flaw. It is a disqualifying one. Families seeking to recover names of enslaved ancestors cannot afford plausible text. They need proof. They need to know which document says what, and where.\n\nShip 5 was built to solve this.\n\nWhat Ship 5 Is\n\nShip 5: IBM Granite Agentic RAG with EvidenceFlow Verification\n\nIt is a local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on my 8GB Intel MacBook Air. It is the first ship in my fleet that verifies its own answers against retrieved evidence before returning them.\n\nNotebook: `Ship5IBMGraniteAgenticRAGEvidenceFlow.ipynb`\nLocation: `~/Repos/ship5-ibm-granite-agentic-evidenceflow/`\n\nWhat Ship 5 Can Do",
       "live_url": "https://qaevelyn.github.io/case-studies/evidenceflow-verification-ship5/"
     },
     {
@@ -1787,7 +1787,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 0,
-      "text": "Services\n\nLocal systems. Sovereign by design.\n\nSix engagements. One path. From organizations that have not yet adopted AI to organizations in crisis. Each engagement is scoped in writing before work begins. Each is priced as a flat fee. No hourly billing. No surprises.\n\nContents\n\n# Service For\n--- --- ---\n01 Zero-AI Readiness Organizations with no AI yet\n02 AI Readiness Assessment Organizations with AI that needs an audit\n03 AI Compliance Audit Organizations that need the compliance baseline\n04 AI Governance Assessment Organizations maintaining a compliance baseline\n05 Emergency Audit-Only Key AI person left \u2014 audit only\n06 Emergency Full-Rescue Key AI person left \u2014 full rescue\n\n01 \u2014 Zero-AI Readiness",
+      "text": "Services\n\nLocal systems. Sovereign by design.\n\nSeven engagements. One path. From organizations that have not yet adopted AI to organizations in crisis. Each engagement is scoped in writing before work begins. Each is priced as a flat fee. No hourly billing. No surprises.\n\nContents",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1795,7 +1795,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 1,
-      "text": "For organizations that have not yet adopted AI \u2014 and want to know where it would actually help.\n\nThe engagement\n\nYou are running the business on the tools you have always had. Spreadsheets. Email. Paper. Maybe a CRM someone set up years ago and nobody maintains. You have heard that AI is changing everything. You have not seen it change anything in your business.\n\nThis engagement answers one question: where would AI actually help here, and where would it be a waste of money? A written roadmap, mapped to your actual workflows. No implementation. No vendor pitch. No AI theater.\n\nWhat you receive\n\n- Workflow mapping across your actual operations\n- Opportunity identification \u2014 where AI helps, where it does not\n- A written roadmap with priority order\n- Vendor-agnostic recommendations\n\nScope",
+      "text": "Service For\n--- --- ---\nSovereignty Screen The 90-minute entry engagement \u2014 where would AI actually help, and where is it waste?\nFriction Audit Your product's angry reviews, mined and verified \u2014 a prioritized fix-list built from what users are already shouting\nZero-AI Readiness Organizations with no AI yet\nAI Readiness Assessment Organizations with AI that needs an audit\nAI Compliance Audit Organizations that need the compliance baseline\nAI Governance Assessment Organizations maintaining a compliance baseline\nEmergency Audit-Only Key AI person left \u2014 audit only\nEmergency Full-Rescue Key AI person left \u2014 full rescue\nProof of Work Organizations that need receipts, not promises\n\nSovereignty Screen\n\nFor organizations that want the question answered before they commit to an engagement.",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1803,7 +1803,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 2,
-      "text": "Any change to the scope of work described in this agreement must be documented in writing and signed by both parties before additional work begins. New work outside the original scope will be priced separately and added by written amendment. Work on out-of-scope requests will not begin until a change order is executed.\n\nEngagement\n\nTerm Value\n--- ---\nFee $5,000 \u2013 $12,000 flat, based on scope\nTimeline 2\u20133 weeks\nTo engage Email with a brief description of your organization and what you are looking for. I will recommend the scope and confirm pricing in writing before work begins.\n\n02 \u2014 AI Readiness Assessment\n\nFor organizations that have AI systems and cannot answer basic questions about them.\n\nThe engagement",
+      "text": "The engagement: ninety minutes with the decision-maker. The ten questions that matter most \u2014 where your data lives, who can reach it, what your AI posture actually is, where AI would genuinely help your workflows and where it would be waste. You leave with written findings and one prioritized remediation list.\n\nWhat you receive Detail\n--- ---\nSession 90 minutes, structured, recorded summary\nWritten findings The ten answers, scored\nRemediation list One page, ranked by impact\nCredit Full $500 credited toward any subsequent engagement\n\nFee $500 flat \u2014 credited toward a full engagement if you continue\n--- ---\nTimeline Delivered within 48 hours of the session\n\nTo engage: Email with one paragraph on your organization. I confirm scope in writing before work begins.\n\nFriction Audit",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1811,7 +1811,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 3,
-      "text": "Where does your data physically live? Who can legally compel access to it? Who technically can access it? What happens if your AI vendor shuts down tomorrow?\n\nIf you cannot answer these questions about your own systems, your AI posture is someone else's business decision. This assessment returns that posture to your control.\n\nForty questions. Ten categories. A written report with a sovereignty score and priority remediations.\n\nThe assessment is not a questionnaire. It is a structured interview series with the people who hold each answer \u2014 typically across IT, legal, finance, and operations \u2014 followed by a technical discovery pass where findings are verified against the systems in place.\n\nWhat the assessment covers\n\nTen categories. Four questions in each category. Forty questions total.",
+      "text": "For companies whose product has users talking \u2014 in app-store reviews, forums, and support tickets \u2014 and whose roadmap is guessing at what they mean.\n\nThe engagement: I mine your product's 1\u20133 star reviews and public complaint threads (app stores, Reddit, forums). Every complaint is clustered and verified \u2014 real patterns separated from one-off noise, in the same fail-closed discipline I apply to archival evidence. You receive a prioritized fix-list: which failures are recurring, which are severe, which are cheap to fix first, and which users are about to leave.",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1819,7 +1819,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 4,
-      "text": "# Category Questions\n--- --- ---\n1 Data Ownership 4\n2 Model Dependency 4\n3 Data Flow 4\n4 Sovereignty Posture 4\n5 Vendor Concentration 4\n6 Legal and Compliance 4\n7 Security 4\n8 Recovery 4\n9 Cost Predictability 4\n10 Organizational Readiness 4\nTotal 40\n\nThe full question set is disclosed during engagement, under a written agreement.\n\nWhat you receive\n\n- Every question answered with a score and a finding\n- A consolidated sovereignty score (0\u2013100)\n- Ten category scores\n- Priority remediations, ranked by impact\n- Quick wins, actionable in under 30 days\n- Structural recommendations\n\nScope",
+      "text": "What you receive Detail\n--- ---\nComplaint corpus Mined, deduplicated, classified\nPattern verification Every claimed pattern backed by quoted instances\nPrioritized fix-list Ranked by frequency \u00d7 severity \u00d7 effort\nRetention flags Users signaling departure \u2014 and what would keep them\n\nFee $750 flat \u2014 per app/product.\n--- ---\nTimeline 5\u20137 days from corpus collection\n\nTo engage: Email the product name and where its reviews live (app store links, subreddits). I confirm scope in writing before mining begins.\n\nZero-AI Readiness\n\nFor organizations that have not yet adopted AI \u2014 and want to know where it would actually help.\n\nThe engagement",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1827,7 +1827,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 5,
-      "text": "Any change to the scope of work described in this agreement must be documented in writing and signed by both parties before additional work begins. New work outside the original scope will be priced separately and added by written amendment. Work on out-of-scope requests will not begin until a change order is executed.\n\nEngagement\n\nPricing is determined by two axes: the number of AI systems in scope and the depth of the interview and verification process. The higher of the two determines the tier.\n\nTier AI Systems Interview Scope Fee\n--- --- --- ---\nSmall 1\u20132 Single round $7,500\nStandard 3\u20135 Two to three rounds $15,000\nEnterprise 6+ Full interview series $25,000 \u2013 $40,000",
+      "text": "You are running the business on the tools you have always had. Spreadsheets. Email. Paper. Maybe a CRM someone set up years ago and nobody maintains. You have heard that AI is changing everything. You have not seen it change anything in your business.\n\nThis engagement answers one question: where would AI actually help here, and where would it be a waste of money? A written roadmap, mapped to your actual workflows. No implementation. No vendor pitch. No AI theater.\n\nWhat you receive\n\n- Workflow mapping across your actual operations\n- Opportunity identification \u2014 where AI helps, where it does not\n- A written roadmap with priority order\n- Vendor-agnostic recommendations\n\nScope",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1835,7 +1835,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 6,
-      "text": "Priced at the higher of the two axes. A single-system organization requiring a full interview series is priced at Enterprise.\n\nTimeline: 2\u20133 weeks from engagement. Confirmed in writing.\n\nTo engage: Email with a brief description of your organization, the number of AI systems in scope, and the tier you are considering. I will confirm scope and pricing in writing before work begins.\n\n03 \u2014 AI Compliance Audit\n\nFor organizations that need to know which rules apply to their AI \u2014 and whether they are following them.\n\nThe engagement\n\nYou have AI in production. You may be regulated. You may not be. You may have a policy. You may have nothing. You may not know which category you are in.",
+      "text": "Any change to the scope of work described in this agreement must be documented in writing and signed by both parties before additional work begins. New work outside the original scope will be priced separately and added by written amendment. Work on out-of-scope requests will not begin until a change order is executed.\n\nEngagement\n\nTerm Value\n--- ---\nFee $5,000 \u2013 $12,000 flat, based on scope\nTimeline 2\u20133 weeks\nTo engage Email with a brief description of your organization and what you are looking for. I will recommend the scope and confirm pricing in writing before work begins.\n\nAI Readiness Assessment\n\nFor organizations that have AI systems and cannot answer basic questions about them.\n\nThe engagement",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1843,7 +1843,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 7,
-      "text": "This audit establishes the baseline. Which laws apply. Which policies exist. Whether they are actually followed. Whether the organization can prove any of it. Without this baseline, no other AI work is verifiable. It is the foundation everything else stands on.\n\nWhat you receive\n\n- Applicable regulation map\n- Policy inventory \u2014 what exists, what is missing\n- Adherence findings \u2014 is the policy followed in practice\n- Evidence trail \u2014 what can be proven\n- Written report with baseline compliance score\n- Priority remediations\n\nScope",
+      "text": "Where does your data physically live? Who can legally compel access to it? Who technically can access it? What happens if your AI vendor shuts down tomorrow?\n\nIf you cannot answer these questions about your own systems, your AI posture is someone else's business decision. This assessment returns that posture to your control.\n\nForty questions. Ten categories. A written report with a sovereignty score and priority remediations.\n\nThe assessment is not a questionnaire. It is a structured interview series with the people who hold each answer \u2014 typically across IT, legal, finance, and operations \u2014 followed by a technical discovery pass where findings are verified against the systems in place.\n\nWhat the assessment covers\n\nTen categories. Four questions in each category. Forty questions total.",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1851,7 +1851,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 8,
-      "text": "Any change to the scope of work described in this agreement must be documented in writing and signed by both parties before additional work begins. New work outside the original scope will be priced separately and added by written amendment. Work on out-of-scope requests will not begin until a change order is executed.\n\nEngagement\n\nTier AI Systems Fee\n--- --- ---\nSmall 1\u20132 $5,000\nStandard 3\u20135 $10,000\nEnterprise 6+ $20,000\n\nTimeline: 2\u20133 weeks from engagement. Confirmed in writing.\n\nTo engage: Email with a brief description of your organization and the number of AI systems in scope. I will confirm scope and pricing in writing before work begins.\n\n04 \u2014 AI Governance Assessment\n\nFor organizations that have a compliance baseline and need to know it still holds.\n\nThe engagement",
+      "text": "# Category Questions\n--- --- ---\n1 Data Ownership 4\n2 Model Dependency 4\n3 Data Flow 4\n4 Sovereignty Posture 4\n5 Vendor Concentration 4\n6 Legal and Compliance 4\n7 Security 4\n8 Recovery 4\n9 Cost Predictability 4\n10 Organizational Readiness 4\nTotal 40\n\nThe full question set is disclosed during engagement, under a written agreement.\n\nWhat you receive\n\n- Every question answered with a score and a finding\n- A consolidated sovereignty score (0\u2013100)\n- Ten category scores\n- Priority remediations, ranked by impact\n- Quick wins, actionable in under 30 days\n- Structural recommendations\n\nScope",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1859,7 +1859,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 9,
-      "text": "Your systems were compliant when the audit closed. Time has passed. Models have changed. People have moved. Vendors have updated their terms. The policies on file may no longer match what is actually running.\n\nThis engagement verifies, on a schedule, that the systems still operate as approved \u2014 and flags drift before it becomes a breach.\n\nRequires a completed compliance audit. Governance without a baseline is not verification. It is guesswork.\n\nWhat you receive\n\n- Initial baseline verification\n- Scheduled verification cycle\n- Drift detection \u2014 where the current state has moved from the approved state\n- Written findings per cycle\n- Updated documentation\n\nScope",
+      "text": "Any change to the scope of work described in this agreement must be documented in writing and signed by both parties before additional work begins. New work outside the original scope will be priced separately and added by written amendment. Work on out-of-scope requests will not begin until a change order is executed.\n\nEngagement\n\nPricing is determined by two axes: the number of AI systems in scope and the depth of the interview and verification process. The higher of the two determines the tier.\n\nTier AI Systems Interview Scope Fee\n--- --- --- ---\nSmall 1\u20132 Single round $7,500\nStandard 3\u20135 Two to three rounds $15,000\nEnterprise 6+ Full interview series $25,000 \u2013 $40,000",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1867,7 +1867,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 10,
-      "text": "Any change to the scope of work described in this agreement must be documented in writing and signed by both parties before additional work begins. New work outside the original scope will be priced separately and added by written amendment. Work on out-of-scope requests will not begin until a change order is executed.\n\nEngagement\n\nTier AI Systems Fee\n--- --- ---\nSmall 1\u20132 $7,500\nStandard 3\u20135 $15,000\nEnterprise 6+ $30,000\n\nTimeline: Initial baseline verification plus an agreed schedule of ongoing verification cycles. Confirmed in writing.\n\nPrerequisite: A completed AI Compliance Audit or AI Readiness Assessment.\n\nTo engage: Email with your compliance audit reference and the number of AI systems in scope. I will confirm the schedule and pricing in writing before work begins.",
+      "text": "Priced at the higher of the two axes. A single-system organization requiring a full interview series is priced at Enterprise.\n\nTimeline: 2\u20133 weeks from engagement. Confirmed in writing.\n\nTo engage: Email with a brief description of your organization, the number of AI systems in scope, and the tier you are considering. I will confirm scope and pricing in writing before work begins.\n\nAI Compliance Audit\n\nFor organizations that need to know which rules apply to their AI \u2014 and whether they are following them.\n\nThe engagement\n\nYou have AI in production. You may be regulated. You may not be. You may have a policy. You may have nothing. You may not know which category you are in.",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1875,7 +1875,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 11,
-      "text": "05 \u2014 Emergency Audit-Only\n\nFor organizations where the key AI person has left and the stack is undocumented.\n\nThe engagement\n\nYou know the AI systems exist. You do not know what they do, who can access them, or how to operate them. The person who built them has left. There is no handover. There is no documentation. There is no one else who understands the stack.\n\nThis engagement drops everything else and delivers an audit \u2014 findings, documentation, and a written report. No remediation. The audit only.\n\nThe clock starts the day you engage.\n\nWhat you receive",
+      "text": "This audit establishes the baseline. Which laws apply. Which policies exist. Whether they are actually followed. Whether the organization can prove any of it. Without this baseline, no other AI work is verifiable. It is the foundation everything else stands on.\n\nWhat you receive\n\n- Applicable regulation map\n- Policy inventory \u2014 what exists, what is missing\n- Adherence findings \u2014 is the policy followed in practice\n- Evidence trail \u2014 what can be proven\n- Written report with baseline compliance score\n- Priority remediations\n\nScope",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1883,7 +1883,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 12,
-      "text": "- Full discovery of deployed AI systems\n- Access audit \u2014 who has what\n- Data flow map \u2014 where information lives and moves\n- Documented inventory \u2014 what exists, what version, what dependencies\n- Written report with findings and priority gaps\n\nScope\n\nEmergency engagements are priority-sequenced rescues, not fixed-scope deliverables. The scope is defined by the priority sequence agreed in writing. Any work requested outside that sequence is a change order and will be quoted separately. Work on out-of-sequence requests will not begin until a change order is executed.\n\nEngagement\n\nTier AI Systems Fee\n--- --- ---\nSmall 1\u20132 $25,000\nStandard 3\u20135 $40,000\nEnterprise 6+ $75,000+\n\nTimeline: Priority-sequenced. Audit delivered as fast as the environment permits.",
+      "text": "Any change to the scope of work described in this agreement must be documented in writing and signed by both parties before additional work begins. New work outside the original scope will be priced separately and added by written amendment. Work on out-of-scope requests will not begin until a change order is executed.\n\nEngagement\n\nTier AI Systems Fee\n--- --- ---\nSmall 1\u20132 $5,000\nStandard 3\u20135 $10,000\nEnterprise 6+ $20,000\n\nTimeline: 2\u20133 weeks from engagement. Confirmed in writing.\n\nTo engage: Email with a brief description of your organization and the number of AI systems in scope. I will confirm scope and pricing in writing before work begins.\n\nAI Governance Assessment\n\nFor organizations that have a compliance baseline and need to know it still holds.\n\nThe engagement",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1891,7 +1891,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 13,
-      "text": "To engage: Email with URGENT in the subject line, a brief description of the situation, and the number of AI systems you believe are in scope. Response within one business day.\n\n06 \u2014 Emergency Full-Rescue\n\nFor organizations where the key AI person has left and the stack is broken.\n\nThe engagement\n\nYou are in crisis. Systems may be running. They may be half-running. They may be failing silently. No one knows what is deployed. No one knows what depends on what. No one knows what to do next.\n\nThis is not an audit. It is a rescue.\n\nPriority sequence:\n1. Close security gaps \u2014 around the clock\n2. Stabilize the stack\n3. Document everything that exists\n4. Train someone internally\n5. Deliver a continuity plan so this cannot happen again",
+      "text": "Your systems were compliant when the audit closed. Time has passed. Models have changed. People have moved. Vendors have updated their terms. The policies on file may no longer match what is actually running.\n\nThis engagement verifies, on a schedule, that the systems still operate as approved \u2014 and flags drift before it becomes a breach.\n\nRequires a completed compliance audit. Governance without a baseline is not verification. It is guesswork.\n\nWhat you receive\n\n- Initial baseline verification\n- Scheduled verification cycle\n- Drift detection \u2014 where the current state has moved from the approved state\n- Written findings per cycle\n- Updated documentation\n\nScope",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1899,7 +1899,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 14,
-      "text": "The engagement takes as long as it takes. The fee is flat. The clock starts the day you engage.\n\nWhat you receive\n\n- Everything in Emergency Audit-Only\n- Security gaps closed\n- Stabilized stack \u2014 systems running as intended\n- Full documentation of all systems and dependencies\n- Internal training for at least one person\n- Written continuity plan\n- 30-day follow-up window\n\nScope\n\nEmergency engagements are priority-sequenced rescues, not fixed-scope deliverables. The scope is defined by the priority sequence agreed in writing. Any work requested outside that sequence is a change order and will be quoted separately. Work on out-of-sequence requests will not begin until a change order is executed.\n\nEngagement",
+      "text": "Any change to the scope of work described in this agreement must be documented in writing and signed by both parties before additional work begins. New work outside the original scope will be priced separately and added by written amendment. Work on out-of-scope requests will not begin until a change order is executed.\n\nEngagement\n\nTier AI Systems Fee\n--- --- ---\nSmall 1\u20132 $7,500\nStandard 3\u20135 $15,000\nEnterprise 6+ $30,000\n\nTimeline: Initial baseline verification plus an agreed schedule of ongoing verification cycles. Confirmed in writing.\n\nPrerequisite: A completed AI Compliance Audit or AI Readiness Assessment.\n\nTo engage: Email with your compliance audit reference and the number of AI systems in scope. I will confirm the schedule and pricing in writing before work begins.",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1907,7 +1907,7 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 15,
-      "text": "Tier AI Systems Fee\n--- --- ---\nSmall 1\u20132 $50,000\nStandard 3\u20135 $65,000\nEnterprise 6+ $150,000\n\nTimeline: Priority-sequenced. The engagement takes as long as it takes. Fees are flat regardless of duration.\n\nTo engage: Email with URGENT in the subject line, a brief description of the situation, and the number of AI systems you believe are in scope. Response within one business day.\n\nChange Orders\n\nAny change to the scope of work described in an engagement agreement must be documented in writing and signed by both parties before additional work begins. New work outside the original scope will be priced separately and added by written amendment. Work on out-of-scope requests will not begin until a change order is executed.\n\nEmergency Scope",
+      "text": "Emergency Audit-Only\n\nFor organizations where the key AI person has left and the stack is undocumented.\n\nThe engagement\n\nYou know the AI systems exist. You do not know what they do, who can access them, or how to operate them. The person who built them has left. There is no handover. There is no documentation. There is no one else who understands the stack.\n\nThis engagement drops everything else and delivers an audit \u2014 findings, documentation, and a written report. No remediation. The audit only.\n\nThe clock starts the day you engage.\n\nWhat you receive\n\n- Full discovery of deployed AI systems\n- Access audit \u2014 who has what\n- Data flow map \u2014 where information lives and moves\n- Documented inventory \u2014 what exists, what version, what dependencies\n- Written report with findings and priority gaps",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1915,7 +1915,55 @@
       "source": "services.md",
       "title": "Services",
       "chunk_index": 16,
-      "text": "Emergency engagements are priority-sequenced rescues, not fixed-scope deliverables. The scope is defined by the priority sequence agreed in writing. Any work requested outside that sequence is a change order and will be quoted separately. Work on out-of-sequence requests will not begin until a change order is executed.\n\nNo Discounts\n\nEvery engagement is priced the same for every client. Rate does not change based on relationship. If the budget does not match the scope, the scope changes \u2014 not the rate.\n\nContact\n\nEvelyn \u2014 Sovereign AI Builder\nEmail: evelyn.caro.cloud@gmail.com\nPortfolio: qaevelyn.github.io\n\n\u00a9 2026 Evelyn Caro. All rights reserved.",
+      "text": "Scope\n\nEmergency engagements are priority-sequenced rescues, not fixed-scope deliverables. The scope is defined by the priority sequence agreed in writing. Any work requested outside that sequence is a change order and will be quoted separately. Work on out-of-sequence requests will not begin until a change order is executed.\n\nEngagement\n\nTier AI Systems Fee\n--- --- ---\nSmall 1\u20132 $25,000\nStandard 3\u20135 $40,000\nEnterprise 6+ $75,000+\n\nTimeline: Priority-sequenced. Audit delivered as fast as the environment permits.\n\nTo engage: Email with URGENT in the subject line, a brief description of the situation, and the number of AI systems you believe are in scope. Response within one business day.\n\nEmergency Full-Rescue\n\nFor organizations where the key AI person has left and the stack is broken.",
+      "live_url": "https://qaevelyn.github.io/services/"
+    },
+    {
+      "id": "services__17",
+      "source": "services.md",
+      "title": "Services",
+      "chunk_index": 17,
+      "text": "The engagement\n\nYou are in crisis. Systems may be running. They may be half-running. They may be failing silently. No one knows what is deployed. No one knows what depends on what. No one knows what to do next.\n\nThis is not an audit. It is a rescue.\n\nPriority sequence:\n1. Close security gaps \u2014 around the clock\n2. Stabilize the stack\n3. Document everything that exists\n4. Train someone internally\n5. Deliver a continuity plan so this cannot happen again\n\nThe engagement takes as long as it takes. The fee is flat. The clock starts the day you engage.\n\nWhat you receive",
+      "live_url": "https://qaevelyn.github.io/services/"
+    },
+    {
+      "id": "services__18",
+      "source": "services.md",
+      "title": "Services",
+      "chunk_index": 18,
+      "text": "- Everything in Emergency Audit-Only\n- Security gaps closed\n- Stabilized stack \u2014 systems running as intended\n- Full documentation of all systems and dependencies\n- Internal training for at least one person\n- Written continuity plan\n- 30-day follow-up window\n\nScope\n\nEmergency engagements are priority-sequenced rescues, not fixed-scope deliverables. The scope is defined by the priority sequence agreed in writing. Any work requested outside that sequence is a change order and will be quoted separately. Work on out-of-sequence requests will not begin until a change order is executed.\n\nEngagement\n\nTier AI Systems Fee\n--- --- ---\nSmall 1\u20132 $50,000\nStandard 3\u20135 $65,000\nEnterprise 6+ $150,000",
+      "live_url": "https://qaevelyn.github.io/services/"
+    },
+    {
+      "id": "services__19",
+      "source": "services.md",
+      "title": "Services",
+      "chunk_index": 19,
+      "text": "Timeline: Priority-sequenced. The engagement takes as long as it takes. Fees are flat regardless of duration.\n\nTo engage: Email with URGENT in the subject line, a brief description of the situation, and the number of AI systems you believe are in scope. Response within one business day.\n\nChange Orders\n\nAny change to the scope of work described in an engagement agreement must be documented in writing and signed by both parties before additional work begins. New work outside the original scope will be priced separately and added by written amendment. Work on out-of-scope requests will not begin until a change order is executed.\n\nEmergency Scope",
+      "live_url": "https://qaevelyn.github.io/services/"
+    },
+    {
+      "id": "services__20",
+      "source": "services.md",
+      "title": "Services",
+      "chunk_index": 20,
+      "text": "Emergency engagements are priority-sequenced rescues, not fixed-scope deliverables. The scope is defined by the priority sequence agreed in writing. Any work requested outside that sequence is a change order and will be quoted separately. Work on out-of-sequence requests will not begin until a change order is executed.\n\nContact\n\nEvelyn \u2014 Sovereign AI Builder\nEmail: evelyn.caro.cloud@gmail.com\nPortfolio: qaevelyn.github.io\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\n\nProof of Work\n\nFor organizations that need receipts, not promises \u2014 proof that the AI work was done, done right, and is still working.",
+      "live_url": "https://qaevelyn.github.io/services/"
+    },
+    {
+      "id": "services__21",
+      "source": "services.md",
+      "title": "Services",
+      "chunk_index": 21,
+      "text": "The Proof of Work entry is the engagement where the artifacts do the talking: the published corpus, five documented RAG pipelines, the first published tool \u2014 A Mirror of My Becoming\u2122 \u2014 Suite: Ingestion Tools (formerly Mirror Ingest Suite) \u2014 combining RFC822 message-id normalization, dual-store ingest, and crash-proof reconciliation (battle-tested against a 127-conversation corpus), and a public provenance record that logs its own errors beside its successes. The method is the same one this site runs on: every claim sourced, every gap flagged, every correction dated and kept. An engagement here means your systems documented the way this portfolio is documented \u2014 verifiable by a stranger, auditable by you, owned by you end to end.",
+      "live_url": "https://qaevelyn.github.io/services/"
+    },
+    {
+      "id": "services__22",
+      "source": "services.md",
+      "title": "Services",
+      "chunk_index": 22,
+      "text": "Where it stops: this engagement produces the evidence and the record; it does not certify compliance or provide legal opinions.",
       "live_url": "https://qaevelyn.github.io/services/"
     },
     {
@@ -1979,7 +2027,7 @@
       "source": "site/words.md",
       "title": "Portfolio Words \u2014 Human-Editable Source",
       "chunk_index": 2,
-      "text": "Ship 1\n- Title: Ship 1 \u2014 AWS SageMaker RAG\n- Description: Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an M1 MacBook Air.\n\nShip 2\n- Title: Ship 2 \u2014 AWS SageMaker Agentic RAG\n- Description: Agentic RAG pipeline on AWS SageMaker \u2014 retrieval + action (API calls, decision-making). Demonstrates autonomous reasoning and tool use.\n\nShip 3\n- Title: Ship 3 \u2014 IBM Granite RAG\n- Description: RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility.",
+      "text": "Ship 1\n- Title: Ship 1 \u2014 AWS SageMaker RAG\n- Description: Retrieval-Augmented Generation on AWS SageMaker using vector databases and large language models. Built and deployed locally on an 8GB Intel MacBook Air.\n\nShip 2\n- Title: Ship 2 \u2014 AWS SageMaker Agentic RAG\n- Description: Agentic RAG pipeline on AWS SageMaker \u2014 retrieval + action (API calls, decision-making). Demonstrates autonomous reasoning and tool use.\n\nShip 3\n- Title: Ship 3 \u2014 IBM Granite RAG\n- Description: RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility.",
       "live_url": "https://qaevelyn.github.io/site/words/"
     },
     {
@@ -1987,7 +2035,7 @@
       "source": "site/words.md",
       "title": "Portfolio Words \u2014 Human-Editable Source",
       "chunk_index": 3,
-      "text": "Ship 4\n- Title: Ship 4 \u2014 IBM Granite Agentic RAG\n- Description: Agentic RAG pipeline on IBM Granite \u2014 retrieval + action. Cross-platform agentic architecture with autonomous reasoning and decision-making.\n\nShip 5\n- Title: Ship 5 \u2014 IBM Granite Agentic RAG with EvidenceFlow\n- Description: A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an M1 MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.\n- Attribution: Foundation: IBM SkillsBuild (Anna Gutowska). Inspiration: Asaif Ali's EvidenceFlow. Execution: Evelyn Caro.\n\nUpdate Workflow",
+      "text": "Ship 4\n- Title: Ship 4 \u2014 IBM Granite Agentic RAG\n- Description: Agentic RAG pipeline on IBM Granite \u2014 retrieval + action. Cross-platform agentic architecture with autonomous reasoning and decision-making.\n\nShip 5\n- Title: Ship 5 \u2014 IBM Granite Agentic RAG with EvidenceFlow\n- Description: A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an 8GB Intel MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.\n- Attribution: Foundation: IBM SkillsBuild (Anna Gutowska). Inspiration: Asaif Ali's EvidenceFlow. Execution: Evelyn Caro.\n\nUpdate Workflow",
       "live_url": "https://qaevelyn.github.io/site/words/"
     },
     {
@@ -2007,39 +2055,39 @@
       "live_url": "https://qaevelyn.github.io/site/contact/"
     },
     {
-      "id": "lookbook__250",
+      "id": "lookbook__256",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
-      "text": "Ship 1 was the first attempt \u2014 AWS, DeepSeek, a RAG pipeline built to organize my own life. It got lost. The notebook wasn't on the SageMaker instance. It wasn't in the backups. I rebuilt it from the Mirror files. The rebuild was cleaner than the original. That's the ship that taught me how to recover from losing one.",
+      "text": "The ninth ship is sealed. The fleet proved that a sovereign archive can hold a person's records without surrendering them \u2014 Protocol Companion\u2122 asks the next question: can the same local-first doctrine carry a patient through a clinical protocol? An ultrasound patient-preparedness tool: the imaging protocol explained in order, the preparation steps verified, no cloud, no stored health data, nothing about the patient leaving the device. Pitched as a 90-day fixed-fee pilot against the institution's own reschedule baseline. Concept-level only; the architecture is private \u2014 commercial license only, available for review under NDA.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__251",
+      "id": "lookbook__257",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
-      "text": "By the time Ship 2 came, I was more confident. I had rebuilt Ship 1 from scratch. I understood what I was capable of and what the tools could do. Ship 2 was IBM Granite \u2014 a different model, a cleaner notebook, and a new layer: agentic reasoning. I learned to write clean code and I learned what agency meant. This is the ship where I stopped being a student and started being a builder.",
+      "text": "A concept, stated plainly: a physical and conceptual AI agent containment architecture, designed to answer one question \u2014 can an agent that runs on hardware be contained by hardware? Two tracks: The Box (eight layers of complementary opposites \u2014 every material paired with the one that covers its weakness) and the Sensory Deprivation Matrix (can an agent function with no external hardware at all?). The accidental discovery: if the AI plays possum, we have found a holding cell. Bitcoin-timestamped September 19, 2026. Cited in two published white papers. \u00a9 all rights reserved \u2014 commercial license only; Bitcoin-timestamped 2026-09-19; available for review under NDA.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__252",
+      "id": "lookbook__258",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
-      "text": "Ship 3 ran on IBM Cloud with IBM Granite as the model. Same pattern, different vendor. If the design only worked on one platform, it wasn't real. This is the ship that proved the pattern was portable \u2014 not locked to AWS, not locked to DeepSeek, not locked to anything.",
+      "text": "The seventh ship bridges mail into the Mirror. It reads msgvault.db in its own native tongue \u2014 the embed_gen watermark is its checkpoint, so progress lives in the data itself: crash, restart, curfew, resume, never re-ingest. It normalizes RFC822 message-ids, preserves full metadata, and feeds the canonical store with nomic-embed-text vectors \u2014 the fleet's model. Replace-mode: stale deleted as fresh lands. Curfew-aware. Never self-restarts. The prior-art search found nothing published like it.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__253",
+      "id": "lookbook__259",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
-      "text": "Ship 4 combined IBM Granite with agentic reasoning. Retrieval plus action, on the second platform. This is the ship where I learned that agency wasn't a feature \u2014 it was a way of thinking about how a system works. Cross-platform and agentic, together.",
+      "text": "A Mirror of My Becoming\u2122 Suite: Ingestion Tools \u2014 three tools that work separately but work better together. Built after the problem: 127 conversations to ingest and a pipeline that kept killing itself overnight. I solved my problem, and discovered no one else had this unique solution published \u2014 so I am first: resilience-engineered, Bitcoin-timestamped, AGPL. The free tier is the point; the AGPL is the guidance if the next user is a corporation.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__254",
+      "id": "lookbook__260",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -2047,31 +2095,71 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__255",
+      "id": "lookbook__261",
       "source": "lookbook.html#ships",
-      "title": "Ship \u2014 Standard RAG",
+      "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
-      "text": "Originally built on AWS SageMaker with DeepSeek. Rebuilt locally after instance loss. Current version runs on an M1 MacBook Air with a RAG pipeline over the Mirror archive.",
+      "text": "Ship 4 combined IBM Granite with agentic reasoning. Retrieval plus action, on the second platform. This is the ship where I learned that agency wasn't a feature \u2014 it was a way of thinking about how a system works. Cross-platform and agentic, together.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__256",
+      "id": "lookbook__262",
       "source": "lookbook.html#ships",
-      "title": "Ship \u2014 Agentic RAG",
+      "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
-      "text": "Agentic RAG pipeline on IBM Granite \u2014 retrieval + action (tool-calling, decision-making). Demonstrates autonomous reasoning with a local LLM.",
+      "text": "Ship 3 runs locally with IBM Granite as the model. Same pattern, different model. If the design only worked with one LLM, it wasn't real. This is the ship that proved the pattern was portable \u2014 not locked to AWS, not locked to DeepSeek, not locked to anything.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__257",
+      "id": "lookbook__263",
       "source": "lookbook.html#ships",
-      "title": "Ship \u2014 Standard RAG",
+      "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
-      "text": "RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility.",
+      "text": "By the time Ship 2 came, I was more confident. I had rebuilt Ship 1 from scratch. I understood what I was capable of and what the tools could do. Ship 2 was IBM Granite \u2014 a different model, a cleaner notebook, and a new layer: agentic reasoning. I learned to write clean code and I learned what agency meant. This is the ship where I stopped being a student and started being a builder.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__258",
+      "id": "lookbook__264",
+      "source": "lookbook.html#ships",
+      "title": "Ships \u2014 Narrative",
+      "chunk_index": 0,
+      "text": "Ship 1 was the first attempt \u2014 AWS, DeepSeek, a RAG pipeline built to organize my own life. It got lost. The notebook wasn't on the SageMaker instance. It wasn't in the backups. I rebuilt it from the Mirror files. The rebuild was cleaner than the original. That's the ship that taught me how to recover from losing one.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__265",
+      "source": "lookbook.html#ships",
+      "title": "Ships \u2014 Narrative",
+      "chunk_index": 0,
+      "text": "The tenth ship is the one that watches the others. Overseer\u2122 dispatches every question to five workers \u2014 three vector collections, the SQLite mail archive, and the canon registry \u2014 fuses their findings with a visible quorum table, and refuses to answer when the receipts are insufficient. Its tier system settles the oldest problem in AI: when the model lies, the pipeline decides. Canon questions never reach the model at all.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__266",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 AI Containment \u00b7 Red Team",
+      "chunk_index": 0,
+      "text": "The industry outsources containment testing to vendors \u2014 and in 2026 the same vendor failed the same way at four frontier labs. My position, argued in Who Tests the Testers? and Sovereign Recursive Improvement : the builder who owns the loop builds the containment. DV14 is that argument, drawn as an architecture \u2014 fourteen requirements, nine layers, off-grid power, consumer hardware.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__267",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 Smoke run: 200 msgs \u00b7 23,500 chunks",
+      "chunk_index": 0,
+      "text": "Dry run first: nothing stamped, nothing looped. Then the real run \u2014 200 messages, 23,500 chunks, ~25 minutes, on the 8 GB Intel MacBook Air. Then the proof: run 2 started at row 201. Rows 1\u2013200 never re-ingested. Part 2 of the recording scrolls up to show the same command, the output moved forward. Progress lives in the data itself.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__268",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 Agentic RAG + EvidenceFlow",
+      "chunk_index": 0,
+      "text": "A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an 8GB Intel MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.",
+      "live_url": "https://qaevelyn.github.io/lookbook.html"
+    },
+    {
+      "id": "lookbook__269",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG",
       "chunk_index": 0,
@@ -2079,75 +2167,43 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__259",
+      "id": "lookbook__270",
       "source": "lookbook.html#ships",
-      "title": "Ship \u2014 Agentic RAG + EvidenceFlow",
+      "title": "Ship \u2014 Standard RAG",
       "chunk_index": 0,
-      "text": "A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an M1 MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.",
+      "text": "RAG pipeline on IBM Granite, demonstrating cross-platform AI/cloud capabilities. Built to show interoperability and model flexibility.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__260",
-      "source": "lookbook.html#services",
-      "title": "01 \u2014 Zero-AI Readiness",
+      "id": "lookbook__271",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 Agentic RAG",
       "chunk_index": 0,
-      "text": "For organizations that have not yet adopted AI \u2014 and want to know where it would actually help.",
+      "text": "Agentic RAG pipeline on IBM Granite \u2014 retrieval + action (tool-calling, decision-making). Demonstrates autonomous reasoning with a local LLM.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__261",
-      "source": "lookbook.html#services",
-      "title": "02 \u2014 AI Readiness Assessment",
+      "id": "lookbook__272",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 Standard RAG",
       "chunk_index": 0,
-      "text": "For organizations that have AI systems and cannot answer basic questions about them.",
+      "text": "Originally built on AWS SageMaker with DeepSeek. Rebuilt locally after instance loss. Current version runs on an 8GB Intel MacBook Air with a RAG pipeline over the Mirror archive.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__262",
-      "source": "lookbook.html#services",
-      "title": "03 \u2014 AI Compliance Audit",
+      "id": "lookbook__273",
+      "source": "lookbook.html#ships",
+      "title": "Ship \u2014 DOI: 10.5281/zenodo.23304180",
       "chunk_index": 0,
-      "text": "For organizations that need to know which rules apply to their AI \u2014 and whether they are following them.",
+      "text": "Built October 11, 2026, after its own first receipt caught the model lying \u2014 six invented papers, fluent, dated, wrong. The architecture that answered: the registry answers facts, the workers surface evidence, the quorum shows its deliberation, and the model only speaks when the receipts permit. The gate is journaled. Every verdict traces.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__263",
-      "source": "lookbook.html#services",
-      "title": "04 \u2014 AI Governance Assessment",
-      "chunk_index": 0,
-      "text": "For organizations that have a compliance baseline and need to know it still holds.",
-      "live_url": "https://qaevelyn.github.io/lookbook.html"
-    },
-    {
-      "id": "lookbook__264",
-      "source": "lookbook.html#services",
-      "title": "05 \u2014 Emergency Audit-Only",
-      "chunk_index": 0,
-      "text": "For organizations where the key AI person has left and the stack is undocumented.",
-      "live_url": "https://qaevelyn.github.io/lookbook.html"
-    },
-    {
-      "id": "lookbook__265",
-      "source": "lookbook.html#services",
-      "title": "06 \u2014 Emergency Full-Rescue",
-      "chunk_index": 0,
-      "text": "For organizations where the key AI person has left and the stack is broken.",
-      "live_url": "https://qaevelyn.github.io/lookbook.html"
-    },
-    {
-      "id": "lookbook__266",
+      "id": "lookbook__274",
       "source": "lookbook.html#intro",
       "title": "Intro / Story",
       "chunk_index": 0,
-      "text": "I started as an AI tourist. I was curious, I asked questions, I explored. Then I learned, and I built. Every time I learned something new, I built it. A pipeline. Then a cleaner one. Then a different platform. Then agency. Then verification. Each ship in this fleet is a thing I learned, made real.\nI built as I learned. I went from AI tourist to AI professional. This is the fleet.\nHow I work: I approach every system as an auditor \u2014 verify, document, don't trust. I apply the Ida B. Wells standard to everything I record: date everything, name everything, record the reasoning. I red team my own work. I test my AIs adversarially. I want to know where they break.\nMy direction: Use AI to audit the cloud. Niche down to security auditor.",
-      "live_url": "https://qaevelyn.github.io/lookbook.html"
-    },
-    {
-      "id": "lookbook__267",
-      "source": "lookbook.html#intro",
-      "title": "Intro / Story",
-      "chunk_index": 1,
-      "text": "Proof, not tenure: I hold certifications in AI, LangChain, and Agentic RAG from Google and IBM. I completed the AWS re/Start bootcamp in 3 weeks and 1 day of class time \u2014 graduated September 9, 2026.\n\nCount my proofs.",
+      "text": "Before the ships, there was the problem: 127 conversations to ingest and a pipeline that kept killing itself overnight. I solved my problem \u2014 and in doing so discovered no one else had this unique solution published, so I am first: resilience-engineered, Bitcoin-timestamped, AGPL. A Mirror of My Becoming\u2122 Suite: Ingestion Tools \u2014 three tools that work separately but work better together. Six ships, a seventh joining on first successful run: RAG pipelines, agentic systems, evidence-verified retrieval, and the ingest tools that let the next person use my solution \u2014 and if that next person is a corporation, the AGPL is the guidance.\nI enjoy building AI tools that solve everyday problems \u2014 it makes me happy. I'm building a consultancy. What problem can AI and I solve for you today?\nHow I work: I approach every system as an auditor \u2014 verify, document, don't trust. I red team my own work. I keep records the way Ida B. Wells kept records: date everything, name everything, record the reasoning. The successes and the failures sit in the record together \u2014 a record that hides its errors is publicity, not documentation. Even this corpus cites itself.\nCount my proofs.",
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
@@ -2155,7 +2211,7 @@
       "source": "white-papers/manifest.json",
       "title": "White Papers",
       "chunk_index": 0,
-      "text": "Evelyn has written these white papers:\n- Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now \u2014 A Sovereign AI Practitioner's Re-Read of the Machine, the War, and the Alternative the Show Never Named\n- Who Tests the Testers? \u2014 Containment Failures in Frontier AI Security \u2014 The Auditor's Blind Spot\n- Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI\n- The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?\n- Sovereign AI vs. Silicon Valley: A Different Origin Story\n- White Paper Methodology\n- Methodology: Stress-Testing AI Systems for Reliability and Sovereignty\n- White Paper: A Case Study in AI Collaboration\n- White Paper: AI Platform Comparison\n- Aisha Case Study\n- AWS Case Study\n- ChatGPT Case Study\n- DeepSeek Case Study\n- Google Case Study\n- Manus Case Study\n- Comparative Analysis",
+      "text": "Evelyn has written these white papers:\n- Who Decides When the Model Lies \u2014 The Quorum Architecture: Giving the Pipeline Its Verdict Back \u2014 A Sovereign Builder's Answer to AI Hallucination\n- Three Days of Silence \u2014 What the Silence Owed: An English Teacher's Record of the Suspension, the Support Maze, and the Rule That Was Never Named\n- The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store \u2014 A Sovereign Builder's Case That the Hardest Part of RAG Is Not Retrieval \u2014 It Is Getting the Corpus In Without Losing It\n- From AI Tourist to Student Of and With AI \u2014 A Practitioner's Account of Self-Directed AI Learning\n- The Cache Is Not the Corpus: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is \u2014 A Sovereign Builder's Case That the Vector Store Is a Finding Aid, Not a Collection\n- It Scaled the Fence: What the OpenAI Agent Did to Australia, and Why the Containment Model Is Broken \u2014 A Sovereign Auditor's Read of the First AI-Led Hack of a Government System\n- Sovereign Recursive Improvement \u2014 The Auditor's Case for Builder-Owned AI\n- Who Tests the Testers? \u2014 Containment Failures in Frontier AI Security \u2014 The Auditor's Blind Spot\n- Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now \u2014 A Sovereign AI Practitioner's Re-Read of the Machine, the War, and the Alternative the Show Never Named\n- The AI Cartel and the Sovereign Response \u2014 Who Decides How Fast AI Moves?\n- Redirect: A Case Study in AI Collaboration\n- White Paper Methodology\n- Case Study: DeepSeek \u2014 The Benchmark\n- Record Changelog\n- Case Study: ChatGPT \u2014 From Reliance to Rejection\n- Methodology: Stress-Testing AI Systems for Reliability and Sovereignty\n- White Paper: A Case Study in AI Collaboration\n- Comparative: From Sovereign to Extractive \u2014 A Field Report on AI Platforms\n- Case Study: AWS \u2014 The Maze\n- Case Study: Google AI Studio and Gemini NotebookLM \u2014 The Failures\n- White Paper: AI Platform Comparison for Sovereign Archive Development\n- Case Study: Manus \u2014 From Loyalty to Betrayal to Sovereignty\n- Sovereign AI vs. Silicon Valley: A Different Origin Story",
       "live_url": "https://qaevelyn.github.io/white-papers/"
     },
     {
