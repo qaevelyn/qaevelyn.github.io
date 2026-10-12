@@ -13,25 +13,15 @@ from pathlib import Path
 REPO = Path(os.path.expanduser("~/Repos/qaevelyn.github.io"))
 OUT = REPO / "site" / "mir-index.json"
 
-# The corpus — every file Mir reads. Explicitly listed so nothing is missed.
-CORPUS = [
-    # White papers
-    "white-papers/White_Paper_AI_Collaboration_Case_Study.md",
-    "white-papers/White_Paper_AI_Platform_Comparison.md",
-    "white-papers/aisha-case-study.md",
-    "white-papers/aws-case-study.md",
-    "white-papers/chatgpt-case-study.md",
-    "white-papers/comparative.md",
-    "white-papers/deepseek-case-study.md",
-    "white-papers/google-case-study.md",
-    "white-papers/manus-case-study.md",
-    "white-papers/methodology.md",
-    "white-papers/samaritan-is-here.md",
-    "white-papers/sovereign-ai-vs-silicon-valley.md",
-    "white-papers/sovereign-recursive-improvement.md",
-    "white-papers/the-ai-cartel-and-the-sovereign-response.md",
-    "white-papers/white-paper-methodology.md",
-    "white-papers/who-tests-the-testers.md",
+# The corpus — white papers discovered by glob (never stale), plus named non-paper files.
+# Owner ruling Oct 11: no hardcoded file lists — new papers self-register.
+import glob as _glob
+PAPERS = sorted(
+    os.path.relpath(p, REPO).replace(os.sep, "/")
+    for p in _glob.glob(str(REPO / "white-papers" / "*.md"))
+    if "white-paper-tracker" not in p and "update_manifest" not in p and "update_rss" not in p
+)
+CORPUS = PAPERS + [
     # Case studies
     "case-studies/azari-audit.md",
     "case-studies/evidenceflow-verification-ship5.md",
@@ -155,7 +145,7 @@ def extract_manifest_content():
         ("case-studies/manifest.json", "case_studies", "Case Studies",
          "Evelyn has written these case studies:"),
         ("ships/manifest.json", "ships", "Ships",
-         "Evelyn built these five ships:"),
+         "Evelyn built these ships:"),
         ("assets/certificates/manifest.json", "certificates", "Certificates",
          "Evelyn holds these certifications:"),
     ]
