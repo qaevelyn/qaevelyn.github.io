@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" style="max-width:100%;height:auto;">
+  <rect width="640" height="380" fill="#faf6ee"/>
+  <rect x="8" y="8" width="624" height="364" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+  <text x="320" y="36" text-anchor="middle" font-family="Georgia, serif" font-size="19" fill="#3d2e1e">OVERSEER™ — CONCEPT VIEW</text>
+  <text x="320" y="54" text-anchor="middle" font-family="Georgia, serif" font-size="10" font-style="italic" fill="#8b6f3d">five workers · visible quorum · adaptive armor · the registry answers facts</text>
+  <!-- five workers, left column -->
+  <g font-family="Georgia, serif" font-size="10" fill="#3d2e1e">
+    <rect x="30" y="75" width="120" height="30" rx="4" fill="#e8dfc9" stroke="#8b6f3d"/><text x="90" y="94" text-anchor="middle">W1 deepseek corpus</text>
+    <rect x="30" y="115" width="120" height="30" rx="4" fill="#e8dfc9" stroke="#8b6f3d"/><text x="90" y="134" text-anchor="middle">W2 email archive</text>
+    <rect x="30" y="155" width="120" height="30" rx="4" fill="#e8dfc9" stroke="#8b6f3d"/><text x="90" y="174" text-anchor="middle">W3 working docs</text>
+    <rect x="30" y="195" width="120" height="30" rx="4" fill="#e8dfc9" stroke="#8b6f3d"/><text x="90" y="214" text-anchor="middle">W4 msgvault SQL</text>
+    <rect x="30" y="235" width="120" height="30" rx="4" fill="#f0e2d0" stroke="#a33"/><text x="90" y="254" text-anchor="middle">W5 canon registry</text>
+  </g>
+  <text x="90" y="284" text-anchor="middle" font-size="8" fill="#8b6f3d">each radios in with hits + latency</text>
+  <!-- quorum table center -->
+  <rect x="200" y="90" width="230" height="160" rx="6" fill="#f3ecd9" stroke="#8b6f3d" stroke-width="2"/>
+  <text x="315" y="115" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#3d2e1e">THE QUORUM</text>
+  <text x="315" y="133" text-anchor="middle" font-size="9" fill="#8b6f3d">score · backing workers · ranks</text>
+  <text x="315" y="153" text-anchor="middle" font-size="9" fill="#3d2e1e">0.0164 | W1(#1) | chunk…</text>
+  <text x="315" y="168" text-anchor="middle" font-size="9" fill="#3d2e1e">0.0164 | W3(#1) | chunk…</text>
+  <text x="315" y="183" text-anchor="middle" font-size="9" fill="#3d2e1e">0.0164 | W5(#1) | canon…</text>
+  <text x="315" y="198" text-anchor="middle" font-size="9" fill="#a33">refused: 0 verified chunks</text>
+  <text x="315" y="222" text-anchor="middle" font-size="8" font-style="italic" fill="#8b6f3d">the deliberation, printed — receipts before generation</text>
+  <!-- canon registry: outside the model's reach -->
+  <rect x="470" y="75" width="140" height="70" rx="6" fill="#f3ecd9" stroke="#3d2e1e" stroke-width="2"/>
+  <text x="540" y="100" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#3d2e1e">CANON REGISTRY</text>
+  <text x="540" y="118" text-anchor="middle" font-size="8" fill="#3d2e1e">manifest · evidence ledger</text>
+  <text x="540" y="132" text-anchor="middle" font-size="8" fill="#a33">answers facts — model never sees them</text>
+  <!-- generation gate -->
+  <rect x="470" y="185" width="140" height="60" rx="6" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="2"/>
+  <text x="540" y="210" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#3d2e1e">GRANITE (the mouth)</text>
+  <text x="540" y="226" text-anchor="middle" font-size="8" fill="#8b6f3d">phrases — never decides facts</text>
+  <!-- flows -->
+  <line x1="150" y1="165" x2="196" y2="165" stroke="#8b6f3d" stroke-width="2"/><polygon points="196,161 204,165 196,169" fill="#8b6f3d"/>
+  <text x="172" y="155" text-anchor="middle" font-size="8" fill="#8b6f3d">radio in</text>
+  <line x1="430" y1="150" x2="466" y2="105" stroke="#8b6f3d" stroke-width="2"/><polygon points="466,101 474,105 468,111" fill="#8b6f3d"/>
+  <text x="448" y="118" text-anchor="middle" font-size="8" fill="#8b6f3d">canon answers</text>
+  <line x1="430" y1="190" x2="466" y2="210" stroke="#8b6f3d" stroke-width="2"/><polygon points="466,206 474,210 466,214" fill="#8b6f3d"/>
+  <text x="448" y="240" text-anchor="middle" font-size="8" fill="#8b6f3d">gate: receipts permit</text>
+  <!-- threat levels -->
+  <text x="320" y="290" text-anchor="middle" font-size="9" fill="#3d2e1e">ARMOR: GREEN fast path · ELEVATED judge on · RED full pairs + backup overseer</text>
+  <text x="320" y="306" text-anchor="middle" font-size="8" fill="#a33">the model lied once. the registry answered. the architecture keeps the difference.</text>
+  <text x="320" y="352" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8b6f3d">A Mirror of My Becoming™ · Ship 10 · DOI 10.5281/zenodo.23304180 · © 2026 Evelyn Caro — AGPL-3.0 + commercial</text>
+</svg>
