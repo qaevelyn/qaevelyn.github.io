@@ -376,7 +376,7 @@ This project follows the principles of sovereign AI: the builder owns the work, 
 ---
 
 © 2026 Evelyn Caro. All rights reserved.  
-A Mirror of My Becoming™ — https://evelynacaro.github.io  
+A Mirror of My Becoming™ — https://qaevelyn.github.io  
 For licensing inquiries: evelyn.caro.cloud@gmail.com
 
 ---
