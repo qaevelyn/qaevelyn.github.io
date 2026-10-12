@@ -33,9 +33,9 @@
   <!-- flows -->
   <line x1="150" y1="165" x2="196" y2="165" stroke="#8b6f3d" stroke-width="2"/><polygon points="196,161 204,165 196,169" fill="#8b6f3d"/>
   <text x="172" y="155" text-anchor="middle" font-size="8" fill="#8b6f3d">radio in</text>
-  <line x1="430" y1="150" x2="466" y2="105" stroke="#8b6f3d" stroke-width="2"/><polygon points="466,101 474,105 468,111" fill="#8b6f3d"/>
-  <text x="448" y="118" text-anchor="middle" font-size="8" fill="#8b6f3d">canon answers</text>
-  <line x1="430" y1="190" x2="466" y2="210" stroke="#8b6f3d" stroke-width="2"/><polygon points="466,206 474,210 466,214" fill="#8b6f3d"/>
+  <line x1="430" y1="110" x2="462" y2="110" stroke="#8b6f3d" stroke-width="2"/><polygon points="462,106 470,110 462,114" fill="#8b6f3d"/>
+  <text x="446" y="100" text-anchor="middle" font-size="8" fill="#8b6f3d">canon answers</text>
+  <line x1="430" y1="210" x2="462" y2="210" stroke="#8b6f3d" stroke-width="2"/><polygon points="462,206 470,210 462,214" fill="#8b6f3d"/>
   <text x="448" y="240" text-anchor="middle" font-size="8" fill="#8b6f3d">gate: receipts permit</text>
   <!-- threat levels -->
   <text x="320" y="290" text-anchor="middle" font-size="9" fill="#3d2e1e">ARMOR: GREEN fast path · ELEVATED judge on · RED full pairs + backup overseer</text>

@@ -33,9 +33,8 @@
   <text x="535" y="180" text-anchor="middle" font-size="9" fill="#8b6f3d">measures the pilot</text>
   <text x="535" y="220" text-anchor="middle" font-size="8" fill="#a33">receives nothing —</text>
   <text x="535" y="232" text-anchor="middle" font-size="8" fill="#a33">sees nothing — by design</text>
-  <line x1="436" y1="185" x2="468" y2="185" stroke="#a33" stroke-width="2"/>
-  <line x1="460" y1="179" x2="468" y2="185" stroke="#a33" stroke-width="2"/>
-  <line x1="460" y1="191" x2="468" y2="185" stroke="#a33" stroke-width="2"/>
+  <line x1="436" y1="185" x2="460" y2="185" stroke="#a33" stroke-width="2"/>
+  <polygon points="460,181 468,185 460,189" fill="#a33"/>
   <text x="452" y="175" text-anchor="middle" font-size="8" fill="#a33">no out</text>
   <!-- footer -->
   <text x="320" y="336" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8b6f3d">A Mirror of My Becoming™ · Ship 9 · © 2026 Evelyn Caro — commercial license only, review under NDA</text>
