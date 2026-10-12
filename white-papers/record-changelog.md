@@ -38,3 +38,8 @@ Two corrections applied same-day, per appended-not-retro-edited: (1) pass-4 Leo 
 
 ## 2026-10-10 — Brand standard: DV14™ applied across the corpus
 First use is first use. DV14 was first commercially offered September 19, 2026 (OTS/Bitcoin-anchored, receipted) and first publicly named in the white papers thereafter; the ™ mark asserts common-law rights from that use and requires no registration. This sweep applies the mark mechanically to every existing DV14 mention — possessive ("DV14's"), punctuated, and standalone forms included — without altering any substantive claim. The before-state is preserved in git history; no retro-edit of content occurred. Protocol Companion™ receives the same standard from its Ship 9 spread forward (first use: Inova pitch, September 27, 2026; clearance receipts: DDG + Leo web checks and USPTO TESS export, October 10, 2026 — 1,033 results, no identical wordmark; AI-RAD COMPANION flagged for any future ® analysis).
+
+## 2026-10-12 — who-decides-when-the-model-lies: Section IV revision
+| Date | Change | Type | Reason |
+| --- | --- | --- | --- |
+| 2026-10-12 | Two sentences added after the quorum table interpreting the near-tie fused scores (one-vote-per-worker convergence) and the mixed worker surfaces (W4 spam-susceptibility receipted and filed as work item) | Revision | Pre-publication red-team catch: the table showed evidence the reader could not interpret from the paper alone; grounded in Mirror-Project/receipts/overseer-v4-build-2026-10-11.md, owner-approved |
