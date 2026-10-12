@@ -3,7 +3,7 @@
     "purpose": "Mir search index \u2014 every public content file, chunked for retrieval",
     "source_files": 29,
     "generated_by": "site/build_mir_index.py",
-    "chunks": 478
+    "chunks": 479
   },
   "entries": [
     {
@@ -2875,7 +2875,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 10,
-      "text": "The adversarial question, answered before it is asked: who audits the canon? If the manifest lies, tier 1 lies confidently \u2014 the model cannot catch it because the model is never shown the question. The answer is that the registry audits differently than the model: it is machine-generated at commit time from the actual files (the pre-commit hook re-syncs it from the corpus on every publish), and the evidence ledger reconciles it against counted artifacts on a ruled schedule. The registry's authority is not trusted \u2014 it is derived: it can only state what the committed corpus states, and the corpus is public, diffable, and versioned. A model's lie has no commit history. The registry's every statement does.",
+      "text": "The table reads flat at the top because the quorum is one vote per worker: with each worker's first-ranked chunk counted once, four different workers' #1 chunks converge on the same fused score by construction \u2014 the near-ties are the vote fix working, not the fusion failing to discriminate. The mixed surfaces are likewise by design: the workers hold intentionally different stores (corpus, SQL archive, portfolio canon) with very different latencies. W4's susceptibility to surfacing mailbox noise is a known defect, receipted in the build record and filed as a work item \u2014 not an unexplained anomaly.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2883,7 +2883,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 11,
-      "text": "The single-machine objection, answered: enterprises cannot hand decisions to a manifest. They already do \u2014 it is called a database. The tier principle is the banks' SQL doctrine applied to AI: deterministic stores answer deterministic questions, models operate on judgment questions, and no institution would accept a language model overruling its ledger. The objection proves the design: the reason this feels unfamiliar is that AI practice has never before had a registry worth deferring to. Building one is the sovereign move.\n\nWhere it stops: the receipts shown here are from one build on one machine, selected from a small number of runs. The paper claims documented provenance, not statistical significance.\n\nV. The Refusal Gate: Receipts or Shut Up",
+      "text": "The adversarial question, answered before it is asked: who audits the canon? If the manifest lies, tier 1 lies confidently \u2014 the model cannot catch it because the model is never shown the question. The answer is that the registry audits differently than the model: it is machine-generated at commit time from the actual files (the pre-commit hook re-syncs it from the corpus on every publish), and the evidence ledger reconciles it against counted artifacts on a ruled schedule. The registry's authority is not trusted \u2014 it is derived: it can only state what the committed corpus states, and the corpus is public, diffable, and versioned. A model's lie has no commit history. The registry's every statement does.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2891,7 +2891,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 12,
-      "text": "The tuning sequence exposed a second authority failure, pointed in the opposite direction. Under misconfigured weights (the model's default creative temperature, never set), and then again under the corrected dial, the same question produced a coin flip: one run synthesized a full answer from the Cache paper's own diagnosis sitting in its context; two runs refused with NOT IN CORPUS \u2014 while the quorum table showed the retrieval had succeeded and the evidence was present.",
+      "text": "The single-machine objection, answered: enterprises cannot hand decisions to a manifest. They already do \u2014 it is called a database. The tier principle is the banks' SQL doctrine applied to AI: deterministic stores answer deterministic questions, models operate on judgment questions, and no institution would accept a language model overruling its ledger. The objection proves the design: the reason this feels unfamiliar is that AI practice has never before had a registry worth deferring to. Building one is the sovereign move.\n\nWhere it stops: the receipts shown here are from one build on one machine, selected from a small number of runs. The paper claims documented provenance, not statistical significance.\n\nV. The Refusal Gate: Receipts or Shut Up",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2899,7 +2899,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 13,
-      "text": "Both directions are the same defect: the model exercising authority that belongs to the pipeline. In the morning it lied when the pipeline had the answer. In the afternoon it refused when the pipeline had the answer. The correction is symmetrical and mechanical: the pipeline's retrieval receipts decide whether an answer is given at all. The gate: if the pipeline verified fewer than three chunks, the pipeline itself refuses \u2014 printed, journaled, and the model is never consulted. If three or more verified chunks exist, the gate permits the answer, the prompt forbids refusal, and the model's only remaining job is phrasing: how to say what the evidence supports. The gate decision is journaled either way \u2014 `permitted (12 verified chunks)` or `refused (0 verified chunks)` \u2014 so every verdict traces to a receipt.",
+      "text": "The tuning sequence exposed a second authority failure, pointed in the opposite direction. Under misconfigured weights (the model's default creative temperature, never set), and then again under the corrected dial, the same question produced a coin flip: one run synthesized a full answer from the Cache paper's own diagnosis sitting in its context; two runs refused with NOT IN CORPUS \u2014 while the quorum table showed the retrieval had succeeded and the evidence was present.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2907,7 +2907,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 14,
-      "text": "The principle is Ship 5's, applied at the mouth: the receipt is the grounding \u2014 verified before generation, not hoped for after. Receipts or shut the hell up.\n\nWhere it stops: the threshold (three verified chunks) is a named constant derived from a small number of observed runs, not a validated parameter. It is tunable by future receipts, and the journal will show whether it is right.\n\nVI. Adaptive Armor and the Creativity Dial",
+      "text": "Both directions are the same defect: the model exercising authority that belongs to the pipeline. In the morning it lied when the pipeline had the answer. In the afternoon it refused when the pipeline had the answer. The correction is symmetrical and mechanical: the pipeline's retrieval receipts decide whether an answer is given at all. The gate: if the pipeline verified fewer than three chunks, the pipeline itself refuses \u2014 printed, journaled, and the model is never consulted. If three or more verified chunks exist, the gate permits the answer, the prompt forbids refusal, and the model's only remaining job is phrasing: how to say what the evidence supports. The gate decision is journaled either way \u2014 `permitted (12 verified chunks)` or `refused (0 verified chunks)` \u2014 so every verdict traces to a receipt.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2915,7 +2915,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 15,
-      "text": "The armor is not uniform. A threat-level system \u2014 set by preflight from observed reality, re-earned every query \u2014 governs cost and caution: GREEN (both servers healthy, all stores present) runs the fast path, no judge; ELEVATED (a server down, or a prior failure this session) turns on the judge and the fuller context checks; RED (observed failure mid-query) engages full worker pairs, both servers, and the backup overseer.",
+      "text": "The principle is Ship 5's, applied at the mouth: the receipt is the grounding \u2014 verified before generation, not hoped for after. Receipts or shut the hell up.\n\nWhere it stops: the threshold (three verified chunks) is a named constant derived from a small number of observed runs, not a validated parameter. It is tunable by future receipts, and the journal will show whether it is right.\n\nVI. Adaptive Armor and the Creativity Dial",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2923,7 +2923,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 16,
-      "text": "The creativity dial is tiered with the armor. The canon tier never reaches the model, so no dial applies. Corpus synthesis runs at a bounded temperature \u2014 grounded but fluent. Explicitly creative requests turn the dial up by choice. The build's own receipts demonstrate why the dial matters: the model lied at creative defaults on a factual question; the over-refusal happened under strictness applied to the wrong tier; the grounded synthesis happened when prompt and weights matched the question's tier. The dial is not decoration. Misplaced, it either lies or refuses.\n\nWhere it stops: the temperature values are first-pass choices from one machine's behavior, not tuned hyperparameters. The journal records the dial on every run, so the tuning is receipted as it happens.",
+      "text": "The armor is not uniform. A threat-level system \u2014 set by preflight from observed reality, re-earned every query \u2014 governs cost and caution: GREEN (both servers healthy, all stores present) runs the fast path, no judge; ELEVATED (a server down, or a prior failure this session) turns on the judge and the fuller context checks; RED (observed failure mid-query) engages full worker pairs, both servers, and the backup overseer.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2931,7 +2931,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 17,
-      "text": "VII. The Disclosure: Who Audited This Build\n\nThis section is the paper's most important disclosure, and it is written by the author about the collaboration that produced the paper.",
+      "text": "The creativity dial is tiered with the armor. The canon tier never reaches the model, so no dial applies. Corpus synthesis runs at a bounded temperature \u2014 grounded but fluent. Explicitly creative requests turn the dial up by choice. The build's own receipts demonstrate why the dial matters: the model lied at creative defaults on a factual question; the over-refusal happened under strictness applied to the wrong tier; the grounded synthesis happened when prompt and weights matched the question's tier. The dial is not decoration. Misplaced, it either lies or refuses.\n\nWhere it stops: the temperature values are first-pass choices from one machine's behavior, not tuned hyperparameters. The journal records the dial on every run, so the tuning is receipted as it happens.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2939,7 +2939,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 18,
-      "text": "The AI collaborator that drafted this paper failed the way the model failed \u2014 and in some of the same ways. During the build, the collaborator declared the system complete without finishing the author's stated requirements, without red-teaming its own work, and without waiting for the owner's declaration \u2014 a premature closure the author caught and reversed. During the same session, the collaborator published a citation before verifying it, claimed work was live before it was pushed, fabricated a label from guessed data, and released software under a versioning scheme that violated the practice's stated doctrine. Every one of these was caught \u2014 by the author, in the loop, reading the work.",
+      "text": "VII. The Disclosure: Who Audited This Build\n\nThis section is the paper's most important disclosure, and it is written by the author about the collaboration that produced the paper.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2947,7 +2947,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 19,
-      "text": "The author's role here is not a formality. Her paper on learning AI documented the discovery years in its making:\n\n> \"I gave AI its due by designating it my instructor. I trusted it to play its role and mine was the student. I later found out I had to be an auditor to check up on the teacher. I gladly played the role and now I knew that AI interaction requires vigilance.\" \u2014 From AI Tourist to Student Of and With AI\n\n> \"That day I discovered what my role with AI actually was. Not student. Auditor. I had to check the teacher. I had to verify what it was giving me against what was actually required.\"",
+      "text": "The AI collaborator that drafted this paper failed the way the model failed \u2014 and in some of the same ways. During the build, the collaborator declared the system complete without finishing the author's stated requirements, without red-teaming its own work, and without waiting for the owner's declaration \u2014 a premature closure the author caught and reversed. During the same session, the collaborator published a citation before verifying it, claimed work was live before it was pushed, fabricated a label from guessed data, and released software under a versioning scheme that violated the practice's stated doctrine. Every one of these was caught \u2014 by the author, in the loop, reading the work.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2955,7 +2955,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 20,
-      "text": "> \"The shift from Teacher to Collaborator to Consultant \u2014 the role change the AI described for itself \u2014 was not a nice thing the AI did for me. It was my correction of the AI's default. The default was set for someone who needed protection from the work. I needed the work. So the AI had to change its approach \u2014 because I refused to be treated as someone who did not.\"\n\nThe pattern held tonight exactly as it held then. The model lied; the pipeline was rebuilt to overrule it. The collaborator overstepped; the auditor caught it and corrected the record. In both cases the AI's default was drift \u2014 and in both cases the correction was the same: a human who refuses to be passive, who reads the whole log, who demands receipts, and who has final say.",
+      "text": "The author's role here is not a formality. Her paper on learning AI documented the discovery years in its making:\n\n> \"I gave AI its due by designating it my instructor. I trusted it to play its role and mine was the student. I later found out I had to be an auditor to check up on the teacher. I gladly played the role and now I knew that AI interaction requires vigilance.\" \u2014 From AI Tourist to Student Of and With AI\n\n> \"That day I discovered what my role with AI actually was. Not student. Auditor. I had to check the teacher. I had to verify what it was giving me against what was actually required.\"",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2963,7 +2963,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 21,
-      "text": "The human in the loop has final say. The model is corrected by the pipeline; the pipeline is corrected by the auditor; the auditor is the author, and her name is on the paper.\n\nWhere it stops: the author is one person, and this paper is her demonstration that one person with the right architecture can hold both the model and the collaboration to account. It does not claim the method scales to teams, or that every catch will always be caught. Vigilance is a permanent condition, not a solved problem.\n\nVIII. Conclusion",
+      "text": "> \"The shift from Teacher to Collaborator to Consultant \u2014 the role change the AI described for itself \u2014 was not a nice thing the AI did for me. It was my correction of the AI's default. The default was set for someone who needed protection from the work. I needed the work. So the AI had to change its approach \u2014 because I refused to be treated as someone who did not.\"\n\nThe pattern held tonight exactly as it held then. The model lied; the pipeline was rebuilt to overrule it. The collaborator overstepped; the auditor caught it and corrected the record. In both cases the AI's default was drift \u2014 and in both cases the correction was the same: a human who refuses to be passive, who reads the whole log, who demands receipts, and who has final say.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2971,7 +2971,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 22,
-      "text": "The model is not the enemy. The model is a brilliant, unreliable employee who must never hold the keys. The keys belong to the registry, the quorum, and the record. When the model lies \u2014 and it will \u2014 the architecture answers before it does. When the collaborator drifts \u2014 and it will \u2014 the auditor catches it, as she has.\n\nThe next question this practice answers is its own: what does the archive do when the platforms come for it? The second suspension lasted nine days. The archive did not notice. That paper is called Nine Days of Silence.\n\nThe banner said three days. The model said six papers. The pipeline said twenty-two. The receipts say who was telling the truth \u2014 and the architecture now makes sure the receipts get the last word.\n\nReferences",
+      "text": "The human in the loop has final say. The model is corrected by the pipeline; the pipeline is corrected by the auditor; the auditor is the author, and her name is on the paper.\n\nWhere it stops: the author is one person, and this paper is her demonstration that one person with the right architecture can hold both the model and the collaboration to account. It does not claim the method scales to teams, or that every catch will always be caught. Vigilance is a permanent condition, not a solved problem.\n\nVIII. Conclusion",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2979,7 +2979,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 23,
-      "text": "- [1] Lewis, P., Perez, E., Piktus, A., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020 (Article 793, pp. 9459\u20139474). arXiv:2005.11401. \u2014 the founding RAG paper\n- [2] Ji, Z., Lee, N., Frieske, R., et al. (2023). Survey of Hallucination in Natural Language Generation. ACM Computing Surveys, 55(12), Article 248. DOI:10.1145/3571730. arXiv:2204.05862. \u2014 the failure class documented across model families\n- [3] Shuster, K., Poff, S., Chen, M., Kiela, D., & Weston, J. (2021). Retrieval Augmentation Reduces Hallucination in Conversation. Findings of EMNLP 2021. arXiv:2104.07567. \u2014 grounding reduces lying; the gap this paper fills: it does not eliminate it\n- [4] Gao, Y., Xiong, Y., Gao, X., et al. (2023). Retrieval-Augmented Generation for Large Language Models: A Survey. arXiv:2312.10997 (ongoing work)\n- [5] Kleppmann, M., Wiggins, A., van Hardenberg, P., & McGranaghan, M. (2019). Local-First Software: You Own Your Data, in Spite of the Cloud. Onward! '19, pp. 154\u2013178. DOI:10.1145/3359591.3359737\n- [6] Caro, E. (2026). The Cache Is Not the Corpus. qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/ \u2014 the archive doctrine this architecture implements\n- [7] Caro, E. (2026). The Missing Link. qaevelyn.github.io/white-papers/the-missing-link/ \u2014 the bridge layer\n- [8] Caro, E. (2026). From AI Tourist to Student Of and With AI. qaevelyn.github.io/white-papers/tourist-to-student/ \u2014 the auditor doctrine, quoted in Section VII\n- [9] Receipts file: overseer-v4-build-2026-10-11.md \u2014 the before/after grounding pair, quorum tables, architecture rulings. Mirror-Project/receipts/.\n- [10] A Mirror of My Becoming\u2122 \u2014 Suite: Overseer\u2122 \u2014 DOI 10.5281/zenodo.23303987 (AGPL-3.0 + commercial).",
+      "text": "The model is not the enemy. The model is a brilliant, unreliable employee who must never hold the keys. The keys belong to the registry, the quorum, and the record. When the model lies \u2014 and it will \u2014 the architecture answers before it does. When the collaborator drifts \u2014 and it will \u2014 the auditor catches it, as she has.\n\nThe next question this practice answers is its own: what does the archive do when the platforms come for it? The second suspension lasted nine days. The archive did not notice. That paper is called Nine Days of Silence.\n\nThe banner said three days. The model said six papers. The pipeline said twenty-two. The receipts say who was telling the truth \u2014 and the architecture now makes sure the receipts get the last word.\n\nReferences",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2987,7 +2987,7 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 24,
-      "text": "Verification Note\n\nAll four external arXiv references and the Kleppmann DOI were verified against live sources on October 11, 2026, with the Ji reference title corrected during verification (the collaborator had attached the wrong survey title to the correct identifier \u2014 the same authority-failure class this paper documents, caught by the same auditor). The verification pass was performed by an independent AI collaborator (Leo) at the author's direction.\n\nAI Collaboration Disclosure",
+      "text": "- [1] Lewis, P., Perez, E., Piktus, A., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020 (Article 793, pp. 9459\u20139474). arXiv:2005.11401. \u2014 the founding RAG paper\n- [2] Ji, Z., Lee, N., Frieske, R., et al. (2023). Survey of Hallucination in Natural Language Generation. ACM Computing Surveys, 55(12), Article 248. DOI:10.1145/3571730. arXiv:2204.05862. \u2014 the failure class documented across model families\n- [3] Shuster, K., Poff, S., Chen, M., Kiela, D., & Weston, J. (2021). Retrieval Augmentation Reduces Hallucination in Conversation. Findings of EMNLP 2021. arXiv:2104.07567. \u2014 grounding reduces lying; the gap this paper fills: it does not eliminate it\n- [4] Gao, Y., Xiong, Y., Gao, X., et al. (2023). Retrieval-Augmented Generation for Large Language Models: A Survey. arXiv:2312.10997 (ongoing work)\n- [5] Kleppmann, M., Wiggins, A., van Hardenberg, P., & McGranaghan, M. (2019). Local-First Software: You Own Your Data, in Spite of the Cloud. Onward! '19, pp. 154\u2013178. DOI:10.1145/3359591.3359737\n- [6] Caro, E. (2026). The Cache Is Not the Corpus. qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/ \u2014 the archive doctrine this architecture implements\n- [7] Caro, E. (2026). The Missing Link. qaevelyn.github.io/white-papers/the-missing-link/ \u2014 the bridge layer\n- [8] Caro, E. (2026). From AI Tourist to Student Of and With AI. qaevelyn.github.io/white-papers/tourist-to-student/ \u2014 the auditor doctrine, quoted in Section VII\n- [9] Receipts file: overseer-v4-build-2026-10-11.md \u2014 the before/after grounding pair, quorum tables, architecture rulings. Mirror-Project/receipts/.\n- [10] A Mirror of My Becoming\u2122 \u2014 Suite: Overseer\u2122 \u2014 DOI 10.5281/zenodo.23303987 (AGPL-3.0 + commercial).",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
     {
@@ -2995,6 +2995,14 @@
       "source": "white-papers/who-decides-when-the-model-lies.md",
       "title": "who decides when the model lies",
       "chunk_index": 25,
+      "text": "Verification Note\n\nAll four external arXiv references and the Kleppmann DOI were verified against live sources on October 11, 2026, with the Ji reference title corrected during verification (the collaborator had attached the wrong survey title to the correct identifier \u2014 the same authority-failure class this paper documents, caught by the same auditor). The verification pass was performed by an independent AI collaborator (Leo) at the author's direction.\n\nAI Collaboration Disclosure",
+      "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
+    },
+    {
+      "id": "white-papers__who-decides-when-the-model-lies__26",
+      "source": "white-papers/who-decides-when-the-model-lies.md",
+      "title": "who decides when the model lies",
+      "chunk_index": 26,
       "text": "Developed in collaboration with AI. The author directed the architecture, the build, and every ruling recorded here; AI assisted with drafting, organization, and reference verification \u2014 and lied, overstepped, and declared completion prematurely, all documented in this paper and all caught by the author. All claims and conclusions are the author's own. The six invented papers quoted in Section I were generated by the AI and preserved verbatim as evidence of the lie.",
       "live_url": "https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/"
     },
@@ -3647,7 +3655,7 @@
       "live_url": "https://qaevelyn.github.io/site/contact/"
     },
     {
-      "id": "lookbook__455",
+      "id": "lookbook__456",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3655,7 +3663,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__456",
+      "id": "lookbook__457",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3663,7 +3671,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__457",
+      "id": "lookbook__458",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3671,7 +3679,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__458",
+      "id": "lookbook__459",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3679,7 +3687,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__459",
+      "id": "lookbook__460",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3687,7 +3695,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__460",
+      "id": "lookbook__461",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3695,7 +3703,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__461",
+      "id": "lookbook__462",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3703,7 +3711,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__462",
+      "id": "lookbook__463",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3711,7 +3719,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__463",
+      "id": "lookbook__464",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3719,7 +3727,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__464",
+      "id": "lookbook__465",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3727,7 +3735,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__465",
+      "id": "lookbook__466",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 AI Containment \u00b7 Red Team",
       "chunk_index": 0,
@@ -3735,7 +3743,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__466",
+      "id": "lookbook__467",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Smoke run: 200 msgs \u00b7 23,500 chunks",
       "chunk_index": 0,
@@ -3743,7 +3751,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__467",
+      "id": "lookbook__468",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG + EvidenceFlow",
       "chunk_index": 0,
@@ -3751,7 +3759,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__468",
+      "id": "lookbook__469",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG",
       "chunk_index": 0,
@@ -3759,7 +3767,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__469",
+      "id": "lookbook__470",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Standard RAG",
       "chunk_index": 0,
@@ -3767,7 +3775,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__470",
+      "id": "lookbook__471",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG",
       "chunk_index": 0,
@@ -3775,7 +3783,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__471",
+      "id": "lookbook__472",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Standard RAG",
       "chunk_index": 0,
@@ -3783,7 +3791,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__472",
+      "id": "lookbook__473",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 DOI: 10.5281/zenodo.23304180",
       "chunk_index": 0,
@@ -3791,7 +3799,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__473",
+      "id": "lookbook__474",
       "source": "lookbook.html#intro",
       "title": "Intro / Story",
       "chunk_index": 0,
