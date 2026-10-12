@@ -3,6 +3,7 @@ layout: paper
 title: "Three Days of Silence"
 subtitle: "What the Silence Owed: An English Teacher's Record of the Suspension, the Support Maze, and the Rule That Was Never Named"
 date: 2026-10-11
+timestamp: "2026-10-11 13:14"
 author: Evelyn Caro
 type: record-paper
 permalink: /white-papers/three-days-of-silence/

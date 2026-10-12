@@ -32,6 +32,7 @@ for path in glob.glob(os.path.join(ROOT, "*.md")):
         "subtitle": fm.get("subtitle", ""),
         "author": fm.get("author", "Evelyn Caro"),
         "date": fm.get("date", ""),
+        "timestamp": fm.get("timestamp", ""),
         "type": fm.get("type", "white-paper"),
         "permalink": permalink,
         "live_url": live_url,
@@ -39,7 +40,7 @@ for path in glob.glob(os.path.join(ROOT, "*.md")):
         "status": "published"
     })
 
-entries.sort(key=lambda e: e["date"], reverse=True)
+entries.sort(key=lambda e: (e["date"], e.get("timestamp", "")), reverse=True)
 
 with open(MANIFEST) as f: manifest = json.load(f)
 manifest["white_papers"] = entries
