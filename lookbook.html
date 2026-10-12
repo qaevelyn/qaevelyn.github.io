@@ -1536,7 +1536,8 @@ logger.info("chunk %d/%d"
       li.style.marginBottom = '0.75rem';
       const a = document.createElement('a');
       a.href = url;
-      a.target = '_blank';
+      const samePage = url.includes('lookbook.html');
+      if (!samePage) a.target = '_blank';
       a.style.color = '#007acc';
       a.style.textDecoration = 'none';
       a.innerHTML = iconFor(type) + ' ' + title;
@@ -1819,11 +1820,20 @@ logger.info("chunk %d/%d"
     a.textContent = result.answer;
     answerEl.appendChild(a);
 
-    // If there is a source link, add it
+    // If there is a source link, add it — same-page links jump in place (owner ruling: no duplicate tabs)
     if (result.source) {
       const link = document.createElement('a');
       link.href = result.source;
-      link.target = '_blank';
+      const samePage = result.source.indexOf('lookbook.html') !== -1;
+      if (!samePage) link.target = '_blank';
+      else link.addEventListener('click', function(ev) {
+        ev.preventDefault();
+        const hash = result.source.split('#')[1];
+        if (hash) {
+          const target = document.getElementById(hash) || document.querySelector('[id*="' + hash + '"]');
+          if (target) target.scrollIntoView({behavior: 'smooth'});
+        }
+      });
       link.rel = 'noopener';
       link.textContent = '→ ' + (result.title || 'read more');
       link.style.display = 'block';
