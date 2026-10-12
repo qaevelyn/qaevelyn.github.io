@@ -43,3 +43,13 @@ First use is first use. DV14 was first commercially offered September 19, 2026 (
 | Date | Change | Type | Reason |
 | --- | --- | --- | --- |
 | 2026-10-12 | Two sentences added after the quorum table interpreting the near-tie fused scores (one-vote-per-worker convergence) and the mixed worker surfaces (W4 spam-susceptibility receipted and filed as work item) | Revision | Pre-publication red-team catch: the table showed evidence the reader could not interpret from the paper alone; grounded in Mirror-Project/receipts/overseer-v4-build-2026-10-11.md, owner-approved |
+
+## 2026-10-12 — Fleet URL standardization + version discipline + v6 release
+| Date | Change | Type | Reason |
+| --- | --- | --- | --- |
+| 2026-10-12 | Section IV of who-decides-when-the-model-lies: two sentences added after quorum table interpreting near-tie fused scores and mixed worker surfaces, grounded in overseer-v4-build receipts | Revision | Pre-publication red-team catch; owner-approved; released as v6 (DOI 10.5281/zenodo.23310741) |
+| 2026-10-12 | CITATION.cff created for qaevelyn.github.io (v6, ORCID, preferred-citation pointing at corrected version DOI) | Presentation | Machine-readable citation; corrected version is what DOI resolvers serve |
+| 2026-10-12 | CITATION.cff versions fleet-wide: v1.0.x → v1 (whole-number doctrine) across 14 repo clones | Presentation | Owner versioning ruling; decimal versions violated whole-number standard |
+| 2026-10-12 | evelynacaro.github.io footer URLs across 11 repos standardized to qaevelyn.github.io | Presentation | URL is plumbing, not prose (Oct 7 precedent); canonical URL ruled by owner 2026-10-12: qaevelyn.github.io |
+| 2026-10-12 | Process error recorded: the URL sweep ran on a wrong premise (evelynacaro treated as a typo of qaevelyn; it is the owner's separate name property). Correct in direction only after the owner's correction. Premise-confirmation before fleet-wide rewrites is now standing procedure. | Correction | A record that hides its errors is publicity, not documentation |
+| 2026-10-12 | evelyncaro.github.io (name-squat signpost) LICENSE standardized + repo description corrected to declare its signpost function | Presentation | Signpost must announce itself; stale portfolio description misrepresented the repo |
