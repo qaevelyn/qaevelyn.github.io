@@ -56,7 +56,10 @@ The build's receipts are filed and public. The quorum table from the verified ru
 | 0.0161 | W3-working(#2) | The diagnosis is not what the nineteen deaths suggested. The |
 | 0.0159 | W3-working(#3) | Where it stops: the checkpoint design prevented data loss an |
 
+
 (One-vote-per-worker after the same-worker vote-inflation defect was exposed by this very table and fixed same-session — the quorum made the defect visible that a hidden fusion would have concealed.)
+
+The table reads flat at the top because the quorum is one vote per worker: with each worker's first-ranked chunk counted once, four different workers' #1 chunks converge on the same fused score by construction — the near-ties are the vote fix working, not the fusion failing to discriminate. The mixed surfaces are likewise by design: the workers hold intentionally different stores (corpus, SQL archive, portfolio canon) with very different latencies. W4's susceptibility to surfacing mailbox noise is a known defect, receipted in the build record and filed as a work item — not an unexplained anomaly.
 
 **The adversarial question, answered before it is asked:** *who audits the canon?* If the manifest lies, tier 1 lies confidently — the model cannot catch it because the model is never shown the question. The answer is that the registry audits differently than the model: it is machine-generated at commit time from the actual files (the pre-commit hook re-syncs it from the corpus on every publish), and the evidence ledger reconciles it against counted artifacts on a ruled schedule. The registry's authority is not trusted — it is *derived*: it can only state what the committed corpus states, and the corpus is public, diffable, and versioned. A model's lie has no commit history. The registry's every statement does.
 
