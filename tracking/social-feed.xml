@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: /tracking/social-feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Evelyn Caro — Social Feed</title>
+  <link>https://qaevelyn.github.io/tracking/</link>
+  <description>White paper posts across dev.to, Substack, LinkedIn, Reddit</description>
+  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+{% assign posts = site.data.social_posts.papers %}{% for p in posts %}{% for pair in p.posts %}{% assign k = pair[0] %}{% assign v = pair[1] %}{% if v.url %}
+  <item>
+    <title>{{ p.title }} — {{ k }}</title>
+    <link>{{ v.url }}</link>
+    <guid isPermaLink="true">{{ v.url }}</guid>
+    <pubDate>{{ v.posted | date_to_rfc822 }}</pubDate>
+    <description>{{ p.title }} posted to {{ k }} on {{ v.posted }}. Permalink: {{ p.permalink }}</description>
+  </item>
+{% endif %}{% endfor %}{% endfor %}
+</channel>
+</rss>
