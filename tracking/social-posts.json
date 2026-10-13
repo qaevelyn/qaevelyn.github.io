@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_utc": "2026-10-13T18:01:54Z",
+  "updated_utc": "2026-10-13T18:02:01Z",
   "platforms": [
     "devto",
     "substack",
@@ -23,8 +23,8 @@
           "posted": "2026-10-13"
         },
         "linkedin": {
-          "url": null,
-          "posted": null
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7515811636100886528/",
+          "posted": "2026-10-13"
         },
         "reddit": {
           "url": null,
