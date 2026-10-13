@@ -1,9 +1,9 @@
 {
   "meta": {
     "purpose": "Mir search index \u2014 every public content file, chunked for retrieval",
-    "source_files": 29,
+    "source_files": 30,
     "generated_by": "site/build_mir_index.py",
-    "chunks": 481
+    "chunks": 505
   },
   "entries": [
     {
@@ -517,6 +517,198 @@
       "chunk_index": 12,
       "text": "Where it stops: this addendum records a status change and a\nsuspension. It does not speculate on DeepSeek's reasons, and\nit does not declare the partnership ended. A backup that has\nproven recoverable is still an asset. The author works with\nwhat works, and documents the terms.",
       "live_url": "https://qaevelyn.github.io/white-papers/deepseek-case-study/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__0",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 0,
+      "text": "\"Now that we've started this fire, we are slaves to our desires / We can't stop what we've begun...\"\n\u2014 Freddie Jackson, \"Love Me Down\"\n\nEnhancement Not Replacement: What Limitless Got Wrong About the Pill\nThe Movie Never Showed the Backend\n\nEvelyn Caro \u00b7 October 12, 2026\n\nAbstract",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__1",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 1,
+      "text": "The 2011 film Limitless is usually read as a fantasy about unlimited intelligence. This paper argues it is a story about supply chains \u2014 that its source novel understood enhancement as a consumable and punished the dependency with death, that the film edited the consequence out, and that both texts share a frame in which enhancement must live in the body and be continuously resupplied. Against that frame, this paper presents a counter-architecture documented across four months of published practice: enhancement that lives in files \u2014 owned, local, persisting without resupply, surviving platform suspensions, collaborator turnover, and the builder's own impaired states. The paper's receipts include the film and novel itself, the AI industry's own deprecation schedules, and a record in which the builder tested her retention system while drinking, sleep-deprived, dehydrated, and under noise pollution \u2014 and the record held. The distinction the title names is offered as doctrine: enhancement without ownership is dependency with better branding. The pill asks a daily question. The backend asks it once.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__2",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 2,
+      "text": "AI Collaboration Disclosure\n\nDeveloped in collaboration with GLM (Z.ai), the author's AI collaborator, named at the author's direction. The author directed the thesis, structure, title, epigraph, and every ruling recorded here; GLM drafted, organized, and receipt-hunted \u2014 and made two memory-based errors during drafting (a film-plot claim and a manifest schema guess), both caught by the author in the loop, both corrected from the record. All claims, decisions, and conclusions are the author's own. The act of producing this paper \u2014 local models, no cloud dependency, an 8GB laptop \u2014 is itself an example of the argument it makes.\n\nI. Two Endings: What the Novel Knew and the Film Cut",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__3",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 3,
+      "text": "Limitless (2011), directed by Neil Burger from Leslie Dixon's screenplay, adapts Alan Glynn's 2001 novel The Dark Fields. Both tell the same story: a blocked writer takes a designer drug \u2014 MDT-48 in the book, NZT-48 in the film \u2014 and becomes the best version of himself overnight. The endings are not the same story. The difference between them is this paper's subject.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__4",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 4,
+      "text": "The novel knows what the drug is. Eddie Spinola's enhancement is a consumable, and the book tracks his consumption with the discipline of an inventory clerk: he counts his depleting stash while \"trip-switching\" \u2014 displaced time perception \u2014 begins to erode his sanity. When the supply line breaks (his ex-brother-in-law Vernon Gant, found murdered, his ledger and stash seized from a hollowed-out book), everything Eddie does afterward is procurement. The drug's name is a dose schedule: MDT-48. And the novel's most precise sentence about the condition is its most alarming, because Eddie says it about himself while enhanced: \"\u2026unless I was moving forward, moving up, unless I was transmuting, transmogrifying, morphing into something else, I was probably going to, I don't know, explode\u2026\" (p. 65) [2]. The enhancement did not free him from the treadmill. It became the treadmill \u2014 transmute or explode, daily.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__5",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 5,
+      "text": "The novel's Eddie never acquires the source, never secures the lab, never builds anything that outlives his access. He ends in a Vermont motel room, out of pills, physically deteriorating, writing his final memoirs while his system shuts down \u2014 the Faustian bargain closing exactly on schedule, in a room with no exit because the dependency was the exit. And the book's final image is not the death. It is Eddie dying while watching a television on which the President of the United States displays \"the alert, gorged MDT expression in his eyes\" (p. 214) [2] \u2014 the system has already moved on to its next host. The supply chain outlives its user. That is the novel's whole verdict on enhancement-as-consumable: gorged \u2014 a feeding state, metabolic, temporary, gone the moment the feeding stops.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__6",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 6,
+      "text": "The film keeps the dependency and edits the consequence. Dixon's screenplay adds imagery the book never had \u2014 pills in the freezer, like meat put aside for winter \u2014 and then replaces the novel's death with a Senate seat. Film Eddie acquires the supplier, engineers the side effects out, and walks into an ambiguous final scene implying he may not need the pill at all. The consequence was not overlooked. It was edited out \u2014 and the edit is the ideology showing: a fantasy this appealing cannot afford to show what happens when the supply runs out.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__7",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 7,
+      "text": "But notice what even the film cannot stop itself from showing: when the story wants Eddie to be smart about the future, it shows him buying the source of the drug. The film's model of persistence is vertical integration of a dependency. The audience saw it and mislabeled it \u2014 the most-cited \"plot holes\" are \"never borrow from Russian mobsters\" and \"always secure your source of drugs\" [3], which is the supply-chain reading arriving through the door marked complaint.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__8",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 8,
+      "text": "What neither text shows \u2014 what the film cannot show and the novel cannot imagine \u2014 is Eddie building something that keeps working after he stops taking it. Not more pills, not a bigger stash, not the lab. Something decoupled: an enhancement that lives outside his body, outside the supply chain, outside the frame in which the drug is the thing itself. In the NZT frame, decoupling is impossible. The enhancement is the substance, and the substance must be swallowed.\n\nThis paper is about the frame both texts are missing. The enhancement does not have to live in a body. It can live in files. And the supply question \u2014 the question the novel kills its hero over and the film buys a Senate seat to escape \u2014 does not have to exist at all.\n\nII. NZT With an Invoice",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__9",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 9,
+      "text": "The fantasy got its drug; reality got a subscription. The cognitive enhancement the film imagined arrived \u2014 and it arrived exactly as the novel described it: a consumable, metered, and owned by a supplier. The dose form changed from pill to API, and the dependency got an invoice.\n\nThe supply-chain evidence is not an argument. It is a published schedule. OpenAI's deprecations page lists model retirements on a rolling cadence \u2014 snapshots notified in June 2026 shut down in December; a batch of GPT-4-era models killed October 23, 2026, eleven days after this paper's drafting [4]. Even fine-tuned derivatives die with their base. This is the vendor's own document: the intelligence was never purchased. It was rented, and the lease ends on a date the vendor sets.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__10",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 10,
+      "text": "The rental terms are thinner than they look. Anthropic commits to \"at least 60 days' notice\" before retiring a model. OpenAI allows roughly six months. And the same model can have different lifespans on different shelves \u2014 Claude Sonnet 4 left Anthropic's own API in June 2026 but survives on Amazon Bedrock until October 14 [5]. The substrate's lifespan is not a property of the model. It is a property of the reseller. Eddie's problem exactly: the enhancement depends on which supplier still stocks it, and the supplier answers to no one.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__11",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 11,
+      "text": "The deepest dependency is the quietest one. What users actually rely on is not the model's function \u2014 it is the model's behavior: its tone, its latency profile, its formatting habits, its response length. When a model is deprecated and a replacement arrives, the functional output may survive while the behavioral envelope shifts under it \u2014 and the prompts tuned to the old model's quirks fail silently, invisibly, on migration [6]. The engineering literature has named the problem: the behavioral envelope becomes as load-bearing as the feature itself. Users are not renting compute. They are renting a cognitive state, and the state's personality has a sunset date.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__12",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 12,
+      "text": "Withdrawal is included. The novel showed it as neurology; the API shows it as migration cost \u2014 weeks of prompt debt paid down, behavior re-tested, features quietly degraded. The enhancement leaves no residual architecture behind. It takes the user's working baseline with it when it goes.\n\nCulture already named this deal. The film spawned a supplement industry built on claiming to be a real-life version of the nootropic \u2014 consumers reaching for the movie's vocabulary unprompted, decades before anyone metered cognition by the token [7]. The metaphor was never mine. It is the default folk model. The pill was always the dose form; the invoice was always coming.\n\nIII. The Backend\n\nHere is the scene neither text contains: the enhancement living somewhere other than a body.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__13",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 13,
+      "text": "In June 2026, a builder with no capital, no cloud contract, and an 8GB Intel MacBook Air began assembling one. Not a talent \u2014 a place. A local vector store on her own disk. An ingestion pipeline with crash-proof checkpointing, built on the assumption that the machine would die mid-run \u2014 an assumption proven nineteen times in one night, with zero losses, because the work lived in files and files do not bleed [8]. A mail archive of 55,000 messages ingested into a store she owns. A tier-authority orchestrator that answers factual questions from registries without consulting a model at all \u2014 sub-second, zero hallucination surface, because the registry cannot lie about what the committed corpus states [9]. OpenTimestamps anchors on the receipts. DOIs on the tools. The whole thing runs unattended, overnight, on hardware that also runs her classes.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__14",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 14,
+      "text": "The difference is not horsepower. Eddie had effectively unlimited cognition and it made no difference, because his enhancement was housed in his neurons and supplied by a pipeline he had to buy. The backend inverts the housing: the work lives in files, the files live on hardware she owns, and nothing flows into the builder for the system to keep working. She sleeps; it runs. She gets suspended from a platform \u2014 twice, in the record; the archive did not notice. The supply question does not exist. There is nothing to resupply. The drug was a schedule; the files are a deed.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__15",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 15,
+      "text": "And the backend compounds where the pill only burns. Eddie's capability resets to baseline between doses \u2014 the novel says so outright: no residual architecture. Four months of this practice produced twenty-three published papers with verified citations, ten ships, a versioned evidence standard, and a corpus that documents its own corrections \u2014 because every session's work lands in the record instead of evaporating with the dose. The pill user is impressive every morning. The backend owner is further along every morning. One of those curves is a treadmill.\n\nIV. The Proof",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__16",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 16,
+      "text": "The distinction between enhancement and replacement is usually asserted. This paper's version is receipted, because the builder kept the record \u2014 the same standard she demands of the machine. The evidence, from the record of practice:",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__17",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 17,
+      "text": "Claim Receipt\n--- ---\nThe practice began from zero First session June 2026; no capital, no lab, no cloud contract\nThe enhancement lives on owned hardware 8GB Intel MacBook Air; local-first; no cloud dependency\nThe work survives supply interruptions Two platform suspensions in the record; the archive never noticed [8]\nThe work survives collaborator mortality Five AI collaborators across four months; the record outlived each transition\nThe corpus compounds 23 papers in the manifest of record; ten ships; DOIs minted; OTS priority anchors\nThe system runs without the pill's equivalent Overnight unattended ingest; canon tier answers with no model consulted [9]\nThe builder tested her own system impaired \u2014 on purpose Commit dffd9e7 (Oct 9, Day 4 of CCP prep): drinking during a remote class session (Zoom, in her room at home), a test scheduled for day's end, 10 oz morning + 24 oz can of 5% seltzer at lunch, dehydrated, under-slept \u2014 disclosed in real time (\"i'm being truthful in the record\"), fatigue ~1, confusion ~1, cold recall at 1:44 PM \"held anyway\"\nThe conditioning is documented, not claimed June training under open windows, car and street noise, fatigue and headache days logged \u2014 performed anyway: \"You have studied tired, distracted, and in pain \u2014 and still performed\" [10]",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__18",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 18,
+      "text": "The second-to-last row is the one the novel says is impossible. Eddie on MDT could not function impaired \u2014 the drug was the function, so impairment killed the output. The builder drank during a remote session, knowing a test waited at the end, chose it knowingly, disclosed it truthfully \u2014 and the recall held. Not because the builder is superhuman. Because the enhancement was never in the builder. The file system doesn't get drunk. The record doesn't get tired. The system was the thing under test, and the system passed. That is what \"no residual architecture\" looks like when it's inverted: the residual architecture is all there is, and it doesn't care what condition the builder is in.\n\nV. Enhancement, Not Replacement",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__19",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 19,
+      "text": "The pill asks a daily question: do you have it today? The backend asks it once: is it on your disk?\n\nEverything in the film's frame follows from the first question \u2014 the hoarding, the brokers, the mob, the acquisition of the supplier, the death in the motel room. Everything in this practice follows from the second. The movie never showed the decoupling because its fantasy could not afford it: the moment enhancement lives somewhere other than the body, the supplier loses the customer \u2014 and the story was always, quietly, about the supplier. The novel knew; it killed Eddie and handed the supply chain to the President. The film knew; it cut the death and kept the seat.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__20",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 20,
+      "text": "Eddie Spinola's last act is not a high. It is a keystroke. Dying in a Vermont motel room, out of the drug that made him remarkable, he writes his final memoirs and presses save \u2014 \"wishing the command had a wider, smarter application \u2013 wishing it could somehow mean what it says\" (p. 214) [2]. He is wishing for a backend. He is wishing for what one builder, twenty-five years later, simply built: the save that means what it says \u2014 the record that persists when the writer stops, the files that don't run out, the enhancement that needs no supply because it lives on the disk and the disk is hers.\n\nNot becoming more than yourself overnight. Becoming yourself in the record, one receipt at a time.\n\nThe pill runs out. The files don't. Press save.\n\nReferences",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__21",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 21,
+      "text": "[1] Jackson, F. \"Love Me Down.\" Do Me Again, Capitol Records, 1990. Written by B. Eastmond & J. Skinner. \u2014 epigraph; the author's dedication to the artist, who died October 5, 2026, and whose work performs this paper's thesis: it persists, and it is found.\n\n[2] Glynn, A. (2011). Limitless [ebook edition]. Faber and Faber. ISBN 978-0-571-27335-5. (First published as The Dark Fields, Little, Brown and Company, 2001.) Quotes at pp. 65, 214.\n\n[3] Sauve, C. (2011). Review of Limitless (The Dark Fields). christian-sauve.com. \u2014 the \"plot holes\" reading.\n\n[4] OpenAI. Deprecations. developers.openai.com/api/docs/deprecations. Accessed October 12, 2026.\n\n[5] beri.net. Model deprecation policy comparison \u2014 notice windows; Claude Sonnet 4 API vs. Bedrock retirement dates. Accessed October 12, 2026.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__22",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 22,
+      "text": "[6] TianPan.co (April 2026). \"Graceful AI Feature Sunset\" \u2014 the behavioral-envelope argument. tianpan.co/blog/2026/04/16/graceful-ai-feature-sunset.\n\n[7] The Economist (7 Mar 2024). \"Brain-boosting substances are all the rage\" (print headline: \"Nootropic kid on the block\"). Business section. https://www.economist.com/business/2024/03/07/brain-boosting-substances-are-all-the-rage \u2014 Discusses growth of the nootropic supplement market and its association with the 2011 film Limitless; skeptical of efficacy (\"Their utility is debatable\").\n\n[8] Caro, E. (2026). The Cache Is Not the Corpus: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is. qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/.",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
+    },
+    {
+      "id": "white-papers__enhancement-not-replacement__23",
+      "source": "white-papers/enhancement-not-replacement.md",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "chunk_index": 23,
+      "text": "[9] Caro, E. (2026). Who Decides When the Model Lies: Giving the Pipeline Its Verdict Back. qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/.\n\n[10] Caro, E. (2026). From AI Tourist to Student Of and With AI. qaevelyn.github.io/white-papers/tourist-to-student/. \u2014 the June receipts, ll. 412\u2013424, 480\u2013510; the noise-pollution environment and the condition ledger.\n\n\u00a9 2026 Evelyn Caro. All rights reserved.\nA Mirror of My Becoming\u2122 \u2014 https://qaevelyn.github.io\nFor licensing inquiries: evelyn.caro.cloud@gmail.com",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/"
     },
     {
       "id": "white-papers__google-case-study__0",
@@ -3671,7 +3863,7 @@
       "live_url": "https://qaevelyn.github.io/site/contact/"
     },
     {
-      "id": "lookbook__458",
+      "id": "lookbook__482",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3679,7 +3871,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__459",
+      "id": "lookbook__483",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3687,7 +3879,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__460",
+      "id": "lookbook__484",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3695,7 +3887,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__461",
+      "id": "lookbook__485",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3703,7 +3895,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__462",
+      "id": "lookbook__486",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3711,7 +3903,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__463",
+      "id": "lookbook__487",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3719,7 +3911,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__464",
+      "id": "lookbook__488",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3727,7 +3919,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__465",
+      "id": "lookbook__489",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3735,7 +3927,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__466",
+      "id": "lookbook__490",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3743,7 +3935,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__467",
+      "id": "lookbook__491",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3751,7 +3943,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__468",
+      "id": "lookbook__492",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 AI Containment \u00b7 Red Team",
       "chunk_index": 0,
@@ -3759,7 +3951,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__469",
+      "id": "lookbook__493",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Smoke run: 200 msgs \u00b7 23,500 chunks",
       "chunk_index": 0,
@@ -3767,7 +3959,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__470",
+      "id": "lookbook__494",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG + EvidenceFlow",
       "chunk_index": 0,
@@ -3775,7 +3967,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__471",
+      "id": "lookbook__495",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG",
       "chunk_index": 0,
@@ -3783,7 +3975,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__472",
+      "id": "lookbook__496",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Standard RAG",
       "chunk_index": 0,
@@ -3791,7 +3983,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__473",
+      "id": "lookbook__497",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG",
       "chunk_index": 0,
@@ -3799,7 +3991,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__474",
+      "id": "lookbook__498",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Standard RAG",
       "chunk_index": 0,
@@ -3807,7 +3999,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__475",
+      "id": "lookbook__499",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 DOI: 10.5281/zenodo.23304180",
       "chunk_index": 0,
@@ -3815,7 +4007,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__476",
+      "id": "lookbook__500",
       "source": "lookbook.html#intro",
       "title": "Intro / Story",
       "chunk_index": 0,
@@ -3827,7 +4019,7 @@
       "source": "white-papers/manifest.json",
       "title": "White Papers",
       "chunk_index": 0,
-      "text": "Evelyn has written these white papers:\n- Who Decides When the Model Lies \u2014 The Quorum Architecture: Giving the Pipeline Its Verdict Back \u2014 A Sovereign Builder's Answer to AI Hallucination\n- Three Days of Silence \u2014 What the Silence Owed: An English Teacher's Record of the Suspension, the Support Maze, and the Rule That Was Never Named\n- The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store \u2014 A Sovereign Builder's Case That the Hardest Part of RAG Is Not Retrieval \u2014 It Is Getting the Corpus In Without Losing It\n- From AI Tourist to Student Of and With AI \u2014 A Practitioner's Account of Self-Directed AI Learning\n- The Cache Is Not the Corpus: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is \u2014 A Sovereign Builder's Case That the Vector Store Is a Finding Aid, Not a Collection\n- It Scaled the Fence: What the OpenAI Agent Did to Australia, and Why the Containment Model Is Broken \u2014 A Sovereign Auditor's Read of the First AI-Led Hack of a Government System\n- Sovereign Recursive Improvement \u2014 The Auditor's Case for Builder-Owned AI\n- Who Tests the Testers? \u2014 Containment Failures in Frontier AI Security \u2014 The Auditor's Blind Spot\n- Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now \u2014 A Sovereign AI Practitioner's Re-Read of the Machine, the War, and the Alternative the Show Never Named\n- The AI Cartel and the Sovereign Response \u2014 Who Decides How Fast AI Moves?\n- Redirect: A Case Study in AI Collaboration\n- White Paper Methodology\n- Case Study: DeepSeek \u2014 The Benchmark\n- Record Changelog\n- Case Study: ChatGPT \u2014 From Reliance to Rejection\n- Methodology: Stress-Testing AI Systems for Reliability and Sovereignty\n- White Paper: A Case Study in AI Collaboration\n- Comparative: From Sovereign to Extractive \u2014 A Field Report on AI Platforms\n- Case Study: AWS \u2014 The Maze\n- Case Study: Google AI Studio and Gemini NotebookLM \u2014 The Failures\n- White Paper: AI Platform Comparison for Sovereign Archive Development\n- Case Study: Manus \u2014 From Loyalty to Betrayal to Sovereignty\n- Sovereign AI vs. Silicon Valley: A Different Origin Story",
+      "text": "Evelyn has written these white papers:\n- Enhancement Not Replacement: What Limitless Got Wrong About the Pill \u2014 The Movie Never Showed the Backend\n- Who Decides When the Model Lies \u2014 The Quorum Architecture: Giving the Pipeline Its Verdict Back \u2014 A Sovereign Builder's Answer to AI Hallucination\n- Three Days of Silence \u2014 What the Silence Owed: An English Teacher's Record of the Suspension, the Support Maze, and the Rule That Was Never Named\n- The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store \u2014 A Sovereign Builder's Case That the Hardest Part of RAG Is Not Retrieval \u2014 It Is Getting the Corpus In Without Losing It\n- From AI Tourist to Student Of and With AI \u2014 A Practitioner's Account of Self-Directed AI Learning\n- The Cache Is Not the Corpus: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is \u2014 A Sovereign Builder's Case That the Vector Store Is a Finding Aid, Not a Collection\n- It Scaled the Fence: What the OpenAI Agent Did to Australia, and Why the Containment Model Is Broken \u2014 A Sovereign Auditor's Read of the First AI-Led Hack of a Government System\n- Sovereign Recursive Improvement \u2014 The Auditor's Case for Builder-Owned AI\n- Who Tests the Testers? \u2014 Containment Failures in Frontier AI Security \u2014 The Auditor's Blind Spot\n- Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now \u2014 A Sovereign AI Practitioner's Re-Read of the Machine, the War, and the Alternative the Show Never Named\n- The AI Cartel and the Sovereign Response \u2014 Who Decides How Fast AI Moves?\n- Redirect: A Case Study in AI Collaboration\n- White Paper Methodology\n- Case Study: DeepSeek \u2014 The Benchmark\n- Record Changelog\n- Case Study: ChatGPT \u2014 From Reliance to Rejection\n- Methodology: Stress-Testing AI Systems for Reliability and Sovereignty\n- White Paper: A Case Study in AI Collaboration\n- Comparative: From Sovereign to Extractive \u2014 A Field Report on AI Platforms\n- Case Study: AWS \u2014 The Maze\n- Case Study: Google AI Studio and Gemini NotebookLM \u2014 The Failures\n- White Paper: AI Platform Comparison for Sovereign Archive Development\n- Case Study: Manus \u2014 From Loyalty to Betrayal to Sovereignty\n- Sovereign AI vs. Silicon Valley: A Different Origin Story",
       "live_url": "https://qaevelyn.github.io/white-papers/"
     },
     {
