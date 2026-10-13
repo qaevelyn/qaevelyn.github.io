@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "updated_utc": "2026-10-13T13:45:00Z",
+  "platforms": ["devto", "substack", "linkedin", "reddit"],
+  "papers": [
+    {
+      "slug": "enhancement-not-replacement",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "permalink": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/",
+      "published_portfolio": "2026-10-12",
+      "posts": {
+        "devto":    { "url": "https://dev.to/qaevelyn/the-ai-industry-keeps-killing-your-models-heres-what-to-own-instead-1ab5", "posted": "2026-10-13" },
+        "substack": { "url": null, "posted": null },
+        "linkedin": { "url": null, "posted": null },
+        "reddit":   { "url": null, "posted": null }
+      }
+    },
+    {
+      "slug": "the-cache-is-not-the-corpus",
+      "title": "The Cache Is Not the Corpus: Nineteen Deaths, Zero Losses",
+      "permalink": "https://qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/",
+      "published_portfolio": "2026-09-28",
+      "posts": {
+        "devto":    { "url": "https://dev.to/qaevelyn/my-rag-pipeline-died-three-nights-in-a-row-so-i-rebuilt-it-to-assume-it-would-die-33ik", "posted": "2026-10-09" },
+        "substack": { "url": null, "posted": null },
+        "linkedin": { "url": null, "posted": null },
+        "reddit":   { "url": null, "posted": null }
+      }
+    }
+  ]
+}
