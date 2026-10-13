@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "updated_utc": "2026-10-13T18:58:35+00:00Z",
+  "schema_version": 2,
+  "updated_utc": "2026-10-13T19:00:29+00:00Z",
   "platforms": [
     "devto",
     "substack",
@@ -14,22 +14,25 @@
       "permalink": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/",
       "published_portfolio": "2026-10-12",
       "posts": {
-        "devto": {
-          "url": "https://dev.to/qaevelyn/the-ai-industry-keeps-killing-your-models-heres-what-to-own-instead-1ab5",
-          "posted": "2026-10-13"
-        },
-        "substack": {
-          "url": "https://amirrorofmybecoming.substack.com/p/what-limitless-never-showed",
-          "posted": "2026-10-13"
-        },
-        "linkedin": {
-          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7515811636100886528/",
-          "posted": "2026-10-13"
-        },
-        "reddit": {
-          "url": null,
-          "posted": null
-        }
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/the-ai-industry-keeps-killing-your-models-heres-what-to-own-instead-1ab5",
+            "posted": "2026-10-13"
+          }
+        ],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/what-limitless-never-showed",
+            "posted": "2026-10-13"
+          }
+        ],
+        "linkedin": [
+          {
+            "url": "https://www.linkedin.com/feed/update/urn:li:activity:7515811636100886528/",
+            "posted": "2026-10-13"
+          }
+        ],
+        "reddit": []
       }
     },
     {
@@ -38,22 +41,24 @@
       "permalink": "https://qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/",
       "published_portfolio": "2026-09-28",
       "posts": {
-        "devto": {
-          "url": "https://dev.to/qaevelyn/my-rag-pipeline-died-three-nights-in-a-row-so-i-rebuilt-it-to-assume-it-would-die-33ik",
-          "posted": "2026-10-09"
-        },
-        "substack": {
-          "url": null,
-          "posted": null
-        },
-        "linkedin": {
-          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7514490188526407680/",
-          "posted": "2026-10-13"
-        },
-        "reddit": {
-          "url": null,
-          "posted": null
-        }
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/my-rag-pipeline-died-three-nights-in-a-row-so-i-rebuilt-it-to-assume-it-would-die-33ik",
+            "posted": "2026-10-09"
+          }
+        ],
+        "substack": [],
+        "linkedin": [
+          {
+            "url": "https://www.linkedin.com/feed/update/urn:li:activity:7514357705315160064/",
+            "posted": "2026-10-09"
+          },
+          {
+            "url": "https://www.linkedin.com/feed/update/urn:li:activity:7514490188526407680/",
+            "posted": "2026-10-13"
+          }
+        ],
+        "reddit": []
       }
     }
   ]
