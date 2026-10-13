@@ -18,6 +18,19 @@
   },
   "white_papers": [
     {
+      "id": "enhancement-not-replacement",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
+      "subtitle": "The Movie Never Showed the Backend",
+      "author": "Evelyn Caro",
+      "date": "2026-10-12",
+      "timestamp": "",
+      "type": "white-paper",
+      "permalink": "/white-papers/enhancement-not-replacement/",
+      "live_url": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/",
+      "file": "white-papers/enhancement-not-replacement.md",
+      "status": "published"
+    },
+    {
       "id": "who-decides-when-the-model-lies",
       "title": "Who Decides When the Model Lies",
       "subtitle": "The Quorum Architecture: Giving the Pipeline Its Verdict Back — A Sovereign Builder's Answer to AI Hallucination",
