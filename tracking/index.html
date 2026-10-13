@@ -1,0 +1,42 @@
+---
+layout: page
+title: Social Feed
+permalink: /tracking/
+---
+
+# Social Feed
+
+Every white paper's posting across platforms, newest first. Auto-generated from `tracking/social-posts.json`.
+
+<table id="social-feed">
+  <thead>
+    <tr>
+      <th>Paper</th>
+      <th>Portfolio</th>
+      <th>dev.to</th>
+      <th>Substack</th>
+      <th>LinkedIn</th>
+      <th>Reddit</th>
+    </tr>
+  </thead>
+  <tbody id="social-feed-body"></tbody>
+</table>
+
+<script>
+fetch('{{ "/tracking/social-posts.json" | relative_url }}')
+  .then(r => r.json())
+  .then(d => {
+    const tbody = document.getElementById('social-feed-body');
+    d.papers.forEach(p => {
+      const tr = document.createElement('tr');
+      const cell = (html) => { const td = document.createElement('td'); td.innerHTML = html; return td; };
+      tr.appendChild(cell(`<a href="${p.permalink}">${p.title}</a>`));
+      tr.appendChild(cell(p.published_portfolio || '—'));
+      ['devto', 'substack', 'linkedin', 'reddit'].forEach(k => {
+        const post = p.posts[k];
+        tr.appendChild(cell(post && post.url ? `<a href="${post.url}">${post.posted}</a>` : '—'));
+      });
+      tbody.appendChild(tr);
+    });
+  });
+</script>
