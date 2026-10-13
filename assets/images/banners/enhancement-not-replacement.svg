@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Enhancement Not Replacement — What Limitless Got Wrong About the Pill">
+  <defs>
+    <style>
+      .title    { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; fill: #f5ebd5; }
+      .subtitle { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; fill: #e8dfc9; font-style: italic; }
+      .byline   { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; fill: #e8dfc9; }
+      .rule     { stroke: #8b6f3d; stroke-width: 2; fill: none; }
+      .border   { fill: none; stroke: #8b6f3d; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="630" fill="#2b1810"/>
+
+  <!-- inset brass border -->
+  <rect class="border" x="28" y="28" width="1144" height="574"/>
+
+  <!-- title, two lines -->
+  <text class="title" x="600" y="245" text-anchor="middle" font-size="76">The pill runs out.</text>
+  <text class="title" x="600" y="335" text-anchor="middle" font-size="76">The files don't.</text>
+
+  <!-- horizontal rule between title and subtitle -->
+  <line class="rule" x1="420" y1="380" x2="780" y2="380"/>
+
+  <!-- subtitle -->
+  <text class="subtitle" x="600" y="440" text-anchor="middle" font-size="30">
+    What Limitless got wrong about enhancement —
+  </text>
+  <text class="subtitle" x="600" y="480" text-anchor="middle" font-size="30">
+    and what a sovereign backend does instead
+  </text>
+
+  <!-- byline -->
+  <text class="byline" x="600" y="560" text-anchor="middle" font-size="22" letter-spacing="1">
+    Evelyn Caro  ·  qaevelyn.github.io
+  </text>
+</svg>
