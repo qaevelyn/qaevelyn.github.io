@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_utc": "2026-10-13T19:00:29+00:00Z",
+  "updated_utc": "2026-10-15T19:25:07+00:00Z",
   "platforms": [
     "devto",
     "substack",
@@ -8,6 +8,23 @@
     "reddit"
   ],
   "papers": [
+    {
+      "slug": "deepseek-suspension-post",
+      "title": "deepseek-suspension-post",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [],
+        "linkedin": [
+          {
+            "url": "https://www.linkedin.com/feed/update/urn:li:activity:7516535811782373376/",
+            "posted": "2026-10-15"
+          }
+        ],
+        "reddit": []
+      }
+    },
     {
       "slug": "enhancement-not-replacement",
       "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
