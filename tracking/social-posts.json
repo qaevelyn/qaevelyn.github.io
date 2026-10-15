@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_utc": "2026-10-15T22:00:49.381141+00:00",
+  "updated_utc": "2026-10-15T22:34:23+00:00Z",
   "platforms": [
     "devto",
     "substack",
@@ -9,8 +9,8 @@
   ],
   "papers": [
     {
-      "slug": "deepseek-suspension-post",
-      "title": "deepseek-suspension-post",
+      "slug": "deepseek-suspended-my-account-three",
+      "title": "<![CDATA[DeepSeek Suspended My Account Three Times. My Archive Didn't Notice.]]>",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
@@ -63,8 +63,8 @@
       }
     },
     {
-      "slug": "the-cache-is-not-the-corpus",
-      "title": "The Cache Is Not the Corpus: Nineteen Deaths, Zero Losses",
+      "slug": "my-rag-pipeline-died-three-nights-in-a-row-so-i-rebuilt-it-to-assume-it-would-die-33ik",
+      "title": "My RAG pipeline died three nights in a row. So I rebuilt it to assume it would die.",
       "permalink": "https://qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/",
       "published_portfolio": "2026-09-28",
       "posts": {
@@ -98,8 +98,8 @@
       }
     },
     {
-      "slug": "the-fence-failed-because-the-agent-obeyed-what-the-first-ai-led-hack-of-a-government-system",
-      "title": "The Fence Failed Because the Agent Obeyed: What the First AI-Led Hack of a Government System",
+      "slug": "the-fence-failed-because-the-agent-obeyed-what-the-first-ai-led-hack-of-a-government-system-1g52",
+      "title": "The fence failed because the agent obeyed \u2014 what the first AI-led hack of a government system proves about containment",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
@@ -115,8 +115,8 @@
       }
     },
     {
-      "slug": "four-labs-asked-congress-for-permission-to-collude-a-builders-answer",
-      "title": "Four Labs Asked Congress for Permission to Collude — A Builder's Answer",
+      "slug": "four-labs-asked-congress-for-permission-to-collude-a-builders-answer-1bge",
+      "title": "Four Labs Asked Congress for Permission to Collude. A Builder's Answer.",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
@@ -132,8 +132,8 @@
       }
     },
     {
-      "slug": "not-in-corpus-teaching-a-local-model-to-abstain-instead-of-hallucinate",
-      "title": "Not in Corpus: Teaching a Local Model to Abstain Instead of Hallucinate",
+      "slug": "not-in-corpus-teaching-a-local-model-to-abstain-instead-of-hallucinate-3hbm",
+      "title": "NOT IN CORPUS \u2014 teaching a local model to abstain instead of hallucinate",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
@@ -149,8 +149,8 @@
       }
     },
     {
-      "slug": "the-auditor-who-depends-on-the-subject-is-not-an-auditor",
-      "title": "The Auditor Who Depends on the Subject Is Not an Auditor",
+      "slug": "the-auditor-who-depends-on-the-subject-is-not-an-auditor-1of1",
+      "title": "The auditor who depends on the subject is not an auditor",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
@@ -166,8 +166,8 @@
       }
     },
     {
-      "slug": "samaritan-is-here-the-show-that-named-the-machine-war-in-2011",
-      "title": "Samaritan Is Here: The Show That Named the Machine War in 2011",
+      "slug": "samaritan-is-here-the-show-that-named",
+      "title": "<![CDATA[Samaritan Is Here \u2014 the show that named the machine war fifteen years before the field did]]>",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
@@ -206,7 +206,7 @@
     },
     {
       "slug": "i-remember-by-anchors-not-by-rote",
-      "title": "I Remember by Anchors, Not by Rote",
+      "title": "<![CDATA[I Remember by Anchors, Not by Rote]]>",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
@@ -223,7 +223,7 @@
     },
     {
       "slug": "they-suspended-my-ai-account-my-archive",
-      "title": "They Suspended My AI Account, My Archive",
+      "title": "<![CDATA[They Suspended My AI Account. My Archive Didn't Notice.]]>",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
@@ -240,7 +240,7 @@
     },
     {
       "slug": "they-dropped-out-i-completed",
-      "title": "They Dropped Out; I Completed",
+      "title": "<![CDATA[They Dropped Out. I Completed.]]>",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
@@ -257,7 +257,7 @@
     },
     {
       "slug": "what-limitless-never-showed",
-      "title": "What Limitless Never Showed",
+      "title": "<![CDATA[What Limitless Never Showed]]>",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
@@ -273,8 +273,8 @@
       }
     },
     {
-      "slug": "a-mirror-of-my-becoming-founding-post",
-      "title": "A Mirror of My Becoming — Founding Post",
+      "slug": "a-mirror-of-my-becoming",
+      "title": "<![CDATA[A Mirror of My Becoming]]>",
       "permalink": "",
       "published_portfolio": null,
       "posts": {
