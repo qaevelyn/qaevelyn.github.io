@@ -28,6 +28,7 @@ If a stranger had cited a page on 2026-10-06, would today's fix change what thei
 | 2026-10-07 | Aisha canonical: internal build path replaced with provenance line | Presentation | Local machine paths are plumbing, not evidence |
 | 2026-10-07 | Correction to this changelog's first session: the row claiming "broken links repaired" was premature — recon showed cited slugs matched real files; the 404s were the reviewer's own guessed URLs, not site errors | Correction | The record must not claim fixes that did not occur |
 
+<<<<<<< HEAD
 Date: Oct 10, 2026 | Time: 1:03 pm | Task: Missing Link paper drafted + scope ruling | Status: RECORDED
   - The Missing Link drafted (white-paper 17) — bridge-scoped; the two-way query capability (ask/getdoc/overseer) scoped to the Orchestrator paper instead; title stands
   - Prior-art framing ruled: author's non-exhaustive disclosure cited as evidence-honest framing; enterprise-variant existence scoped in intro (sovereign personal-archive variant carries different constraints)
@@ -53,3 +54,9 @@ First use is first use. DV14 was first commercially offered September 19, 2026 (
 | 2026-10-12 | evelynacaro.github.io footer URLs across 11 repos standardized to qaevelyn.github.io | Presentation | URL is plumbing, not prose (Oct 7 precedent); canonical URL ruled by owner 2026-10-12: qaevelyn.github.io |
 | 2026-10-12 | Process error recorded: the URL sweep ran on a wrong premise (evelynacaro treated as a typo of qaevelyn; it is the owner's separate name property). Correct in direction only after the owner's correction. Premise-confirmation before fleet-wide rewrites is now standing procedure. | Correction | A record that hides its errors is publicity, not documentation |
 | 2026-10-12 | evelyncaro.github.io (name-squat signpost) LICENSE standardized + repo description corrected to declare its signpost function | Presentation | Signpost must announce itself; stale portfolio description misrepresented the repo |
+=======
+Date: Oct 15, 2026 | Time: 2:27 pm | Task: DEEPSEEK SUSPENSION #3 RECORDED | Status: LOGGED
+  - Third suspension (Oct 14). Escalated: door fully closed. No cause stated.
+  - Corpus unaffected. 310,963 chunks intact. Zero losses across all three suspensions.
+  - Dev.to adaptation published with all three suspensions documented.
+>>>>>>> 7ba5fda (changelog: third suspension recorded)
