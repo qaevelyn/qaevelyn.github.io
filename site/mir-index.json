@@ -3,7 +3,7 @@
     "purpose": "Mir search index \u2014 every public content file, chunked for retrieval",
     "source_files": 30,
     "generated_by": "site/build_mir_index.py",
-    "chunks": 505
+    "chunks": 501
   },
   "entries": [
     {
@@ -1283,39 +1283,7 @@
       "source": "white-papers/record-changelog.md",
       "title": "Record Changelog",
       "chunk_index": 2,
-      "text": "Date: Oct 10, 2026 | Time: 1:03 pm | Task: Missing Link paper drafted + scope ruling | Status: RECORDED\n- The Missing Link drafted (white-paper 17) \u2014 bridge-scoped; the two-way query capability (ask/getdoc/overseer) scoped to the Orchestrator paper instead; title stands\n- Prior-art framing ruled: author's non-exhaustive disclosure cited as evidence-honest framing; enterprise-variant existence scoped in intro (sovereign personal-archive variant carries different constraints)\n- Scope ruling by owner after auditor initially omitted: the two-way capability discovered during recon changes the architecture documentation \u2014 routed to Orchestrator paper",
-      "live_url": "https://qaevelyn.github.io/white-papers/record-changelog/"
-    },
-    {
-      "id": "white-papers__record-changelog__3",
-      "source": "white-papers/record-changelog.md",
-      "title": "Record Changelog",
-      "chunk_index": 3,
-      "text": "2026-10-10 \u2014 The Missing Link: same-day correction (minutes after publication)\nTwo corrections applied same-day, per appended-not-retro-edited: (1) pass-4 Leo quotation verified against the verbatim transcript (provenance repo evidence/leo-prior-art-pass-4-2026-10-04.md) and found non-verbatim; restated in the paper using the transcript's actual wording. (2) Nearest neighbors switched to the five pass-4 repositories the transcript documents \u2014 RAGmail, Email-RAG, LlamaIndex IngestionPipeline, WPipe, async-doc-ingestion \u2014 with per-repo gaps; Memento and ChatVault (pass 5) retained as secondary neighbors, reference [7]. Evidence ledger appended same day.",
-      "live_url": "https://qaevelyn.github.io/white-papers/record-changelog/"
-    },
-    {
-      "id": "white-papers__record-changelog__4",
-      "source": "white-papers/record-changelog.md",
-      "title": "Record Changelog",
-      "chunk_index": 4,
-      "text": "2026-10-10 \u2014 Brand standard: DV14\u2122 applied across the corpus\nFirst use is first use. DV14 was first commercially offered September 19, 2026 (OTS/Bitcoin-anchored, receipted) and first publicly named in the white papers thereafter; the \u2122 mark asserts common-law rights from that use and requires no registration. This sweep applies the mark mechanically to every existing DV14 mention \u2014 possessive (\"DV14's\"), punctuated, and standalone forms included \u2014 without altering any substantive claim. The before-state is preserved in git history; no retro-edit of content occurred. Protocol Companion\u2122 receives the same standard from its Ship 9 spread forward (first use: Inova pitch, September 27, 2026; clearance receipts: DDG + Leo web checks and USPTO TESS export, October 10, 2026 \u2014 1,033 results, no identical wordmark; AI-RAD COMPANION flagged for any future \u00ae analysis).",
-      "live_url": "https://qaevelyn.github.io/white-papers/record-changelog/"
-    },
-    {
-      "id": "white-papers__record-changelog__5",
-      "source": "white-papers/record-changelog.md",
-      "title": "Record Changelog",
-      "chunk_index": 5,
-      "text": "2026-10-12 \u2014 who-decides-when-the-model-lies: Section IV revision\nDate Change Type Reason\n--- --- --- ---\n2026-10-12 Two sentences added after the quorum table interpreting the near-tie fused scores (one-vote-per-worker convergence) and the mixed worker surfaces (W4 spam-susceptibility receipted and filed as work item) Revision Pre-publication red-team catch: the table showed evidence the reader could not interpret from the paper alone; grounded in Mirror-Project/receipts/overseer-v4-build-2026-10-11.md, owner-approved",
-      "live_url": "https://qaevelyn.github.io/white-papers/record-changelog/"
-    },
-    {
-      "id": "white-papers__record-changelog__6",
-      "source": "white-papers/record-changelog.md",
-      "title": "Record Changelog",
-      "chunk_index": 6,
-      "text": "2026-10-12 \u2014 Fleet URL standardization + version discipline + v6 release\nDate Change Type Reason\n--- --- --- ---\n2026-10-12 Section IV of who-decides-when-the-model-lies: two sentences added after quorum table interpreting near-tie fused scores and mixed worker surfaces, grounded in overseer-v4-build receipts Revision Pre-publication red-team catch; owner-approved; released as v6 (DOI 10.5281/zenodo.23310741)\n2026-10-12 CITATION.cff created for qaevelyn.github.io (v6, ORCID, preferred-citation pointing at corrected version DOI) Presentation Machine-readable citation; corrected version is what DOI resolvers serve\n2026-10-12 CITATION.cff versions fleet-wide: v1.0.x \u2192 v1 (whole-number doctrine) across 14 repo clones Presentation Owner versioning ruling; decimal versions violated whole-number standard\n2026-10-12 evelynacaro.github.io footer URLs across 11 repos standardized to qaevelyn.github.io Presentation URL is plumbing, not prose (Oct 7 precedent); canonical URL ruled by owner 2026-10-12: qaevelyn.github.io\n2026-10-12 Process error recorded: the URL sweep ran on a wrong premise (evelynacaro treated as a typo of qaevelyn; it is the owner's separate name property). Correct in direction only after the owner's correction. Premise-confirmation before fleet-wide rewrites is now standing procedure. Correction A record that hides its errors is publicity, not documentation\n2026-10-12 evelyncaro.github.io (name-squat signpost) LICENSE standardized + repo description corrected to declare its signpost function Presentation Signpost must announce itself; stale portfolio description misrepresented the repo",
+      "text": ">>>>>> 7ba5fda (changelog: third suspension recorded)",
       "live_url": "https://qaevelyn.github.io/white-papers/record-changelog/"
     },
     {
@@ -3863,7 +3831,7 @@
       "live_url": "https://qaevelyn.github.io/site/contact/"
     },
     {
-      "id": "lookbook__482",
+      "id": "lookbook__478",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3871,7 +3839,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__483",
+      "id": "lookbook__479",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3879,7 +3847,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__484",
+      "id": "lookbook__480",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3887,7 +3855,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__485",
+      "id": "lookbook__481",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3895,7 +3863,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__486",
+      "id": "lookbook__482",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3903,7 +3871,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__487",
+      "id": "lookbook__483",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3911,7 +3879,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__488",
+      "id": "lookbook__484",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3919,7 +3887,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__489",
+      "id": "lookbook__485",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3927,7 +3895,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__490",
+      "id": "lookbook__486",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3935,7 +3903,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__491",
+      "id": "lookbook__487",
       "source": "lookbook.html#ships",
       "title": "Ships \u2014 Narrative",
       "chunk_index": 0,
@@ -3943,7 +3911,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__492",
+      "id": "lookbook__488",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 AI Containment \u00b7 Red Team",
       "chunk_index": 0,
@@ -3951,7 +3919,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__493",
+      "id": "lookbook__489",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Smoke run: 200 msgs \u00b7 23,500 chunks",
       "chunk_index": 0,
@@ -3959,7 +3927,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__494",
+      "id": "lookbook__490",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG + EvidenceFlow",
       "chunk_index": 0,
@@ -3967,7 +3935,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__495",
+      "id": "lookbook__491",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG",
       "chunk_index": 0,
@@ -3975,7 +3943,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__496",
+      "id": "lookbook__492",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Standard RAG",
       "chunk_index": 0,
@@ -3983,7 +3951,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__497",
+      "id": "lookbook__493",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Agentic RAG",
       "chunk_index": 0,
@@ -3991,7 +3959,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__498",
+      "id": "lookbook__494",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 Standard RAG",
       "chunk_index": 0,
@@ -3999,7 +3967,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__499",
+      "id": "lookbook__495",
       "source": "lookbook.html#ships",
       "title": "Ship \u2014 DOI: 10.5281/zenodo.23304180",
       "chunk_index": 0,
@@ -4007,7 +3975,7 @@
       "live_url": "https://qaevelyn.github.io/lookbook.html"
     },
     {
-      "id": "lookbook__500",
+      "id": "lookbook__496",
       "source": "lookbook.html#intro",
       "title": "Intro / Story",
       "chunk_index": 0,
