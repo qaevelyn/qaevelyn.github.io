@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_utc": "2026-10-15T19:41:07+00:00Z",
+  "updated_utc": "2026-10-15T21:40:48+00:00Z",
   "platforms": [
     "devto",
     "substack",
@@ -14,7 +14,12 @@
       "permalink": "",
       "published_portfolio": null,
       "posts": {
-        "devto": [],
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/deepseek-suspended-my-account-three-times-my-archive-didnt-care-548i",
+            "posted": "2026-10-15"
+          }
+        ],
         "substack": [
           {
             "url": "https://amirrorofmybecoming.substack.com/p/deepseek-suspended-my-account-three",
