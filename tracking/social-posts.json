@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_utc": "2026-10-15T19:25:15+00:00Z",
+  "updated_utc": "2026-10-15T19:41:07+00:00Z",
   "platforms": [
     "devto",
     "substack",
@@ -15,7 +15,12 @@
       "published_portfolio": null,
       "posts": {
         "devto": [],
-        "substack": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/deepseek-suspended-my-account-three",
+            "posted": "2026-10-15"
+          }
+        ],
         "linkedin": [
           {
             "url": "https://www.linkedin.com/feed/update/urn:li:activity:7516535811782373376/",
