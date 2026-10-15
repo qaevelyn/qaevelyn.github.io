@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_utc": "2026-10-15T21:40:48+00:00Z",
+  "updated_utc": "2026-10-15T22:00:49.381141+00:00",
   "platforms": [
     "devto",
     "substack",
@@ -94,6 +94,198 @@
             "posted": "2026-10-13"
           }
         ],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "the-fence-failed-because-the-agent-obeyed-what-the-first-ai-led-hack-of-a-government-system",
+      "title": "The Fence Failed Because the Agent Obeyed: What the First AI-Led Hack of a Government System",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/the-fence-failed-because-the-agent-obeyed-what-the-first-ai-led-hack-of-a-government-system-1g52",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "four-labs-asked-congress-for-permission-to-collude-a-builders-answer",
+      "title": "Four Labs Asked Congress for Permission to Collude — A Builder's Answer",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/four-labs-asked-congress-for-permission-to-collude-a-builders-answer-1bge",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "not-in-corpus-teaching-a-local-model-to-abstain-instead-of-hallucinate",
+      "title": "Not in Corpus: Teaching a Local Model to Abstain Instead of Hallucinate",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/not-in-corpus-teaching-a-local-model-to-abstain-instead-of-hallucinate-3hbm",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "the-auditor-who-depends-on-the-subject-is-not-an-auditor",
+      "title": "The Auditor Who Depends on the Subject Is Not an Auditor",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/the-auditor-who-depends-on-the-subject-is-not-an-auditor-1of1",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "samaritan-is-here-the-show-that-named-the-machine-war-in-2011",
+      "title": "Samaritan Is Here: The Show That Named the Machine War in 2011",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/samaritan-is-here-the-show-that-named-the-machine-war-in-2011-2mmk",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/samaritan-is-here-the-show-that-named",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "my-rag-pipeline-died-three-nights-in-a-row-so-i-rebuilt-it-to-assume-it-would-die",
+      "title": "My RAG Pipeline Died Three Nights in a Row, So I Rebuilt It to Assume It Would Die",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/my-rag-pipeline-died-three-nights-in-a-row-so-i-rebuilt-it-to-assume-it-would-die-33ik",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "i-remember-by-anchors-not-by-rote",
+      "title": "I Remember by Anchors, Not by Rote",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/i-remember-by-anchors-not-by-rote",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "they-suspended-my-ai-account-my-archive",
+      "title": "They Suspended My AI Account, My Archive",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/they-suspended-my-ai-account-my-archive",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "they-dropped-out-i-completed",
+      "title": "They Dropped Out; I Completed",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/they-dropped-out-i-completed",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "what-limitless-never-showed",
+      "title": "What Limitless Never Showed",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/what-limitless-never-showed",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "a-mirror-of-my-becoming-founding-post",
+      "title": "A Mirror of My Becoming — Founding Post",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/a-mirror-of-my-becoming",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
         "reddit": []
       }
     }
