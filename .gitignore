@@ -29,3 +29,6 @@ ComputerHardwareBasicsUpdate20260126-33-ioi01d.pdf
 OperatingSystemsBasicsUpdate20260126-31-vs58m5.pdf
 google analytics Measurement ID (G-WV5JKK585K).txt
 *.sh
+
+# privacy: never track pre-redaction backups (Chain PRIV, Evelyn ruling 2026-10-03)
+*.bak-privacy
