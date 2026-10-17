@@ -73,12 +73,25 @@ The disciplines the corpus runs on.
 
 These papers are declared by the corpus itself (forward references in published text). They are listed as promises, not previews.
 
-| Paper | Promised in | Status |
+2026-10-17 rule: every pending paper is declared WITH provenance, owner notes, and a next action at the moment it is named — no reconstructing later.
+
+| Paper | Status | Promised in / origin | Owner notes | Next action |
+| --- | --- | --- | --- | --- |
+| The Missing Link (msgvault adapter) | **DRAFTED 2026-10-10** | Ship 7 documentation | Owner red-team in progress; Pass-2 academic search queued | Finish pass-2 search, then red-team |
+| The Auditor | Forthcoming | Tourist to Student, §IX | Nothing on record beyond the forward reference | Add owner notes when surfaced |
+| The Memory Palace | Forthcoming | Tourist to Student, §VI | (Evelyn, 2026-10-17): where the method was developed | Tease joins the Ship 11 proofs block |
+| The Medallion Architecture papers | Forthcoming | Tourist to Student, §VI | (Evelyn, 2026-10-17): where the clutter was cleared by organization — about neuroplasticizing; no outline or summary surfaced yet | Record the outline when drafted |
+| Neuroplasticize™ (head-to-head paper — working title) | PENDING — named 2026-10-17 | Organic conclusion of the June → October head-to-head runs; must reference Ship 11 when written | Fork: merge with the white paper below or keep distinct — decided when the record arrives | Red-team the subtitle; resolve the fork on record receipt |
+| Neuroplasticize™ (white paper) | PENDING — in progress, awaiting the record | Corpus map entry; the record is promised and awaited (internal receipt on file — never enters evidence.json) | Formalizes the method claim | Resume when the record arrives |
+| Ship evolution papers (Ships 1–5) | Parked | Fleet governance (2026-10): each ship gets a paper about its evolution | Ship 5 is a special case, parked separately | Later task |
+
+---
+
+## Published — live papers
+
+| Paper | Status | Location |
 | --- | --- | --- |
-| The Missing Link (msgvault adapter) | Ship 7 documentation | **DRAFTED 2026-10-10** — owner red-team in progress; Pass-2 academic search queued |
-| The Auditor | Tourist to Student, §IX | Forthcoming |
-| The Memory Palace | Tourist to Student, §VI | Forthcoming |
-| The Medallion Architecture papers | Tourist to Student, §VI | Forthcoming |
+| Tourist to Student: of and with AI | FINISHED — live | Linked from the Ship 11 proofs-of-the-method block (URL pins at Chain P) |
 
 ---
 
