@@ -2,7 +2,7 @@
 
 **The corpus is public; the record of its errors is too.**
 
-This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.io) — the portfolio and white-paper corpus of Evelyn Caro, sovereign AI builder: sixteen papers in four series, seven ships, and the record that documents its own corrections.
+This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.io) — the portfolio and white-paper corpus of Evelyn Caro, sovereign AI builder: sixteen papers in four series, eight ships, and the record that documents its own corrections.
 
 ## The White Paper Corpus — 16 papers, four series
 
@@ -14,7 +14,7 @@ This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.i
 
 **Series IV — The Record Itself.** [Record Changelog](https://qaevelyn.github.io/white-papers/record-changelog/) — every post-publication change, appended-only, nothing retro-edited. [White Paper Tracker](https://qaevelyn.github.io/white-papers/white-paper-tracker/) — the complete corpus map.
 
-## The Fleet — 7 ships
+## The Fleet — 8 ships
 
 | Ship | What it proves |
 |---|---|
@@ -25,6 +25,7 @@ This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.i
 | 5 — Granite + EvidenceFlow | Fail-closed: every claim traceable, abstains if evidence is missing |
 | 6 — [Suite: Ingestion Tools](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools) | Scribe · Warden · Hand — battle-tested: 19 kills survived, 127/127 corpus, zero losses |
 | 7 — [msgvault adapter](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter) | The mail archive, read in its native tongue; watermark-native checkpointing |
+| 11 — [AWS CCP study manual (Sleep Is Studying Too)](https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual) | AGPL template edition: 17 print-ready pages, learning-styles front test, the brand on every page |
 
 ## How the work is built
 
