@@ -204,6 +204,13 @@
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-dv14-ai-containment-blueprint",
       "license": "Copyright (c) 2026 Evelyn Caro. All rights reserved.",
       "status": "concept; public flip pending"
+    },
+    "ship11": {
+      "title": "AWS CCP study manual — Sleep Is Studying Too",
+      "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual",
+      "manual_pdf": "https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual/blob/main/AWS-CCP-Study-Manual.pdf",
+      "license": "AGPL-3.0 — Copyright (c) 2026 Evelyn Caro",
+      "status": "published 2026-10-17 — template edition, prepared for a fellow student"
     }
   }
 }
