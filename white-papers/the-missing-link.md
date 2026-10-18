@@ -69,7 +69,7 @@ The next paper documents that layer: the overseer pattern, the worker fleet, and
 - [7] Leo AI prior-art pass #5 and API sweep (HN Algolia, PyPI), October 10, 2026 — surfaced Memento and ChatVault as secondary neighbors; recorded in the author's session ledger.
 - [Suite: Ingestion Tools](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools) — the parent architecture
 - [msgvault adapter](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter) — the bridge itself
-- Caro, E. (2026). The Cache Is Not the Corpus. — the thesis this paper extends
+- Caro, E. (2026). The Cache Is Not the Corpus™. — the thesis this paper extends
 
 ## AI Collaboration Disclosure
 

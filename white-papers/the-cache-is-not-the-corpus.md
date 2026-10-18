@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "The Cache Is Not the Corpus: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is"
+title: "The Cache Is Not the Corpus™: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is"
 subtitle: "A Sovereign Builder's Case That the Vector Store Is a Finding Aid, Not a Collection"
 date: 2026-09-28
 author: Evelyn Caro
@@ -8,7 +8,7 @@ type: position-paper
 permalink: /white-papers/the-cache-is-not-the-corpus/
 ---
 
-# The Cache Is Not the Corpus
+# The Cache Is Not the Corpus™
 
 **Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is**
 

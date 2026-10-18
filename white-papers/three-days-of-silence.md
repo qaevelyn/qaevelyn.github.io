@@ -116,7 +116,7 @@ The user can publish it.
 - [2] Exhibits 2–7 — the support path as documented: help pages (login issues, password change, "temporarily suspended"), appeal flow, Feishu gate, email/phone gate. qaevelyn.github.io/site/exhibits/exhibit-2-suspension.png through exhibit-7-suspension.png
 - [3] Appeal emails #1 and #2, Sept 26 2026, 7:48 AM / 11:46 AM — verbatim from the author's sent record (owner-supplied; the mail archive's coverage gap disclosed)
 - [4] Caro, E. (2026). DeepSeek case study and its addendum — the companion record of the suspension's work-arounds. qaevelyn.github.io/white-papers/deepseek-case-study/
-- [5] Caro, E. (2026). The Cache Is Not the Corpus — the architecture that absorbed the outage. qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/
+- [5] Caro, E. (2026). The Cache Is Not the Corpus™ — the architecture that absorbed the outage. qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/
 - [6] Session log, Sept 25–29 2026 — hourly record from which Sections I–V are drawn. Author's provenance repository (private); cited excerpts reproduced herein.
 
 ## AI Collaboration Disclosure

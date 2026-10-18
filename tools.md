@@ -15,7 +15,7 @@ Ingests a conversation archive into a queryable vector store — chunking, embed
 
 ## The war story, in two sentences
 
-The pipeline spent three days killing healthy runs because its watchdog read silent-but-working embedding loops as a hang. The fix was two lines of honesty in the log — and the same run that had died nineteen times completed all 55 remaining conversations unattended, including a 5,163-chunk monster. Full account: [The Cache Is Not the Corpus](https://qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/).
+The pipeline spent three days killing healthy runs because its watchdog read silent-but-working embedding loops as a hang. The fix was two lines of honesty in the log — and the same run that had died nineteen times completed all 55 remaining conversations unattended, including a 5,163-chunk monster. Full account: [The Cache Is Not the Corpus™](https://qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/).
 
 ## One code base. Two tiers. Owned entirely by the author.
 

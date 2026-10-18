@@ -108,7 +108,7 @@ The pill runs out. The files don't. Press save.
 
 [7] The Economist (7 Mar 2024). "Brain-boosting substances are all the rage" (print headline: "Nootropic kid on the block"). Business section. https://www.economist.com/business/2024/03/07/brain-boosting-substances-are-all-the-rage — Discusses growth of the nootropic supplement market and its association with the 2011 film *Limitless*; skeptical of efficacy ("Their utility is debatable").
 
-[8] Caro, E. (2026). *The Cache Is Not the Corpus: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is*. qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/.
+[8] Caro, E. (2026). *The Cache Is Not the Corpus™: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is*. qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/.
 
 [9] Caro, E. (2026). *Who Decides When the Model Lies: Giving the Pipeline Its Verdict Back*. qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/.
 

@@ -219,7 +219,7 @@ resumed, so the latest copy holds everything. Second, the
 ingest design never depended on live platform access:
 127/127 conversations recovered, zero failures, zero losses.
 The corpus lives beyond the platform — the thesis of
-["The Cache Is Not the Corpus,"](https://qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/)
+["The Cache Is Not the Corpus™,"](https://qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/)
 published on this site, holding again under conditions the
 author did not choose.
 

@@ -120,7 +120,7 @@ The banner said three days. The model said six papers. The pipeline said twenty-
 - [3] Shuster, K., Poff, S., Chen, M., Kiela, D., & Weston, J. (2021). Retrieval Augmentation Reduces Hallucination in Conversation. *Findings of EMNLP 2021*. arXiv:2104.07567. — grounding reduces lying; the gap this paper fills: it does not eliminate it
 - [4] Gao, Y., Xiong, Y., Gao, X., et al. (2023). Retrieval-Augmented Generation for Large Language Models: A Survey. arXiv:2312.10997 (ongoing work)
 - [5] Kleppmann, M., Wiggins, A., van Hardenberg, P., & McGranaghan, M. (2019). Local-First Software: You Own Your Data, in Spite of the Cloud. *Onward! '19*, pp. 154–178. DOI:10.1145/3359591.3359737
-- [6] Caro, E. (2026). The Cache Is Not the Corpus. qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/ — the archive doctrine this architecture implements
+- [6] Caro, E. (2026). The Cache Is Not the Corpus™. qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/ — the archive doctrine this architecture implements
 - [7] Caro, E. (2026). The Missing Link. qaevelyn.github.io/white-papers/the-missing-link/ — the bridge layer
 - [8] Caro, E. (2026). From AI Tourist to Student Of and With AI. qaevelyn.github.io/white-papers/tourist-to-student/ — the auditor doctrine, quoted in Section VII
 - [9] Receipts file: overseer-v4-build-2026-10-11.md — the before/after grounding pair, quorum tables, architecture rulings. Mirror-Project/receipts/.

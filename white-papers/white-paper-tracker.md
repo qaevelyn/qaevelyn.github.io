@@ -27,7 +27,7 @@ The longitudinal record of platform dependency, ordered by the author's experien
 | 4 | [Manus — From Loyalty to Betrayal to Sovereignty](/white-papers/manus-case-study/) | The forced transition; the backup habit pays | 2026-08-15 |
 | 5 | [Google — AI Studio & Gemini NotebookLM](/white-papers/google-case-study/) | Closed RAG hallucinates; correction is labor | 2026-08-15 |
 | 6 | [DeepSeek — The Benchmark](/white-papers/deepseek-case-study/) | The benchmark, and the addendum that amended it | 2026-08-15 |
-| 7 | [The Cache Is Not the Corpus](/white-papers/the-cache-is-not-the-corpus/) | The thesis proven by the suspension | 2026-09-29 |
+| 7 | [The Cache Is Not the Corpus™](/white-papers/the-cache-is-not-the-corpus/) | The thesis proven by the suspension | 2026-09-29 |
 
 ### Series II — Containment & Governance (5)
 
