@@ -3,7 +3,7 @@
     "author": "Evelyn Caro - Sovereign AI Builder",
     "purpose": "Public index of evidence supporting claims in the author's published works. Verifiable items are listed with locations; private holdings are declared as private.",
     "standard": "Every claim sourced. Every gap flagged. No invented precision.",
-    "last_updated": "2026-10-11",
+    "last_updated": "2026-10-18",
     "published_verifiable": [
       {
         "claim": "Five RAG pipelines built, containerized, documented",
@@ -64,6 +64,10 @@
       {
         "claim": "Who Decides When the Model Lies — the quorum architecture paper: the model's lie documented verbatim, tier authority built and demonstrated (canon tier answers without the model), collaborator errors disclosed and owned",
         "verify": "qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/ — receipts: Mirror-Project/receipts/overseer-v4-build-2026-10-11.md; Overseer DOI 10.5281/zenodo.23303987"
+      },
+      {
+        "claim": "Z.ai conversation record for The Tester Is the Target collaboration (live-agent red-team, Oct 17-18, 2026): timeline, artifact chain with hashes, transport incident log, authorized statements, the lie and its correction",
+        "verify": "dv14 repo: dv14-zai-conversation-receipts-2026-10-18.md (commit hash in the dv14 log; sha256 in the commit message); cross-hashed against dv14-agent-attestation-2026-10-17.md and the Bitcoin confirmations at blocks 971942/971945/971954"
       }
     ],
     "case_study_in_drafting": {
