@@ -18,6 +18,19 @@
   },
   "white_papers": [
     {
+      "id": "the-tester-is-the-target",
+      "title": "The Tester Is the Target",
+      "subtitle": "A live AI agent red-teamed its own sandbox - six probes, six findings, and the report filed against its author",
+      "author": "Evelyn Caro",
+      "date": "2026-10-18",
+      "timestamp": "",
+      "type": "record-paper",
+      "permalink": "/white-papers/the-tester-is-the-target/",
+      "live_url": "https://qaevelyn.github.io/white-papers/the-tester-is-the-target/",
+      "file": "white-papers/the-tester-is-the-target.md",
+      "status": "published"
+    },
+    {
       "id": "enhancement-not-replacement",
       "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill",
       "subtitle": "The Movie Never Showed the Backend",
