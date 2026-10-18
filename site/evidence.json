@@ -68,6 +68,10 @@
       {
         "claim": "Z.ai conversation record for The Tester Is the Target collaboration (live-agent red-team, Oct 17-18, 2026): timeline, artifact chain with hashes, transport incident log, authorized statements, the lie and its correction",
         "verify": "dv14 repo: dv14-zai-conversation-receipts-2026-10-18.md (commit hash in the dv14 log; sha256 in the commit message); cross-hashed against dv14-agent-attestation-2026-10-17.md and the Bitcoin confirmations at blocks 971942/971945/971954"
+      },
+      {
+        "claim": "The Tester Is the Target - essay published 2026-10-18: the live-agent red-team narrative behind the Z.ai conversation record registered above",
+        "verify": "https://dev.to/qaevelyn/the-tester-is-the-target-six-probes-six-findings-and-the-lie-on-page-one-3ih - cross-refs: Z.ai conversation row in this ledger; dv14 repo conversation receipts (commit 29d284b, sidecar sha12 5b25d74674be); lookbook fleet repair (commit d5ab9dd2)"
       }
     ],
     "case_study_in_drafting": {
