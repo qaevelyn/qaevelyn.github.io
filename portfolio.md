@@ -1047,14 +1047,14 @@ body.dark-mode .book-page {
       <h3>Google AI Professional Certificate</h3>
       <div class="badge cert">AI · ML</div>
       <div class="school-image zoom-hover">🏛️ Google — Homepage</div>
-      <div class="school-link"><a href="https://developers.google.com/machine-learning" target="_blank">developers.google.com/machine-learning</a></div>
+      <div class="school-link"><a href="https://developers.google.com/machine-learning" target="_blank" rel="noopener">developers.google.com/machine-learning</a></div>
       <p style="font-size:0.9rem; margin-top:0.5rem; color:#444;">Foundational AI and machine learning skills.</p>
     </div>
     <div class="page">
       <h3>IBM SkillsBuild — LangChain</h3>
       <div class="badge cert">LangChain</div>
       <div class="school-image zoom-hover">🏛️ IBM — Homepage</div>
-      <div class="school-link"><a href="https://www.ibm.com/skillsbuild" target="_blank">ibm.com/skillsbuild</a></div>
+      <div class="school-link"><a href="https://www.ibm.com/skillsbuild" target="_blank" rel="noopener">ibm.com/skillsbuild</a></div>
       <p style="font-size:0.9rem; margin-top:0.5rem; color:#444;">LangChain for building LLM-powered applications.</p>
     </div>
   </div>
@@ -1065,14 +1065,14 @@ body.dark-mode .book-page {
       <h3>IBM SkillsBuild — Agentic RAG</h3>
       <div class="badge cert">Agentic RAG</div>
       <div class="school-image zoom-hover">🏛️ IBM — Homepage</div>
-      <div class="school-link"><a href="https://www.ibm.com/skillsbuild" target="_blank">ibm.com/skillsbuild</a></div>
+      <div class="school-link"><a href="https://www.ibm.com/skillsbuild" target="_blank" rel="noopener">ibm.com/skillsbuild</a></div>
       <p style="font-size:0.9rem; margin-top:0.5rem; color:#444;">Agentic RAG patterns and implementation.</p>
     </div>
     <div class="page">
       <h3>AWS re/Start — In Progress</h3>
       <div class="badge aws">AWS</div>
       <div class="school-image zoom-hover">🏛️ AWS — Homepage</div>
-      <div class="school-link"><a href="https://aws.amazon.com/training/restart/" target="_blank">aws.amazon.com/training/restart</a></div>
+      <div class="school-link"><a href="https://aws.amazon.com/training/restart/" target="_blank" rel="noopener">aws.amazon.com/training/restart</a></div>
       <p style="font-size:0.9rem; margin-top:0.5rem; color:#444;">Enterprise cloud certification — currently enrolled.</p>
     </div>
   </div>

@@ -1,6 +1,6 @@
 ---
 permalink: /projects/
-title: "Projects — A Mirror of My Becoming"
+title: "Projects — A Mirror of My Becoming™"
 ---
 
 ## Ship 1: AWS + DeepSeek RAG Pipeline

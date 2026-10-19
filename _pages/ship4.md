@@ -24,7 +24,7 @@ permalink: /ship4/
 - [🎥 Demo Video (Coming Soon)]
 
 ### Access & Copyright
-This work was created by Evelyn Caro. DeepSeek is the only collaborator — used as a tool in the creative and technical process. This is a personal portfolio project and is not open for collaboration or external access. The video and documentation speak for themselves. Copyright © 2006 Evelyn Caro. All rights reserved. Copyright registration is pending.
+This work was created by Evelyn Caro. DeepSeek is the only collaborator — used as a tool in the creative and technical process. This is a personal portfolio project and is not open for collaboration or external access. The video and documentation speak for themselves. Copyright © 2026 Evelyn Caro. All rights reserved. Copyright registration is pending.
 
 ---
 [← Prev Ship 3](/ship3/)

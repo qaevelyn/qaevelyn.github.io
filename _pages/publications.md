@@ -3,7 +3,7 @@ permalink: /publications/
 title: "White Papers & Publications"
 ---
 
-## The Mirror of My Becoming: Sovereign RAG Architecture
+## A Mirror of My Becoming™: Sovereign RAG Architecture
 *Status: Draft — Not Yet Released*
 
 ## Adversarial Testing of RAG Pipelines
