@@ -57,3 +57,4 @@ Date: Oct 15, 2026 | Time: 2:27 pm | Task: DEEPSEEK SUSPENSION #3 RECORDED | Sta
   - Third suspension (Oct 14). Escalated: door fully closed. No cause stated.
   - Corpus unaffected. 310,963 chunks intact. Zero losses across all three suspensions.
   - Dev.to adaptation published with all three suspensions documented.
+2026-10-19 — Zenodo record 10.5281/zenodo.23246730 (v5) metadata corrected after publication: the 28 template-lineage contributors removed from Authors/Creators — credited upstream in the description, not authors of this work; description names the template and states sole authorship and rights; paper count restated to match the v5 snapshot; license field aligned with the all-rights-reserved © line. Files unchanged; DOIs unchanged; appended, not retro-edited.
