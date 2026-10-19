@@ -37,6 +37,7 @@ for path in glob.glob(os.path.join(ROOT, "*.md")):
         "permalink": permalink,
         "live_url": live_url,
         "file": "white-papers/" + os.path.basename(path),
+        "doi": fm.get("doi", ""),
         "status": "published"
     })
 
