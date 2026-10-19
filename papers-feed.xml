@@ -5,7 +5,14 @@
     <link>https://qaevelyn.github.io</link>
     <description>The corpus of Evelyn: sovereign AI builder, independent journalist. Every claim sourced, every gap flagged, no invented precision.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>The Tester Is the Target</title>
+      <link>https://qaevelyn.github.io/white-papers/the-tester-is-the-target/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/the-tester-is-the-target/</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A live AI agent red-teamed its own sandbox — six probes, six findings, and the discovery that the walls are made of obedience and the prompt is load-bearing — and the report filed against its author.</description>
+    </item>
     <item>
       <title>Enhancement Not Replacement: What Limitless Got Wrong About the Pill</title>
       <link>https://qaevelyn.github.io/white-papers/enhancement-not-replacement/</link>
@@ -136,13 +143,6 @@
       <title>Comparative: From Sovereign to Extractive — A Field Report on AI Platforms</title>
       <link>https://qaevelyn.github.io/white-papers/comparative/</link>
       <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/comparative/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Case Study: AWS — The Maze</title>
-      <link>https://qaevelyn.github.io/white-papers/aws-case-study/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/aws-case-study/</guid>
       <pubDate></pubDate>
       <description></description>
     </item>

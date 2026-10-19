@@ -653,6 +653,19 @@
     body.dark-mode .qr-note {
       color: #a89070;
     }
+  
+    /* --- link pass 2026-10-19: blue is the sign of a hyperlink (Evelyn) --- */
+    .spread .page a { color:#0a6ebd; text-decoration:underline; text-underline-offset:2px; }
+    .spread .page a:hover { color:#0a84d8; }
+    .spread .page .links a .icon { color:#0a6ebd; }
+    .spread .page .links a:hover .icon { color:#0a84d8; }
+    .toc ul li a, .return-home a, .mir-answer .mir-a a { color:#0a6ebd; }
+    body.dark-mode .spread .page a, body.dark-mode .toc ul li a, body.dark-mode .return-home a, body.dark-mode .mir-answer .mir-a a { color:#6cb6ff; }
+    body.dark-mode .spread .page a:hover { color:#8ec9ff; }
+    body.dark-mode .spread .page .links a .icon { color:#6cb6ff; }
+    .badge.ibm a { text-decoration:underline; text-underline-offset:2px; }
+    .orange-chip { display:inline-block; color:#e8974a; background:rgba(35,24,18,0.82); padding:3px 12px; border-radius:6px; box-shadow:0 1px 4px rgba(0,0,0,0.35); }
+    body.dark-mode .orange-chip { background:rgba(15,10,7,0.92); box-shadow:none; }
   </style>
   <link rel="canonical" href="https://qaevelyn.github.io/lookbook.html">
 </head>
@@ -730,19 +743,19 @@
       </div>
 
       <!-- ===== SHIP 11 ===== -->
-<p><a href="https://doi.org/10.5281/zenodo.23458898">DOI: 10.5281/zenodo.23458898</a> - A Mirror of My Becoming, AWS CCP Study Manual (Ship 11), v1.0.1 finished edition, byte-proof sha256 2d77054a..bc6e</p>
       <div id="ship11" class="spread" data-toc-parent="The Suite" data-toc-child="AWS CCP study manual — Sleep Is Studying Too · template edition">
         <div class="page">
           <h3>Ship 11 — AWS CCP Study Manual — Sleep Is Studying Too™</h3>
           <div class="ship-narrative">The eleventh ship is the newest: an AWS Cloud Practitioner study manual, published 2026-10-17 as a template edition — prepared for a fellow student, shipped for everyone. Built on the Neuroplasticize™ method — encode by day, consolidate by night™: spaced review, plain language, and real sleep. Sleep is studying too™.</div>
-          <p style="font-size:0.9rem; color:#e8974a; text-shadow:0 1px 0 rgba(255,255,255,0.55), 0 1px 2px rgba(80,61,51,0.20);"><em>Template edition · Dual-licensed: AGPL-3.0 + commercial · The study method, applied</em></p>
-          <p style="margin-top:1rem;"><a href="/ship11/" style="color:#8b6f3d;">web edition — the manual, one page, mirror + frame loaded together</a> · <a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual" style="color:#8b6f3d;">github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual</a> · <a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual/blob/HEAD/AWS-CCP-Study-Manual.pdf" style="color:#8b6f3d;">AWS-CCP-Study-Manual.pdf</a> · Dual-licensed: AGPL-3.0 + commercial — © 2026 Evelyn Caro</p>
+          <p class="orange-chip" style="font-size:0.9rem;"><em>Template edition · Dual-licensed: AGPL-3.0 + commercial · The study method, applied</em></p>
+          <p style="margin-top:1rem;"><a href="/ship11/" target="_blank" rel="noopener">web edition</a> — the manual, one page, mirror + frame loaded together · <a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual" target="_blank" rel="noopener">github</a> · <a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual/blob/HEAD/AWS-CCP-Study-Manual.pdf" target="_blank" rel="noopener">pdf</a></p>
         </div>
         <div class="valley"></div>
         <div class="page">
           <h3>The manual, at a glance</h3>
+          <div class="badge ibm"><a href="https://doi.org/10.5281/zenodo.23458898" style="color:inherit; text-decoration:underline;" target="_blank" rel="noopener">DOI: 10.5281/zenodo.23458898</a> · v1.0.1 finished edition · sha256 2d77054a..bc6e</div>
           <p style="margin-top:0.5rem;"><span style="display:inline-block; background:#2c1810; color:#f5e6d3; border:1px solid #8b6f3d; border-radius:6px; padding:14px 18px; font-family:Georgia, serif; font-size:0.9rem; line-height:1.7; box-shadow:0 2px 6px rgba(44,24,16,0.35);"><strong style="color:#d4b670;">Sleep Is Studying Too™</strong> — the AWS CLF-C02 study manual on the Neuroplasticize™ method.<br><span style="color:#e8974a;">encode by day, consolidate by night™</span> · © 2026 Evelyn Caro · dual-licensed: AGPL-3.0 + commercial</span></p>
-          <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Paper: <a href="/white-papers/the-tester-is-the-target/" style="color:#8b6f3d;">The Tester Is the Target</a> — published 2026-10-18; the dev.to essay is its public companion.</em></p>
+          <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Paper: <a href="/white-papers/the-tester-is-the-target/">The Tester Is the Target</a> — published 2026-10-18; the dev.to essay is its public companion.</em></p>
           <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Paper: The Auditor — in progress, forthcoming.</em></p>
           <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Paper: Neuroplasticize™ — in progress, forthcoming.</em></p>
         </div>
@@ -752,17 +765,17 @@
         <div class="page">
           <h3>Ship 10 — Overseer™</h3>
           <div class="ship-narrative">The tenth ship is the one that watches the others. Overseer™ dispatches every question to five workers — three vector collections, the SQLite mail archive, and the canon registry — fuses their findings with a visible quorum table, and refuses to answer when the receipts are insufficient. Its tier system settles the oldest problem in AI: when the model lies, the pipeline decides. Canon questions never reach the model at all.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>Tier authority · Visible quorum · Adaptive armor · Receipts before generation</em></p>
-          <p style="margin-top:1rem;"><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-overseer" style="color:#8b6f3d;">github.com/qaevelyn/a-mirror-of-my-becoming-suite-overseer</a></p>
+          <p class="orange-chip" style="font-size:0.9rem"><em>Tier authority · Visible quorum · Adaptive armor · Receipts before generation</em></p>
+          <p style="margin-top:1rem;"><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-overseer" target="_blank" rel="noopener">github</a></p>
         </div>
         <div class="valley"></div>
         <div class="page">
           <h3>The receipts, as recorded</h3>
-          <div class="badge ibm">DOI: 10.5281/zenodo.23304180</div>
+          <div class="badge ibm"><a href="https://doi.org/10.5281/zenodo.23304180" style="color:inherit; text-decoration:underline;" target="_blank" rel="noopener">DOI: 10.5281/zenodo.23304180</a></div>
           <p style="line-height:1.6;">Built October 11, 2026, after its own first receipt caught the model lying — six invented papers, fluent, dated, wrong. The architecture that answered: the registry answers facts, the workers surface evidence, the quorum shows its deliberation, and the model only speaks when the receipts permit. The gate is journaled. Every verdict traces.</p>
           <p><strong>Concept view:</strong></p>
           <p style="margin-top:2.5rem;"><img src="ship10-overseer-public.svg" alt="Ship 10 — Overseer concept: five workers radio in, the quorum deliberates, the canon answers facts, the mouth only phrases" style="max-width:100%; height:auto; border:1px solid #8b6f3d;"></p>
-          <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Paper: <a href="/white-papers/who-decides-when-the-model-lies/" style="color:#8b6f3d;">Who Decides When the Model Lies</a> — published 2026-10-11.</em></p>
+          <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Paper: <a href="/white-papers/who-decides-when-the-model-lies/">Who Decides When the Model Lies</a> — published 2026-10-11.</em></p>
         </div>
       </div>
       <!-- ===== SHIP 9 ===== -->
@@ -770,7 +783,7 @@
         <div class="page">
           <h3>Ship 9 — Protocol Companion™</h3>
           <div class="ship-narrative">The ninth ship is sealed. The fleet proved that a sovereign archive can hold a person's records without surrendering them — Protocol Companion™ asks the next question: can the same local-first doctrine carry a patient through a clinical protocol? An ultrasound patient-preparedness tool: the imaging protocol explained in order, the preparation steps verified, no cloud, no stored health data, nothing about the patient leaving the device. Pitched as a 90-day fixed-fee pilot against the institution's own reschedule baseline. Concept-level only; the architecture is private — commercial license only, available for review under NDA.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>Sealed architecture · Patient-prep layer · local-first · no cloud · no stored health data · © all rights reserved — commercial license only · review under NDA</em></p>
+          <p class="orange-chip" style="font-size:0.9rem"><em>Sealed architecture · Patient-prep layer · local-first · no cloud · no stored health data · © all rights reserved — commercial license only · review under NDA</em></p>
         </div>
         <div class="valley"></div>
         <div class="page">
@@ -786,7 +799,7 @@
         <div class="page">
           <h3>Ship 8 — DV14: The Box</h3>
           <div class="ship-narrative">A concept, stated plainly: a physical and conceptual AI agent containment architecture, designed to answer one question — can an agent that runs on hardware be contained by hardware? Two tracks: The Box (eight layers of complementary opposites — every material paired with the one that covers its weakness) and the Sensory Deprivation Matrix (can an agent function with no external hardware at all?). The accidental discovery: if the AI plays possum, we have found a holding cell. Bitcoin-timestamped September 19, 2026. Cited in two published white papers. © all rights reserved — commercial license only; Bitcoin-timestamped 2026-09-19; available for review under NDA.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>Track A: The Box · Track B: The Sensory Deprivation Matrix · Concept — prototype pending</em></p>
+          <p class="orange-chip" style="font-size:0.9rem"><em>Track A: The Box · Track B: The Sensory Deprivation Matrix · Concept — prototype pending</em></p>
           <p style="margin-top:1rem;"><em>Full specification available for commercial review under NDA — contact the author.</em></p>
           <p style="font-size:0.85rem; margin-top:0.5rem;">You can't hack gravity. The void does not echo.</p>
           <p style="margin-top:2rem;"><strong>Track A — The Box (cross-section):</strong></p>
@@ -796,7 +809,7 @@
         <div class="page">
           <h3>Why a containment blueprint belongs in an AI portfolio</h3>
           <div class="badge ibm">AI Containment · Red Team</div>
-          <p style="line-height:1.6;">The industry outsources containment testing to vendors — and in 2026 the same vendor failed the same way at four frontier labs. My position, argued in <a href="/white-papers/who-tests-the-testers/" style="color:#8b6f3d;">Who Tests the Testers?</a> and <a href="/white-papers/sovereign-recursive-improvement/" style="color:#8b6f3d;">Sovereign Recursive Improvement</a>: the builder who owns the loop builds the containment. DV14 is that argument, drawn as an architecture — fifteen requirements (R1–R15), nine layers, off-grid power, consumer hardware.</p>
+          <p style="line-height:1.6;">The industry outsources containment testing to vendors — and in 2026 the same vendor failed the same way at four frontier labs. My position, argued in <a href="/white-papers/who-tests-the-testers/">Who Tests the Testers?</a> and <a href="/white-papers/sovereign-recursive-improvement/">Sovereign Recursive Improvement</a>: the builder who owns the loop builds the containment. DV14 is that argument, drawn as an architecture — fifteen requirements (R1–R15), nine layers, off-grid power, consumer hardware.</p>
           <p style="margin-top:2rem;"><strong>Track B — The Sensory Deprivation Matrix:</strong></p>
           <p style="margin-top:1rem;"><img src="track-b-sensory-deprivation-public.svg" alt="Track B" style="max-width:88%; height:auto; border:1px solid #8b6f3d; display:block; margin:0 auto;"></p>
           <p style="font-size:0.85rem;"><em>Track B blueprint: right page.</em></p>
@@ -808,8 +821,8 @@
         <div class="page">
           <h3>Ship 7 — msgvault Adapter</h3>
           <div class="ship-narrative">The seventh ship bridges mail into the Mirror. It reads msgvault.db in its own native tongue — the embed_gen watermark is its checkpoint, so progress lives in the data itself: crash, restart, curfew, resume, never re-ingest. It normalizes RFC822 message-ids, preserves full metadata, and feeds the canonical store with nomic-embed-text vectors — the fleet's model. Replace-mode: stale deleted as fresh lands. Curfew-aware. Never self-restarts. The prior-art search found nothing published like it.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>Watermark checkpoint · Replace-mode · Curfew-aware · Dual-licensed AGPL + commercial</em></p>
-          <p style="margin-top:1rem;"><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter" style="color:#8b6f3d;">github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter</a></p>
+          <p class="orange-chip" style="font-size:0.9rem;"><em>Watermark checkpoint · Replace-mode · Curfew-aware · Dual-licensed AGPL + commercial</em></p>
+          <p style="margin-top:1rem;"><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter" target="_blank" rel="noopener">github</a></p>
         </div>
         <div class="valley"></div>
         <div class="page">
@@ -817,21 +830,21 @@
           <div class="badge ibm">Smoke run: 200 msgs · 23,500 chunks</div>
           <p style="line-height:1.6;">Dry run first: nothing stamped, nothing looped. Then the real run — 200 messages, 23,500 chunks, ~25 minutes, on the 8 GB Intel MacBook Air. Then the proof: run 2 started at row 201. Rows 1–200 never re-ingested. Part 2 of the recording scrolls up to show the same command, the output moved forward. Progress lives in the data itself.</p>
           <div class="links">
-            <a href="https://youtu.be/BO3FFlEsyxQ"><svg class="icon icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16"/></svg> Ship 7 — Dry Run: Nothing Stamped</a>
-            <a href="https://youtu.be/mYyLKLq2l7w"><svg class="icon icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16"/></svg> Ship 7 — Run 2: Never Re-Ingest (rows 201–400)</a>
+            <a href="https://youtu.be/BO3FFlEsyxQ" target="_blank" rel="noopener"><svg class="icon icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16"/></svg> Ship 7 — Dry Run: Nothing Stamped</a>
+            <a href="https://youtu.be/mYyLKLq2l7w" target="_blank" rel="noopener"><svg class="icon icon-play" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16"/></svg> Ship 7 — Run 2: Never Re-Ingest (rows 201–400)</a>
           </div>
-          <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Paper: <a href="/white-papers/the-missing-link/" style="color:#8b6f3d;">The Missing Link</a> — published 2026-10-10.</em></p>
+          <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Paper: <a href="/white-papers/the-missing-link/">The Missing Link</a> — published 2026-10-10.</em></p>
         </div>
       </div>
       <!-- ===== SHIP 6 ===== -->
       <div id="ship6" class="spread" data-toc-parent="The Suite" data-toc-child="Suite: Ingestion Tools · Scribe · Warden · Hand">
         <div class="page">
           <h3>Ship 6 — Suite: Ingestion Tools</h3>
-          <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Paper: <a href="/white-papers/the-cache-is-not-the-corpus/" style="color:#8b6f3d;">The Cache Is Not the Corpus™</a> — published 2026-09-28.</em></p>Suite: Ingestion Tools (Scribe · Warden · Hand)
+          <p style="font-size:0.85rem; margin-top:0.5rem;"><em>Paper: <a href="/white-papers/the-cache-is-not-the-corpus/">The Cache Is Not the Corpus™</a> — published 2026-09-28.</em></p>Suite: Ingestion Tools (Scribe · Warden · Hand)
           <div class="ship-narrative">A Mirror of My Becoming™ Suite: Ingestion Tools — three tools that work separately but work better together. Built after the problem: 127 conversations to ingest and a pipeline that kept killing itself overnight. I solved my problem, and discovered no one else had this unique solution published — so I am first: resilience-engineered, Bitcoin-timestamped, AGPL. The free tier is the point; the AGPL is the guidance if the next user is a corporation.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>Scribe · Warden · Hand — DeepSeek v1-2 · Z.ai-GLM v3-5 · Evelyn architecture</em></p>
-          <p style="margin-top:1rem;"><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools" style="color:#8b6f3d;">github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools</a></p>
-          <p style="margin-top:0.5rem;"><a href="/tools/" style="color:#8b6f3d;">Full documentation → /tools/</a></p>
+          <p class="orange-chip" style="font-size:0.9rem"><em>Scribe · Warden · Hand — DeepSeek v1-2 · Z.ai-GLM v3-5 · Evelyn architecture</em></p>
+          <p style="margin-top:1rem;"><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools" target="_blank" rel="noopener">github</a></p>
+          <p style="margin-top:0.5rem;"><a href="/tools/">Full documentation → /tools/</a></p>
                     <h3 style="margin-top:2.5rem;">One code base. Two tiers.</h3>
           <table style="width:100%; border-collapse:collapse; font-size:0.78rem; margin-top:0.5rem;">
             <tr style="border-bottom:1px solid rgba(139,111,61,0.4);"><td style="padding:0.35rem;"><strong>Right</strong></td><td style="padding:0.35rem;"><strong>AGPLv3 Free</strong></td><td style="padding:0.35rem;"><strong>Paid Commercial</strong></td></tr>
@@ -865,7 +878,7 @@ logger.info("chunk %d/%d"
         <div class="page">
           <h3>Ship 5</h3>
           <div class="ship-narrative">Ship 5 is the leap. IBM Granite via Ollama, running fully local. ChromaDB for retrieval. EvidenceFlow verification — every claim traceable to an evidence ID, fail-closed if evidence is missing. Built for genealogy, where a plausible guess is not good enough. This is the ship I built for the work that matters.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>IBM Granite · Agentic RAG + EvidenceFlow Verification</em></p>
+          <p class="orange-chip" style="font-size:0.9rem"><em>IBM Granite · Agentic RAG + EvidenceFlow Verification</em></p>
         </div>
         <div class="valley"></div>
         <div class="page">
@@ -884,7 +897,7 @@ logger.info("chunk %d/%d"
         <div class="page">
           <h3>Ship 4</h3>
           <div class="ship-narrative">Ship 4 combined IBM Granite with agentic reasoning. Retrieval plus action, on the second platform. This is the ship where I learned that agency wasn't a feature — it was a way of thinking about how a system works. Cross-platform and agentic, together.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>IBM Granite · Agentic RAG</em></p>
+          <p class="orange-chip" style="font-size:0.9rem"><em>IBM Granite · Agentic RAG</em></p>
         </div>
         <div class="valley"></div>
         <div class="page">
@@ -902,7 +915,7 @@ logger.info("chunk %d/%d"
         <div class="page">
           <h3>Ship 3</h3>
           <div class="ship-narrative">Ship 3 runs locally with IBM Granite as the model. Same pattern, different model. If the design only worked with one LLM, it wasn't real. This is the ship that proved the pattern was portable — not locked to AWS, not locked to DeepSeek, not locked to anything.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>IBM Granite · Standard RAG</em></p>
+          <p class="orange-chip" style="font-size:0.9rem"><em>IBM Granite · Standard RAG</em></p>
         </div>
         <div class="valley"></div>
         <div class="page">
@@ -920,7 +933,7 @@ logger.info("chunk %d/%d"
         <div class="page">
           <h3>Ship 2</h3>
           <div class="ship-narrative">By the time Ship 2 came, I was more confident. I had rebuilt Ship 1 from scratch. I understood what I was capable of and what the tools could do. Ship 2 was IBM Granite — a different model, a cleaner notebook, and a new layer: agentic reasoning. I learned to write clean code and I learned what agency meant. This is the ship where I stopped being a student and started being a builder.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>IBM Granite · Agentic RAG</em></p>
+          <p class="orange-chip" style="font-size:0.9rem"><em>IBM Granite · Agentic RAG</em></p>
         </div>
         <div class="valley"></div>
         <div class="page">
@@ -938,7 +951,7 @@ logger.info("chunk %d/%d"
         <div class="page">
           <h3>Ship 1</h3>
           <div class="ship-narrative">Ship 1 was the first attempt — AWS, DeepSeek, a RAG pipeline built to organize my own life. It got lost. The notebook wasn't on the SageMaker instance. It wasn't in the backups. I rebuilt it from the Mirror files. The rebuild was cleaner than the original. That's the ship that taught me how to recover from losing one.</div>
-          <p style="font-size:0.9rem; color:#e8974a;"><em>DeepSeek · Standard RAG · Rebuilt Local</em></p>
+          <p class="orange-chip" style="font-size:0.9rem"><em>DeepSeek · Standard RAG · Rebuilt Local</em></p>
         </div>
         <div class="valley"></div>
         <div class="page">
@@ -1007,7 +1020,7 @@ logger.info("chunk %d/%d"
           <h3>Why a screen, not a sale</h3>
           <p style="line-height:1.6;">Most AI consulting starts with a proposal that assumes the answer. The Screen assumes nothing: it is the audit posture applied at entry — verify, document, don't trust, including don't trust the premise that AI is the answer at all.</p>
           <p style="line-height:1.6;">If the finding is "you don't need AI yet," that is a deliverable, not a failure. The $500 credit stands for a year.</p>
-          <p style="margin-top:2rem;"><a href="/services/" style="color:#8b6f3d;">Full engagement ladder →</a></p>
+          <p style="margin-top:2rem;"><a href="/services/">Full engagement ladder →</a></p>
         </div>
       </div>
 
@@ -1033,7 +1046,7 @@ logger.info("chunk %d/%d"
       <div id="zero-ai-readiness" class="spread" data-toc-parent="Services" data-toc-child="Zero-AI Readiness" role="region" aria-label="Zero-AI Readiness">
         <div class="page">
           <h3>Zero-AI Readiness</h3>
-          <p style="font-size:0.9rem; font-style:italic; color:#e8974a; margin-bottom:1rem;">For organizations that have not yet adopted AI — and want to know where it would actually help.</p>
+          <p class="orange-chip" style="font-size:0.9rem; font-style:italic; margin-bottom:1rem">For organizations that have not yet adopted AI — and want to know where it would actually help.</p>
           <h3>The engagement</h3>
           <p style="font-size:0.9rem; line-height:1.6;">You are running the business on the tools you have always had. Spreadsheets. Email. Paper. Maybe a CRM someone set up years ago and nobody maintains. You have heard that AI is changing everything. You have not seen it change anything in your business.</p>
           <p style="font-size:0.9rem; line-height:1.6; margin-top:0.75rem;">This engagement answers one question: <strong>where would AI actually help here, and where would it be a waste of money?</strong> A written roadmap, mapped to your actual workflows. No implementation. No vendor pitch. No AI theater.</p>
@@ -1061,7 +1074,7 @@ logger.info("chunk %d/%d"
       <div id="ai-readiness-assessment" class="spread" data-toc-parent="Services" data-toc-child="AI Readiness Assessment" role="region" aria-label="AI Readiness Assessment">
         <div class="page">
           <h3>AI Readiness Assessment</h3>
-          <p style="font-size:0.9rem; font-style:italic; color:#e8974a; margin-bottom:1rem;">For organizations that have AI systems and cannot answer basic questions about them.</p>
+          <p class="orange-chip" style="font-size:0.9rem; font-style:italic; margin-bottom:1rem">For organizations that have AI systems and cannot answer basic questions about them.</p>
           <h3>The engagement</h3>
           <p style="font-size:0.9rem; line-height:1.6;">Where does your data physically live? Who can legally compel access to it? Who technically can access it? What happens if your AI vendor shuts down tomorrow?</p>
           <p style="font-size:0.9rem; line-height:1.6; margin-top:0.75rem;">If you cannot answer these questions about your own systems, <strong>your AI posture is someone else's business decision.</strong> This assessment returns that posture to your control.</p>
@@ -1096,7 +1109,7 @@ logger.info("chunk %d/%d"
       <div id="ai-compliance-audit" class="spread" data-toc-parent="Services" data-toc-child="AI Compliance Audit" role="region" aria-label="AI Compliance Audit">
         <div class="page">
           <h3>AI Compliance Audit</h3>
-          <p style="font-size:0.9rem; font-style:italic; color:#e8974a; margin-bottom:1rem;">For organizations that need to know which rules apply to their AI — and whether they are following them.</p>
+          <p class="orange-chip" style="font-size:0.9rem; font-style:italic; margin-bottom:1rem">For organizations that need to know which rules apply to their AI — and whether they are following them.</p>
           <h3>The engagement</h3>
           <p style="font-size:0.9rem; line-height:1.6;">You have AI in production. You may be regulated. You may not be. You may have a policy. You may have nothing. You may not know which category you are in.</p>
           <p style="font-size:0.9rem; line-height:1.6; margin-top:0.75rem;">This audit establishes the baseline. Which laws apply. Which policies exist. Whether they are actually followed. Whether the organization can prove any of it. <strong>Without this baseline, no other AI work is verifiable.</strong> It is the foundation everything else stands on.</p>
@@ -1129,7 +1142,7 @@ logger.info("chunk %d/%d"
       <div id="ai-governance-assessment" class="spread" data-toc-parent="Services" data-toc-child="AI Governance Assessment" role="region" aria-label="AI Governance Assessment">
         <div class="page">
           <h3>AI Governance Assessment</h3>
-          <p style="font-size:0.9rem; font-style:italic; color:#e8974a; margin-bottom:1rem;">For organizations that have a compliance baseline and need to know it still holds.</p>
+          <p class="orange-chip" style="font-size:0.9rem; font-style:italic; margin-bottom:1rem">For organizations that have a compliance baseline and need to know it still holds.</p>
           <h3>The engagement</h3>
           <p style="font-size:0.9rem; line-height:1.6;">Your systems were compliant when the audit closed. Time has passed. Models have changed. People have moved. Vendors have updated their terms. The policies on file may no longer match what is actually running.</p>
           <p style="font-size:0.9rem; line-height:1.6; margin-top:0.75rem;">This engagement verifies, on a schedule, that the systems still operate as approved — and flags drift before it becomes a breach.</p>
@@ -1163,7 +1176,7 @@ logger.info("chunk %d/%d"
       <div id="emergency-audit-only" class="spread" data-toc-parent="Services" data-toc-child="Emergency Audit-Only" role="region" aria-label="Emergency Audit-Only">
         <div class="page">
           <h3>Emergency Audit-Only</h3>
-          <p style="font-size:0.9rem; font-style:italic; color:#e8974a; margin-bottom:1rem;">For organizations where the key AI person has left and the stack is undocumented.</p>
+          <p class="orange-chip" style="font-size:0.9rem; font-style:italic; margin-bottom:1rem">For organizations where the key AI person has left and the stack is undocumented.</p>
           <h3>The engagement</h3>
           <p style="font-size:0.9rem; line-height:1.6;">You know the AI systems exist. You do not know what they do, who can access them, or how to operate them. The person who built them has left. There is no handover. There is no documentation. There is no one else who understands the stack.</p>
           <p style="font-size:0.9rem; line-height:1.6; margin-top:0.75rem;">This engagement drops everything else and delivers an audit — findings, documentation, and a written report. No remediation. The audit only.</p>
@@ -1196,7 +1209,7 @@ logger.info("chunk %d/%d"
       <div id="emergency-full-rescue" class="spread" data-toc-parent="Services" data-toc-child="Emergency Full-Rescue" role="region" aria-label="Emergency Full-Rescue">
         <div class="page">
           <h3>Emergency Full-Rescue</h3>
-          <p style="font-size:0.9rem; font-style:italic; color:#e8974a; margin-bottom:1rem;">For organizations where the key AI person has left and the stack is broken.</p>
+          <p class="orange-chip" style="font-size:0.9rem; font-style:italic; margin-bottom:1rem">For organizations where the key AI person has left and the stack is broken.</p>
           <h3>The engagement</h3>
           <p style="font-size:0.9rem; line-height:1.6;">You are in crisis. Systems may be running. They may be half-running. They may be failing silently. No one knows what is deployed. No one knows what depends on what. No one knows what to do next.</p>
           <p style="font-size:0.9rem; line-height:1.6; margin-top:0.75rem;">This is not an audit. <strong>It is a rescue.</strong></p>
@@ -1306,7 +1319,7 @@ logger.info("chunk %d/%d"
       <div id="certs-aws-comptia" class="spread" data-toc-parent="Certifications" data-toc-child="AWS Educate & CompTIA A+">
         <div class="page">
           <h3 style="text-align:center;">AWS Educate</h3>
-          <p style="font-size:0.8rem; text-align:center; color:#e8974a; margin-top:0.5rem;">More AWS badges coming</p>
+          <p class="orange-chip" style="font-size:0.8rem; text-align:center; margin-top:0.5rem">More AWS badges coming</p>
           <a href="https://www.credly.com/badges/3836cb8e-2f7f-475c-8b66-98aaab047ff1" target="_blank" style="text-decoration:none; display:block; text-align:center; margin-top:1rem;">
             <img src="/assets/certificates/aws-educate-genai-badge.png" alt="AWS Educate Intro to Generative AI" style="width:180px; height:auto;">
             <div style="font-size:0.75rem; color:#e8974a; margin-top:0.3rem;">Introduction to Generative AI</div>
@@ -1315,7 +1328,7 @@ logger.info("chunk %d/%d"
         <div class="valley"></div>
         <div class="page">
           <h3 style="text-align:center;">CompTIA A+</h3>
-          <p style="font-size:0.8rem; text-align:center; color:#e8974a; margin-top:0.5rem;">CompTIA A+ Certified</p>
+          <p class="orange-chip" style="font-size:0.8rem; text-align:center; margin-top:0.5rem">CompTIA A+ Certified</p>
           <a href="https://www.credly.com/badges/470f60d6-bf36-46f4-8256-81a35364b2ee" target="_blank" style="text-decoration:none; display:block; text-align:center; margin-top:1rem;">
             <img src="/assets/certificates/comptia-a-certification.png" alt="CompTIA A+" style="width:200px; height:auto;">
             <div style="font-size:0.75rem; color:#e8974a; margin-top:0.3rem;">CompTIA A+ Certified</div>
@@ -1344,13 +1357,13 @@ logger.info("chunk %d/%d"
               <img src="/assets/certificates/ibm-langchain-certificate-preview.png" alt="IBM LangChain Certificate" style="width:100%; height:auto;">
             </a>
           </div>
-          <p style="font-size:0.7rem; text-align:center; margin-top:0.4rem; color:#e8974a;">IBM SkillsBuild — LangChain</p>
+          <p class="orange-chip" style="font-size:0.7rem; text-align:center; margin-top:0.4rem">IBM SkillsBuild — LangChain</p>
           <div style="border:6px double #8b6f3d; padding:8px; border-radius:4px; background:linear-gradient(135deg, rgba(212,182,112,0.15) 0%, rgba(139,111,61,0.1) 100%); box-shadow: inset 0 0 12px rgba(139,111,61,0.3), 0 4px 12px rgba(0,0,0,0.3); margin-top:1rem;">
             <a href="/assets/certificates/ibm-granite-agentic-rag-certificate.pdf" target="_blank" style="text-decoration:none; display:block; text-align:center;">
               <img src="/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png" alt="IBM Granite Agentic RAG Certificate" style="width:100%; height:auto;">
             </a>
           </div>
-          <p style="font-size:0.7rem; text-align:center; margin-top:0.4rem; color:#e8974a;">IBM SkillsBuild — Granite Agentic RAG</p>
+          <p class="orange-chip" style="font-size:0.7rem; text-align:center; margin-top:0.4rem">IBM SkillsBuild — Granite Agentic RAG</p>
         </div>
       </div>
 
