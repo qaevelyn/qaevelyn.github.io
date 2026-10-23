@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" style="max-width:100%;height:auto;">
+  <rect width="640" height="400" fill="#faf6ee"/>
+  <rect x="8" y="8" width="624" height="384" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+  <rect x="13" y="13" width="614" height="374" fill="none" stroke="#8b6f3d" stroke-width="0.75" opacity="0.55"/>
+
+  <text x="320" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="17" letter-spacing="2" fill="#3d2e1e">RADIOLOGY COMPANION&#8482; &#8212; WHAT THE PATIENT SEES</text>
+  <text x="320" y="58" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" font-style="italic" fill="#8b6f3d">reference build v5 &#183; 2026-10-22 &#183; demo free, deploy paid &#183; architecture sealed &#183; review under NDA</text>
+  <line x1="60" y1="68" x2="580" y2="68" stroke="#8b6f3d" stroke-width="0.75" opacity="0.6"/>
+
+  <!-- tablet frame -->
+  <rect x="200" y="84" width="240" height="252" rx="12" fill="#f3ecd9" stroke="#8b6f3d" stroke-width="2.5"/>
+  <rect x="207" y="91" width="226" height="238" rx="8" fill="#fffdf6" stroke="#8b6f3d" stroke-width="1"/>
+
+  <!-- in-app header with licensee branding strip -->
+  <rect x="207" y="91" width="226" height="26" rx="8" fill="#ede3cc"/>
+  <rect x="207" y="109" width="226" height="8" fill="#ede3cc"/>
+  <circle cx="220" cy="104" r="7" fill="#8b6f3d"/>
+  <circle cx="220" cy="104" r="3" fill="#faf6ee"/>
+  <text x="232" y="107.5" font-family="Georgia, serif" font-size="9" letter-spacing="1" fill="#3d2e1e">YOUR IMAGING CENTER</text>
+
+  <!-- language chips -->
+  <rect x="213" y="124" width="19" height="13" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="222.5" y="133" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">EN</text>
+  <rect x="235" y="124" width="19" height="13" rx="3" fill="#f0e6cf" stroke="#8b6f3d" stroke-width="1"/>
+  <text x="244.5" y="133" text-anchor="middle" font-size="7.5" font-weight="bold" font-family="Georgia, serif" fill="#3d2e1e">ES</text>
+  <rect x="257" y="124" width="19" height="13" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="266.5" y="133" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">HT</text>
+  <rect x="279" y="124" width="19" height="13" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="288.5" y="133" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">PT</text>
+  <rect x="301" y="124" width="19" height="13" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="310.5" y="133" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">FR</text>
+  <rect x="323" y="124" width="19" height="13" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="332.5" y="133" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">VI</text>
+  <rect x="345" y="124" width="19" height="13" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="354.5" y="133" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">ZH</text>
+  <rect x="367" y="124" width="19" height="13" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="376.5" y="133" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">AR</text>
+  <rect x="389" y="124" width="19" height="13" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="398.5" y="133" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">RU</text>
+  <text x="416" y="133.5" font-size="7.5" font-style="italic" font-family="Georgia, serif" fill="#8b6f3d">+10</text>
+
+  <!-- exam date row -->
+  <rect x="213" y="143" width="12" height="12" rx="2" fill="none" stroke="#8b6f3d" stroke-width="1"/>
+  <line x1="213" y1="147" x2="225" y2="147" stroke="#8b6f3d" stroke-width="1"/>
+  <line x1="217" y1="141" x2="217" y2="144" stroke="#8b6f3d" stroke-width="1"/>
+  <line x1="221" y1="141" x2="221" y2="144" stroke="#8b6f3d" stroke-width="1"/>
+  <text x="231" y="152.5" font-family="Georgia, serif" font-size="9" fill="#3d2e1e">Exam date: October 30</text>
+
+  <!-- day plan card -->
+  <rect x="213" y="162" width="214" height="122" rx="5" fill="#faf6ee" stroke="#8b6f3d" stroke-width="1"/>
+  <text x="320" y="177" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" letter-spacing="1.5" fill="#8b6f3d">3 DAYS BEFORE YOUR EXAM</text>
+  <line x1="221" y1="183" x2="419" y2="183" stroke="#8b6f3d" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- step 1 (highlighted, being read aloud) -->
+  <rect x="218" y="188" width="204" height="26" rx="4" fill="#f0e6cf"/>
+  <polygon points="226,196 230,196 235,191.5 235,204.5 230,200 226,200" fill="#8b6f3d"/>
+  <path d="M238,195.5 a4.5,4.5 0 0 1 0,7" fill="none" stroke="#8b6f3d" stroke-width="1.2"/>
+  <path d="M241.5,193 a8,8 0 0 1 0,12" fill="none" stroke="#8b6f3d" stroke-width="1.2"/>
+  <text x="250" y="204" font-family="Georgia, serif" font-size="9.5" fill="#3d2e1e">Stop eating 8 hours before</text>
+
+  <!-- step 2 -->
+  <polygon points="226,222 230,222 235,217.5 235,230.5 230,226 226,226" fill="#8b6f3d" opacity="0.75"/>
+  <text x="250" y="230" font-family="Georgia, serif" font-size="9.5" fill="#3d2e1e">Drink clear water until bedtime</text>
+
+  <!-- step 3 -->
+  <polygon points="226,248 230,248 235,243.5 235,256.5 230,252 226,252" fill="#8b6f3d" opacity="0.75"/>
+  <text x="250" y="256" font-family="Georgia, serif" font-size="9.5" fill="#3d2e1e">No lotions or oils on the skin</text>
+
+  <!-- in-tablet footer -->
+  <text x="320" y="308" text-anchor="middle" font-family="Georgia, serif" font-size="8" font-style="italic" fill="#8b6f3d">no cloud &#183; nothing stored &#183; nothing leaves your device</text>
+  <circle cx="320" cy="322" r="2" fill="#8b6f3d"/>
+
+  <!-- left annotations -->
+  <line x1="186" y1="140" x2="205" y2="140" stroke="#8b6f3d" stroke-width="0.75" opacity="0.6"/>
+  <circle cx="205" cy="140" r="1.8" fill="#8b6f3d"/>
+  <text x="56" y="136" text-anchor="start" font-family="Georgia, serif" font-size="10" fill="#3d2e1e">twenty languages</text>
+  <text x="56" y="147" text-anchor="start" font-family="Georgia, serif" font-size="8" font-style="italic" fill="#8b6f3d">Spanish pack included</text>
+
+  <line x1="186" y1="200" x2="205" y2="200" stroke="#8b6f3d" stroke-width="0.75" opacity="0.6"/>
+  <circle cx="205" cy="200" r="1.8" fill="#8b6f3d"/>
+  <text x="56" y="196" text-anchor="start" font-family="Georgia, serif" font-size="10" fill="#3d2e1e">every step read aloud</text>
+  <text x="56" y="207" text-anchor="start" font-family="Georgia, serif" font-size="8" font-style="italic" fill="#8b6f3d">normal or slow, tap to stop</text>
+
+  <line x1="186" y1="258" x2="205" y2="258" stroke="#8b6f3d" stroke-width="0.75" opacity="0.6"/>
+  <circle cx="205" cy="258" r="1.8" fill="#8b6f3d"/>
+  <text x="56" y="254" text-anchor="start" font-family="Georgia, serif" font-size="10" fill="#3d2e1e">day-by-day plan</text>
+  <text x="56" y="265" text-anchor="start" font-family="Georgia, serif" font-size="8" font-style="italic" fill="#8b6f3d">from the exam date you pick</text>
+
+  <!-- right annotations -->
+  <line x1="435" y1="140" x2="454" y2="140" stroke="#8b6f3d" stroke-width="0.75" opacity="0.6"/>
+  <circle cx="435" cy="140" r="1.8" fill="#8b6f3d"/>
+  <text x="584" y="136" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#3d2e1e">the hospital's own</text>
+  <text x="584" y="147" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#3d2e1e">name and logo</text>
+
+  <line x1="435" y1="200" x2="454" y2="200" stroke="#8b6f3d" stroke-width="0.75" opacity="0.6"/>
+  <circle cx="435" cy="200" r="1.8" fill="#8b6f3d"/>
+  <text x="584" y="196" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#3d2e1e">four sourced demo</text>
+  <text x="584" y="207" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#3d2e1e">libraries on board</text>
+
+  <line x1="435" y1="258" x2="454" y2="258" stroke="#8b6f3d" stroke-width="0.75" opacity="0.6"/>
+  <circle cx="435" cy="258" r="1.8" fill="#8b6f3d"/>
+  <text x="584" y="254" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#3d2e1e">works offline,</text>
+  <text x="584" y="265" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#3d2e1e">on the device</text>
+
+  <!-- bottom rule and clearance -->
+  <line x1="60" y1="352" x2="580" y2="352" stroke="#8b6f3d" stroke-width="0.75" opacity="0.6"/>
+  <text x="320" y="368" text-anchor="middle" font-family="Georgia, serif" font-size="9" font-style="italic" fill="#8b6f3d">public facing view only &#183; source private &#183; commercial license &#183; review under NDA</text>
+</svg>

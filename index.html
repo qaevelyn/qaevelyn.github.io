@@ -394,6 +394,36 @@
     }
 
     .footer .footnote sup { color: #c9b88a; font-size: 0.7rem; }
+
+    /* ===== GOLD DOI BAND ACROSS THE COVER TOP (zenodo 23310741) ===== */
+    /* Stretched across the inner gold rule: a hairline of cover gold runs
+       border-to-border under the letters; the DOI itself is underlined and
+       hyperlinked to Zenodo so anyone can verify the record. */
+    .doi-band {
+      position: absolute;
+      top: 27px; left: 16px; right: 16px;
+      text-align: center;
+      z-index: 3;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(212,182,112,0.55);
+    }
+
+    .doi-band a {
+      font-family: 'Georgia', serif;
+      font-variant: small-caps;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      color: #d4b670;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+      text-shadow:
+        0 0 6px rgba(212,182,112,0.6),
+        0 1px 2px rgba(0,0,0,0.9);
+      transition: color 0.2s;
+    }
+
+    .doi-band a:hover { color: #f0d878; }
   </style>
 <script data-goatcounter="https://qaevelyn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <link rel="canonical" href="https://qaevelyn.github.io/">
@@ -422,6 +452,7 @@
       <div class="book-top-edge"></div>
       <div class="book-bottom-edge"></div>
       <div class="book-front">
+        <div class="doi-band"><a href="https://doi.org/10.5281/zenodo.23310741" target="_blank" rel="noopener">DOI 10.5281/ZENODO.23310741</a></div>
         <div class="metal-corner tl"></div>
         <div class="metal-corner tr"></div>
         <div class="metal-corner bl"></div>
