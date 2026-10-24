@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" style="max-width:100%;height:auto;">
+  <rect width="640" height="400" fill="#faf6ee"/>
+  <rect x="8" y="8" width="624" height="384" fill="none" stroke="#8b6f3d" stroke-width="2"/>
+  <rect x="13" y="13" width="614" height="374" fill="none" stroke="#8b6f3d" stroke-width="0.75" opacity="0.55"/>
+  <text x="596" y="368" text-anchor="end" font-family="Georgia, serif" font-size="150" font-weight="bold" fill="#8b6f3d" opacity="0.07">3-</text>
+  <text x="320" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="17" letter-spacing="2" fill="#3d2e1e">SHIP 3 &#8212; GRANITE STANDARD RAG &#8212; WHAT THE BUILDER SEES</text>
+  <text x="320" y="58" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" font-style="italic" fill="#8b6f3d">the same architecture on a different model &#183; the ship that proved the pattern was portable</text>
+  <line x1="60" y1="68" x2="580" y2="68" stroke="#8b6f3d" stroke-width="0.75" opacity="0.6"/>
+  <!-- app window -->
+  <rect x="175" y="82" width="290" height="272" rx="10" fill="#f3ecd9" stroke="#8b6f3d" stroke-width="2.5"/>
+  <rect x="181" y="88" width="278" height="260" rx="7" fill="#fffdf6" stroke="#8b6f3d" stroke-width="1"/>
+  <rect x="181" y="88" width="278" height="26" rx="7" fill="#ede3cc"/>
+  <rect x="181" y="106" width="278" height="8" fill="#ede3cc"/>
+  <circle cx="194" cy="101" r="5.5" fill="#8b6f3d"/>
+  <circle cx="194" cy="101" r="2.2" fill="#faf6ee"/>
+  <text x="206" y="104.5" font-family="Georgia, serif" font-size="9" letter-spacing="1" fill="#3d2e1e">RAG — MODEL SWITCHER</text>
+  <text x="452" y="104.5" text-anchor="end" font-family="Georgia, serif" font-size="7.5" fill="#8b6f3d">portability proof</text>
+  <rect x="189" y="122" width="262" height="30" rx="4" fill="#f3ecd9" stroke="#8b6f3d" stroke-width="0.8"/>
+  <text x="197" y="141" font-family="Georgia, serif" font-size="8.5" fill="#3d2e1e">same question &#8212; new model &#8212; same receipts</text>
+  <rect x="189" y="162" width="262" height="17" rx="3" fill="#f6efdd" stroke="#8b6f3d" stroke-width="0.5"/>
+  <text x="196" y="173.5" font-family="Georgia, serif" font-size="8" fill="#3d2e1e">Model</text>
+  <text x="444" y="173.5" text-anchor="end" font-family="Georgia, serif" font-size="7.5" fill="#3d2e1e"></text>
+  <rect x="196" y="180" width="74" height="14" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="233.0" y="189.5" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">DeepSeek &#10003; was</text>
+  <rect x="274" y="180" width="76" height="14" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="312.0" y="189.5" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">IBM Granite &#9679; now</text>
+  <rect x="354" y="180" width="62" height="14" rx="3" fill="#e8dfc9" stroke="#8b6f3d" stroke-width="0.6"/>
+  <text x="385.0" y="189.5" text-anchor="middle" font-size="7.5" font-family="Georgia, serif" fill="#3d2e1e">AWS &#10003; before</text>
+  <rect x="189" y="204" width="262" height="17" rx="3" fill="#f6efdd" stroke="#8b6f3d" stroke-width="0.5"/>
+  <text x="196" y="215.5" font-family="Georgia, serif" font-size="8" fill="#3d2e1e">Retrieval over the Mirror archive</text>
+  <text x="444" y="215.5" text-anchor="end" font-family="Georgia, serif" font-size="7.5" fill="#3d2e1e">unchanged</text>
+  <rect x="189" y="224" width="262" height="17" rx="3" fill="#f6efdd" stroke="#8b6f3d" stroke-width="0.5"/>
+  <text x="196" y="235.5" font-family="Georgia, serif" font-size="8" fill="#3d2e1e">Embeddings · chunking · sources</text>
+  <text x="444" y="235.5" text-anchor="end" font-family="Georgia, serif" font-size="7.5" fill="#3d2e1e">unchanged</text>
+  <rect x="189" y="244" width="262" height="17" rx="3" fill="#f6efdd" stroke="#8b6f3d" stroke-width="0.5"/>
+  <text x="196" y="255.5" font-family="Georgia, serif" font-size="8" fill="#3d2e1e">Only the model changed</text>
+  <text x="444" y="255.5" text-anchor="end" font-family="Georgia, serif" font-size="7.5" fill="#e8974a">one config line</text>
+  <text x="320" y="286" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" font-style="italic" fill="#3d2e1e">if the design only worked with one LLM, it wasn&#8217;t real</text>
+  <rect x="181" y="330" width="278" height="18" fill="#ede3cc"/>
+  <line x1="181" y1="330" x2="459" y2="330" stroke="#8b6f3d" stroke-width="0.75"/>
+  <text x="189" y="342.5" font-family="Georgia, serif" font-size="7.5" fill="#3d2e1e">cross-platform &#183; interoperability proven</text>
+  <text x="451" y="342.5" text-anchor="end" font-family="Georgia, serif" font-size="7.5" fill="#8b6f3d">IBM Granite</text>
+</svg>

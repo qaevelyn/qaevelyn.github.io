@@ -396,16 +396,17 @@
     .footer .footnote sup { color: #c9b88a; font-size: 0.7rem; }
 
     /* ===== GOLD DOI BAND ACROSS THE COVER TOP (zenodo 23310741) ===== */
-    /* Stretched across the inner gold rule: a hairline of cover gold runs
-       border-to-border under the letters; the DOI itself is underlined and
-       hyperlinked to Zenodo so anyone can verify the record. */
+    /* The DOI itself is underlined and hyperlinked to Zenodo so anyone can
+       verify the record. Owner ruling 2026-10-23: single underline only —
+       the band's border-to-border hairline is removed. */
     .doi-band {
       position: absolute;
       top: 27px; left: 16px; right: 16px;
       text-align: center;
       z-index: 3;
       padding-bottom: 8px;
-      border-bottom: 1px solid rgba(212,182,112,0.55);
+      /* the band's own hairline removed 2026-10-23 by owner ruling:
+         the DOI link keeps its single underline; no second line running border-to-border */
     }
 
     .doi-band a {
@@ -423,6 +424,8 @@
       transition: color 0.2s;
     }
 
+    /* the whole cover flips the book on click; the DOI link must not bubble into it */
+    .doi-band a { cursor: pointer; }
     .doi-band a:hover { color: #f0d878; }
   </style>
 <script data-goatcounter="https://qaevelyn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -452,7 +455,7 @@
       <div class="book-top-edge"></div>
       <div class="book-bottom-edge"></div>
       <div class="book-front">
-        <div class="doi-band"><a href="https://doi.org/10.5281/zenodo.23310741" target="_blank" rel="noopener">DOI 10.5281/ZENODO.23310741</a></div>
+        <div class="doi-band" onclick="event.stopPropagation()"><a href="https://doi.org/10.5281/zenodo.23310741" target="_blank" rel="noopener" onclick="event.stopPropagation()">DOI 10.5281/ZENODO.23310741</a></div>
         <div class="metal-corner tl"></div>
         <div class="metal-corner tr"></div>
         <div class="metal-corner bl"></div>
