@@ -168,7 +168,38 @@
       display: flex;
       justify-content: center;
       gap: 1rem;
-      margin-top: 0.75rem;
+    }
+
+    .nav-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.9rem;
+      padding: 0 0.5rem;
+    }
+
+    .nav-center {
+      flex: 1 1 0;
+      text-align: center;
+    }
+
+    .toc-link {
+      color: #f5e6d3;
+      text-decoration: none;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+    }
+
+    .toc-link:hover {
+      text-decoration: underline;
+    }
+
+    body.dark-mode .toc-link {
+      color: #f5e6d3;
     }
 
     .nav-controls button {
@@ -211,8 +242,8 @@
     }
 
     .page-indicator {
-      text-align: center;
-      margin-top: 0.4rem;
+      text-align: right;
+      min-width: 6rem;
       color: #f5e6d3;
       font-size: 0.95rem;
       font-family: Georgia, 'Times New Roman', serif;
@@ -370,6 +401,7 @@
 
     .book-and-nav .nav-wrapper {
       margin-top: 1rem;
+      width: 100%;
     }
 
     /* ===== MIR FRAME (inside cover right page) ===== */
@@ -1440,11 +1472,16 @@ logger.info("chunk %d/%d"
 
   <!-- ===== NAVIGATION ===== -->
   <div class="nav-wrapper">
-    <div class="nav-controls">
-      <button id="prevBtn" disabled aria-label="Previous page">← Previous</button>
-      <button id="nextBtn" aria-label="Next page">Next →</button>
+    <div class="nav-row">
+      <div class="nav-controls">
+        <button id="prevBtn" disabled aria-label="Previous page">← Previous</button>
+        <button id="nextBtn" aria-label="Next page">Next →</button>
+      </div>
+      <div class="nav-center">
+        <a href="#toc" id="tocLink" class="toc-link">Contents</a>
+      </div>
+      <div class="page-indicator" id="indicator" aria-live="polite">1 / 27</div>
     </div>
-    <div class="page-indicator" id="indicator" aria-live="polite">1 / 19</div>
 
     <div class="return-home">
       <a href="index.html">← Return to Home</a>
@@ -1478,6 +1515,12 @@ logger.info("chunk %d/%d"
 
     nextBtn.addEventListener('click', () => {
       if (current < spreads.length - 1) goToSpread(current + 1);
+    });
+
+    document.getElementById('tocLink').addEventListener('click', function(e) {
+      e.preventDefault();
+      const tocIdx = Array.prototype.indexOf.call(spreads, document.getElementById('toc'));
+      if (tocIdx >= 0) goToSpread(tocIdx);
     });
 
     document.addEventListener('keydown', (e) => {

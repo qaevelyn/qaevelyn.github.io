@@ -3,8 +3,9 @@
   <rect x="8" y="8" width="624" height="384" fill="none" stroke="#8b6f3d" stroke-width="2"/>
   <rect x="13" y="13" width="614" height="374" fill="none" stroke="#8b6f3d" stroke-width="0.75" opacity="0.55"/>
   <text x="596" y="368" text-anchor="end" font-family="Georgia, serif" font-size="150" font-weight="bold" fill="#8b6f3d" opacity="0.07">2-</text>
-  <text x="320" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="17" letter-spacing="2" fill="#3d2e1e">SHIP 2 &#8212; GRANITE AGENTIC RAG &#8212; WHAT THE BUILDER SEES</text>
-  <text x="320" y="58" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" font-style="italic" fill="#8b6f3d">agent loop with tool calls and decisions &#183; built on a local model &#183; the ship where student became builder</text>
+  <text x="320" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="17" letter-spacing="2" fill="#3d2e1e">SHIP 2 &#8212; GRANITE AGENTIC RAG</text>
+  <text x="320" y="56" text-anchor="middle" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#8b6f3d">WHAT THE BUILDER SEES</text>
+  <text x="320" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" font-style="italic" fill="#8b6f3d">agent loop with tool calls and decisions &#183; built on a local model &#183; the ship where student became builder</text>
   <line x1="60" y1="68" x2="580" y2="68" stroke="#8b6f3d" stroke-width="0.75" opacity="0.6"/>
   <!-- app window -->
   <rect x="175" y="82" width="290" height="272" rx="10" fill="#f3ecd9" stroke="#8b6f3d" stroke-width="2.5"/>
