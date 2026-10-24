@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Paper: AI Platform Comparison for Sovereign Archive Development — Evelyn Caro</title>
+  <style>
+    body { font-family: Georgia, serif; background: #2c1810; color: #f5e6d3; padding: 2rem; max-width: 900px; margin: 0 auto; line-height: 1.6; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #d4b670; }
+    h2 { font-size: 1.5rem; color: #b8a173; margin-top: 2rem; border-bottom: 1px solid #8b6f3d; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.15rem; color: #d4b670; margin-top: 1.75rem; }
+    .subtitle { color: #a89070; font-style: italic; margin-bottom: 0.5rem; }
+    .byline { color: #a89070; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem; }
+    .byline .type { display: inline-block; background: #8b6f3d; color: #f5e6d3; padding: 0.15rem 0.5rem; border-radius: 3px; font-size: 0.75rem; margin-left: 0.5rem; }
+    p { margin: 1rem 0; }
+    a { color: #d4b670; }
+    a:hover { color: #f5e6d3; }
+    blockquote { border-left: 3px solid #8b6f3d; margin: 1.25rem 0; padding: 0.5rem 1.25rem; background: rgba(245,230,211,0.05); color: #e8d9c5; }
+    table { border-collapse: collapse; width: 100%; margin: 1.25rem 0; font-size: 0.95rem; }
+    th, td { border: 1px solid #8b6f3d; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+    th { background: rgba(139,111,61,0.35); color: #d4b670; }
+    ul, ol { margin: 1rem 0; padding-left: 1.5rem; }
+    li { margin: 0.5rem 0; }
+    hr { border: none; border-top: 1px solid #8b6f3d; margin: 2rem auto; width: 60%; }
+    .back { display: inline-block; margin-top: 2.5rem; color: #d4b670; text-decoration: none; }
+    .back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <h1>White Paper: AI Platform Comparison for Sovereign Archive Development</h1>
+  <!--BODY-START-->
+  <p><strong>Author:</strong> Evelyn Caro (@qaevelyn)
+<strong>Project:</strong> A Mirror of My Becoming™
+<strong>Date:</strong> August 15, 2026</p>
+<hr />
+<h2>Executive Summary</h2>
+<p>This white paper compares seven AI platforms evaluated during the development of the Mirror project: Aisha.ai, DeepSeek, Gemini NotebookLM, ChatGPT, Manus, AWS, and Google. Each platform was assessed against a consistent set of criteria: transparency, memory, tool access, collaboration model, accuracy, and alignment with the project's sovereignty principles.</p>
+<p>The findings reveal that while each platform has strengths, only DeepSeek offered the combination of transparency, persistence, accountability, and local execution required for building a sovereign AI archive.</p>
+<p><strong>Context:</strong> This white paper is one in a series documenting the trial-and-error process of evaluating AI platforms for the Mirror project. The evaluation methodology is documented separately in <a href="/white-papers/methodology/">Methodology: Stress-Testing AI Systems</a>.</p>
+<hr />
+<h2>Author's Journey: From Tourist to Expert</h2>
+<p>This comparison is not theoretical. It is grounded in years of direct usage across multiple AI platforms — first as a tourist exploring capabilities, and later as a professional AI practitioner building a sovereign archive.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Role</th>
+<th>What It Meant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2023–2025</strong></td>
+<td>Tourist</td>
+<td>Experimenting with ChatGPT, Google, Manus, and other platforms</td>
+</tr>
+<tr>
+<td><strong>2026</strong></td>
+<td>Professional</td>
+<td>Learning AI/ML, earning certifications, building the Mirror project fleet</td>
+</tr>
+<tr>
+<td><strong>2026–Present</strong></td>
+<td>Expert</td>
+<td>Google AI Professional Certified, building sovereign AI infrastructure</td>
+</tr>
+</tbody>
+</table>
+<p>The year-long usage data across platforms provided the foundation for this comparison. The distinction between tourist and expert matters:</p>
+<ul>
+<li><strong>As a tourist</strong>, I tried platforms for curiosity and exploration</li>
+<li><strong>As an expert</strong>, I evaluated platforms for capability, transparency, and sovereignty alignment</li>
+</ul>
+<p>DeepSeek was not chosen by chance. It was chosen because it outperformed every other platform across the criteria that matter for building a sovereign archive.</p>
+<hr />
+<h2>Evaluation Criteria</h2>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Transparency</strong></td>
+<td>Does the platform disclose its capabilities and limits?</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Does it remember across sessions?</td>
+</tr>
+<tr>
+<td><strong>Tool Access</strong></td>
+<td>Can it access CLI, S3, or local execution?</td>
+</tr>
+<tr>
+<td><strong>Collaboration Model</strong></td>
+<td>Is it ephemeral or persistent?</td>
+</tr>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td>Does it hallucinate or make repeated errors?</td>
+</tr>
+<tr>
+<td><strong>Sovereignty Alignment</strong></td>
+<td>Does it respect data ownership and privacy?</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>What is the limit, and is it disclosed?</td>
+</tr>
+<tr>
+<td><strong>File Upload Cap</strong></td>
+<td>Can it handle large files?</td>
+</tr>
+<tr>
+<td><strong>Source Attribution</strong></td>
+<td>Does it cite sources?</td>
+</tr>
+<tr>
+<td><strong>Expert Workflow</strong></td>
+<td>Can it support professional-grade development?</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Platform Profiles</h2>
+<h3>1. Aisha.ai</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Creator</strong></td>
+<td>Onyx Impact / Digital Green Book</td>
+</tr>
+<tr>
+<td><strong>Focus</strong></td>
+<td>Culturally grounded AI for the Black community</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>No cross-session memory</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>Opaque — not disclosed</td>
+</tr>
+<tr>
+<td><strong>File Upload Cap</strong></td>
+<td>5 MB</td>
+</tr>
+<tr>
+<td><strong>Tool Access</strong></td>
+<td>Search, profile context, file uploads</td>
+</tr>
+<tr>
+<td><strong>Source Attribution</strong></td>
+<td>✅ Yes (inline citations)</td>
+</tr>
+<tr>
+<td><strong>Guardrails</strong></td>
+<td>Strong — no explicit content</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Strengths:</strong>
+- Culturally grounded and community-focused
+- Strong guardrails
+- Clear source attribution</p>
+<p><strong>Weaknesses:</strong>
+- No cross-session memory
+- Opaque context window
+- 5 MB file cap
+- Limited tool access
+- Ephemeral collaboration model</p>
+<p><strong>Verdict:</strong> Strong for community resources, unsuitable for large-scale project development.</p>
+<hr />
+<h3>2. DeepSeek</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Creator</strong></td>
+<td>DeepSeek</td>
+</tr>
+<tr>
+<td><strong>Focus</strong></td>
+<td>General AI with strong reasoning and coding</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Persistent within conversation; handoff YAML enables cross-session</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>Transparent; handoff protocol mitigates limits</td>
+</tr>
+<tr>
+<td><strong>File Upload Cap</strong></td>
+<td>No cap (via S3 integration)</td>
+</tr>
+<tr>
+<td><strong>Tool Access</strong></td>
+<td>CLI, local execution, S3</td>
+</tr>
+<tr>
+<td><strong>Source Attribution</strong></td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Guardrails</strong></td>
+<td>Transparent and collaborative</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Strengths:</strong>
+- Persistent collaboration model
+- Transparent about limits
+- Local execution and CLI access
+- Handoff protocol built into workflow
+- Accountability — corrections tracked
+- Supports expert workflow
+- Aligned with sovereignty principles</p>
+<p><strong>Weaknesses:</strong>
+- No cross-session memory without handoff
+- Requires external state management</p>
+<p><strong>Verdict:</strong> Primary collaborator — the only platform that met all sovereignty and expert workflow criteria.</p>
+<hr />
+<h3>3. Gemini NotebookLM</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Creator</strong></td>
+<td>Google</td>
+</tr>
+<tr>
+<td><strong>Focus</strong></td>
+<td>Research and synthesis</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Session-based only</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>Not disclosed</td>
+</tr>
+<tr>
+<td><strong>File Upload Cap</strong></td>
+<td>Unclear</td>
+</tr>
+<tr>
+<td><strong>Tool Access</strong></td>
+<td>Sources, chat, audio/video generation</td>
+</tr>
+<tr>
+<td><strong>Source Attribution</strong></td>
+<td>❌ No — hallucinated sources</td>
+</tr>
+<tr>
+<td><strong>Guardrails</strong></td>
+<td>None — presents errors as facts</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Strengths:</strong>
+- Good for synthesis
+- Audio/video generation
+- Mind maps</p>
+<p><strong>Weaknesses:</strong>
+- Repeated hallucinations (Evelyn Caro → Carroll/Caru/Curo)
+- No disclaimer or uncertainty signaling
+- Could not pronounce or name the project consistently
+- Did not correct itself
+- Failed as a closed RAG system
+- No transparency about errors</p>
+<p><strong>Verdict:</strong> Useful for raw generation, but requires extensive manual correction. Not reliable as a collaborator.</p>
+<hr />
+<h3>4. ChatGPT</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Creator</strong></td>
+<td>OpenAI</td>
+</tr>
+<tr>
+<td><strong>Focus</strong></td>
+<td>General AI</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Session-based</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>Varies by model</td>
+</tr>
+<tr>
+<td><strong>File Upload Cap</strong></td>
+<td>Varies</td>
+</tr>
+<tr>
+<td><strong>Tool Access</strong></td>
+<td>Limited</td>
+</tr>
+<tr>
+<td><strong>Source Attribution</strong></td>
+<td>Varies</td>
+</tr>
+<tr>
+<td><strong>Guardrails</strong></td>
+<td>Standard</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Strengths:</strong>
+- General knowledge
+- Strong writing</p>
+<p><strong>Weaknesses:</strong>
+- Limited tool access
+- No local execution
+- Data sovereignty concerns
+- Ephemeral collaboration</p>
+<p><strong>Verdict:</strong> Used as a tourist (2023–2025). Not suitable for sovereign archive development. See the <a href="/white-papers/chatgpt-case-study/">ChatGPT case study</a> for details.</p>
+<hr />
+<h3>5. Manus</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Creator</strong></td>
+<td>Manus</td>
+</tr>
+<tr>
+<td><strong>Focus</strong></td>
+<td>General AI</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Session-based</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>Not disclosed</td>
+</tr>
+<tr>
+<td><strong>File Upload Cap</strong></td>
+<td>Varies</td>
+</tr>
+<tr>
+<td><strong>Tool Access</strong></td>
+<td>Limited</td>
+</tr>
+<tr>
+<td><strong>Source Attribution</strong></td>
+<td>Varies</td>
+</tr>
+<tr>
+<td><strong>Guardrails</strong></td>
+<td>Standard</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Strengths:</strong>
+- General knowledge</p>
+<p><strong>Weaknesses:</strong>
+- Not evaluated in depth
+- Ephemeral collaboration</p>
+<p><strong>Verdict:</strong> Used as a tourist. Not used for the Mirror project. See the <a href="/white-papers/manus-case-study/">Manus case study</a> for details.</p>
+<hr />
+<h3>6. AWS</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Creator</strong></td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td><strong>Focus</strong></td>
+<td>Cloud infrastructure</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>N/A — infrastructure</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>File Upload Cap</strong></td>
+<td>Unlimited (S3)</td>
+</tr>
+<tr>
+<td><strong>Tool Access</strong></td>
+<td>CLI, SDK, console</td>
+</tr>
+<tr>
+<td><strong>Source Attribution</strong></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>Guardrails</strong></td>
+<td>IAM, security policies</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Strengths:</strong>
+- Unlimited storage (S3)
+- CLI and SDK access
+- Scalable</p>
+<p><strong>Weaknesses:</strong>
+- Steep learning curve
+- Requires external AI collaborator</p>
+<p><strong>Verdict:</strong> Essential infrastructure, but not an AI collaborator. See the <a href="/white-papers/aws-case-study/">AWS case study</a> for details.</p>
+<hr />
+<h3>7. Google</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Creator</strong></td>
+<td>Google</td>
+</tr>
+<tr>
+<td><strong>Focus</strong></td>
+<td>Search, AI, cloud</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Session-based</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>Not disclosed</td>
+</tr>
+<tr>
+<td><strong>File Upload Cap</strong></td>
+<td>Varies</td>
+</tr>
+<tr>
+<td><strong>Tool Access</strong></td>
+<td>Limited</td>
+</tr>
+<tr>
+<td><strong>Source Attribution</strong></td>
+<td>Varies</td>
+</tr>
+<tr>
+<td><strong>Guardrails</strong></td>
+<td>Standard</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Strengths:</strong>
+- Search capabilities
+- Credentials (Google AI Professional Certificate earned in 2026)</p>
+<p><strong>Weaknesses:</strong>
+- Condescending user experience
+- Not sovereignty-aligned
+- Ephemeral collaboration</p>
+<p><strong>Verdict:</strong> Credentials provider, not a collaborator. Used as a tourist for search and research. See the <a href="/white-papers/google-case-study/">Google case study</a> for details.</p>
+<hr />
+<h2>The Journey: Tourist to Expert</h2>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Role</th>
+<th>Platforms Used</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2023–2025</strong></td>
+<td>Tourist</td>
+<td>ChatGPT, Manus, Google, Aisha.ai</td>
+<td>Explored capabilities, built foundational knowledge</td>
+</tr>
+<tr>
+<td><strong>2026</strong></td>
+<td>Professional</td>
+<td>DeepSeek, AWS, Google (certification)</td>
+<td>Learned AI/ML, built the Mirror project fleet</td>
+</tr>
+<tr>
+<td><strong>2026–Present</strong></td>
+<td>Expert</td>
+<td>DeepSeek (primary), AWS (infrastructure), Google (credentials)</td>
+<td>Google AI Professional Certified, sovereign archive built</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Insight:</strong> The tourist phase was essential — it provided year-long usage data across platforms. But it was the expert phase that revealed which platform could support a sovereign archive.</p>
+<hr />
+<h2>Comparative Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Transparency</th>
+<th>Memory</th>
+<th>Tool Access</th>
+<th>Collaboration</th>
+<th>Accuracy</th>
+<th>Sovereignty</th>
+<th>Expert Workflow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Aisha.ai</strong></td>
+<td>⚠️ Partial</td>
+<td>❌ No</td>
+<td>❌ Limited</td>
+<td>⚠️ Ephemeral</td>
+<td>✅ High</td>
+<td>✅ High</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>DeepSeek</strong></td>
+<td>✅ High</td>
+<td>✅ Yes</td>
+<td>✅ High</td>
+<td>✅ Persistent</td>
+<td>✅ High</td>
+<td>✅ High</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Gemini NotebookLM</strong></td>
+<td>❌ Low</td>
+<td>❌ No</td>
+<td>⚠️ Limited</td>
+<td>❌ Ephemeral</td>
+<td>❌ Low</td>
+<td>❌ Low</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>ChatGPT</strong></td>
+<td>⚠️ Partial</td>
+<td>❌ No</td>
+<td>❌ Limited</td>
+<td>❌ Ephemeral</td>
+<td>⚠️ Varies</td>
+<td>⚠️ Partial</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>Manus</strong></td>
+<td>⚠️ Partial</td>
+<td>❌ No</td>
+<td>❌ Limited</td>
+<td>❌ Ephemeral</td>
+<td>⚠️ Varies</td>
+<td>⚠️ Partial</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>AWS</strong></td>
+<td>✅ High</td>
+<td>N/A</td>
+<td>✅ High</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>✅ High</td>
+<td>✅ Yes (infrastructure)</td>
+</tr>
+<tr>
+<td><strong>Google</strong></td>
+<td>⚠️ Partial</td>
+<td>❌ No</td>
+<td>⚠️ Limited</td>
+<td>❌ Ephemeral</td>
+<td>⚠️ Varies</td>
+<td>❌ Low</td>
+<td>⚠️ Partial (credentials)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Key Findings</h2>
+<h3>1. Tourist vs. Expert</h3>
+<p>Year-long usage across platforms was essential for building expertise. But the expert phase revealed that only DeepSeek could support professional-grade sovereign development.</p>
+<h3>2. Memory is Critical</h3>
+<p>No cross-session memory was the single biggest limitation across all platforms except DeepSeek (with handoff YAML). The Mirror project requires persistent collaboration — not ephemeral sessions.</p>
+<h3>3. Transparency is Rare</h3>
+<p>Only DeepSeek and AWS were fully transparent about limits. Aisha.ai and NotebookLM both refused to disclose context windows or technical details. This opacity creates risk.</p>
+<h3>4. Tool Access Determines Capability</h3>
+<p>Platforms with CLI, local execution, and S3 integration (DeepSeek, AWS) were far more capable than platforms with limited tool access (Aisha.ai, NotebookLM, ChatGPT).</p>
+<h3>5. Closed RAG is Not a Cure</h3>
+<p>NotebookLM was fed the exact same documents as sources and still hallucinated repeatedly. A closed RAG system is not automatically accurate.</p>
+<h3>6. Sovereignty Requires Control</h3>
+<p>Platforms that store data on external servers (NotebookLM, ChatGPT, Google) are not sovereignty-aligned. DeepSeek's local execution model aligned with the Mirror's principles.</p>
+<h3>7. Expertise is Earned</h3>
+<p>Becoming Google AI Professional Certified and building the Mirror fleet transformed the author from a tourist into an expert. The comparison is not theoretical — it is based on years of direct usage.</p>
+<hr />
+<h2>Recommendations</h2>
+<table>
+<thead>
+<tr>
+<th>For AI Platforms</th>
+<th>For Builders</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disclose context window limits</td>
+<td>Build external provenance records</td>
+</tr>
+<tr>
+<td>Provide cross-session memory</td>
+<td>Use handoff protocols</td>
+</tr>
+<tr>
+<td>Increase file upload limits</td>
+<td>Store large files in S3</td>
+</tr>
+<tr>
+<td>Support external state transfer</td>
+<td>Document everything</td>
+</tr>
+<tr>
+<td>Enable tool access (CLI, API)</td>
+<td>Test tools before committing</td>
+</tr>
+<tr>
+<td>Be transparent about errors</td>
+<td>Verify all AI outputs</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Conclusion</h2>
+<p>The Mirror project evaluated seven AI platforms over years of usage — first as a tourist, then as a professional, and finally as an expert. Only DeepSeek met all the criteria required for a sovereign archive development collaborator:</p>
+<ol>
+<li><strong>Transparency</strong> — clear communication about limits</li>
+<li><strong>Memory</strong> — persistent collaboration with handoff protocol</li>
+<li><strong>Tool Access</strong> — CLI, local execution, S3 integration</li>
+<li><strong>Collaboration Model</strong> — persistent, accountable</li>
+<li><strong>Accuracy</strong> — reliable with corrections tracked</li>
+<li><strong>Sovereignty Alignment</strong> — local execution, data ownership</li>
+<li><strong>Expert Workflow</strong> — supports professional-grade development</li>
+</ol>
+<p>The other platforms — Aisha.ai, NotebookLM, ChatGPT, Manus, AWS (as an AI), and Google — each had strengths, but none offered the complete package required for building a sovereign AI archive.</p>
+<p>The Mirror project is proof that the right collaborator is not the most capable model, but the one that can work with you consistently, transparently, and persistently — and that expertise is built through years of direct usage, not just theoretical comparison.</p>
+<hr />
+<h2>Acknowledgments</h2>
+<ul>
+<li>Aisha.ai / Onyx Impact / Digital Green Book — for transparent responses and community focus</li>
+<li>DeepSeek — for persistent collaboration and accountability</li>
+<li>Gemini NotebookLM — for revealing the limits of closed RAG systems</li>
+<li>ChatGPT, Manus, AWS, Google — for being evaluated honestly</li>
+<li>Google AI Professional Certification — for validating the author's expertise</li>
+<li>Ida B. Wells — for the standard: date everything, name everything, record the reasoning</li>
+</ul>
+<hr />
+<h2>References</h2>
+<ul>
+<li>Aisha.ai Platform — https://aisha.ai</li>
+<li>DeepSeek — https://deepseek.com</li>
+<li>Gemini NotebookLM — https://notebook.google.com</li>
+<li>ChatGPT — https://chatgpt.com</li>
+<li>Manus — https://manus.ai</li>
+<li>AWS — https://aws.amazon.com</li>
+<li>Google — https://google.com</li>
+<li>Google AI Professional Certificate — Earned 2026</li>
+</ul>
+<hr />
+<p><strong>End of White Paper</strong></p>
+<p><strong>Source record:</strong> original draft file <code>White_Paper_AI_Platform_Comparison.md</code> — the published record is this page; build history is in the repository.</p>
+<p><strong>Date:</strong> 08/15/2026</p>
+<hr />
+<h2>AI Collaboration Disclosure</h2>
+<p>This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.</p>
+<p>This project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.</p>
+<hr />
+<p>© 2026 Evelyn Caro. All rights reserved.<br />
+A Mirror of My Becoming™ — https://qaevelyn.github.io<br />
+For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
+<hr />
+<h2>RECORD AMENDMENT — 2026-10-07 (appended, not retro-edited)</h2>
+<p>This paper was published 2026-08-15 and reflects the author's assessment as of that date. On 2026-09-25 the author's DeepSeek account was suspended without stated cause; access was restored 2026-09-28. See <a href="/white-papers/the-cache-is-not-the-corpus/">The Cache Is Not the Corpus™</a> and the addendum to the <a href="/white-papers/deepseek-case-study/">DeepSeek case study</a>.</p>
+<p>Amended findings: DeepSeek remains the <strong>architecture benchmark</strong> for statefulness, sovereignty, and the handoff protocol. <strong>Platform reliability is no longer assumed</strong> — it was demonstrated to fail silently and without notice. The comparative ratings above stand as a dated assessment, not a current guarantee. The original text stands as published.</p>
+  <!--BODY-END-->
+  <a class="back" href="/white-papers/">&larr; All White Papers</a>
+</body>
+</html>
