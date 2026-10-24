@@ -166,40 +166,10 @@
 
     .nav-controls {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 1rem;
-    }
-
-    .nav-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 0.75rem;
       margin-top: 0.9rem;
       padding: 0 0.5rem;
-    }
-
-    .nav-center {
-      flex: 1 1 0;
-      text-align: center;
-    }
-
-    .toc-link {
-      color: #f5e6d3;
-      text-decoration: none;
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 0.95rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-    }
-
-    .toc-link:hover {
-      text-decoration: underline;
-    }
-
-    body.dark-mode .toc-link {
-      color: #f5e6d3;
     }
 
     .nav-controls button {
@@ -241,14 +211,63 @@
         0 0 20px rgba(212,182,112,0.3);
     }
 
-    .page-indicator {
-      text-align: right;
-      min-width: 6rem;
-      color: #f5e6d3;
-      font-size: 0.95rem;
+    /* ===== PAGE FOLIO — the numbers live at the bottom of the parchment pages ===== */
+    .book-folio {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0.7rem;
+      display: flex;
+      align-items: baseline;
+      gap: 1.5rem;
+      z-index: 4;
+      padding: 0.25rem 1.2rem 0.4rem;
+      background: rgba(245, 230, 211, 0.95);
+      border: 1px solid rgba(139, 111, 61, 0.4);
+      border-bottom: none;
+      border-radius: 7px 7px 0 0;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.14);
       font-family: Georgia, 'Times New Roman', serif;
-      font-weight: 500;
-      letter-spacing: 0.03em;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .book-folio .folio-num {
+      font-weight: 600;
+      color: #2c1810;
+    }
+
+    .book-folio .folio-toc {
+      color: #2c1810;
+      text-decoration: none;
+      font-variant: small-caps;
+      letter-spacing: 0.09em;
+      border-bottom: 1px solid rgba(44, 24, 16, 0.4);
+      padding-bottom: 1px;
+    }
+
+    .book-folio .folio-toc:hover {
+      border-bottom-color: rgba(44, 24, 16, 0.85);
+    }
+
+    body.dark-mode .book-folio {
+      background: rgba(26, 26, 46, 0.95);
+      border-color: rgba(212, 182, 112, 0.35);
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.5);
+    }
+
+    body.dark-mode .book-folio .folio-num {
+      color: #e8e8e8;
+    }
+
+    body.dark-mode .book-folio .folio-toc {
+      color: #e8e8e8;
+      border-bottom-color: rgba(232, 232, 232, 0.4);
+    }
+
+    body.dark-mode .book-folio .folio-toc:hover {
+      border-bottom-color: rgba(255, 255, 255, 0.75);
     }
 
     .keyboard-hint {
@@ -277,10 +296,6 @@
 
     .return-home a:hover {
       text-decoration: underline;
-    }
-
-    body.dark-mode .page-indicator {
-      color: #f5e6d3;
     }
 
     body.dark-mode .keyboard-hint {
@@ -327,11 +342,6 @@
       color: #e8e8e8;
     }
 
-    @media (max-width: 768px) {
-      .spread.active {
-        grid-template-columns: 1fr;
-      }
-    }
     .spread .page { position: relative; }
     .spread .page::before { content: ""; position: absolute; top: 0; bottom: 0; width: 12%; pointer-events: none; z-index: 2; }
     .spread .page::after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; pointer-events: none; z-index: 1; }
@@ -721,6 +731,93 @@
     /* cert + badge captions: black ink on the cream page in day mode; warm gold in dark mode */
     .cert-cap { color:#1a1a1a; }
     body.dark-mode .cert-cap { color:#e8974a; }
+
+    /* ===== MOBILE — one leaf-face at a time, turnable (owner ruling 2026-10-24:
+       phones turn pages; no split spine down the middle; the book does not
+       become a scroll. Desktop spread is untouched. ===== */
+    @media (max-width: 932px) {
+      body {
+        display: block;
+        padding: 1rem 0.7rem 4.5rem;
+      }
+
+      /* a single leaf, not a split book: no spine, no valley, no gutter shading */
+      .book-spine, .valley { display: none; }
+      .spread .page::before, .spread .page::after { display: none; }
+
+      /* the parchment is one fixed-height leaf that fits the screen */
+      .book-pages {
+        height: calc(100vh - 250px);
+        min-height: 400px;
+        max-height: 700px;
+        overflow: hidden;
+      }
+      @supports (height: 100dvh) {
+        .book-pages { height: calc(100dvh - 250px); }
+      }
+
+      /* only the current leaf-face shows; it turns, it does not reflow into a tall stack */
+      .spread.active { display: block; height: 100%; }
+      .spread.active .page { display: none; }
+      .spread.active .page.mob-on {
+        display: block;
+        border-right: none;
+        padding: 1.6rem 1.4rem 2.2rem;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      /* long-leaf fallback scrollbar, themed quiet */
+      .spread.active .page.mob-on::-webkit-scrollbar { width: 5px; height: 5px; }
+      .spread.active .page.mob-on::-webkit-scrollbar-thumb { background: rgba(139,111,61,0.5); border-radius: 3px; }
+      .spread.active .page.mob-on::-webkit-scrollbar-track { background: transparent; }
+      body.dark-mode .spread.active .page.mob-on::-webkit-scrollbar-thumb { background: rgba(212,182,112,0.45); }
+
+      /* navigation buttons stay where they were — centered below the book */
+      .book-container { margin-bottom: 1rem; }
+      .book-and-nav .nav-wrapper { margin-top: 0.4rem; }
+      .nav-controls { margin-top: 0.6rem; }
+      .nav-controls button { padding: 0.95rem 2.4rem; font-size: 1rem; }
+      .keyboard-hint { display: none; }
+
+      /* folio plate stays on the parchment bottom */
+      .book-folio {
+        font-size: 0.78rem;
+        gap: 0.9rem;
+        padding: 0.2rem 0.9rem 0.3rem;
+        max-width: 92%;
+      }
+
+      /* Mir: the frame shrinks to fit the shorter leaf instead of clipping */
+      .mirror-page { padding: 0.6rem !important; }
+      .mirror-page .mir-frame-wrap { justify-content: flex-start; padding-top: 4px; }
+      .mirror-page .mir-frame-title { white-space: normal; padding-right: 3.4rem; }
+      .mirror-page .mir-frame-stack {
+        width: min(100%, calc(52vh * 1280 / 757));
+        margin: 0 auto;
+      }
+      .mirror-page .mir-topics { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* phone landscape: keep the leaf tall enough to read, chrome tight */
+    @media (max-width: 932px) and (max-height: 500px) {
+      .book-pages {
+        height: calc(100vh - 180px);
+        min-height: 250px;
+        max-height: 430px;
+        overflow: hidden;
+      }
+      @supports (height: 100dvh) {
+        .book-pages { height: calc(100dvh - 180px); }
+      }
+      .spread.active .page.mob-on { padding: 1rem 1.1rem 1.6rem; }
+      .book-folio { bottom: 0.35rem; font-size: 0.72rem; gap: 0.7rem; }
+      .nav-controls { margin-top: 0.4rem; }
+      .nav-controls button { padding: 0.7rem 1.8rem; font-size: 0.95rem; }
+      .mirror-page .mir-frame-stack { width: min(100%, calc(42vh * 1280 / 757)); }
+    }
   </style>
   <link rel="canonical" href="https://qaevelyn.github.io/lookbook.html">
 </head>
@@ -1463,7 +1560,11 @@ logger.info("chunk %d/%d"
         </div>
       </div>
 
-
+    <div class="book-folio" role="contentinfo" aria-label="Page number and contents links">
+      <a href="#toc" class="folio-toc" id="folioTocLeft">Contents</a>
+      <span class="folio-num" id="indicator" aria-live="polite">1 / 27</span>
+      <a href="#toc" class="folio-toc" id="folioTocRight">Contents</a>
+    </div>
 
     </div>
 
@@ -1472,15 +1573,9 @@ logger.info("chunk %d/%d"
 
   <!-- ===== NAVIGATION ===== -->
   <div class="nav-wrapper">
-    <div class="nav-row">
-      <div class="nav-controls">
-        <button id="prevBtn" disabled aria-label="Previous page">← Previous</button>
-        <button id="nextBtn" aria-label="Next page">Next →</button>
-      </div>
-      <div class="nav-center">
-        <a href="#toc" id="tocLink" class="toc-link">Contents</a>
-      </div>
-      <div class="page-indicator" id="indicator" aria-live="polite">1 / 27</div>
+    <div class="nav-controls">
+      <button id="prevBtn" disabled aria-label="Previous page">← Previous</button>
+      <button id="nextBtn" aria-label="Next page">Next →</button>
     </div>
 
     <div class="return-home">
@@ -1495,41 +1590,97 @@ logger.info("chunk %d/%d"
     const nextBtn = document.getElementById('nextBtn');
     const indicator = document.getElementById('indicator');
     let current = 0;
+    let side = 0; // which face of the leaf: 0 = first page of the spread, 1 = second
 
-    function goToSpread(index) {
+    // Mobile single-page mode — pages turn one leaf-face at a time (owner ruling 2026-10-24)
+    const singleQuery = window.matchMedia('(max-width: 932px)');
+    const isSingle = () => singleQuery.matches;
+    const pagesOf = (idx) => Array.prototype.filter.call(spreads[idx].children, function(el) { return el.classList.contains('page'); });
+
+    function applyMobileView() {
+      spreads.forEach(function(s, i) {
+        pagesOf(i).forEach(function(p, j) {
+          p.classList.toggle('mob-on', isSingle() && i === current && j === side);
+        });
+      });
+    }
+
+    function goToSpread(index, keepSide) {
       if (index < 0 || index >= spreads.length) return;
+      if (!keepSide) side = 0;
+      side = Math.max(0, Math.min(side, pagesOf(index).length - 1));
       spreads.forEach((s, i) => {
         s.classList.toggle('active', i === index);
       });
-      prevBtn.disabled = index === 0;
-      nextBtn.disabled = index === spreads.length - 1;
+      prevBtn.disabled = index === 0 && side === 0;
+      nextBtn.disabled = index === spreads.length - 1 && side === pagesOf(index).length - 1;
       indicator.textContent = (index + 1) + ' / ' + spreads.length;
       current = index;
+      applyMobileView();
     }
 
     window.goToSpread = goToSpread;
 
+    function turn(dir) {
+      if (isSingle()) {
+        const pages = pagesOf(current).length;
+        if (dir > 0) {
+          if (side < pages - 1) { side++; goToSpread(current, true); }
+          else if (current < spreads.length - 1) { goToSpread(current + 1); }
+        } else {
+          if (side > 0) { side--; goToSpread(current, true); }
+          else if (current > 0) { side = pagesOf(current - 1).length - 1; goToSpread(current - 1, true); }
+        }
+      } else {
+        goToSpread(current + dir);
+      }
+    }
+
     prevBtn.addEventListener('click', () => {
-      if (current > 0) goToSpread(current - 1);
+      turn(-1);
     });
 
     nextBtn.addEventListener('click', () => {
-      if (current < spreads.length - 1) goToSpread(current + 1);
+      turn(1);
     });
 
-    document.getElementById('tocLink').addEventListener('click', function(e) {
+    function goToToc(e) {
       e.preventDefault();
       const tocIdx = Array.prototype.indexOf.call(spreads, document.getElementById('toc'));
       if (tocIdx >= 0) goToSpread(tocIdx);
-    });
+    }
+    document.getElementById('folioTocLeft').addEventListener('click', goToToc);
+    document.getElementById('folioTocRight').addEventListener('click', goToToc);
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowLeft') {
-        goToSpread(current - 1);
+        turn(-1);
       } else if (e.key === 'ArrowRight') {
-        goToSpread(current + 1);
+        turn(1);
       }
     });
+
+    // Swipe to turn — horizontal flick on the parchment (mobile single-page mode)
+    let touchX = 0, touchY = 0, touchT = 0;
+    const bookPagesEl = document.querySelector('.book-pages');
+    bookPagesEl.addEventListener('touchstart', function(e) {
+      if (!isSingle()) return;
+      touchX = e.touches[0].clientX;
+      touchY = e.touches[0].clientY;
+      touchT = Date.now();
+    }, { passive: true });
+    bookPagesEl.addEventListener('touchend', function(e) {
+      if (!isSingle()) return;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - touchX;
+      const dy = t.clientY - touchY;
+      if (Date.now() - touchT < 900 && Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.3) {
+        turn(dx < 0 ? 1 : -1);
+      }
+    }, { passive: true });
+
+    // Rotation / window resize: re-evaluate which face shows
+    window.addEventListener('resize', applyMobileView);
 
     document.getElementById('themeToggle').addEventListener('click', function() {
       document.body.classList.toggle('dark-mode');
