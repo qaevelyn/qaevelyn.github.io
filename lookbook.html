@@ -166,10 +166,27 @@
 
     .nav-controls {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
+      align-items: center;
       gap: 1rem;
       margin-top: 0.9rem;
       padding: 0 0.5rem;
+    }
+
+    .nav-controls .nav-toc {
+      color: #d4b670;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-variant: small-caps;
+      letter-spacing: 0.09em;
+      font-size: 1rem;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(212, 182, 112, 0.4);
+      padding-bottom: 1px;
+      white-space: nowrap;
+    }
+
+    .nav-controls .nav-toc:hover {
+      border-bottom-color: #f5e6d3;
     }
 
     .nav-controls button {
@@ -1575,6 +1592,7 @@ logger.info("chunk %d/%d"
   <div class="nav-wrapper">
     <div class="nav-controls">
       <button id="prevBtn" disabled aria-label="Previous page">← Previous</button>
+      <a href="#toc" class="nav-toc" id="navToc" aria-label="Go to table of contents">Contents</a>
       <button id="nextBtn" aria-label="Next page">Next →</button>
     </div>
 
@@ -1616,10 +1634,27 @@ logger.info("chunk %d/%d"
       nextBtn.disabled = index === spreads.length - 1 && side === pagesOf(index).length - 1;
       indicator.textContent = (index + 1) + ' / ' + spreads.length;
       current = index;
+      updateNavLabels();
       applyMobileView();
     }
 
     window.goToSpread = goToSpread;
+
+    function destSpread(dir) {
+      if (isSingle()) {
+        const pages = pagesOf(current).length;
+        if (dir > 0) return side < pages - 1 ? current : (current < spreads.length - 1 ? current + 1 : null);
+        return side > 0 ? current : (current > 0 ? current - 1 : null);
+      }
+      const d = current + dir;
+      return (d >= 0 && d < spreads.length) ? d : null;
+    }
+
+    function updateNavLabels() {
+      const pd = destSpread(-1), nd = destSpread(1);
+      prevBtn.textContent = pd === null ? '← Previous' : '← ' + (pd + 1);
+      nextBtn.textContent = nd === null ? 'Next →' : (nd + 1) + ' →';
+    }
 
     function turn(dir) {
       if (isSingle()) {
@@ -1651,6 +1686,7 @@ logger.info("chunk %d/%d"
     }
     document.getElementById('folioTocLeft').addEventListener('click', goToToc);
     document.getElementById('folioTocRight').addEventListener('click', goToToc);
+    document.getElementById('navToc').addEventListener('click', goToToc);
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowLeft') {
@@ -1680,7 +1716,10 @@ logger.info("chunk %d/%d"
     }, { passive: true });
 
     // Rotation / window resize: re-evaluate which face shows
-    window.addEventListener('resize', applyMobileView);
+    window.addEventListener('resize', function() {
+      applyMobileView();
+      updateNavLabels();
+    });
 
     document.getElementById('themeToggle').addEventListener('click', function() {
       document.body.classList.toggle('dark-mode');
