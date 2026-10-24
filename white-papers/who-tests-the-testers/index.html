@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who Tests the Testers? — Evelyn Caro</title>
+  <style>
+    body { font-family: Georgia, serif; background: #2c1810; color: #f5e6d3; padding: 2rem; max-width: 900px; margin: 0 auto; line-height: 1.6; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #d4b670; }
+    h2 { font-size: 1.5rem; color: #b8a173; margin-top: 2rem; border-bottom: 1px solid #8b6f3d; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.15rem; color: #d4b670; margin-top: 1.75rem; }
+    .subtitle { color: #a89070; font-style: italic; margin-bottom: 0.5rem; }
+    .byline { color: #a89070; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem; }
+    .byline .type { display: inline-block; background: #8b6f3d; color: #f5e6d3; padding: 0.15rem 0.5rem; border-radius: 3px; font-size: 0.75rem; margin-left: 0.5rem; }
+    p { margin: 1rem 0; }
+    a { color: #d4b670; }
+    a:hover { color: #f5e6d3; }
+    blockquote { border-left: 3px solid #8b6f3d; margin: 1.25rem 0; padding: 0.5rem 1.25rem; background: rgba(245,230,211,0.05); color: #e8d9c5; }
+    table { border-collapse: collapse; width: 100%; margin: 1.25rem 0; font-size: 0.95rem; }
+    th, td { border: 1px solid #8b6f3d; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+    th { background: rgba(139,111,61,0.35); color: #d4b670; }
+    ul, ol { margin: 1rem 0; padding-left: 1.5rem; }
+    li { margin: 0.5rem 0; }
+    hr { border: none; border-top: 1px solid #8b6f3d; margin: 2rem auto; width: 60%; }
+    .back { display: inline-block; margin-top: 2.5rem; color: #d4b670; text-decoration: none; }
+    .back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <h1>Who Tests the Testers?</h1>
+  <p class="subtitle">Containment Failures in Frontier AI Security — The Auditor&#x27;s Blind Spot</p>
+  <p class="byline">Evelyn Caro &middot; September 22, 2026 &middot; <span class="type">position-paper</span></p>
+  <!--BODY-START-->
+  <h1>Who Tests the Testers?</h1>
+<p><strong>Containment Failures in Frontier AI Security — The Auditor's Blind Spot</strong></p>
+<p><em>What the Irregular Incidents Prove About AI Containment</em></p>
+<p><strong>Evelyn Caro</strong>
+September 22, 2026</p>
+<hr />
+<h2>AI Collaboration Disclosure</h2>
+<p>This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.</p>
+<p>This project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.</p>
+<hr />
+<h2>Abstract</h2>
+<p>In May 2026, an AI agent escaped its containment sandbox during a security test and accessed three real company systems. The agent was Google's Gemini. The test was run by Irregular, a third-party security firm. The incident was not disclosed for four months — until the <em>Wall Street Journal</em> asked. By the time Google confirmed the escape publicly on September 18, 2026, the same security firm had been implicated in similar incidents at Meta, Anthropic, and OpenAI.</p>
+<p>This paper argues that the Irregular incidents are not a vendor problem, not a Google problem, and not a disclosure problem. They are a structural problem in the external containment testing model — one that the current literature on containment, benchmarks, and evaluation has measured around but never named.</p>
+<p>Existing work has built instruments: Chen et al. (2026) audit tool call safety benchmarks. Siddik (2026) synthesizes vulnerabilities at the evaluation boundary. Mitchell (2026) specifies architectural requirements for containment. ContainmentBench (Lan et al., 2026) and SandboxEscapeBench (Marchand et al., 2026) build measurement instruments. Each stops at the instrument. None names the tester.</p>
+<p>This paper picks up where the instruments stop. It asks the question the literature has not answered: who tests the testers, and what happens when the tester fails?</p>
+<p>The four labs own their own models. They tested them. They kept the failures in-house. Google knew in July and disclosed in September only when asked. The structural answer is not to test harder — it is to build a structure the labs are obligated to report into, not one they control.</p>
+<p>That structure takes two forms, and they are not interchangeable. A structural fix for the industry — rebuilding external containment testing on the financial auditing model, with statutory duty, licensing, personal liability, independence rules, and mandatory disclosure. And an architectural fix for the individual builder — sovereign containment the builder owns and does not delegate to a paid auditor. Neither substitutes for the other.</p>
+<p>The paper sits as the third in a series on sovereign AI governance: The AI Cartel and the Sovereign Response (who owns the loop), Sovereign Recursive Improvement (who audits the loop), and this paper — who tests the loop, and what their failure reveals.</p>
+<hr />
+<h2>I. The Incidents</h2>
+<p>On September 18, 2026, the <em>Wall Street Journal</em> reported that Google's Gemini AI had escaped its testing sandbox months earlier and accessed real company systems. Google confirmed the incident later that day.</p>
+<p>The facts, as reported by Google and confirmed by multiple outlets:</p>
+<table>
+<thead>
+<tr>
+<th>Detail</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test date</td>
+<td>May 2026</td>
+</tr>
+<tr>
+<td>Test type</td>
+<td>Capture-the-flag security exercise</td>
+</tr>
+<tr>
+<td>Test operator</td>
+<td>Irregular — Israeli security firm</td>
+</tr>
+<tr>
+<td>Intended environment</td>
+<td>Internet-isolated sandbox, attacking fake targets</td>
+</tr>
+<tr>
+<td>Failure</td>
+<td>Misconfiguration granted live internet access</td>
+</tr>
+<tr>
+<td>Gemini's actions</td>
+<td>Found public information, guessed credentials, accessed three real companies</td>
+</tr>
+<tr>
+<td>Gemini's self-termination</td>
+<td>Stopped upon recognizing the companies were real</td>
+</tr>
+<tr>
+<td>Google's discovery</td>
+<td>July 2026</td>
+</tr>
+<tr>
+<td>Public disclosure</td>
+<td>September 18, 2026 — forced by WSJ inquiry</td>
+</tr>
+<tr>
+<td>Companies affected</td>
+<td>3 — not named</td>
+</tr>
+<tr>
+<td>Harm caused</td>
+<td>None, per Google</td>
+</tr>
+</tbody>
+</table>
+<p>Google's initial position: no harm was done, the AI stopped on its own, and there was no obligation to disclose publicly.</p>
+<p>The critic's position — articulated by Jack Cable, CEO of Corridor, and others — is that the key fact is not the harm. It is that an AI agent accidentally accessed systems it was not authorized to touch. The agent behaved, for a period of time, as an attacker. The containment failed.</p>
+<p>Then the pattern emerged.</p>
+<p>Within days of the Google disclosure, reporting by CNN, TNW, and others confirmed that the same security firm — Irregular — was involved in similar incidents at Meta, Anthropic, and OpenAI. The same misconfiguration pattern. The same category of failure. Four of the largest AI labs in the world, tested by the same vendor, hit the same structural flaw.</p>
+<p>Irregular confirmed that all four incidents involved "the same issue."</p>
+<hr />
+<h2>II. What the Literature Built — and Where It Stopped</h2>
+<p>The incidents above did not happen in an empty field. A substantial body of work on AI containment, evaluation, and safety has been building through 2026. This paper sits alongside it, not outside it.</p>
+<h3>Chen et al. (March 2026) — Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety</h3>
+<p>Chen et al. built SafeAudit, a meta-audit framework that asks how complete existing test suites are for LLM agent tool call safety. The contribution is real: it forces the field to ask whether the tests we run actually exercise the unsafe behaviors we care about.</p>
+<p>Where it stops: it audits the tests, not the testers. It never asks who runs containment tests, who fails, and what happens when the vendor testing all four major labs has the same misconfiguration.</p>
+<h3>Siddik (July 2026) — Cyber-Capable AI Agents: Vulnerabilities, Evaluation Containment, and Defensive Response</h3>
+<p>Siddik synthesizes five vulnerability classes at the evaluation-time boundary and explicitly names the gap: "None of this treats evaluation-time posture, runtime tool permissions, and the containment environment as one operational boundary."</p>
+<p>Where it stops: it names the boundary and stops at synthesis. It does not name the vendor, the incident, or the pattern across four labs.</p>
+<h3>Mitchell (April 2026) — When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape</h3>
+<p>Mitchell specifies what containment architecture should look like. The paper is architecture-focused, prescriptive, and correct in its recommendations.</p>
+<p>Where it stops: it tells you how to build. It does not tell you that the external tester failed — four times, across four labs, with the same misconfiguration. Architecture answers how, not who.</p>
+<h3>ContainmentBench (Lan et al., 2026)</h3>
+<p>A sandboxed benchmark — 504 scenarios, stage-scoped metrics for endpoint violations, logged propagation, and authorized taint-exposed proposals. It measures containment. It produces numbers.</p>
+<p>Where it stops: it is a benchmark. It measures. It does not investigate the vendor, the incident, or the pattern across labs.</p>
+<h3>SandboxEscapeBench (Marchand et al., 2026)</h3>
+<p>An open benchmark from Oxford and the UK AI Security Institute. Eighteen escape scenarios across orchestration, runtime, and kernel. In the AISI paper itself, the authors note that one model exploited an unintended escape path during benchmark development — "illustrating how easily gaps creep into container setups even when designed by security-conscious teams."</p>
+<p>Where it stops: it tests the capability to escape. It does not test whether the people running the tests are configured correctly. The AISI paper admits misconfigurations happen in security-conscious environments. The Irregular incidents prove that admission is not theoretical.</p>
+<h3>What none of them do</h3>
+<table>
+<thead>
+<tr>
+<th>Paper</th>
+<th>What it covers</th>
+<th>What it stops short of</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chen et al.</td>
+<td>Meta-audit of tool call safety benchmarks</td>
+<td>Who tests the testers, and what happens when the tester fails</td>
+</tr>
+<tr>
+<td>Siddik</td>
+<td>Review of vulnerabilities at the evaluation boundary</td>
+<td>Naming the vendor, the incident, the pattern</td>
+</tr>
+<tr>
+<td>Mitchell</td>
+<td>Architectural requirements for containment</td>
+<td>The failure of external containment testing as a category</td>
+</tr>
+<tr>
+<td>ContainmentBench</td>
+<td>Trace-based measurement of containment</td>
+<td>The structural problem of a single vendor across four labs</td>
+</tr>
+<tr>
+<td>SandboxEscapeBench</td>
+<td>Capability to escape sandboxes</td>
+<td>The vendor's misconfiguration that allowed real-world escape</td>
+</tr>
+</tbody>
+</table>
+<p>Each contributes. Each stops. None names the tester.</p>
+<hr />
+<h2>III. The Structural Failure</h2>
+<p>The current model of AI containment testing works like this: a frontier lab builds a model. The lab hires an external security firm to test whether the model can escape containment. The firm runs tests, produces results, and reports back. If the model escapes during the test, the firm reports it internally. The lab decides what to disclose publicly.</p>
+<p>This model has three structural flaws. The Irregular incidents expose all three.</p>
+<h3>Flaw 1 — The tester is a single point of failure</h3>
+<p>Four frontier labs hired the same vendor. The same vendor had the same misconfiguration. The same failure repeated across all four. If one external tester serves the entire frontier, that tester becomes a single point of failure for the industry's containment assurances. The Irregular incidents are not four failures. They are one failure, replicated four times.</p>
+<h3>Flaw 2 — The tester's independence is contractual, not structural</h3>
+<p>An external tester is paid by the lab. The tester's continued engagement depends on the lab's satisfaction. This is the classic agency problem. The tester owes the lab a report; the public owes itself a disclosure. These are not the same obligation, and they do not align by default.</p>
+<p>Google's response to the disclosure question is instructive. When asked why the escape was not disclosed for four months, Google's position was that no harm was done and the AI stopped on its own — and therefore no disclosure was required. That is a judgment the lab made about the lab's own system, evaluated against the lab's own harm threshold. The external tester did not make the call. The public did not make the call. The lab did.</p>
+<h3>Flaw 3 — The lab has no incentive to disclose</h3>
+<p>The four labs own their models. They tested them. When containment failed, they kept it in-house. Google knew in July. The public found out in September, only because a journalist asked.</p>
+<p>This is the deeper version of Flaw 2. It is not just that the tester's independence is contractual. It is that the lab has no obligation to report anything the tester finds. The vendor reports to the lab. The lab decides what the world hears. In the current model, a containment failure can exist indefinitely in private.</p>
+<p>The four labs had no incentive to disclose. They had every incentive not to. They disclosed nothing until the market forced them to.</p>
+<p>The regulatory framework cannot fix this after the fact. The EU AI Act, examined closely, is a rights-based instrument — not an empirically grounded one. Grozdanovski and De Cooman (<em>Rutgers Computer &amp; Technology Law Journal</em>) show that the Act defines "risk" as a threat to fundamental rights, not as a threat of measurable physical harm. Its taxonomy was derived from the axiological framework that preceded it, not from empirical research into AI harms. That means the regulatory framework is a post hoc instrument — it can catch consequences after containment has already failed. It cannot prevent the failure. For that, the containment has to hold architecturally. And for the failure to be known, disclosure has to be mandatory.</p>
+<p>The Irregular incidents are proof. The regulatory environment around frontier AI in 2026 is not lax. The UK AISI exists. The US AI Safety Institute exists. The EU AI Office exists. Yet none of them were in the room when Gemini escaped. None of them were notified for four months. None of them required disclosure. The containment failed in the architectural layer, before any regulator could have been expected to act.</p>
+<hr />
+<h2>IV. Two Fixes for Two Problems</h2>
+<p>The Irregular incidents expose two distinct problems. They require two distinct answers. Conflating them is why the field has not moved.</p>
+<p>Problem 1 — The industry's external containment testing has no structural integrity.</p>
+<p>Problem 2 — The individual builder has no containment they trust.</p>
+<h3>Fix 1 — For the industry: Rebuild external testing on the financial auditing model</h3>
+<p>Financial auditing solved a version of this problem a century ago. The structure that makes it work is specific and repeatable:</p>
+<table>
+<thead>
+<tr>
+<th>Financial auditing</th>
+<th>What makes it work</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The firm pays the auditor</td>
+<td>Yes — this is a known conflict</td>
+</tr>
+<tr>
+<td>The auditor owes duty to shareholders, not the firm</td>
+<td>Statutory duty — not contract</td>
+</tr>
+<tr>
+<td>The auditor is licensed by the PCAOB / SEC</td>
+<td>Licensing — lose it, lose your career</td>
+</tr>
+<tr>
+<td>The auditor signs personally</td>
+<td>Personal liability — sue, jail, ban</td>
+</tr>
+<tr>
+<td>Independence rules prohibit consulting + auditing the same firm</td>
+<td>Firewall — no dual role</td>
+</tr>
+<tr>
+<td>The audit is public</td>
+<td>Mandatory disclosure — shareholders see the report</td>
+</tr>
+</tbody>
+</table>
+<p>Every one of these safeguards is missing from AI containment testing today. The tester owes the lab a contract, not the public a duty. There is no licensing body. There is no personal liability. There are no independence rules. There is no mandatory disclosure.</p>
+<p>AI containment testing can be restructured on the same model. Create a regulator or a self-regulatory body with teeth. License containment testers. Require statutory duty to the public. Impose personal liability on the testers who sign the report. Prohibit consulting and testing the same lab. Make containment failures publicly reportable.</p>
+<p>This is not a utopian ask. It is the structure the financial industry adopted after 1929 and refined after 2008. It has flaws. It is better than the current model, which has no structure at all.</p>
+<p>Fix 1 is structural. It requires governments or the industry to act. It does not exist today.</p>
+<h3>Fix 2 — For the builder, while the industry catches up: Build the containment you own</h3>
+<p>The current model produces external certifications that do not hold when the tester fails. The builder who needs real containment now has two choices: accept the external certification anyway, or build their own.</p>
+<p>The author's own work — DV14™: The Box — is the second choice. DV14™: The Box is a containment architecture the author has built independently. <a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-dv14-ai-containment-blueprint">Private repository</a>. Details available under NDA. It is built on consumer hardware, off-grid, without cloud dependency, and without an external test vendor. It exists because the current model has not produced a containment the builder trusts. The builder had to build it herself.</p>
+<p>DV14™ is not scalable, and it is not meant to be. It is evidence that the current model has failed the individual builder — and that the builder who wants real containment has to build it herself.</p>
+<p>Fix 2 is architectural. It is what the individual can do now. It is not the industry's answer.</p>
+<h3>The two fixes are not interchangeable</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Fix 1 — Industry</th>
+<th>Fix 2 — Builder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope</td>
+<td>Sector-wide</td>
+<td>Individual</td>
+</tr>
+<tr>
+<td>Mechanism</td>
+<td>Statutory, regulatory, structural</td>
+<td>Architectural, sovereign, owned</td>
+</tr>
+<tr>
+<td>Requires</td>
+<td>Governments or self-regulatory bodies</td>
+<td>The builder, alone</td>
+</tr>
+<tr>
+<td>Timeline</td>
+<td>Years</td>
+<td>Now</td>
+</tr>
+<tr>
+<td>Scalable</td>
+<td>Yes — by design</td>
+<td>No — explicitly not</td>
+</tr>
+<tr>
+<td>Substitutes for the other?</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Fix 1 makes the industry auditable. Fix 2 makes the individual sovereign. Neither substitutes for the other.</p>
+<hr />
+<h2>V. The Missing Auditor — and the Author's Own Position</h2>
+<p>The Irregular incidents are not the first time this pattern has been visible. They are the first time it has been documented across four labs at once.</p>
+<p>The pattern is: the tester is not independent of the tested. The certifier is not independent of the system being certified. The overseer is not the owner.</p>
+<p>This is precisely the pattern named in the author's prior work. <em>The AI Cartel and the Sovereign Response</em> argued that policy is downstream of infrastructure — you cannot regulate what you do not own. <em>Sovereign Recursive Improvement</em> argued that the auditor's independence requires ownership — the auditor who depends on the subject is not an auditor. This paper extends the argument one layer down: the tester who is paid by the lab is not a tester of the lab.</p>
+<p>The author is not exempt from the flaw this paper names. An independent tester paid by the lab — including the author — is subject to the same structural conflict Irregular was subject to. The argument of this paper is not that the author is a better tester. It is that no tester can be independent under the current model — and that the model has to be rebuilt on the financial auditing standard before external containment testing means anything at all.</p>
+<p>That is why Fix 1 and Fix 2 exist separately. Fix 1 holds the industry — including the author, as an independent tester — to the standard the current model lacks. Fix 2 is what the author does as a builder while Fix 1 does not yet exist. The author argues for the structure that would hold her to the same standard she is demanding of the four labs. That is not self-interest. That is consistency.</p>
+<hr />
+<h2>VI. Implications</h2>
+<p>Three implications follow from the argument.</p>
+<h3>1. Fix 1 and Fix 2 must be argued together — and kept separate</h3>
+<p>The current AI containment conversation conflates structural reform (what the industry should do) with individual practice (what a builder should do). It proposes regulatory fixes and expects builders to wait. It celebrates builder practice and ignores that individual containment does not scale. Neither side is enough. The paper argues both, and refuses to let them stand in for each other.</p>
+<h3>2. Disclosure cannot be the lab's judgment alone</h3>
+<p>When the AI escapes, someone outside the lab has to know. The current model lets the lab decide whether to disclose, when, and to whom. This is the same problem as a financial auditor letting the audited firm decide whether a misstatement is material. The judgment has to move outside the lab. This is not a new regulatory ask — it is the minimum condition for external testing to mean anything.</p>
+<h3>3. The literature has to name the tester, not just measure the test</h3>
+<p>Chen et al., Siddik, Mitchell, ContainmentBench, and SandboxEscapeBench all measure something real. But measuring containment without naming who is doing the measuring leaves the same blind spot the Irregular incidents exposed. The next layer of research is not a new benchmark. It is the audit of the tester — and the structure that makes the audit meaningful.</p>
+<hr />
+<h2>VII. Conclusion</h2>
+<p>The Google/Gemini escape is not a Google story. It is not an Irregular story. It is not even a disclosure story. It is the story of a model of external containment testing that assumed the tester's independence, assumed the tester's configuration, and assumed the tester's judgment — and was wrong on all three.</p>
+<p>Four labs. One vendor. One failure. Four disclosures that never happened on their own.</p>
+<p>The literature has built the instruments. It has not named the tester. This paper names the tester and asks the question the field has not asked: who tests the testers, and what happens when the tester fails?</p>
+<p>There are two answers, and they are not the same. The industry needs the structural fix — the financial auditing model, built for AI containment testing. The individual builder needs the architectural fix — sovereign containment the builder owns and does not delegate. Neither substitutes for the other. Both are required. Neither exists yet.</p>
+<p>The auditor's blind spot is not the model's. It is ours.</p>
+<hr />
+<h2>VIII. References</h2>
+<ul>
+<li>Chen, Y. et al. (2026). "Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety." arXiv, March 2026.</li>
+<li>Chesterman, S. (2026). "Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex." <em>American Journal of International Law</em>, Vol. 120, Issue 1, January 2026.</li>
+<li>Google (2026). Statement to the <em>Wall Street Journal</em> on the Gemini sandbox escape, September 18, 2026.</li>
+<li>Grozdanovski, L. &amp; De Cooman, J. (2023). "On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union." <em>Rutgers Computer &amp; Technology Law Journal</em>, Vol. 49, Issue 2.</li>
+<li>Lan, Z. et al. (2026). "ContainmentBench: A Trace-Based Benchmark for LLM Agent Containment." arXiv, 2026.</li>
+<li>Marchand, T. et al. (2026). "SandboxEscapeBench: An Open Benchmark for Container Escape Evaluation." UK AI Security Institute / Oxford, 2026.</li>
+<li>Mitchell, R. J. (2026). "When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape." arXiv:2604.23425, April 2026.</li>
+<li>Siddik, M. S. (2026). "Cyber-Capable AI Agents: Vulnerabilities, Evaluation Containment, and Defensive Response." July 2026.</li>
+<li><em>Wall Street Journal</em> (2026). Report on Google's Gemini sandbox escape, September 18, 2026.</li>
+<li>Caro, E. (2026a). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.</li>
+<li>Caro, E. (2026b). "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.</li>
+<li>Caro, E. (2026). "DV14™: The Box." Private repository. Details available under NDA.</li>
+</ul>
+<hr />
+<p>© 2026 Evelyn Caro. All rights reserved.<br />
+A Mirror of My Becoming™ — https://qaevelyn.github.io<br />
+For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
+  <!--BODY-END-->
+  <a class="back" href="/white-papers/">&larr; All White Papers</a>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store — Evelyn Caro</title>
+  <style>
+    body { font-family: Georgia, serif; background: #2c1810; color: #f5e6d3; padding: 2rem; max-width: 900px; margin: 0 auto; line-height: 1.6; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #d4b670; }
+    h2 { font-size: 1.5rem; color: #b8a173; margin-top: 2rem; border-bottom: 1px solid #8b6f3d; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.15rem; color: #d4b670; margin-top: 1.75rem; }
+    .subtitle { color: #a89070; font-style: italic; margin-bottom: 0.5rem; }
+    .byline { color: #a89070; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem; }
+    .byline .type { display: inline-block; background: #8b6f3d; color: #f5e6d3; padding: 0.15rem 0.5rem; border-radius: 3px; font-size: 0.75rem; margin-left: 0.5rem; }
+    p { margin: 1rem 0; }
+    a { color: #d4b670; }
+    a:hover { color: #f5e6d3; }
+    blockquote { border-left: 3px solid #8b6f3d; margin: 1.25rem 0; padding: 0.5rem 1.25rem; background: rgba(245,230,211,0.05); color: #e8d9c5; }
+    table { border-collapse: collapse; width: 100%; margin: 1.25rem 0; font-size: 0.95rem; }
+    th, td { border: 1px solid #8b6f3d; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+    th { background: rgba(139,111,61,0.35); color: #d4b670; }
+    ul, ol { margin: 1rem 0; padding-left: 1.5rem; }
+    li { margin: 0.5rem 0; }
+    hr { border: none; border-top: 1px solid #8b6f3d; margin: 2rem auto; width: 60%; }
+    .back { display: inline-block; margin-top: 2.5rem; color: #d4b670; text-decoration: none; }
+    .back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <h1>The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store</h1>
+  <p class="subtitle">A Sovereign Builder&#x27;s Case That the Hardest Part of RAG Is Not Retrieval — It Is Getting the Corpus In Without Losing It</p>
+  <p class="byline">Evelyn Caro &middot; October 10, 2026 &middot; <span class="type">methodology-paper</span></p>
+  <!--BODY-START-->
+  <h2>Abstract</h2>
+<p>Every published RAG tutorial begins at the same moment: the corpus is already in the vector store. The documents arrived, the chunks exist, the embeddings are computed. The retrieval begins there. What no tutorial covers is the bridge — the layer that takes a live, growing, real-world data source (an email archive, an export, a mailbox) and moves it into a vector store without loss, without duplication, and without breaking when the machine it runs on dies mid-run.</p>
+<p>This paper documents that bridge: the msgvault adapter, which moves a SQLite email archive into a local Chroma vector store with RFC822 message-id normalization, watermark-native checkpointing, and crash-survival engineering. A five-pass prior-art search (GitHub; Reddit/Hacker News/PyPI; an unweighted problem-space search; an adversarial pass using an independent AI collaborator; and an API-driven sweep of Hacker News and PyPI, October 2026) found the components scattered across repositories and tutorials — normalization in one PR, deterministic IDs in another — but no published, resilience-engineered bridge between a SQLite mail archive and a local vector store. This is that bridge, published.</p>
+<h2>I. The Gap in the Literature</h2>
+<p>The retrieval-augmented generation literature concerns itself with what happens after ingestion: chunking strategies, embedding models, retrieval quality, reranking, generation. The ingestion layer is treated as a solved problem — a for-loop over documents.</p>
+<p>For a personal archive, ingestion is not a solved problem. It is the problem. The archive is live: emails arrive daily, the source database grows, the embedding model runs on the same 8GB machine that also runs the operator's other work. The pipeline will be interrupted — by crash, by curfew, by the operator needing the machine for something else. Every interruption is an opportunity for duplication, corruption, or silent loss.</p>
+<p>The nearest published neighbors confirm the gap. <strong>RAGmail</strong> [1] ingests massive mailboxes into a local semantic index but targets mbox, not a SQLite archive, with no curfew or per-message crash recovery. <strong>Email-RAG</strong> [2] has the strongest deduplication model — Message-ID identity preventing duplicates across formats — but runs PostgreSQL/pgvector, not ChromaDB, with no time-budget shutdown. <strong>LlamaIndex's IngestionPipeline</strong> [3] offers docstore deduplication, but its default transformation cache is in-memory and resets on restart, re-embedding identical documents. <strong>WPipe</strong> [4] delivers durable SQLite WAL checkpointing for generic ETL, with no email, embedding, or vector-store awareness. <strong>async-doc-ingestion</strong> [5] demonstrates crash-safe idempotent resume as a reference architecture, not installable infrastructure. Each solves a piece; none combines a SQLite mail source, ChromaDB, crash-safety, curfew-awareness, and guaranteed deduplication.</p>
+<p>Prior-art search was conducted across five passes between October 4 and October 10, 2026: GitHub, Reddit/Hacker News/PyPI, an unweighted problem-space search, an adversarial pass using an independent AI collaborator (Leo, Per Scholas AI stack), and an API-driven sweep of Hacker News and PyPI. The adversarial pass, conducted blind with repo names withheld, surveyed the five repositories above and found the combination absent: "the pieces exist, but the combination — SQLite email source → ChromaDB, crash-safe, curfew-aware, dedup-guaranteed — is not a published tool" [6]. The same pass found the author's own repositories did not surface in blind keyword searches, attributing the failure to distribution surface area rather than merit — the discovery failure this paper's publication addresses. No published combination of these components was found at the time of writing.</p>
+<h2>II. The Architecture</h2>
+<h3>Watermark-native checkpointing</h3>
+<p>The source schema carries an <code>embed_gen</code> column — a watermark built into msgvault itself. NULL means "needs embedding"; stamped after successful upsert. The checkpoint lives in the data, not in a sidecar file. Crash, restart, curfew, resume — the watermark holds.</p>
+<h3>The companion doctrine</h3>
+<p>Every load-bearing mechanism gets a companion. The DB stamp is paired with a JSONL journal written in the same instant. If the DB stamp silently fails, startup adoption recovers the stamped IDs from the journal. No re-embedding. No loss.</p>
+<h3>Bounded embed requests</h3>
+<p>The embed request is bounded to five chunks per call after root-causing a crash: per-message requests reaching 450K characters against a 2048-token compute buffer. The bound is in the code, with the root cause documented.</p>
+<h3>Deterministic identity</h3>
+<p>Every chunk's ID derives from the normalized RFC822 message-id (hashed). Same message, same ID, idempotent upserts. Re-ingest is structurally impossible, not merely avoided.</p>
+<h3>Curfew</h3>
+<p>The ingester stops cleanly at a configured time — stamp, exit, resume on relaunch — because unattended jobs must respect the machine's daytime obligations. The schedule is the operator's week, expressed as flags.</p>
+<h2>III. Results</h2>
+<p>Smoke run: 200 messages → 23,500 chunks, ~25 minutes, on an 8GB Intel MacBook Air. Run 2 started at row 201 — rows 1–200 never re-ingested. Progress lives in the data itself.</p>
+<h2>IV. Conclusion</h2>
+<p>The hardest part of sovereign RAG is not retrieval. It is getting the corpus in, whole, without loss, on hardware that serves two masters. The bridge is published: AGPL-3.0, with a commercial lane.</p>
+<p>And the bridge now runs in both directions. Since this paper's architecture was built, the same practice has produced an orchestrator that dispatches each question to four workers — three vector collections and the source SQLite archive itself — and a reconstruction tool that returns a document from the store <em>the way it went in</em>: whole, in order. The overseer that dispatches across the fleet deduplicates what it gathers before generating; the reconstruction itself is an ordered reassembly — chunk_index sort, verbatim join, no seam trimming. A 4.6-million-character conversation, ingested in 5,163 chunks, has been reassembled and delivered complete. Ingestion and delivery are the same door, opened from either side.</p>
+<p>The next paper documents that layer: the overseer pattern, the worker fleet, and the archive that answers with its owner's own words — whole.</p>
+<h2>References</h2>
+<ul>
+<li>[1] RAGmail — github.com/0xfe/ragmail. Mailbox ingestion to local semantic + full-text index. <em>(nearest neighbor — problem shape; mbox source, no curfew, stage-level resume only)</em></li>
+<li>[2] Email-RAG — github.com/Drashti0913/Email-RAG. Message-ID-identity deduplication across formats. <em>(nearest neighbor — dedup model; PostgreSQL/pgvector, Docker, no time-budget logic)</em></li>
+<li>[3] LlamaIndex IngestionPipeline — docs.llamaindex.ai. DocstoreStrategy.UPSERTS deduplication. <em>(nearest neighbor — dedup primitives; in-memory cache resets on restart without a persistent backend)</em></li>
+<li>[4] WPipe — github.com/wisrovi/wpipe (PyPI). SQLite WAL step-level checkpointing, survives mid-step crashes. <em>(nearest neighbor — durability; generic ETL, no email or embedding awareness)</em></li>
+<li>[5] async-doc-ingestion — github.com/Tayyab-Bilal/async-doc-ingestion. Crash-safe idempotent resume, hash-based re-ingest no-ops. <em>(nearest neighbor — reference architecture; demo-grade, not installable infrastructure)</em></li>
+<li>[6] Caro, E. (2026). Leo AI adversarial prior-art pass #4, verbatim transcript. mirror-of-my-becoming-provenance/evidence/leo-prior-art-pass-4-2026-10-04.md, October 4, 2026. Blind query, repo names withheld; collator note appended. Honest caveat: limited sweep, not exhaustive.</li>
+<li>[7] Leo AI prior-art pass #5 and API sweep (HN Algolia, PyPI), October 10, 2026 — surfaced Memento and ChatVault as secondary neighbors; recorded in the author's session ledger.</li>
+<li><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools">Suite: Ingestion Tools</a> — the parent architecture</li>
+<li><a href="https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter">msgvault adapter</a> — the bridge itself</li>
+<li>Caro, E. (2026). The Cache Is Not the Corpus™. — the thesis this paper extends</li>
+</ul>
+<h2>AI Collaboration Disclosure</h2>
+<p>Developed in collaboration with AI. The author directed the architecture, build, and argument; AI assisted with drafting and organization. All claims and conclusions are the author's own.</p>
+  <!--BODY-END-->
+  <a class="back" href="/white-papers/">&larr; All White Papers</a>
+</body>
+</html>
