@@ -1,0 +1,26 @@
+#!/bin/sh
+# guard: keep blocklisted paths out of this public repo (commit gate)
+root="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 1
+bl="$root/tools/guard-blocklist.txt"
+[ -f "$bl" ] || exit 0
+paths="$(git diff --cached --name-only --diff-filter=ACMR 2>/dev/null)"
+[ -z "$paths" ] && exit 0
+hit=""
+while IFS= read -r p; do
+  [ -z "$p" ] && continue
+  lp="$(printf '%s' "$p" | tr '[:upper:]' '[:lower:]')"
+  while IFS= read -r pat; do
+    [ -z "$pat" ] && continue
+    case "$pat" in '#'*) continue ;; esac
+    case "$lp" in
+      $pat) printf 'GUARD: blocked path: %s (matches %s)\n' "$p" "$pat" >&2; hit=1 ;;
+    esac
+  done < "$bl"
+done <<EOF2
+$paths
+EOF2
+if [ -n "$hit" ]; then
+  printf 'GUARD: commit refused — blocklisted path(s) above. These never belong in this public repo.\nGUARD: override only if you are certain: git commit --no-verify\n' >&2
+  exit 1
+fi
+exit 0
