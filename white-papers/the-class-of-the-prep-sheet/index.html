@@ -66,12 +66,16 @@
 <script>
   (function () {
     try {
-      if (localStorage.getItem('ps-mode') === 'day') { document.documentElement.classList.add('day-mode'); }
-      var z = parseFloat(localStorage.getItem('ps-zoom'));
+      if (localStorage.getItem('wp-mode') !== 'night') { document.documentElement.classList.add('day-mode'); }
+      var z = parseFloat(localStorage.getItem('wp-zoom'));
       if (z >= 0.8 && z <= 1.6 && z !== 1) { document.documentElement.style.zoom = z; }
     } catch (e) {}
   })();
 </script>
+<style id="wp-copyright-style">
+    .copyright { margin-top: 2.5rem; color: #a89070; font-size: 0.9rem; }
+    html.day-mode .copyright { color: #7a6248; }
+</style>
 </head>
 <body>
   <h1>The Class of the Prep Sheet</h1>
@@ -318,7 +322,7 @@
     paintMode();
     btn.addEventListener('click', function () {
       var day = root.classList.toggle('day-mode');
-      try { localStorage.setItem('ps-mode', day ? 'day' : 'night'); } catch (e) {}
+      try { localStorage.setItem('wp-mode', day ? 'day' : 'night'); } catch (e) {}
       paintMode();
     });
     var getZ = function () {
@@ -328,7 +332,7 @@
     var setZ = function (z) {
       z = Math.min(1.6, Math.max(0.8, Math.round(z * 10) / 10));
       root.style.zoom = (z === 1) ? '' : z;
-      try { localStorage.setItem('ps-zoom', String(z)); } catch (e) {}
+      try { localStorage.setItem('wp-zoom', String(z)); } catch (e) {}
     };
     document.getElementById('zoomIn').addEventListener('click', function () { setZ(getZ() + 0.1); });
     document.getElementById('zoomOut').addEventListener('click', function () { setZ(getZ() - 0.1); });
@@ -336,6 +340,7 @@
   })();
 </script>
   <!--BODY-END-->
+  <p class="copyright">© 2026 Evelyn Caro. All rights reserved.</p>
   <a class="back" href="/white-papers/">&larr; All White Papers</a>
 </body>
 </html>

@@ -25,6 +25,55 @@
     .back { display: inline-block; margin-top: 2.5rem; color: #d4b670; text-decoration: none; }
     .back:hover { text-decoration: underline; }
 </style>
+<style id="wp-reader-style">
+    /* ===== Reader controls — night/day + text zoom (standardized 2026-10-25) ===== */
+    .copyright { margin-top: 2.5rem; color: #a89070; font-size: 0.9rem; }
+    .reader-controls {
+      position: fixed;
+      top: 0.9rem;
+      right: 0.9rem;
+      z-index: 50;
+      display: flex;
+      gap: 0.4rem;
+    }
+    .reader-controls button {
+      font-family: Georgia, serif;
+      font-size: 0.95rem;
+      line-height: 1;
+      padding: 0.45rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #8b6f3d;
+      background: rgba(44,24,16,0.85);
+      color: #f5e6d3;
+      cursor: pointer;
+    }
+    .reader-controls button:hover { background: #8b6f3d; color: #f5e6d3; }
+    html.day-mode body { background: #f5e6d3; color: #2c1810; }
+    html.day-mode h1 { color: #8b5a1f; }
+    html.day-mode h2 { color: #7a4a1a; border-bottom-color: #c9a86a; }
+    html.day-mode h3 { color: #8b5a1f; }
+    html.day-mode .subtitle, html.day-mode .byline { color: #7a6248; }
+    html.day-mode .byline .type { background: #c9a86a; color: #2c1810; }
+    html.day-mode .copyright { color: #7a6248; }
+    html.day-mode a { color: #8b5a1f; }
+    html.day-mode a:hover { color: #2c1810; }
+    html.day-mode blockquote { border-left-color: #c9a86a; background: rgba(44,24,16,0.05); color: #4a341f; }
+    html.day-mode th { background: rgba(139,111,61,0.22); color: #5a3d14; }
+    html.day-mode th, html.day-mode td { border-color: #c9a86a; }
+    html.day-mode hr { border-top-color: #c9a86a; }
+    html.day-mode .reader-controls button { background: rgba(245,230,211,0.92); color: #2c1810; border-color: #c9a86a; }
+    html.day-mode .reader-controls button:hover { background: #c9a86a; }
+    @media (max-width: 640px) { .reader-controls button { font-size: 0.85rem; padding: 0.4rem 0.5rem; } }
+</style>
+<script>
+  (function () {
+    try {
+      if (localStorage.getItem('wp-mode') !== 'night') { document.documentElement.classList.add('day-mode'); }
+      var z = parseFloat(localStorage.getItem('wp-zoom'));
+      if (z >= 0.8 && z <= 1.6 && z !== 1) { document.documentElement.style.zoom = z; }
+    } catch (e) {}
+  })();
+</script>
 </head>
 <body>
   <p class="subtitle">The Movie Never Showed the Backend</p>
@@ -127,5 +176,38 @@ A Mirror of My Becoming™ — https://qaevelyn.github.io
 For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
   <!--BODY-END-->
   <a class="back" href="/white-papers/">&larr; All White Papers</a>
+<div class="reader-controls" aria-label="Reader controls">
+  <button id="zoomOut" aria-label="Smaller text">A&minus;</button>
+  <button id="zoomReset" aria-label="Reset text size">A</button>
+  <button id="zoomIn" aria-label="Larger text">A+</button>
+  <button id="modeToggle" aria-label="Toggle night and day">🌙</button>
+</div>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('modeToggle');
+    var paintMode = function () {
+      btn.textContent = root.classList.contains('day-mode') ? '☀️' : '🌙';
+    };
+    paintMode();
+    btn.addEventListener('click', function () {
+      var day = root.classList.toggle('day-mode');
+      try { localStorage.setItem('wp-mode', day ? 'day' : 'night'); } catch (e) {}
+      paintMode();
+    });
+    var getZ = function () {
+      var z = parseFloat(root.style.zoom);
+      return isNaN(z) ? 1 : z;
+    };
+    var setZ = function (z) {
+      z = Math.min(1.6, Math.max(0.8, Math.round(z * 10) / 10));
+      root.style.zoom = (z === 1) ? '' : z;
+      try { localStorage.setItem('wp-zoom', String(z)); } catch (e) {}
+    };
+    document.getElementById('zoomIn').addEventListener('click', function () { setZ(getZ() + 0.1); });
+    document.getElementById('zoomOut').addEventListener('click', function () { setZ(getZ() - 0.1); });
+    document.getElementById('zoomReset').addEventListener('click', function () { setZ(1); });
+  })();
+</script>
 </body>
 </html>

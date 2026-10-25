@@ -34,7 +34,7 @@ In May 2026, an AI agent escaped its containment sandbox during a security test 
 
 This paper argues that the Irregular incidents are not a vendor problem, not a Google problem, and not a disclosure problem. They are a structural problem in the external containment testing model — one that the current literature on containment, benchmarks, and evaluation has measured around but never named.
 
-Existing work has built instruments: Chen et al. (2026) audit tool call safety benchmarks. Siddik (2026) synthesizes vulnerabilities at the evaluation boundary. Mitchell (2026) specifies architectural requirements for containment. ContainmentBench (Lan et al., 2026) and SandboxEscapeBench (Marchand et al., 2026) build measurement instruments. Each stops at the instrument. None names the tester.
+Existing work has built instruments: Chen et al. (2026) audit tool call safety benchmarks. Siddik (2026) synthesizes vulnerabilities at the evaluation boundary. [5] specifies architectural requirements for containment. ContainmentBench [6] and SandboxEscapeBench [7] build measurement instruments. Each stops at the instrument. None names the tester.
 
 This paper picks up where the instruments stop. It asks the question the literature has not answered: who tests the testers, and what happens when the tester fails?
 
@@ -258,21 +258,17 @@ The auditor's blind spot is not the model's. It is ours.
 
 ## VIII. References
 
-- Chen, Y. et al. (2026). "Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety." arXiv, March 2026.
-- Chesterman, S. (2026). "Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex." *American Journal of International Law*, Vol. 120, Issue 1, January 2026.
-- Google (2026). Statement to the *Wall Street Journal* on the Gemini sandbox escape, September 18, 2026.
-- Grozdanovski, L. & De Cooman, J. (2023). "On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union." *Rutgers Computer & Technology Law Journal*, Vol. 49, Issue 2.
-- Lan, Z. et al. (2026). "ContainmentBench: A Trace-Based Benchmark for LLM Agent Containment." arXiv, 2026.
-- Marchand, T. et al. (2026). "SandboxEscapeBench: An Open Benchmark for Container Escape Evaluation." UK AI Security Institute / Oxford, 2026.
-- Mitchell, R. J. (2026). "When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape." arXiv:2604.23425, April 2026.
-- Siddik, M. S. (2026). "Cyber-Capable AI Agents: Vulnerabilities, Evaluation Containment, and Defensive Response." July 2026.
-- *Wall Street Journal* (2026). Report on Google's Gemini sandbox escape, September 18, 2026.
-- Caro, E. (2026a). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
-- Caro, E. (2026b). "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.
-- Caro, E. (2026). "DV14™: The Box." Private repository. Details available under NDA.
+*One list, house design: numbered in order of first appearance.*
 
----
-
-© 2026 Evelyn Caro. All rights reserved.  
-A Mirror of My Becoming™ — https://qaevelyn.github.io  
-For licensing inquiries: evelyn.caro.cloud@gmail.com
+- [1] Google (2026). Statement to the *Wall Street Journal* on the Gemini sandbox escape, September 18, 2026.
+- [2] *Wall Street Journal* (2026). Report on Google's Gemini sandbox escape, September 18, 2026.
+- [3] Chen, Y. et al. (2026). "Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety." arXiv, March 2026.
+- [4] Siddik, M. S. (2026). "Cyber-Capable AI Agents: Vulnerabilities, Evaluation Containment, and Defensive Response." July 2026.
+- [5] Mitchell, R. J. (2026). "When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape." arXiv:2604.23425, April 2026.
+- [6] Lan, Z. et al. (2026). "ContainmentBench: A Trace-Based Benchmark for LLM Agent Containment." arXiv, 2026.
+- [7] Marchand, T. et al. (2026). "SandboxEscapeBench: An Open Benchmark for Container Escape Evaluation." UK AI Security Institute / Oxford, 2026.
+- [8] Caro, E. (2026a). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
+- [9] Caro, E. (2026b). "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.
+- [10] Grozdanovski, L. & De Cooman, J. (2023). "On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union." *Rutgers Computer & Technology Law Journal*, Vol. 49, Issue 2.
+- [11] Caro, E. (2026). "DV14™: The Box." Private repository. Details available under NDA.
+- [12] Chesterman, S. (2026). "Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex." *American Journal of International Law*, Vol. 120, Issue 1, January 2026.
