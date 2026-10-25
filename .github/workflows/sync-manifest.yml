@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'white-papers/*.md'
+  workflow_dispatch:
 jobs:
   sync:
     runs-on: ubuntu-latest
