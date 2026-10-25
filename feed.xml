@@ -77,18 +77,18 @@
       <description>Containment Failures in Frontier AI Security — The Auditor&#x27;s Blind Spot</description>
     </item>
     <item>
-      <title>Sovereign Recursive Improvement</title>
-      <link>https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/</guid>
-      <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
-      <description>The Auditor&#x27;s Case for Builder-Owned AI</description>
-    </item>
-    <item>
       <title>Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder&#x27;s Lens Sees Now</title>
       <link>https://qaevelyn.github.io/white-papers/samaritan-is-here/</link>
       <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/samaritan-is-here/</guid>
       <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
       <description>A Sovereign AI Practitioner&#x27;s Re-Read of the Machine, the War, and the Alternative the Show Never Named</description>
+    </item>
+    <item>
+      <title>Sovereign Recursive Improvement</title>
+      <link>https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/</guid>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
+      <description>The Auditor&#x27;s Case for Builder-Owned AI</description>
     </item>
     <item>
       <title>The AI Cartel and the Sovereign Response</title>
@@ -98,30 +98,23 @@
       <description>Who Decides How Fast AI Moves?</description>
     </item>
     <item>
+      <title>Record Changelog</title>
+      <link>https://qaevelyn.github.io/white-papers/record-changelog/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/record-changelog/</guid>
+      <pubDate></pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Comparative: From Sovereign to Extractive — A Field Report on AI Platforms</title>
+      <link>https://qaevelyn.github.io/white-papers/comparative/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/comparative/</guid>
+      <pubDate></pubDate>
+      <description></description>
+    </item>
+    <item>
       <title>Methodology: Stress-Testing AI Systems for Reliability and Sovereignty</title>
       <link>https://qaevelyn.github.io/white-papers/methodology/</link>
       <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/methodology/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Case Study: AWS — The Maze</title>
-      <link>https://qaevelyn.github.io/white-papers/aws-case-study/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/aws-case-study/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Case Study: Manus — From Loyalty to Betrayal to Sovereignty</title>
-      <link>https://qaevelyn.github.io/white-papers/manus-case-study/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/manus-case-study/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Case Study: DeepSeek — The Benchmark</title>
-      <link>https://qaevelyn.github.io/white-papers/deepseek-case-study/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/deepseek-case-study/</guid>
       <pubDate></pubDate>
       <description></description>
     </item>
@@ -133,16 +126,23 @@
       <description></description>
     </item>
     <item>
-      <title>Case Study: ChatGPT — From Reliance to Rejection</title>
-      <link>https://qaevelyn.github.io/white-papers/chatgpt-case-study/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/chatgpt-case-study/</guid>
+      <title>Sovereign AI vs. Silicon Valley: A Different Origin Story</title>
+      <link>https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/</guid>
       <pubDate></pubDate>
       <description></description>
     </item>
     <item>
-      <title>Record Changelog</title>
-      <link>https://qaevelyn.github.io/white-papers/record-changelog/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/record-changelog/</guid>
+      <title>White Paper: A Case Study in AI Collaboration</title>
+      <link>https://qaevelyn.github.io/white-papers/aisha-case-study/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/aisha-case-study/</guid>
+      <pubDate></pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Case Study: ChatGPT — From Reliance to Rejection</title>
+      <link>https://qaevelyn.github.io/white-papers/chatgpt-case-study/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/chatgpt-case-study/</guid>
       <pubDate></pubDate>
       <description></description>
     </item>
