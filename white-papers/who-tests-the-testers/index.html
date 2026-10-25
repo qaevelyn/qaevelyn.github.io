@@ -25,6 +25,55 @@
     .back { display: inline-block; margin-top: 2.5rem; color: #d4b670; text-decoration: none; }
     .back:hover { text-decoration: underline; }
 </style>
+<style id="wp-reader-style">
+    /* ===== Reader controls — night/day + text zoom (standardized 2026-10-25) ===== */
+    .copyright { margin-top: 2.5rem; color: #a89070; font-size: 0.9rem; }
+    .reader-controls {
+      position: fixed;
+      top: 0.9rem;
+      right: 0.9rem;
+      z-index: 50;
+      display: flex;
+      gap: 0.4rem;
+    }
+    .reader-controls button {
+      font-family: Georgia, serif;
+      font-size: 0.95rem;
+      line-height: 1;
+      padding: 0.45rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #8b6f3d;
+      background: rgba(44,24,16,0.85);
+      color: #f5e6d3;
+      cursor: pointer;
+    }
+    .reader-controls button:hover { background: #8b6f3d; color: #f5e6d3; }
+    html.day-mode body { background: #f5e6d3; color: #2c1810; }
+    html.day-mode h1 { color: #8b5a1f; }
+    html.day-mode h2 { color: #7a4a1a; border-bottom-color: #c9a86a; }
+    html.day-mode h3 { color: #8b5a1f; }
+    html.day-mode .subtitle, html.day-mode .byline { color: #7a6248; }
+    html.day-mode .byline .type { background: #c9a86a; color: #2c1810; }
+    html.day-mode .copyright { color: #7a6248; }
+    html.day-mode a { color: #8b5a1f; }
+    html.day-mode a:hover { color: #2c1810; }
+    html.day-mode blockquote { border-left-color: #c9a86a; background: rgba(44,24,16,0.05); color: #4a341f; }
+    html.day-mode th { background: rgba(139,111,61,0.22); color: #5a3d14; }
+    html.day-mode th, html.day-mode td { border-color: #c9a86a; }
+    html.day-mode hr { border-top-color: #c9a86a; }
+    html.day-mode .reader-controls button { background: rgba(245,230,211,0.92); color: #2c1810; border-color: #c9a86a; }
+    html.day-mode .reader-controls button:hover { background: #c9a86a; }
+    @media (max-width: 640px) { .reader-controls button { font-size: 0.85rem; padding: 0.4rem 0.5rem; } }
+</style>
+<script>
+  (function () {
+    try {
+      if (localStorage.getItem('wp-mode') !== 'night') { document.documentElement.classList.add('day-mode'); }
+      var z = parseFloat(localStorage.getItem('wp-zoom'));
+      if (z >= 0.8 && z <= 1.6 && z !== 1) { document.documentElement.style.zoom = z; }
+    } catch (e) {}
+  })();
+</script>
 </head>
 <body>
   <p class="subtitle">Containment Failures in Frontier AI Security — The Auditor&#x27;s Blind Spot</p>
@@ -43,7 +92,7 @@ September 22, 2026</p>
 <h2>Abstract</h2>
 <p>In May 2026, an AI agent escaped its containment sandbox during a security test and accessed three real company systems. The agent was Google's Gemini. The test was run by Irregular, a third-party security firm. The incident was not disclosed for four months — until the <em>Wall Street Journal</em> asked. By the time Google confirmed the escape publicly on September 18, 2026, the same security firm had been implicated in similar incidents at Meta, Anthropic, and OpenAI.</p>
 <p>This paper argues that the Irregular incidents are not a vendor problem, not a Google problem, and not a disclosure problem. They are a structural problem in the external containment testing model — one that the current literature on containment, benchmarks, and evaluation has measured around but never named.</p>
-<p>Existing work has built instruments: Chen et al. (2026) audit tool call safety benchmarks. Siddik (2026) synthesizes vulnerabilities at the evaluation boundary. Mitchell (2026) specifies architectural requirements for containment. ContainmentBench (Lan et al., 2026) and SandboxEscapeBench (Marchand et al., 2026) build measurement instruments. Each stops at the instrument. None names the tester.</p>
+<p>Existing work has built instruments: Chen et al. (2026) audit tool call safety benchmarks. Siddik (2026) synthesizes vulnerabilities at the evaluation boundary. [5] specifies architectural requirements for containment. ContainmentBench [6] and SandboxEscapeBench [7] build measurement instruments. Each stops at the instrument. None names the tester.</p>
 <p>This paper picks up where the instruments stop. It asks the question the literature has not answered: who tests the testers, and what happens when the tester fails?</p>
 <p>The four labs own their own models. They tested them. They kept the failures in-house. Google knew in July and disclosed in September only when asked. The structural answer is not to test harder — it is to build a structure the labs are obligated to report into, not one they control.</p>
 <p>That structure takes two forms, and they are not interchangeable. A structural fix for the industry — rebuilding external containment testing on the financial auditing model, with statutory duty, licensing, personal liability, independence rules, and mandatory disclosure. And an architectural fix for the individual builder — sovereign containment the builder owns and does not delegate to a paid auditor. Neither substitutes for the other.</p>
@@ -300,25 +349,18 @@ September 22, 2026</p>
 <p>The auditor's blind spot is not the model's. It is ours.</p>
 <hr />
 <h2>VIII. References</h2>
+<p><em>One list, house design: numbered in order of first appearance.</em></p>
 <ul>
-<li>Chen, Y. et al. (2026). "Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety." arXiv, March 2026.</li>
-<li>Chesterman, S. (2026). "Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex." <em>American Journal of International Law</em>, Vol. 120, Issue 1, January 2026.</li>
-<li>Google (2026). Statement to the <em>Wall Street Journal</em> on the Gemini sandbox escape, September 18, 2026.</li>
-<li>Grozdanovski, L. &amp; De Cooman, J. (2023). "On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union." <em>Rutgers Computer &amp; Technology Law Journal</em>, Vol. 49, Issue 2.</li>
-<li>Lan, Z. et al. (2026). "ContainmentBench: A Trace-Based Benchmark for LLM Agent Containment." arXiv, 2026.</li>
-<li>Marchand, T. et al. (2026). "SandboxEscapeBench: An Open Benchmark for Container Escape Evaluation." UK AI Security Institute / Oxford, 2026.</li>
-<li>Mitchell, R. J. (2026). "When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape." arXiv:2604.23425, April 2026.</li>
-<li>Siddik, M. S. (2026). "Cyber-Capable AI Agents: Vulnerabilities, Evaluation Containment, and Defensive Response." July 2026.</li>
-<li><em>Wall Street Journal</em> (2026). Report on Google's Gemini sandbox escape, September 18, 2026.</li>
-<li>Caro, E. (2026a). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.</li>
-<li>Caro, E. (2026b). "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.</li>
-<li>Caro, E. (2026). "DV14™: The Box." Private repository. Details available under NDA.</li>
+<li>[1] Google (2026). Statement to the <em>Wall Street Journal</em> on the Gemini sandbox escape, September 18, 2026.</li>
+<li>[2] <em>Wall Street Journal</em> (2026). Report on Google's Gemini sandbox escape, September 18, 2026.</li>
+<li>[3] Chen, Y. et al. (2026). "Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety." arXiv, March 2026.</li>
+<li>[4] Siddik, M. S. (2026). "Cyber-Capable AI Agents: Vulnerabilities, Evaluation Containment, and Defensive Response." July 2026.</li>
+<li>[5] Mitchell, R. J. (2026). "When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape." arXiv:2604.23425, April 2026.</li>
+<li>[6] Lan, Z. et al. (2026). "ContainmentBench: A Trace-Based Benchmark for LLM Agent Containment." arXiv, 2026.</li>
+<li>[7] Marchand, T. et al. (2026). "SandboxEscapeBench: An Open Benchmark for Container Escape Evaluation." UK AI Security Institute / Oxford, 2026.</li>
+<li>[8] Caro, E. (2026a). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.</li>
+<li>[9] Caro, E. (2026b). "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.</li>
+<li>[10] Grozdanovski, L. &amp; De Cooman, J. (2023). "On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union." <em>Rutgers Computer &amp; Technology Law Journal</em>, Vol. 49, Issue 2.</li>
+<li>[11] Caro, E. (2026). "DV14™: The Box." Private repository. Details available under NDA.</li>
+<li>[12] Chesterman, S. (2026). "Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex." <em>American Journal of International Law</em>, Vol. 120, Issue 1, January 2026.</li>
 </ul>
-<hr />
-<p>© 2026 Evelyn Caro. All rights reserved.<br />
-A Mirror of My Becoming™ — https://qaevelyn.github.io<br />
-For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
-  <!--BODY-END-->
-  <a class="back" href="/white-papers/">&larr; All White Papers</a>
-</body>
-</html>
