@@ -17,7 +17,10 @@ def parse_fm(path):
             fm[k.strip()] = v.strip().strip('"')
     return fm
 
-EXCLUDE = {"white-paper-tracker"}  # tools, not papers
+EXCLUDE = {
+    "white-paper-tracker",  # tools, not papers
+    "White_Paper_AI_Collaboration_Case_Study",  # redirect stub (retired duplicate, Record Changelog 2026-10-07), not a paper
+}
 
 entries = []
 for path in glob.glob(os.path.join(ROOT, "*.md")):

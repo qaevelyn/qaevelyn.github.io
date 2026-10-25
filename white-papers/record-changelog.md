@@ -64,3 +64,13 @@ Date: Oct 24, 2026 | Time: 5:03 pm | Task: The Class of the Prep Sheet published
   - Cite-check discipline held: eight clinical citations page-level verified 2026-10-24 before the publish word; three findings-as-used corrections dated-append; owner-side recon ALL GREEN 15/15
   - Site serves files raw (.nojekyll — Jekyll never runs; every /white-papers/<slug>/ permalink had 404'd site-wide since launch, found during this publish): the paper is rendered to a static page at its permalink path; the .md remains the canonical source
   - released as v7 (DOI 10.5281/zenodo.23626247)
+
+Date: Oct 24, 2026 | Time: 7:36 pm | Task: Site-wide permalink 404s closed - 25 static pages shipped | Status: FIXED
+  - Every /white-papers/<slug>/ permalink in the index had 404'd since launch (site serves files raw - .nojekyll - so a permalink needs a static page at the exact path). 25 gated static pages rendered (G1-G5, all-or-nothing) and pushed (commit b0efd40b); 26/26 permalinks verified live at 200
+  - The book (lookbook.html) navigation repaired in the same push (commit d09edc29): destination page numbers live on both nav buttons, Contents hyperlink in the nav row, controls centered
+Date: Oct 24, 2026 | Time: 8:28 pm | Task: Doubled title headings removed from 10 static pages | Status: FIXED
+  - Pages whose body opens with its own level-1 title showed the title twice (frame nameplate + body heading). The chrome now yields when the body carries its own title: 9 exact or lead-phrase matches + enhancement-not-replacement (its epigraph precedes the title line - the case the first scan missed). Commit 43540930; 10 files, 10 lines; verified 1 h1 per page live
+Date: Oct 24, 2026 | Time: 8:35 pm | Task: Manifest automation wired after first-fire autopsy | Status: FIXED
+  - sync-manifest workflow (added for the subscribable corpus) never produced a commit: update_rss.py wrote papers-feed.xml while the workflow staged feed.xml - a name mismatch at the git step. The script now writes the canonical feed.xml (the path the site footer links); orphan papers-feed.xml retired
+  - Manifest inventory rebuilt: 25 papers, prep sheet included; the redirect stub (retired duplicate, recorded 2026-10-07) excluded as a signpost, not a paper
+  - The workflow also accepts manual runs (workflow_dispatch) so the inventory can be fired on demand

@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFEST = os.path.join(ROOT, "white-papers", "manifest.json")
-FEED = os.path.join(ROOT, "papers-feed.xml")
+FEED = os.path.join(ROOT, "feed.xml")  # canonical path linked by the site footer
 SITE = "https://qaevelyn.github.io"
 
 with open(MANIFEST) as f:
