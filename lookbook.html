@@ -231,8 +231,6 @@
     /* ===== PAGE FOLIO — the numbers live at the bottom of the parchment pages ===== */
     .book-folio {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
       bottom: 0.7rem;
       display: flex;
       align-items: baseline;
@@ -249,6 +247,10 @@
       letter-spacing: 0.04em;
       white-space: nowrap;
     }
+
+    .book-folio.folio-left { left: 1.1rem; }
+
+    .book-folio.folio-right { right: 1.1rem; }
 
     .book-folio .folio-num {
       font-weight: 600;
@@ -1577,10 +1579,13 @@ logger.info("chunk %d/%d"
         </div>
       </div>
 
-    <div class="book-folio" role="contentinfo" aria-label="Page number and contents links">
+    <div class="book-folio folio-left" id="folioLeft" role="contentinfo" aria-label="Left page number and contents">
+      <span class="folio-num" id="indicatorLeft" aria-live="polite">1</span>
       <a href="#toc" class="folio-toc" id="folioTocLeft">Contents</a>
-      <span class="folio-num" id="indicator" aria-live="polite">1 / 27</span>
+    </div>
+    <div class="book-folio folio-right" id="folioRight" role="contentinfo" aria-label="Right page number and contents">
       <a href="#toc" class="folio-toc" id="folioTocRight">Contents</a>
+      <span class="folio-num" id="indicatorRight" aria-live="polite">2</span>
     </div>
 
     </div>
@@ -1606,7 +1611,10 @@ logger.info("chunk %d/%d"
     const spreads = document.querySelectorAll('.spread');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
-    const indicator = document.getElementById('indicator');
+    const indicatorLeft = document.getElementById('indicatorLeft');
+    const indicatorRight = document.getElementById('indicatorRight');
+    const folioLeftEl = document.getElementById('folioLeft');
+    const folioRightEl = document.getElementById('folioRight');
     let current = 0;
     let side = 0; // which face of the leaf: 0 = first page of the spread, 1 = second
 
@@ -1623,6 +1631,17 @@ logger.info("chunk %d/%d"
       });
     }
 
+    function updateFolios() {
+      const pages = pagesOf(current);
+      const twoFaced = pages.length > 1;
+      const showLeft = isSingle() ? side === 0 : true;
+      const showRight = isSingle() ? side === 1 : twoFaced;
+      folioLeftEl.style.display = showLeft ? '' : 'none';
+      folioRightEl.style.display = showRight ? '' : 'none';
+      indicatorLeft.textContent = (current * 2) + 1;
+      indicatorRight.textContent = (current * 2) + 2;
+    }
+
     function goToSpread(index, keepSide) {
       if (index < 0 || index >= spreads.length) return;
       if (!keepSide) side = 0;
@@ -1632,10 +1651,10 @@ logger.info("chunk %d/%d"
       });
       prevBtn.disabled = index === 0 && side === 0;
       nextBtn.disabled = index === spreads.length - 1 && side === pagesOf(index).length - 1;
-      indicator.textContent = (index + 1) + ' / ' + spreads.length;
       current = index;
       updateNavLabels();
       applyMobileView();
+      updateFolios();
     }
 
     window.goToSpread = goToSpread;
@@ -1719,6 +1738,7 @@ logger.info("chunk %d/%d"
     window.addEventListener('resize', function() {
       applyMobileView();
       updateNavLabels();
+      updateFolios();
     });
 
     document.getElementById('themeToggle').addEventListener('click', function() {
