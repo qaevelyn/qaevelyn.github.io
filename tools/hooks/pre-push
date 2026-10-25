@@ -1,0 +1,31 @@
+#!/bin/sh
+# guard: scan every path the push would add before it leaves this machine
+root="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 1
+bl="$root/tools/guard-blocklist.txt"
+[ -f "$bl" ] || exit 0
+if git rev-parse -q --verify refs/remotes/origin/master >/dev/null 2>&1; then
+  raw="$(git log --name-only --pretty=format: --diff-filter=ACMR origin/master..HEAD 2>/dev/null)"
+else
+  raw="$(git log --name-only --pretty=format: --diff-filter=ACMR HEAD 2>/dev/null)"
+fi
+paths="$(printf '%s' "$raw" | sort -u)"
+[ -z "$paths" ] && exit 0
+hit=""
+while IFS= read -r p; do
+  [ -z "$p" ] && continue
+  lp="$(printf '%s' "$p" | tr '[:upper:]' '[:lower:]')"
+  while IFS= read -r pat; do
+    [ -z "$pat" ] && continue
+    case "$pat" in '#'*) continue ;; esac
+    case "$lp" in
+      $pat) printf 'GUARD: blocked path in outgoing commits: %s (matches %s)\n' "$p" "$pat" >&2; hit=1 ;;
+    esac
+  done < "$bl"
+done <<EOF2
+$paths
+EOF2
+if [ -n "$hit" ]; then
+  printf 'GUARD: push refused — blocklisted path(s) above. These never belong in this public repo.\nGUARD: remove the file in a new commit, or override only if you are certain: git push --no-verify\n' >&2
+  exit 1
+fi
+exit 0
