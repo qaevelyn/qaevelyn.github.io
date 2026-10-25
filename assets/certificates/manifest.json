@@ -1,6 +1,6 @@
 {
   "manifest_info": {
-    "purpose": "Single source of truth for all 14 credentials",
+    "purpose": "Single source of truth for all 15 credentials",
     "standard": "Every file gets 5 addresses: local, repo, github_blob, github_raw, live_url",
     "location": {
       "local": "~/Repos/qaevelyn.github.io/assets/certificates/manifest.json",
@@ -214,7 +214,7 @@
     },
     {
       "id": "ibm-langchain",
-      "name": "IBM SkillsBuild \u2014 LangChain",
+      "name": "IBM SkillsBuild — LangChain",
       "issuer": "IBM SkillsBuild",
       "date": "",
       "certificate": {
@@ -236,7 +236,7 @@
     },
     {
       "id": "ibm-granite-agentic-rag",
-      "name": "IBM SkillsBuild \u2014 Granite Agentic RAG",
+      "name": "IBM SkillsBuild — Granite Agentic RAG",
       "issuer": "IBM SkillsBuild",
       "date": "",
       "certificate": {
@@ -255,6 +255,15 @@
         "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png",
         "live_url": "https://qaevelyn.github.io/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png"
       }
+    },
+    {
+      "id": "google-it-support-course1",
+      "name": "Technical Support Fundamentals",
+      "issuer": "Google / Coursera",
+      "date": "2026-10-25",
+      "program": "Google IT Support Professional Certificate (Course 1 of 5)",
+      "verify_url": "https://coursera.org/verify/TWQ8YQLJHR2Y",
+      "note": "Lean-schema entry: badge image / certificate PDF can be attached later by adding badge{} and certificate{} blocks. Displayed on the wall from assets/certificates/credentials.js."
     }
   ]
 }
