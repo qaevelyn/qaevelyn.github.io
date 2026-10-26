@@ -1,17 +1,24 @@
 #!/bin/sh
-# Mirror guard (pre-commit) — rejects staged paths containing blocklisted material.
+# Mirror guard (pre-commit) — blocklist lines are GLOB patterns matched per staged path.
 root=$(git rev-parse --show-toplevel) || exit 1
 bl="$root/tools/guard-blocklist.txt"
 [ -f "$bl" ] || exit 0
 names=$(git diff --cached --name-only --diff-filter=AMCR)
 [ -z "$names" ] && exit 0
 status=0
-while IFS= read -r line; do
-  line=$(printf '%s' "$line" | tr -d '\r')
-  case "$line" in ''|\#*) continue ;; esac
-  if printf '%s\n' "$names" | grep -qF -- "$line"; then
-    echo "COMMIT BLOCKED by mirror guard — blocklisted path token: $line" >&2
-    status=1
-  fi
-done < "$bl"
+while IFS= read -r name; do
+  [ -n "$name" ] || continue
+  while IFS= read -r line; do
+    line=$(printf '%s' "$line" | tr -d '\r')
+    case "$line" in ''|\#*) continue ;; esac
+    case "$name" in
+      $line)
+        echo "COMMIT BLOCKED by mirror guard — path '$name' matches blocklist pattern '$line'" >&2
+        status=1
+        ;;
+    esac
+  done < "$bl"
+done <<NAMES_EOF
+$names
+NAMES_EOF
 exit $status

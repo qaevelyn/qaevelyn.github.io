@@ -1,5 +1,5 @@
 #!/bin/sh
-# Mirror guard (pre-push) — scans every pushed path range against the blocklist.
+# Mirror guard (pre-push) — blocklist lines are GLOB patterns matched per pushed path.
 root=$(git rev-parse --show-toplevel) || exit 1
 bl="$root/tools/guard-blocklist.txt"
 [ -f "$bl" ] || exit 0
@@ -15,13 +15,20 @@ while read -r local_ref local_sha remote_ref remote_sha; do
   fi
   names=$(git diff --name-only "$base" "$local_sha" 2>/dev/null) || continue
   [ -z "$names" ] && continue
-  while IFS= read -r line; do
-    line=$(printf '%s' "$line" | tr -d '\r')
-    case "$line" in ''|\#*) continue ;; esac
-    if printf '%s\n' "$names" | grep -qF -- "$line"; then
-      echo "PUSH BLOCKED by mirror guard — blocklisted path token: $line" >&2
-      status=1
-    fi
-  done < "$bl"
+  while IFS= read -r name; do
+    [ -n "$name" ] || continue
+    while IFS= read -r line; do
+      line=$(printf '%s' "$line" | tr -d '\r')
+      case "$line" in ''|\#*) continue ;; esac
+      case "$name" in
+        $line)
+          echo "PUSH BLOCKED by mirror guard — path '$name' matches blocklist pattern '$line'" >&2
+          status=1
+          ;;
+      esac
+    done < "$bl"
+  done <<NAMES_EOF
+$names
+NAMES_EOF
 done
 exit $status
