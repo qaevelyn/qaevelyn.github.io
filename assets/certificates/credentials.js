@@ -33,6 +33,8 @@
           issuer: 'Google / Coursera',
           date: '2026-10-25',
           href: 'https://coursera.org/verify/TWQ8YQLJHR2Y',
+          img: '/assets/certificates/technical-support-fundamentals-certificate-preview.png',
+          pdf: '/assets/certificates/technical-support-fundamentals-certificate.pdf',
           kind: 'cert' },
         /* when the Credly badge or the PDF is saved, fill in and uncomment:
         { name: 'Technical Support Fundamentals — badge',

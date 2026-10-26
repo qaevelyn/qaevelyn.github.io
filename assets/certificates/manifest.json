@@ -263,7 +263,23 @@
       "date": "2026-10-25",
       "program": "Google IT Support Professional Certificate (Course 1 of 5)",
       "verify_url": "https://coursera.org/verify/TWQ8YQLJHR2Y",
-      "note": "Lean-schema entry: badge image / certificate PDF can be attached later by adding badge{} and certificate{} blocks. Displayed on the wall from assets/certificates/credentials.js."
+      "note": "Full-schema entry 2026-10-26: certificate PDF hosted + preview rendered via sips; displayed on the wall from assets/certificates/credentials.js.",
+      "certificate": {
+        "filename": "technical-support-fundamentals-certificate.pdf",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/technical-support-fundamentals-certificate.pdf",
+        "repo": "assets/certificates/technical-support-fundamentals-certificate.pdf",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/technical-support-fundamentals-certificate.pdf",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/technical-support-fundamentals-certificate.pdf",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/technical-support-fundamentals-certificate.pdf"
+      },
+      "preview": {
+        "filename": "technical-support-fundamentals-certificate-preview.png",
+        "local": "~/Repos/qaevelyn.github.io/assets/certificates/technical-support-fundamentals-certificate-preview.png",
+        "repo": "assets/certificates/technical-support-fundamentals-certificate-preview.png",
+        "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/technical-support-fundamentals-certificate-preview.png",
+        "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/technical-support-fundamentals-certificate-preview.png",
+        "live_url": "https://qaevelyn.github.io/assets/certificates/technical-support-fundamentals-certificate-preview.png"
+      }
     }
   ]
 }

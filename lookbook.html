@@ -1585,6 +1585,22 @@ logger.info("chunk %d/%d"
 
     window.goToSpread = goToSpread;
 
+    // Hash deep-link (2026-10-26): lookbook.html#spread-id opens the deck at that spread
+    function activateFromHash() {
+      var h = decodeURIComponent(window.location.hash.replace('#', ''));
+      if (!h) return;
+      var elx = document.getElementById(h);
+      if (!elx) return;
+      var sp = elx.classList.contains('spread') ? elx : elx.closest('.spread');
+      if (sp) {
+        var i = Array.prototype.indexOf.call(spreads, sp);
+        if (i > -1) goToSpread(i);
+      }
+      setTimeout(function () { elx.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+    }
+    window.addEventListener('hashchange', activateFromHash);
+    activateFromHash();
+
     function destSpread(dir) {
       if (isSingle()) {
         const pages = pagesOf(current).length;
