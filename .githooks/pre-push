@@ -13,7 +13,9 @@ while read -r local_ref local_sha remote_ref remote_sha; do
   else
     base="$remote_sha"
   fi
-  names=$(git diff --name-only "$base" "$local_sha" 2>/dev/null) || continue
+  # guard v2 (2026-10-26): the blocklist governs PUBLICATION, not removal.
+# Deletions of blocklisted paths are legal (retirement); adds/modifies/renames are blocked.
+names=$(git diff --name-only --diff-filter=AMRCT "$base" "$local_sha" 2>/dev/null) || continue
   [ -z "$names" ] && continue
   while IFS= read -r name; do
     [ -n "$name" ] || continue
