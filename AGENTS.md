@@ -16,3 +16,13 @@ Run it immediately after cloning. Never bypass the hooks (no --no-verify). Never
 ## Record discipline
 
 The changelog is the audit trail; papers carry no visible audit flags. Every repair, ruling, and correction lands in the changelog with a date. Rulings of the owner outrank everything, including earlier entries in this file.
+
+## Retired pages (do not repair)
+
+- White_Paper_AI_Collaboration_Case_Study — RETIRED as a rendered page. The record
+  source white-papers/White_Paper_AI_Collaboration_Case_Study.md stays in the repo as
+  a record; it has NO rendered page and NO permalink BY DESIGN. tools/retired-pages.txt
+  is the machine-readable authority. Survey and recon report it as "RETIRED (by
+  design)" — never as PAGE MISSING. Do not render it. Do not flag it. Do not repair
+  it. The guard blocklist rejects any commit that re-introduces the page path.
+  Ruling of 2026-10-26: white-papers/record-changelog.md.
