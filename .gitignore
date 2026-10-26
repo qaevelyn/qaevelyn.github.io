@@ -35,3 +35,6 @@ google analytics Measurement ID (G-WV5JKK585K).txt
 
 # the guard blocklist ships with the repo (*.txt was ignoring it)
 !tools/guard-blocklist.txt
+
+# cert pdfs: re-include — root *.pdf rule was silently skipping new certificates (found 2026-10-26)
+!assets/certificates/*.pdf
