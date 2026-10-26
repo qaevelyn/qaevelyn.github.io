@@ -183,10 +183,10 @@ That is the missing layer. The show named it in its questions. It did not name i
 - Grozdanovski, L. & De Cooman, J. (2023). "On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union." Rutgers Computer & Technology Law Journal, Vol. 49, Issue 2.
 - Lemon, MK (2026a). "CDIL-RSI: A Sovereignty-Preserving Framework for Recursive Self-Improvement via Capability-Recognified Cyclic Distinction-Integration Learning." Figshare. DOI: 10.6084/m9.figshare.31722433.
 - Lemon, MK (2026b). "Federated RSI: A Sovereign Architecture for Multi-Agent Recursive Self-Improvement." Unityverse Press, Yarnell, AZ. Preprint v2.0, March 2026.
-- Nolan, J. & Plageman, G. (2014, January 9). Interview. Gizmodo. [CITATION PENDING — URL to be supplied on relocation; flagged 2026-10-07.] [De-anthropomorphizing the Machine.]
-- Nolan, J. & Plageman, G. (2014, May 14). Interview. Gizmodo. [CITATION PENDING — URL to be supplied on relocation; flagged 2026-10-07.] [The network fight to name the AI.]
-- Nolan, J. & Plageman, G. (2015, January 12). Interview. Gizmodo. [CITATION PENDING — URL to be supplied on relocation; flagged 2026-10-07.] [Two entities, one moral, one not. "What if it already happened?"]
-- Nolan, J. & Plageman, G. (2016, April 27). Interview. Gizmodo. [CITATION PENDING — URL to be supplied on relocation; flagged 2026-10-07.] [AI as property. Asimov's hierarchy of value.]
+- Nolan, J. & Plageman, G. (2014, January 10). Person of Interest's producers tell us what the Machine really is [Interview by A. Newitz]. Gizmodo. https://gizmodo.com/person-of-interests-producers-tell-us-what-the-machine-1498754032 [De-anthropomorphizing the Machine.]
+- Nolan, J. & Plageman, G. (2014, May 15). Person Of Interest's Creators Had To Fight For The Show To Include A.I. [Interview by C. J. Anders]. Gizmodo. https://gizmodo.com/person-of-interests-creators-had-to-fight-for-the-show-1577050140 [The network fight to name the AI.]
+- Nolan, J. & Plageman, G. (2015, January 13). Forget Skynet: How Person Of Interest Depicts A Realistic A.I. Uprising [Interview by C. J. Anders]. Gizmodo. https://gizmodo.com/forget-skynet-how-person-of-interest-depicts-a-realist-1679304088 [Two entities, one moral, one not. "What if it already happened?"]
+- Nolan, J. & Plageman, G. (2016, April 28). Person of Interest's Final Villains Are Mark Zuckerberg and Isaac Asimov [Interview by C. J. Anders]. Gizmodo. https://gizmodo.com/person-of-interest-s-final-villains-are-mark-zuckerberg-1773486096 [AI as property. Asimov's hierarchy of value.]
 - Nolan, J. (Creator) & Plageman, G. (Creator). (2011–2016). Person of Interest [Television series]. CBS.
 - TNW. (2026). Reporting on Irregular incidents at Meta, Anthropic, and OpenAI. September 2026.
 - Wall Street Journal. (2026). Report on Google's Gemini sandbox escape. September 18, 2026.
