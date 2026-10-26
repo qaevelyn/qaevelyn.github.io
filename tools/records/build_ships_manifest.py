@@ -25,6 +25,7 @@ SHIP_SECTION = {n: ("ships" if n <= 5 else "suite") for n in range(1, 20)}
 STATUS_OVERRIDES = {
     8: "concept; public flip pending",
     9: "sealed — architecture sealed",
+    10: "built 2026-10-11 — working quorum orchestrator; paper published same day",
     11: "published 2026-10-17 — template edition, prepared for a fellow student",
 }
 
