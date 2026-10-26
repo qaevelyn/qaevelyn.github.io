@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qaevelyn.github.io/sitemap.xml
