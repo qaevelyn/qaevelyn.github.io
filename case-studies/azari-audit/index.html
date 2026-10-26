@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG Knowledge Base Audit — Per Scholas AI Assistant (Azari) — Evelyn Caro</title>
+  <style>
+    body { font-family: Georgia, serif; background: #2c1810; color: #f5e6d3; padding: 2rem; max-width: 900px; margin: 0 auto; line-height: 1.6; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #d4b670; }
+    h2 { font-size: 1.5rem; color: #b8a173; margin-top: 2rem; border-bottom: 1px solid #8b6f3d; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.15rem; color: #d4b670; margin-top: 1.75rem; }
+    .subtitle { color: #a89070; font-style: italic; margin-bottom: 0.5rem; }
+    .byline { color: #a89070; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem; }
+    .byline .type { display: inline-block; background: #8b6f3d; color: #f5e6d3; padding: 0.15rem 0.5rem; border-radius: 3px; font-size: 0.75rem; margin-left: 0.5rem; }
+    p { margin: 1rem 0; }
+    a { color: #d4b670; }
+    a:hover { color: #f5e6d3; }
+    hr { border: none; border-top: 1px solid #8b6f3d; margin: 2rem auto; width: 60%; }
+    .back { display: inline-block; margin-top: 2.5rem; color: #d4b670; text-decoration: none; }
+    .back:hover { text-decoration: underline; }
+  </style>
+  <style id="wp-box-table-style">
+    /* ===== Standardized boxes + tables (exemplar: sovereign-recursive-improvement) ===== */
+    table { border-collapse: collapse; width: 100%; margin: 1.25rem 0; font-size: 0.95rem; box-shadow: 0 1px 3px rgba(44,24,16,0.12); }
+    th, td { border: 1px solid #8b6f3d; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+    th { background: rgba(139,111,61,0.35); color: #d4b670; }
+    tbody tr:nth-child(even) td { background: rgba(44,24,16,0.03); }
+    blockquote { border-left: 3px solid #8b6f3d; border-radius: 6px; margin: 1.25rem 0; padding: 0.5rem 1.25rem; background: rgba(245,230,211,0.05); color: #e8d9c5; box-shadow: 0 1px 3px rgba(44,24,16,0.12); }
+    html.day-mode table { box-shadow: 0 1px 3px rgba(44,24,16,0.10); }
+    html.day-mode th { background: rgba(139,111,61,0.22); color: #5a3d14; }
+    html.day-mode th, html.day-mode td { border-color: #c9a86a; }
+    html.day-mode tbody tr:nth-child(even) td { background: rgba(44,24,16,0.03); }
+    html.day-mode blockquote { border-left-color: #c9a86a; background: rgba(44,24,16,0.05); color: #4a341f; }
+  </style>
+  <style id="wp-reader-style">
+    /* ===== Reader controls — night/day + text zoom (standardized 2026-10-25) ===== */
+    .copyright { margin-top: 2.5rem; color: #a89070; font-size: 0.9rem; }
+    .reader-controls {
+      position: fixed;
+      top: 0.9rem;
+      right: 0.9rem;
+      z-index: 50;
+      display: flex;
+      gap: 0.4rem;
+    }
+    .reader-controls button {
+      font-family: Georgia, serif;
+      font-size: 0.95rem;
+      line-height: 1;
+      padding: 0.45rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #8b6f3d;
+      background: rgba(44,24,16,0.85);
+      color: #f5e6d3;
+      cursor: pointer;
+    }
+    .reader-controls button:hover { background: #8b6f3d; color: #f5e6d3; }
+    html.day-mode body { background: #f5e6d3; color: #2c1810; }
+    html.day-mode h1 { color: #8b5a1f; }
+    html.day-mode h2 { color: #7a4a1a; border-bottom-color: #c9a86a; }
+    html.day-mode h3 { color: #8b5a1f; }
+    html.day-mode .subtitle, html.day-mode .byline { color: #7a6248; }
+    html.day-mode .byline .type { background: #c9a86a; color: #2c1810; }
+    html.day-mode .copyright { color: #7a6248; }
+    html.day-mode a { color: #8b5a1f; }
+    html.day-mode a:hover { color: #2c1810; }
+    html.day-mode .reader-controls button { background: rgba(245,230,211,0.92); color: #2c1810; border-color: #c9a86a; }
+    html.day-mode .reader-controls button:hover { background: #c9a86a; }
+    @media (max-width: 640px) { .reader-controls button { font-size: 0.85rem; padding: 0.4rem 0.5rem; } }
+  </style>
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem('wp-mode') !== 'night') { document.documentElement.classList.add('day-mode'); }
+      var z = parseFloat(localStorage.getItem('wp-zoom'));
+      if (z >= 0.8 && z <= 1.6 && z !== 1) { document.documentElement.style.zoom = z; }
+    } catch (e) {}
+  })();
+  </script>
+</head>
+<body>
+  <h1>RAG Knowledge Base Audit — Per Scholas AI Assistant (Azari)</h1>
+  <p class="byline">Evelyn Caro &middot; September 10, 2026 &middot; <span class="type">case-study</span></p>
+  <p><strong>Date:</strong> September 10, 2026<br />
+<strong>System:</strong> Per Scholas AI Assistant (Azari) — Praxis LXP<br />
+<strong>Role:</strong> Independent Auditor</p>
+  <h2>Context</h2>
+  <p>While preparing for the AWS CCP exam, I used the Per Scholas AI assistant (Azari) to look up program documentation. I noticed the assistant uses a RAG architecture with hybrid retrieval (graph, lexical, dense semantic) and Reciprocal Rank Fusion. As someone who has built five RAG pipelines, three of them agentic, I recognized the architecture and began testing its knowledge base coverage.</p>
+  <h2>Finding</h2>
+  <p>The knowledge base contains gaps and quality issues that reduce the assistant's usefulness for learners:</p>
+  <table>
+  <thead>
+  <tr><th>Finding</th><th>Priority</th></tr>
+  </thead>
+  <tbody>
+  <tr><td>No JRA documentation (Week 6 / Week 10 requirements, early graduate criteria)</td><td>High</td></tr>
+  <tr><td>No survey availability documentation</td><td>High</td></tr>
+  <tr><td>No PD syllabus in the knowledge base</td><td>High</td></tr>
+  <tr><td>Learner-submitted personal content indexed in the institutional KB</td><td>Low</td></tr>
+  <tr><td>Blank or unextractable documents returning no content</td><td>Medium</td></tr>
+  </tbody>
+  </table>
+  <h2>Evidence</h2>
+  <ul>
+  <li>Backend tool output showing <code>call_rag</code> with "Found no results" for JRA queries</li>
+  <li>Hybrid retrieval output showing a learner profile banner image injected into the prompt</li>
+  <li>OCR output showing a blank PDF page ingested as a knowledge base document</li>
+  </ul>
+  <h2>Recommendation</h2>
+  <p>Add official program documentation (JRA rubrics, survey windows, PD and technical syllabi, graduation checklist). Audit and remove learner-submitted content and blank documents from the institutional knowledge base.</p>
+  <h2>Outcome</h2>
+  <p>Reported to the Per Scholas platform team via Jovani Padron (jpadron@perscholas.org) with a structured gap report drafted with Azari's assistance. Awaiting response.</p>
+  <h2>Skills Demonstrated</h2>
+  <ul>
+  <li>RAG architecture recognition (hybrid retrieval, RRF)</li>
+  <li>Systems audit methodology</li>
+  <li>Evidence documentation</li>
+  <li>Professional reporting and disclosure</li>
+  <li>Peer collaboration</li>
+  </ul>
+  <h2>Attachments</h2>
+  <ul>
+  <li><a href="/assets/pdfs/KB_Coverage_Feedback_Report_Evelyn_Caro.pdf">Full Gap Report (PDF)</a></li>
+  </ul>
+  <hr />
+  <p>© 2026 Evelyn Caro. All rights reserved.<br />
+A Mirror of My Becoming™ — https://qaevelyn.github.io<br />
+For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
+  <a class="back" href="/case-studies/">&larr; All Case Studies</a>
+<div class="reader-controls" aria-label="Reader controls">
+  <button id="zoomOut" aria-label="Smaller text">A&minus;</button>
+  <button id="zoomReset" aria-label="Reset text size">A</button>
+  <button id="zoomIn" aria-label="Larger text">A+</button>
+  <button id="modeToggle" aria-label="Toggle night and day">🌙</button>
+</div>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('modeToggle');
+    var paintMode = function () {
+      btn.textContent = root.classList.contains('day-mode') ? '☀️' : '🌙';
+    };
+    paintMode();
+    btn.addEventListener('click', function () {
+      var day = root.classList.toggle('day-mode');
+      try { localStorage.setItem('wp-mode', day ? 'day' : 'night'); } catch (e) {}
+      paintMode();
+    });
+    var getZ = function () {
+      var z = parseFloat(root.style.zoom);
+      return isNaN(z) ? 1 : z;
+    };
+    var setZ = function (z) {
+      z = Math.min(1.6, Math.max(0.8, Math.round(z * 10) / 10));
+      root.style.zoom = (z === 1) ? '' : z;
+      try { localStorage.setItem('wp-zoom', String(z)); } catch (e) {}
+    };
+    document.getElementById('zoomIn').addEventListener('click', function () { setZ(getZ() + 0.1); });
+    document.getElementById('zoomOut').addEventListener('click', function () { setZ(getZ() - 0.1); });
+    document.getElementById('zoomReset').addEventListener('click', function () { setZ(1); });
+  })();
+</script>
+</body>
+</html>
