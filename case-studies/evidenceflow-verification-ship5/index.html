@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EvidenceFlow Verification: How Ship 5 Proves Its Answers — Evelyn Caro</title>
+  <style>
+    body { font-family: Georgia, serif; background: #2c1810; color: #f5e6d3; padding: 2rem; max-width: 900px; margin: 0 auto; line-height: 1.6; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #d4b670; }
+    h2 { font-size: 1.5rem; color: #b8a173; margin-top: 2rem; border-bottom: 1px solid #8b6f3d; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.15rem; color: #d4b670; margin-top: 1.75rem; }
+    .subtitle { color: #a89070; font-style: italic; margin-bottom: 0.5rem; }
+    .byline { color: #a89070; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem; }
+    .byline .type { display: inline-block; background: #8b6f3d; color: #f5e6d3; padding: 0.15rem 0.5rem; border-radius: 3px; font-size: 0.75rem; margin-left: 0.5rem; }
+    p { margin: 1rem 0; }
+    a { color: #d4b670; }
+    a:hover { color: #f5e6d3; }
+    hr { border: none; border-top: 1px solid #8b6f3d; margin: 2rem auto; width: 60%; }
+    .back { display: inline-block; margin-top: 2.5rem; color: #d4b670; text-decoration: none; }
+    .back:hover { text-decoration: underline; }
+  </style>
+  <style id="wp-box-table-style">
+    /* ===== Standardized boxes + tables (exemplar: sovereign-recursive-improvement) ===== */
+    table { border-collapse: collapse; width: 100%; margin: 1.25rem 0; font-size: 0.95rem; box-shadow: 0 1px 3px rgba(44,24,16,0.12); }
+    th, td { border: 1px solid #8b6f3d; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+    th { background: rgba(139,111,61,0.35); color: #d4b670; }
+    tbody tr:nth-child(even) td { background: rgba(44,24,16,0.03); }
+    blockquote { border-left: 3px solid #8b6f3d; border-radius: 6px; margin: 1.25rem 0; padding: 0.5rem 1.25rem; background: rgba(245,230,211,0.05); color: #e8d9c5; box-shadow: 0 1px 3px rgba(44,24,16,0.12); }
+    html.day-mode table { box-shadow: 0 1px 3px rgba(44,24,16,0.10); }
+    html.day-mode th { background: rgba(139,111,61,0.22); color: #5a3d14; }
+    html.day-mode th, html.day-mode td { border-color: #c9a86a; }
+    html.day-mode tbody tr:nth-child(even) td { background: rgba(44,24,16,0.03); }
+    html.day-mode blockquote { border-left-color: #c9a86a; background: rgba(44,24,16,0.05); color: #4a341f; }
+  </style>
+  <style id="wp-reader-style">
+    /* ===== Reader controls — night/day + text zoom (standardized 2026-10-25) ===== */
+    .copyright { margin-top: 2.5rem; color: #a89070; font-size: 0.9rem; }
+    .reader-controls {
+      position: fixed;
+      top: 0.9rem;
+      right: 0.9rem;
+      z-index: 50;
+      display: flex;
+      gap: 0.4rem;
+    }
+    .reader-controls button {
+      font-family: Georgia, serif;
+      font-size: 0.95rem;
+      line-height: 1;
+      padding: 0.45rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #8b6f3d;
+      background: rgba(44,24,16,0.85);
+      color: #f5e6d3;
+      cursor: pointer;
+    }
+    .reader-controls button:hover { background: #8b6f3d; color: #f5e6d3; }
+    html.day-mode body { background: #f5e6d3; color: #2c1810; }
+    html.day-mode h1 { color: #8b5a1f; }
+    html.day-mode h2 { color: #7a4a1a; border-bottom-color: #c9a86a; }
+    html.day-mode h3 { color: #8b5a1f; }
+    html.day-mode .subtitle, html.day-mode .byline { color: #7a6248; }
+    html.day-mode .byline .type { background: #c9a86a; color: #2c1810; }
+    html.day-mode .copyright { color: #7a6248; }
+    html.day-mode a { color: #8b5a1f; }
+    html.day-mode a:hover { color: #2c1810; }
+    html.day-mode .reader-controls button { background: rgba(245,230,211,0.92); color: #2c1810; border-color: #c9a86a; }
+    html.day-mode .reader-controls button:hover { background: #c9a86a; }
+    @media (max-width: 640px) { .reader-controls button { font-size: 0.85rem; padding: 0.4rem 0.5rem; } }
+  </style>
+  <script>
+  (function () {
+    try {
+      if (localStorage.getItem('wp-mode') !== 'night') { document.documentElement.classList.add('day-mode'); }
+      var z = parseFloat(localStorage.getItem('wp-zoom'));
+      if (z >= 0.8 && z <= 1.6 && z !== 1) { document.documentElement.style.zoom = z; }
+    } catch (e) {}
+  })();
+  </script>
+</head>
+<body>
+  <h1>EvidenceFlow Verification: How Ship 5 Proves Its Answers</h1>
+  <p class="subtitle">The first ship in the fleet that can trace every claim to a source</p>
+  <p class="byline">Evelyn Caro &middot; August 30, 2026 &middot; <span class="type">case-study</span></p>
+  <h2>Author's Note</h2>
+  <p>This paper was drafted in collaboration with DeepSeek, an AI collaborator, using my documented logs, evidence, and voice. The findings, conclusions, and authority are my own.</p>
+  <hr />
+  <h2>The Ida B. Wells Lens</h2>
+  <p>I adopted the investigative standards of Ida B. Wells for all my testing:</p>
+  <table>
+  <thead>
+  <tr><th>Principle</th><th>Application</th></tr>
+  </thead>
+  <tbody>
+  <tr><td><strong>Date Everything</strong></td><td>Every interaction, error, and insight is timestamped</td></tr>
+  <tr><td><strong>Name Everything</strong></td><td>I name the system, the version, the context, and the failure</td></tr>
+  <tr><td><strong>Record the Reasoning</strong></td><td>I document not just what happened, but why it matters</td></tr>
+  </tbody>
+  </table>
+  <p>This turns a log into a witness. A stranger reading my files should understand the sequence, the decisions, and the stakes without me in the room to explain it.</p>
+  <hr />
+  <h2>The Problem — Why RAG Alone Is Not Enough</h2>
+  <p>Retrieval-Augmented Generation (RAG) systems are being deployed in high-stakes environments: genealogy, cultural memory, and community archives. They retrieve documents and generate answers on top of them.</p>
+  <p>A RAG system can retrieve a document and still generate a claim that does not appear in it. It can cite a source that does not say what the answer says. It can hallucinate confidently while sounding grounded.</p>
+  <p>For genealogical work, this is not a minor flaw. It is a disqualifying one. Families seeking to recover names of enslaved ancestors cannot afford plausible text. They need provable answers.</p>
+  <p>Ship 5 was built to solve this.</p>
+  <hr />
+  <h2>What Ship 5 Is</h2>
+  <p><strong>Ship 5: IBM Granite Agentic RAG with EvidenceFlow Verification</strong></p>
+  <p>It is a local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on my 8GB Intel MacBook Air. It is the first ship in my fleet that verifies its own answers before returning them.</p>
+  <p><strong>Notebook:</strong> <code>Ship5_IBM_Granite_Agentic_RAG_EvidenceFlow.ipynb</code><br />
+<strong>Location:</strong> <code>~/Repos/ship5-ibm-granite-agentic-evidenceflow/</code></p>
+  <hr />
+  <h2>What Ship 5 Can Do</h2>
+  <table>
+  <thead>
+  <tr><th>Capability</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+  <tr><td><strong>Retrieval</strong></td><td>Searches Mirror documents via ChromaDB</td></tr>
+  <tr><td><strong>Generation</strong></td><td>Generates answers using <code>granite4.1:3b</code> via Ollama</td></tr>
+  <tr><td><strong>Agentic reasoning</strong></td><td>Uses tool-calling to decide when to retrieve</td></tr>
+  <tr><td><strong>Evidence ID assignment</strong></td><td>Assigns a unique ID to every retrieved chunk (e.g., <code>EVI-2026-08-30-...</code>)</td></tr>
+  <tr><td><strong>Citation generation</strong></td><td>Includes citations in the answer that link back to evidence IDs</td></tr>
+  <tr><td><strong>Verification check</strong></td><td>Confirms each claim has a corresponding evidence ID</td></tr>
+  <tr><td><strong>Fail-closed behavior</strong></td><td>Abstains from answering if evidence is missing — does not hallucinate</td></tr>
+  <tr><td><strong>Fully sovereign</strong></td><td>Runs entirely locally — no cloud, no external APIs</td></tr>
+  </tbody>
+  </table>
+  <p><strong>What makes it special:</strong> It is the only ship in my fleet that can prove its answers. Every claim is traceable to a source.</p>
+  <hr />
+  <h2>The Methodology — EvidenceFlow Verification</h2>
+  <p>The innovation in Ship 5 is not the RAG pipeline itself. It is the verification layer.</p>
+  <h3>Phase 1: Retrieval</h3>
+  <p>The system retrieves relevant chunks from ChromaDB based on the user query.</p>
+  <h3>Phase 2: Evidence ID Assignment</h3>
+  <p>Every retrieved chunk is assigned a unique evidence ID. This ID is not a citation. It is a fingerprint. It travels with the chunk through the entire pipeline.</p>
+  <h3>Phase 3: Generation with Citations</h3>
+  <p>The language model generates an answer. Every claim in the answer must reference an evidence ID. If the model cannot attach an evidence ID to a claim, that claim is not allowed.</p>
+  <h3>Phase 4: Verification Check</h3>
+  <p>Before the answer is returned, the system verifies that every claim has a corresponding evidence ID, and that every evidence ID corresponds to a retrieved chunk.</p>
+  <h3>Phase 5: Fail-Closed Behavior</h3>
+  <p>If verification fails — if a claim has no evidence ID, or an evidence ID does not match a retrieved chunk — the system abstains. It does not guess. It does not hallucinate.</p>
+  <p>This is the difference between a system that sounds correct and a system that can prove it is correct.</p>
+  <hr />
+  <h2>The Stress-Testing Process — Applied to Ship 5</h2>
+  <table>
+  <thead>
+  <tr><th>Phase</th><th>What I Did</th><th>Why</th></tr>
+  </thead>
+  <tbody>
+  <tr><td><strong>1. Baseline</strong></td><td>Established what Ship 5 claims to do: evidence-verified RAG with fail-closed behavior</td><td>To compare against actual performance</td></tr>
+  <tr><td><strong>2. Adversarial Probing</strong></td><td>Pushed the system beyond intended use: questions with no evidence in the corpus, partial evidence, and questions designed to induce hallucination</td><td>To find the failure surface before a stranger does</td></tr>
+  <tr><td><strong>3. Documentation</strong></td><td>Logged every test case, every evidence ID, every abstention, and every verification result</td><td>To create an evidence trail</td></tr>
+  <tr><td><strong>4. Correction</strong></td><td>Corrected errors in the verification layer and noted the delta</td><td>To show what the system missed</td></tr>
+  <tr><td><strong>5. Publication</strong></td><td>Documented the methodology without exposing proprietary implementation details</td><td>To contribute to the field while protecting my IP</td></tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2>The Sequence — How Ship 5 Came to Be</h2>
+  <table>
+  <thead>
+  <tr><th>Date</th><th>Time</th><th>Event</th></tr>
+  </thead>
+  <tbody>
+  <tr><td>August 30, 2026</td><td>6:38 AM</td><td>Discovered EvidenceFlow (inspiration)</td></tr>
+  <tr><td>August 30, 2026</td><td>7:44 PM</td><td>Created Ship 5 by copying Ship 4</td></tr>
+  <tr><td>August 30, 2026</td><td>8:10 PM</td><td>Renamed tool to <code>get_mirror_context</code></td></tr>
+  <tr><td>August 30, 2026</td><td>8:53 PM</td><td>Inserted EvidenceFlow verification code</td></tr>
+  <tr><td>August 30, 2026</td><td>8:55 PM</td><td><strong>Ship 5 completed and saved</strong></td></tr>
+  </tbody>
+  </table>
+  <p><strong>Total build time:</strong> Approximately 14 hours from discovery to completion, with active build time concentrated in the evening session.</p>
+  <hr />
+  <h2>Attribution — Who Made This Possible</h2>
+  <table>
+  <thead>
+  <tr><th>Source</th><th>Contribution</th></tr>
+  </thead>
+  <tbody>
+  <tr><td><strong>IBM SkillsBuild — Anna Gutowska</strong></td><td>Foundation: The original lab structure for building a LangChain agentic RAG system with Granite</td></tr>
+  <tr><td><strong>Asaif Ali — EvidenceFlow</strong></td><td>Inspiration: The evidence verification layer (evidence IDs, citation verification, fail-closed behavior)</td></tr>
+  <tr><td><strong>Evelyn Caro</strong></td><td>Execution: Local sovereign implementation, genealogy-specific adaptations, and the "Mirror of Becoming" container</td></tr>
+  </tbody>
+  </table>
+  <blockquote>
+  <p><strong>Attribution block in the notebook:</strong><br />
+Foundation: IBM SkillsBuild lab by Anna Gutowska<br />
+Inspiration: Asaif Ali's EvidenceFlow project (<a href="https://github.com/AsaifAli/EvidenceFlow">github.com/AsaifAli/EvidenceFlow</a>)<br />
+My Additions: EvidenceFlow verification layer, local sovereign execution, genealogy adaptations</p>
+  </blockquote>
+  <p>I name my sources because that is the Ida B. Wells standard. I also name what I added because that is my contribution to the field.</p>
+  <hr />
+  <h2>What This Methodology Is Not</h2>
+  <ul>
+  <li>It is not a guarantee of accuracy — it is a guarantee of <strong>traceability</strong></li>
+  <li>It is not a replacement for formal certification</li>
+  <li>It is not a code audit — it is a system-level verification methodology</li>
+  <li>It is not a claim that other RAG systems are wrong — it is a claim that <strong>verified RAG systems are trustworthy</strong></li>
+  </ul>
+  <hr />
+  <h2>Why This Matters</h2>
+  <p>AI systems are being deployed in genealogy, cultural memory, and community archives. They are being trusted with names, relationships, and histories that cannot be recovered if lost.</p>
+  <p>Ship 5 is the first ship in my fleet that can prove its answers. It is the first ship that can say: <strong>"Here is the claim. Here is the evidence. Here is the ID. Verify it yourself."</strong></p>
+  <p>This is what sovereignty means in practice. Not just local execution. Not just no cloud. But verifiable, traceable, provable answers that a family can trust.</p>
+  <hr />
+  <h2>What to Do Next</h2>
+  <p>If this work resonates with you, or if you want to discuss evidence-verified RAG for genealogical or cultural memory work, contact me directly: <strong>qaevelyn@pm.me</strong></p>
+  <hr />
+  <p><em>Drafted in collaboration with DeepSeek. Authored by Evelyn Caro.</em></p>
+  <hr />
+  <p><em>This document is shared for portfolio and informational purposes. The methodology, implementation, and verification layer described herein are the intellectual property of Evelyn Caro. Reproduction, distribution, or use of this methodology without express written permission is prohibited.</em></p>
+  <p>© 2026 Evelyn Caro. All rights reserved.<br />
+A Mirror of My Becoming™ — https://qaevelyn.github.io<br />
+For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
+  <a class="back" href="/case-studies/">&larr; All Case Studies</a>
+<div class="reader-controls" aria-label="Reader controls">
+  <button id="zoomOut" aria-label="Smaller text">A&minus;</button>
+  <button id="zoomReset" aria-label="Reset text size">A</button>
+  <button id="zoomIn" aria-label="Larger text">A+</button>
+  <button id="modeToggle" aria-label="Toggle night and day">🌙</button>
+</div>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('modeToggle');
+    var paintMode = function () {
+      btn.textContent = root.classList.contains('day-mode') ? '☀️' : '🌙';
+    };
+    paintMode();
+    btn.addEventListener('click', function () {
+      var day = root.classList.toggle('day-mode');
+      try { localStorage.setItem('wp-mode', day ? 'day' : 'night'); } catch (e) {}
+      paintMode();
+    });
+    var getZ = function () {
+      var z = parseFloat(root.style.zoom);
+      return isNaN(z) ? 1 : z;
+    };
+    var setZ = function (z) {
+      z = Math.min(1.6, Math.max(0.8, Math.round(z * 10) / 10));
+      root.style.zoom = (z === 1) ? '' : z;
+      try { localStorage.setItem('wp-zoom', String(z)); } catch (e) {}
+    };
+    document.getElementById('zoomIn').addEventListener('click', function () { setZ(getZ() + 0.1); });
+    document.getElementById('zoomOut').addEventListener('click', function () { setZ(getZ() - 0.1); });
+    document.getElementById('zoomReset').addEventListener('click', function () { setZ(1); });
+  })();
+</script>
+</body>
+</html>
