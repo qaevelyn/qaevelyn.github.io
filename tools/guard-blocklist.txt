@@ -1,11 +1,15 @@
-*recon*
-*neighbor*
-_drafts/*
-*.rtfd
-*.rtfd/*
-*screenshot*
-.env*
-*.pem
 
 # retired pages — rendered page paths are rejected; record sources stay committable
+*.pem
+*.rtfd
+*.rtfd/*
+*ICP*
+*LEAD-GEN*
+*neighbor*
+*recon*
+*screenshot*
+.env*
+ICP — BUILT FROM PORTFOLIO AS EVIDENCE OF CAPABILITY.md
+LEAD-GEN — SOVEREIGNTY COMMUNITIES AND COMMERCIAL TIER.md
+_drafts/*
 white-papers/White_Paper_AI_Collaboration_Case_Study/*
