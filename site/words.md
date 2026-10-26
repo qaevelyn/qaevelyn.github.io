@@ -52,7 +52,6 @@ This file is the human-readable companion to `site/words.json`. Edit the words h
 ### Ship 5
 - **Title:** Ship 5 — IBM Granite Agentic RAG with EvidenceFlow
 - **Description:** A local, sovereign, evidence-verified RAG pipeline built on IBM Granite, running via Ollama on an 8GB Intel MacBook Air. Every claim is traceable to a source. Fail-closed behavior: if evidence is missing, it abstains.
-- **Attribution:** Foundation: IBM SkillsBuild (Anna Gutowska). Inspiration: Asaif Ali's EvidenceFlow. Execution: Evelyn Caro.
 
 ---
 

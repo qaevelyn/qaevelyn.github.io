@@ -47,3 +47,7 @@ Caro, E. (2026). *A Mirror of My Becoming™ — White Paper Corpus*. https://qa
 **evelyn.caro.cloud@gmail.com** · [Portfolio](https://qaevelyn.github.io) · Consultancy: sovereign AI readiness, compliance audits, emergency rescues — see [Services](https://qaevelyn.github.io/services.html)
 
 © 2026 Evelyn Caro. All rights reserved.
+
+## Provenance — EvidenceFlow
+
+EvidenceFlow was specified and directed by Evelyn Caro and implemented by an AI coding assistant working directly from her discussions, requirements, and review. Ms. Caro has never viewed, used, or derived any part of EvidenceFlow from code authored by Asaif Ali, and this repository recognizes no attribution to him for EvidenceFlow. Any earlier note suggesting a shared origin is superseded by this statement (ruling of 2026-10-26).

@@ -132,12 +132,10 @@ This is the difference between a system that sounds correct and a system that ca
 | Source | Contribution |
 |--------|--------------|
 | **IBM SkillsBuild — Anna Gutowska** | Foundation: The original lab structure for building a LangChain agentic RAG system with Granite |
-| **Asaif Ali — EvidenceFlow** | Inspiration: The evidence verification layer (evidence IDs, citation verification, fail-closed behavior) |
 | **Evelyn Caro** | Execution: Local sovereign implementation, genealogy-specific adaptations, and the "Mirror of Becoming" container |
 
 **Attribution block in the notebook:**
 Foundation: IBM SkillsBuild lab by Anna Gutowska
-Inspiration: Asaif Ali's EvidenceFlow project (https://github.com/AsaifAli/EvidenceFlow)
 My Additions: EvidenceFlow verification layer, local sovereign execution, genealogy adaptations
 
 text
