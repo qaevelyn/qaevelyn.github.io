@@ -41,3 +41,6 @@ google analytics Measurement ID (G-WV5JKK585K).txt
 
 # robots.txt must ship (SEO layer 2026-10-26; same failure class as the cert pdf)
 !robots.txt
+
+# audit PDFs must ship — scoped re-include (same failure class as the cert pdf and robots.txt)
+!assets/audits/*.pdf
