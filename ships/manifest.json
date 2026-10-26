@@ -1,6 +1,6 @@
 {
   "manifest_info": {
-    "purpose": "Single source of truth for all 5 ships",
+    "purpose": "Single source of truth for all ships in the book (auto-synced from lookbook.html)",
     "standard": "Every file gets 5 addresses: local, repo, github_blob, github_raw, live_url",
     "location": {
       "local": "~/Repos/qaevelyn.github.io/ships/manifest.json",
@@ -9,7 +9,7 @@
       "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/ships/manifest.json",
       "live_url": "https://qaevelyn.github.io/ships/manifest.json"
     },
-    "update_workflow": "Edit this file, commit, push. YouTube links updated manually as they become available.",
+    "update_workflow": "AUTOMATED: ships/manifest.json regenerates from lookbook.html via tools/records/build_ships_manifest.py (GitHub Action records-sync). Owner edits rich metadata (videos, tags, licenses) freely; the book decides the roster.",
     "related_manifests": {
       "certificates": "assets/certificates/manifest.json",
       "case_studies": "case-studies/manifest.json"
@@ -46,7 +46,15 @@
         "Ollama",
         "local",
         "rebuilt"
-      ]
+      ],
+      "lookbook": {
+        "h3_title": "Ship 1",
+        "toc_parent": "Fleet of RAG Pipelines",
+        "toc_child": "DeepSeek RAG (Local Rebuild)",
+        "narrative": "Ship 1 was the first attempt — AWS, DeepSeek, a RAG pipeline built to organize my own life. It got lost. The notebook wasn't on the SageMaker instance. It wasn't in the backups. I rebuilt it from the Mirror files. The rebuild was cleaner than the original. That's the ship that taught me how to recover from losing one.",
+        "spread_anchor": "lookbook.html#ship1",
+        "synced": "2026-10-26"
+      }
     },
     {
       "id": "ship2-granite-agentic-rag",
@@ -77,7 +85,15 @@
         "tool-calling",
         "Ollama",
         "local"
-      ]
+      ],
+      "lookbook": {
+        "h3_title": "Ship 2",
+        "toc_parent": "Fleet of RAG Pipelines",
+        "toc_child": "IBM Granite Agentic RAG",
+        "narrative": "By the time Ship 2 came, I was more confident. I had rebuilt Ship 1 from scratch. I understood what I was capable of and what the tools could do. Ship 2 was IBM Granite — a different model, a cleaner notebook, and a new layer: agentic reasoning. I learned to write clean code and I learned what agency meant. This is the ship where I stopped being a student and started being a builder.",
+        "spread_anchor": "lookbook.html#ship2",
+        "synced": "2026-10-26"
+      }
     },
     {
       "id": "ship3-ibm-granite-rag",
@@ -107,7 +123,15 @@
         "RAG",
         "standard",
         "Ollama"
-      ]
+      ],
+      "lookbook": {
+        "h3_title": "Ship 3",
+        "toc_parent": "Fleet of RAG Pipelines",
+        "toc_child": "IBM Granite RAG",
+        "narrative": "Ship 3 runs locally with IBM Granite as the model. Same pattern, different model. If the design only worked with one LLM, it wasn't real. This is the ship that proved the pattern was portable — not locked to AWS, not locked to DeepSeek, not locked to anything.",
+        "spread_anchor": "lookbook.html#ship3",
+        "synced": "2026-10-26"
+      }
     },
     {
       "id": "ship4-ibm-granite-agentic-rag",
@@ -137,7 +161,15 @@
         "agentic RAG",
         "tool-calling",
         "Ollama"
-      ]
+      ],
+      "lookbook": {
+        "h3_title": "Ship 4",
+        "toc_parent": "Fleet of RAG Pipelines",
+        "toc_child": "IBM Granite Agentic RAG",
+        "narrative": "Ship 4 combined IBM Granite with agentic reasoning. Retrieval plus action, on the second platform. This is the ship where I learned that agency wasn't a feature — it was a way of thinking about how a system works. Cross-platform and agentic, together.",
+        "spread_anchor": "lookbook.html#ship4",
+        "synced": "2026-10-26"
+      }
     },
     {
       "id": "ship5-ibm-granite-agentic-rag-evidenceflow",
@@ -181,7 +213,15 @@
         "verification",
         "fail-closed",
         "Ollama"
-      ]
+      ],
+      "lookbook": {
+        "h3_title": "Ship 5",
+        "toc_parent": "Fleet of RAG Pipelines",
+        "toc_child": "IBM Granite Agentic RAG with EvidenceFlow",
+        "narrative": "Ship 5 is the leap. IBM Granite via Ollama, running fully local. ChromaDB for retrieval. EvidenceFlow verification — every claim traceable to an evidence ID, fail-closed if evidence is missing. Built for genealogy, where a plausible guess is not good enough. This is the ship I built for the work that matters.",
+        "spread_anchor": "lookbook.html#ship5",
+        "synced": "2026-10-26"
+      }
     }
   ],
   "suite": {
@@ -189,27 +229,93 @@
       "title": "Suite: Ingestion Tools — overnight receipt",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools",
       "video_receipt": "https://youtu.be/4DBuhhPpbjU",
-      "run": "Sept 29, 2026 04:41 AM — Written: 55, Sidecar total: 127, zero failures, zero losses"
+      "run": "Sept 29, 2026 04:41 AM — Written: 55, Sidecar total: 127, zero failures, zero losses",
+      "lookbook": {
+        "h3_title": "Ship 6 — Suite: Ingestion Tools",
+        "toc_parent": "The Suite",
+        "toc_child": "Suite: Ingestion Tools · Scribe · Warden · Hand",
+        "narrative": "A Mirror of My Becoming™ Suite: Ingestion Tools — three tools that work separately but work better together. Built after the problem: 127 conversations to ingest and a pipeline that kept killing itself overnight. I solved my problem, and discovered no one else had this unique solution published — so I am first: resilience-engineered, Bitcoin-timestamped, AGPL. The free tier is the point; the AGPL is the guidance if the next user is a corporation.",
+        "spread_anchor": "lookbook.html#ship6",
+        "synced": "2026-10-26"
+      }
     },
     "ship7": {
       "title": "msgvault adapter",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter",
       "video_dry_run": "https://youtu.be/BO3FFlEsyxQ",
       "video_run2_resume": "https://youtu.be/mYyLKLq2l7w",
-      "receipt": "Smoke run 1: 200 msgs, 23,500 chunks; run 2 resumed at row 201 — never re-ingest"
+      "receipt": "Smoke run 1: 200 msgs, 23,500 chunks; run 2 resumed at row 201 — never re-ingest",
+      "lookbook": {
+        "h3_title": "Ship 7 — msgvault Adapter",
+        "toc_parent": "The Suite",
+        "toc_child": "",
+        "narrative": "The seventh ship bridges mail into the Mirror. It reads msgvault.db in its own native tongue — the embed_gen watermark is its checkpoint, so progress lives in the data itself: crash, restart, curfew, resume, never re-ingest. It normalizes RFC822 message-ids, preserves full metadata, and feeds the canonical store with nomic-embed-text vectors — the fleet's model. Replace-mode: stale deleted as fresh lands. Curfew-aware. Never self-restarts. The prior-art search found nothing published like it.",
+        "spread_anchor": "lookbook.html#ship7",
+        "synced": "2026-10-26"
+      }
     },
     "ship8": {
       "title": "DV14: The Box — AI containment blueprint",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-dv14-ai-containment-blueprint",
       "license": "Copyright (c) 2026 Evelyn Caro. All rights reserved.",
-      "status": "concept; public flip pending"
+      "status": "concept; public flip pending",
+      "lookbook": {
+        "h3_title": "Ship 8 — DV14: The Box",
+        "toc_parent": "Sealed Architectures",
+        "toc_child": "DV14™: The Box · AI containment blueprint",
+        "narrative": "A concept, stated plainly: a physical and conceptual AI agent containment architecture, designed to answer one question — can an agent that runs on hardware be contained by hardware? Two tracks: The Box (eight layers of complementary opposites — every material paired with the one that covers its weakness) and the Sensory Deprivation Matrix (can an agent function with no external hardware at all?). The accidental discovery: if the AI plays possum, we have found a holding cell. Bitcoin-timestamped September 19, 2026. Cited in two published white papers. © all rights reserved — commercial license only; Bitcoin-timestamped 2026-09-19; available for review under NDA.",
+        "spread_anchor": "lookbook.html#ship8",
+        "synced": "2026-10-26"
+      }
     },
     "ship11": {
       "title": "AWS CCP study manual — Sleep Is Studying Too",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual",
       "manual_pdf": "https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual/blob/main/AWS-CCP-Study-Manual.pdf",
       "license": "AGPL-3.0 — Copyright (c) 2026 Evelyn Caro",
-      "status": "published 2026-10-17 — template edition, prepared for a fellow student"
+      "status": "published 2026-10-17 — template edition, prepared for a fellow student",
+      "lookbook": {
+        "h3_title": "Ship 11 — AWS CCP Study Manual — Sleep Is Studying Too™",
+        "toc_parent": "The Suite",
+        "toc_child": "AWS CCP study manual — Sleep Is Studying Too · template edition",
+        "narrative": "The eleventh ship is the newest: an AWS Cloud Practitioner study manual, published 2026-10-17 as a template edition — prepared for a fellow student, shipped for everyone. Built on the Neuroplasticize™ method — encode by day, consolidate by night™: spaced review, plain language, and real sleep. Sleep is studying too™.",
+        "spread_anchor": "lookbook.html#ship11",
+        "synced": "2026-10-26"
+      }
+    },
+    "ship9": {
+      "id": "ship9",
+      "number": 9,
+      "title": "Ship 9 — Radiology Companion™",
+      "status": "sealed — architecture sealed",
+      "portfolio": {
+        "spread_anchor": "lookbook.html#ship9"
+      },
+      "lookbook": {
+        "h3_title": "Ship 9 — Radiology Companion™",
+        "toc_parent": "Sealed Architectures",
+        "toc_child": "Radiology Companion™ · v5 reference build — architecture sealed",
+        "narrative": "The ninth ship is sealed. The fleet proved that a sovereign archive can hold a person's records without surrendering them — Radiology Companion™ asks the next question: can the same local-first doctrine carry a patient through a clinical protocol? An imaging patient-preparedness tool: the imaging protocol explained in order, the preparation steps verified, no cloud, no stored health data, nothing about the patient leaving the device. Pitched as a 90-day fixed-fee pilot against the institution's own reschedule baseline. On October 22, 2026 — seventeen days after the decline — it was built anyway: Radiology Companion™ v5, a working local-first reference build. Twenty languages. Every preparation step read aloud. A hospital's own name and logo, fetched from a pasted link. Four sourced institutional demo libraries. Built with no funding. Demo free, deploy paid. Source private; the architecture is sealed — commercial license only, available for review under NDA.",
+        "spread_anchor": "lookbook.html#ship9",
+        "synced": "2026-10-26"
+      }
+    },
+    "ship10": {
+      "id": "ship10",
+      "number": 10,
+      "title": "Ship 10 — Overseer™",
+      "status": "",
+      "portfolio": {
+        "spread_anchor": "lookbook.html#ship10"
+      },
+      "lookbook": {
+        "h3_title": "Ship 10 — Overseer™",
+        "toc_parent": "Tools",
+        "toc_child": "Overseer™ · tier-authority orchestrator",
+        "narrative": "The tenth ship is the one that watches the others. Overseer™ dispatches every question to five workers — three vector collections, the SQLite mail archive, and the canon registry — fuses their findings with a visible quorum table, and refuses to answer when the receipts are insufficient. Its tier system settles the oldest problem in AI: when the model lies, the pipeline decides. Canon questions never reach the model at all.",
+        "spread_anchor": "lookbook.html#ship10",
+        "synced": "2026-10-26"
+      }
     }
   }
 }
