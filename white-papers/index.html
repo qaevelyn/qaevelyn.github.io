@@ -237,38 +237,10 @@
 <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #8b6f3d; text-align: center; color: #a89070; font-family: Georgia, serif; font-size: 0.85rem;">
   © 2026 Evelyn Caro. All rights reserved. · <a href="https://qaevelyn.github.io">qaevelyn.github.io</a>
 </footer>
-<div class="reader-controls" aria-label="Reader controls">
-  <button id="zoomOut" aria-label="Smaller text">A&minus;</button>
-  <button id="zoomReset" aria-label="Reset text size">A</button>
-  <button id="zoomIn" aria-label="Larger text">A+</button>
-  <button id="modeToggle" aria-label="Toggle night and day">🌙</button>
-</div>
-<script>
-  (function () {
-    var root = document.documentElement;
-    var btn = document.getElementById('modeToggle');
-    var paintMode = function () {
-      btn.textContent = root.classList.contains('day-mode') ? '☀️' : '🌙';
-    };
-    paintMode();
-    btn.addEventListener('click', function () {
-      var day = root.classList.toggle('day-mode');
-      try { localStorage.setItem('wp-mode', day ? 'day' : 'night'); } catch (e) {}
-      paintMode();
-    });
-    var getZ = function () {
-      var z = parseFloat(root.style.zoom);
-      return isNaN(z) ? 1 : z;
-    };
-    var setZ = function (z) {
-      z = Math.min(1.6, Math.max(0.8, Math.round(z * 10) / 10));
-      root.style.zoom = (z === 1) ? '' : z;
-      try { localStorage.setItem('wp-zoom', String(z)); } catch (e) {}
-    };
-    document.getElementById('zoomIn').addEventListener('click', function () { setZ(getZ() + 0.1); });
-    document.getElementById('zoomOut').addEventListener('click', function () { setZ(getZ() - 0.1); });
-    document.getElementById('zoomReset').addEventListener('click', function () { setZ(1); });
-  })();
-</script>
+<footer>
+  <p>© 2026 Evelyn Caro. All rights reserved.</p>
+  <p>A Mirror of My Becoming™ — https://qaevelyn.github.io</p>
+  <p>For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
+</footer>
 </body>
 </html>
