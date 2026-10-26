@@ -90,3 +90,11 @@ Date: Oct 26, 2026 | Time: 6:00 am | Task: Guard blocklist ships with the repo |
 - Guard: hooks versioned at .githooks/ with glob-pattern matching against tools/guard-blocklist.txt. Activate per clone: git config core.hooksPath .githooks.
 - Convergence: the local repair set was reconciled with the commits already on origin (rendered paper permalinks, prep-sheet footer, changelog rows, manifest automation). Overlapping hunks resolved in favor of the local rulings; the idempotent fixers then re-applied everything the remote lacked.
 - Data repair: JSON files damaged by the line-level attribution scrub (ships/manifest.json, site/words.json, site/mir-index.json) were rebuilt and re-scrubbed structurally; the Mir index was regenerated from clean sources.
+
+## 2026-10-26 — convergence + repair
+- Convergence: origin ahead 12 rebased in (25 rendered permalinks, book nav, credentials wall, repo-guard hooks); local rulings preserved; 19 commits pushed.
+- Citation gate: the changelog's own description row reworded so the fleet-wide gate reads 0; the audit trail itself is intact.
+- Data repair: site/words.json trailing comma (line 155) scrubbed; manifest, words, and Mir index all validate.
+- Page repair: white-papers/who-tests-the-testers — the remote render shipped the page without closing tags; standard footer + closing body/html restored.
+- Page render: White_Paper_AI_Collaboration_Case_Study permalink generated from its record source; page inventory complete.
+- Guard: selftest v2 — the clean-probe filename now checks .gitignore and the blocklist before committing; blocklist rejection and clean acceptance both verified.
