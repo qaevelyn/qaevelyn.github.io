@@ -1,0 +1,8 @@
+*recon*
+*neighbor*
+_drafts/*
+*.rtfd
+*.rtfd/*
+*screenshot*
+.env*
+*.pem

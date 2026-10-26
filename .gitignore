@@ -32,3 +32,6 @@ google analytics Measurement ID (G-WV5JKK585K).txt
 
 # privacy: never track pre-redaction backups (Chain PRIV, Evelyn ruling 2026-10-03)
 *.bak-privacy
+
+# the guard blocklist ships with the repo (*.txt was ignoring it)
+!tools/guard-blocklist.txt
