@@ -11,14 +11,14 @@ Owner ruling 2026-10-26: both directions reconcile into the canonical md; the st
 - white-papers/record-changelog.md row 19: canonical cell not rendered -> "evelyncaro.github.io (name-squat signpost) license standardized + repo"
 - white-papers/record-changelog.md row 20: canonical cell not rendered -> "the class of the prep sheet restructured after publication: red-pen li"
 - white-papers/record-changelog.md: ... further md->static findings suppressed
-- white-papers/record-changelog/index.html row 11: static row absent from canonical md -> "site-wide permalink 404s closed - 25 static pages shipped every /white"
-- white-papers/record-changelog/index.html row 12: static row absent from canonical md -> "doubled title headings removed from 10 static pages pages whose body o"
-- white-papers/record-changelog/index.html row 13: static row absent from canonical md -> "manifest automation wired after first-fire autopsy sync-manifest workf"
-- white-papers/record-changelog/index.html row 14: static row absent from canonical md -> "oct 25, 2026"
+- white-papers/record-changelog/index.html row 12: static row absent from canonical md -> "site-wide permalink 404s closed - 25 static pages shipped every /white"
+- white-papers/record-changelog/index.html row 13: static row absent from canonical md -> "doubled title headings removed from 10 static pages pages whose body o"
+- white-papers/record-changelog/index.html row 14: static row absent from canonical md -> "manifest automation wired after first-fire autopsy sync-manifest workf"
 - white-papers/record-changelog/index.html row 15: static row absent from canonical md -> "oct 25, 2026"
 - white-papers/record-changelog/index.html row 16: static row absent from canonical md -> "oct 25, 2026"
 - white-papers/record-changelog/index.html row 17: static row absent from canonical md -> "oct 25, 2026"
 - white-papers/record-changelog/index.html row 18: static row absent from canonical md -> "oct 25, 2026"
+- white-papers/record-changelog/index.html row 19: static row absent from canonical md -> "oct 25, 2026"
 - white-papers/record-changelog/index.html: ... further static->md findings suppressed
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-10 — the missing link: same-day correction (minutes after publ"
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-10 — brand standard: dv14™ applied across the corpus"
