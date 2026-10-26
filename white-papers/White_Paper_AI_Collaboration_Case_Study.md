@@ -1,3 +1,5 @@
+> **RETIRED — RECORD SOURCE ONLY.** This file is the record copy of "White Paper: AI Collaboration Case Study." It intentionally has NO rendered page and NO permalink. Do not render it; do not flag it as PAGE MISSING. Status per the 2026-10-26 ruling: see white-papers/record-changelog.md and tools/retired-pages.txt.
+
 ---
 layout: single
 title: "Redirect: A Case Study in AI Collaboration"
