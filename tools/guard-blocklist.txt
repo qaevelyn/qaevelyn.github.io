@@ -6,3 +6,6 @@ _drafts/*
 *screenshot*
 .env*
 *.pem
+
+# retired pages — rendered page paths are rejected; record sources stay committable
+white-papers/White_Paper_AI_Collaboration_Case_Study/*
