@@ -24,6 +24,11 @@ MANIFEST = Path("white-papers/manifest.json")
 
 # id -> series heading (owner-maintained; new papers default to placement-pending)
 SERIES_MAP = {
+    "White_Paper_AI_Platform_Comparison": "Series I — Platform Dependency",
+    "who-decides-when-the-model-lies": "Series II — Containment & Governance",
+    "the-tester-is-the-target": "Series II — Containment & Governance",
+    "enhancement-not-replacement": "Series III — Practice & Method",
+    "the-class-of-the-prep-sheet": "Series III — Practice & Method",
     "chatgpt-case-study": "Series I — Platform Dependency",
     "aws-case-study": "Series I — Platform Dependency",
     "aisha-case-study": "Series I — Platform Dependency",
