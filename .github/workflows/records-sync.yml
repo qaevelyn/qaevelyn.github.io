@@ -1,0 +1,45 @@
+name: records-sync
+
+on:
+  push:
+    paths:
+      - "lookbook.html"
+      - "white-papers/**"
+      - "ships/**"
+      - "case-studies/**"
+      - "tools/records/**"
+  schedule:
+    - cron: "17 9 * * 1"   # Mondays 09:17 UTC — weekly drift sweep even without pushes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate records from the book
+        run: |
+          python3 tools/records/build_ships_manifest.py
+          python3 tools/records/build_tracker.py
+          # drift_check exits 1 on findings — findings are the point, not a failure
+          python3 tools/records/drift_check.py || true
+
+      - name: Commit synced records (explicit paths, never -A)
+        run: |
+          git config user.name  "records-sync[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ships/manifest.json white-papers/white-paper-tracker.md site/DRIFT_REPORT.md
+          if git diff --cached --quiet; then
+            echo "No record drift — nothing to commit."
+          else
+            git commit -m "records sync: $(date -u +%F) — manifests + tracker re-synced from lookbook; drift report attached [automated]"
+            git push
+          fi
