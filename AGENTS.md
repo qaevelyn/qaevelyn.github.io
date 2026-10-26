@@ -26,3 +26,12 @@ The changelog is the audit trail; papers carry no visible audit flags. Every rep
   design)" — never as PAGE MISSING. Do not render it. Do not flag it. Do not repair
   it. The guard blocklist rejects any commit that re-introduces the page path.
   Ruling of 2026-10-26: white-papers/record-changelog.md.
+
+## Builds carry no version numbers (ruling 2026-10-26)
+
+- Every new build of anything Evelyn makes ships as "the latest build" — no vN
+  and no build number in filenames, UI labels, or new records. Fleet passes
+  must not attach version labels to new artifacts. Old records keep theirs:
+  they were true when recorded — do not edit them to remove version references.
+- Pre-push guard v3 (same date): the blocklist matches ADDED/MODIFIED paths
+  only; deletions pass. A retired page's removal is pushable by design.
