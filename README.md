@@ -14,7 +14,7 @@ This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.i
 
 **Series IV — The Record Itself.** [Record Changelog](https://qaevelyn.github.io/white-papers/record-changelog/) — every post-publication change, appended-only, nothing retro-edited. [White Paper Tracker](https://qaevelyn.github.io/white-papers/white-paper-tracker/) — the complete corpus map.
 
-## The Fleet — 8 ships
+## The Fleet — 9 ships
 
 | Ship | What it proves |
 |---|---|
@@ -25,6 +25,7 @@ This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.i
 | 5 — Granite + EvidenceFlow | Fail-closed: every claim traceable, abstains if evidence is missing |
 | 6 — [Suite: Ingestion Tools](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools) | Scribe · Warden · Hand — battle-tested: 19 kills survived, 127/127 corpus, zero losses |
 | 7 — [msgvault adapter](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter) | The mail archive, read in its native tongue; watermark-native checkpointing |
+| 10 — Overseer™ (tier-authority orchestrator) | The one that watches the others: visible quorum before generation; canon questions never reach the model |
 | 11 — [AWS CCP study manual (Sleep Is Studying Too™)](https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual) | AGPL template edition: 17 print-ready pages, learning-styles front test, the brand on every page |
 
 ## How the work is built
