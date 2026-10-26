@@ -35,7 +35,7 @@ Local models on consumer hardware (MacBook Air, Intel i5, 8GB RAM, no cloud). Ol
 
 - **Ida B. Wells lens** — date everything, name everything, record the reasoning
 - **Appended, not retro-edited** — corrections are visible additions; originals stand as published
-- **Flagged, not faked** — an unrelocated citation is marked CITATION PENDING, never fabricated
+- **Flagged, not faked** — an unrelocated citation is marked citation, never fabricated
 - **Fail-closed** — EvidenceFlow abstains rather than hallucinate
 
 ## Cite
