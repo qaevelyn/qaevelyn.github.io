@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Services — A Mirror of My Becoming</title>
+<meta name="description" content="Independent verification of AI-assisted work: audits, adversarial testing, and documentation QA. Every engagement ends in a receipt." />
+<style>
+  :root { --ink:#17181a; --paper:#fdfcf9; --muted:#66625a; --line:#e5e0d6; --pen:#8f2d2d; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font:16px/1.65 Georgia, 'Times New Roman', serif; }
+  main { max-width:46rem; margin:0 auto; padding:4rem 1.5rem 3rem }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .4rem }
+  h2 { font-size:1.15rem; margin:2.2rem 0 .6rem }
+  .kicker { color:var(--pen); font:600 .78rem/1 -apple-system, 'Helvetica Neue', Arial, sans-serif;
+            letter-spacing:.14em; text-transform:uppercase; margin:0 0 1.1rem }
+  p { margin:.7rem 0 }
+  .muted { color:var(--muted) }
+  ul { padding-left:1.2rem; margin:.6rem 0 }
+  li { margin:.45rem 0 }
+  a { color:var(--pen); text-underline-offset:3px }
+  footer { border-top:1px solid var(--line); margin:3rem auto 0; padding:1.2rem 1.5rem 2.5rem; max-width:46rem }
+  .copyright { color:var(--muted); font-size:.9rem }
+  .scroll-nav { position:fixed; right:1.25rem; bottom:1.25rem; display:flex; flex-direction:column; gap:.5rem }
+  .scroll-nav button { font:.8rem/1 -apple-system, 'Helvetica Neue', Arial, sans-serif; padding:.55rem .8rem;
+                       border:1px solid var(--line); border-radius:999px; background:#fff; cursor:pointer }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">Verification, not vibes</p>
+<h1>Services</h1>
+<p>I run an independent verification practice built on the same doctrine this site is built on: nothing is claimed unless it can be shown, and every engagement ends in a receipt the client keeps. The work is AI-collaboration QA — auditing systems that were built with AI, testing the outputs people are asked to trust, and checking the documents those outputs produce before they reach a patient, a client, or the public record.</p>
+<p>The published record doubles as the portfolio. Each line of service below links to a paper on this site that shows the method in public, on real systems, with the receipts left in.</p>
+<h2>What an engagement looks like</h2>
+<ul>
+  <li><strong>Audits of AI-assisted work.</strong> What a system actually does, against what it claims to do — the gap is the finding. See <a href="/white-papers/who-tests-the-testers/">Who Tests the Testers</a> and <a href="/white-papers/the-tester-is-the-target/">The Tester Is the Target</a>.</li>
+  <li><strong>Adversarial testing.</strong> Structured attempts to make the model lie, leak, or overreach, documented step by step so the results reproduce. See <a href="/white-papers/three-days-of-silence/">Three Days of Silence</a>.</li>
+  <li><strong>Documentation QA.</strong> Patient-facing and client-facing documents verified line by line — the prep sheet is the canonical case. See <a href="/white-papers/the-class-of-the-prep-sheet/">The Class of the Prep Sheet</a>.</li>
+  <li><strong>Platform evaluation.</strong> Criteria-first assessment of AI platforms for a specific workload, not vendor marketing. See <a href="/white-papers/White_Paper_AI_Platform_Comparison/">the platform comparison paper</a>.</li>
+  <li><strong>Method, on the record.</strong> How the verification is done is itself published: <a href="/white-papers/methodology/">methodology</a> and <a href="/white-papers/white-paper-methodology/">white-paper methodology</a>.</li>
+</ul>
+<h2>The service fleet</h2>
+<p>The standing services, with current availability and per-service notes, live in the <a href="/lookbook.html">lookbook</a> alongside the published ships. The lookbook is the fleet record; this page is the front door.</p>
+<p class="muted">Engagements begin with a scoping conversation — see <a href="/contact/">contact</a>.</p>
+</main>
+<footer>
+<p class="copyright">© 2026 Evelyn Caro. All rights reserved.<br>
+  A Mirror of My Becoming™ — https://qaevelyn.github.io<br>
+  For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
+</footer>
+<div class="scroll-nav">
+  <button id="toTop" aria-label="Back to top">↑ Top</button>
+  <button id="toBottom" aria-label="Jump to end">↓ End</button>
+</div>
+<script>(function(){var t=document.getElementById('toTop'),b=document.getElementById('toBottom');if(t)t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});if(b)b.addEventListener('click',function(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});});})();</script>
+</body>
+</html>
