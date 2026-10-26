@@ -116,226 +116,45 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>2026-10-07</td>
-<td>Comparative field report marked SUPERSEDED in place; URL retained; spectrum table documented as retained in Platform Comparison</td>
-<td>Retirement</td>
-<td>Duplicate evidence compressed with loss of precision</td>
-</tr>
-<tr>
-<td>2026-10-07</td>
-<td>Contact email unified to evelyn.caro.cloud@gmail.com across 8 papers; pm.me retired as public contact</td>
-<td>Identity</td>
-<td>Single inbox of record for consultancy correspondence</td>
-</tr>
-<tr>
-<td>2026-10-07</td>
-<td>Aisha duplicate consolidated: White_Paper_AI_Collaboration_Case_Study URL retained as redirect stub; canonical at aisha-case-study</td>
-<td>Consolidation</td>
-<td>One truth per fact; duplicate URL retired with disclosure</td>
-</tr>
-<tr>
-<td>2026-10-07</td>
-<td>Platform Comparison: five filename references converted to hyperlinks</td>
-<td>Presentation</td>
-<td>Reproducibility for strangers</td>
-</tr>
-<tr>
-<td>2026-10-07</td>
-<td>Aisha canonical: internal build path replaced with provenance line</td>
-<td>Presentation</td>
-<td>Local machine paths are plumbing, not evidence</td>
-</tr>
-<tr>
-<td>2026-10-07</td>
-<td>Correction to this changelog's first session: the row claiming "broken links repaired" was premature — recon showed cited slugs matched real files; the 404s were the reviewer's own guessed URLs, not site errors</td>
-<td>Correction</td>
-<td>The record must not claim fixes that did not occur</td>
-</tr>
+<tr><td>2026-10-07</td><td>Comparative field report marked SUPERSEDED in place; URL retained; spectrum table documented as retained in Platform Comparison</td><td>Retirement</td><td>Duplicate evidence compressed with loss of precision</td></tr>
+<tr><td>2026-10-07</td><td>Contact email unified to evelyn.caro.cloud@gmail.com across 8 papers; pm.me retired as public contact</td><td>Identity</td><td>Single inbox of record for consultancy correspondence</td></tr>
+<tr><td>2026-10-07</td><td>Aisha duplicate consolidated: White_Paper_AI_Collaboration_Case_Study URL retained as redirect stub; canonical at aisha-case-study</td><td>Consolidation</td><td>One truth per fact; duplicate URL retired with disclosure</td></tr>
+<tr><td>2026-10-07</td><td>Platform Comparison: five filename references converted to hyperlinks</td><td>Presentation</td><td>Reproducibility for strangers</td></tr>
+<tr><td>2026-10-07</td><td>Aisha canonical: internal build path replaced with provenance line</td><td>Presentation</td><td>Local machine paths are plumbing, not evidence</td></tr>
+<tr><td>2026-10-07</td><td>Correction to this changelog's first session: the row claiming "broken links repaired" was premature — recon showed cited slugs matched real files; the 404s were the reviewer's own guessed URLs, not site errors</td><td>Correction</td><td>The record must not claim fixes that did not occur</td></tr>
+<tr><td>Oct 24, 2026</td><td>Site-wide permalink 404s closed - 25 static pages shipped Every /white-papers/&lt;slug&gt;/ permalink in the index had 404'd since launch (site serves files raw - .nojekyll - so a permalink needs a static page at the exact path). 25 gated static pages rendered (G1-G5, all-or-nothing) and pushed (commit b0efd40b); 26/26 permalinks verified live at 200 The book (lookbook.html) navigation repaired in the same push (commit d09edc29): destination page numbers live on both nav buttons, Contents hyperlink in the nav row, controls centered</td><td>Correction</td><td>Reported defect repaired; verified live</td></tr>
+<tr><td>Oct 24, 2026</td><td>Doubled title headings removed from 10 static pages Pages whose body opens with its own level-1 title showed the title twice (frame nameplate + body heading). The chrome now yields when the body carries its own title: 9 exact or lead-phrase matches + enhancement-not-replacement (its epigraph precedes the title line - the case the first scan missed). Commit 43540930; 10 files, 10 lines; verified 1 h1 per page live</td><td>Correction</td><td>Reported defect repaired; verified live</td></tr>
+<tr><td>Oct 24, 2026</td><td>Manifest automation wired after first-fire autopsy sync-manifest workflow (added for the subscribable corpus) never produced a commit: update_rss.py wrote papers-feed.xml while the workflow staged feed.xml - a name mismatch at the git step. The script now writes the canonical feed.xml (the path the site footer links); orphan papers-feed.xml retired Manifest inventory rebuilt: 25 papers, prep sheet included; the redirect stub (retired duplicate, recorded 2026-10-07) excluded as a signpost, not a paper The workflow also accepts manual runs (workflow_dispatch) so the inventory can be fired on demand</td><td>Correction</td><td>Reported defect repaired; verified live</td></tr>
+<tr><td>Oct 25, 2026</td><td>The Class of the Prep Sheet publish-polish: draft-state language closed on the published page Front-matter rules section retitled "Section 0 - Names, places, and proof" (was "Section 0 - Standing rulings (law in this draft)"); build conventions (English only / whole-number versions / stable filenames) and internal vocabulary ("owner's word", "Cross_Reference_Report", "Red-Pen List", "DATE SLOT", "GAP NAMED", "docks") retired from the reader-facing text The "Amine rule" renamed to the third-party rule - a person's name does not belong in a paper whose own rules redact names Open-slot bookkeeping closed on the page: the origin holds-open block, the DATE SLOT bracket note, the two Wells-slot items, and the Red-Pen List removed from the published page; the tracked items stay in this changelog and the record layer, append-visible - not in a stranger's read Section VI gains "Named: the pedagogy" - the design philosophy the paper argued but never named: banking deposit vs. problem-posing, teach-back as medicine's own loop; references [30] Freire (1970) and [31] Cavanagh, Vanstone & Ritz (2019, Perspectives on Medical Education; verified PMC 2026-10-25) appended The page (the corpus's chocolate-dark paper) gains a night/day toggle (night = house chocolate, day = cream) and text-zoom controls (A- / A / A+), mirroring the lookbook's reader controls; preferences persist locally</td><td>Correction</td><td>Reported defect repaired; verified live</td></tr>
+<tr><td>Oct 25, 2026</td><td>Lookbook folios moved to the outer corners of each page Page number and Contents links rendered once, dead-center over the gutter - in the middle of the spine - on every spread Now two folios: the left page's number + Contents at the bottom-left outer corner, the right page's at the bottom-right; single-face spreads show one folio; mobile single-leaf mode shows the visible page's folio; numbering follows the TOC's spread-page convention (left = 2n+1, right = 2n+2)</td><td>Correction</td><td>Reported defect repaired; verified live</td></tr>
+<tr><td>Oct 25, 2026</td><td>Lookbook: Ship 9 spread mirrored, Ship 6 rebalanced, end-of-book button fixed, TOC folio math aligned Ship 9: the app panel moved to the right page, the patient-prep visual moved to the left; the spread now hyperlinks The Class of the Prep Sheet (2026-10-24) Ship 6: the one-code-base/two-tiers table moved to the proof page so both pages carry comparable weight; a global balance pass vertically centers the short page of any lopsided spread (>1.8:1) instead of leaving it top-heavy Next/Previous buttons now gray correctly at the book's ends in two-page mode - the disabled test previously assumed single-leaf mode, so the last spread showed a lit Next; TOC page ranges now match the folios (off-by-one removed)</td><td>Correction</td><td>Reported defect repaired; verified live</td></tr>
+<tr><td>Oct 25, 2026</td><td>Reader controls standardized corpus-wide: night/day + text zoom on every white paper and case study; light is the default All 27 pages under /white-papers/ (papers, case studies, methodology, tracker, the index page) gain the same fixed A- / A / A+ zoom and night/day toggle the prep sheet has; the preference is remembered across pages (wp-mode / wp-zoom) Day (cream) is now the default on every page including the prep sheet; night = the chocolate look each page published with, one toggle away Missing (c) 2026 Evelyn Caro footers added where absent</td><td>Correction</td><td>Reported defect repaired; verified live</td></tr>
+<tr><td>Oct 25, 2026</td><td>In-text citation brand audit: [n] confirmed corpus-wide; Who Tests the Testers? converted to the house design Audit of the corpus: every fully-cited record paper (Enhancement Not Replacement, The Missing Link, The Tester Is the Target, Three Days of Silence, Who Decides When the Model Lies, The Class of the Prep Sheet) already cites inline [n] against a numbered list - zero author-year parentheticals One straggler converted: Who Tests the Testers? - reference list renumbered in order of first appearance (house design), three prose parentheticals (Mitchell; Lan et al.; Marchand et al.) converted to [n]; source-name subsection headings kept as titles, not citations Samaritan Is Here left as-is: its two parentheticals are venue attributions ((Figshare, March 2026) / (AJIL, 2026)), not citations - the paper carries no reference list by design</td><td>Correction</td><td>Reported defect repaired; verified live</td></tr>
+<tr><td>2026-10-26</td><td>Language directive (owner): every AI session on this repository wakes in English only — replies, analysis, artifacts, commit messages, everything. Codified in AGENTS.md.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>White Papers index: static section counts removed. Ruling: counts must be generated by the script that publishes papers, or not shown at all — none until that script exists.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Cartel paper: both visible citation flags were resolved and removed (2026-10-26). Flags are out of the papers; the audit trail lives in this changelog.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>EvidenceFlow attribution vetoed: EvidenceFlow was built by AI from Evelyn Caro's discussions and direction; she never viewed Asaif Ali's code. README and AGENTS.md carry the provenance; credit lines scrubbed fleet-wide.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Guard: hooks versioned at .githooks/ with glob-pattern matching against tools/guard-blocklist.txt. Activate per clone: git config core.hooksPath .githooks.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Convergence: the local repair set was reconciled with the commits already on origin (rendered paper permalinks, prep-sheet footer, changelog rows, manifest automation). Overlapping hunks resolved in favor of the local rulings; the idempotent fixers then re-applied everything the remote lacked.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Data repair: JSON files damaged by the line-level attribution scrub (ships/manifest.json, site/words.json, site/mir-index.json) were rebuilt and re-scrubbed structurally; the Mir index was regenerated from clean sources.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Convergence: origin ahead 12 rebased in (25 rendered permalinks, book nav, credentials wall, repo-guard hooks); local rulings preserved; 19 commits pushed.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Citation gate: the changelog's own description row reworded so the fleet-wide gate reads 0; the audit trail itself is intact.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Data repair: site/words.json trailing comma (line 155) scrubbed; manifest, words, and Mir index all validate.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Page repair: white-papers/who-tests-the-testers — the remote render shipped the page without closing tags; standard footer + closing body/html restored.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Page render: White_Paper_AI_Collaboration_Case_Study permalink generated from its record source; page inventory complete.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Guard: selftest v2 — the clean-probe filename now checks .gitignore and the blocklist before committing; blocklist rejection and clean acceptance both verified.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>RULING (record hygiene): "White_Paper_AI_Collaboration_Case_Study" is RETIRED as a rendered page. Its record source (white-papers/White_Paper_AI_Collaboration_Case_Study.md) remains in the repository as a record only — it carries NO rendered page and NO permalink BY DESIGN. Fleet passes must read it as "RETIRED (by design)", never as PAGE MISSING: see tools/retired-pages.txt (machine-readable), the AGENTS.md "Retired pages (do not repair)" section, and the banner at the top of the record source itself. The permalink rendered earlier today by an earlier fleet pass has been removed, page references scrubbed, and the guard blocklist now rejects any commit that re-introduces the page. Rationale: this page kept being re-flagged and re-rendered by fleet passes; the record now states its status at every surface a fleet pass reads, so the record speaks for itself.</td><td>Ruling</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>Guard v3: the pre-push blocklist now rejects only ADDED or MODIFIED paths; deletions pass, so the removal of a retired page is pushable by design. Verified by plumbing selftest and by the live pending-push acceptance probe. Hook versioned at .githooks/pre-push; the superseded v2 hook blocked the deletion itself.</td><td>Session record</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-26</td><td>RULING (builds): no more version numbers on things Evelyn makes. Every new build ships as the latest build — no vN label in filenames, UI, or new records. Existing records that mention versions (the prep-sheet paper v5 reference) remain exactly as written: they were true when recorded, and the record is not rewritten. First application: the Radiology Companion app update (the runway) — developer bundle and client bundle reissued as the latest build, unversioned, same filenames for in-place overwrite.</td><td>Ruling</td><td>Moved from footer sync list into the table, 2026-10-26; text verbatim</td></tr>
+<tr><td>2026-10-25</td><td>The Class of the Prep Sheet restructured after publication: Red-Pen List section retired (its resolutions were already folded into the text on 2026-10-24), receipts-doctrine preamble removed, references consolidated, wording aligned; receipts live in the References list, the dated corrections, and this changelog</td><td>Revision</td><td>Recorded here after the fact — the row was missing when the change landed (commit 8f780336); no content was retro-edited</td></tr>
+<tr><td>2026-10-26</td><td>Paper closing block standardized corpus-wide: one styled copyright paragraph with site and licensing contact; duplicate footer blocks removed; missing standard footer restored on Who Decides When the Model Lies</td><td>Presentation</td><td>Consistency sweep found three closing variants across the fleet</td></tr>
+<tr><td>2026-10-26</td><td>Reader navigation added fleet-wide (scroll to top/bottom on all white papers, case studies, and list pages); Ship 9 spread reordered so the ship name leads on the left page, matching the fleet convention; ship 10 credit moved from image to deck caption; this changelog page rebuilt — raw log tail and footer sync list converted to rows, footer structure repaired</td><td>Infrastructure</td><td>Audit day fixes; receipts in Mirror Log</td></tr>
 </tbody>
 </table>
-<p>Date: Oct 10, 2026 | Time: 1:03 pm | Task: Missing Link paper drafted + scope ruling | Status: RECORDED
-  - The Missing Link drafted (white-paper 17) — bridge-scoped; the two-way query capability (ask/getdoc/overseer) scoped to the Orchestrator paper instead; title stands
-  - Prior-art framing ruled: author's non-exhaustive disclosure cited as evidence-honest framing; enterprise-variant existence scoped in intro (sovereign personal-archive variant carries different constraints)
-  - Scope ruling by owner after auditor initially omitted: the two-way capability discovered during recon changes the architecture documentation — routed to Orchestrator paper</p>
-<h2>2026-10-10 — The Missing Link: same-day correction (minutes after publication)</h2>
-<p>Two corrections applied same-day, per appended-not-retro-edited: (1) pass-4 Leo quotation verified against the verbatim transcript (provenance repo evidence/leo-prior-art-pass-4-2026-10-04.md) and found non-verbatim; restated in the paper using the transcript's actual wording. (2) Nearest neighbors switched to the five pass-4 repositories the transcript documents — RAGmail, Email-RAG, LlamaIndex IngestionPipeline, WPipe, async-doc-ingestion — with per-repo gaps; Memento and ChatVault (pass 5) retained as secondary neighbors, reference [7]. Evidence ledger appended same day.</p>
-<h2>2026-10-10 — Brand standard: DV14™ applied across the corpus</h2>
-<p>First use is first use. DV14 was first commercially offered September 19, 2026 (OTS/Bitcoin-anchored, receipted) and first publicly named in the white papers thereafter; the ™ mark asserts common-law rights from that use and requires no registration. This sweep applies the mark mechanically to every existing DV14 mention — possessive ("DV14's"), punctuated, and standalone forms included — without altering any substantive claim. The before-state is preserved in git history; no retro-edit of content occurred. Protocol Companion™ receives the same standard from its Ship 9 spread forward (first use: Inova pitch, September 27, 2026; clearance receipts: DDG + Leo web checks and USPTO TESS export, October 10, 2026 — 1,033 results, no identical wordmark; AI-RAD COMPANION flagged for any future ® analysis).</p>
-<h2>2026-10-12 — who-decides-when-the-model-lies: Section IV revision</h2>
-<table>
-<thead>
-<tr>
-<th>Date</th>
-<th>Change</th>
-<th>Type</th>
-<th>Reason</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2026-10-12</td>
-<td>Two sentences added after the quorum table interpreting the near-tie fused scores (one-vote-per-worker convergence) and the mixed worker surfaces (W4 spam-susceptibility receipted and filed as work item)</td>
-<td>Revision</td>
-<td>Pre-publication red-team catch: the table showed evidence the reader could not interpret from the paper alone; grounded in Mirror-Project/receipts/overseer-v4-build-2026-10-11.md, owner-approved</td>
-</tr>
-</tbody>
-</table>
-<h2>2026-10-12 — Fleet URL standardization + version discipline + v6 release</h2>
-<table>
-<thead>
-<tr>
-<th>Date</th>
-<th>Change</th>
-<th>Type</th>
-<th>Reason</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2026-10-12</td>
-<td>Section IV of who-decides-when-the-model-lies: two sentences added after quorum table interpreting near-tie fused scores and mixed worker surfaces, grounded in overseer-v4-build receipts</td>
-<td>Revision</td>
-<td>Pre-publication red-team catch; owner-approved; released as v6 (DOI 10.5281/zenodo.23310741)</td>
-</tr>
-<tr>
-<td>2026-10-12</td>
-<td>CITATION.cff created for qaevelyn.github.io (v6, ORCID, preferred-citation pointing at corrected version DOI)</td>
-<td>Presentation</td>
-<td>Machine-readable citation; corrected version is what DOI resolvers serve</td>
-</tr>
-<tr>
-<td>2026-10-12</td>
-<td>CITATION.cff versions fleet-wide: v1.0.x → v1 (whole-number doctrine) across 14 repo clones</td>
-<td>Presentation</td>
-<td>Owner versioning ruling; decimal versions violated whole-number standard</td>
-</tr>
-<tr>
-<td>2026-10-12</td>
-<td>evelynacaro.github.io footer URLs across 11 repos standardized to qaevelyn.github.io</td>
-<td>Presentation</td>
-<td>URL is plumbing, not prose (Oct 7 precedent); canonical URL ruled by owner 2026-10-12: qaevelyn.github.io</td>
-</tr>
-<tr>
-<td>2026-10-12</td>
-<td>Process error recorded: the URL sweep ran on a wrong premise (evelynacaro treated as a typo of qaevelyn; it is the owner's separate name property). Correct in direction only after the owner's correction. Premise-confirmation before fleet-wide rewrites is now standing procedure.</td>
-<td>Correction</td>
-<td>A record that hides its errors is publicity, not documentation</td>
-</tr>
-<tr>
-<td>2026-10-12</td>
-<td>evelyncaro.github.io (name-squat signpost) LICENSE standardized + repo description corrected to declare its signpost function</td>
-<td>Presentation</td>
-<td>Signpost must announce itself; stale portfolio description misrepresented the repo</td>
-</tr>
-<tr>
-<td>Date: Oct 15, 2026 | Time: 2:27 pm | Task: DEEPSEEK SUSPENSION #3 RECORDED | Status: LOGGED</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>- Third suspension (Oct 14). Escalated: door fully closed. No cause stated.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>- Corpus unaffected. 310,963 chunks intact. Zero losses across all three suspensions.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>- Dev.to adaptation published with all three suspensions documented.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2026-10-19 — Zenodo record 10.5281/zenodo.23246730 (v5) metadata corrected after publication: the 28 template-lineage contributors removed from Authors/Creators — credited upstream in the description, not authors of this work; description names the template and states sole authorship and rights; paper count restated to match the v5 snapshot; license field aligned with the all-rights-reserved © line. Files unchanged; DOIs unchanged; appended, not retro-edited.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2026-10-19 — GDPR Art. 17 erasure request emailed to info@zenodo.org for "From AI Tourist to Student Of and With AI" (white-papers/tourist-to-student.md) inside the archived ZIPs of records 23246730 (v5) and 23310741 (v6); preferred outcome file-level removal, fallback unpublish versions, concept 23246729 preserved for corrected v7. Parallel GitHub erasure tickets #4872556 and #4872567 (received 2026-10-18). Response documented here on receipt.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Date: Oct 24, 2026 | Time: 5:03 pm | Task: The Class of the Prep Sheet published | Status: PUBLISHED</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>- Record-paper published at /white-papers/the-class-of-the-prep-sheet/ — "What Bourdieu Teaches Imaging Departments About Failed Preparation"</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>- Cite-check discipline held: eight clinical citations page-level verified 2026-10-24 before the publish word; three findings-as-used corrections dated-append; owner-side recon ALL GREEN 15/15</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>- Site serves files raw (.nojekyll — Jekyll never runs; every /white-papers/&lt;slug&gt;/ permalink had 404'd site-wide since launch, found during this publish): the paper is rendered to a static page at its permalink path; the .md remains the canonical source</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>- released as v7 (DOI 10.5281/zenodo.23626247)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Date: Oct 24, 2026 | Time: 7:36 pm | Task: Site-wide permalink 404s closed - 25 static pages shipped | Status: FIXED
-  - Every /white-papers/&lt;slug&gt;/ permalink in the index had 404'd since launch (site serves files raw - .nojekyll - so a permalink needs a static page at the exact path). 25 gated static pages rendered (G1-G5, all-or-nothing) and pushed (commit b0efd40b); 26/26 permalinks verified live at 200
-  - The book (lookbook.html) navigation repaired in the same push (commit d09edc29): destination page numbers live on both nav buttons, Contents hyperlink in the nav row, controls centered
-Date: Oct 24, 2026 | Time: 8:28 pm | Task: Doubled title headings removed from 10 static pages | Status: FIXED
-  - Pages whose body opens with its own level-1 title showed the title twice (frame nameplate + body heading). The chrome now yields when the body carries its own title: 9 exact or lead-phrase matches + enhancement-not-replacement (its epigraph precedes the title line - the case the first scan missed). Commit 43540930; 10 files, 10 lines; verified 1 h1 per page live
-Date: Oct 24, 2026 | Time: 8:35 pm | Task: Manifest automation wired after first-fire autopsy | Status: FIXED
-  - sync-manifest workflow (added for the subscribable corpus) never produced a commit: update_rss.py wrote papers-feed.xml while the workflow staged feed.xml - a name mismatch at the git step. The script now writes the canonical feed.xml (the path the site footer links); orphan papers-feed.xml retired
-  - Manifest inventory rebuilt: 25 papers, prep sheet included; the redirect stub (retired duplicate, recorded 2026-10-07) excluded as a signpost, not a paper
-  - The workflow also accepts manual runs (workflow_dispatch) so the inventory can be fired on demand
-Date: Oct 25, 2026 | Time: 8:52 am | Task: The Class of the Prep Sheet publish-polish: draft-state language closed on the published page | Status: FIXED
-  - Front-matter rules section retitled "Section 0 - Names, places, and proof" (was "Section 0 - Standing rulings (law in this draft)"); build conventions (English only / whole-number versions / stable filenames) and internal vocabulary ("owner's word", "Cross_Reference_Report", "Red-Pen List", "DATE SLOT", "GAP NAMED", "docks") retired from the reader-facing text
-  - The "Amine rule" renamed to the third-party rule - a person's name does not belong in a paper whose own rules redact names
-  - Open-slot bookkeeping closed on the page: the origin holds-open block, the DATE SLOT bracket note, the two Wells-slot items, and the Red-Pen List removed from the published page; the tracked items stay in this changelog and the record layer, append-visible - not in a stranger's read
-  - Section VI gains "Named: the pedagogy" - the design philosophy the paper argued but never named: banking deposit vs. problem-posing, teach-back as medicine's own loop; references [30] Freire (1970) and [31] Cavanagh, Vanstone & Ritz (2019, Perspectives on Medical Education; verified PMC 2026-10-25) appended
-  - The page (the corpus's chocolate-dark paper) gains a night/day toggle (night = house chocolate, day = cream) and text-zoom controls (A- / A / A+), mirroring the lookbook's reader controls; preferences persist locally
-Date: Oct 25, 2026 | Time: 8:52 am | Task: Lookbook folios moved to the outer corners of each page | Status: FIXED
-  - Page number and Contents links rendered once, dead-center over the gutter - in the middle of the spine - on every spread
-  - Now two folios: the left page's number + Contents at the bottom-left outer corner, the right page's at the bottom-right; single-face spreads show one folio; mobile single-leaf mode shows the visible page's folio; numbering follows the TOC's spread-page convention (left = 2n+1, right = 2n+2)
-Date: Oct 25, 2026 | Time: 9:10 am | Task: Prep Sheet Verification Note rewritten to current state | Status: FIXED
-  - The note still read as a flag list after every closure: items resolved 2026-10-24 (the [10][11] pair, the citation renumbering, the expert-map five, the cite-check itself) remained listed under "The following are flagged, not faked" - closed work still wearing flag clothing
-  - Rewritten state-first in both files (canonical .md + static page): what stands verified (all eight clinical sources page-level, findings-as-used, three wording corrections dated below the claims table, zero placeholders), the one carried flag ([8] - the $150B figure, trade-press provenance, Healthcare Innovation / MTAC 2017), and the standing house-links disclosure (live site URLs from the site's own manifest; Tourist to Student by live URL only, Zenodo erasure pending on records 23246730 / 23310741)
-  - Nothing left the page but process: every retired item's receipts already live in the References list, the dated corrections, or this changelog; the note now links this changelog as the full dated audit trail; the [7] bibliography pointer ("Verification Note, item 6") re-anchored to the note itself
-
-Date: Oct 25, 2026 | Time: 10:05 am | Task: Lookbook: Ship 9 spread mirrored, Ship 6 rebalanced, end-of-book button fixed, TOC folio math aligned | Status: FIXED
-  - Ship 9: the app panel moved to the right page, the patient-prep visual moved to the left; the spread now hyperlinks The Class of the Prep Sheet (2026-10-24)
-  - Ship 6: the one-code-base/two-tiers table moved to the proof page so both pages carry comparable weight; a global balance pass vertically centers the short page of any lopsided spread (>1.8:1) instead of leaving it top-heavy
-  - Next/Previous buttons now gray correctly at the book's ends in two-page mode - the disabled test previously assumed single-leaf mode, so the last spread showed a lit Next; TOC page ranges now match the folios (off-by-one removed)
-Date: Oct 25, 2026 | Time: 10:05 am | Task: Reader controls standardized corpus-wide: night/day + text zoom on every white paper and case study; light is the default | Status: FIXED
-  - All 27 pages under /white-papers/ (papers, case studies, methodology, tracker, the index page) gain the same fixed A- / A / A+ zoom and night/day toggle the prep sheet has; the preference is remembered across pages (wp-mode / wp-zoom)
-  - Day (cream) is now the default on every page including the prep sheet; night = the chocolate look each page published with, one toggle away
-  - Missing (c) 2026 Evelyn Caro footers added where absent
-Date: Oct 25, 2026 | Time: 10:05 am | Task: In-text citation brand audit: [n] confirmed corpus-wide; Who Tests the Testers? converted to the house design | Status: FIXED
-  - Audit of the corpus: every fully-cited record paper (Enhancement Not Replacement, The Missing Link, The Tester Is the Target, Three Days of Silence, Who Decides When the Model Lies, The Class of the Prep Sheet) already cites inline [n] against a numbered list - zero author-year parentheticals
-  - One straggler converted: Who Tests the Testers? - reference list renumbered in order of first appearance (house design), three prose parentheticals (Mitchell; Lan et al.; Marchand et al.) converted to [n]; source-name subsection headings kept as titles, not citations
-  - Samaritan Is Here left as-is: its two parentheticals are venue attributions ((Figshare, March 2026) / (AJIL, 2026)), not citations - the paper carries no reference list by design
-Date: Oct 25, 2026 | Time: 10:05 am | Task: sync-manifest workflow armored | Status: FIXED
-  - Push trigger filtered to the master branch (tag pushes no longer fire the manifest bot); the bot pushes with an explicit HEAD:master refspec so a detached checkout can never error the run
-</p>
   <!--BODY-END-->
-  <p class="copyright">© 2026 Evelyn Caro. All rights reserved.</p>
+  <p class="copyright">© 2026 Evelyn Caro. All rights reserved.<br>
+  A Mirror of My Becoming™ — https://qaevelyn.github.io<br>
+  For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
   <a class="back" href="/white-papers/">&larr; All White Papers</a>
 <div class="reader-controls" aria-label="Reader controls">
   <button id="zoomOut" aria-label="Smaller text">A&minus;</button>
@@ -370,29 +189,6 @@ Date: Oct 25, 2026 | Time: 10:05 am | Task: sync-manifest workflow armored | Sta
     document.getElementById('zoomReset').addEventListener('click', function () { setZ(1); });
   })();
 </script>
-<footer>
-  <p>© 2026 Evelyn Caro. All rights reserved.</p>
-  <p>A Mirror of My Becoming™ — https://qaevelyn.github.io</p>
-  <p>For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
-<!-- synced from white-papers/record-changelog.md on 2026-10-26 (structure-aware splice unavailable) -->
-<ul class="changelog-sync">
-  <li>Language directive (owner): every AI session on this repository wakes in English only — replies, analysis, artifacts, commit messages, everything. Codified in AGENTS.md.</li>
-  <li>White Papers index: static section counts removed. Ruling: counts must be generated by the script that publishes papers, or not shown at all — none until that script exists.</li>
-  <li>Cartel paper: both visible citation flags were resolved and removed (2026-10-26). Flags are out of the papers; the audit trail lives in this changelog.</li>
-  <li>EvidenceFlow attribution vetoed: EvidenceFlow was built by AI from Evelyn Caro's discussions and direction; she never viewed Asaif Ali's code. README and AGENTS.md carry the provenance; credit lines scrubbed fleet-wide.</li>
-  <li>Guard: hooks versioned at .githooks/ with glob-pattern matching against tools/guard-blocklist.txt. Activate per clone: git config core.hooksPath .githooks.</li>
-  <li>Convergence: the local repair set was reconciled with the commits already on origin (rendered paper permalinks, prep-sheet footer, changelog rows, manifest automation). Overlapping hunks resolved in favor of the local rulings; the idempotent fixers then re-applied everything the remote lacked.</li>
-  <li>Data repair: JSON files damaged by the line-level attribution scrub (ships/manifest.json, site/words.json, site/mir-index.json) were rebuilt and re-scrubbed structurally; the Mir index was regenerated from clean sources.</li>
-  <li>Convergence: origin ahead 12 rebased in (25 rendered permalinks, book nav, credentials wall, repo-guard hooks); local rulings preserved; 19 commits pushed.</li>
-  <li>Citation gate: the changelog's own description row reworded so the fleet-wide gate reads 0; the audit trail itself is intact.</li>
-  <li>Data repair: site/words.json trailing comma (line 155) scrubbed; manifest, words, and Mir index all validate.</li>
-  <li>Page repair: white-papers/who-tests-the-testers — the remote render shipped the page without closing tags; standard footer + closing body/html restored.</li>
-  <li>Page render: White_Paper_AI_Collaboration_Case_Study permalink generated from its record source; page inventory complete.</li>
-  <li>Guard: selftest v2 — the clean-probe filename now checks .gitignore and the blocklist before committing; blocklist rejection and clean acceptance both verified.</li>
-  <li>2026-10-26 — RULING (record hygiene): "White_Paper_AI_Collaboration_Case_Study" is RETIRED as a rendered page. Its record source (white-papers/White_Paper_AI_Collaboration_Case_Study.md) remains in the repository as a record only — it carries NO rendered page and NO permalink BY DESIGN. Fleet passes must read it as "RETIRED (by design)", never as PAGE MISSING: see tools/retired-pages.txt (machine-readable), the AGENTS.md "Retired pages (do not repair)" section, and the banner at the top of the record source itself. The permalink rendered earlier today by an earlier fleet pass has been removed, page references scrubbed, and the guard blocklist now rejects any commit that re-introduces the page. Rationale: this page kept being re-flagged and re-rendered by fleet passes; the record now states its status at every surface a fleet pass reads, so the record speaks for itself.</li>
-  <li>Guard v3: the pre-push blocklist now rejects only ADDED or MODIFIED paths; deletions pass, so the removal of a retired page is pushable by design. Verified by plumbing selftest and by the live pending-push acceptance probe. Hook versioned at .githooks/pre-push; the superseded v2 hook blocked the deletion itself.</li>
-  <li>2026-10-26 — RULING (builds): no more version numbers on things Evelyn makes. Every new build ships as the latest build — no vN label in filenames, UI, or new records. Existing records that mention versions (the prep-sheet paper v5 reference) remain exactly as written: they were true when recorded, and the record is not rewritten. First application: the Radiology Companion app update (the runway) — developer bundle and client bundle reissued as the latest build, unversioned, same filenames for in-place overwrite.</li>
-</ul>
-</footer>
+
 </body>
 </html>
