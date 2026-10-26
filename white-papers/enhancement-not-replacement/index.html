@@ -209,5 +209,16 @@ For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
     document.getElementById('zoomReset').addEventListener('click', function () { setZ(1); });
   })();
 </script>
+<style>
+.scroll-nav{position:fixed;bottom:1rem;right:0.9rem;z-index:60;display:flex;gap:0.4rem;}
+.scroll-nav button{background:#2c1810;color:#f5e6d3;border:1px solid #8b6f3d;border-radius:6px;padding:0.45rem 0.7rem;font-family:Georgia,serif;font-size:0.95rem;cursor:pointer;box-shadow:0 2px 6px rgba(44,24,16,0.35);}
+.scroll-nav button:hover{background:#3d2e1e;}
+@media print{.scroll-nav{display:none;}}
+</style>
+<div class="scroll-nav" aria-label="Scroll navigation">
+  <button id="toTop" aria-label="Back to top">↑ Top</button>
+  <button id="toBottom" aria-label="Go to bottom">↓ End</button>
+</div>
+<script>(function(){var t=document.getElementById('toTop'),b=document.getElementById('toBottom');if(t)t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});if(b)b.addEventListener('click',function(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});});})();</script>
 </body>
 </html>
