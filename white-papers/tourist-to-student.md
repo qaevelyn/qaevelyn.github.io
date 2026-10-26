@@ -51,14 +51,14 @@ The URL carries the program's own campaign tags: `sc_campaign=aiml_scholars&trk=
 
 I completed all eight modules of the AWS AI Practitioner Learning Plan on June 8, 2026, and earned eight AWS Training & Certification completion certificates. Every certificate is dated the same day and signed by the same director:
 
-- [Fundamentals of Machine Learning and Artificial Intelligence](/assets/certificates/fundamentals-of-machine-learning-and-artificial-intelligence.pdf){:target="_blank"}
-- [Exploring Artificial Intelligence Use Cases and Applications](/assets/certificates/exploring-artificial-intelligence-use-cases-and-applications.pdf){:target="_blank"}
-- [Responsible Artificial Intelligence Practices](/assets/certificates/responsible-artificial-intelligence-practices.pdf){:target="_blank"}
-- [Developing Machine Learning Solutions](/assets/certificates/developing-machine-learning-solutions.pdf){:target="_blank"}
-- [Developing Generative Artificial Intelligence Solutions](/assets/certificates/developing-generative-artificial-intelligence-solutions.pdf){:target="_blank"}
-- [Optimizing Foundation Models](/assets/certificates/optimizing-foundation-models.pdf){:target="_blank"}
-- [Security, Compliance, and Governance for AI Solutions](/assets/certificates/security-compliance-and-governance-for-ai-solutions.pdf){:target="_blank"}
-- [Essentials of Prompt Engineering](/assets/certificates/essentials-of-prompt-engineering.pdf){:target="_blank"}
+- [Fundamentals of Machine Learning and Artificial Intelligence](/assets/certificates/fundamentals-of-machine-learning-and-artificial-intelligence.pdf)
+- [Exploring Artificial Intelligence Use Cases and Applications](/assets/certificates/exploring-artificial-intelligence-use-cases-and-applications.pdf)
+- [Responsible Artificial Intelligence Practices](/assets/certificates/responsible-artificial-intelligence-practices.pdf)
+- [Developing Machine Learning Solutions](/assets/certificates/developing-machine-learning-solutions.pdf)
+- [Developing Generative Artificial Intelligence Solutions](/assets/certificates/developing-generative-artificial-intelligence-solutions.pdf)
+- [Optimizing Foundation Models](/assets/certificates/optimizing-foundation-models.pdf)
+- [Security, Compliance, and Governance for AI Solutions](/assets/certificates/security-compliance-and-governance-for-ai-solutions.pdf)
+- [Essentials of Prompt Engineering](/assets/certificates/essentials-of-prompt-engineering.pdf)
 
 I did the work in a single day because I had found out late. The plan had been open since March. I did not have weeks to learn slowly. I used AI to move through the material fast enough to be in the pool before the program closed.
 
@@ -594,14 +594,14 @@ The log is the source. The work is the proof.
 
 ### The prequel — prior published work
 
-- Caro, E. (2026a). [Sovereign AI vs. Silicon Valley: A Different Origin Story](https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/){:target="_blank"}.
-- Caro, E. (2026b). [The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?](https://qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/){:target="_blank"}.
-- Caro, E. (2026c). [Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI](https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/){:target="_blank"}.
-- Caro, E. (2026d). [Who Tests the Testers? Containment Failures in Frontier AI Security](https://qaevelyn.github.io/white-papers/who-tests-the-testers/){:target="_blank"}.
-- Caro, E. (2026e). [White Paper: AI Platform Comparison for Sovereign Archive Development](https://qaevelyn.github.io/white-papers/WhitePaperAIPlatformComparison/){:target="_blank"}.
-- Caro, E. (2026f). [Case Study: DeepSeek — The Benchmark](https://qaevelyn.github.io/white-papers/deepseek-case-study/){:target="_blank"}.
-- Caro, E. (2026g). [Case Study: Manus — From Loyalty to Betrayal to Sovereignty](https://qaevelyn.github.io/white-papers/manus-case-study/){:target="_blank"}.
-- Caro, E. (2026h). [Case Study: ChatGPT — From Reliance to Rejection](https://qaevelyn.github.io/white-papers/chatgpt-case-study/){:target="_blank"}.
+- Caro, E. (2026a). [Sovereign AI vs. Silicon Valley: A Different Origin Story](https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/).
+- Caro, E. (2026b). [The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?](https://qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/).
+- Caro, E. (2026c). [Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI](https://qaevelyn.github.io/white-papers/sovereign-recursive-improvement/).
+- Caro, E. (2026d). [Who Tests the Testers? Containment Failures in Frontier AI Security](https://qaevelyn.github.io/white-papers/who-tests-the-testers/).
+- Caro, E. (2026e). [White Paper: AI Platform Comparison for Sovereign Archive Development](https://qaevelyn.github.io/white-papers/WhitePaperAIPlatformComparison/).
+- Caro, E. (2026f). [Case Study: DeepSeek — The Benchmark](https://qaevelyn.github.io/white-papers/deepseek-case-study/).
+- Caro, E. (2026g). [Case Study: Manus — From Loyalty to Betrayal to Sovereignty](https://qaevelyn.github.io/white-papers/manus-case-study/).
+- Caro, E. (2026h). [Case Study: ChatGPT — From Reliance to Rejection](https://qaevelyn.github.io/white-papers/chatgpt-case-study/).
 
 ---
 
