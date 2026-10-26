@@ -28,7 +28,7 @@ Created Oct 1, 2026. Consult this map BEFORE any structural change; update it AF
 - LICENSE (site), CNAME, Dockerfile/docker-compose — infrastructure
 
 ## LAYER 6 — LOOSE EVIDENCE (root — candidates for site/evidence/ someday)
-- exhibit 1–7 PNGs, FTC confirmation PDF, AWS cert PDFs, Coursera PDFs, screen recording .mov, ICP/LEAD-GEN md files
+- exhibit 1–7 PNGs, FTC confirmation PDF, AWS cert PDFs, Coursera PDFs, screen recording .mov, ICP/LEAD-GEN md files — moved to the private mirror 2026-10-26 (raw detail private, public summary canonical; owner ruling: do both)
 
 ## EXTERNAL (not in this repo)
 - Suite repo: a-mirror-of-my-becoming-suite-ingestion-tools (Ship 6+7, AGPL)
