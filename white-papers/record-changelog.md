@@ -64,40 +64,20 @@ Date: Oct 24, 2026 | Time: 5:03 pm | Task: The Class of the Prep Sheet published
   - Cite-check discipline held: eight clinical citations page-level verified 2026-10-24 before the publish word; three findings-as-used corrections dated-append; owner-side recon ALL GREEN 15/15
   - Site serves files raw (.nojekyll — Jekyll never runs; every /white-papers/<slug>/ permalink had 404'd site-wide since launch, found during this publish): the paper is rendered to a static page at its permalink path; the .md remains the canonical source
   - released as v7 (DOI 10.5281/zenodo.23626247)
-
-Date: Oct 24, 2026 | Time: 7:36 pm | Task: Site-wide permalink 404s closed - 25 static pages shipped | Status: FIXED
-  - Every /white-papers/<slug>/ permalink in the index had 404'd since launch (site serves files raw - .nojekyll - so a permalink needs a static page at the exact path). 25 gated static pages rendered (G1-G5, all-or-nothing) and pushed (commit b0efd40b); 26/26 permalinks verified live at 200
-  - The book (lookbook.html) navigation repaired in the same push (commit d09edc29): destination page numbers live on both nav buttons, Contents hyperlink in the nav row, controls centered
-Date: Oct 24, 2026 | Time: 8:28 pm | Task: Doubled title headings removed from 10 static pages | Status: FIXED
-  - Pages whose body opens with its own level-1 title showed the title twice (frame nameplate + body heading). The chrome now yields when the body carries its own title: 9 exact or lead-phrase matches + enhancement-not-replacement (its epigraph precedes the title line - the case the first scan missed). Commit 43540930; 10 files, 10 lines; verified 1 h1 per page live
-Date: Oct 24, 2026 | Time: 8:35 pm | Task: Manifest automation wired after first-fire autopsy | Status: FIXED
-  - sync-manifest workflow (added for the subscribable corpus) never produced a commit: update_rss.py wrote papers-feed.xml while the workflow staged feed.xml - a name mismatch at the git step. The script now writes the canonical feed.xml (the path the site footer links); orphan papers-feed.xml retired
-  - Manifest inventory rebuilt: 25 papers, prep sheet included; the redirect stub (retired duplicate, recorded 2026-10-07) excluded as a signpost, not a paper
-  - The workflow also accepts manual runs (workflow_dispatch) so the inventory can be fired on demand
-Date: Oct 25, 2026 | Time: 8:52 am | Task: The Class of the Prep Sheet publish-polish: draft-state language closed on the published page | Status: FIXED
-  - Front-matter rules section retitled "Section 0 - Names, places, and proof" (was "Section 0 - Standing rulings (law in this draft)"); build conventions (English only / whole-number versions / stable filenames) and internal vocabulary ("owner's word", "Cross_Reference_Report", "Red-Pen List", "DATE SLOT", "GAP NAMED", "docks") retired from the reader-facing text
-  - The "Amine rule" renamed to the third-party rule - a person's name does not belong in a paper whose own rules redact names
-  - Open-slot bookkeeping closed on the page: the origin holds-open block, the DATE SLOT bracket note, the two Wells-slot items, and the Red-Pen List removed from the published page; the tracked items stay in this changelog and the record layer, append-visible - not in a stranger's read
-  - Section VI gains "Named: the pedagogy" - the design philosophy the paper argued but never named: banking deposit vs. problem-posing, teach-back as medicine's own loop; references [30] Freire (1970) and [31] Cavanagh, Vanstone & Ritz (2019, Perspectives on Medical Education; verified PMC 2026-10-25) appended
-  - The page (the corpus's chocolate-dark paper) gains a night/day toggle (night = house chocolate, day = cream) and text-zoom controls (A- / A / A+), mirroring the lookbook's reader controls; preferences persist locally
-Date: Oct 25, 2026 | Time: 8:52 am | Task: Lookbook folios moved to the outer corners of each page | Status: FIXED
-  - Page number and Contents links rendered once, dead-center over the gutter - in the middle of the spine - on every spread
-  - Now two folios: the left page's number + Contents at the bottom-left outer corner, the right page's at the bottom-right; single-face spreads show one folio; mobile single-leaf mode shows the visible page's folio; numbering follows the TOC's spread-page convention (left = 2n+1, right = 2n+2)
-Date: Oct 25, 2026 | Time: 9:10 am | Task: Prep Sheet Verification Note rewritten to current state | Status: FIXED
-  - The note still read as a flag list after every closure: items resolved 2026-10-24 (the [10][11] pair, the citation renumbering, the expert-map five, the cite-check itself) remained listed under "The following are flagged, not faked" - closed work still wearing flag clothing
-  - Rewritten state-first in both files (canonical .md + static page): what stands verified (all eight clinical sources page-level, findings-as-used, three wording corrections dated below the claims table, zero placeholders), the one carried flag ([8] - the $150B figure, trade-press provenance, Healthcare Innovation / MTAC 2017), and the standing house-links disclosure (live site URLs from the site's own manifest; Tourist to Student by live URL only, Zenodo erasure pending on records 23246730 / 23310741)
-  - Nothing left the page but process: every retired item's receipts already live in the References list, the dated corrections, or this changelog; the note now links this changelog as the full dated audit trail; the [7] bibliography pointer ("Verification Note, item 6") re-anchored to the note itself
-Date: Oct 25, 2026 | Time: 10:05 am | Task: Lookbook: Ship 9 spread mirrored, Ship 6 rebalanced, end-of-book button fixed, TOC folio math aligned | Status: FIXED
-  - Ship 9: the app panel moved to the right page, the patient-prep visual moved to the left; the spread now hyperlinks The Class of the Prep Sheet (2026-10-24)
-  - Ship 6: the one-code-base/two-tiers table moved to the proof page so both pages carry comparable weight; a global balance pass vertically centers the short page of any lopsided spread (>1.8:1) instead of leaving it top-heavy
-  - Next/Previous buttons now gray correctly at the book's ends in two-page mode - the disabled test previously assumed single-leaf mode, so the last spread showed a lit Next; TOC page ranges now match the folios (off-by-one removed)
-Date: Oct 25, 2026 | Time: 10:05 am | Task: Reader controls standardized corpus-wide: night/day + text zoom on every white paper and case study; light is the default | Status: FIXED
-  - All 27 pages under /white-papers/ (papers, case studies, methodology, tracker, the index page) gain the same fixed A- / A / A+ zoom and night/day toggle the prep sheet has; the preference is remembered across pages (wp-mode / wp-zoom)
-  - Day (cream) is now the default on every page including the prep sheet; night = the chocolate look each page published with, one toggle away
-  - Missing (c) 2026 Evelyn Caro footers added where absent
-Date: Oct 25, 2026 | Time: 10:05 am | Task: In-text citation brand audit: [n] confirmed corpus-wide; Who Tests the Testers? converted to the house design | Status: FIXED
-  - Audit of the corpus: every fully-cited record paper (Enhancement Not Replacement, The Missing Link, The Tester Is the Target, Three Days of Silence, Who Decides When the Model Lies, The Class of the Prep Sheet) already cites inline [n] against a numbered list - zero author-year parentheticals
-  - One straggler converted: Who Tests the Testers? - reference list renumbered in order of first appearance (house design), three prose parentheticals (Mitchell; Lan et al.; Marchand et al.) converted to [n]; source-name subsection headings kept as titles, not citations
-  - Samaritan Is Here left as-is: its two parentheticals are venue attributions ((Figshare, March 2026) / (AJIL, 2026)), not citations - the paper carries no reference list by design
-Date: Oct 25, 2026 | Time: 10:05 am | Task: sync-manifest workflow armored | Status: FIXED
-  - Push trigger filtered to the master branch (tag pushes no longer fire the manifest bot); the bot pushes with an explicit HEAD:master refspec so a detached checkout can never error the run
+Date: Oct 26, 2026 | Time: 6:00 am | Task: White Papers index shows section counts | Status: FIXED
+  - Each section heading on /white-papers/ now carries its live count: the record 6, Series I 7, Series II 5, Series III 4, Retired 1, Infrastructure 3, styled to the page in both day and night modes
+  - The index subtitle is the author's copy and was not touched; the counts now make it publicly checkable against the page
+Date: Oct 26, 2026 | Time: 6:00 am | Task: Standard three-line footer completed across the corpus | Status: FIXED
+  - The licensing footer (© / A Mirror of My Becoming™ — qaevelyn.github.io / licensing email) is now on every page under /white-papers/, including the index and the last seven pages still carrying the short form
+  - Who Tests the Testers? had its missing tail restored: back link, reader controls, footer, closing tags
+Date: Oct 26, 2026 | Time: 6:00 am | Task: Samaritan Is Here citations completed from verified sources | Status: FIXED
+  - All four Nolan & Plageman Gizmodo citations completed: pending flags removed, publication dates corrected by one day each (Jan 10 2014, May 15 2014, Jan 13 2015, Apr 28 2016), interviewers credited (A. Newitz; C. J. Anders), verified article URLs added — in the canonical .md and the served page
+  - The flagged-not-faked standard holds: the two AI Cartel pendings stay flagged, untouched (author ruling 2026-10-25)
+Date: Oct 26, 2026 | Time: 6:00 am | Task: Tourist to Student external link targets repaired | Status: FIXED
+  - 16 AWS course links on the served page rendered with literal kramdown {:target="_blank"} text; targets are now real link attributes (target="_blank" rel="noopener") and the literal artifacts are gone
+Date: Oct 26, 2026 | Time: 6:00 am | Task: Case-study 404s repaired — static pages served raw | Status: FIXED
+  - /case-studies/azari-audit/ and /case-studies/evidenceflow-verification-ship5/ had been unreachable since the .nojekyll repair (permalinks never rendered); both now ship as static pages in the house chrome with the standard footer and reader controls
+Date: Oct 26, 2026 | Time: 6:00 am | Task: Ship visuals carry the Mirror mark | Status: FIXED
+  - Ships 1-9 and 11 public visuals now open with A MIRROR OF MY BECOMING™ above the ship title, matching the ship-10 and track-visual convention; tool names remain the titles beneath
+Date: Oct 26, 2026 | Time: 6:00 am | Task: Guard blocklist ships with the repo | Status: FIXED
+  - tools/guard-blocklist.txt (v2 classes: *recon* *neighbor* _drafts/* *.rtfd *.rtfd/* *screenshot* .env* *.pem) committed with a .gitignore negation — *.txt had been silently excluding it, so fresh clones carried a silent guard; hooksPath armed; scratch-clone self-test refuses a blocklisted commit
