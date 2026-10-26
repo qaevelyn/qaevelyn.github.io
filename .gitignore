@@ -38,3 +38,6 @@ google analytics Measurement ID (G-WV5JKK585K).txt
 
 # cert pdfs: re-include — root *.pdf rule was silently skipping new certificates (found 2026-10-26)
 !assets/certificates/*.pdf
+
+# robots.txt must ship (SEO layer 2026-10-26; same failure class as the cert pdf)
+!robots.txt
