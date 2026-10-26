@@ -165,7 +165,7 @@ This is what sovereignty means in practice. Not just local execution. Not just n
 
 ## What to Do Next
 
-If this work resonates with you, or if you want to discuss evidence-verified RAG for genealogical or cultural memory work, contact me directly: **qaevelyn@pm.me**
+If this work resonates with you, or if you want to discuss evidence-verified RAG for genealogical or cultural memory work, contact me directly: **evelyn.caro.cloud@gmail.com**
 
 ---
 
