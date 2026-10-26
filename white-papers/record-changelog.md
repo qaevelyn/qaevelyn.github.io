@@ -74,7 +74,7 @@ Date: Oct 26, 2026 | Time: 6:00 am | Task: Samaritan Is Here citations completed
   - All four Nolan & Plageman Gizmodo citations completed: pending flags removed, publication dates corrected by one day each (Jan 10 2014, May 15 2014, Jan 13 2015, Apr 28 2016), interviewers credited (A. Newitz; C. J. Anders), verified article URLs added — in the canonical .md and the served page
   - The flagged-not-faked standard holds: the two AI Cartel pendings stay flagged, untouched (author ruling 2026-10-25)
 Date: Oct 26, 2026 | Time: 6:00 am | Task: Tourist to Student external link targets repaired | Status: FIXED
-  - 16 AWS course links on the served page rendered with literal kramdown {:target="_blank"} text; targets are now real link attributes (target="_blank" rel="noopener") and the literal artifacts are gone
+  - 16 AWS course links on the served page rendered with literal kramdown text; targets are now real link attributes (target="_blank" rel="noopener") and the literal artifacts are gone
 Date: Oct 26, 2026 | Time: 6:00 am | Task: Case-study 404s repaired — static pages served raw | Status: FIXED
   - /case-studies/azari-audit/ and /case-studies/evidenceflow-verification-ship5/ had been unreachable since the .nojekyll repair (permalinks never rendered); both now ship as static pages in the house chrome with the standard footer and reader controls
 Date: Oct 26, 2026 | Time: 6:00 am | Task: Ship visuals carry the Mirror mark | Status: FIXED
