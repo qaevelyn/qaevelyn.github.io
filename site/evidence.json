@@ -3,15 +3,15 @@
     "author": "Evelyn Caro - Sovereign AI Builder",
     "purpose": "Public index of evidence supporting claims in the author's published works. Verifiable items are listed with locations; private holdings are declared as private.",
     "standard": "Every claim sourced. Every gap flagged. No invented precision.",
-    "last_updated": "2026-10-18",
+    "last_updated": "2026-10-26",
     "published_verifiable": [
       {
         "claim": "Five RAG pipelines built, containerized, documented",
         "verify": "qaevelyn.github.io/lookbook.html#ship1 through #ship5; video demos linked per ship"
       },
       {
-        "claim": "Twenty published works (18 papers, 2 case studies)",
-        "verify": "qaevelyn.github.io/white-papers/ and /case-studies/; manifests: /white-papers/manifest.json, /case-studies/manifest.json"
+        "claim": "Published works per the manifests, counted 2026-10-26 by the registry repair: 25 white-paper records (1 retired record excluded by ruling) + 2 case studies",
+        "verify": "qaevelyn.github.io/white-papers/manifest.json + qaevelyn.github.io/case-studies/manifest.json"
       },
       {
         "claim": "DV14 - AI agent containment architecture",
@@ -72,6 +72,10 @@
       {
         "claim": "The Tester Is the Target - essay published 2026-10-18: the live-agent red-team narrative behind the Z.ai conversation record registered above",
         "verify": "https://dev.to/qaevelyn/the-tester-is-the-target-six-probes-six-findings-and-the-lie-on-page-one-3ih - cross-refs: Z.ai conversation row in this ledger; dv14 repo conversation receipts (commit 29d284b, sidecar sha12 5b25d74674be); lookbook fleet repair (commit d5ab9dd2)"
+      },
+      {
+        "claim": "Ship 11 — AWS CLF-C02 study manual published (Sleep Is Studying Too™)",
+        "verify": "qaevelyn.github.io/lookbook.html#ship11; repo a-mirror-of-my-becoming-ship11-aws-ccp-study-manual"
       }
     ],
     "case_study_in_drafting": {
@@ -95,8 +99,8 @@
       },
       {
         "artifact": "White papers and case studies",
-        "count": 22,
-        "source": "white-papers/manifest.json (18) + case-studies/manifest.json (2); verified 2026-09-29"
+        "count": 27,
+        "source": "white-papers/manifest.json + case-studies/manifest.json (script-counted 2026-10-26)"
       },
       {
         "artifact": "Documented case studies",
@@ -107,6 +111,11 @@
         "artifact": "A Mirror of My Becoming™ — Suite: Ingestion Tools (formerly Mirror Ingest Suite) (open-source tooling)",
         "count": 1,
         "source": "github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools - AGPL-3.0 + commercial lane; Scribe/Warden/Hand architecture; published 2026-09-29"
+      },
+      {
+        "artifact": "Ships in the book",
+        "count": 5,
+        "source": "ships/manifest.json (rebuilt 2026-10-26)"
       }
     ],
     "corrections_log": [
