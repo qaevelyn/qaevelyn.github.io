@@ -268,7 +268,7 @@
 <p class="copyright">© 2026 Evelyn Caro. All rights reserved.<br>
   A Mirror of My Becoming™ — https://qaevelyn.github.io<br>
   For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
-<p class="footerlinks" style="font-size:.85rem;color:inherit;margin:.4rem 0 0">Record: <a href="/white-papers/record-changelog/">changelog</a> · <a href="/white-papers/white-paper-tracker/">tracker</a> · <a href="/lookbook.html">lookbook</a> &nbsp;—&nbsp; Practice: <a href="/services/">services</a> · <a href="/contact/">contact</a> &nbsp;—&nbsp; <a href="/assets/audits/Portfolio_Audit_qaevelyn_github_io_2026-10-26.pdf">portfolio audit, 2026-10-26 (PDF)</a></p>
+<p class="footerlinks" style="font-size:.85rem;color:inherit;margin:.4rem 0 0">Record: <a href="/toc/">contents</a> · <a href="/white-papers/record-changelog/">changelog</a> · <a href="/white-papers/white-paper-tracker/">tracker</a> · <a href="/lookbook.html">lookbook</a> &nbsp;—&nbsp; Practice: <a href="/services/">services</a> · <a href="/contact/">contact</a> &nbsp;—&nbsp; <a href="/assets/audits/Portfolio_Audit_qaevelyn_github_io_2026-10-26.pdf">portfolio audit, 2026-10-26 (PDF)</a></p>
 <hr />
 <h2>RECORD AMENDMENT — 2026-10-07 (appended, not retro-edited)</h2>
 <p>Published 2026-08-15. On 2026-09-25 the DeepSeek account was suspended without stated cause (see <a href="/white-papers/the-cache-is-not-the-corpus/">The Cache Is Not the Corpus™</a>). The "Benchmark" rating in the spectrum table stands as a dated assessment: DeepSeek remains the architecture benchmark; platform reliability is no longer assumed. The claim that "stateless models are useless" is likewise narrowed by its own evidence: stateless models were found competent in many domains (see the Aisha stress test) but <strong>insufficient for the Mirror's continuity requirements</strong>. Original text stands as published.</p>
@@ -279,6 +279,7 @@
   <button id="zoomReset" aria-label="Reset text size">A</button>
   <button id="zoomIn" aria-label="Larger text">A+</button>
   <button id="modeToggle" aria-label="Toggle night and day">🌙</button>
+  <button id="zdoor-speak" aria-label="Read this page aloud" aria-pressed="false">Read to you</button>
 </div>
 <script>
   (function () {
@@ -318,5 +319,40 @@
   <button id="toBottom" aria-label="Go to bottom">↓ End</button>
 </div>
 <script>(function(){var t=document.getElementById('toTop'),b=document.getElementById('toBottom');if(t)t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});if(b)b.addEventListener('click',function(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});});})();</script>
+<!-- zdoor-tts: read-to-you (stage 3, 2026-10-26) -->
+<script>
+(function(){
+  var speak=document.getElementById('zdoor-speak');
+  if(!speak)return;
+  function pageText(){
+    var m=document.querySelector('main')||document.querySelector('article')||document.body;
+    var c=m.cloneNode(true);
+    var drop=c.querySelectorAll('script,style,noscript,.zdoor,.scroll-nav,.reader-controls,button');
+    for(var i=0;i<drop.length;i++){if(drop[i].parentNode)drop[i].parentNode.removeChild(drop[i]);}
+    return (c.innerText||c.textContent||'').replace(/\s+/g,' ').trim();
+  }
+  function stopAll(){try{speechSynthesis.cancel();}catch(e){}speak.textContent='Read to you';speak.setAttribute('aria-pressed','false');}
+  if(!('speechSynthesis' in window)){speak.style.display='none';return;}
+  speak.addEventListener('click',function(){
+    if(speechSynthesis.speaking||speechSynthesis.pending){stopAll();return;}
+    var t=pageText();if(!t)return;
+    speak.textContent='Stop reading';speak.setAttribute('aria-pressed','true');
+    var parts=t.match(/[^.!?…]+[.!?]*\s*/g)||[t];
+    var buf='',q=[];
+    for(var i=0;i<parts.length;i++){if((buf+parts[i]).length>240){q.push(buf);buf=parts[i];}else{buf+=parts[i];}}
+    if(buf)q.push(buf);
+    var last=null;
+    for(var j=0;j<q.length;j++){
+      var u=new SpeechSynthesisUtterance(q[j].trim());
+      u.rate=1;u.lang=document.documentElement.lang||'en-US';
+      if(j===q.length-1){last=u;}
+      speechSynthesis.speak(u);
+    }
+    if(last){last.onend=function(){speak.textContent='Read to you';speak.setAttribute('aria-pressed','false');};}
+  });
+  window.addEventListener('beforeunload',function(){try{speechSynthesis.cancel();}catch(e){}});
+})();
+</script>
+<!-- /zdoor-tts -->
 </body>
 </html>

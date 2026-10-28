@@ -44,3 +44,6 @@ google analytics Measurement ID (G-WV5JKK585K).txt
 
 # audit PDFs must ship — scoped re-include (same failure class as the cert pdf and robots.txt)
 !assets/audits/*.pdf
+
+*.bak-*
+MIRROR_LOG.md
