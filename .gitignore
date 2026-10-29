@@ -47,3 +47,6 @@ google analytics Measurement ID (G-WV5JKK585K).txt
 
 *.bak-*
 MIRROR_LOG.md
+
+# the-record-audited: re-include audit PDF (owner ruling 2026-10-29 — same filename, overwrite in place, re-issues must auto-track)
+!the-record-audited/*.pdf
