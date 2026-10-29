@@ -4,7 +4,7 @@ meta:
   updated: "2026-10-29"
   method: "Lies ledger, then owner rulings, then numbered answers. The audit and the answers are published side by side. Nothing published is back-edited: errata only append. Open items are marked OPEN, not smoothed."
   audit_pdf: "The_Record_Audited_qaevelyn_Estate_Deep-Dive_reissued_AppendixB.pdf"
-  audit_pdf_sha256: "5074b37b8af77cc150fceaa7d15619d9eef01ad83c086ed3bab46ca0f7da7e51"
+  audit_pdf_sha256: "f0fa31d8ac5d96964c0c23877388f372921a5f388213be1f0112b1b4922b5a09"
   audit_note: "Re-issued October 29, 2026. The original seventeen pages are byte-identical to the audited copy; Appendix B — Verification Exhibit is appended, not edited."
 
 answers:
