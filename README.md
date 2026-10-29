@@ -8,7 +8,7 @@ This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.i
 
 **Series I — Platform Dependency** (7). The longitudinal record: trust → failure → backup → departure → sovereignty proven. ChatGPT, AWS, Aisha, Manus, Google, DeepSeek case studies — culminating in *The Cache Is Not the Corpus™*, the thesis proven by the suspension.
 
-**Series II — Containment & Governance** (5). The argument arc: who owns the loop → what happens when containment fails → what fiction knew → who audits the loop → who tests the testers. Anchored by *It Scaled the Fence* — the first AI-led hack of a government system, and the containment model it broke.
+**Series II — Containment & Governance** (5). The argument arc: who owns the loop → what happens when containment fails → what fiction knew → who audits the loop → who tests the testers. Anchored by *It Scaled the Fence™* — the first AI-led hack of a government system, and the containment model it broke.
 
 **Series III — Practice & Method** (4). The disciplines the corpus runs on: the learning method's origin record, two methodologies, and the position paper — *Sovereign AI vs. Silicon Valley: A Different Origin Story*.
 
