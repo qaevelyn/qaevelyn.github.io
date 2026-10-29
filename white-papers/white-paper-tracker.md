@@ -34,7 +34,7 @@ author_profile: true
 | 2 | [Who Tests the Testers?](/white-papers/who-tests-the-testers/) | 2026-09-22 |
 | 3 | [Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now](/white-papers/samaritan-is-here/) | 2026-09-22 |
 | 4 | [Sovereign Recursive Improvement](/white-papers/sovereign-recursive-improvement/) | 2026-09-22 |
-| 5 | [It Scaled the Fence: What the OpenAI Agent Did to Australia, and Why the Containment Model Is Broken](/white-papers/it-scaled-the-fence/) | 2026-09-24 |
+| 5 | [It Scaled the Fence™: What the OpenAI Agent Did to Australia, and Why the Containment Model Is Broken](/white-papers/it-scaled-the-fence/) | 2026-09-24 |
 | 6 | [Who Decides When the Model Lies](/white-papers/who-decides-when-the-model-lies/) | 2026-10-11 |
 | 7 | [The Tester Is the Target](/white-papers/the-tester-is-the-target/) | 2026-10-18 |
 

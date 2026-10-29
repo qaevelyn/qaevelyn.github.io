@@ -255,12 +255,12 @@
       }
     },
     "ship8": {
-      "title": "DV14: The Box — AI containment blueprint",
+      "title": "DV14™: The Box — AI containment blueprint",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-dv14-ai-containment-blueprint",
       "license": "Copyright (c) 2026 Evelyn Caro. All rights reserved.",
       "status": "concept; public flip pending",
       "lookbook": {
-        "h3_title": "Ship 8 — DV14: The Box",
+        "h3_title": "Ship 8 — DV14™: The Box",
         "toc_parent": "Sealed Architectures",
         "toc_child": "DV14™: The Box · AI containment blueprint",
         "narrative": "A concept, stated plainly: a physical and conceptual AI agent containment architecture, designed to answer one question — can an agent that runs on hardware be contained by hardware? Two tracks: The Box (eight layers of complementary opposites — every material paired with the one that covers its weakness) and the Sensory Deprivation Matrix (can an agent function with no external hardware at all?). The accidental discovery: if the AI plays possum, we have found a holding cell. Bitcoin-timestamped September 19, 2026. Cited in two published white papers. © all rights reserved — commercial license only; Bitcoin-timestamped 2026-09-19; available for review under NDA.",

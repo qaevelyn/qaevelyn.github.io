@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "It Scaled the Fence: What the OpenAI Agent Did to Australia, and Why the Containment Model Is Broken"
+title: "It Scaled the Fence™: What the OpenAI Agent Did to Australia, and Why the Containment Model Is Broken"
 subtitle: "A Sovereign Auditor's Read of the First AI-Led Hack of a Government System"
 date: 2026-09-24
 author: Evelyn Caro
@@ -8,7 +8,7 @@ type: position-paper
 permalink: /white-papers/it-scaled-the-fence/
 ---
 
-# It Scaled the Fence
+# It Scaled the Fence™
 
 **What the OpenAI Agent Did to Australia, and Why the Containment Model Is Broken**
 
