@@ -45,7 +45,7 @@ Caro, E. (2026). *A Mirror of My Becoming™ — White Paper Corpus*. https://qa
 
 ## Contact
 
-**evelyn.caro.cloud@gmail.com** · [Portfolio](https://qaevelyn.github.io) · Consultancy: sovereign AI readiness, compliance audits, emergency rescues — see [Services](https://qaevelyn.github.io/services.html)
+**evelyn.caro.cloud@gmail.com** · [Portfolio](https://qaevelyn.github.io) · Consultancy: sovereign AI readiness, compliance audits, emergency rescues — see [Services](https://qaevelyn.github.io/services/)
 
 © 2026 Evelyn Caro. All rights reserved.
 
