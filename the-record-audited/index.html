@@ -1,0 +1,39 @@
+---
+title: "The Record, Audited — Owner's Corrections and Answers"
+layout: default
+permalink: /the-record-audited/
+---
+<style>
+  .ra-wrap { max-width: 900px; margin: 0 auto; font-size: 16px; line-height: 1.6; }
+  .ra-rule { border: 0; border-top: 2px solid #C9A05C; margin: 1.4rem 0; }
+  .ra-meta { color: #8A8578; font-size: .85rem; }
+  .ra-badge { display: inline-block; padding: .1rem .6rem; border-radius: 3px; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: #F5EFE2; }
+  .ra-closed { background: #2E5E3A; }
+  .ra-open { background: #B49B69; }
+  .ra-erratum { background: #4A392B; }
+  .ra-row { border-left: 3px solid #D9D2C4; padding: .2rem 0 .2rem 1rem; margin: 1.2rem 0; }
+  .ra-claim { color: #4A4438; }
+  .ra-receipts { color: #6B6558; font-size: .88rem; }
+  .ra-pdf { background: #F7F4EC; border: 1px solid #D9D2C4; border-radius: 4px; padding: .9rem 1.1rem; margin: 1.2rem 0; }
+</style>
+<div class="ra-wrap">
+  <h1>{{ site.data.audit_response.meta.title }}</h1>
+  <hr class="ra-rule">
+  <p>{{ site.data.audit_response.meta.method }}</p>
+  <p class="ra-meta">Filed {{ site.data.audit_response.meta.filed }} · Last updated {{ site.data.audit_response.meta.updated }}</p>
+  <div class="ra-pdf">
+    <strong><a href="/the-record-audited/{{ site.data.audit_response.meta.audit_pdf }}">The Record, Audited — the audit PDF (re-issued with Appendix B)</a></strong><br>
+    The original seventeen pages are byte-identical to the audited copy; Appendix B — Verification Exhibit is appended, not edited. Verdicts dated October 29, 2026.<br>
+    <span class="ra-meta">sha256: {{ site.data.audit_response.meta.audit_pdf_sha256 }}</span>
+  </div>
+  <p>Answers render from <code>_data/audit_response.yml</code>: updates edit that data file and push, and this page follows. Rows marked OPEN await the owner's ruling and say so — nothing is smoothed to look finished.</p>
+  <hr class="ra-rule">
+  {% for a in site.data.audit_response.answers %}
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer {{ a.id }}</strong> &nbsp;<span class="ra-badge ra-{{ a.status }}">{{ a.status | upcase }}</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> {{ a.claim }}</p>
+    <p><strong>The record answers:</strong> {{ a.answer }}</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> {{ a.receipts }}</p>
+  </div>
+  {% endfor %}
+</div>
