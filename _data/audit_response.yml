@@ -73,3 +73,8 @@ answers:
     claim: "Decision-agenda items 1, 3, 4, 6, 8-15, 17, and any item not yet re-cited."
     answer: "Awaiting the owner's ruling on each item, landed here by number as she re-cites it against the ruling-page table. No item text is guessed from memory; nothing ships on a guessed mapping."
     receipts: "Ledger mapping note, October 29, 2026."
+  - id: 14
+    status: "open"
+    claim: "Owner-side finding, October 29, 2026 ~08:00 EDT: the ICP and LEAD-GEN files existed in this repository's git history before the October 26 pull. If their pre-pull commits were pushed, the raw detail remains recoverable from public history even though master is clean."
+    answer: "PENDING OWNER RULING. Options: (a) document-and-accept — the pre-October-26 window is part of the public record and the pull governs going forward; (b) history surgery via filter-repo and force-push — rejected by house doctrine unless the owner rules otherwise, since it rewrites every receipt; (c) private mirror canonical going forward, public-history copies logged as superseded artifacts. The record does not pick for her."
+    receipts: "Owner-run history check, October 29, 2026: 'ICP — BUILT FROM PORTFOLIO AS EVIDENCE OF CAPABILITY.md' and 'LEAD-GEN — SOVEREIGNTY COMMUNITIES AND COMMERCIAL TIER.md' present in history; merge-base check against origin/master pending."
