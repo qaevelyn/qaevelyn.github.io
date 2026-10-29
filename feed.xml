@@ -98,9 +98,37 @@
       <description>Who Decides How Fast AI Moves?</description>
     </item>
     <item>
-      <title>Record Changelog</title>
-      <link>https://qaevelyn.github.io/white-papers/record-changelog/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/record-changelog/</guid>
+      <title>Case Study: ChatGPT — From Reliance to Rejection</title>
+      <link>https://qaevelyn.github.io/white-papers/chatgpt-case-study/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/chatgpt-case-study/</guid>
+      <pubDate></pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>White Paper Methodology</title>
+      <link>https://qaevelyn.github.io/white-papers/white-paper-methodology/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/white-paper-methodology/</guid>
+      <pubDate></pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>White Paper: A Case Study in AI Collaboration</title>
+      <link>https://qaevelyn.github.io/white-papers/aisha-case-study/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/aisha-case-study/</guid>
+      <pubDate></pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Sovereign AI vs. Silicon Valley: A Different Origin Story</title>
+      <link>https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/</guid>
+      <pubDate></pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>White Paper: AI Platform Comparison for Sovereign Archive Development</title>
+      <link>https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/</link>
+      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/White_Paper_AI_Platform_Comparison/</guid>
       <pubDate></pubDate>
       <description></description>
     </item>
@@ -115,34 +143,6 @@
       <title>Methodology: Stress-Testing AI Systems for Reliability and Sovereignty</title>
       <link>https://qaevelyn.github.io/white-papers/methodology/</link>
       <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/methodology/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>White Paper Methodology</title>
-      <link>https://qaevelyn.github.io/white-papers/white-paper-methodology/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/white-paper-methodology/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Sovereign AI vs. Silicon Valley: A Different Origin Story</title>
-      <link>https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>White Paper: A Case Study in AI Collaboration</title>
-      <link>https://qaevelyn.github.io/white-papers/aisha-case-study/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/aisha-case-study/</guid>
-      <pubDate></pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Case Study: ChatGPT — From Reliance to Rejection</title>
-      <link>https://qaevelyn.github.io/white-papers/chatgpt-case-study/</link>
-      <guid isPermaLink="true">https://qaevelyn.github.io/white-papers/chatgpt-case-study/</guid>
       <pubDate></pubDate>
       <description></description>
     </item>
