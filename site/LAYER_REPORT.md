@@ -1,5 +1,5 @@
 # LAYER REPORT
-Generated: 2026-10-29 11:58 UTC by tools/records/layer_check.py
+Generated: 2026-11-02 19:28 UTC by tools/records/layer_check.py
 
 Owner ruling 2026-10-26: both directions reconcile into the canonical md; the static page renders it. Drift here means a layer moved without the other.
 - white-papers/record-changelog.md row 12: canonical cell not rendered -> "two sentences added after the quorum table interpreting the near-tie f"
@@ -26,13 +26,13 @@ Owner ruling 2026-10-26: both directions reconcile into the canonical md; the st
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-12 — fleet url standardization + version discipline + v6 relea"
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-26 — rulings"
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-26 — convergence + repair"
-- white-papers/white-paper-tracker.md row 2: canonical cell not rendered -> "white paper: a case study in ai collaboration"
-- white-papers/white-paper-tracker.md row 3: canonical cell not rendered -> "case study: chatgpt — from reliance to rejection"
-- white-papers/white-paper-tracker.md row 4: canonical cell not rendered -> "case study: manus — from loyalty to betrayal to sovereignty"
-- white-papers/white-paper-tracker.md row 5: canonical cell not rendered -> "case study: deepseek — the benchmark"
-- white-papers/white-paper-tracker.md row 6: canonical cell not rendered -> "white paper: ai platform comparison for sovereign archive development"
-- white-papers/white-paper-tracker.md row 7: canonical cell not rendered -> "case study: google ai studio and gemini notebooklm — the failures"
-- white-papers/white-paper-tracker.md row 8: canonical cell not rendered -> "case study: aws — the maze"
+- white-papers/white-paper-tracker.md row 2: canonical cell not rendered -> "case study: chatgpt — from reliance to rejection"
+- white-papers/white-paper-tracker.md row 3: canonical cell not rendered -> "white paper: a case study in ai collaboration"
+- white-papers/white-paper-tracker.md row 4: canonical cell not rendered -> "white paper: ai platform comparison for sovereign archive development"
+- white-papers/white-paper-tracker.md row 5: canonical cell not rendered -> "case study: aws — the maze"
+- white-papers/white-paper-tracker.md row 6: canonical cell not rendered -> "case study: google ai studio and gemini notebooklm — the failures"
+- white-papers/white-paper-tracker.md row 7: canonical cell not rendered -> "case study: deepseek — the benchmark"
+- white-papers/white-paper-tracker.md row 8: canonical cell not rendered -> "case study: manus — from loyalty to betrayal to sovereignty"
 - white-papers/white-paper-tracker.md row 9: canonical cell not rendered -> "the cache is not the corpus™: nineteen deaths, zero losses, and the as"
 - white-papers/white-paper-tracker.md: ... further md->static findings suppressed
 - white-papers/white-paper-tracker/index.html row 1: static row absent from canonical md -> "series position"

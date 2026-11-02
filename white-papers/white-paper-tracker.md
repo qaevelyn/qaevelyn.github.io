@@ -18,13 +18,13 @@ author_profile: true
 ### Series I — Platform Dependency (8)
 | # | Paper | Published |
 | --- | --- | --- |
-| 1 | [White Paper: A Case Study in AI Collaboration](/white-papers/aisha-case-study/) | — |
-| 2 | [Case Study: ChatGPT — From Reliance to Rejection](/white-papers/chatgpt-case-study/) | — |
-| 3 | [Case Study: Manus — From Loyalty to Betrayal to Sovereignty](/white-papers/manus-case-study/) | — |
-| 4 | [Case Study: DeepSeek — The Benchmark](/white-papers/deepseek-case-study/) | — |
-| 5 | [White Paper: AI Platform Comparison for Sovereign Archive Development](/white-papers/White_Paper_AI_Platform_Comparison/) | — |
-| 6 | [Case Study: Google AI Studio and Gemini NotebookLM — The Failures](/white-papers/google-case-study/) | — |
-| 7 | [Case Study: AWS — The Maze](/white-papers/aws-case-study/) | — |
+| 1 | [Case Study: ChatGPT — From Reliance to Rejection](/white-papers/chatgpt-case-study/) | — |
+| 2 | [White Paper: A Case Study in AI Collaboration](/white-papers/aisha-case-study/) | — |
+| 3 | [White Paper: AI Platform Comparison for Sovereign Archive Development](/white-papers/White_Paper_AI_Platform_Comparison/) | — |
+| 4 | [Case Study: AWS — The Maze](/white-papers/aws-case-study/) | — |
+| 5 | [Case Study: Google AI Studio and Gemini NotebookLM — The Failures](/white-papers/google-case-study/) | — |
+| 6 | [Case Study: DeepSeek — The Benchmark](/white-papers/deepseek-case-study/) | — |
+| 7 | [Case Study: Manus — From Loyalty to Betrayal to Sovereignty](/white-papers/manus-case-study/) | — |
 | 8 | [The Cache Is Not the Corpus™: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is](/white-papers/the-cache-is-not-the-corpus/) | 2026-09-28 |
 
 ### Series II — Containment & Governance (7)
@@ -41,9 +41,9 @@ author_profile: true
 ### Series III — Practice & Method (8)
 | # | Paper | Published |
 | --- | --- | --- |
-| 1 | [Methodology: Stress-Testing AI Systems for Reliability and Sovereignty](/white-papers/methodology/) | — |
-| 2 | [White Paper Methodology](/white-papers/white-paper-methodology/) | — |
-| 3 | [Sovereign AI vs. Silicon Valley: A Different Origin Story](/white-papers/sovereign-ai-vs-silicon-valley/) | — |
+| 1 | [White Paper Methodology](/white-papers/white-paper-methodology/) | — |
+| 2 | [Sovereign AI vs. Silicon Valley: A Different Origin Story](/white-papers/sovereign-ai-vs-silicon-valley/) | — |
+| 3 | [Methodology: Stress-Testing AI Systems for Reliability and Sovereignty](/white-papers/methodology/) | — |
 | 4 | [From AI Tourist to Student Of and With AI](/white-papers/tourist-to-student/) | 2026-10-02 |
 | 5 | [The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store](/white-papers/the-missing-link/) | 2026-10-10 |
 | 6 | [Three Days of Silence](/white-papers/three-days-of-silence/) | 2026-10-11 |
