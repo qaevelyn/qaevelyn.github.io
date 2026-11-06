@@ -4571,7 +4571,7 @@
       "source": "site/words.md",
       "title": "Portfolio Words — Human-Editable Source",
       "chunk_index": 0,
-      "text": "Portfolio Words — Human-Editable Source\n\nThis file is the human-readable companion to `site/words.json`. Edit the words here, then sync to the JSON. Do not edit both at once.\n\nHomepage (`index.html`)\n\n3D Book Cover\n- Cover title: A Mirror of My Becoming\n- Prompt: Click to open\n\nBelow the Book\n- Line 1: Open the book to see the work\n- Name: Evelyn Caro\n- Tagline: Sovereign systems, local first. No cloud dependency.¹\n- Footnote: ¹ Five RAG pipelines built locally. Three cloud attempts — AWS, IBM WatsonX, Google AI Studio. One lost project, rebuilt. The white papers document all.\n\nLookbook (`lookbook.html`)\n\nTOC Left Page\n- Title: LOOKBOOK\n- Subtitle: Sovereign AI Portfolio — Evelyn Caro",
+      "text": "Portfolio Words — Human-Editable Source\n\nThis file is the human-readable companion to `site/words.json`. Edit the words here, then sync to the JSON. Do not edit both at once.\n\nHomepage (`index.html`)\n\n3D Book Cover\n- Cover title: A Mirror of My Becoming™\n- Prompt: Click to open\n\nBelow the Book\n- Line 1: Open the book to see the work\n- Name: Evelyn Caro\n- Tagline: Sovereign systems, local first. No cloud dependency.¹\n- Footnote: ¹ Five RAG pipelines built locally. Three cloud attempts — AWS, IBM WatsonX, Google AI Studio. One lost project, rebuilt. The white papers document all.\n\nLookbook (`lookbook.html`)\n\nTOC Left Page\n- Title: LOOKBOOK\n- Subtitle: Sovereign AI Portfolio — Evelyn Caro",
       "live_url": "https://qaevelyn.github.io/site/words/"
     },
     {

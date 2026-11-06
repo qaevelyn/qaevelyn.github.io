@@ -1,5 +1,5 @@
 # ============================================================
-# A Mirror of My Becoming — Portfolio Container
+# A Mirror of My Becoming™ — Portfolio Container
 # Author: Evelyn Caro
 # Purpose: Serve the static portfolio with one command
 # ============================================================
