@@ -320,15 +320,15 @@
     "ship12": {
       "id": "ship12",
       "number": 12,
-      "title": "Ship 12 — Caro Command Deck (A Mirror of My Becoming™ Tools)",
+      "title": "Ship 12 — Caro Command Deck™ (A Mirror of My Becoming™ Tools)",
       "status": "",
       "portfolio": {
         "spread_anchor": "lookbook.html#ship12"
       },
       "lookbook": {
-        "h3_title": "Ship 12 — Caro Command Deck (A Mirror of My Becoming™ Tools)",
+        "h3_title": "Ship 12 — Caro Command Deck™ (A Mirror of My Becoming™ Tools)",
         "toc_parent": "Tools",
-        "toc_child": "Caro Command Deck · the journey console — 12 chevrons, one gate",
+        "toc_child": "Caro Command Deck™ · the journey console — 12 chevrons, one gate",
         "narrative": "The twelfth ship is the mirror. An SGC-style command deck that renders the journey as a console: a gate ring with twelve chevrons — one per ship — and a fleet manifest where the work appears as ship cards, each one locking its chevron. The record of the becoming, playable: dial the gate, watch the fleet stand at 11/12, the payload holding for Ship 13.",
         "spread_anchor": "lookbook.html#ship12",
         "synced": "2026-11-06"

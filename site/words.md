@@ -7,7 +7,7 @@ This file is the human-readable companion to `site/words.json`. Edit the words h
 ## Homepage (`index.html`)
 
 ### 3D Book Cover
-- **Cover title:** A Mirror of My Becoming
+- **Cover title:** A Mirror of My Becoming™
 - **Prompt:** Click to open
 
 ### Below the Book
