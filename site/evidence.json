@@ -126,7 +126,7 @@
       {
         "artifact": "White papers and case studies",
         "count": 27,
-        "source": "white-papers/manifest.json + case-studies/manifest.json (script-counted 2026-10-26)"
+        "source": "white-papers/manifest.json + case-studies/manifest.json (script-counted 2026-11-08)"
       },
       {
         "artifact": "Documented case studies",
@@ -140,8 +140,8 @@
       },
       {
         "artifact": "Ships in the book",
-        "count": 5,
-        "source": "ships/manifest.json (rebuilt 2026-10-26)"
+        "count": 13,
+        "source": "ships/manifest.json (script-counted 2026-11-08: five RAG pipelines plus eight suite ships)"
       }
     ],
     "corrections_log": [
@@ -188,10 +188,14 @@
       {
         "date": "2026-10-11",
         "entry": "Works count reconciled 20 -> 22: The Missing Link (Oct 10) and Three Days of Silence (Oct 11) published; manifest canon. Prose counts retired per links-not-counts ruling — this entry is the ledger's own last numeric restatement."
+      },
+      {
+        "date": "2026-11-08",
+        "entry": "counted_artifacts recount 2026-11-08 against canon manifests: ships in the book corrected 5 -> 13 (five RAG pipelines plus eight suite ships per ships/manifest.json); white papers and case studies re-verified at 27 (25 plus 2), receipt dates refreshed; no other drift."
       }
     ],
     "notes": "This ledger is itself an example of the underlying argument: the corpus is public and verifiable; derived claims are checkable against it; the record discloses its own gaps.",
-    "counted_artifacts_note": "Suite counted as 21st artifact, separate from the 20-work corpus (tooling, not writing).",
+    "counted_artifacts_note": "Suite counted as a separate tooling artifact — never a work; counts live in counted_artifacts above, each with its manifest source and script-counted receipt date.",
     "visual_receipts": {
       "exhibits": [
         {
