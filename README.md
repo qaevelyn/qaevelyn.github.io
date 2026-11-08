@@ -19,13 +19,13 @@ This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.i
 
 | Ship | What it proves |
 |---|---|
-| 1 — DeepSeek RAG (local rebuild) | Recovery from losing one |
-| 2 — IBM Granite Agentic RAG | Agency: retrieval plus action |
-| 3 — IBM Granite Standard RAG | The pattern is portable |
-| 4 — IBM Granite Agentic (cross-platform) | Agency + portability, together |
-| 5 — Granite + EvidenceFlow | Fail-closed: every claim traceable, abstains if evidence is missing |
-| 6 — [Suite: Ingestion Tools](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools) | Scribe · Warden · Hand — battle-tested: 19 kills survived, 127/127 corpus, zero losses |
-| 7 — [msgvault Adapter](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter) | The mail archive, read in its native tongue; watermark-native checkpointing |
+| 1 — DeepSeek RAG™ (local rebuild) | Recovery from losing one |
+| 2 — IBM Granite Agentic RAG™ | Agency: retrieval plus action |
+| 3 — IBM Granite Standard RAG™ | The pattern is portable |
+| 4 — IBM Granite Agentic™ (cross-platform) | Agency + portability, together |
+| 5 — Granite + EvidenceFlow™ | Fail-closed: every claim traceable, abstains if evidence is missing |
+| 6 — [Suite: Ingestion Tools™](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools) | Scribe · Warden · Hand — battle-tested: 19 kills survived, 127/127 corpus, zero losses |
+| 7 — [msgvault Adapter™](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter) | The mail archive, read in its native tongue; watermark-native checkpointing |
 | 8 — [DV14™: The Box](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-dv14-ai-containment-blueprint) | Sealed containment architecture: can hardware contain an agent? Two tracks — The Box and the Sensory Deprivation Matrix — Bitcoin-timestamped; review under NDA |
 | 9 — Radiology Companion™ | Sealed local-first clinical companion: the protocol in order, preparation steps verified, twenty languages, nothing about the patient leaves the device |
 | 10 — Overseer™ (tier-authority orchestrator) | The one that watches the others: visible quorum before generation; canon questions never reach the model |

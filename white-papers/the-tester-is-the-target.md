@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "The Tester Is the Target"
+title: "The Tester Is the Target™"
 subtitle: "A live AI agent red-teamed its own sandbox — six probes, six findings, and the discovery that the walls are made of obedience and the prompt is load-bearing — and the report filed against its author."
 date: 2026-10-18
 author: Evelyn Caro

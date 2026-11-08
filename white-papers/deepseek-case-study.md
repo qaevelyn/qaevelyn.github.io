@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Case Study: DeepSeek — The Benchmark"
+title: "Case Study: DeepSeek — The Benchmark™"
 permalink: /white-papers/deepseek-case-study/
 author_profile: true
 ---

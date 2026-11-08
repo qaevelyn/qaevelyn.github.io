@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Record Changelog
+title: Record Changelog™
 permalink: /white-papers/record-changelog/
 ---
 

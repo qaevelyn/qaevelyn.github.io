@@ -19,7 +19,7 @@
     {
       "id": "ship1-aws-rag",
       "number": 1,
-      "title": "Ship 1 — DeepSeek RAG (originally AWS SageMaker, rebuilt locally)",
+      "title": "Ship 1 — DeepSeek RAG™ — originally AWS SageMaker, rebuilt locally (A Mirror of My Becoming™)",
       "type": "standard-rag",
       "platform": "Local (originally AWS SageMaker)",
       "model": "deepseek-r1:1.5b",
@@ -59,7 +59,7 @@
     {
       "id": "ship2-granite-agentic-rag",
       "number": 2,
-      "title": "Ship 2 — IBM Granite Agentic RAG",
+      "title": "Ship 2 — IBM Granite Agentic RAG™ (A Mirror of My Becoming™)",
       "type": "agentic-rag",
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
@@ -98,7 +98,7 @@
     {
       "id": "ship3-ibm-granite-rag",
       "number": 3,
-      "title": "Ship 3 — IBM Granite RAG",
+      "title": "Ship 3 — IBM Granite RAG™ (A Mirror of My Becoming™)",
       "type": "standard-rag",
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
@@ -136,7 +136,7 @@
     {
       "id": "ship4-ibm-granite-agentic-rag",
       "number": 4,
-      "title": "Ship 4 — IBM Granite Agentic RAG",
+      "title": "Ship 4 — IBM Granite Agentic RAG™ (A Mirror of My Becoming™)",
       "type": "agentic-rag",
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
@@ -174,7 +174,7 @@
     {
       "id": "ship5-ibm-granite-agentic-rag-evidenceflow",
       "number": 5,
-      "title": "Ship 5 — IBM Granite Agentic RAG with EvidenceFlow",
+      "title": "Ship 5 — IBM Granite Agentic RAG with EvidenceFlow™ (A Mirror of My Becoming™)",
       "type": "agentic-rag-evidence-verified",
       "platform": "IBM Granite",
       "model": "granite4.1:3b",
@@ -226,7 +226,7 @@
   ],
   "suite": {
     "ship6": {
-      "title": "Suite: Ingestion Tools — overnight receipt",
+      "title": "Ship 6 — Suite: Ingestion Tools™ — overnight receipt (A Mirror of My Becoming™ Tools)",
       "status": "built Sept 29, 2026 — Scribe · Warden · Hand; 127/127 corpus, zero losses",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools",
       "video_receipt": "https://youtu.be/4DBuhhPpbjU",
@@ -241,7 +241,7 @@
       }
     },
     "ship7": {
-      "title": "msgvault adapter",
+      "title": "Ship 7 — msgvault Adapter™ (A Mirror of My Becoming™ Tools)",
       "status": "built — smoke run 200 msgs, 23,500 chunks; run 2 resumed at row 201 — never re-ingest",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter",
       "video_dry_run": "https://youtu.be/BO3FFlEsyxQ",
@@ -257,7 +257,7 @@
       }
     },
     "ship8": {
-      "title": "DV14™: The Box — AI containment blueprint",
+      "title": "Ship 8 — DV14™: The Box — AI containment blueprint (A Mirror of My Becoming™)",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-dv14-ai-containment-blueprint",
       "license": "Copyright (c) 2026 Evelyn Caro. All rights reserved.",
       "status": "concept; public flip pending",
@@ -273,7 +273,7 @@
     "ship9": {
       "id": "ship9",
       "number": 9,
-      "title": "Ship 9 — Radiology Companion™",
+      "title": "Ship 9 — Radiology Companion™ (A Mirror of My Becoming™)",
       "status": "sealed — architecture sealed",
       "portfolio": {
         "spread_anchor": "lookbook.html#ship9"
@@ -290,7 +290,7 @@
     "ship10": {
       "id": "ship10",
       "number": 10,
-      "title": "Ship 10 — Overseer™",
+      "title": "Ship 10 — Overseer™ (A Mirror of My Becoming™ Tools)",
       "status": "built 2026-10-11 — working quorum orchestrator; paper published same day",
       "portfolio": {
         "spread_anchor": "lookbook.html#ship10"
@@ -305,7 +305,7 @@
       }
     },
     "ship11": {
-      "title": "AWS CCP study manual — Sleep Is Studying Too",
+      "title": "Ship 11 — AWS CCP Study Manual — Sleep Is Studying Too™ (A Mirror of My Becoming™)",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual",
       "manual_pdf": "https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual/blob/main/AWS-CCP-Study-Manual.pdf",
       "license": "AGPL-3.0 — Copyright (c) 2026 Evelyn Caro",

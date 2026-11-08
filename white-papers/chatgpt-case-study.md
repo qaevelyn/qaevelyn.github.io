@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Case Study: ChatGPT — From Reliance to Rejection"
+title: "Case Study: ChatGPT — From Reliance to Rejection™"
 permalink: /white-papers/chatgpt-case-study/
 author_profile: true
 ---

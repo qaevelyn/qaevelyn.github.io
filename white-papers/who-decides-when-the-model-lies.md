@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "Who Decides When the Model Lies"
+title: "Who Decides When the Model Lies™"
 subtitle: "The Quorum Architecture: Giving the Pipeline Its Verdict Back — A Sovereign Builder's Answer to AI Hallucination"
 date: 2026-10-11
 timestamp: "2026-10-11 20:01"
