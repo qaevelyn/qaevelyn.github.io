@@ -268,21 +268,6 @@
         "synced": "2026-11-08"
       }
     },
-    "ship11": {
-      "title": "AWS CCP study manual — Sleep Is Studying Too",
-      "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual",
-      "manual_pdf": "https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual/blob/main/AWS-CCP-Study-Manual.pdf",
-      "license": "AGPL-3.0 — Copyright (c) 2026 Evelyn Caro",
-      "status": "published 2026-10-17 — template edition, prepared for a fellow student",
-      "lookbook": {
-        "h3_title": "Ship 11 — AWS CCP Study Manual — Sleep Is Studying Too™",
-        "toc_parent": "The Suite",
-        "toc_child": "AWS CCP study manual — Sleep Is Studying Too · template edition",
-        "narrative": "The eleventh ship is the newest: an AWS Cloud Practitioner study manual, published 2026-10-17 as a template edition — prepared for a fellow student, shipped for everyone. Built on the Neuroplasticize™ method — encode by day, consolidate by night™: spaced review, plain language, and real sleep. Sleep is studying too™.",
-        "spread_anchor": "lookbook.html#ship11",
-        "synced": "2026-11-08"
-      }
-    },
     "ship9": {
       "id": "ship9",
       "number": 9,
@@ -314,6 +299,21 @@
         "toc_child": "Overseer™ · tier-authority orchestrator",
         "narrative": "The tenth ship is the one that watches the others. Overseer™ dispatches every question to five workers — three vector collections, the SQLite mail archive, and the canon registry — fuses their findings with a visible quorum table, and refuses to answer when the receipts are insufficient. Its tier system settles the oldest problem in AI: when the model lies, the pipeline decides. Canon questions never reach the model at all.",
         "spread_anchor": "lookbook.html#ship10",
+        "synced": "2026-11-08"
+      }
+    },
+    "ship11": {
+      "title": "AWS CCP study manual — Sleep Is Studying Too",
+      "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual",
+      "manual_pdf": "https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual/blob/main/AWS-CCP-Study-Manual.pdf",
+      "license": "AGPL-3.0 — Copyright (c) 2026 Evelyn Caro",
+      "status": "published 2026-10-17 — template edition, prepared for a fellow student",
+      "lookbook": {
+        "h3_title": "Ship 11 — AWS CCP Study Manual — Sleep Is Studying Too™",
+        "toc_parent": "The Suite",
+        "toc_child": "AWS CCP study manual — Sleep Is Studying Too · template edition",
+        "narrative": "The eleventh ship is the newest: an AWS Cloud Practitioner study manual, published 2026-10-17 as a template edition — prepared for a fellow student, shipped for everyone. Built on the Neuroplasticize™ method — encode by day, consolidate by night™: spaced review, plain language, and real sleep. Sleep is studying too™.",
+        "spread_anchor": "lookbook.html#ship11",
         "synced": "2026-11-08"
       }
     },
