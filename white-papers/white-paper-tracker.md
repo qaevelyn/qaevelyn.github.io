@@ -18,42 +18,42 @@ author_profile: true
 ### Series I — Platform Dependency (8)
 | # | Paper | Published |
 | --- | --- | --- |
-| 1 | [White Paper: AI Platform Comparison for Sovereign Archive Development](/white-papers/White_Paper_AI_Platform_Comparison/) | — |
-| 2 | [White Paper: A Case Study in AI Collaboration](/white-papers/aisha-case-study/) | — |
-| 3 | [Case Study: Manus — From Loyalty to Betrayal to Sovereignty](/white-papers/manus-case-study/) | — |
-| 4 | [Case Study: AWS — The Maze](/white-papers/aws-case-study/) | — |
-| 5 | [Case Study: DeepSeek — The Benchmark](/white-papers/deepseek-case-study/) | — |
-| 6 | [Case Study: Google AI Studio and Gemini NotebookLM — The Failures](/white-papers/google-case-study/) | — |
-| 7 | [Case Study: ChatGPT — From Reliance to Rejection](/white-papers/chatgpt-case-study/) | — |
+| 1 | [Case Study: DeepSeek — The Benchmark™](/white-papers/deepseek-case-study/) | — |
+| 2 | [Case Study: ChatGPT — From Reliance to Rejection™](/white-papers/chatgpt-case-study/) | — |
+| 3 | [White Paper: A Case Study in AI Collaboration™](/white-papers/aisha-case-study/) | — |
+| 4 | [Case Study: AWS — The Maze™](/white-papers/aws-case-study/) | — |
+| 5 | [Case Study: Google AI Studio and Gemini NotebookLM — The Failures™](/white-papers/google-case-study/) | — |
+| 6 | [White Paper: AI Platform Comparison for Sovereign Archive Development™](/white-papers/White_Paper_AI_Platform_Comparison/) | — |
+| 7 | [Case Study: Manus — From Loyalty to Betrayal to Sovereignty™](/white-papers/manus-case-study/) | — |
 | 8 | [The Cache Is Not the Corpus™: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is](/white-papers/the-cache-is-not-the-corpus/) | 2026-09-28 |
 
 ### Series II — Containment & Governance (7)
 | # | Paper | Published |
 | --- | --- | --- |
-| 1 | [The AI Cartel and the Sovereign Response](/white-papers/the-ai-cartel-and-the-sovereign-response/) | 2026-09-19 |
-| 2 | [Who Tests the Testers?](/white-papers/who-tests-the-testers/) | 2026-09-22 |
-| 3 | [Sovereign Recursive Improvement](/white-papers/sovereign-recursive-improvement/) | 2026-09-22 |
-| 4 | [Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now](/white-papers/samaritan-is-here/) | 2026-09-22 |
+| 1 | [The AI Cartel and the Sovereign Response™](/white-papers/the-ai-cartel-and-the-sovereign-response/) | 2026-09-19 |
+| 2 | [Sovereign Recursive Improvement™](/white-papers/sovereign-recursive-improvement/) | 2026-09-22 |
+| 3 | [Who Tests the Testers?™](/white-papers/who-tests-the-testers/) | 2026-09-22 |
+| 4 | [Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now™](/white-papers/samaritan-is-here/) | 2026-09-22 |
 | 5 | [It Scaled the Fence™: What the OpenAI Agent Did to Australia, and Why the Containment Model Is Broken](/white-papers/it-scaled-the-fence/) | 2026-09-24 |
-| 6 | [Who Decides When the Model Lies](/white-papers/who-decides-when-the-model-lies/) | 2026-10-11 |
-| 7 | [The Tester Is the Target](/white-papers/the-tester-is-the-target/) | 2026-10-18 |
+| 6 | [Who Decides When the Model Lies™](/white-papers/who-decides-when-the-model-lies/) | 2026-10-11 |
+| 7 | [The Tester Is the Target™](/white-papers/the-tester-is-the-target/) | 2026-10-18 |
 
 ### Series III — Practice & Method (8)
 | # | Paper | Published |
 | --- | --- | --- |
-| 1 | [White Paper Methodology](/white-papers/white-paper-methodology/) | — |
-| 2 | [Methodology: Stress-Testing AI Systems for Reliability and Sovereignty](/white-papers/methodology/) | — |
-| 3 | [Sovereign AI vs. Silicon Valley: A Different Origin Story](/white-papers/sovereign-ai-vs-silicon-valley/) | — |
-| 4 | [From AI Tourist to Student Of and With AI](/white-papers/tourist-to-student/) | 2026-10-02 |
-| 5 | [The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store](/white-papers/the-missing-link/) | 2026-10-10 |
-| 6 | [Three Days of Silence](/white-papers/three-days-of-silence/) | 2026-10-11 |
-| 7 | [Enhancement Not Replacement: What Limitless Got Wrong About the Pill](/white-papers/enhancement-not-replacement/) | 2026-10-12 |
-| 8 | [The Class of the Prep Sheet](/white-papers/the-class-of-the-prep-sheet/) | 2026-10-24 |
+| 1 | [White Paper Methodology™](/white-papers/white-paper-methodology/) | — |
+| 2 | [Methodology: Stress-Testing AI Systems for Reliability and Sovereignty™](/white-papers/methodology/) | — |
+| 3 | [Sovereign AI vs. Silicon Valley: A Different Origin Story™](/white-papers/sovereign-ai-vs-silicon-valley/) | — |
+| 4 | [From AI Tourist to Student Of and With AI™](/white-papers/tourist-to-student/) | 2026-10-02 |
+| 5 | [The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store™](/white-papers/the-missing-link/) | 2026-10-10 |
+| 6 | [Three Days of Silence™](/white-papers/three-days-of-silence/) | 2026-10-11 |
+| 7 | [Enhancement Not Replacement: What Limitless Got Wrong About the Pill™](/white-papers/enhancement-not-replacement/) | 2026-10-12 |
+| 8 | [The Class of the Prep Sheet™](/white-papers/the-class-of-the-prep-sheet/) | 2026-10-24 |
 
 ### Retired (1)
 | Paper | Status |
 | --- | --- |
-| [Comparative: From Sovereign to Extractive — A Field Report on AI Platforms](/white-papers/comparative/) | Superseded 2026-10-07 (owner record) |
+| [Comparative: From Sovereign to Extractive — A Field Report on AI Platforms™](/white-papers/comparative/) | Superseded 2026-10-07 (owner record) |
 
 <!-- RECORDS-AUTO:END -->
 
