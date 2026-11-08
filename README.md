@@ -15,6 +15,7 @@ This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.i
 **Series IV — The Record Itself.** [Record Changelog](https://qaevelyn.github.io/white-papers/record-changelog/) — every post-publication change, appended-only, nothing retro-edited. [White Paper Tracker](https://qaevelyn.github.io/white-papers/white-paper-tracker/) — the complete corpus map.
 
 ## The Fleet — canon registry: [ships/manifest.json](ships/manifest.json), generated from the lookbook by records-sync
+<!-- README-FLEET-TABLE: regenerated from ships/manifest.json 2026-11-08 — 13 hulls; records-sync emitter pending -->
 
 | Ship | What it proves |
 |---|---|
@@ -24,9 +25,13 @@ This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.i
 | 4 — IBM Granite Agentic (cross-platform) | Agency + portability, together |
 | 5 — Granite + EvidenceFlow | Fail-closed: every claim traceable, abstains if evidence is missing |
 | 6 — [Suite: Ingestion Tools](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools) | Scribe · Warden · Hand — battle-tested: 19 kills survived, 127/127 corpus, zero losses |
-| 7 — [msgvault adapter](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter) | The mail archive, read in its native tongue; watermark-native checkpointing |
+| 7 — [msgvault Adapter](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter) | The mail archive, read in its native tongue; watermark-native checkpointing |
+| 8 — [DV14™: The Box](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-dv14-ai-containment-blueprint) | Sealed containment architecture: can hardware contain an agent? Two tracks — The Box and the Sensory Deprivation Matrix — Bitcoin-timestamped; review under NDA |
+| 9 — Radiology Companion™ | Sealed local-first clinical companion: the protocol in order, preparation steps verified, twenty languages, nothing about the patient leaves the device |
 | 10 — Overseer™ (tier-authority orchestrator) | The one that watches the others: visible quorum before generation; canon questions never reach the model |
 | 11 — [AWS CCP study manual (Sleep Is Studying Too™)](https://github.com/qaevelyn/a-mirror-of-my-becoming-ship11-aws-ccp-study-manual) | AGPL template edition: 17 print-ready pages, learning-styles front test, the brand on every page |
+| 12 — [Caro Command Deck™](https://github.com/qaevelyn/a-mirror-of-my-becoming-ship12-caro-command) | Applications in the loop: 13 chevrons, one gate, fleet manifest — the record of the becoming, playable |
+| 13 — [TriviaGate™](https://github.com/qaevelyn/a-mirror-of-my-becoming-ship13-triviagate) | The payload: the CLF-C02 arcade — six ways in, one gate; nothing leaves the browser |
 
 ## How the work is built
 
