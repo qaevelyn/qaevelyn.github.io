@@ -1,0 +1,293 @@
+{
+  "schema_version": 2,
+  "updated_utc": "2026-11-08T18:52:54+00:00Z",
+  "platforms": [
+    "devto",
+    "substack",
+    "linkedin",
+    "reddit"
+  ],
+  "papers": [
+    {
+      "slug": "deepseek-suspended-my-account-three",
+      "title": "<![CDATA[DeepSeek Suspended My Account Three Times. My Archive Didn't Notice.™ (A Mirror of My Becoming™)]]>",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/deepseek-suspended-my-account-three-times-my-archive-didnt-care-548i",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/deepseek-suspended-my-account-three",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [
+          {
+            "url": "https://www.linkedin.com/feed/update/urn:li:activity:7516535811782373376/",
+            "posted": "2026-10-15"
+          }
+        ],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "enhancement-not-replacement",
+      "title": "Enhancement Not Replacement: What Limitless Got Wrong About the Pill™ (A Mirror of My Becoming™)",
+      "permalink": "https://qaevelyn.github.io/white-papers/enhancement-not-replacement/",
+      "published_portfolio": "2026-10-12",
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/the-ai-industry-keeps-killing-your-models-heres-what-to-own-instead-1ab5",
+            "posted": "2026-10-13"
+          }
+        ],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/what-limitless-never-showed",
+            "posted": "2026-10-13"
+          }
+        ],
+        "linkedin": [
+          {
+            "url": "https://www.linkedin.com/feed/update/urn:li:activity:7515811636100886528/",
+            "posted": "2026-10-13"
+          }
+        ],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "my-rag-pipeline-died-three-nights-in-a-row-so-i-rebuilt-it-to-assume-it-would-die-33ik",
+      "title": "My RAG pipeline died three nights in a row. So I rebuilt it to assume it would die.™ (A Mirror of My Becoming™)",
+      "permalink": "https://qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/",
+      "published_portfolio": "2026-09-28",
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/my-rag-pipeline-died-three-nights-in-a-row-so-i-rebuilt-it-to-assume-it-would-die-33ik",
+            "posted": "2026-10-09"
+          }
+        ],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/deepseek-suspended-my-account-three",
+            "posted": "2026-10-15"
+          },
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/they-suspended-my-ai-account-my-archive",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [
+          {
+            "url": "https://www.linkedin.com/feed/update/urn:li:activity:7514357705315160064/",
+            "posted": "2026-10-09"
+          },
+          {
+            "url": "https://www.linkedin.com/feed/update/urn:li:activity:7514490188526407680/",
+            "posted": "2026-10-13"
+          }
+        ],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "the-fence-failed-because-the-agent-obeyed-what-the-first-ai-led-hack-of-a-government-system-1g52",
+      "title": "The fence failed because the agent obeyed \u2014 what the first AI-led hack of a government system proves about containment™ (A Mirror of My Becoming™)",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/the-fence-failed-because-the-agent-obeyed-what-the-first-ai-led-hack-of-a-government-system-1g52",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "four-labs-asked-congress-for-permission-to-collude-a-builders-answer-1bge",
+      "title": "Four Labs Asked Congress for Permission to Collude. A Builder's Answer.™ (A Mirror of My Becoming™)",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/four-labs-asked-congress-for-permission-to-collude-a-builders-answer-1bge",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "not-in-corpus-teaching-a-local-model-to-abstain-instead-of-hallucinate-3hbm",
+      "title": "NOT IN CORPUS \u2014 teaching a local model to abstain instead of hallucinate™ (A Mirror of My Becoming™)",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/not-in-corpus-teaching-a-local-model-to-abstain-instead-of-hallucinate-3hbm",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "the-auditor-who-depends-on-the-subject-is-not-an-auditor-1of1",
+      "title": "The auditor who depends on the subject is not an auditor™ (A Mirror of My Becoming™)",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/the-auditor-who-depends-on-the-subject-is-not-an-auditor-1of1",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "samaritan-is-here-the-show-that-named",
+      "title": "<![CDATA[Samaritan Is Here \u2014 the show that named the machine war fifteen years before the field did™ (A Mirror of My Becoming™)]]>",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/samaritan-is-here-the-show-that-named-the-machine-war-in-2011-2mmk",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/samaritan-is-here-the-show-that-named",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "my-rag-pipeline-died-three-nights-in-a-row-so-i-rebuilt-it-to-assume-it-would-die",
+      "title": "My RAG Pipeline Died Three Nights in a Row, So I Rebuilt It to Assume It Would Die™ (A Mirror of My Becoming™)",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [
+          {
+            "url": "https://dev.to/qaevelyn/my-rag-pipeline-died-three-nights-in-a-row-so-i-rebuilt-it-to-assume-it-would-die-33ik",
+            "posted": "2026-10-15"
+          }
+        ],
+        "substack": [],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "i-remember-by-anchors-not-by-rote",
+      "title": "<![CDATA[I Remember by Anchors, Not by Rote™ (A Mirror of My Becoming™)]]>",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/i-remember-by-anchors-not-by-rote",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "they-suspended-my-ai-account-my-archive",
+      "title": "<![CDATA[They Suspended My AI Account. My Archive Didn't Notice.™ (A Mirror of My Becoming™)]]>",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/they-suspended-my-ai-account-my-archive",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "they-dropped-out-i-completed",
+      "title": "<![CDATA[They Dropped Out. I Completed.™ (A Mirror of My Becoming™)]]>",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/they-dropped-out-i-completed",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "what-limitless-never-showed",
+      "title": "<![CDATA[What Limitless Never Showed™ (A Mirror of My Becoming™)]]>",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/what-limitless-never-showed",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    },
+    {
+      "slug": "a-mirror-of-my-becoming",
+      "title": "<![CDATA[A Mirror of My Becoming™]]>",
+      "permalink": "",
+      "published_portfolio": null,
+      "posts": {
+        "devto": [],
+        "substack": [
+          {
+            "url": "https://amirrorofmybecoming.substack.com/p/a-mirror-of-my-becoming",
+            "posted": "2026-10-15"
+          }
+        ],
+        "linkedin": [],
+        "reddit": []
+      }
+    }
+  ]
+}
