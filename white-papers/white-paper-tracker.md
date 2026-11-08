@@ -71,6 +71,8 @@ These papers are declared by the corpus itself (forward references in published 
 | The Medallion Architecture papers | Forthcoming | Tourist to Student, §VI | (Evelyn, 2026-10-17): where the clutter was cleared by organization — about neuroplasticizing; no outline or summary surfaced yet | Record the outline when drafted |
 | Neuroplasticize™ (head-to-head paper — working title) | PENDING — named 2026-10-17 | Organic conclusion of the June → October head-to-head runs; must reference Ship 11 when written | Fork: merge with the white paper below or keep distinct — decided when the record arrives | Red-team the subtitle; resolve the fork on record receipt |
 | Neuroplasticize™ (white paper) | PENDING — in progress, awaiting the record | Corpus map entry; the record is promised and awaited (internal receipt on file — never enters evidence.json) | Formalizes the method claim | Resume when the record arrives |
+| Ship 13 spread paper (TriviaGate™ — working title) | Forthcoming | Lookbook Ship 13 spread: "this spread carries the hyperlink when it publishes" | Nothing on record beyond the spread promise | Add owner notes when surfaced; the link joins the spread on publish |
+| Ship 12 spread paper (Caro Command Deck™ — working title) | Forthcoming | Lookbook Ship 12 spread: "this spread carries the hyperlink when it publishes" | Nothing on record beyond the spread promise | Add owner notes when surfaced; the link joins the spread on publish |
 | Ship evolution papers (Ships 1–5) | Parked | Fleet governance (2026-10): each ship gets a paper about its evolution | Ship 5 is a special case, parked separately | Later task |
 
 ---

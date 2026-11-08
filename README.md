@@ -2,9 +2,9 @@
 
 **The corpus is public; the record of its errors is too.**
 
-This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.io) — the portfolio and white-paper corpus of Evelyn Caro, sovereign AI builder: sixteen papers in four series, eight ships, and the record that documents its own corrections.
+This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.io) — the portfolio and white-paper corpus of Evelyn Caro, sovereign AI builder: the corpus in four series, the fleet, and the record that documents its own corrections. Counts live in the registries — [ships/manifest.json](ships/manifest.json) and [white-papers/manifest.json](white-papers/manifest.json) — never here.
 
-## The White Paper Corpus — 16 papers, four series
+## The White Paper Corpus — four series
 
 **Series I — Platform Dependency** (7). The longitudinal record: trust → failure → backup → departure → sovereignty proven. ChatGPT, AWS, Aisha, Manus, Google, DeepSeek case studies — culminating in *The Cache Is Not the Corpus™*, the thesis proven by the suspension.
 
@@ -14,7 +14,7 @@ This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.i
 
 **Series IV — The Record Itself.** [Record Changelog](https://qaevelyn.github.io/white-papers/record-changelog/) — every post-publication change, appended-only, nothing retro-edited. [White Paper Tracker](https://qaevelyn.github.io/white-papers/white-paper-tracker/) — the complete corpus map.
 
-## The Fleet — 9 ships
+## The Fleet — canon registry: [ships/manifest.json](ships/manifest.json), generated from the lookbook by records-sync
 
 | Ship | What it proves |
 |---|---|
