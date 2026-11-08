@@ -5,9 +5,9 @@ permalink: /tracking/social-feed.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-  <title>Evelyn Caro — Social Feed</title>
+  <title>Evelyn Caro — A Mirror of My Becoming™ — Social Feed</title>
   <link>https://qaevelyn.github.io/tracking/</link>
-  <description>White paper posts across dev.to, Substack, LinkedIn, Reddit</description>
+  <description>A Mirror of My Becoming™ — white paper posts across dev.to, Substack, LinkedIn, Reddit</description>
   <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 {% assign posts = site.data.social_posts.papers %}{% for p in posts %}{% for pair in p.posts %}{% assign k = pair[0] %}{% assign v = pair[1] %}{% if v.url %}
   <item>
