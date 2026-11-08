@@ -35,3 +35,11 @@ The changelog is the audit trail; papers carry no visible audit flags. Every rep
   they were true when recorded — do not edit them to remove version references.
 - Pre-push guard v3 (same date): the blocklist matches ADDED/MODIFIED paths
   only; deletions pass. A retired page's removal is pushable by design.
+
+## Deployment — blue and green (ruling 2026-11-08)
+
+Green is master: what GitHub Pages serves. Green never carries unverified bytes — it is the rollback. Blue is the blue branch: the staging lane. Every repair commits to blue, pushes to origin, and lands only after raw receipts match: git rev-parse blue equals git ls-remote origin refs/heads/blue, and the raw fetch shasum equals the local file shasum. The records-sync bot stamps blue after every push; when the local and remote heads split, absorb with git pull --rebase origin blue and re-verify. Promotion is the owner's word only: fast-forward master to a verified blue. No agent promotes, no agent pushes master. The same lanes rule the ship repos that serve Pages — the Ship 12 repo runs green main and blue blue.
+
+## Registry of Marks — the check before anything goes out (ruling 2026-11-08)
+
+No document, product, or name leaves the tree without the mark pass. The master SOP is the Registry of Marks — Table of Terms, kept by the sweep; the live table of terms on this site is index-of-terms.html. The sign lands on first use of a name in each work and on title and header uses; filenames, URLs, slugs, repo names and storage keys stay unmarked — identifiers, not prose. Two seats: Caro Command Deck™ outside the page — repo, About, release, lookbook, manifest, resume; SGC Command Deck™ inside the page. The repo slug stays caro-command. Fleet names come from ships/manifest.json and nowhere else: public hulls carry their repo URL, sealed hulls carry none. The hand-generated fleet table in README.md retires the day the records-sync emitter lands.
