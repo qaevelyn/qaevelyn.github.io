@@ -227,6 +227,7 @@
   "suite": {
     "ship6": {
       "title": "Suite: Ingestion Tools — overnight receipt",
+      "status": "built Sept 29, 2026 — Scribe · Warden · Hand; 127/127 corpus, zero losses",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-ingestion-tools",
       "video_receipt": "https://youtu.be/4DBuhhPpbjU",
       "run": "Sept 29, 2026 04:41 AM — Written: 55, Sidecar total: 127, zero failures, zero losses",
@@ -241,6 +242,7 @@
     },
     "ship7": {
       "title": "msgvault adapter",
+      "status": "built — smoke run 200 msgs, 23,500 chunks; run 2 resumed at row 201 — never re-ingest",
       "repo": "https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-msgvault-adapter",
       "video_dry_run": "https://youtu.be/BO3FFlEsyxQ",
       "video_run2_resume": "https://youtu.be/mYyLKLq2l7w",
@@ -321,7 +323,7 @@
       "id": "ship12",
       "number": 12,
       "title": "Ship 12 — Caro Command Deck™ (A Mirror of My Becoming™ Tools)",
-      "status": "",
+      "status": "built — live journey console; canon regenerates from the manifest",
       "portfolio": {
         "spread_anchor": "lookbook.html#ship12"
       },
@@ -338,7 +340,7 @@
       "id": "ship13",
       "number": 13,
       "title": "Ship 13 — TriviaGate™ (A Mirror of My Becoming™ Tools)",
-      "status": "",
+      "status": "live — the dial payload; CLF-C02 arcade, six ways in, one gate",
       "portfolio": {
         "spread_anchor": "lookbook.html#ship13"
       },
