@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "EvidenceFlow Verification: How Ship 5 Proves Its Answers"
+title: "EvidenceFlow Verification: How Ship 5 Proves Its Answers™"
 permalink: /case-studies/evidenceflow-verification-ship5/
 author_profile: true
 ---

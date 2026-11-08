@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "RAG Knowledge Base Audit — Per Scholas AI Assistant (Azari)"
+title: "RAG Knowledge Base Audit — Per Scholas AI Assistant (Azari)™"
 permalink: /case-studies/azari-audit/
 author_profile: true
 ---

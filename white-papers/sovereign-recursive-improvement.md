@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "Sovereign Recursive Improvement"
+title: "Sovereign Recursive Improvement™"
 subtitle: "The Auditor's Case for Builder-Owned AI"
 date: 2026-09-22
 author: Evelyn Caro

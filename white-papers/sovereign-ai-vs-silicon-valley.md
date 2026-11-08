@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Sovereign AI vs. Silicon Valley: A Different Origin Story"
+title: "Sovereign AI vs. Silicon Valley: A Different Origin Story™"
 permalink: /white-papers/sovereign-ai-vs-silicon-valley/
 author_profile: true
 ---

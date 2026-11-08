@@ -19,7 +19,7 @@
   "case_studies": [
     {
       "id": "evidenceflow-verification-ship5",
-      "title": "EvidenceFlow Verification: How Ship 5 Proves Its Answers",
+      "title": "EvidenceFlow Verification: How Ship 5 Proves Its Answers™",
       "type": "white-paper",
       "date": "2026-08-30",
       "document": {
@@ -41,7 +41,7 @@
     },
     {
       "id": "azari-audit",
-      "title": "RAG Knowledge Base Audit \u2014 Per Scholas AI Assistant (Azari)",
+      "title": "RAG Knowledge Base Audit — Per Scholas AI Assistant (Azari)™",
       "type": "audit",
       "date": "2026-09-10",
       "document": {

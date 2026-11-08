@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now"
+title: "Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now™"
 subtitle: "A Sovereign AI Practitioner's Re-Read of the Machine, the War, and the Alternative the Show Never Named"
 date: 2026-09-22
 author: Evelyn Caro

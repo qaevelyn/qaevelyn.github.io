@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Case Study: Manus — From Loyalty to Betrayal to Sovereignty"
+title: "Case Study: Manus — From Loyalty to Betrayal to Sovereignty™"
 permalink: /white-papers/manus-case-study/
 author_profile: true
 ---

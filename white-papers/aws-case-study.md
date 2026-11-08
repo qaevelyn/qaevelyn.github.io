@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Case Study: AWS — The Maze"
+title: "Case Study: AWS — The Maze™"
 permalink: /white-papers/aws-case-study/
 author_profile: true
 ---

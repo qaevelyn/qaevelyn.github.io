@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Comparative: From Sovereign to Extractive — A Field Report on AI Platforms"
+title: "Comparative: From Sovereign to Extractive — A Field Report on AI Platforms™"
 permalink: /white-papers/comparative/
 author_profile: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "From AI Tourist to Student Of and With AI"
+title: "From AI Tourist to Student Of and With AI™"
 subtitle: "A Practitioner's Account of Self-Directed AI Learning"
 date: 2026-10-02
 author: Evelyn Caro

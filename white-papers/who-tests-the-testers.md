@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "Who Tests the Testers?"
+title: "Who Tests the Testers?™"
 subtitle: "Containment Failures in Frontier AI Security — The Auditor's Blind Spot"
 date: 2026-09-22
 author: Evelyn Caro

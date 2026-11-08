@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "Enhancement Not Replacement: What Limitless Got Wrong About the Pill"
+title: "Enhancement Not Replacement: What Limitless Got Wrong About the Pill™"
 subtitle: "The Movie Never Showed the Backend"
 author: Evelyn Caro
 date: 2026-10-12

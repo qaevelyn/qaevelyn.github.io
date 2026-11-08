@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "The Class of the Prep Sheet"
+title: "The Class of the Prep Sheet™"
 subtitle: "What Bourdieu Teaches Imaging Departments About Failed Preparation"
 date: 2026-10-24
 timestamp: "2026-10-24 15:30"

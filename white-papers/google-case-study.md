@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Case Study: Google AI Studio and Gemini NotebookLM — The Failures"
+title: "Case Study: Google AI Studio and Gemini NotebookLM — The Failures™"
 permalink: /white-papers/google-case-study/
 author_profile: true
 ---

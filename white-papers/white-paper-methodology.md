@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "White Paper Methodology"
+title: "White Paper Methodology™"
 permalink: /white-papers/white-paper-methodology/
 author_profile: true
 ---

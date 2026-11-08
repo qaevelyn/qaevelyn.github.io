@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "White Paper: AI Platform Comparison for Sovereign Archive Development"
+title: "White Paper: AI Platform Comparison for Sovereign Archive Development™"
 permalink: /white-papers/White_Paper_AI_Platform_Comparison/
 author_profile: true
 ---
