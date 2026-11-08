@@ -387,8 +387,8 @@
    "issuer": "Google / Coursera",
    "date": "2026-11-07",
    "program": "Google IT Support Professional Certificate — track-level credential (Credly badge, v.3)",
-   "verify_url": "https://www.credly.com/go/5TMt0gK0",
-   "note": "Full-schema entry 2026-11-07: Credly badge certificate PDF hosted + preview rendered via pdftoppm; displayed on the wall from assets/certificates/credentials.js as the capstone card of the track.",
+   "verify_url": "https://www.credly.com/earner/earned/badge/54d035b5-2dbd-4be0-9996-369a0fb03093",
+   "note": "Full-schema entry 2026-11-07: Credly badge certificate PDF hosted + preview rendered via pdftoppm; displayed on the wall from assets/certificates/credentials.js as the first card of the track, with the Credly badge view beside it and the five course certificates after.",
    "certificate": {
     "filename": "google-it-support-professional-certificate-badge.pdf",
     "local": "~/Repos/qaevelyn.github.io/assets/certificates/google-it-support-professional-certificate-badge.pdf",
