@@ -1,4 +1,30 @@
 {
+    "external_audits": [
+    {
+      "id": "audit-02-external",
+      "auditor": "Kimi AI (external, independent; engaged directly by the owner)",
+      "date": "2026-11-06T19:10:00-05:00",
+      "received": "2026-11-06T19:28:00-05:00",
+      "subject": "qaevelyn.github.io — full portfolio audit (the good, the bad, the ugly)",
+      "series": "second audit in the record; the first is the Azari audit (case-studies/azari-audit)",
+      "findings": "11 findings (7 bad, 4 ugly) + 6 confirmed strengths + 7 priority fixes",
+      "full_text": "AUDIT-02-Kimi-External-Report-2026-11-06.md (filed verbatim; also in the record changelog entry of the same date)",
+      "verifier_note": "reproduced verbatim from the owner's paste; auditor's fetcher caveat preserved"
+    },
+    {
+      "id": "audit-02-verification",
+      "verifier": "Z (the estate-keeping agent; interested party — disclosed per the doctrine)",
+      "date": "2026-11-06T20:30:00-05:00",
+      "subject": "line-by-line verification of audit-02-external",
+      "verdict": "8 confirmed · 2 refuted · 1 risk posture; every verdict carries a primary-source receipt",
+      "refuted": [
+        "SVG delivery: GitHub Pages serves image/svg+xml (curl -I receipt, HTTP/2 200, two live files) — the auditor's own fetcher proxy at fault",
+        "homepage JS-shell hypothesis: raw source shows server-side static HTML with all content present; the narrow core (no nav links for crawlers) stands and is fixed by a paste-ready cover-index block"
+      ],
+      "full_text": "AUDIT-02-Z-Verification-Response-2026-11-06.md",
+      "outcome": "owner-ordered same night: registry automation (README + counts generated from ships/manifest.json), console fleet canon 13 hulls, FIX-KIT with nine paste-ready fixes"
+    }
+  ],
   "evidence_ledger": {
     "author": "Evelyn Caro - Sovereign AI Builder",
     "purpose": "Public index of evidence supporting claims in the author's published works. Verifiable items are listed with locations; private holdings are declared as private.",
