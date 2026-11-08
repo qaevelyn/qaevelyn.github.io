@@ -1,5 +1,5 @@
 # LAYER REPORT
-Generated: 2026-11-07 06:12 UTC by tools/records/layer_check.py
+Generated: 2026-11-08 05:24 UTC by tools/records/layer_check.py
 
 Owner ruling 2026-10-26: both directions reconcile into the canonical md; the static page renders it. Drift here means a layer moved without the other.
 - white-papers/record-changelog.md row 12: canonical cell not rendered -> "two sentences added after the quorum table interpreting the near-tie f"
@@ -11,14 +11,14 @@ Owner ruling 2026-10-26: both directions reconcile into the canonical md; the st
 - white-papers/record-changelog.md row 19: canonical cell not rendered -> "evelyncaro.github.io (name-squat signpost) license standardized + repo"
 - white-papers/record-changelog.md row 20: canonical cell not rendered -> "the class of the prep sheet restructured after publication: red-pen li"
 - white-papers/record-changelog.md: ... further md->static findings suppressed
-- white-papers/record-changelog/index.html row 12: static row absent from canonical md -> "site-wide permalink 404s closed - 25 static pages shipped every /white"
-- white-papers/record-changelog/index.html row 13: static row absent from canonical md -> "doubled title headings removed from 10 static pages pages whose body o"
-- white-papers/record-changelog/index.html row 14: static row absent from canonical md -> "manifest automation wired after first-fire autopsy sync-manifest workf"
-- white-papers/record-changelog/index.html row 15: static row absent from canonical md -> "oct 25, 2026"
-- white-papers/record-changelog/index.html row 16: static row absent from canonical md -> "oct 25, 2026"
-- white-papers/record-changelog/index.html row 17: static row absent from canonical md -> "oct 25, 2026"
-- white-papers/record-changelog/index.html row 18: static row absent from canonical md -> "oct 25, 2026"
-- white-papers/record-changelog/index.html row 19: static row absent from canonical md -> "oct 25, 2026"
+- white-papers/record-changelog/index.html row 6: static row absent from canonical md -> "second external audit received — kimi ai, engaged directly by the owne"
+- white-papers/record-changelog/index.html row 7: static row absent from canonical md -> "every audit finding re-tested the same evening against the live site, "
+- white-papers/record-changelog/index.html row 8: static row absent from canonical md -> "both reports filed to the evidence ledger as external_audits records ("
+- white-papers/record-changelog/index.html row 9: static row absent from canonical md -> "owner order: the registries go fully machine-made — the readme fleet t"
+- white-papers/record-changelog/index.html row 10: static row absent from canonical md -> "caro command console fleet window re-keyed to the 13-hull lookbook can"
+- white-papers/record-changelog/index.html row 18: static row absent from canonical md -> "site-wide permalink 404s closed - 25 static pages shipped every /white"
+- white-papers/record-changelog/index.html row 19: static row absent from canonical md -> "doubled title headings removed from 10 static pages pages whose body o"
+- white-papers/record-changelog/index.html row 20: static row absent from canonical md -> "manifest automation wired after first-fire autopsy sync-manifest workf"
 - white-papers/record-changelog/index.html: ... further static->md findings suppressed
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-10 — the missing link: same-day correction (minutes after publ"
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-10 — brand standard: dv14™ applied across the corpus"
@@ -26,6 +26,7 @@ Owner ruling 2026-10-26: both directions reconcile into the canonical md; the st
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-12 — fleet url standardization + version discipline + v6 relea"
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-26 — rulings"
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-26 — convergence + repair"
+- white-papers/record-changelog/index.html: heading absent from canonical md -> "2026-11-06 — second audit received and verified (appended)"
 - white-papers/white-paper-tracker.md row 2: canonical cell not rendered -> "case study: chatgpt — from reliance to rejection"
 - white-papers/white-paper-tracker.md row 3: canonical cell not rendered -> "white paper: a case study in ai collaboration"
 - white-papers/white-paper-tracker.md row 4: canonical cell not rendered -> "white paper: ai platform comparison for sovereign archive development"
