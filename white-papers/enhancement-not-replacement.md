@@ -10,7 +10,7 @@ permalink: /white-papers/enhancement-not-replacement/
 *"Now that we've started this fire, we are slaves to our desires / We can't stop what we've begun..."*
 — Freddie Jackson, "Love Me Down"
 
-# Enhancement Not Replacement: What Limitless Got Wrong About the Pill
+# Enhancement Not Replacement: What Limitless Got Wrong About the Pill™
 ## The Movie Never Showed the Backend
 
 **Evelyn Caro** · October 12, 2026
@@ -110,7 +110,7 @@ The pill runs out. The files don't. Press save.
 
 [8] Caro, E. (2026). *The Cache Is Not the Corpus™: Nineteen Deaths, Zero Losses, and the Asymmetry That Decides What an Archive Is*. qaevelyn.github.io/white-papers/the-cache-is-not-the-corpus/.
 
-[9] Caro, E. (2026). *Who Decides When the Model Lies: Giving the Pipeline Its Verdict Back*. qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/.
+[9] Caro, E. (2026). *Who Decides When the Model Lies™: Giving the Pipeline Its Verdict Back*. qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/.
 
 [10] Caro, E. (2026). *From AI Tourist to Student Of and With AI*. qaevelyn.github.io/white-papers/tourist-to-student/. — the June receipts, ll. 412–424, 480–510; the noise-pollution environment and the condition ledger.
 

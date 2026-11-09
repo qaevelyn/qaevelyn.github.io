@@ -342,10 +342,10 @@ The answer, from now on, has to be: the sovereign.
 - Abungu, A. (2026). "Opacity, Abstraction, and AI Developer Liability." Journal of Tort Law, 2026.
 - Amodei, D. (2026). "We Must Pace the Frontier." Anthropic, September 12, 2026.
 - Hawley, J. (2026). Senate statement on the antitrust waiver request, September 2026.
-- Caro, E. (2026a). "Who Tests the Testers? Containment Failures in Frontier AI Security, The Auditor's Blind Spot." qaevelyn.github.io/white-papers/who-tests-the-testers/.
-- Caro, E. (2026b). "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.
-- Caro, E. (2026c). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
-- Caro, E. (2026d). "Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now." qaevelyn.github.io/white-papers/samaritan-is-here/.
+- Caro, E. (2026a). "Who Tests the Testers?™ Containment Failures in Frontier AI Security, The Auditor's Blind Spot." qaevelyn.github.io/white-papers/who-tests-the-testers/.
+- Caro, E. (2026b). "Sovereign Recursive Improvement™: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.
+- Caro, E. (2026c). "The AI Cartel and the Sovereign Response™: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
+- Caro, E. (2026d). "Samaritan Is Here™: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now." qaevelyn.github.io/white-papers/samaritan-is-here/.
 - Caro, E. (2026e). "Sovereign AI vs. Silicon Valley: A Different Origin Story." qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/.
 - Caro, E. (2026f). "DV14™: The Box." Private repository. Details available under NDA.
 

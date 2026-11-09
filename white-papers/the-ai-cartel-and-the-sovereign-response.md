@@ -8,7 +8,7 @@ type: position-paper
 permalink: /white-papers/the-ai-cartel-and-the-sovereign-response/
 ---
 
-# The AI Cartel and the Sovereign Response
+# The AI Cartel and the Sovereign Response™
 
 **Who Decides How Fast AI Moves?**
 

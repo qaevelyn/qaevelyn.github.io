@@ -8,7 +8,7 @@ type: position-paper
 permalink: /white-papers/sovereign-recursive-improvement/
 ---
 
-# Sovereign Recursive Improvement
+# Sovereign Recursive Improvement™
 
 **The Auditor's Case for Builder-Owned AI**
 
@@ -199,7 +199,7 @@ Chesterman asks the question. Lemon builds the frame. This paper answers with th
 - Lemon, MK (2026e). "CDIL and Iterated Reinforcement Learning: A Three-Term Correspondence and Its Boundary." Unityverse Press, Yarnell, AZ. June 2026.
 - Institute for Security and Technology. (2026). "Recursive Self Improvement Initiative." securityandtechnology.org, August 17, 2026.
 - Caro, E. (2026a). "Sovereign AI vs. Silicon Valley: A Different Origin Story." qaevelyn.github.io/white-papers/sovereign-ai-vs-silicon-valley/.
-- Caro, E. (2026b). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
+- Caro, E. (2026b). "The AI Cartel and the Sovereign Response™: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
 - Caro, E. (2026). "DV14™: The Box." [Private repository](https://github.com/qaevelyn/a-mirror-of-my-becoming-suite-dv14-ai-containment-blueprint). Details available under NDA.
 
 ---

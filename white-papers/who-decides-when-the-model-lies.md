@@ -93,7 +93,7 @@ The AI collaborator that drafted this paper failed the way the model failed — 
 
 The author's role here is not a formality. Her paper on learning AI documented the discovery years in its making:
 
-> *"I gave AI its due by designating it my instructor. I trusted it to play its role and mine was the student. I later found out I had to be an auditor to check up on the teacher. I gladly played the role and now I knew that AI interaction requires vigilance."* — From AI Tourist to Student Of and With AI
+> *"I gave AI its due by designating it my instructor. I trusted it to play its role and mine was the student. I later found out I had to be an auditor to check up on the teacher. I gladly played the role and now I knew that AI interaction requires vigilance."* — From AI Tourist to Student Of and With AI™
 
 > *"That day I discovered what my role with AI actually was. Not student. Auditor. I had to check the teacher. I had to verify what it was giving me against what was actually required."*
 

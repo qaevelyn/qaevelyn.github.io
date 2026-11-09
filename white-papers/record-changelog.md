@@ -29,11 +29,11 @@ If a stranger had cited a page on 2026-10-06, would today's fix change what thei
 | 2026-10-07 | Correction to this changelog's first session: the row claiming "broken links repaired" was premature — recon showed cited slugs matched real files; the 404s were the reviewer's own guessed URLs, not site errors | Correction | The record must not claim fixes that did not occur |
 
 Date: Oct 10, 2026 | Time: 1:03 pm | Task: Missing Link paper drafted + scope ruling | Status: RECORDED
-  - The Missing Link drafted (white-paper 17) — bridge-scoped; the two-way query capability (ask/getdoc/overseer) scoped to the Orchestrator paper instead; title stands
+  - The Missing Link™ drafted (white-paper 17) — bridge-scoped; the two-way query capability (ask/getdoc/overseer) scoped to the Orchestrator paper instead; title stands
   - Prior-art framing ruled: author's non-exhaustive disclosure cited as evidence-honest framing; enterprise-variant existence scoped in intro (sovereign personal-archive variant carries different constraints)
   - Scope ruling by owner after auditor initially omitted: the two-way capability discovered during recon changes the architecture documentation — routed to Orchestrator paper
 
-## 2026-10-10 — The Missing Link: same-day correction (minutes after publication)
+## 2026-10-10 — The Missing Link™: same-day correction (minutes after publication)
 Two corrections applied same-day, per appended-not-retro-edited: (1) pass-4 Leo quotation verified against the verbatim transcript (provenance repo evidence/leo-prior-art-pass-4-2026-10-04.md) and found non-verbatim; restated in the paper using the transcript's actual wording. (2) Nearest neighbors switched to the five pass-4 repositories the transcript documents — RAGmail, Email-RAG, LlamaIndex IngestionPipeline, WPipe, async-doc-ingestion — with per-repo gaps; Memento and ChatVault (pass 5) retained as secondary neighbors, reference [7]. Evidence ledger appended same day.
 
 ## 2026-10-10 — Brand standard: DV14™ applied across the corpus
@@ -53,7 +53,7 @@ First use is first use. DV14™ was first commercially offered September 19, 202
 | 2026-10-12 | evelynacaro.github.io footer URLs across 11 repos standardized to qaevelyn.github.io | Presentation | URL is plumbing, not prose (Oct 7 precedent); canonical URL ruled by owner 2026-10-12: qaevelyn.github.io |
 | 2026-10-12 | Process error recorded: the URL sweep ran on a wrong premise (evelynacaro treated as a typo of qaevelyn; it is the owner's separate name property). Correct in direction only after the owner's correction. Premise-confirmation before fleet-wide rewrites is now standing procedure. | Correction | A record that hides its errors is publicity, not documentation |
 | 2026-10-12 | evelyncaro.github.io (name-squat signpost) LICENSE standardized + repo description corrected to declare its signpost function | Presentation | Signpost must announce itself; stale portfolio description misrepresented the repo |
-| 2026-10-25 | The Class of the Prep Sheet restructured after publication: Red-Pen List section retired (resolutions already folded into the text 2026-10-24), receipts-doctrine preamble removed, references consolidated, wording aligned | Revision | Row recorded after the fact — missing when the change landed; receipts preserved, nothing retro-edited |
+| 2026-10-25 | The Class of the Prep Sheet™ restructured after publication: Red-Pen List section retired (resolutions already folded into the text 2026-10-24), receipts-doctrine preamble removed, references consolidated, wording aligned | Revision | Row recorded after the fact — missing when the change landed; receipts preserved, nothing retro-edited |
 | 2026-10-26 | Paper closing block standardized corpus-wide: single copyright paragraph with site and licensing contact; duplicate footers removed; standard footer restored on Who Decides | Presentation | Consistency sweep found three closing variants |
 | 2026-10-26 | Reader navigation fleet-wide (top/bottom scroll on all papers, case studies, list pages); Ship 9 spread reordered to fleet convention; ship 10 credit moved to deck caption; changelog page rebuilt | Infrastructure | Audit day fixes; receipts in Mirror Log |
 | 2026-10-26 | First independent portfolio audit published as a public receipt — 12pp, auditor Z (AI collaborator of record): architecture, fleet consistency, storefront, reading experience, positioning; PDF at /assets/audits/Portfolio_Audit_qaevelyn_github_io_2026-10-26.pdf | Record | Owner doctrine: corrections land as visible receipts, not hidden edits |
@@ -63,8 +63,8 @@ Date: Oct 15, 2026 | Time: 2:27 pm | Task: DEEPSEEK SUSPENSION #3 RECORDED | Sta
   - Corpus unaffected. 310,963 chunks intact. Zero losses across all three suspensions.
   - Dev.to adaptation published with all three suspensions documented.
 2026-10-19 — Zenodo record 10.5281/zenodo.23246730 (v5) metadata corrected after publication: the 28 template-lineage contributors removed from Authors/Creators — credited upstream in the description, not authors of this work; description names the template and states sole authorship and rights; paper count restated to match the v5 snapshot; license field aligned with the all-rights-reserved © line. Files unchanged; DOIs unchanged; appended, not retro-edited.
-2026-10-19 — GDPR Art. 17 erasure request emailed to info@zenodo.org for "From AI Tourist to Student Of and With AI" (white-papers/tourist-to-student.md) inside the archived ZIPs of records 23246730 (v5) and 23310741 (v6); preferred outcome file-level removal, fallback unpublish versions, concept 23246729 preserved for corrected v7. Parallel GitHub erasure tickets #4872556 and #4872567 (received 2026-10-18). Response documented here on receipt.
-Date: Oct 24, 2026 | Time: 5:03 pm | Task: The Class of the Prep Sheet published | Status: PUBLISHED
+2026-10-19 — GDPR Art. 17 erasure request emailed to info@zenodo.org for "From AI Tourist to Student Of and With AI™" (white-papers/tourist-to-student.md) inside the archived ZIPs of records 23246730 (v5) and 23310741 (v6); preferred outcome file-level removal, fallback unpublish versions, concept 23246729 preserved for corrected v7. Parallel GitHub erasure tickets #4872556 and #4872567 (received 2026-10-18). Response documented here on receipt.
+Date: Oct 24, 2026 | Time: 5:03 pm | Task: The Class of the Prep Sheet™ published | Status: PUBLISHED
   - Record-paper published at /white-papers/the-class-of-the-prep-sheet/ — "What Bourdieu Teaches Imaging Departments About Failed Preparation"
   - Cite-check discipline held: eight clinical citations page-level verified 2026-10-24 before the publish word; three findings-as-used corrections dated-append; owner-side recon ALL GREEN 15/15
   - Site serves files raw (.nojekyll — Jekyll never runs; every /white-papers/<slug>/ permalink had 404'd site-wide since launch, found during this publish): the paper is rendered to a static page at its permalink path; the .md remains the canonical source
@@ -74,8 +74,8 @@ Date: Oct 26, 2026 | Time: 6:00 am | Task: White Papers index shows section coun
   - The index subtitle is the author's copy and was not touched; the counts now make it publicly checkable against the page
 Date: Oct 26, 2026 | Time: 6:00 am | Task: Standard three-line footer completed across the corpus | Status: FIXED
   - The licensing footer (© / A Mirror of My Becoming™ — qaevelyn.github.io / licensing email) is now on every page under /white-papers/, including the index and the last seven pages still carrying the short form
-  - Who Tests the Testers? had its missing tail restored: back link, reader controls, footer, closing tags
-Date: Oct 26, 2026 | Time: 6:00 am | Task: Samaritan Is Here citations completed from verified sources | Status: FIXED
+  - Who Tests the Testers?™ had its missing tail restored: back link, reader controls, footer, closing tags
+Date: Oct 26, 2026 | Time: 6:00 am | Task: Samaritan Is Here™ citations completed from verified sources | Status: FIXED
   - All four Nolan & Plageman Gizmodo citations completed: pending flags removed, publication dates corrected by one day each (Jan 10 2014, May 15 2014, Jan 13 2015, Apr 28 2016), interviewers credited (A. Newitz; C. J. Anders), verified article URLs added — in the canonical .md and the served page
   - The flagged-not-faked standard holds: the two AI Cartel pendings stay flagged, untouched (author ruling 2026-10-25)
 Date: Oct 26, 2026 | Time: 6:00 am | Task: Tourist to Student external link targets repaired | Status: FIXED

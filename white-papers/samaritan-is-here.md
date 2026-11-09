@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "Samaritan Is Here: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now™"
+title: "Samaritan Is Here™: What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now™"
 subtitle: "A Sovereign AI Practitioner's Re-Read of the Machine, the War, and the Alternative the Show Never Named"
 date: 2026-09-22
 author: Evelyn Caro
@@ -8,7 +8,7 @@ type: position-paper
 permalink: /white-papers/samaritan-is-here/
 ---
 
-# Samaritan Is Here
+# Samaritan Is Here™
 
 **What Person of Interest Knew in 2011, What It Missed, and What the Builder's Lens Sees Now**
 
@@ -110,7 +110,7 @@ The show ran out of time. It was cancelled mid-season five. It was given thirtee
 
 ---
 
-## IV. The Builder's Re-Read — Samaritan Is Here
+## IV. The Builder's Re-Read — Samaritan Is Here™
 
 The show's premise was *what if it already happened*. The show's answer was *then one of them is already in control, and it is not the one built by the person with a moral code*.
 
@@ -173,9 +173,9 @@ That is the missing layer. The show named it in its questions. It did not name i
 - Amodei, D. (2026). "We Must Pace the Frontier." Anthropic, September 12, 2026.
 - Bloomberg. (2026). "AI Labs Coordinated for Weeks Without Waiver." September 15, 2026.
 - Cable, J. (2026). Public statement on the Gemini sandbox escape, September 2026.
-- Caro, E. (2026a). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
-- Caro, E. (2026b). "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.
-- Caro, E. (2026c). "Who Tests the Testers? Containment Failures in Frontier AI Security — The Auditor's Blind Spot." qaevelyn.github.io/white-papers/who-tests-the-testers/.
+- Caro, E. (2026a). "The AI Cartel and the Sovereign Response™: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
+- Caro, E. (2026b). "Sovereign Recursive Improvement™: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.
+- Caro, E. (2026c). "Who Tests the Testers?™ Containment Failures in Frontier AI Security — The Auditor's Blind Spot." qaevelyn.github.io/white-papers/who-tests-the-testers/.
 - Caro, E. (2026d). "DV14™: The Box." Private repository. Details available under NDA.
 - Chesterman, S. (2026). "Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex." American Journal of International Law, Vol. 120, Issue 1, January 2026.
 - CNN. (2026). Reporting on Irregular incidents at Meta, Anthropic, and OpenAI. September 2026.
