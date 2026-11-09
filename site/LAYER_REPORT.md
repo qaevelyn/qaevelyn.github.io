@@ -1,5 +1,5 @@
 # LAYER REPORT
-Generated: 2026-11-09 19:47 UTC by tools/records/layer_check.py
+Generated: 2026-11-09 21:44 UTC by tools/records/layer_check.py
 
 Owner ruling 2026-10-26: both directions reconcile into the canonical md; the static page renders it. Drift here means a layer moved without the other.
 - white-papers/record-changelog.md row 12: canonical cell not rendered -> "two sentences added after the quorum table interpreting the near-tie f"
@@ -9,7 +9,7 @@ Owner ruling 2026-10-26: both directions reconcile into the canonical md; the st
 - white-papers/record-changelog.md row 17: canonical cell not rendered -> "evelynacaro.github.io footer urls across 11 repos standardized to qaev"
 - white-papers/record-changelog.md row 18: canonical cell not rendered -> "process error recorded: the url sweep ran on a wrong premise (evelynac"
 - white-papers/record-changelog.md row 19: canonical cell not rendered -> "evelyncaro.github.io (name-squat signpost) license standardized + repo"
-- white-papers/record-changelog.md row 20: canonical cell not rendered -> "the class of the prep sheet restructured after publication: red-pen li"
+- white-papers/record-changelog.md row 20: canonical cell not rendered -> "the class of the prep sheet™ restructured after publication: red-pen l"
 - white-papers/record-changelog.md: ... further md->static findings suppressed
 - white-papers/record-changelog/index.html row 6: static row absent from canonical md -> "second external audit received — kimi ai, engaged directly by the owne"
 - white-papers/record-changelog/index.html row 7: static row absent from canonical md -> "every audit finding re-tested the same evening against the live site, "
@@ -20,7 +20,7 @@ Owner ruling 2026-10-26: both directions reconcile into the canonical md; the st
 - white-papers/record-changelog/index.html row 19: static row absent from canonical md -> "doubled title headings removed from 10 static pages pages whose body o"
 - white-papers/record-changelog/index.html row 20: static row absent from canonical md -> "manifest automation wired after first-fire autopsy sync-manifest workf"
 - white-papers/record-changelog/index.html: ... further static->md findings suppressed
-- white-papers/record-changelog.md: heading not rendered -> "2026-10-10 — the missing link: same-day correction (minutes after publ"
+- white-papers/record-changelog.md: heading not rendered -> "2026-10-10 — the missing link™: same-day correction (minutes after pub"
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-10 — brand standard: dv14™ applied across the corpus"
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-12 — who-decides-when-the-model-lies: section iv revision"
 - white-papers/record-changelog.md: heading not rendered -> "2026-10-12 — fleet url standardization + version discipline + v6 relea"
@@ -40,7 +40,7 @@ Owner ruling 2026-10-26: both directions reconcile into the canonical md; the st
 - white-papers/white-paper-tracker/index.html row 2: static row absent from canonical md -> "the thesis proven by the suspension"
 - white-papers/white-paper-tracker/index.html row 3: static row absent from canonical md -> "first failure; the deletion without export"
 - white-papers/white-paper-tracker/index.html row 4: static row absent from canonical md -> "the crash; rebuild from local files"
-- white-papers/white-paper-tracker/index.html row 5: static row absent from canonical md -> "a case study in ai collaboration (aisha)"
+- white-papers/white-paper-tracker/index.html row 5: static row absent from canonical md -> "a case study in ai collaboration (aisha)™"
 - white-papers/white-paper-tracker/index.html row 6: static row absent from canonical md -> "the forced transition; the backup habit pays"
 - white-papers/white-paper-tracker/index.html row 7: static row absent from canonical md -> "google — ai studio & gemini notebooklm"
 - white-papers/white-paper-tracker/index.html row 8: static row absent from canonical md -> "the benchmark, and the addendum that amended it"
