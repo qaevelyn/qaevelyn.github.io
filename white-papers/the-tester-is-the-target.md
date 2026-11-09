@@ -144,10 +144,10 @@ Authors: Evelyn Caro — independent journalist, QA engineer, AI builder, design
 5. Caro, E. (2026). *From AI Tourist to Student Of and With AI.* October 2, 2026. https://qaevelyn.github.io/white-papers/tourist-to-student/
 6. Caro, E. (2026). *Who Decides When the Model Lies.* October 11, 2026. https://qaevelyn.github.io/white-papers/who-decides-when-the-model-lies/
 7. Caro, E. (2026). *Three Days of Silence.* October 11, 2026. https://qaevelyn.github.io/white-papers/three-days-of-silence/
-8. Caro, E. (2026). *The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local RAG.* October 10, 2026. https://qaevelyn.github.io/white-papers/the-missing-link/
+8. Caro, E. (2026). *The Missing Link™: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local RAG.* October 10, 2026. https://qaevelyn.github.io/white-papers/the-missing-link/
 9. Caro, E. (2026). *Enhancement Not Replacement: What Limitless Got Wrong About the Pill.* October 12, 2026. https://qaevelyn.github.io/white-papers/enhancement-not-replacement/
 10. Caro, E. (2026). *White Paper Methodology.* https://qaevelyn.github.io/white-papers/white-paper-methodology/
-11. Caro, E. (2026). *Methodology: Stress-Testing AI Systems for Reliability and Sovereignty.* https://qaevelyn.github.io/white-papers/methodology/
+11. Caro, E. (2026). *Methodology: Stress-Testing AI Systems™ for Reliability and Sovereignty.* https://qaevelyn.github.io/white-papers/methodology/
 12. Caro, E. (2026). *The AI Cartel and the Sovereign Response.* September 19, 2026. https://qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/
 13. Kleppmann, M. (2017). *Designing Data-Intensive Applications.* O'Reilly.
 14. Zobel, J. & Moffat, A. (2006). Inverted Files for Text Search Engines. *ACM Computing Surveys*, 38(2).

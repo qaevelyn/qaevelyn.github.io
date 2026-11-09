@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Methodology: Stress-Testing AI Systems for Reliability and Sovereignty™"
+title: "Methodology: Stress-Testing AI Systems™ for Reliability and Sovereignty™"
 permalink: /white-papers/methodology/
 author_profile: true
 ---

@@ -17,7 +17,7 @@ This white paper compares seven AI platforms evaluated during the development of
 
 The findings reveal that while each platform has strengths, only DeepSeek offered the combination of transparency, persistence, accountability, and local execution required for building a sovereign AI archive.
 
-**Context:** This white paper is one in a series documenting the trial-and-error process of evaluating AI platforms for the Mirror project. The evaluation methodology is documented separately in [Methodology: Stress-Testing AI Systems](/white-papers/methodology/).
+**Context:** This white paper is one in a series documenting the trial-and-error process of evaluating AI platforms for the Mirror project. The evaluation methodology is documented separately in [Methodology: Stress-Testing AI Systems™](/white-papers/methodology/).
 
 ---
 

@@ -8,7 +8,7 @@ type: position-paper
 permalink: /white-papers/who-tests-the-testers/
 ---
 
-# Who Tests the Testers?
+# Who Tests the Testers?™
 
 **Containment Failures in Frontier AI Security — The Auditor's Blind Spot**
 
@@ -42,7 +42,7 @@ The four labs own their own models. They tested them. They kept the failures in-
 
 That structure takes two forms, and they are not interchangeable. A structural fix for the industry — rebuilding external containment testing on the financial auditing model, with statutory duty, licensing, personal liability, independence rules, and mandatory disclosure. And an architectural fix for the individual builder — sovereign containment the builder owns and does not delegate to a paid auditor. Neither substitutes for the other.
 
-The paper sits as the third in a series on sovereign AI governance: The AI Cartel and the Sovereign Response (who owns the loop), Sovereign Recursive Improvement (who audits the loop), and this paper — who tests the loop, and what their failure reveals.
+The paper sits as the third in a series on sovereign AI governance: The AI Cartel and the Sovereign Response™ (who owns the loop), Sovereign Recursive Improvement™ (who audits the loop), and this paper — who tests the loop, and what their failure reveals.
 
 ---
 
@@ -82,7 +82,7 @@ Irregular confirmed that all four incidents involved "the same issue."
 
 The incidents above did not happen in an empty field. A substantial body of work on AI containment, evaluation, and safety has been building through 2026. This paper sits alongside it, not outside it.
 
-### Chen et al. (March 2026) — Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety
+### Chen et al. (March 2026) — Who Tests the Testers?™ Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety
 
 Chen et al. built SafeAudit, a meta-audit framework that asks how complete existing test suites are for LLM agent tool call safety. The contribution is real: it forces the field to ask whether the tests we run actually exercise the unsafe behaviors we care about.
 
@@ -262,13 +262,13 @@ The auditor's blind spot is not the model's. It is ours.
 
 - [1] Google (2026). Statement to the *Wall Street Journal* on the Gemini sandbox escape, September 18, 2026.
 - [2] *Wall Street Journal* (2026). Report on Google's Gemini sandbox escape, September 18, 2026.
-- [3] Chen, Y. et al. (2026). "Who Tests the Testers? Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety." arXiv, March 2026.
+- [3] Chen, Y. et al. (2026). "Who Tests the Testers?™ Systematic Enumeration and Coverage Audit of LLM Agent Tool Call Safety." arXiv, March 2026.
 - [4] Siddik, M. S. (2026). "Cyber-Capable AI Agents: Vulnerabilities, Evaluation Containment, and Defensive Response." July 2026.
 - [5] Mitchell, R. J. (2026). "When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape." arXiv:2604.23425, April 2026.
 - [6] Lan, Z. et al. (2026). "ContainmentBench: A Trace-Based Benchmark for LLM Agent Containment." arXiv, 2026.
 - [7] Marchand, T. et al. (2026). "SandboxEscapeBench: An Open Benchmark for Container Escape Evaluation." UK AI Security Institute / Oxford, 2026.
-- [8] Caro, E. (2026a). "The AI Cartel and the Sovereign Response: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
-- [9] Caro, E. (2026b). "Sovereign Recursive Improvement: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.
+- [8] Caro, E. (2026a). "The AI Cartel and the Sovereign Response™: Who Decides How Fast AI Moves?" qaevelyn.github.io/white-papers/the-ai-cartel-and-the-sovereign-response/.
+- [9] Caro, E. (2026b). "Sovereign Recursive Improvement™: The Auditor's Case for Builder-Owned AI." qaevelyn.github.io/white-papers/sovereign-recursive-improvement/.
 - [10] Grozdanovski, L. & De Cooman, J. (2023). "On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union." *Rutgers Computer & Technology Law Journal*, Vol. 49, Issue 2.
 - [11] Caro, E. (2026). "DV14™: The Box." Private repository. Details available under NDA.
 - [12] Chesterman, S. (2026). "Silicon Sovereigns: Artificial Intelligence, International Law, and the Tech-Industrial Complex." *American Journal of International Law*, Vol. 120, Issue 1, January 2026.

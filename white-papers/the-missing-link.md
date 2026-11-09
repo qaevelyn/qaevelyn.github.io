@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "The Missing Link: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store™"
+title: "The Missing Link™: Resilience-Engineered Bridging of a SQLite Mail Archive into a Local Vector Store™"
 subtitle: "A Sovereign Builder's Case That the Hardest Part of RAG Is Not Retrieval — It Is Getting the Corpus In Without Losing It"
 date: 2026-10-10
 author: Evelyn Caro
