@@ -16,6 +16,9 @@
      img    (optional)  path to badge/certificate image
      pdf    (optional)  path to certificate PDF (adds a PDF link)
      kind   (optional)  'cert' = framed card, 'badge' = grid tile
+     compact(optional)  true = badge art at badge scale inside the
+                         framed card (max 180px, centered) - for Credly
+                         badge views that lead a track
    Group fields: title, intro, note (all optional except title).
    Search note: Mir search reads assets/certificates/manifest.json
    (the archival copy with the 5-address records). Keep that file
@@ -34,7 +37,8 @@
           href: 'https://www.credly.com/earner/earned/badge/54d035b5-2dbd-4be0-9996-369a0fb03093',
           img: '/assets/certificates/google-it-support-professional-badge.png',
           kind: 'cert',
-          tally: false  /* the Credly badge itself - same credential as the card above, shown the way she filed it: certificate first, badge second */ },
+          compact: true,
+          tally: false  /* the Credly badge itself - same credential as the certificate card under it, not counted twice. Compact by owner order 2026-11-09 6:05 PM: badge art at badge scale - the framed card was built for full-width certificate scans and has no size cap of its own. */ },
         { name: 'Google IT Support Professional Certificate (v.3)',
           issuer: 'Google / Coursera',
           date: '2026-11-07',
@@ -83,6 +87,13 @@
       title: 'Google AI',
       intro: '8 courses · 20+ artifacts · Aug 7, 2026',
       items: [
+        { name: 'Google AI Professional Badge',
+          issuer: 'Google / Credly',
+          href: 'https://www.credly.com/badges/1b0f3b19-6f35-486a-85cf-65c1a897676c',
+          img: '/assets/certificates/google-ai-professional-badge.png',
+          kind: 'cert',
+          compact: true,
+          tally: false  /* the Credly badge itself - same credential as the certificate card under it, not counted twice. Same setup as the Google IT Support track, owner order 2026-11-09 6:05 PM: badge leads compact, certificate card follows. */ },
         { name: 'Google AI Professional Certificate',
           issuer: 'Google / Coursera',
           date: '2026-08-07',
@@ -90,11 +101,6 @@
           img: '/assets/certificates/google-ai-certificate-preview.png',
           pdf: '/assets/certificates/google-ai-professional-certificate.pdf',
           kind: 'cert' },
-        { name: 'Google AI Professional Badge',
-          href: 'https://www.credly.com/badges/1b0f3b19-6f35-486a-85cf-65c1a897676c',
-          img: '/assets/certificates/google-ai-professional-badge.png',
-          kind: 'badge',
-          tally: false  /* second view of the Professional Certificate above, not a separate credential */ },
         { name: 'Google AI Fundamentals',
           href: 'https://www.credly.com/badges/a93bef28-d559-4572-9b98-f5b0c9a637ad',
           img: '/assets/certificates/google-ai-fundamentals.png',
@@ -133,6 +139,12 @@
           issuer: 'AWS Educate',
           href: 'https://www.credly.com/badges/3836cb8e-2f7f-475c-8b66-98aaab047ff1',
           img: '/assets/certificates/aws-educate-genai-badge.png',
+          kind: 'badge' },
+        { name: 'AWS Knowledge: Cloud Essentials - Training Badge',
+          issuer: 'AWS Training and Certification',
+          date: '2026-11-09',
+          href: 'https://www.credly.com/badges/3e160882-d2b5-47a2-b295-20fdc3e94115',
+          img: '/assets/certificates/aws-knowledge-cloud-essentials-training-badge.png',
           kind: 'badge' }
       ]
     },
@@ -215,8 +227,11 @@
   function certCard(it) {
     var inner = '';
     if (it.img) {
+      var imgStyle = it.compact
+        ? ' style="display:block; width:auto; max-width:180px; max-height:180px; height:auto; margin:0 auto;"'
+        : '';
       inner += '<a href="' + esc(it.href) + '" target="_blank" rel="noopener">' +
-               '<img src="' + esc(it.img) + '" alt="' + esc(it.name) + '"></a>';
+               '<img src="' + esc(it.img) + '" alt="' + esc(it.name) + '"' + imgStyle + '></a>';
       inner += '<div class="cert-cap" style="font-size:0.75rem; margin-top:0.3rem;">' +
                esc(it.name) + '</div>';
     } else {
