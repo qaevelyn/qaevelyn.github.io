@@ -8,6 +8,8 @@ in the manifest (notebooks, videos, tags, licenses, receipts).
 
 Rules honored:
 - Append-only: existing entries are never deleted; missing ships are added as stubs.
+- Reverse chronological, like the deck: ships run newest first (13 down to 1);
+  a newly landed ship takes the front of its section, never the back.
 - Titles in the manifest are owner-curated: drift vs. the book is REPORTED, not overwritten.
 - Statuses are owner-set via STATUS_OVERRIDES; automation never invents status.
 
@@ -15,6 +17,7 @@ Usage:  python3 tools/records/build_ships_manifest.py [--root REPO_ROOT]
 Exit 0 always (it heals). Print a change summary.
 """
 import argparse
+import collections
 import json
 import re
 import sys
@@ -83,7 +86,7 @@ def main() -> int:
     suite = manifest.setdefault("suite", {})
     added, lookbook_blocks, drift = [], [], []
 
-    for num, b in sorted(book.items()):
+    for num, b in sorted(book.items(), reverse=True):  # newest ship first, like the deck
         lb = {
             "lookbook": {
                 "h3_title": b["book_title"],
@@ -114,10 +117,18 @@ def main() -> int:
             }
             stub.update(lb)
             if SHIP_SECTION.get(num) == "ships":
-                manifest["ships"].append(stub)
-                by_number[num] = len(manifest["ships"]) - 1
+                manifest["ships"].insert(0, stub)  # newest first
+                for n2 in by_number:
+                    by_number[n2] += 1
+                by_number[num] = 0
             else:
-                suite[f"ship{num}"] = stub
+                reordered = collections.OrderedDict()
+                reordered[f"ship{num}"] = stub  # newest first
+                for k2, v2 in suite.items():
+                    if k2 != f"ship{num}":
+                        reordered[k2] = v2
+                suite.clear()
+                suite.update(reordered)
             added.append(num)
             lookbook_blocks.append(num)
 
