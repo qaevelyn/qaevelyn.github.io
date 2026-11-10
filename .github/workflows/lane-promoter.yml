@@ -1,0 +1,55 @@
+name: lane-promoter
+
+# Blue-green, as ordered: work lands on the idle lane, the lane gets verified,
+# and only then does the live deployment switch over. Never the other way round.
+# Refusal is loud and leaves both branches untouched. No force. Ever.
+
+on:
+  push:
+    branches:
+      - blue
+      - green
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify the lane before anything goes live
+        run: |
+          python3 tools/records/build_ships_manifest.py
+          python3 tools/records/build_tracker.py
+          # the record generators must agree with the book exactly:
+          # any diff here means the lane's records lag the work — no switchover
+          git diff --exit-code -- ships/manifest.json white-papers/white-paper-tracker.md
+
+      - name: Switch over — fast-forward master to the verified lane
+        run: |
+          git config user.name  "lane-promoter[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          if ! git merge-base --is-ancestor origin/master HEAD; then
+            echo "::error::The lane has diverged from master — refusing to switch over. Reconcile the lane first (lane absorbs the master line, umbrella intact), then push again."
+            exit 1
+          fi
+          if [ "$(git rev-parse origin/master)" = "$(git rev-parse HEAD)" ]; then
+            echo "Master already serves this tip — nothing to switch."
+            exit 0
+          fi
+          git push origin HEAD:master   # fast-forward by construction; GitHub refuses anything else
+
+      - name: Switchover record
+        run: |
+          echo "Master now serves the verified tip of ${{ github.ref_name }}."
+          echo "House rule: backup copies and absorbed lane states are deleted only after the promoted commit is verified live."
