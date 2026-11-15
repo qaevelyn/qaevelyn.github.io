@@ -1,0 +1,9 @@
+# .tm-allowlist — verbatim exemptions per Registry of Marks §1.2 (identifiers) and §4 (identifier rule).
+# One regex per line, matched against the whole line. Comments start with #.
+# Every entry states WHY the occurrence is an identifier, not prose.
+# §1.2 — shell commands that were run, preserved exactly
+python ingest_conversations\.py query "What is A Mirror of My Becoming\?"
+# §1.2 — quoted change-record (a quoted question inside a "What: Changed" entry)
+Changed "How did IBM use watsonx\.\.\." to "How does A Mirror of My Becoming
+# §1.2 — literal folder names (paths on disk, preserved exactly)
+trae A Mirror of My Becoming
