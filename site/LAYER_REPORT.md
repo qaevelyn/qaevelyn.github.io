@@ -1,5 +1,5 @@
 # LAYER REPORT
-Generated: 2026-11-15 01:58 UTC by tools/records/layer_check.py
+Generated: 2026-11-15 02:07 UTC by tools/records/layer_check.py
 
 Owner ruling 2026-10-26: both directions reconcile into the canonical md; the static page renders it. Drift here means a layer moved without the other.
 - white-papers/record-changelog.md row 12: canonical cell not rendered -> "two sentences added after the quorum table interpreting the near-tie f"
