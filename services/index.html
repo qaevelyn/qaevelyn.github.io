@@ -8,23 +8,21 @@
 <style>
   :root { --ink:#17181a; --paper:#fdfcf9; --muted:#66625a; --line:#e5e0d6; --pen:#8f2d2d; }
   * { box-sizing:border-box }
-  body { margin:0; background:var(--paper); color:var(--ink);
-         font:16px/1.65 Georgia, 'Times New Roman', serif; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 Georgia, 'Times New Roman', serif; }
   main { max-width:46rem; margin:0 auto; padding:4rem 1.5rem 3rem }
   h1 { font-size:2rem; line-height:1.2; margin:0 0 .4rem }
   h2 { font-size:1.15rem; margin:2.2rem 0 .6rem }
-  .kicker { color:var(--pen); font:600 .78rem/1 -apple-system, 'Helvetica Neue', Arial, sans-serif;
-            letter-spacing:.14em; text-transform:uppercase; margin:0 0 1.1rem }
+  .kicker { color:var(--pen); font:600 .78rem/1 -apple-system, 'Helvetica Neue', Arial, sans-serif; letter-spacing:.14em; text-transform:uppercase; margin:0 0 1.1rem }
   p { margin:.7rem 0 }
   .muted { color:var(--muted) }
   ul { padding-left:1.2rem; margin:.6rem 0 }
   li { margin:.45rem 0 }
   a { color:var(--pen); text-underline-offset:3px }
+  table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.9rem; }
+  th, td { text-align:left; padding:.6rem; border-bottom:1px solid var(--line); }
+  th { font-family:-apple-system, 'Helvetica Neue', Arial, sans-serif; font-size:.8rem; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); }
   footer { border-top:1px solid var(--line); margin:3rem auto 0; padding:1.2rem 1.5rem 2.5rem; max-width:46rem }
   .copyright { color:var(--muted); font-size:.9rem }
-  .scroll-nav { position:fixed; right:1.25rem; bottom:1.25rem; display:flex; flex-direction:column; gap:.5rem }
-  .scroll-nav button { font:.8rem/1 -apple-system, 'Helvetica Neue', Arial, sans-serif; padding:.55rem .8rem;
-                       border:1px solid var(--line); border-radius:999px; background:#fff; cursor:pointer }
 </style>
 </head>
 <body>
@@ -33,14 +31,45 @@
 <h1>Services</h1>
 <p>I run an independent verification practice built on the same doctrine this site is built on: nothing is claimed unless it can be shown, and every engagement ends in a receipt the client keeps. The work is AI-collaboration QA — auditing systems that were built with AI, testing the outputs people are asked to trust, and checking the documents those outputs produce before they reach a patient, a client, or the public record.</p>
 <p>The published record doubles as the portfolio. Each line of service below links to a paper on this site that shows the method in public, on real systems, with the receipts left in.</p>
+
+<h2>The Evidence Room</h2>
+<p>When an external AI audits me, I audit the audit. Here is the public record of my audits.</p>
+<table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Date</th>
+      <th>Audit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>03</td>
+      <td>2026-11-06</td>
+      <td><a href="/assets/audits/03-Kimi-Audit-and-Response-2026-11-06.pdf">Kimi Audit &amp; My Response (PDF)</a></td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>2026-11-14</td>
+      <td><a href="/assets/audits/02-Portfolio-Audit-2026-11-14.pdf">14-Ship Portfolio Audit (PDF)</a></td>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>2026-10-26</td>
+      <td><a href="/assets/audits/01-Portfolio-Audit-2026-10-26.pdf">Initial Portfolio Audit (PDF)</a></td>
+    </tr>
+  </tbody>
+</table>
+
 <h2>What an engagement looks like</h2>
 <ul>
   <li><strong>Audits of AI-assisted work.</strong> What a system actually does, against what it claims to do — the gap is the finding. See <a href="/white-papers/who-tests-the-testers/">Who Tests the Testers</a> and <a href="/white-papers/the-tester-is-the-target/">The Tester Is the Target</a>.</li>
-  <li><strong>Cyber Readiness Baseline.</strong> I use the Cyber Readiness Institute's Core Four framework to assess your organization's baseline (Passwords/MFA, Software Updates, Phishing, Secure Storage). The engagement ends with a completed CRI Playbook and a readiness receipt. See <a href="https://cyberreadinessinstitute.org/" target="_blank" rel="noopener">the CRI standard</a>.</li>\n  <li><strong>Adversarial testing.</strong> Structured attempts to make the model lie, leak, or overreach, documented step by step so the results reproduce. See <a href="/white-papers/three-days-of-silence/">Three Days of Silence</a>.</li>
+  <li><strong>Adversarial testing.</strong> Structured attempts to make the model lie, leak, or overreach, documented step by step so the results reproduce. See <a href="/white-papers/three-days-of-silence/">Three Days of Silence</a>.</li>
   <li><strong>Documentation QA.</strong> Patient-facing and client-facing documents verified line by line — the prep sheet is the canonical case. See <a href="/white-papers/the-class-of-the-prep-sheet/">The Class of the Prep Sheet</a>.</li>
+  <li><strong>Cyber Readiness Baseline.</strong> I use the Cyber Readiness Institute's Core Four framework to assess your organization's baseline (Passwords/MFA, Software Updates, Phishing, Secure Storage). The engagement ends with a completed CRI Playbook and a readiness receipt. See <a href="https://cyberreadinessinstitute.org/" target="_blank" rel="noopener">the CRI standard</a>.</li>
   <li><strong>Platform evaluation.</strong> Criteria-first assessment of AI platforms for a specific workload, not vendor marketing. See <a href="/white-papers/White_Paper_AI_Platform_Comparison/">the platform comparison paper</a>.</li>
-  <li><strong>Method, on the record.</strong> How the verification is done is itself published: <a href="/white-papers/methodology/">methodology</a> and <a href="/white-papers/white-paper-methodology/">white-paper methodology</a>.</li>
 </ul>
+
 <h2>The service fleet</h2>
 <p>The standing services, with current availability and per-service notes, live in the <a href="/lookbook.html">lookbook</a> alongside the published ships. The lookbook is the fleet record; this page is the front door.</p>
 <p class="muted">Engagements begin with a scoping conversation — see <a href="/contact/">contact</a>.</p>
@@ -48,74 +77,7 @@
 <footer>
 <p class="copyright">© 2026 Evelyn Caro. All rights reserved.<br>
   A Mirror of My Becoming™ — https://qaevelyn.github.io<br>
-  For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
-<p class="footerlinks" style="font-size:.85rem;color:inherit;margin:.4rem 0 0">Record: <a href="/toc/">contents</a> · <a href="/white-papers/record-changelog/">changelog</a> · <a href="/white-papers/white-paper-tracker/">tracker</a> · <a href="/lookbook.html">lookbook</a> &nbsp;—&nbsp; Practice: <a href="/services/">services</a> · <a href="/contact/">contact</a> &nbsp;—&nbsp; <a href="/assets/audits/Portfolio_Audit_qaevelyn_github_io_2026-10-26.pdf">portfolio audit, 2026-10-26 (PDF)</a></p>
+  <strong>Est. June 23, 2026</strong></p>
 </footer>
-<!-- zdoor: reader door + read-to-you (stage 3, 2026-10-26) -->
-<div class="zdoor" role="group" aria-label="Reader controls">
-  <button id="zdoor-zout" aria-label="Smaller text">A&minus;</button>
-  <button id="zdoor-zreset" aria-label="Reset text size">A</button>
-  <button id="zdoor-zin" aria-label="Larger text">A+</button>
-  <button id="zdoor-night" aria-label="Toggle night reading" aria-pressed="false">🌙</button>
-  <button id="zdoor-speak" aria-label="Read this page aloud" aria-pressed="false">Read to you</button>
-</div>
-<style>
-.zdoor{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;margin:1.2rem 0 0;}
-.zdoor button{font-family:Georgia,serif;font-size:.95rem;line-height:1;padding:.45rem .6rem;border-radius:6px;border:1px solid rgba(139,111,61,.8);background:rgba(127,127,127,.12);color:inherit;cursor:pointer;}
-.zdoor button:hover{background:rgba(139,111,61,.85);color:#f5e6d3;}
-html.zdoor-night body{background:#17181a;color:#e8e6e1;}
-html.zdoor-night a{color:#c9a86a;}
-@media print{.zdoor{display:none;}}
-</style>
-<script>
-(function(){
-  var root=document.documentElement;
-  var zin=document.getElementById('zdoor-zin'),zout=document.getElementById('zdoor-zout'),zreset=document.getElementById('zdoor-zreset'),night=document.getElementById('zdoor-night'),speak=document.getElementById('zdoor-speak');
-  function gz(){var z=parseFloat(root.style.zoom);return isNaN(z)?1:z;}
-  function sz(z){z=Math.min(1.6,Math.max(0.8,Math.round(z*10)/10));root.style.zoom=(z===1)?'':z;try{localStorage.setItem('wp-zoom',String(z));}catch(e){}}
-  zin.addEventListener('click',function(){sz(gz()+0.1);});
-  zout.addEventListener('click',function(){sz(gz()-0.1);});
-  zreset.addEventListener('click',function(){sz(1);});
-  try{var z=parseFloat(localStorage.getItem('wp-zoom'));if(z>=0.8&&z<=1.6&&z!==1){root.style.zoom=z;}}catch(e){}
-  function paintN(){var on=root.classList.contains('zdoor-night');night.textContent=on?'☀️':'🌙';night.setAttribute('aria-pressed',on?'true':'false');}
-  paintN();
-  night.addEventListener('click',function(){root.classList.toggle('zdoor-night');paintN();});
-  function pageText(){
-    var m=document.querySelector('main')||document.querySelector('article')||document.body;
-    var c=m.cloneNode(true);
-    var drop=c.querySelectorAll('script,style,noscript,.zdoor,.scroll-nav,.reader-controls,button');
-    for(var i=0;i<drop.length;i++){if(drop[i].parentNode)drop[i].parentNode.removeChild(drop[i]);}
-    return (c.innerText||c.textContent||'').replace(/\s+/g,' ').trim();
-  }
-  function stopAll(){try{speechSynthesis.cancel();}catch(e){}speak.textContent='Read to you';speak.setAttribute('aria-pressed','false');}
-  if(!('speechSynthesis' in window)){speak.style.display='none';}
-  else{
-    speak.addEventListener('click',function(){
-      if(speechSynthesis.speaking||speechSynthesis.pending){stopAll();return;}
-      var t=pageText();if(!t)return;
-      speak.textContent='Stop reading';speak.setAttribute('aria-pressed','true');
-      var parts=t.match(/[^.!?…]+[.!?]*\s*/g)||[t];
-      var buf='',q=[];
-      for(var i=0;i<parts.length;i++){if((buf+parts[i]).length>240){q.push(buf);buf=parts[i];}else{buf+=parts[i];}}
-      if(buf)q.push(buf);
-      var last=null;
-      for(var j=0;j<q.length;j++){
-        var u=new SpeechSynthesisUtterance(q[j].trim());
-        u.rate=1;u.lang=document.documentElement.lang||'en-US';
-        if(j===q.length-1){last=u;}
-        speechSynthesis.speak(u);
-      }
-      if(last){last.onend=function(){speak.textContent='Read to you';speak.setAttribute('aria-pressed','false');};}
-    });
-    window.addEventListener('beforeunload',function(){try{speechSynthesis.cancel();}catch(e){}});
-  }
-})();
-</script>
-<!-- /zdoor -->
-<div class="scroll-nav">
-  <button id="toTop" aria-label="Back to top">↑ Top</button>
-  <button id="toBottom" aria-label="Jump to end">↓ End</button>
-</div>
-<script>(function(){var t=document.getElementById('toTop'),b=document.getElementById('toBottom');if(t)t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});if(b)b.addEventListener('click',function(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});});})();</script>
 </body>
 </html>
