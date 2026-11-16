@@ -1,0 +1,40 @@
+name: quartermaster
+
+# Quartermaster — deterministic PII/secret scan on everything that lands
+# in this repo. No ML, no confidence scores — every BLOCK cites a rule id
+# and a fixed, human-written explanation. See QUARTERMASTER.md and
+# tools/pii/scan_pii.py.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine what changed
+        id: spec
+        run: |
+          BEFORE="${{ github.event.before }}"
+          BASE="origin/master"
+          if [ -n "$BEFORE" ] \
+             && [ "$BEFORE" != "0000000000000000000000000000000000000000" ] \
+             && git cat-file -e "$BEFORE" 2>/dev/null; then
+            echo "spec=$BEFORE..HEAD" >> "$GITHUB_OUTPUT"
+          elif git rev-parse --verify -q "$BASE" >/dev/null; then
+            echo "spec=$BASE...HEAD" >> "$GITHUB_OUTPUT"
+          else
+            echo "spec=HEAD~1..HEAD" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Quartermaster — scan changed files
+        run: python3 tools/pii/scan_pii.py --git-diff "${{ steps.spec.outputs.spec }}"
