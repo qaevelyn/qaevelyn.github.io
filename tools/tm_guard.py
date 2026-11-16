@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 """tm_guard — TM Guard for the provenance repo.
 
-Canon: A_Mirror_of_My_Becoming_Registry-of-Marks_Table-of-Terms (stem match, any extension).
-Reads the registry presence, the .tm-allowlist, and the staged text files. Blocks bare marks
-in prose; exempts identifiers (code spans, URLs, slugs, filenames, storage keys) per registry
-§1.2 and §4. Prints the full hit list (no cap). Exit 1 = blocked, 0 = clean.
-
+Path agnostic: finds the git root and runs from there.
+Checks for bare marks and duplicate blocks.
 No version string by owner ruling: the file name is the name.
 """
-import os, re, subprocess, sys, unicodedata
+import os, re, subprocess, sys
 
 MARKS = [
     "A Mirror of My Becoming",
@@ -23,8 +20,19 @@ MARKS = [
     "encode by day, consolidate by night",
     "Sleep Is Studying Too",
 ]
-TM = "\u2122"  # trade mark sign
+TM = "\u2122"
 TEXT_EXTS = (".html", ".md", ".txt", ".json", ".js")
+
+def get_git_root():
+    """Find the absolute path to the git root."""
+    try:
+        root = subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True).stdout.strip()
+        if root:
+            os.chdir(root)
+            return root
+    except Exception:
+        pass
+    return os.getcwd()
 
 def find_registry():
     for root, dirs, files in os.walk("."):
@@ -45,17 +53,10 @@ def load_allowlist():
     return pats
 
 def is_identifier(line):
-    # code spans
-    if re.search(r"`[^`]*`", line):
-        return True
-    # URLs, paths, filenames
-    if re.search(r"https?://", line) or re.search(r"/[\w./-]+", line):
-        return True
-    if re.search(r"\.(?:py|js|json|md|html|sh|svg|pdf|zip)\b", line):
-        return True
-    # registry §4 identifier rule
-    if re.search(r"sgc-deck-v\d|TriviaGate_transcript", line):
-        return True
+    if re.search(r"`[^`]*`", line): return True
+    if re.search(r"https?://", line) or re.search(r"/[\w./-]+", line): return True
+    if re.search(r"\.(?:py|js|json|md|html|sh|svg|pdf|zip)\b", line): return True
+    if re.search(r"sgc-deck-v\d|TriviaGate_transcript", line): return True
     return False
 
 def staged_text_files():
@@ -66,6 +67,13 @@ def staged_text_files():
     files = [f for f in out.split("\0") if f]
     return [f for f in files if f.endswith(TEXT_EXTS)]
 
+def check_duplicates(text):
+    blocks = re.split(r'\n\s*---\s*\n', text)
+    for i in range(1, len(blocks)):
+        if blocks[i].strip() == blocks[i-1].strip() and len(blocks[i].strip()) > 5:
+            return "Duplicate block detected (identical to previous block)"
+    return None
+
 def scan(files, allow):
     hits = []
     for path in files:
@@ -73,6 +81,12 @@ def scan(files, allow):
             text = open(path, encoding="utf-8", errors="replace").read()
         except Exception:
             continue
+        
+        dup_err = check_duplicates(text)
+        if dup_err:
+            hits.append((path, 0, "DUPLICATE_BLOCK", dup_err))
+            continue
+            
         for i, line in enumerate(text.splitlines(), 1):
             if not any(m in line for m in MARKS):
                 continue
@@ -94,11 +108,13 @@ def scan(files, allow):
     return hits
 
 def main():
+    get_git_root()
     reg = find_registry()
     if not reg:
         print("TM GUARD — commit BLOCKED. Registry of Marks not found (stem search, repo root).")
         print("canon stem: A_Mirror_of_My_Becoming_Registry-of-Marks_Table-of-Terms")
         return 1
+    
     files = staged_text_files()
     hits = scan(files, load_allowlist())
     if hits:
