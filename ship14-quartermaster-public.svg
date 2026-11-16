@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="A Mirror of My Becoming™ Tools: Quartermaster™ — Ship 14, the cargo gate — nothing personal rides">
+  <title>A Mirror of My Becoming™ — Quartermaster™, the cargo gate (Ship 14)</title>
+  <defs>
+    <style>
+      .bg{fill:#0b1f3a}.frame{fill:none;stroke:#1d3a5f;stroke-width:2}
+      .crate{fill:none;stroke:#e8edf4;stroke-width:6;stroke-linejoin:round}
+      .seal{stroke:#b60205;stroke-width:6;stroke-linecap:round}
+      .lens{fill:none;stroke:#e8edf4;stroke-width:6}
+      .txt{fill:#e8edf4;font-family:'Courier New',monospace}
+      .sub{fill:#8fa3bf;font-family:'Courier New',monospace}
+    </style>
+  </defs>
+  <rect class="bg" width="800" height="450"/>
+  <rect class="frame" x="14" y="14" width="772" height="422" rx="10"/>
+
+  <!-- the crate -->
+  <g transform="translate(240,105)">
+    <rect class="crate" x="0" y="0" width="180" height="180" rx="6"/>
+    <line class="crate" x1="0" y1="60" x2="180" y2="60"/>
+    <line class="crate" x1="0" y1="120" x2="180" y2="120"/>
+    <line class="crate" x1="60" y1="0" x2="60" y2="180"/>
+    <line class="crate" x1="120" y1="0" x2="120" y2="180"/>
+    <!-- refusal seal across the crate -->
+    <line class="seal" x1="-18" y1="-18" x2="198" y2="198"/>
+    <line class="seal" x1="198" y1="-18" x2="-18" y2="198"/>
+  </g>
+
+  <!-- the lens: every crate gets looked at -->
+  <g transform="translate(470,190)">
+    <circle class="lens" cx="0" cy="0" r="64"/>
+    <line class="lens" x1="46" y1="46" x2="106" y2="106"/>
+    <circle cx="0" cy="0" r="64" fill="#b60205" opacity="0.12"/>
+  </g>
+
+  <text class="sub" x="60" y="50" font-size="15" letter-spacing="3">A MIRROR OF MY BECOMING™ TOOLS:</text>
+  <text class="txt" x="60" y="84" font-size="32" font-weight="bold">QUARTERMASTER™</text>
+  <text class="sub" x="60" y="106" font-size="13" letter-spacing="3">SHIP 14</text>
+  <text class="sub" x="60" y="392" font-size="21">the cargo gate — nothing personal rides</text>
+  <text class="sub" x="60" y="416" font-size="15">no ML · no confidence scores · no guessing · refusal is loud</text>
+</svg>
