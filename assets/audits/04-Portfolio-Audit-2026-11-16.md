@@ -22,3 +22,7 @@
 ## 4. The TM Sweep Mandate
 - The whole portfolio needs a TM sweep, and the Registry of Marks needs an update to reflect new marks.
 - **Fix:** Scheduled for the next build cycle. The portfolio will need a full sweep along with the GitHub repos.
+
+## 5. Missing Reading Aids on White Papers
+**Finding:** Several white papers are missing the reading aids (night/day mode toggle, font size adjuster, read-aloud functionality) that are standard across the portfolio.
+**Resolution:** Scheduled a sweep to implement the missing controls across all white paper pages.
