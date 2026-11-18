@@ -15,7 +15,7 @@ This repository is the source for [qaevelyn.github.io](https://qaevelyn.github.i
 **Series IV — The Record Itself.** [Record Changelog](https://qaevelyn.github.io/white-papers/record-changelog/) — every post-publication change, appended-only, nothing retro-edited. [White Paper Tracker](https://qaevelyn.github.io/white-papers/white-paper-tracker/) — the complete corpus map.
 
 ## The Fleet — canon registry: [ships/manifest.json](ships/manifest.json), generated from the lookbook by records-sync
-<!-- README-FLEET-TABLE: regenerated from ships/manifest.json 2026-11-08 — 13 hulls; records-sync emitter pending -->
+<!-- README-FLEET-TABLE: regenerated from ships/manifest.json 2026-11-17 — 14 active hulls; records-sync emitter pending -->
 
 | Ship | What it proves |
 |---|---|
