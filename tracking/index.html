@@ -1,29 +1,43 @@
----
-layout: page
-title: Social Feed — A Mirror of My Becoming™
-permalink: /tracking/
----
-
-# Social Feed — A Mirror of My Becoming™
-
-Every white paper's posting across platforms, newest first. Auto-generated from `tracking/social-posts.json`.
-
-<table id="social-feed">
-  <thead>
-    <tr>
-      <th>Paper</th>
-      <th>Portfolio</th>
-      <th>dev.to</th>
-      <th>Substack</th>
-      <th>LinkedIn</th>
-      <th>Reddit</th>
-    </tr>
-  </thead>
-  <tbody id="social-feed-body"></tbody>
-</table>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Feed — A Mirror of My Becoming™ — Evelyn Caro</title>
+  <meta name="description" content="Every white paper's posting across platforms, newest first — the social feed of A Mirror of My Becoming™, the verification portfolio of Evelyn Caro." />
+  <style>
+    body { font-family: Georgia, serif; background: #fdfcf9; color: #17181a; padding: 2rem; max-width: 900px; margin: 0 auto; line-height: 1.6; }
+    h1 { font-size: 2rem; }
+    .subtitle { color: #a89070; font-style: italic; }
+    table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.9rem; }
+    th, td { text-align: left; padding: 0.55rem; border-bottom: 1px solid #e5e0d6; }
+    th { background: rgba(139,111,61,0.22); color: #5a3d14; }
+    a { color: #8b5a1f; }
+    footer { border-top: 1px solid #e5e0d6; margin-top: 3rem; padding-top: 1.2rem; color: #8A8578; font-size: .9rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>Social Feed — A Mirror of My Becoming™</h1>
+  <p class="subtitle">Every white paper's posting across platforms, newest first.</p>
+  <table id="social-feed">
+    <thead>
+      <tr>
+        <th>Paper</th>
+        <th>Portfolio</th>
+        <th>dev.to</th>
+        <th>Substack</th>
+        <th>LinkedIn</th>
+        <th>Reddit</th>
+      </tr>
+    </thead>
+    <tbody id="social-feed-body"></tbody>
+  </table>
+  <p class="subtitle">Generated from <code>tracking/social-posts.json</code> — the file is the record.</p>
+<footer>
+  <p>© 2026 Evelyn Caro. All rights reserved. · <a href="/">qaevelyn.github.io</a> · A Mirror of My Becoming™</p>
+</footer>
 <script>
-fetch('{{ "/tracking/social-posts.json" | relative_url }}')
+fetch('/tracking/social-posts.json')
   .then(r => r.json())
   .then(d => {
     const tbody = document.getElementById('social-feed-body');
@@ -40,3 +54,5 @@ fetch('{{ "/tracking/social-posts.json" | relative_url }}')
     });
   });
 </script>
+</body>
+</html>

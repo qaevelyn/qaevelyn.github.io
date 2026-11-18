@@ -1,6 +1,6 @@
 {
  "manifest_info": {
-  "purpose": "Single source of truth for all 20 credentials",
+  "purpose": "Single source of truth for all 21 credentials",
   "standard": "Every file gets 5 addresses: local, repo, github_blob, github_raw, live_url",
   "location": {
    "local": "~/Repos/qaevelyn.github.io/assets/certificates/manifest.json",
@@ -21,7 +21,7 @@
    "name": "Google IT Support Professional Certificate (v.3)",
    "issuer": "Google / Coursera",
    "date": "2026-11-07",
-   "program": "Google IT Support Professional Certificate — track-level credential (Credly badge, v.3)",
+   "program": "Google IT Support Professional Certificate \u2014 track-level credential (Credly badge, v.3)",
    "verify_url": "https://www.credly.com/earner/earned/badge/54d035b5-2dbd-4be0-9996-369a0fb03093",
    "note": "Full-schema entry 2026-11-08: certificate PDF hosted; preview re-rendered from the PDF; Credly badge artwork extracted from the same PDF and shown as a badge tile. Displayed on the wall from assets/certificates/credentials.js as the first card of the track, the Credly badge view beside it, then the five course certificates.",
    "certificate": {
@@ -247,7 +247,7 @@
   },
   {
    "id": "ibm-langchain",
-   "name": "IBM SkillsBuild — LangChain",
+   "name": "IBM SkillsBuild \u2014 LangChain",
    "issuer": "IBM SkillsBuild",
    "date": "",
    "certificate": {
@@ -269,7 +269,7 @@
   },
   {
    "id": "ibm-granite-agentic-rag",
-   "name": "IBM SkillsBuild — Granite Agentic RAG",
+   "name": "IBM SkillsBuild \u2014 Granite Agentic RAG",
    "issuer": "IBM SkillsBuild",
    "date": "",
    "certificate": {
@@ -412,6 +412,47 @@
     "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/it-security-defense-against-the-digital-dark-arts-certificate-preview.png",
     "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/it-security-defense-against-the-digital-dark-arts-certificate-preview.png",
     "live_url": "https://qaevelyn.github.io/assets/certificates/it-security-defense-against-the-digital-dark-arts-certificate-preview.png"
+   }
+  },
+  {
+   "id": "cyber-readiness-program",
+   "name": "The Cyber Readiness Program \u2014 Certificate of Completion",
+   "issuer": "Cyber Readiness Institute",
+   "date": "2026-11-16",
+   "program": "Cyber Readiness Program",
+   "verify_url": "https://verified.sertifier.com/en/verify/85525390663009/",
+   "note": "Full-schema entry 2026-11-18: certificate PDF hosted + preview rendered via pdftoppm; CRI badge cropped from the certificate with a circular alpha mask; QR decoded to the Sertifier verification URL. Displayed on the wall from credentials.js and verified from the Services spread cyber-readiness-verification in lookbook.html.",
+   "certificate": {
+    "filename": "cyber-readiness-certificate-2026-11-16.pdf",
+    "local": "~/Repos/qaevelyn.github.io/assets/certificates/cyber-readiness-certificate-2026-11-16.pdf",
+    "repo": "assets/certificates/cyber-readiness-certificate-2026-11-16.pdf",
+    "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/cyber-readiness-certificate-2026-11-16.pdf",
+    "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/cyber-readiness-certificate-2026-11-16.pdf",
+    "live_url": "https://qaevelyn.github.io/assets/certificates/cyber-readiness-certificate-2026-11-16.pdf"
+   },
+   "preview": {
+    "filename": "cyber-readiness-certificate-preview.png",
+    "local": "~/Repos/qaevelyn.github.io/assets/certificates/cyber-readiness-certificate-preview.png",
+    "repo": "assets/certificates/cyber-readiness-certificate-preview.png",
+    "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/cyber-readiness-certificate-preview.png",
+    "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/cyber-readiness-certificate-preview.png",
+    "live_url": "https://qaevelyn.github.io/assets/certificates/cyber-readiness-certificate-preview.png"
+   },
+   "badge": {
+    "filename": "cri-cyber-readiness-badge.png",
+    "local": "~/Repos/qaevelyn.github.io/assets/certificates/cri-cyber-readiness-badge.png",
+    "repo": "assets/certificates/cri-cyber-readiness-badge.png",
+    "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/cri-cyber-readiness-badge.png",
+    "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/cri-cyber-readiness-badge.png",
+    "live_url": "https://qaevelyn.github.io/assets/certificates/cri-cyber-readiness-badge.png"
+   },
+   "qr": {
+    "filename": "cyber-readiness-qr.png",
+    "local": "~/Repos/qaevelyn.github.io/assets/certificates/cyber-readiness-qr.png",
+    "repo": "assets/certificates/cyber-readiness-qr.png",
+    "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/cyber-readiness-qr.png",
+    "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/cyber-readiness-qr.png",
+    "live_url": "https://qaevelyn.github.io/assets/certificates/cyber-readiness-qr.png"
    }
   }
  ]

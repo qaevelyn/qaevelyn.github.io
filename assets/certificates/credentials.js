@@ -182,7 +182,20 @@
           img: '/assets/certificates/ibm-granite-agentic-rag-certificate-preview.png',
           kind: 'cert' }
       ]
-    }
+    },
+    {
+      title: 'Cyber Readiness Program',
+      intro: 'Cyber Readiness Institute · completed Nov 16, 2026 · public verification via Sertifier',
+      items: [
+        { name: 'The Cyber Readiness Program — Certificate of Completion',
+          issuer: 'Cyber Readiness Institute',
+          date: '2026-11-16',
+          href: 'https://verified.sertifier.com/en/verify/85525390663009/',
+          img: '/assets/certificates/cyber-readiness-certificate-preview.png',
+          pdf: '/assets/certificates/cyber-readiness-certificate-2026-11-16.pdf',
+          kind: 'cert' },
+      ],
+    },
   ];
 
   /* ---------- renderer: no dependencies, runs synchronously ---------- */

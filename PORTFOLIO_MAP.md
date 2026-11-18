@@ -8,8 +8,8 @@ Created Oct 1, 2026. Consult this map BEFORE any structural change; update it AF
 
 ## LAYER 2 — SHIPS & SERVICES (spreads inside lookbook.html + _pages mirrors)
 - Ships 1–5 spreads: lookbook lines ~770–860; _pages/ship1–5.md mirrors
-- Services spreads: lookbook ~906–1070 (six service types)
-- Certifications spreads: lookbook ~1131–1230 (Google AI / AWS+CompTIA / IBM)
+- Services spreads: lookbook (service types + cyber-readiness-verification spread: CRI badge, QR → Sertifier record, certificate PDF — added 2026-11-18)
+- Certifications spreads: lookbook (Google AI / AWS+CompTIA / IBM / Cyber Readiness Institute, added 2026-11-18 — wall rendered from assets/certificates/credentials.js)
 - Portfolio mirrors: _pages/portfolio.md, _portfolio/portfolio-1.md, portfolio-2.html
 - services.md line 322 — Proof-of-Work blurb (names the suite)
 
