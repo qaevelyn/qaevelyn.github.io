@@ -45,6 +45,9 @@ google analytics Measurement ID (G-WV5JKK585K).txt
 # audit PDFs must ship — scoped re-include (same failure class as the cert pdf and robots.txt)
 !assets/audits/*.pdf
 
+# white-paper PDFs must ship — scoped re-include (audit No. 5, item O1: the root *.pdf rule silently skipped every paper PDF — same failure class as the cert pdf and robots.txt)
+!white-papers/*/*.pdf
+
 *.bak-*
 MIRROR_LOG.md
 
