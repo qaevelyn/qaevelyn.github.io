@@ -1,39 +1,127 @@
----
-title: "The Record, Audited — Owner's Corrections and Answers"
-layout: default
-permalink: /the-record-audited/
----
-<style>
-  .ra-wrap { max-width: 900px; margin: 0 auto; font-size: 16px; line-height: 1.6; }
-  .ra-rule { border: 0; border-top: 2px solid #C9A05C; margin: 1.4rem 0; }
-  .ra-meta { color: #8A8578; font-size: .85rem; }
-  .ra-badge { display: inline-block; padding: .1rem .6rem; border-radius: 3px; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: #F5EFE2; }
-  .ra-closed { background: #2E5E3A; }
-  .ra-open { background: #B49B69; }
-  .ra-erratum { background: #4A392B; }
-  .ra-row { border-left: 3px solid #D9D2C4; padding: .2rem 0 .2rem 1rem; margin: 1.2rem 0; }
-  .ra-claim { color: #4A4438; }
-  .ra-receipts { color: #6B6558; font-size: .88rem; }
-  .ra-pdf { background: #F7F4EC; border: 1px solid #D9D2C4; border-radius: 4px; padding: .9rem 1.1rem; margin: 1.2rem 0; }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Record, Audited — Owner's Corrections and Answers — Evelyn Caro</title>
+  <meta name="description" content="The Record, Audited — Owner's Corrections and Answers — A Mirror of My Becoming™, the verification portfolio of Evelyn Caro." />
+  <style>
+    body { font-family: Georgia, serif; background: #fdfcf9; color: #17181a; padding: 2rem; max-width: 900px; margin: 0 auto; line-height: 1.6; }
+    .ra-wrap { max-width: 900px; margin: 0 auto; font-size: 16px; line-height: 1.6; }
+    .ra-rule { border: 0; border-top: 2px solid #C9A05C; margin: 1.4rem 0; }
+    .ra-meta { color: #8A8578; font-size: .85rem; }
+    .ra-badge { display: inline-block; padding: .1rem .6rem; border-radius: 3px; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: #F5EFE2; }
+    .ra-closed { background: #2E5E3A; }
+    .ra-open { background: #B49B69; }
+    .ra-erratum { background: #4A392B; }
+    .ra-row { border-left: 3px solid #D9D2C4; padding: .2rem 0 .2rem 1rem; margin: 1.2rem 0; }
+    .ra-claim { color: #4A4438; }
+    .ra-receipts { color: #6B6558; font-size: .88rem; }
+    .ra-pdf { background: #F7F4EC; border: 1px solid #D9D2C4; border-radius: 4px; padding: .9rem 1.1rem; margin: 1.2rem 0; }
+    a { color: #8b5a1f; }
+    footer { border-top: 1px solid #e5e0d6; margin-top: 3rem; padding-top: 1.2rem; color: #8A8578; font-size: .9rem; text-align: center; }
+  </style>
+</head>
+<body>
 <div class="ra-wrap">
-  <h1>{{ site.data.audit_response.meta.title }}</h1>
+  <h1>The Record, Audited — Owner's Corrections and Answers</h1>
   <hr class="ra-rule">
-  <p>{{ site.data.audit_response.meta.method }}</p>
-  <p class="ra-meta">Filed {{ site.data.audit_response.meta.filed }} · Last updated {{ site.data.audit_response.meta.updated }}</p>
+  <p>Lies ledger, then owner rulings, then numbered answers. The audit and the answers are published side by side. Nothing published is back-edited: errata only append. Open items are marked OPEN, not smoothed.</p>
+  <p class="ra-meta">Filed 2026-10-29 · Last updated 2026-10-29</p>
   <div class="ra-pdf">
-    <strong><a href="/the-record-audited/{{ site.data.audit_response.meta.audit_pdf }}">The Record, Audited — the audit PDF (re-issued with Appendix B)</a></strong><br>
-    The original seventeen pages are byte-identical to the audited copy; Appendix B — Verification Exhibit is appended, not edited. Verdicts dated October 29, 2026.<br>
-    <span class="ra-meta">sha256: {{ site.data.audit_response.meta.audit_pdf_sha256 }}</span>
+    <strong><a href="/the-record-audited/The_Record_Audited_qaevelyn_Estate_Deep-Dive_reissued_AppendixB.pdf">The Record, Audited — the audit PDF (re-issued with Appendix B)</a></strong><br>
+    Re-issued October 29, 2026. The original seventeen pages are byte-identical to the audited copy; Appendix B — Verification Exhibit is appended, not edited.<br>
+    <span class="ra-meta">sha256: f0fa31d8ac5d96964c0c23877388f372921a5f388213be1f0112b1b4922b5a09</span>
   </div>
-  <p>Answers render from <code>_data/audit_response.yml</code>: updates edit that data file and push, and this page follows. Rows marked OPEN await the owner's ruling and say so — nothing is smoothed to look finished.</p>
+  <p>Rows marked OPEN await the owner's ruling and say so — nothing is smoothed to look finished.</p>
   <hr class="ra-rule">
-  {% for a in site.data.audit_response.answers %}
   <div class="ra-row">
-    <p style="margin-bottom:.3rem;"><strong>Answer {{ a.id }}</strong> &nbsp;<span class="ra-badge ra-{{ a.status }}">{{ a.status | upcase }}</span></p>
-    <p class="ra-claim"><strong>The audit claims:</strong> {{ a.claim }}</p>
-    <p><strong>The record answers:</strong> {{ a.answer }}</p>
-    <p class="ra-receipts"><strong>Receipts:</strong> {{ a.receipts }}</p>
+    <p style="margin-bottom:.3rem;"><strong>Answer 1</strong> &nbsp;<span class="ra-badge ra-closed">CLOSED</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Table 7-1 lists ships 1-5 as AGPL, private repo, five times.</p>
+    <p><strong>The record answers:</strong> Ships 1-2 are provably public. The GitHub API public listing for account qaevelyn, accessed October 29, 2026, shows four public repositories including a-mirror-of-my-becoming-rag-ship1-deepseek and a-mirror-of-my-becoming-rag-ship2-ibm-granite-agentic. The audit's status column is wrong for these rows.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> GitHub API, unauthenticated, October 29, 2026 ~04:30 EDT; re-checked by owner-run stop11j the same morning.</p>
   </div>
-  {% endfor %}
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 2</strong> &nbsp;<span class="ra-badge ra-open">OPEN</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Table 7-1: ships 3-5 status.</p>
+    <p><strong>The record answers:</strong> Ships 3-5 do not appear in the public listing under either naming scheme. OPEN — owner rules: existing under other names or account, not yet pushed, or private by intent. No answer will be invented (Ida B. Wells standard).</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> Same API listing, October 29, 2026.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 3</strong> &nbsp;<span class="ra-badge ra-open">OPEN</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> ships/manifest.json consistency: stale private flags and old shipN-* repo URLs while ship repos are public.</p>
+    <p><strong>The record answers:</strong> Queued as a Batch B gated edit on the owner's word. The manifest is stale relative to the renames. It is not silently fixed.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> Manifest read, October 28-29, 2026.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 4</strong> &nbsp;<span class="ra-badge ra-closed">CLOSED</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Section 7.4 Defect 4: the index-of-terms page notes a pending v5 takedown and a private-mirror migration.</p>
+    <p><strong>The record answers:</strong> No v5, no pending takedown, and no migration exist anywhere in the index of terms. This row is filed as an erratum against the audit, not a correction to the site.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> /index-of-terms/ live fetch, October 29, 2026: GitHub Pages 404 shell; no such content on the site.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 5</strong> &nbsp;<span class="ra-badge ra-closed">CLOSED</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Appendix A P2: renew CompTIA A+ or mark it clearly as historical.</p>
+    <p><strong>The record answers:</strong> Declined. No renewal, no deletion, no historical label. Owner's words on the record: 'it is who i am and it is my foundation. it is historical, until something happens that is the end of the line.'</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> Owner ruling, October 29, 2026.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 6</strong> &nbsp;<span class="ra-badge ra-open">OPEN</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Section 7.3 Table 7-2: the $500 Sovereignty Screen is credited against follow-on (wedge pricing).</p>
+    <p><strong>The record answers:</strong> The framing is declined: no credit attribution to follow-on work. Pricing decisions, including the first-logo tier, remain the owner's. The live /services/ page contains no such ladder text; the audited text's location — lookbook spread, retired services.html snapshot, or audit paraphrase — is stated here once pinned, without speculation in the meantime.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> Live /services/ fetch, October 29, 2026 (no credited text, no pricing tiers at the cited URL); grep of Mirror-Project shows no services/ directory.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 7</strong> &nbsp;<span class="ra-badge ra-closed">CLOSED</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Sections 2.1 and 7.4: October 26 versus October 28 dating.</p>
+    <p><strong>The record answers:</strong> So 'owner's word, not verified' was not a dodge — it was your own flagged, not faked doctrine turned back on the auditor. An audit that couldn't reach the internet and still wrote 'verified' would have been the lie. It wrote 'unverified, explicitly' instead. October 26 is the site's own logged date for the ICP and LEAD-GEN pull, cited as provenance; October 28 is the audit's own action date; October 29 is the verification pass.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> Owner-approved verbatim, October 29, 2026 ~04:06 EDT; mirrored in Appendix B section B.0 of the re-issued PDF.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 8</strong> &nbsp;<span class="ra-badge ra-closed">CLOSED</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Sections 2.3 and 5: this audit did not independently verify those events.</p>
+    <p><strong>The record answers:</strong> Resolved by execution, not by re-argument. Appendix B — Verification Exhibit, appended to the re-issued PDF, checked both artifact families against the live web on October 29, 2026. The fence incident: confirmed claim by claim, including the June 18 / July 18 discrepancy the paper itself flagged. The containment literature: instruments and incidents real; one citation flagged, now resolved by row 10.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> Appendix B, Tables B-1 and B-2, dated October 29, 2026.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 9</strong> &nbsp;<span class="ra-badge ra-closed">CLOSED</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> ICP and LEAD-GEN files pulled private October 26 — by what justification, and private or public?</p>
+    <p><strong>The record answers:</strong> Private, by the owner's own recorded ruling of October 26, 2026: 'raw detail private, public summary canonical; owner ruling: do both' (PORTFOLIO_MAP.md line 31) and 'lead-gen documents are held privately by design' (STRATEGY-SUMMARY.md line 4). Owner-run stop11j receipts, October 29, 2026: the files are not tracked in this repository, the repository itself is public, and the private mirror holds them. Status: private by design. Any reversal is a publish-with-intent decision, dated in the changelog.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> stop11j report, October 29, 2026 06:57 EDT; PORTFOLIO_MAP.md:31; STRATEGY-SUMMARY.md:4; case-insensitive history check same morning.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 10</strong> &nbsp;<span class="ra-badge ra-closed">CLOSED</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Appendix B Table B-3: Mitchell (2026), arXiv:2604.23425 — unverified in two passes; verify against the primary or replace.</p>
+    <p><strong>The record answers:</strong> Verified against the primary. Third dated pass, October 29, 2026 ~07:15 EDT: arXiv abstract page confirms 'When the Agent Is the Adversary: Architectural Requirements for Agentic AI Containment After the April 2026 Frontier Model Escape', Richard Joseph Mitchell, submitted April 25, 2026, cs.CR, 17 pages, DOI 10.48550/arXiv.2604.23425; Semantic Scholar and Emergent Mind carry the same record. The citation stands as cited; no replacement needed. Appendix B's two-pass negative record remains as written — it was true when written; this closure is an append.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> arXiv:2604.23425 (primary, April 25, 2026); Semantic Scholar paper page; Emergent Mind 2604.23425 — all accessed October 29, 2026 ~07:15 EDT.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 11</strong> &nbsp;<span class="ra-badge ra-erratum">ERRATUM</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Who Tests the Testers?, reference list: ContainmentBench cited under an inexact title.</p>
+    <p><strong>The record answers:</strong> Accepted. Cited as 'A Trace-Based Benchmark for LLM Agent Containment'; the published title is 'Trace-Based Evaluation of Post-Exposure Containment in Tool-Using LLM Agents' (Lan et al., arXiv:2607.23999, July 27, 2026). The PDF is not edited; this erratum is the correction of record.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> Appendix B Tables B-2 and B-3, verified against arXiv, October 29, 2026.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 12</strong> &nbsp;<span class="ra-badge ra-erratum">ERRATUM</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Who Tests the Testers?, reference list: Grozdanovski and De Cooman cited by subtitle only.</p>
+    <p><strong>The record answers:</strong> Accepted. The full title is 'Forget the Facts, Aim for the Rights! On the Obsolescence of Empirical Knowledge in Defining the Risk/Rights-Based Approach to AI Regulation in the European Union', Rutgers Computer and Technology Law Journal 49(2), 2023. The PDF is not edited; this erratum is the correction of record.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> Appendix B Tables B-2 and B-3, October 29, 2026.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 13</strong> &nbsp;<span class="ra-badge ra-open">OPEN</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Decision-agenda items 1, 3, 4, 6, 8-15, 17, and any item not yet re-cited.</p>
+    <p><strong>The record answers:</strong> Awaiting the owner's ruling on each item, landed here by number as she re-cites it against the ruling-page table. No item text is guessed from memory; nothing ships on a guessed mapping.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> Ledger mapping note, October 29, 2026.</p>
+  </div>
+  <div class="ra-row">
+    <p style="margin-bottom:.3rem;"><strong>Answer 14</strong> &nbsp;<span class="ra-badge ra-open">OPEN</span></p>
+    <p class="ra-claim"><strong>The audit claims:</strong> Owner-side finding, October 29, 2026 ~08:00 EDT: the ICP and LEAD-GEN files existed in this repository's git history before the October 26 pull. If their pre-pull commits were pushed, the raw detail remains recoverable from public history even though master is clean.</p>
+    <p><strong>The record answers:</strong> PENDING OWNER RULING. Options: (a) document-and-accept — the pre-October-26 window is part of the public record and the pull governs going forward; (b) history surgery via filter-repo and force-push — rejected by house doctrine unless the owner rules otherwise, since it rewrites every receipt; (c) private mirror canonical going forward, public-history copies logged as superseded artifacts. The record does not pick for her.</p>
+    <p class="ra-receipts"><strong>Receipts:</strong> Owner-run history check, October 29, 2026: 'ICP — BUILT FROM PORTFOLIO AS EVIDENCE OF CAPABILITY.md' and 'LEAD-GEN — SOVEREIGNTY COMMUNITIES AND COMMERCIAL TIER.md' present in history; merge-base check EXECUTED 2026-10-29 08:43 EDT: b6f7bd43 (2026-09-25 add) and ac822f11 (2026-10-26 pull) both REACHABLE from origin/master, so the raw ICP and LEAD-GEN detail is recoverable from public git history by any cloner; the finding is confirmed, not hypothetical. The owner ruling among the options recorded above remains open.</p>
+  </div>
 </div>
+<footer>
+  <p>© 2026 Evelyn Caro. All rights reserved. · <a href="/">qaevelyn.github.io</a> · A Mirror of My Becoming™</p>
+</footer>
+</body>
+</html>
