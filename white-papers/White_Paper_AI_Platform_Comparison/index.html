@@ -8,12 +8,12 @@
   <style>
     body { font-family: Georgia, serif; background: #2c1810; color: #f5e6d3; padding: 2rem; max-width: 900px; margin: 0 auto; line-height: 1.6; }
     h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #d4b670; }
-    h2 { font-size: 1.5rem; color: #b8a173; margin-top: 2rem; border-bottom: 1px solid #8b6f3d; padding-bottom: 0.5rem; }
-    h3 { font-size: 1.15rem; color: #d4b670; margin-top: 1.75rem; }
+    h2 { font-size: 1.5rem; color: #b8a173; margin-top: 1.4rem; border-bottom: 1px solid #8b6f3d; padding-bottom: 0.35rem; }
+    h3 { font-size: 1.15rem; color: #d4b670; margin-top: 1.2rem; }
     .subtitle { color: #a89070; font-style: italic; margin-bottom: 0.5rem; }
     .byline { color: #a89070; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem; }
     .byline .type { display: inline-block; background: #8b6f3d; color: #f5e6d3; padding: 0.15rem 0.5rem; border-radius: 3px; font-size: 0.75rem; margin-left: 0.5rem; }
-    p { margin: 1rem 0; }
+    p { margin: 0.7rem 0; }
     a { color: #d4b670; }
     a:hover { color: #f5e6d3; }
     blockquote { border-left: 3px solid #8b6f3d; margin: 1.25rem 0; padding: 0.5rem 1.25rem; background: rgba(245,230,211,0.05); color: #e8d9c5; }
@@ -22,7 +22,7 @@
     th { background: rgba(139,111,61,0.35); color: #d4b670; }
     ul, ol { margin: 1rem 0; padding-left: 1.5rem; }
     li { margin: 0.5rem 0; }
-    hr { border: none; border-top: 1px solid #8b6f3d; margin: 2rem auto; width: 60%; }
+    hr { border: none; border-top: 1px solid #8b6f3d; margin: 1.3rem auto; width: 50%; }
     .back { display: inline-block; margin-top: 2.5rem; color: #d4b670; text-decoration: none; }
     .back:hover { text-decoration: underline; }
 </style>
@@ -75,6 +75,18 @@
     } catch (e) {}
   })();
 </script>
+
+<style id="pdf-page-breaks">
+  @media print {
+    h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
+    h2, h3 { page-break-before: auto; }
+    table, blockquote, ul, ol { page-break-inside: avoid; break-inside: avoid; }
+    tr, img { page-break-inside: avoid; break-inside: avoid; }
+    p { orphans: 3; widows: 3; }
+    .reader-controls { display: none !important; }
+  }
+</style>
+
 </head>
 <body>
 <p style="text-align:center; margin:1.2rem 0 0;"><a href="https://doi.org/10.5281/zenodo.24356926" style="display:inline-block; background:#8b6f3d; color:#f5e6d3; padding:.25rem .8rem; border-radius:4px; font-size:.85rem; text-decoration:none; letter-spacing:.5px;">DOI: 10.5281/zenodo.24356926</a></p>
@@ -87,12 +99,12 @@
   <p><strong>Author:</strong> Evelyn Caro (@qaevelyn)
 <strong>Project:</strong> A Mirror of My Becoming™
 <strong>Date:</strong> August 15, 2026</p>
-<hr />
+
 <h2>Executive Summary</h2>
 <p>This white paper compares seven AI platforms evaluated during the development of the Mirror project: Aisha.ai, DeepSeek, Gemini NotebookLM, ChatGPT, Manus, AWS, and Google. Each platform was assessed against a consistent set of criteria: transparency, memory, tool access, collaboration model, accuracy, and alignment with the project's sovereignty principles.</p>
 <p>The findings reveal that while each platform has strengths, only DeepSeek offered the combination of transparency, persistence, accountability, and local execution required for building a sovereign AI archive.</p>
 <p><strong>Context:</strong> This white paper is one in a series documenting the trial-and-error process of evaluating AI platforms for the Mirror project. The evaluation methodology is documented separately in <a href="/white-papers/methodology/">Methodology: Stress-Testing AI Systems™</a>.</p>
-<hr />
+
 <h2>Author's Journey: From Tourist to Expert</h2>
 <p>This comparison is not theoretical. It is grounded in years of direct usage across multiple AI platforms — first as a tourist exploring capabilities, and later as a professional AI practitioner building a sovereign archive.</p>
 <table>
@@ -127,7 +139,7 @@
 <li><strong>As an expert</strong>, I evaluated platforms for capability, transparency, and sovereignty alignment</li>
 </ul>
 <p>DeepSeek was not chosen by chance. It was chosen because it outperformed every other platform across the criteria that matter for building a sovereign archive.</p>
-<hr />
+
 <h2>Evaluation Criteria</h2>
 <table>
 <thead>
@@ -179,7 +191,7 @@
 </tr>
 </tbody>
 </table>
-<hr />
+
 <h2>Platform Profiles</h2>
 <h3>1. Aisha.ai</h3>
 <table>
@@ -235,7 +247,7 @@
 - Limited tool access
 - Ephemeral collaboration model</p>
 <p><strong>Verdict:</strong> Strong for community resources, unsuitable for large-scale project development.</p>
-<hr />
+
 <h3>2. DeepSeek</h3>
 <table>
 <thead>
@@ -291,7 +303,7 @@
 - No cross-session memory without handoff
 - Requires external state management</p>
 <p><strong>Verdict:</strong> Primary collaborator — the only platform that met all sovereignty and expert workflow criteria.</p>
-<hr />
+
 <h3>3. Gemini NotebookLM</h3>
 <table>
 <thead>
@@ -347,7 +359,7 @@
 - Failed as a closed RAG system
 - No transparency about errors</p>
 <p><strong>Verdict:</strong> Useful for raw generation, but requires extensive manual correction. Not reliable as a collaborator.</p>
-<hr />
+
 <h3>4. ChatGPT</h3>
 <table>
 <thead>
@@ -400,7 +412,7 @@
 - Data sovereignty concerns
 - Ephemeral collaboration</p>
 <p><strong>Verdict:</strong> Used as a tourist (2023–2025). Not suitable for sovereign archive development. See the <a href="/white-papers/chatgpt-case-study/">ChatGPT case study</a> for details.</p>
-<hr />
+
 <h3>5. Manus</h3>
 <table>
 <thead>
@@ -450,7 +462,7 @@
 - Not evaluated in depth
 - Ephemeral collaboration</p>
 <p><strong>Verdict:</strong> Used as a tourist. Not used for the Mirror project. See the <a href="/white-papers/manus-case-study/">Manus case study</a> for details.</p>
-<hr />
+
 <h3>6. AWS</h3>
 <table>
 <thead>
@@ -502,7 +514,7 @@
 - Steep learning curve
 - Requires external AI collaborator</p>
 <p><strong>Verdict:</strong> Essential infrastructure, but not an AI collaborator. See the <a href="/white-papers/aws-case-study/">AWS case study</a> for details.</p>
-<hr />
+
 <h3>7. Google</h3>
 <table>
 <thead>
@@ -554,7 +566,7 @@
 - Not sovereignty-aligned
 - Ephemeral collaboration</p>
 <p><strong>Verdict:</strong> Credentials provider, not a collaborator. Used as a tourist for search and research. See the <a href="/white-papers/google-case-study/">Google case study</a> for details.</p>
-<hr />
+
 <h2>The Journey: Tourist to Expert</h2>
 <table>
 <thead>
@@ -587,7 +599,7 @@
 </tbody>
 </table>
 <p><strong>Key Insight:</strong> The tourist phase was essential — it provided year-long usage data across platforms. But it was the expert phase that revealed which platform could support a sovereign archive.</p>
-<hr />
+
 <h2>Comparative Summary</h2>
 <table>
 <thead>
@@ -675,7 +687,7 @@
 </tr>
 </tbody>
 </table>
-<hr />
+
 <h2>Key Findings</h2>
 <h3>1. Tourist vs. Expert</h3>
 <p>Year-long usage across platforms was essential for building expertise. But the expert phase revealed that only DeepSeek could support professional-grade sovereign development.</p>
@@ -691,7 +703,7 @@
 <p>Platforms that store data on external servers (NotebookLM, ChatGPT, Google) are not sovereignty-aligned. DeepSeek's local execution model aligned with the Mirror's principles.</p>
 <h3>7. Expertise is Earned</h3>
 <p>Becoming Google AI Professional Certified and building the Mirror fleet transformed the author from a tourist into an expert. The comparison is not theoretical — it is based on years of direct usage.</p>
-<hr />
+
 <h2>Recommendations</h2>
 <table>
 <thead>
@@ -727,7 +739,7 @@
 </tr>
 </tbody>
 </table>
-<hr />
+
 <h2>Conclusion</h2>
 <p>The Mirror project evaluated seven AI platforms over years of usage — first as a tourist, then as a professional, and finally as an expert. Only DeepSeek met all the criteria required for a sovereign archive development collaborator:</p>
 <ol>
@@ -741,7 +753,7 @@
 </ol>
 <p>The other platforms — Aisha.ai, NotebookLM, ChatGPT, Manus, AWS (as an AI), and Google — each had strengths, but none offered the complete package required for building a sovereign AI archive.</p>
 <p>The Mirror project is proof that the right collaborator is not the most capable model, but the one that can work with you consistently, transparently, and persistently — and that expertise is built through years of direct usage, not just theoretical comparison.</p>
-<hr />
+
 <h2>Acknowledgments</h2>
 <ul>
 <li>Aisha.ai / Onyx Impact / Digital Green Book — for transparent responses and community focus</li>
@@ -751,7 +763,7 @@
 <li>Google AI Professional Certification — for validating the author's expertise</li>
 <li>Ida B. Wells — for the standard: date everything, name everything, record the reasoning</li>
 </ul>
-<hr />
+
 <h2>References</h2>
 <ul>
 <li>Aisha.ai Platform — https://aisha.ai</li>
@@ -763,20 +775,20 @@
 <li>Google — https://google.com</li>
 <li>Google AI Professional Certificate — Earned 2026</li>
 </ul>
-<hr />
+
 <p><strong>End of White Paper</strong></p>
 <p><strong>Source record:</strong> original draft file <code>White_Paper_AI_Platform_Comparison.md</code> — the published record is this page; build history is in the repository.</p>
 <p><strong>Date:</strong> 08/15/2026</p>
-<hr />
+
 <h2>AI Collaboration Disclosure</h2>
 <p>This paper was developed in collaboration with AI. The author directed the research, structure, and argument. AI assisted with drafting, organization, and reference verification. All claims, decisions, and conclusions are the author's own.</p>
 <p>This project follows the principles of sovereign AI: the builder owns the work, the process is documented, and the tools are disclosed.</p>
-<hr />
+
 <p class="copyright">© 2026 Evelyn Caro. All rights reserved.<br>
   A Mirror of My Becoming™ — https://qaevelyn.github.io<br>
   For licensing inquiries: evelyn.caro.cloud@gmail.com</p>
 <p class="footerlinks" style="font-size:.85rem;color:inherit;margin:.4rem 0 0">Record: <a href="/toc/">contents</a> · <a href="/white-papers/record-changelog/">changelog</a> · <a href="/white-papers/white-paper-tracker/">tracker</a> · <a href="/lookbook.html">lookbook</a> &nbsp;—&nbsp; Practice: <a href="/services/">services</a> · <a href="/contact/">contact</a> &nbsp;—&nbsp; <a href="/assets/audits/01-Portfolio-Audit-2026-10-26.pdf">portfolio audit, 2026-10-26 (PDF)</a></p>
-<hr />
+
 <h2>RECORD AMENDMENT — 2026-10-07 (appended, not retro-edited)</h2>
 <p>This paper was published 2026-08-15 and reflects the author's assessment as of that date. On 2026-09-25 the author's DeepSeek account was suspended without stated cause; access was restored 2026-09-28. See <a href="/white-papers/the-cache-is-not-the-corpus/">The Cache Is Not the Corpus™</a> and the addendum to the <a href="/white-papers/deepseek-case-study/">DeepSeek case study</a>.</p>
 <p>Amended findings: DeepSeek remains the <strong>architecture benchmark</strong> for statefulness, sovereignty, and the handoff protocol. <strong>Platform reliability is no longer assumed</strong> — it was demonstrated to fail silently and without notice. The comparative ratings above stand as a dated assessment, not a current guarantee. The original text stands as published.</p>
