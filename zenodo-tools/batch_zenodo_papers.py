@@ -43,18 +43,21 @@ PAPERS = [
 
 
 def api(url, data=None, files=None, method=None):
-    req = urllib.request.Request(url)
-    req.add_header("Authorization", "Bearer " + TOKEN)
     if files:
-        # bucket upload: raw bytes
-        body, ctype = files, "application/pdf"
-        req.add_method(method or "PUT")
-        req.add_header("Content-Type", ctype)
-        req.data = body
+        body, ctype = files, "application/octet-stream"
+        method = method or "PUT"
     elif data is not None:
-        req.add_method(method or "POST")
-        req.add_header("Content-Type", "application/json")
-        req.data = json.dumps(data).encode()
+        body = json.dumps(data).encode()
+        ctype = "application/json"
+        method = method or "POST"
+    else:
+        body, ctype = None, None
+    req = urllib.request.Request(url, data=body, method=method)
+    req.add_header("Authorization", "Bearer " + TOKEN)
+    req.add_header("User-Agent",
+                 "qaevelyn-repair/1.0 (zenodo ingest)")
+    if ctype:
+        req.add_header("Content-Type", ctype)
     with urllib.request.urlopen(req) as r:
         return json.loads(r.read().decode())
 
@@ -85,6 +88,11 @@ if not to_upload:
     sys.exit("Nothing to upload - commit the paper PDFs first (audit No. 5, item O1).")
 
 for slug in to_upload:
+    idxp = os.path.join("white-papers", slug, "index.html")
+    if os.path.isfile(idxp) and "doi.org/10." in open(
+            idxp, encoding="utf-8", errors="ignore").read():
+        print("SKIP  %s: already carries a DOI" % slug)
+        continue
     pdf_path = os.path.join("white-papers", slug, slug + ".pdf")
     title, desc = paper_meta(slug)
     meta = {
