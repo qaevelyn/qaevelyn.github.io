@@ -362,10 +362,10 @@
       "video_receipt": "https://youtu.be/4DBuhhPpbjU",
       "run": "Sept 29, 2026 04:41 AM — Written: 55, Sidecar total: 127, zero failures, zero losses",
       "lookbook": {
-        "h3_title": "Ship 6 — Suite: Ingestion Tools",
+        "h3_title": "Ship 6 — Suite: Ingestion Tools™",
         "toc_parent": "The Suite",
-        "toc_child": "Suite: Ingestion Tools · Scribe · Warden · Hand",
-        "narrative": "A Mirror of My Becoming™ Suite: Ingestion Tools — three tools that work separately but work better together. Built after the problem: 127 conversations to ingest and a pipeline that kept killing itself overnight. I solved my problem, and discovered no one else had this unique solution published — so I am first: resilience-engineered, Bitcoin-timestamped, AGPL. The free tier is the point; the AGPL is the guidance if the next user is a corporation.",
+        "toc_child": "Suite: Ingestion Tools™ · Scribe · Warden · Hand",
+        "narrative": "A Mirror of My Becoming™ Suite: Ingestion Tools™ — three tools that work separately but work better together. Built after the problem: 127 conversations to ingest and a pipeline that kept killing itself overnight. I solved my problem, and discovered no one else had this unique solution published — so I am first: resilience-engineered, Bitcoin-timestamped, AGPL. The free tier is the point; the AGPL is the guidance if the next user is a corporation.",
         "spread_anchor": "lookbook.html#ship6",
         "synced": "2026-11-20"
       }
