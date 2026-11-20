@@ -347,7 +347,7 @@
       "video_run2_resume": "https://youtu.be/mYyLKLq2l7w",
       "receipt": "Smoke run 1: 200 msgs, 23,500 chunks; run 2 resumed at row 201 — never re-ingest",
       "lookbook": {
-        "h3_title": "Ship 7 — ClifyX Adapter",
+        "h3_title": "Ship 7 — msgvault adapter™",
         "toc_parent": "The Suite",
         "toc_child": "",
         "narrative": "The seventh ship bridges mail into the Mirror. It reads msgvault.db in its own native tongue — the embed_gen watermark is its checkpoint, so progress lives in the data itself: crash, restart, curfew, resume, never re-ingest. It normalizes RFC822 message-ids, preserves full metadata, and feeds the canonical store with nomic-embed-text vectors — the fleet's model. Replace-mode: stale deleted as fresh lands. Curfew-aware. Never self-restarts. The prior-art search found nothing published like it.",
