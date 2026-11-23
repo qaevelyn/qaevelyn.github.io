@@ -1,5 +1,5 @@
 # LAYER REPORT
-Generated: 2026-11-20 01:39 UTC by tools/records/layer_check.py
+Generated: 2026-11-23 21:21 UTC by tools/records/layer_check.py
 
 Owner ruling 2026-10-26: both directions reconcile into the canonical md; the static page renders it. Drift here means a layer moved without the other.
 - white-papers/record-changelog.md row 12: canonical cell not rendered -> "two sentences added after the quorum table interpreting the near-tie f"
@@ -34,10 +34,10 @@ Owner ruling 2026-10-26: both directions reconcile into the canonical md; the st
 - white-papers/white-paper-tracker.md row 6: canonical cell not rendered -> "case study: deepseek — the benchmark™"
 - white-papers/white-paper-tracker.md row 7: canonical cell not rendered -> "case study: google ai studio and gemini notebooklm — the failures™"
 - white-papers/white-paper-tracker.md row 8: canonical cell not rendered -> "case study: chatgpt — from reliance to rejection™"
-- white-papers/white-paper-tracker.md row 9: canonical cell not rendered -> "the cache is not the corpus™: nineteen deaths, zero losses, and the as"
+- white-papers/white-paper-tracker.md row 9: canonical cell not rendered -> "the cache is not the corpus: nineteen deaths, zero losses, and the asy"
 - white-papers/white-paper-tracker.md: ... further md->static findings suppressed
 - white-papers/white-paper-tracker/index.html row 1: static row absent from canonical md -> "series position"
-- white-papers/white-paper-tracker/index.html row 2: static row absent from canonical md -> "the thesis proven by the suspension"
+- white-papers/white-paper-tracker/index.html row 2: static row absent from canonical md -> "the cache is not the corpus™"
 - white-papers/white-paper-tracker/index.html row 3: static row absent from canonical md -> "first failure; the deletion without export"
 - white-papers/white-paper-tracker/index.html row 4: static row absent from canonical md -> "the crash; rebuild from local files"
 - white-papers/white-paper-tracker/index.html row 5: static row absent from canonical md -> "a case study in ai collaboration (aisha)™"
