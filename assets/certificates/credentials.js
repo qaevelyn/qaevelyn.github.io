@@ -29,6 +29,50 @@
 
   var GROUPS = [
     {
+      title: 'AWS',
+      intro: 'CLF-C02 earned November 23, 2026 · 808/1000 (pass 700) · re/Start graduate, Cohort 2026-RTT-41',
+      items: [
+        { name: 'AWS Certified Cloud Practitioner (CLF-C02)',
+          issuer: 'AWS Training and Certification',
+          date: '2026-11-23',
+          href: 'https://www.credly.com/badges/fce280b2-0ee2-47b6-afc9-1e4461fa89d9/public_url',
+          img: '/assets/certificates/aws-certified-cloud-practitioner-badge.png',
+          pdf: '/assets/certificates/aws-certified-cloud-practitioner-certificate-2026-11-23.pdf',
+          kind: 'cert',
+          compact: true },
+        { name: 'AWS re/Start Graduate',
+          issuer: 'AWS Training and Certification / Per Scholas',
+          date: '2026-09-09',
+          href: 'https://www.credly.com/earner/earned/badge/66b4b87a-35d0-4640-b947-232af055d428',
+          kind: 'badge' },
+        { name: 'Introduction to Generative AI',
+          issuer: 'AWS Educate',
+          href: 'https://www.credly.com/badges/3836cb8e-2f7f-475c-8b66-98aaab047ff1',
+          img: '/assets/certificates/aws-educate-genai-badge.png',
+          kind: 'badge' },
+        { name: 'AWS Knowledge: Cloud Essentials - Training Badge',
+          issuer: 'AWS Training and Certification',
+          date: '2026-11-09',
+          href: 'https://www.credly.com/badges/3e160882-d2b5-47a2-b295-20fdc3e94115',
+          img: '/assets/certificates/aws-knowledge-cloud-essentials-training-badge.png',
+          kind: 'badge' }
+      ]
+    },
+
+    {
+      title: 'Cyber Readiness Program',
+      intro: 'Cyber Readiness Institute · completed Nov 16, 2026 · public verification via Sertifier',
+      items: [
+        { name: 'The Cyber Readiness Program — Certificate of Completion',
+          issuer: 'Cyber Readiness Institute',
+          date: '2026-11-16',
+          href: 'https://verified.sertifier.com/en/verify/85525390663009/',
+          img: '/assets/certificates/cyber-readiness-certificate-preview.png',
+          pdf: '/assets/certificates/cyber-readiness-certificate-2026-11-16.pdf',
+          kind: 'cert' },
+      ],
+    },
+    {
       title: 'Google IT Support Professional Certificate',
       intro: 'All 5 courses complete · professional certificate verified · track finished Nov 7, 2026',
       items: [
@@ -83,6 +127,7 @@
           kind: 'cert' },
       ]
     },
+
     {
       title: 'Google AI',
       intro: '8 courses · 20+ artifacts · Aug 7, 2026',
@@ -131,23 +176,7 @@
           kind: 'badge' }
       ]
     },
-    {
-      title: 'AWS Educate',
-      note: 'More AWS badges coming',
-      items: [
-        { name: 'Introduction to Generative AI',
-          issuer: 'AWS Educate',
-          href: 'https://www.credly.com/badges/3836cb8e-2f7f-475c-8b66-98aaab047ff1',
-          img: '/assets/certificates/aws-educate-genai-badge.png',
-          kind: 'badge' },
-        { name: 'AWS Knowledge: Cloud Essentials - Training Badge',
-          issuer: 'AWS Training and Certification',
-          date: '2026-11-09',
-          href: 'https://www.credly.com/badges/3e160882-d2b5-47a2-b295-20fdc3e94115',
-          img: '/assets/certificates/aws-knowledge-cloud-essentials-training-badge.png',
-          kind: 'badge' }
-      ]
-    },
+
     {
       title: 'CompTIA',
       items: [
@@ -158,6 +187,7 @@
           kind: 'badge' }
       ]
     },
+
     {
       title: 'IBM SkillsBuild',
       items: [
@@ -183,19 +213,7 @@
           kind: 'cert' }
       ]
     },
-    {
-      title: 'Cyber Readiness Program',
-      intro: 'Cyber Readiness Institute · completed Nov 16, 2026 · public verification via Sertifier',
-      items: [
-        { name: 'The Cyber Readiness Program — Certificate of Completion',
-          issuer: 'Cyber Readiness Institute',
-          date: '2026-11-16',
-          href: 'https://verified.sertifier.com/en/verify/85525390663009/',
-          img: '/assets/certificates/cyber-readiness-certificate-preview.png',
-          pdf: '/assets/certificates/cyber-readiness-certificate-2026-11-16.pdf',
-          kind: 'cert' },
-      ],
-    },
+
   ];
 
   /* ---------- renderer: no dependencies, runs synchronously ---------- */
