@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23626247.svg)](https://doi.org/10.5281/zenodo.23626247)
+
 # A Mirror of My Becoming™ — Sovereign AI Portfolio
 
 **The corpus is public; the record of its errors is too.**
@@ -57,3 +59,7 @@ Caro, E. (2026). *A Mirror of My Becoming™ — White Paper Corpus*. https://qa
 ## Provenance — EvidenceFlow
 
 EvidenceFlow was specified and directed by Evelyn Caro and implemented by an AI coding assistant working directly from her discussions, requirements, and review. Ms. Caro has never viewed, used, or derived any part of EvidenceFlow from code authored by Asaif Ali, and this repository recognizes no attribution to him for EvidenceFlow. Any earlier note suggesting a shared origin is superseded by this statement (ruling of 2026-10-26).
+
+## Cite this repository
+
+Caro, E. (2026). *qaevelyn.github.io* [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23626247 · ORCID: 0009-0007-3295-3147
