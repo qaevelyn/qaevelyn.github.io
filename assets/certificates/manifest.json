@@ -1,6 +1,6 @@
 {
  "manifest_info": {
-  "purpose": "Single source of truth for all 21 credentials",
+  "purpose": "Single source of truth for all 23 credentials",
   "standard": "Every file gets 5 addresses: local, repo, github_blob, github_raw, live_url",
   "location": {
    "local": "~/Repos/qaevelyn.github.io/assets/certificates/manifest.json",
@@ -454,6 +454,43 @@
     "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/cyber-readiness-qr.png",
     "live_url": "https://qaevelyn.github.io/assets/certificates/cyber-readiness-qr.png"
    }
+  },
+  {
+   "id": "aws-certified-cloud-practitioner",
+   "name": "AWS Certified Cloud Practitioner (CLF-C02)",
+   "issuer": "AWS Training and Certification",
+   "date": "2026-11-23",
+   "program": "AWS Certification",
+   "verify_url": "https://www.credly.com/badges/fce280b2-0ee2-47b6-afc9-1e4461fa89d9/public_url",
+   "aws_verification_code": "8aa6e24af61f4f1494d8ea2f6955e379",
+   "score": "808/1000 (pass 700)",
+   "valid_through": "2029-11-23",
+   "note": "Full-schema entry 2026-11-24: earned at Pearson VUE 2026-11-23, 808/1000 (Notice of Exam Results on file, sha256 094cde1d... kept PRIVATE - candidate identifiers); certificate PDF hosted with sha256 in SHA256SUMS.txt; leads the AWS group on the wall.",
+   "certificate": {
+    "filename": "aws-certified-cloud-practitioner-certificate-2026-11-23.pdf",
+    "local": "~/Repos/qaevelyn.github.io/assets/certificates/aws-certified-cloud-practitioner-certificate-2026-11-23.pdf",
+    "repo": "assets/certificates/aws-certified-cloud-practitioner-certificate-2026-11-23.pdf",
+    "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/aws-certified-cloud-practitioner-certificate-2026-11-23.pdf",
+    "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/aws-certified-cloud-practitioner-certificate-2026-11-23.pdf",
+    "live_url": "https://qaevelyn.github.io/assets/certificates/aws-certified-cloud-practitioner-certificate-2026-11-23.pdf"
+   },
+   "badge": {
+    "filename": "aws-certified-cloud-practitioner-badge.png",
+    "local": "~/Repos/qaevelyn.github.io/assets/certificates/aws-certified-cloud-practitioner-badge.png",
+    "repo": "assets/certificates/aws-certified-cloud-practitioner-badge.png",
+    "github_blob": "https://github.com/qaevelyn/qaevelyn.github.io/blob/master/assets/certificates/aws-certified-cloud-practitioner-badge.png",
+    "github_raw": "https://raw.githubusercontent.com/qaevelyn/qaevelyn.github.io/master/assets/certificates/aws-certified-cloud-practitioner-badge.png",
+    "live_url": "https://qaevelyn.github.io/assets/certificates/aws-certified-cloud-practitioner-badge.png"
+   }
+  },
+  {
+   "id": "aws-restart-graduate",
+   "name": "AWS re/Start Graduate",
+   "issuer": "AWS Training and Certification / Per Scholas",
+   "date": "2026-09-09",
+   "program": "AWS re/Start - Cohort 2026-RTT-41, Silver Spring MD",
+   "verify_url": "https://www.credly.com/earner/earned/badge/66b4b87a-35d0-4640-b947-232af055d428",
+   "note": "Full-schema entry 2026-11-24: graduation badge (Credly 66b4b87a), live-verified 2026-11-23; second in the AWS group; no image asset - renders as a text tile."
   }
  ]
 }
